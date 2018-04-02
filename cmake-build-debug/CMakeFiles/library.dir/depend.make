@@ -13,6 +13,7 @@ CMakeFiles/library.dir/main.c.o: ../sources/include/libft_define.h
 CMakeFiles/library.dir/main.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/main.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/main.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/main.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/main.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/main.c.o: ../sources/include/sll_l_header.h
 
@@ -27,6 +28,7 @@ CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/include/li
 CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o: ../sources/src/argv/argv_contruct.c
@@ -42,6 +44,7 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/src/argv/src/argv_get_option.c
@@ -57,6 +60,7 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/in
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/src/argv/src/argv_go_prev_argv.c
@@ -72,6 +76,7 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/include/l
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/src/argv/src/argv_utils.c
@@ -87,6 +92,7 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/src/argv/src/get_next_argv_1.c
@@ -102,6 +108,7 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/src/argv/src/get_next_argv_2.c
@@ -117,6 +124,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c
@@ -132,6 +140,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c
@@ -147,6 +156,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c
@@ -162,6 +172,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c
@@ -177,6 +188,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c
@@ -192,6 +204,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c
@@ -207,6 +220,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/src/list/double_list/double_linked_list_link/dll_l_construct.c
@@ -222,6 +236,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c
@@ -237,6 +252,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c
@@ -252,6 +268,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_const
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/src/list/simple_list/simple_linked_list/sll_construct.c
@@ -267,6 +284,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_a
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/src/list/simple_list/simple_linked_list/src/sll_add.c
@@ -282,6 +300,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c
@@ -297,6 +316,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/include/libft
 CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o: ../sources/src/memory/ft_bzero.c
@@ -312,6 +332,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/in
 CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o: ../sources/src/memory/ft_exit_lack_memory.c
@@ -327,6 +348,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o: ../sources/src/memory/ft_malloc_protect.c
@@ -342,6 +364,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/include/li
 CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o: ../sources/src/memory/ft_memalloc.c
@@ -357,6 +380,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/include/lib
 CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o: ../sources/src/memory/ft_memccpy.c
@@ -372,6 +396,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/include/libf
 CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o: ../sources/src/memory/ft_memchr.c
@@ -387,6 +412,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/include/libf
 CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o: ../sources/src/memory/ft_memcmp.c
@@ -402,6 +428,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/include/libf
 CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o: ../sources/src/memory/ft_memcpy.c
@@ -417,6 +444,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/include/libf
 CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o: ../sources/src/memory/ft_memdel.c
@@ -432,6 +460,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/include/lib
 CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o: ../sources/src/memory/ft_memmove.c
@@ -447,6 +476,7 @@ CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/include/libf
 CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o: ../sources/src/memory/ft_memset.c
@@ -462,6 +492,7 @@ CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/include/libft_defi
 CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/memory/soa.c.o: ../sources/src/memory/soa.c
@@ -477,6 +508,7 @@ CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/include/libft_defi
 CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o: ../sources/src/nb/ft_atoi.c
@@ -492,6 +524,7 @@ CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/include/libft_de
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o: ../sources/src/nb/ft_putnbr.c
@@ -507,9 +540,378 @@ CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/libft
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/src/nb/ft_putnbr_fd.c
+
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/src/printf/buffer/head_buffer.c
+
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/src/printf/data/manage_before_printer.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o: ../sources/src/printf/data/nb/float/head_double.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o: ../sources/src/printf/data/nb/integer/head_integer_signed.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o: ../sources/src/printf/data/nb/integer/head_interger_n.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o: ../sources/src/printf/data/nb/unsigned/head_integer_unsigned.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o: ../sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o: ../sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o: ../sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o: ../sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c
+
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o: ../sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c
+
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o: ../sources/src/printf/data/text/char/head_char.c
+
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o: ../sources/src/printf/data/text/other/head_percent.c
+
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o: ../sources/src/printf/data/text/str/manage_str.c
+
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/src/printf/main_pfff.c
+
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/src/printf/parseur/head_parseur.c
+
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/src/printf/parseur/parseur_flag.c
+
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/src/printf/parseur/parseur_flag_utils.c
+
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/src/printf/parseur/parseur_utils.c
+
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/src/printf/printer/function_printer.c
+
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/src/printf/printer/head_printer.c
+
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/src/printf/printer/utils_printer.c
+
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/src/printf/utils_main.c
 
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/argv_header.h
@@ -522,6 +924,7 @@ CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/li
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/src/sort/ft_quick_sort.c
@@ -537,6 +940,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../so
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/src/string/char/ft_free_doublechar_tab.c
@@ -552,6 +956,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/src/string/char/ft_isalnum.c
@@ -567,6 +972,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/src/string/char/ft_isalpha.c
@@ -582,6 +988,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/src/string/char/ft_isascii.c
@@ -597,6 +1004,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/src/string/char/ft_isdigit.c
@@ -612,6 +1020,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/src/string/char/ft_isprint.c
@@ -627,6 +1036,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/src/string/char/ft_put_uni.c
@@ -642,6 +1052,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/src/string/char/ft_putchar.c
@@ -657,6 +1068,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/inc
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/src/string/char/ft_putchar_fd.c
@@ -672,6 +1084,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/src/string/char/ft_tolower.c
@@ -687,6 +1100,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/src/string/char/ft_toupper.c
@@ -702,6 +1116,7 @@ CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../source
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/src/string/str/check_char_into_str.c
@@ -717,6 +1132,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/src/string/str/ft_free_split.c
@@ -732,6 +1148,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/i
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/src/string/str/ft_is_all_number.c
@@ -747,6 +1164,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/include/li
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/src/string/str/ft_itoa.c
@@ -762,6 +1180,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/src/string/str/ft_putendl.c
@@ -777,6 +1196,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/src/string/str/ft_putendl_fd.c
@@ -792,6 +1212,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/src/string/str/ft_putstr.c
@@ -807,6 +1228,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/inclu
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/src/string/str/ft_putstr_fd.c
@@ -822,6 +1244,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/src/string/str/ft_str_rev.c
@@ -837,6 +1260,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/src/string/str/ft_strcat.c
@@ -852,6 +1276,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/src/string/str/ft_strchr.c
@@ -867,6 +1292,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/src/string/str/ft_strchr_dup.c
@@ -882,6 +1308,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/src/string/str/ft_strchr_how_many.c
@@ -897,6 +1324,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/src/string/str/ft_strchr_len.c
@@ -912,6 +1340,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/src/string/str/ft_strclr.c
@@ -927,6 +1356,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/src/string/str/ft_strcmp.c
@@ -942,6 +1372,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/src/string/str/ft_strcpy.c
@@ -957,6 +1388,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/src/string/str/ft_strdel.c
@@ -972,6 +1404,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/src/string/str/ft_strdup.c
@@ -987,6 +1420,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/src/string/str/ft_strequ.c
@@ -1002,6 +1436,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/src/string/str/ft_striter.c
@@ -1017,6 +1452,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/src/string/str/ft_striteri.c
@@ -1032,6 +1468,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/src/string/str/ft_strjoin.c
@@ -1047,6 +1484,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/src/string/str/ft_strlcat.c
@@ -1062,6 +1500,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/src/string/str/ft_strlen.c
@@ -1077,6 +1516,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/src/string/str/ft_strmap.c
@@ -1092,6 +1532,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/src/string/str/ft_strmapi.c
@@ -1107,6 +1548,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/src/string/str/ft_strncat.c
@@ -1122,6 +1564,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/src/string/str/ft_strncmp.c
@@ -1137,6 +1580,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/src/string/str/ft_strncpy.c
@@ -1152,6 +1596,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/src/string/str/ft_strndup.c
@@ -1167,6 +1612,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/src/string/str/ft_strnequ.c
@@ -1182,6 +1628,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/src/string/str/ft_strnew.c
@@ -1197,6 +1644,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/src/string/str/ft_strnjoin.c
@@ -1212,6 +1660,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/src/string/str/ft_strnstr.c
@@ -1227,6 +1676,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/src/string/str/ft_strrchr.c
@@ -1242,6 +1692,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/includ
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/src/string/str/ft_strsplit.c
@@ -1257,6 +1708,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/src/string/str/ft_strstr.c
@@ -1272,6 +1724,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/include/
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/src/string/str/ft_strsub.c
@@ -1287,6 +1740,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/include
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/src/string/str/ft_strtrim.c
@@ -1302,6 +1756,7 @@ CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/src/string/str/get_last_char_str.c
@@ -1317,6 +1772,7 @@ CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/src/string/str/index_of_char.c
@@ -1336,6 +1792,7 @@ CMakeFiles/library.dir/test/dll_c_test.c.o: ../sources/include/libft_define.h
 CMakeFiles/library.dir/test/dll_c_test.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/test/dll_c_test.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/test/dll_c_test.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/test/dll_c_test.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/test/dll_c_test.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/test/dll_c_test.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/test/dll_c_test.c.o: ../test/dll_c_test.c
@@ -1351,6 +1808,7 @@ CMakeFiles/library.dir/test/dll_l_test.c.o: ../sources/include/libft_define.h
 CMakeFiles/library.dir/test/dll_l_test.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/test/dll_l_test.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/test/dll_l_test.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/test/dll_l_test.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/test/dll_l_test.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/test/dll_l_test.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/test/dll_l_test.c.o: ../test/dll_l_test.c
@@ -1366,6 +1824,7 @@ CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/libft_define.h
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/libft_memory_function.h
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/libft_nb_function.h
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../test/sll_l_test.c

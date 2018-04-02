@@ -20,18 +20,18 @@ void sll_print_str(t_sll list)
 
 	while (link)
 	{
-	    printf("%s ", link->content);
+	    ft_printf("%s ", link->content);
 	    link = link->next;
 	}
-	printf(" ||\n");
+	ft_printf(" ||\n");
 }
 
 void sll_print_str_link(t_sll_l link)
 {
 	while (link)
 	{
-		printf("%s ", link->content);
+		ft_printf("%s ", link->content);
 		link = link->next;
 	}
-	printf(" ||\n");
+	ft_printf(" ||\n");
 }

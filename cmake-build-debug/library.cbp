@@ -115,6 +115,9 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/printf_header.h">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/sll_header.h">
 			<Option target="library"/>
 		</Unit>
@@ -218,6 +221,75 @@
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/nb/ft_putnbr_fd.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/buffer/head_buffer.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/manage_before_printer.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/float/head_double.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/integer/head_integer_signed.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/integer/head_interger_n.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/text/char/head_char.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/text/other/head_percent.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/data/text/str/manage_str.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/main_pfff.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/head_parseur.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_flag.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_flag_utils.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_utils.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/printer/function_printer.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/printer/head_printer.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/printer/utils_printer.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/utils_main.c">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/sort/ft_quick_sort.c">

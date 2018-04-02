@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <printf.h>
 #include "../../ft_library_header.h"
 
 static void		swap(int tab[], int a, int b)

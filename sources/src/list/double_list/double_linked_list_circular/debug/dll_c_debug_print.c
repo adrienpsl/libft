@@ -21,13 +21,13 @@ void dll_c_print_lst(t_dll_c lst)
 		return;
 	while (i != -1)
 	{
-		printf("%2d ", get_int_ddl_l(link));
+		ft_printf("%2d ", get_int_ddl_l(link));
 		i--;
 		if (i == 0)
-			printf(" -- ");
+			ft_printf(" -- ");
 		link = link->next;
 	}
-	printf(" \n");
+	ft_printf(" \n");
 }
 
 void dll_c_print_lst_reverse(t_dll_c lst)
@@ -39,13 +39,13 @@ void dll_c_print_lst_reverse(t_dll_c lst)
 		return;
 	while (i != -1)
 	{
-		printf("%d ", get_int_ddl_l(link));
+		ft_printf("%d ", get_int_ddl_l(link));
 		i--;
 		if (i == 0)
-			printf(" -- ");
+			ft_printf(" -- ");
 		link = link->prev;
 	}
-	printf(" \n");
+	ft_printf(" \n");
 }
 
 void dll_c_print_lst_str(t_dll_c lst)
@@ -57,13 +57,13 @@ void dll_c_print_lst_str(t_dll_c lst)
 		return;
 	while (i != -1)
 	{
-		printf("%s ", link->content);
+		ft_printf("%s ", link->content);
 		i--;
 		if (i == 0)
-			printf(" -- ");
+			ft_printf(" -- ");
 		link = link->next;
 	}
-	printf(" \n");
+	ft_printf(" \n");
 }
 
 void dll_c_print_lst_str_reverse(t_dll_c lst)
@@ -75,11 +75,11 @@ void dll_c_print_lst_str_reverse(t_dll_c lst)
 		return;
 	while (i != -1)
 	{
-		printf("%s ", link->content);
+		ft_printf("%s ", link->content);
 		i--;
 		if (i == 0)
-			printf(" -- ");
+			ft_printf(" -- ");
 		link = link->prev;
 	}
-	printf(" \n");
+	ft_printf(" \n");
 }

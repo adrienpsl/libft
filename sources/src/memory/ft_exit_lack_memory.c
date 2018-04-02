@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../ft_library_header.h"
+
 void	ft_exit_lack_memory(void)
 {
 	ft_putstr("exit because : lack of memory");

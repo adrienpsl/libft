@@ -1041,6 +1041,627 @@ sources/src/nb/ft_putnbr_fd.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.s
 .PHONY : sources/src/nb/ft_putnbr_fd.c.s
 
+sources/src/printf/buffer/head_buffer.o: sources/src/printf/buffer/head_buffer.c.o
+
+.PHONY : sources/src/printf/buffer/head_buffer.o
+
+# target to build an object file
+sources/src/printf/buffer/head_buffer.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o
+.PHONY : sources/src/printf/buffer/head_buffer.c.o
+
+sources/src/printf/buffer/head_buffer.i: sources/src/printf/buffer/head_buffer.c.i
+
+.PHONY : sources/src/printf/buffer/head_buffer.i
+
+# target to preprocess a source file
+sources/src/printf/buffer/head_buffer.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.i
+.PHONY : sources/src/printf/buffer/head_buffer.c.i
+
+sources/src/printf/buffer/head_buffer.s: sources/src/printf/buffer/head_buffer.c.s
+
+.PHONY : sources/src/printf/buffer/head_buffer.s
+
+# target to generate assembly for a file
+sources/src/printf/buffer/head_buffer.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.s
+.PHONY : sources/src/printf/buffer/head_buffer.c.s
+
+sources/src/printf/data/manage_before_printer.o: sources/src/printf/data/manage_before_printer.c.o
+
+.PHONY : sources/src/printf/data/manage_before_printer.o
+
+# target to build an object file
+sources/src/printf/data/manage_before_printer.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o
+.PHONY : sources/src/printf/data/manage_before_printer.c.o
+
+sources/src/printf/data/manage_before_printer.i: sources/src/printf/data/manage_before_printer.c.i
+
+.PHONY : sources/src/printf/data/manage_before_printer.i
+
+# target to preprocess a source file
+sources/src/printf/data/manage_before_printer.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.i
+.PHONY : sources/src/printf/data/manage_before_printer.c.i
+
+sources/src/printf/data/manage_before_printer.s: sources/src/printf/data/manage_before_printer.c.s
+
+.PHONY : sources/src/printf/data/manage_before_printer.s
+
+# target to generate assembly for a file
+sources/src/printf/data/manage_before_printer.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.s
+.PHONY : sources/src/printf/data/manage_before_printer.c.s
+
+sources/src/printf/data/nb/float/head_double.o: sources/src/printf/data/nb/float/head_double.c.o
+
+.PHONY : sources/src/printf/data/nb/float/head_double.o
+
+# target to build an object file
+sources/src/printf/data/nb/float/head_double.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o
+.PHONY : sources/src/printf/data/nb/float/head_double.c.o
+
+sources/src/printf/data/nb/float/head_double.i: sources/src/printf/data/nb/float/head_double.c.i
+
+.PHONY : sources/src/printf/data/nb/float/head_double.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/float/head_double.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.i
+.PHONY : sources/src/printf/data/nb/float/head_double.c.i
+
+sources/src/printf/data/nb/float/head_double.s: sources/src/printf/data/nb/float/head_double.c.s
+
+.PHONY : sources/src/printf/data/nb/float/head_double.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/float/head_double.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.s
+.PHONY : sources/src/printf/data/nb/float/head_double.c.s
+
+sources/src/printf/data/nb/integer/head_integer_signed.o: sources/src/printf/data/nb/integer/head_integer_signed.c.o
+
+.PHONY : sources/src/printf/data/nb/integer/head_integer_signed.o
+
+# target to build an object file
+sources/src/printf/data/nb/integer/head_integer_signed.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o
+.PHONY : sources/src/printf/data/nb/integer/head_integer_signed.c.o
+
+sources/src/printf/data/nb/integer/head_integer_signed.i: sources/src/printf/data/nb/integer/head_integer_signed.c.i
+
+.PHONY : sources/src/printf/data/nb/integer/head_integer_signed.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/integer/head_integer_signed.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.i
+.PHONY : sources/src/printf/data/nb/integer/head_integer_signed.c.i
+
+sources/src/printf/data/nb/integer/head_integer_signed.s: sources/src/printf/data/nb/integer/head_integer_signed.c.s
+
+.PHONY : sources/src/printf/data/nb/integer/head_integer_signed.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/integer/head_integer_signed.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.s
+.PHONY : sources/src/printf/data/nb/integer/head_integer_signed.c.s
+
+sources/src/printf/data/nb/integer/head_interger_n.o: sources/src/printf/data/nb/integer/head_interger_n.c.o
+
+.PHONY : sources/src/printf/data/nb/integer/head_interger_n.o
+
+# target to build an object file
+sources/src/printf/data/nb/integer/head_interger_n.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o
+.PHONY : sources/src/printf/data/nb/integer/head_interger_n.c.o
+
+sources/src/printf/data/nb/integer/head_interger_n.i: sources/src/printf/data/nb/integer/head_interger_n.c.i
+
+.PHONY : sources/src/printf/data/nb/integer/head_interger_n.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/integer/head_interger_n.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.i
+.PHONY : sources/src/printf/data/nb/integer/head_interger_n.c.i
+
+sources/src/printf/data/nb/integer/head_interger_n.s: sources/src/printf/data/nb/integer/head_interger_n.c.s
+
+.PHONY : sources/src/printf/data/nb/integer/head_interger_n.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/integer/head_interger_n.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.s
+.PHONY : sources/src/printf/data/nb/integer/head_interger_n.c.s
+
+sources/src/printf/data/nb/unsigned/head_integer_unsigned.o: sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o
+
+.PHONY : sources/src/printf/data/nb/unsigned/head_integer_unsigned.o
+
+# target to build an object file
+sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o
+.PHONY : sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.o
+
+sources/src/printf/data/nb/unsigned/head_integer_unsigned.i: sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.i
+
+.PHONY : sources/src/printf/data/nb/unsigned/head_integer_unsigned.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.i
+.PHONY : sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.i
+
+sources/src/printf/data/nb/unsigned/head_integer_unsigned.s: sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.s
+
+.PHONY : sources/src/printf/data/nb/unsigned/head_integer_unsigned.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.s
+.PHONY : sources/src/printf/data/nb/unsigned/head_integer_unsigned.c.s
+
+sources/src/printf/data/nb/unsigned/utils_unsigned_integer.o: sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o
+
+.PHONY : sources/src/printf/data/nb/unsigned/utils_unsigned_integer.o
+
+# target to build an object file
+sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o
+.PHONY : sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.o
+
+sources/src/printf/data/nb/unsigned/utils_unsigned_integer.i: sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.i
+
+.PHONY : sources/src/printf/data/nb/unsigned/utils_unsigned_integer.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.i
+.PHONY : sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.i
+
+sources/src/printf/data/nb/unsigned/utils_unsigned_integer.s: sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.s
+
+.PHONY : sources/src/printf/data/nb/unsigned/utils_unsigned_integer.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.s
+.PHONY : sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c.s
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.o: sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.o
+
+# target to build an object file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.o
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.i: sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.i
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.i
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.i
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.s: sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.s
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.s
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c.s
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.o: sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.o
+
+# target to build an object file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.o
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.i: sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.i
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.i
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.i
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.s: sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.s
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.s
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c.s
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.o: sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.o
+
+# target to build an object file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.o
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.i: sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.i
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.i
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.i
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.s: sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.s
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.s
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c.s
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.o: sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.o
+
+# target to build an object file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.o
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.i: sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.i
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.i
+
+# target to preprocess a source file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.i
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.i
+
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.s: sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.s
+
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.s
+
+# target to generate assembly for a file
+sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.s
+.PHONY : sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c.s
+
+sources/src/printf/data/text/char/head_char.o: sources/src/printf/data/text/char/head_char.c.o
+
+.PHONY : sources/src/printf/data/text/char/head_char.o
+
+# target to build an object file
+sources/src/printf/data/text/char/head_char.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o
+.PHONY : sources/src/printf/data/text/char/head_char.c.o
+
+sources/src/printf/data/text/char/head_char.i: sources/src/printf/data/text/char/head_char.c.i
+
+.PHONY : sources/src/printf/data/text/char/head_char.i
+
+# target to preprocess a source file
+sources/src/printf/data/text/char/head_char.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.i
+.PHONY : sources/src/printf/data/text/char/head_char.c.i
+
+sources/src/printf/data/text/char/head_char.s: sources/src/printf/data/text/char/head_char.c.s
+
+.PHONY : sources/src/printf/data/text/char/head_char.s
+
+# target to generate assembly for a file
+sources/src/printf/data/text/char/head_char.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.s
+.PHONY : sources/src/printf/data/text/char/head_char.c.s
+
+sources/src/printf/data/text/other/head_percent.o: sources/src/printf/data/text/other/head_percent.c.o
+
+.PHONY : sources/src/printf/data/text/other/head_percent.o
+
+# target to build an object file
+sources/src/printf/data/text/other/head_percent.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o
+.PHONY : sources/src/printf/data/text/other/head_percent.c.o
+
+sources/src/printf/data/text/other/head_percent.i: sources/src/printf/data/text/other/head_percent.c.i
+
+.PHONY : sources/src/printf/data/text/other/head_percent.i
+
+# target to preprocess a source file
+sources/src/printf/data/text/other/head_percent.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.i
+.PHONY : sources/src/printf/data/text/other/head_percent.c.i
+
+sources/src/printf/data/text/other/head_percent.s: sources/src/printf/data/text/other/head_percent.c.s
+
+.PHONY : sources/src/printf/data/text/other/head_percent.s
+
+# target to generate assembly for a file
+sources/src/printf/data/text/other/head_percent.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.s
+.PHONY : sources/src/printf/data/text/other/head_percent.c.s
+
+sources/src/printf/data/text/str/manage_str.o: sources/src/printf/data/text/str/manage_str.c.o
+
+.PHONY : sources/src/printf/data/text/str/manage_str.o
+
+# target to build an object file
+sources/src/printf/data/text/str/manage_str.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o
+.PHONY : sources/src/printf/data/text/str/manage_str.c.o
+
+sources/src/printf/data/text/str/manage_str.i: sources/src/printf/data/text/str/manage_str.c.i
+
+.PHONY : sources/src/printf/data/text/str/manage_str.i
+
+# target to preprocess a source file
+sources/src/printf/data/text/str/manage_str.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.i
+.PHONY : sources/src/printf/data/text/str/manage_str.c.i
+
+sources/src/printf/data/text/str/manage_str.s: sources/src/printf/data/text/str/manage_str.c.s
+
+.PHONY : sources/src/printf/data/text/str/manage_str.s
+
+# target to generate assembly for a file
+sources/src/printf/data/text/str/manage_str.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.s
+.PHONY : sources/src/printf/data/text/str/manage_str.c.s
+
+sources/src/printf/main_pfff.o: sources/src/printf/main_pfff.c.o
+
+.PHONY : sources/src/printf/main_pfff.o
+
+# target to build an object file
+sources/src/printf/main_pfff.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o
+.PHONY : sources/src/printf/main_pfff.c.o
+
+sources/src/printf/main_pfff.i: sources/src/printf/main_pfff.c.i
+
+.PHONY : sources/src/printf/main_pfff.i
+
+# target to preprocess a source file
+sources/src/printf/main_pfff.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/main_pfff.c.i
+.PHONY : sources/src/printf/main_pfff.c.i
+
+sources/src/printf/main_pfff.s: sources/src/printf/main_pfff.c.s
+
+.PHONY : sources/src/printf/main_pfff.s
+
+# target to generate assembly for a file
+sources/src/printf/main_pfff.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/main_pfff.c.s
+.PHONY : sources/src/printf/main_pfff.c.s
+
+sources/src/printf/parseur/head_parseur.o: sources/src/printf/parseur/head_parseur.c.o
+
+.PHONY : sources/src/printf/parseur/head_parseur.o
+
+# target to build an object file
+sources/src/printf/parseur/head_parseur.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o
+.PHONY : sources/src/printf/parseur/head_parseur.c.o
+
+sources/src/printf/parseur/head_parseur.i: sources/src/printf/parseur/head_parseur.c.i
+
+.PHONY : sources/src/printf/parseur/head_parseur.i
+
+# target to preprocess a source file
+sources/src/printf/parseur/head_parseur.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.i
+.PHONY : sources/src/printf/parseur/head_parseur.c.i
+
+sources/src/printf/parseur/head_parseur.s: sources/src/printf/parseur/head_parseur.c.s
+
+.PHONY : sources/src/printf/parseur/head_parseur.s
+
+# target to generate assembly for a file
+sources/src/printf/parseur/head_parseur.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.s
+.PHONY : sources/src/printf/parseur/head_parseur.c.s
+
+sources/src/printf/parseur/parseur_flag.o: sources/src/printf/parseur/parseur_flag.c.o
+
+.PHONY : sources/src/printf/parseur/parseur_flag.o
+
+# target to build an object file
+sources/src/printf/parseur/parseur_flag.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o
+.PHONY : sources/src/printf/parseur/parseur_flag.c.o
+
+sources/src/printf/parseur/parseur_flag.i: sources/src/printf/parseur/parseur_flag.c.i
+
+.PHONY : sources/src/printf/parseur/parseur_flag.i
+
+# target to preprocess a source file
+sources/src/printf/parseur/parseur_flag.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.i
+.PHONY : sources/src/printf/parseur/parseur_flag.c.i
+
+sources/src/printf/parseur/parseur_flag.s: sources/src/printf/parseur/parseur_flag.c.s
+
+.PHONY : sources/src/printf/parseur/parseur_flag.s
+
+# target to generate assembly for a file
+sources/src/printf/parseur/parseur_flag.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.s
+.PHONY : sources/src/printf/parseur/parseur_flag.c.s
+
+sources/src/printf/parseur/parseur_flag_utils.o: sources/src/printf/parseur/parseur_flag_utils.c.o
+
+.PHONY : sources/src/printf/parseur/parseur_flag_utils.o
+
+# target to build an object file
+sources/src/printf/parseur/parseur_flag_utils.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o
+.PHONY : sources/src/printf/parseur/parseur_flag_utils.c.o
+
+sources/src/printf/parseur/parseur_flag_utils.i: sources/src/printf/parseur/parseur_flag_utils.c.i
+
+.PHONY : sources/src/printf/parseur/parseur_flag_utils.i
+
+# target to preprocess a source file
+sources/src/printf/parseur/parseur_flag_utils.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.i
+.PHONY : sources/src/printf/parseur/parseur_flag_utils.c.i
+
+sources/src/printf/parseur/parseur_flag_utils.s: sources/src/printf/parseur/parseur_flag_utils.c.s
+
+.PHONY : sources/src/printf/parseur/parseur_flag_utils.s
+
+# target to generate assembly for a file
+sources/src/printf/parseur/parseur_flag_utils.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.s
+.PHONY : sources/src/printf/parseur/parseur_flag_utils.c.s
+
+sources/src/printf/parseur/parseur_utils.o: sources/src/printf/parseur/parseur_utils.c.o
+
+.PHONY : sources/src/printf/parseur/parseur_utils.o
+
+# target to build an object file
+sources/src/printf/parseur/parseur_utils.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o
+.PHONY : sources/src/printf/parseur/parseur_utils.c.o
+
+sources/src/printf/parseur/parseur_utils.i: sources/src/printf/parseur/parseur_utils.c.i
+
+.PHONY : sources/src/printf/parseur/parseur_utils.i
+
+# target to preprocess a source file
+sources/src/printf/parseur/parseur_utils.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.i
+.PHONY : sources/src/printf/parseur/parseur_utils.c.i
+
+sources/src/printf/parseur/parseur_utils.s: sources/src/printf/parseur/parseur_utils.c.s
+
+.PHONY : sources/src/printf/parseur/parseur_utils.s
+
+# target to generate assembly for a file
+sources/src/printf/parseur/parseur_utils.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.s
+.PHONY : sources/src/printf/parseur/parseur_utils.c.s
+
+sources/src/printf/printer/function_printer.o: sources/src/printf/printer/function_printer.c.o
+
+.PHONY : sources/src/printf/printer/function_printer.o
+
+# target to build an object file
+sources/src/printf/printer/function_printer.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o
+.PHONY : sources/src/printf/printer/function_printer.c.o
+
+sources/src/printf/printer/function_printer.i: sources/src/printf/printer/function_printer.c.i
+
+.PHONY : sources/src/printf/printer/function_printer.i
+
+# target to preprocess a source file
+sources/src/printf/printer/function_printer.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.i
+.PHONY : sources/src/printf/printer/function_printer.c.i
+
+sources/src/printf/printer/function_printer.s: sources/src/printf/printer/function_printer.c.s
+
+.PHONY : sources/src/printf/printer/function_printer.s
+
+# target to generate assembly for a file
+sources/src/printf/printer/function_printer.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.s
+.PHONY : sources/src/printf/printer/function_printer.c.s
+
+sources/src/printf/printer/head_printer.o: sources/src/printf/printer/head_printer.c.o
+
+.PHONY : sources/src/printf/printer/head_printer.o
+
+# target to build an object file
+sources/src/printf/printer/head_printer.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o
+.PHONY : sources/src/printf/printer/head_printer.c.o
+
+sources/src/printf/printer/head_printer.i: sources/src/printf/printer/head_printer.c.i
+
+.PHONY : sources/src/printf/printer/head_printer.i
+
+# target to preprocess a source file
+sources/src/printf/printer/head_printer.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.i
+.PHONY : sources/src/printf/printer/head_printer.c.i
+
+sources/src/printf/printer/head_printer.s: sources/src/printf/printer/head_printer.c.s
+
+.PHONY : sources/src/printf/printer/head_printer.s
+
+# target to generate assembly for a file
+sources/src/printf/printer/head_printer.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.s
+.PHONY : sources/src/printf/printer/head_printer.c.s
+
+sources/src/printf/printer/utils_printer.o: sources/src/printf/printer/utils_printer.c.o
+
+.PHONY : sources/src/printf/printer/utils_printer.o
+
+# target to build an object file
+sources/src/printf/printer/utils_printer.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o
+.PHONY : sources/src/printf/printer/utils_printer.c.o
+
+sources/src/printf/printer/utils_printer.i: sources/src/printf/printer/utils_printer.c.i
+
+.PHONY : sources/src/printf/printer/utils_printer.i
+
+# target to preprocess a source file
+sources/src/printf/printer/utils_printer.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.i
+.PHONY : sources/src/printf/printer/utils_printer.c.i
+
+sources/src/printf/printer/utils_printer.s: sources/src/printf/printer/utils_printer.c.s
+
+.PHONY : sources/src/printf/printer/utils_printer.s
+
+# target to generate assembly for a file
+sources/src/printf/printer/utils_printer.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.s
+.PHONY : sources/src/printf/printer/utils_printer.c.s
+
+sources/src/printf/utils_main.o: sources/src/printf/utils_main.c.o
+
+.PHONY : sources/src/printf/utils_main.o
+
+# target to build an object file
+sources/src/printf/utils_main.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/utils_main.c.o
+.PHONY : sources/src/printf/utils_main.c.o
+
+sources/src/printf/utils_main.i: sources/src/printf/utils_main.c.i
+
+.PHONY : sources/src/printf/utils_main.i
+
+# target to preprocess a source file
+sources/src/printf/utils_main.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/utils_main.c.i
+.PHONY : sources/src/printf/utils_main.c.i
+
+sources/src/printf/utils_main.s: sources/src/printf/utils_main.c.s
+
+.PHONY : sources/src/printf/utils_main.s
+
+# target to generate assembly for a file
+sources/src/printf/utils_main.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/printf/utils_main.c.s
+.PHONY : sources/src/printf/utils_main.c.s
+
 sources/src/sort/ft_quick_sort.o: sources/src/sort/ft_quick_sort.c.o
 
 .PHONY : sources/src/sort/ft_quick_sort.o
@@ -2772,6 +3393,75 @@ help:
 	@echo "... sources/src/nb/ft_putnbr_fd.o"
 	@echo "... sources/src/nb/ft_putnbr_fd.i"
 	@echo "... sources/src/nb/ft_putnbr_fd.s"
+	@echo "... sources/src/printf/buffer/head_buffer.o"
+	@echo "... sources/src/printf/buffer/head_buffer.i"
+	@echo "... sources/src/printf/buffer/head_buffer.s"
+	@echo "... sources/src/printf/data/manage_before_printer.o"
+	@echo "... sources/src/printf/data/manage_before_printer.i"
+	@echo "... sources/src/printf/data/manage_before_printer.s"
+	@echo "... sources/src/printf/data/nb/float/head_double.o"
+	@echo "... sources/src/printf/data/nb/float/head_double.i"
+	@echo "... sources/src/printf/data/nb/float/head_double.s"
+	@echo "... sources/src/printf/data/nb/integer/head_integer_signed.o"
+	@echo "... sources/src/printf/data/nb/integer/head_integer_signed.i"
+	@echo "... sources/src/printf/data/nb/integer/head_integer_signed.s"
+	@echo "... sources/src/printf/data/nb/integer/head_interger_n.o"
+	@echo "... sources/src/printf/data/nb/integer/head_interger_n.i"
+	@echo "... sources/src/printf/data/nb/integer/head_interger_n.s"
+	@echo "... sources/src/printf/data/nb/unsigned/head_integer_unsigned.o"
+	@echo "... sources/src/printf/data/nb/unsigned/head_integer_unsigned.i"
+	@echo "... sources/src/printf/data/nb/unsigned/head_integer_unsigned.s"
+	@echo "... sources/src/printf/data/nb/unsigned/utils_unsigned_integer.o"
+	@echo "... sources/src/printf/data/nb/unsigned/utils_unsigned_integer.i"
+	@echo "... sources/src/printf/data/nb/unsigned/utils_unsigned_integer.s"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.o"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.i"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.s"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.o"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.i"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.s"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.o"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.i"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.s"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.o"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.i"
+	@echo "... sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.s"
+	@echo "... sources/src/printf/data/text/char/head_char.o"
+	@echo "... sources/src/printf/data/text/char/head_char.i"
+	@echo "... sources/src/printf/data/text/char/head_char.s"
+	@echo "... sources/src/printf/data/text/other/head_percent.o"
+	@echo "... sources/src/printf/data/text/other/head_percent.i"
+	@echo "... sources/src/printf/data/text/other/head_percent.s"
+	@echo "... sources/src/printf/data/text/str/manage_str.o"
+	@echo "... sources/src/printf/data/text/str/manage_str.i"
+	@echo "... sources/src/printf/data/text/str/manage_str.s"
+	@echo "... sources/src/printf/main_pfff.o"
+	@echo "... sources/src/printf/main_pfff.i"
+	@echo "... sources/src/printf/main_pfff.s"
+	@echo "... sources/src/printf/parseur/head_parseur.o"
+	@echo "... sources/src/printf/parseur/head_parseur.i"
+	@echo "... sources/src/printf/parseur/head_parseur.s"
+	@echo "... sources/src/printf/parseur/parseur_flag.o"
+	@echo "... sources/src/printf/parseur/parseur_flag.i"
+	@echo "... sources/src/printf/parseur/parseur_flag.s"
+	@echo "... sources/src/printf/parseur/parseur_flag_utils.o"
+	@echo "... sources/src/printf/parseur/parseur_flag_utils.i"
+	@echo "... sources/src/printf/parseur/parseur_flag_utils.s"
+	@echo "... sources/src/printf/parseur/parseur_utils.o"
+	@echo "... sources/src/printf/parseur/parseur_utils.i"
+	@echo "... sources/src/printf/parseur/parseur_utils.s"
+	@echo "... sources/src/printf/printer/function_printer.o"
+	@echo "... sources/src/printf/printer/function_printer.i"
+	@echo "... sources/src/printf/printer/function_printer.s"
+	@echo "... sources/src/printf/printer/head_printer.o"
+	@echo "... sources/src/printf/printer/head_printer.i"
+	@echo "... sources/src/printf/printer/head_printer.s"
+	@echo "... sources/src/printf/printer/utils_printer.o"
+	@echo "... sources/src/printf/printer/utils_printer.i"
+	@echo "... sources/src/printf/printer/utils_printer.s"
+	@echo "... sources/src/printf/utils_main.o"
+	@echo "... sources/src/printf/utils_main.i"
+	@echo "... sources/src/printf/utils_main.s"
 	@echo "... sources/src/sort/ft_quick_sort.o"
 	@echo "... sources/src/sort/ft_quick_sort.i"
 	@echo "... sources/src/sort/ft_quick_sort.s"

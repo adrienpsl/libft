@@ -1,7 +1,10 @@
 #ifndef LIBRARY_FT_LIBRARY_HEADER_H
 # define LIBRARY_FT_LIBRARY_HEADER_H
 
-#include <stdio.h>
+/*
+**    printF
+*/
+# include "include/printf_header.h"
 
 /*
 **	for more clarter

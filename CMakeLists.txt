@@ -7,6 +7,7 @@ set(CMAKE_C_COMPILER "/usr/bin/gcc")
 set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 
 file(GLOB head "sources/include/*.h")
+#file(GLOB head "")
 
 include_directories(sources/include/*.h)
 file(GLOB sources1 "sources/src/**/*.c")
