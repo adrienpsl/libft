@@ -175,6 +175,9 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c">
 			<Option target="library"/>
 		</Unit>

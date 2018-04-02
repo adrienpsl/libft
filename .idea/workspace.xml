@@ -12,34 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6fcdac-d57d-4142-83fc-c90e1e89e6ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/include/printf_header.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/buffer/head_buffer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/manage_before_printer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/float/head_double.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/integer/head_integer_signed.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/integer/head_interger_n.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/text/char/head_char.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/text/other/head_percent.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/data/text/str/manage_str.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/main_pfff.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/parseur/head_parseur.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/parseur/parseur_flag.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/parseur/parseur_flag_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/parseur/parseur_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/printer/function_printer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/printer/head_printer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/printer/utils_printer.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/printf/utils_main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/build.make" afterDir="false" />
@@ -47,107 +22,13 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/main.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/memory/soa.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/test/dll_c_test.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/test/dll_l_test.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/test/sll_l_test.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/test/sll_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/test/sll_test.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/library" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/library" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/library.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/library.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/ft_library_header.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/ft_library_header.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/include/libft_buffer_str.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/include/libft_buffer_str.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/memory/ft_bzero.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/memory/ft_bzero.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/memory/ft_exit_lack_memory.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/memory/ft_exit_lack_memory.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/include/sll_header.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/include/sll_header.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sll_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test/sll_test.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -159,20 +40,91 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="printf_header.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sources/include/printf_header.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-              <folding>
-                <element signature="e#607#627#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="sll_drop.c" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="741">
+                  <caret line="49" selection-start-line="49" selection-end-line="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sll_add.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_add.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="384">
+                  <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="horizontal" split-proportion="0.5">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="sll_drop.c" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="597">
+                      <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="sll_header.h" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/sources/include/sll_header.h">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="432">
+                      <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+                      <folding>
+                        <element signature="e#59#79#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="sll_l_construct.c" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="304">
+                      <caret line="19" selection-start-line="19" selection-end-line="19" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="sll_test.c" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/test/sll_test.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="933">
+                      <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+                      <folding>
+                        <element signature="e#0#19#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="dll_c_drop_link.c" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-168" />
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -198,6 +150,7 @@
       <find>#include &quot;../../../pf_2.h&quot;</find>
       <find>#include &quot;../pf_2.h&quot;</find>
       <find>printf</find>
+      <find>printf_parseur</find>
     </findStrings>
     <replaceStrings>
       <replace>include/</replace>
@@ -223,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/dll_l_test.c" />
-        <option value="$PROJECT_DIR$/sources/src/argv/argv_contruct.c" />
-        <option value="$PROJECT_DIR$/sources/src/argv/src/argv_get_option.c" />
         <option value="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c" />
         <option value="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c" />
         <option value="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" />
@@ -246,14 +196,11 @@
         <option value="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/sll_construct.c" />
         <option value="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/sll_add.c" />
         <option value="$PROJECT_DIR$/sources/include/sll_l_header.h" />
-        <option value="$PROJECT_DIR$/test/sll_test.c" />
         <option value="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_add.c" />
         <option value="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c" />
-        <option value="$PROJECT_DIR$/sources/include/sll_header.h" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test/...gitignore" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/sources/include/printf_header.h" />
         <option value="$PROJECT_DIR$/sources/src/printf/buffer/head_buffer.c" />
         <option value="$PROJECT_DIR$/sources/ft_library_header.h" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/float/head_double.c" />
@@ -269,11 +216,17 @@
         <option value="$PROJECT_DIR$/sources/src/printf/data/manage_before_printer.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/parseur/head_parseur.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/parseur/parseur_flag.c" />
-        <option value="$PROJECT_DIR$/sources/src/printf/main_pfff.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/utils_main.c" />
         <option value="$PROJECT_DIR$/sources/src/memory/ft_bzero.c" />
         <option value="$PROJECT_DIR$/sources/src/memory/ft_exit_lack_memory.c" />
         <option value="$PROJECT_DIR$/sources/include/libft_buffer_str.h" />
+        <option value="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c" />
+        <option value="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c" />
+        <option value="$PROJECT_DIR$/sources/src/printf/main_pfff.c" />
+        <option value="$PROJECT_DIR$/sources/include/printf_header.h" />
+        <option value="$PROJECT_DIR$/sources/include/sll_header.h" />
+        <option value="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c" />
+        <option value="$PROJECT_DIR$/test/sll_test.c" />
       </list>
     </option>
   </component>
@@ -312,12 +265,67 @@
               <item name="library" type="b2602c69:ProjectViewProjectNode" />
               <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="library" type="b2602c69:ProjectViewProjectNode" />
               <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="double_list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="double_list" type="462c0819:PsiDirectoryNode" />
+              <item name="double_linked_list_circular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="double_list" type="462c0819:PsiDirectoryNode" />
+              <item name="double_linked_list_circular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_list" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_linked_list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_list" type="462c0819:PsiDirectoryNode" />
+              <item name="simple_linked_list" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,23 +408,24 @@
       <workItem from="1522414415690" duration="26000" />
       <workItem from="1522421987712" duration="10204000" />
       <workItem from="1522666001961" duration="28000" />
-      <workItem from="1522666053161" duration="1513000" />
+      <workItem from="1522666053161" duration="7018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34212000" />
+    <option name="totallyTimeSpent" value="39717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="3440" height="1440" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13834454" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32820514" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32893774" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.07545788" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1985348" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2871795" />
@@ -460,43 +469,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/test/sll_test.c</url>
-          <line>46</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/sources/include/printf_header.h</url>
-          <line>28</line>
+          <line>30</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/dll_c_test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/argv_test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/include/libft_d_lst_function.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/ft_lst_reverse.c" />
-    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/ft_lstadd.c" />
     <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/ft_lstnew.c" />
     <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/ft_lstdel.c" />
     <entry file="file://$PROJECT_DIR$/main.c">
@@ -581,20 +562,6 @@
         <state relative-caret-position="-1217" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_add.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="38" selection-start-line="12" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/buffer/head_buffer.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="19" selection-start-line="12" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/src/printf/data/nb/float/head_double.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -644,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/main_pfff.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="30" selection-start-line="12" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/src/printf/printer/utils_printer.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -658,13 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/parseur/head_parseur.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -717,20 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/sll_test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/ft_library_header.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/src/memory/ft_bzero.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -745,27 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/include/sll_header.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#59#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -799,11 +721,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/include/printf_header.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state relative-caret-position="613">
+          <caret line="190" column="42" lean-forward="true" selection-start-line="190" selection-start-column="42" selection-end-line="190" selection-end-column="42" />
           <folding>
-            <element signature="e#607#627#0" expanded="true" />
+            <element signature="e#607#626#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/printf/buffer/head_buffer.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/printf/main_pfff.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/printf/parseur/head_parseur.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dll_c_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" lean-forward="true" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/ft_library_header.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/include/sll_header.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#59#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_add.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sll_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="933">
+          <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
         </state>
       </provider>
     </entry>

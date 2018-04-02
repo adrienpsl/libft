@@ -289,6 +289,22 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_a
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/src/list/simple_list/simple_linked_list/src/sll_add.c
 
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/libft_d_lst_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o: ../sources/src/list/simple_list/simple_linked_list/src/sll_drop.c
+
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/argv_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/include/dll_c_header.h

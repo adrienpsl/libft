@@ -166,6 +166,10 @@ stdlib.h
 ../../../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 
+/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c
+../../../../../ft_library_header.h
+/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+
 /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c
 ../../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
@@ -557,6 +561,8 @@ limits.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 
 /Users/adpusel/Dropbox/42/library/test/sll_test.c
+printf.h
+-
 ../sources/include/sll_header.h
 /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
 

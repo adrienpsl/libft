@@ -25,6 +25,7 @@ t_sll new_sll();
 **    method ===================================================================
 */
 t_sll_l sll_add(t_sll_l link, t_sll list);
+t_sll_l sll_drop_link(t_sll_l link, t_sll list);
 
 /*
 **    utils ====================================================================

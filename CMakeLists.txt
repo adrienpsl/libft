@@ -27,7 +27,7 @@ set(
         ${sources5}
         ${sources6}
 
-)
+        sources/src/list/simple_list/simple_linked_list/src/sll_drop.c)
 add_executable(library
         # type of lib
         main.c

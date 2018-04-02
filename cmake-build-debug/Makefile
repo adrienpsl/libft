@@ -609,6 +609,33 @@ sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s
 .PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s
 
+sources/src/list/simple_list/simple_linked_list/src/sll_drop.o: sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.o
+
+# target to build an object file
+sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o
+
+sources/src/list/simple_list/simple_linked_list/src/sll_drop.i: sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.i
+
+# target to preprocess a source file
+sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i
+
+sources/src/list/simple_list/simple_linked_list/src/sll_drop.s: sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.s
+
+# target to generate assembly for a file
+sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s
+
 sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.o: sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o
 
 .PHONY : sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.o
@@ -3345,6 +3372,9 @@ help:
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.o"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.i"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.s"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop.o"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop.i"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop.s"
 	@echo "... sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.o"
 	@echo "... sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.i"
 	@echo "... sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.s"

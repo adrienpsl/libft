@@ -99,6 +99,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o"
   "CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o"
   "CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o"
+  "CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o"
   "CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o"
   "CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o"
   "CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o"
