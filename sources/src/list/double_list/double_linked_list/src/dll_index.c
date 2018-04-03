@@ -12,14 +12,36 @@
 
 #include "../../../../../ft_library_header.h"
 
+// faire avec la gestion des indexs
+// optimisation entre le debut et la fin ?
 
-t_sll_l sll_add(t_sll_l link, t_sll list)
+static t_dll_l push_index(t_dll_l link, t_dll list, size_t index)
 {
-	if (list->top == NULL)
-		list->top = link;
-	else
-		list->tail->next = link;
-	list->tail = link;
-	list->lenght += 1;
+	t_dll_l prev_link;
+	t_dll_l next_link;
+
+	next_link = get_good_link(index, list);
+	prev_link = next_link->prev;
+
+	link->next = next_link;
+	next_link->prev = link;
+
+	link->prev = prev_link;
+	prev_link->next = link;
+
+	list->length += 1;
 	return (link);
+}
+
+t_dll_l dll_index(t_dll_l link, t_dll list, size_t index)
+{
+	if (link == NULL)
+		return (link);
+	else if (list->length == 0)
+		return (dll_list_empty(link, list));
+	else if (index == 0)
+		return (dll_push(link, list));
+	else if (index >= list->length)
+		return (dll_add(link, list));
+	return (push_index(link, list, index));
 }

@@ -26,8 +26,9 @@ set(
         ${sources4}
         ${sources5}
         ${sources6}
+        sources/ft_library_header.h
 
-        sources/src/list/simple_list/simple_linked_list/src/sll_drop.c)
+        sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c sources/src/list/simple_list/simple_linked_list/src/drop_utils.c sources/src/list/double_list/double_linked_list/dll_construct.c sources/include/dll_header.h sources/src/list/double_list/double_linked_list/src/dll_add.c sources/src/list/double_list/double_linked_list/utils.c sources/src/list/double_list/double_linked_list/src/dll_push.c sources/src/list/double_list/double_linked_list/src/dll_index.c test/dll_test.c sources/src/list/double_list/double_linked_list/src/dll_drop_top.c sources/src/list/double_list/double_linked_list/src/dll_drop_end.c sources/src/list/double_list/double_linked_list/src/dll_drop_index.c sources/src/list/double_list/double_linked_list/debug/dll_print_str.c sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c)
 add_executable(library
         # type of lib
         main.c

@@ -312,6 +312,276 @@ sources/src/argv/src/get_next_argv_2.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.s
 .PHONY : sources/src/argv/src/get_next_argv_2.c.s
 
+sources/src/list/double_list/double_linked_list/debug/dll_print_nb.o: sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_nb.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o
+
+sources/src/list/double_list/double_linked_list/debug/dll_print_nb.i: sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_nb.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.i
+
+sources/src/list/double_list/double_linked_list/debug/dll_print_nb.s: sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_nb.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.s
+
+sources/src/list/double_list/double_linked_list/debug/dll_print_str.o: sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_str.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o
+
+sources/src/list/double_list/double_linked_list/debug/dll_print_str.i: sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_str.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.i
+
+sources/src/list/double_list/double_linked_list/debug/dll_print_str.s: sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_str.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.s
+
+sources/src/list/double_list/double_linked_list/dll_construct.o: sources/src/list/double_list/double_linked_list/dll_construct.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/dll_construct.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/dll_construct.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/dll_construct.c.o
+
+sources/src/list/double_list/double_linked_list/dll_construct.i: sources/src/list/double_list/double_linked_list/dll_construct.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/dll_construct.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/dll_construct.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/dll_construct.c.i
+
+sources/src/list/double_list/double_linked_list/dll_construct.s: sources/src/list/double_list/double_linked_list/dll_construct.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/dll_construct.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/dll_construct.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/dll_construct.c.s
+
+sources/src/list/double_list/double_linked_list/src/dll_add.o: sources/src/list/double_list/double_linked_list/src/dll_add.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_add.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/src/dll_add.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_add.c.o
+
+sources/src/list/double_list/double_linked_list/src/dll_add.i: sources/src/list/double_list/double_linked_list/src/dll_add.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_add.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/src/dll_add.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_add.c.i
+
+sources/src/list/double_list/double_linked_list/src/dll_add.s: sources/src/list/double_list/double_linked_list/src/dll_add.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_add.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/src/dll_add.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_add.c.s
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_end.o: sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_end.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_end.i: sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_end.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.i
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_end.s: sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_end.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.s
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_index.o: sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_index.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_index.i: sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_index.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.i
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_index.s: sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_index.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.s
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_top.o: sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_top.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_top.i: sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_top.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.i
+
+sources/src/list/double_list/double_linked_list/src/dll_drop_top.s: sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_top.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.s
+
+sources/src/list/double_list/double_linked_list/src/dll_index.o: sources/src/list/double_list/double_linked_list/src/dll_index.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_index.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/src/dll_index.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_index.c.o
+
+sources/src/list/double_list/double_linked_list/src/dll_index.i: sources/src/list/double_list/double_linked_list/src/dll_index.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_index.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/src/dll_index.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_index.c.i
+
+sources/src/list/double_list/double_linked_list/src/dll_index.s: sources/src/list/double_list/double_linked_list/src/dll_index.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_index.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/src/dll_index.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_index.c.s
+
+sources/src/list/double_list/double_linked_list/src/dll_push.o: sources/src/list/double_list/double_linked_list/src/dll_push.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_push.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/src/dll_push.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_push.c.o
+
+sources/src/list/double_list/double_linked_list/src/dll_push.i: sources/src/list/double_list/double_linked_list/src/dll_push.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_push.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/src/dll_push.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_push.c.i
+
+sources/src/list/double_list/double_linked_list/src/dll_push.s: sources/src/list/double_list/double_linked_list/src/dll_push.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_push.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/src/dll_push.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_push.c.s
+
+sources/src/list/double_list/double_linked_list/utils.o: sources/src/list/double_list/double_linked_list/utils.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/utils.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/utils.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/utils.c.o
+
+sources/src/list/double_list/double_linked_list/utils.i: sources/src/list/double_list/double_linked_list/utils.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/utils.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/utils.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/utils.c.i
+
+sources/src/list/double_list/double_linked_list/utils.s: sources/src/list/double_list/double_linked_list/utils.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/utils.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/utils.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/utils.c.s
+
 sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.o: sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o
 
 .PHONY : sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.o
@@ -582,6 +852,33 @@ sources/src/list/simple_list/simple_linked_list/sll_construct.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.s
 .PHONY : sources/src/list/simple_list/simple_linked_list/sll_construct.c.s
 
+sources/src/list/simple_list/simple_linked_list/src/drop_utils.o: sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/drop_utils.o
+
+# target to build an object file
+sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o
+
+sources/src/list/simple_list/simple_linked_list/src/drop_utils.i: sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.i
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/drop_utils.i
+
+# target to preprocess a source file
+sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.i
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.i
+
+sources/src/list/simple_list/simple_linked_list/src/drop_utils.s: sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.s
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/drop_utils.s
+
+# target to generate assembly for a file
+sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.s
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.s
+
 sources/src/list/simple_list/simple_linked_list/src/sll_add.o: sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o
 
 .PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_add.o
@@ -609,32 +906,59 @@ sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s
 .PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s
 
-sources/src/list/simple_list/simple_linked_list/src/sll_drop.o: sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o: sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
 
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.o
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o
 
 # target to build an object file
-sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
 
-sources/src/list/simple_list/simple_linked_list/src/sll_drop.i: sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.i: sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i
 
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.i
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.i
 
 # target to preprocess a source file
-sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.i
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i
 
-sources/src/list/simple_list/simple_linked_list/src/sll_drop.s: sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.s: sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s
 
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.s
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.s
 
 # target to generate assembly for a file
-sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.s
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s
+
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.o: sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.o
+
+# target to build an object file
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o
+
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.i: sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.i
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.i
+
+# target to preprocess a source file
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.i
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.i
+
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.s: sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.s
+
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.s
+
+# target to generate assembly for a file
+sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.s
+.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.s
 
 sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.o: sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o
 
@@ -3255,6 +3579,33 @@ test/dll_l_test.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/dll_l_test.c.s
 .PHONY : test/dll_l_test.c.s
 
+test/dll_test.o: test/dll_test.c.o
+
+.PHONY : test/dll_test.o
+
+# target to build an object file
+test/dll_test.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/dll_test.c.o
+.PHONY : test/dll_test.c.o
+
+test/dll_test.i: test/dll_test.c.i
+
+.PHONY : test/dll_test.i
+
+# target to preprocess a source file
+test/dll_test.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/dll_test.c.i
+.PHONY : test/dll_test.c.i
+
+test/dll_test.s: test/dll_test.c.s
+
+.PHONY : test/dll_test.s
+
+# target to generate assembly for a file
+test/dll_test.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/dll_test.c.s
+.PHONY : test/dll_test.c.s
+
 test/sll_l_test.o: test/sll_l_test.c.o
 
 .PHONY : test/sll_l_test.o
@@ -3339,6 +3690,36 @@ help:
 	@echo "... sources/src/argv/src/get_next_argv_2.o"
 	@echo "... sources/src/argv/src/get_next_argv_2.i"
 	@echo "... sources/src/argv/src/get_next_argv_2.s"
+	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_nb.o"
+	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_nb.i"
+	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_nb.s"
+	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_str.o"
+	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_str.i"
+	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_str.s"
+	@echo "... sources/src/list/double_list/double_linked_list/dll_construct.o"
+	@echo "... sources/src/list/double_list/double_linked_list/dll_construct.i"
+	@echo "... sources/src/list/double_list/double_linked_list/dll_construct.s"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_add.o"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_add.i"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_add.s"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_end.o"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_end.i"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_end.s"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_index.o"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_index.i"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_index.s"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_top.o"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_top.i"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_drop_top.s"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_index.o"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_index.i"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_index.s"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_push.o"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_push.i"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_push.s"
+	@echo "... sources/src/list/double_list/double_linked_list/utils.o"
+	@echo "... sources/src/list/double_list/double_linked_list/utils.i"
+	@echo "... sources/src/list/double_list/double_linked_list/utils.s"
 	@echo "... sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.o"
 	@echo "... sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.i"
 	@echo "... sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.s"
@@ -3369,12 +3750,18 @@ help:
 	@echo "... sources/src/list/simple_list/simple_linked_list/sll_construct.o"
 	@echo "... sources/src/list/simple_list/simple_linked_list/sll_construct.i"
 	@echo "... sources/src/list/simple_list/simple_linked_list/sll_construct.s"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/drop_utils.o"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/drop_utils.i"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/drop_utils.s"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.o"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.i"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.s"
-	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop.o"
-	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop.i"
-	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop.s"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.i"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.s"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.o"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.i"
+	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.s"
 	@echo "... sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.o"
 	@echo "... sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.i"
 	@echo "... sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.s"
@@ -3666,6 +4053,9 @@ help:
 	@echo "... test/dll_l_test.o"
 	@echo "... test/dll_l_test.i"
 	@echo "... test/dll_l_test.s"
+	@echo "... test/dll_test.o"
+	@echo "... test/dll_test.i"
+	@echo "... test/dll_test.s"
 	@echo "... test/sll_l_test.o"
 	@echo "... test/sll_l_test.i"
 	@echo "... test/sll_l_test.s"

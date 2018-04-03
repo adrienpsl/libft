@@ -12,14 +12,28 @@
 
 #include "../../../../../ft_library_header.h"
 
-
-t_sll_l sll_add(t_sll_l link, t_sll list)
+void dll_print_nb(t_dll lst)
 {
-	if (list->top == NULL)
-		list->top = link;
-	else
-		list->tail->next = link;
-	list->tail = link;
-	list->lenght += 1;
-	return (link);
+	t_dll_l link;
+
+	link = lst->top;
+	while (link)
+	{
+		ft_printf("%d ", get_int_ddl_l(link));
+		link = link->next;
+	}
+	ft_printf(" -- end \n");
+}
+
+void dll_print_nbrev(t_dll lst)
+{
+	t_dll_l link;
+
+	link = lst->end;
+	while (link)
+	{
+		ft_printf("%d ", get_int_ddl_l(link));
+		link = link->prev;
+	}
+	ft_printf(" -- end \n");
 }

@@ -85,19 +85,22 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/main.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/argv_header.h">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/dll_header.h">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h">
-			<Option target="library"/>
-		</Unit>
-		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h">
@@ -142,6 +145,36 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/argv/src/get_next_argv_2.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/dll_construct.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_add.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_index.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_push.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/utils.c">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c">
 			<Option target="library"/>
 		</Unit>
@@ -172,10 +205,16 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/sll_construct.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c">
 			<Option target="library"/>
 		</Unit>
-		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c">
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c">
@@ -467,6 +506,9 @@
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/test/dll_l_test.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/test/dll_test.c">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/test/sll_l_test.c">

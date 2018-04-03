@@ -12,7 +12,6 @@ typedef struct		s_sll
 	size_t			lenght;
 	t_sll_l 		top;
 	t_sll_l			tail;
-
 }					*t_sll;
 
 /*
@@ -26,6 +25,8 @@ t_sll new_sll();
 */
 t_sll_l sll_add(t_sll_l link, t_sll list);
 t_sll_l sll_drop_link(t_sll_l link, t_sll list);
+t_sll_l sll_drop_index(t_sll_l link, t_sll list);
+
 
 /*
 **    utils ====================================================================

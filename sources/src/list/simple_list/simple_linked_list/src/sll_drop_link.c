@@ -12,37 +12,44 @@
 
 #include "../../../../../ft_library_header.h"
 
-static t_sll_l one_el(t_sll_l link, t_sll list)
+static int one_el(t_sll_l link, t_sll list)
 {
 	if (link != list->top)
-		return (NULL);
-	list->top = NULL;
-	list->tail = NULL;
-	return (link);
+		return (FALSE);
+	else
+	{
+		list->top = NULL;
+		list->tail = NULL;
+		return (TRUE);
+	}
 }
 
-static t_sll_l two_el(t_sll_l link, t_sll list)
+static int two_el(t_sll_l link, t_sll list)
 {
 	if (link == list->top)
 	{
 		list->top = link->next;
 		link->next = NULL;
-		return (link);
+		return (TRUE);
 	}
 	if (link == list->tail)
 	{
-		list->top->next = NULL;
 		list->tail = list->top;
-		return (link);
+		list->tail->next = NULL;
+		return (TRUE);
 	}
-	return (NULL);
+	return (FALSE);
 }
 
-static t_sll_l more_el(t_sll_l link, t_sll list)
+static int more_el(t_sll_l link, t_sll list)
 {
 	t_sll_l prev;
 
 	prev = list->top;
+
+	// if head --> action
+	// controle de debut et start
+	// si debut == un truc
 	while (prev && prev->next != link)
 	{
 		prev = prev->next;
@@ -50,31 +57,34 @@ static t_sll_l more_el(t_sll_l link, t_sll list)
 	if (prev && prev->next == link)
 	{
 		prev->next = link->next;
-		return (link);
+		// si fin un truc
+		return (TRUE);
 	}
 	else
-		return (NULL);
-}
-
-static int link_is_top_tail(t_sll_l link, t_sll list)
-{
-	return (link == list->top || link == list->tail);
+		return (FALSE);
 }
 
 t_sll_l sll_drop_link(t_sll_l link, t_sll list)
 {
-	t_sll_l out_link;
+	int find;
 
-	out_link = NULL;
+	find = FALSE;
 	if (list->lenght == 0)
 		return (NULL);
+
 	else if (list->lenght == 1)
-		out_link = one_el(link, list);
-	else if (list->lenght == 2 || link_is_top_tail(link, list))
-		out_link = two_el(link, list);
+		find = one_el(link, list);
+
+
+	else if (list->lenght == 2)
+		find = two_el(link, list);
+
+
 	else
-		out_link = more_el(link, list);
-	if (out_link != NULL)
+		find = more_el(link, list);
+
+
+	if (find != FALSE)
 		list->lenght -= 1;
-	return (out_link);
+	return (find != FALSE ? link : NULL);
 }

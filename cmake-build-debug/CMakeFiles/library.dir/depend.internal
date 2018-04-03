@@ -6,9 +6,9 @@ CMakeFiles/library.dir/main.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -21,9 +21,9 @@ CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -37,9 +37,9 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -53,9 +53,9 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -69,9 +69,9 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -85,9 +85,9 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -101,9 +101,9 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -113,13 +113,173 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o
  /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/src/argv/src/get_next_argv_2.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/dll_construct.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_add.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_index.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_push.c
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/utils.c
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -133,9 +293,9 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -149,9 +309,9 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -165,9 +325,9 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -181,9 +341,9 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -197,9 +357,9 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -213,9 +373,9 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -229,9 +389,9 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -245,9 +405,9 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -261,9 +421,9 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_const
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -273,13 +433,29 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_const
  /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/sll_construct.c
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -289,13 +465,15 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_a
  /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c.o
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
+ /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c
+CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -304,14 +482,14 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_d
  /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
- /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop.c
+ /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -325,9 +503,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -341,9 +519,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -357,9 +535,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -373,9 +551,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memalloc.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -389,9 +567,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memccpy.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -405,9 +583,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memchr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -421,9 +599,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memcmp.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -437,9 +615,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memcpy.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -453,9 +631,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memdel.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -469,9 +647,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memmove.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -485,9 +663,9 @@ CMakeFiles/library.dir/sources/src/memory/ft_memset.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -501,9 +679,9 @@ CMakeFiles/library.dir/sources/src/memory/soa.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -517,9 +695,9 @@ CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -533,9 +711,9 @@ CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -549,9 +727,9 @@ CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -565,9 +743,9 @@ CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -581,9 +759,9 @@ CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -597,9 +775,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -613,9 +791,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -629,9 +807,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_interger_n.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -645,9 +823,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/head_integer_unsigned
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -661,9 +839,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned/utils_unsigned_intege
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -677,9 +855,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsign
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -693,9 +871,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsign
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -709,9 +887,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsign
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -725,9 +903,9 @@ CMakeFiles/library.dir/sources/src/printf/data/nb/unsigned_variation/head_unsign
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -741,9 +919,9 @@ CMakeFiles/library.dir/sources/src/printf/data/text/char/head_char.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -757,9 +935,9 @@ CMakeFiles/library.dir/sources/src/printf/data/text/other/head_percent.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -773,9 +951,9 @@ CMakeFiles/library.dir/sources/src/printf/data/text/str/manage_str.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -789,9 +967,9 @@ CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -805,9 +983,9 @@ CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -821,9 +999,9 @@ CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -837,9 +1015,9 @@ CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -853,9 +1031,9 @@ CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -869,9 +1047,9 @@ CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -885,9 +1063,9 @@ CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -901,9 +1079,9 @@ CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -917,9 +1095,9 @@ CMakeFiles/library.dir/sources/src/printf/utils_main.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -933,9 +1111,9 @@ CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -949,9 +1127,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -965,9 +1143,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -981,9 +1159,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -997,9 +1175,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1013,9 +1191,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1029,9 +1207,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1045,9 +1223,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1061,9 +1239,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1077,9 +1255,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1093,9 +1271,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1109,9 +1287,9 @@ CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1125,9 +1303,9 @@ CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1141,9 +1319,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1157,9 +1335,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1173,9 +1351,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1189,9 +1367,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1205,9 +1383,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1221,9 +1399,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1237,9 +1415,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1253,9 +1431,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1269,9 +1447,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1285,9 +1463,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1301,9 +1479,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1317,9 +1495,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1333,9 +1511,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1349,9 +1527,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1365,9 +1543,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1381,9 +1559,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1397,9 +1575,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1413,9 +1591,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1429,9 +1607,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1445,9 +1623,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1461,9 +1639,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1477,9 +1655,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1493,9 +1671,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1509,9 +1687,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1525,9 +1703,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1541,9 +1719,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1557,9 +1735,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1573,9 +1751,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1589,9 +1767,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1605,9 +1783,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1621,9 +1799,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1637,9 +1815,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1653,9 +1831,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1669,9 +1847,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1685,9 +1863,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1701,9 +1879,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1717,9 +1895,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1733,9 +1911,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1749,9 +1927,9 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1765,9 +1943,9 @@ CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1781,9 +1959,9 @@ CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1801,9 +1979,9 @@ CMakeFiles/library.dir/test/dll_c_test.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1817,9 +1995,9 @@ CMakeFiles/library.dir/test/dll_l_test.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
@@ -1829,13 +2007,29 @@ CMakeFiles/library.dir/test/dll_l_test.c.o
  /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
  /Users/adpusel/Dropbox/42/library/test/dll_l_test.c
+CMakeFiles/library.dir/test/dll_test.c.o
+ /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+ /Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+ /Users/adpusel/Dropbox/42/library/test/dll_test.c
 CMakeFiles/library.dir/test/sll_l_test.c.o
  /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+ /Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
- /Users/adpusel/Dropbox/42/library/sources/include/libft_d_lst_function.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
  /Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h

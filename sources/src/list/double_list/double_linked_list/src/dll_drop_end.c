@@ -12,14 +12,22 @@
 
 #include "../../../../../ft_library_header.h"
 
-
-t_sll_l sll_add(t_sll_l link, t_sll list)
+t_dll_l dll_drop_end(t_dll list)
 {
-	if (list->top == NULL)
-		list->top = link;
-	else
-		list->tail->next = link;
-	list->tail = link;
-	list->lenght += 1;
+	t_dll_l link;
+	t_dll_l new_end;
+
+	if (list->length == 0)
+		return (NULL);
+	else if (list->length == 1)
+		return (dll_drop_list_one(list));
+	link = list->end;
+	new_end = list->end->prev;
+
+	list->end = new_end;
+	new_end->next = NULL;
+
+	reset_ptr_dll_l(link);
+	list->length -= 1;
 	return (link);
 }

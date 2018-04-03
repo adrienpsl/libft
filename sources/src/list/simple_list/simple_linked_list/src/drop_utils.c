@@ -12,14 +12,12 @@
 
 #include "../../../../../ft_library_header.h"
 
-
-t_sll_l sll_add(t_sll_l link, t_sll list)
+int sll_link_is_top(t_sll_l link, t_sll list)
 {
-	if (list->top == NULL)
-		list->top = link;
-	else
-		list->tail->next = link;
-	list->tail = link;
-	list->lenght += 1;
-	return (link);
+	return (link == list->top);
+}
+
+int sll_link_is_tail(t_sll_l link, t_sll list)
+{
+	return (link == list->tail);
 }

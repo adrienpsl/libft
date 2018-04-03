@@ -51,6 +51,7 @@ static void test__3_() // test avec des datas
 static void test__4_() // drop link
 {
 	init();
+	t_sll  ok = list_test;
 	char *str = "test 4 \n ";
 	(void) str;
 	t_sll_l link1 = new_sll_l("1", 2);
@@ -140,6 +141,7 @@ static void test__4_() // drop link
 	printf("-------- end test 4 -------\n");
 
 	destroy();
+	(void)ok;
 }
 
 void all_test_sll()
@@ -149,9 +151,9 @@ void all_test_sll()
 	test__3_();
 	test__4_();
 }
-
-int main()
-{
-	all_test_sll();
-	return (0);
-}
+//
+//int main()
+//{
+//	all_test_sll();
+//	return (0);
+//}

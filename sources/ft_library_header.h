@@ -33,25 +33,18 @@
 # include "include/libft_nb_function.h"
 
 /*
-**  function sll_l
+**    List ===========================================================
+*/
+
+/*
+**  simple linked list link
 */
 # include "include/sll_l_header.h"
 
 /*
-**    function sll
+**    simple linked list
 */
 # include "include/sll_header.h"
-
-/*
-**  function d_lst
-*/
-# include "include/libft_d_lst_function.h"
-
-/*
-**    debug
-*/
-#include "include/libft_debug.h"
-
 
 /*
 **	double linked list link
@@ -59,9 +52,23 @@
 # include "include/dll_l_header.h"
 
 /*
+**    double linked link
+*/
+# include "include/dll_header.h"
+
+/*
 **	double linked circular list
 */
 # include "include/dll_c_header.h"
+
+/*
+**    end list ========================================================
+*/
+
+/*
+**    debug
+*/
+#include "include/libft_debug.h"
 
 /*
 **    object argv

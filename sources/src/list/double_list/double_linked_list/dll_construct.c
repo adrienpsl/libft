@@ -10,16 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../../../ft_library_header.h"
+#include "../../../../ft_library_header.h"
 
-
-t_sll_l sll_add(t_sll_l link, t_sll list)
+static void destroy_all_links(t_dll list)
 {
-	if (list->top == NULL)
-		list->top = link;
-	else
-		list->tail->next = link;
-	list->tail = link;
-	list->lenght += 1;
-	return (link);
+	t_dll_l current_link;
+	t_dll_l next_link;
+
+	current_link = list->top;
+	while (current_link)
+	{
+		next_link = current_link->next;
+		destroy_dll_l(&current_link);
+		current_link = next_link;
+	}
+	list->length = 0;
+}
+
+void destroy_dll(t_dll *l)
+{
+	t_dll list;
+
+	list = *l;
+	destroy_all_links(list);
+	list->top = NULL;
+	list->end = NULL;
+	free(list);
+}
+
+t_dll new_dll()
+{
+	t_dll list;
+
+	list = ft_malloc_protect(sizeof(struct s_dll));
+	list->top = NULL;
+	list->length = 0;
+	return (list);
 }
