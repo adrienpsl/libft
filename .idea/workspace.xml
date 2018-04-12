@@ -12,7 +12,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6fcdac-d57d-4142-83fc-c90e1e89e6ef" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/sources/src/debug/print_tab.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/src/sort/quick_sort_dll.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/quick_sort_test.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/test/dll_c_test.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/test/dll_c_test.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/library" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/library.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/library.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/library.dSYM/Contents/Resources/DWARF/library" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/library.dSYM/Contents/Resources/DWARF/library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/include/dll_l_header.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/include/dll_l_header.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/include/libft_debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/include/libft_debug.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dll_c_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test/dll_c_test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/dll_test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test/dll_test.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,53 +55,74 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dll_test.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/dll_test.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
-              <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dll_construct.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/dll_construct.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dll_drop_end.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dll_l_construct.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dll_l_header.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/include/dll_l_header.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.58779913">
+      <split-first>
+        <splitter split-orientation="horizontal" split-proportion="0.5">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="ft_quick_sort.c" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="592">
+                      <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="quick_sort_dll.c" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/sources/src/sort/quick_sort_dll.c">
+                  <provider selected="true" editor-type-id="text-editor" />
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="print_tab.c" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/sources/src/debug/print_tab.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="496">
+                      <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="quick_sort_test.c" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/test/quick_sort_test.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="112">
+                      <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="quick_sort_dll.c" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sources/src/sort/quick_sort_dll.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="794">
+                  <caret line="65" column="20" selection-start-column="2" selection-end-line="72" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dll_l_get_content.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="224">
+                  <caret line="14" column="17" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,6 +155,9 @@
       <find>dll_c</find>
       <find>new_top</find>
       <find>top</find>
+      <find>ddl_l_get_int</find>
+      <find>get_int_ddl_l</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>include/</replace>
@@ -115,6 +170,8 @@
       <replace>list</replace>
       <replace>new_end</replace>
       <replace>end</replace>
+      <replace>dll_l_get_int</replace>
+      <replace>,</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/sources/src/string</dir>
@@ -132,11 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/include/sll_l_header.h" />
-        <option value="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/test/...gitignore" />
-        <option value="$PROJECT_DIR$/sources/src/printf/buffer/head_buffer.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/float/head_double.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/integer/head_integer_signed.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/integer/head_interger_n.c" />
@@ -182,7 +234,12 @@
         <option value="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/src/dll_index.c" />
         <option value="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/utils.c" />
         <option value="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c" />
+        <option value="$PROJECT_DIR$/sources/src/sort/quick_sort_dll.c" />
         <option value="$PROJECT_DIR$/test/dll_test.c" />
+        <option value="$PROJECT_DIR$/sources/include/libft_debug.h" />
+        <option value="$PROJECT_DIR$/sources/src/debug/print_tab.c" />
+        <option value="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" />
+        <option value="$PROJECT_DIR$/test/quick_sort_test.c" />
       </list>
     </option>
   </component>
@@ -234,44 +291,7 @@
               <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-              <item name="double_list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-              <item name="double_list" type="462c0819:PsiDirectoryNode" />
-              <item name="double_linked_list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-              <item name="double_list" type="462c0819:PsiDirectoryNode" />
-              <item name="double_linked_list" type="462c0819:PsiDirectoryNode" />
-              <item name="debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-              <item name="double_list" type="462c0819:PsiDirectoryNode" />
-              <item name="double_linked_list" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="argv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="library" type="b2602c69:ProjectViewProjectNode" />
@@ -286,7 +306,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="buff_set_or_print&#9;null&#9;null&#10;ft_lst_reverse&#9;null&#9;null&#10;c&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/CMakeLists.txt" />
+    <property name="SearchEverywhereHistoryKey" value="quick&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/sources/src/sort/ft_quick_sort.c&#10;buff_set_or_print&#9;null&#9;null&#10;ft_lst_reverse&#9;null&#9;null&#10;c&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/CMakeLists.txt" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -361,35 +381,35 @@
       <workItem from="1523367336100" duration="413000" />
       <workItem from="1523385621788" duration="12000" />
       <workItem from="1523491034359" duration="599000" />
-      <workItem from="1523527490935" duration="267000" />
+      <workItem from="1523527490935" duration="6485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61359000" />
+    <option name="totallyTimeSpent" value="67577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="3440" height="1440" extended-state="6" />
+    <frame x="0" y="0" width="3440" height="1436" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1322024" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.36370426" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32893774" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21688889" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21657954" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23603871" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23603871" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.21318682" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.36444443" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="CMake" order="1" weight="0.32917964" />
@@ -441,55 +461,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/include/dll_l_header.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/utils_main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/parseur/parseur_flag.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/data/manage_before_printer.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/data/text/str/manage_str.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="34" selection-start-line="12" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/src/printf/data/text/other/head_percent.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -772,24 +743,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/dll_test.c">
+    <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/include/dll_l_header.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="224">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -800,10 +757,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/include/dll_l_header.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/dll_construct.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/dll_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/argv/argv_contruct.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/sort/quick_sort_dll.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/include/libft_debug.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/debug/print_tab.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/quick_sort_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>

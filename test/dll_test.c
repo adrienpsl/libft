@@ -201,8 +201,8 @@ void all_test_dll()
 	test__4_();
 }
 
-int main()
-{
-	all_test_dll();
-	return (0);
-}
+//int main()
+//{
+//	all_test_dll();
+//	return (0);
+//}

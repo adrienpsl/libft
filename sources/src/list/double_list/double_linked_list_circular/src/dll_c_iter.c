@@ -24,7 +24,7 @@ t_dll_l dll_l_iter_int(t_dll_c c_list, int nb, int(*func)(int, int))
 	current_link = c_list->top;
 	while (i != 0)
 	{
-	    if (func(get_int_ddl_l(current_link), nb))
+	    if (func(dll_l_get_int(current_link), nb))
 			return (current_link);
 		current_link = current_link->next;
 		i--;

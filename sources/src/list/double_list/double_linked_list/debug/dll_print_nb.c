@@ -19,7 +19,7 @@ void dll_print_nb(t_dll lst)
 	link = lst->top;
 	while (link)
 	{
-		ft_printf("%d ", get_int_ddl_l(link));
+		ft_printf("%d ", dll_l_get_int(link));
 		link = link->next;
 	}
 	ft_printf(" -- end \n");
@@ -32,7 +32,7 @@ void dll_print_nbrev(t_dll lst)
 	link = lst->end;
 	while (link)
 	{
-		ft_printf("%d ", get_int_ddl_l(link));
+		ft_printf("%d ", dll_l_get_int(link));
 		link = link->prev;
 	}
 	ft_printf(" -- end \n");

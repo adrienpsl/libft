@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/library.dir/main.c.o"
   "CMakeFiles/library.dir/sources/src/argv/argv_contruct.c.o"
+  "CMakeFiles/library.dir/sources/src/debug/print_tab.c.o"
   "CMakeFiles/library.dir/sources/src/memory/ft_bzero.c.o"
   "CMakeFiles/library.dir/sources/src/memory/ft_exit_lack_memory.c.o"
   "CMakeFiles/library.dir/sources/src/memory/ft_malloc_protect.c.o"
@@ -19,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o"
   "CMakeFiles/library.dir/sources/src/printf/utils_main.c.o"
   "CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o"
+  "CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o"
   "CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o"
   "CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o"
   "CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o"
@@ -128,6 +130,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/library.dir/test/dll_c_test.c.o"
   "CMakeFiles/library.dir/test/dll_l_test.c.o"
   "CMakeFiles/library.dir/test/dll_test.c.o"
+  "CMakeFiles/library.dir/test/quick_sort_test.c.o"
   "CMakeFiles/library.dir/test/sll_l_test.c.o"
   "CMakeFiles/library.dir/test/sll_test.c.o"
   "library.pdb"

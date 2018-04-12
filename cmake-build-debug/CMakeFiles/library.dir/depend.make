@@ -113,6 +113,22 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/incl
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/src/argv/src/get_next_argv_2.c
 
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/dll_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/debug/print_tab.c.o: ../sources/src/debug/print_tab.c
+
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o: ../sources/include/argv_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o: ../sources/include/dll_c_header.h
@@ -1123,6 +1139,8 @@ CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/sl
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/src/sort/ft_quick_sort.c
 
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/src/sort/quick_sort_dll.c
+
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/argv_header.h
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/include/dll_c_header.h
@@ -2022,6 +2040,22 @@ CMakeFiles/library.dir/test/dll_test.c.o: ../sources/include/printf_header.h
 CMakeFiles/library.dir/test/dll_test.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/test/dll_test.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/test/dll_test.c.o: ../test/dll_test.c
+
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/dll_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/test/quick_sort_test.c.o: ../test/quick_sort_test.c
 
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/test/sll_l_test.c.o: ../sources/include/argv_header.h

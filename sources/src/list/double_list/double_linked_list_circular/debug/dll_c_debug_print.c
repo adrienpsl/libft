@@ -21,7 +21,7 @@ void dll_c_print_lst(t_dll_c lst)
 		return;
 	while (i != -1)
 	{
-		ft_printf("%2d ", get_int_ddl_l(link));
+		ft_printf("%2d ", dll_l_get_int(link));
 		i--;
 		if (i == 0)
 			ft_printf(" -- ");
@@ -39,7 +39,7 @@ void dll_c_print_lst_reverse(t_dll_c lst)
 		return;
 	while (i != -1)
 	{
-		ft_printf("%d ", get_int_ddl_l(link));
+		ft_printf("%d ", dll_l_get_int(link));
 		i--;
 		if (i == 0)
 			ft_printf(" -- ");

@@ -42,7 +42,7 @@ void reset_ptr_dll_l(t_dll_l link);
 /*
 **    getter data
 */
-int get_int_ddl_l(t_dll_l link);
+int dll_l_get_int(t_dll_l link);
 
 
 #endif

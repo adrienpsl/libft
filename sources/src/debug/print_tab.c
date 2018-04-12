@@ -10,9 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../../../../ft_library_header.h"
+#include "../../ft_library_header.h"
 
-int dll_l_get_int(t_dll_l link)
+void     debug_print_tab_str(char **t)
 {
-	return (*(int*)link->content);
+	while (*t != NULL)
+	{
+	    ft_printf(*t);
+	    ft_printf("\n");
+	    t++;
+	}
+}
+
+void     debug_print_tab_nb(int tab[], int lim)
+{
+	int i;
+	
+	i = 0;
+	while (i < lim)
+	{
+		ft_printf("%d ", tab[i]);
+		i++;
+	}
+	ft_printf("\n");
 }

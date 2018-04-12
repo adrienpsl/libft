@@ -124,6 +124,10 @@ stdlib.h
 ../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 
+/Users/adpusel/Dropbox/42/library/sources/src/debug/print_tab.c
+../../ft_library_header.h
+/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+
 /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c
 ../../../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
@@ -380,6 +384,8 @@ limits.h
 ../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 
+/Users/adpusel/Dropbox/42/library/sources/src/sort/quick_sort_dll.c
+
 /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_free_doublechar_tab.c
 ../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
@@ -605,6 +611,10 @@ limits.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 
 /Users/adpusel/Dropbox/42/library/test/dll_test.c
+../sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+
+/Users/adpusel/Dropbox/42/library/test/quick_sort_test.c
 ../sources/ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 

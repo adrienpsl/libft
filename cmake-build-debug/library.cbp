@@ -145,6 +145,9 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/argv/src/get_next_argv_2.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/debug/print_tab.c">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c">
 			<Option target="library"/>
 		</Unit>
@@ -337,6 +340,9 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/sort/ft_quick_sort.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/sort/quick_sort_dll.c">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_free_doublechar_tab.c">
 			<Option target="library"/>
 		</Unit>
@@ -509,6 +515,9 @@
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/test/dll_test.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/test/quick_sort_test.c">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/test/sll_l_test.c">

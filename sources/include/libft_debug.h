@@ -4,7 +4,7 @@
 /*
 **    str debug
 */
-void     print_tab_str(char **t);
-
+void     debug_print_tab_str(char **t);
+void     debug_print_tab_nb(int tab[], int lim);
 
 #endif

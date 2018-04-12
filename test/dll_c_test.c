@@ -140,13 +140,13 @@ static void test__8_() // drop de 2 link;
 	dll_c_push_link(link2, test_list1);
 
 	tmp = dll_c_drop_link(test_list1);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 	destroy_dll_l(&tmp);
 
 	tmp = dll_c_drop_link(test_list1);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 	destroy_dll_l(&tmp);
@@ -175,19 +175,19 @@ static void test__9_() // drop de 3 link;
 	dll_c_push_link(link3, test_list1);
 
 	tmp = dll_c_drop_link(test_list1);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 	destroy_dll_l(&tmp);
 
 	tmp = dll_c_drop_link(test_list1);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 	destroy_dll_l(&tmp);
 
 	tmp = dll_c_drop_link(test_list1);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 	destroy_dll_l(&tmp);
@@ -217,19 +217,19 @@ static void test__10_() // drop et repush  de 3 link;
 
 	tmp = dll_c_drop_link(test_list1);
 	dll_c_push_link(tmp, test_list2);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 
 	tmp = dll_c_drop_link(test_list1);
 	dll_c_push_link(tmp, test_list2);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 
 	tmp = dll_c_drop_link(test_list1);
 	dll_c_push_link(tmp, test_list2);
-	printf("%d \n", get_int_ddl_l(tmp));
+	printf("%d \n", dll_l_get_int(tmp));
 	dll_c_print_lst(test_list1);
 	dll_c_print_lst(test_list2);
 

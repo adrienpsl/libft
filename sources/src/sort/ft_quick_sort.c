@@ -12,7 +12,7 @@
 
 #include "../../ft_library_header.h"
 
-static void		swap(int tab[], int a, int b)
+static void swap(int tab[], int a, int b)
 {
 	int temp;
 
@@ -21,29 +21,35 @@ static void		swap(int tab[], int a, int b)
 	tab[b] = temp;
 }
 
-void			ft_quick_sort(int *tab, int start, int end, int last)
+void ft_quick_sort(int *tab, int start, int end, int last)
 {
 	int left;
 	int right;
 	int pivot;
 
-
 	pivot = tab[start];
-	left = (start - 1) < 0 ? start : start - 1;
-	right = end + 1 > last ? last : end + 1;
+	left = start;
+	right = end;
 	if (start >= end)
-		return ;
+		return;
 	while (1)
 	{
-		while (tab[right] > pivot)
-			right--;
 		while (tab[left] < pivot)
+		{
 			left++;
+		}
+		while (tab[right] > pivot)
+		{
+			right--;
+		}
 		if (left < right)
+		{
 			swap(tab, left, right);
+		}
 		else
-			break ;
+			break;
 	}
 	ft_quick_sort(tab, start, right, last);
 	ft_quick_sort(tab, right + 1, end, last);
 }
+

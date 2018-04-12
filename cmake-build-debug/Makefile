@@ -312,6 +312,33 @@ sources/src/argv/src/get_next_argv_2.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.s
 .PHONY : sources/src/argv/src/get_next_argv_2.c.s
 
+sources/src/debug/print_tab.o: sources/src/debug/print_tab.c.o
+
+.PHONY : sources/src/debug/print_tab.o
+
+# target to build an object file
+sources/src/debug/print_tab.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/debug/print_tab.c.o
+.PHONY : sources/src/debug/print_tab.c.o
+
+sources/src/debug/print_tab.i: sources/src/debug/print_tab.c.i
+
+.PHONY : sources/src/debug/print_tab.i
+
+# target to preprocess a source file
+sources/src/debug/print_tab.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/debug/print_tab.c.i
+.PHONY : sources/src/debug/print_tab.c.i
+
+sources/src/debug/print_tab.s: sources/src/debug/print_tab.c.s
+
+.PHONY : sources/src/debug/print_tab.s
+
+# target to generate assembly for a file
+sources/src/debug/print_tab.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/debug/print_tab.c.s
+.PHONY : sources/src/debug/print_tab.c.s
+
 sources/src/list/double_list/double_linked_list/debug/dll_print_nb.o: sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o
 
 .PHONY : sources/src/list/double_list/double_linked_list/debug/dll_print_nb.o
@@ -2040,6 +2067,33 @@ sources/src/sort/ft_quick_sort.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.s
 .PHONY : sources/src/sort/ft_quick_sort.c.s
 
+sources/src/sort/quick_sort_dll.o: sources/src/sort/quick_sort_dll.c.o
+
+.PHONY : sources/src/sort/quick_sort_dll.o
+
+# target to build an object file
+sources/src/sort/quick_sort_dll.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o
+.PHONY : sources/src/sort/quick_sort_dll.c.o
+
+sources/src/sort/quick_sort_dll.i: sources/src/sort/quick_sort_dll.c.i
+
+.PHONY : sources/src/sort/quick_sort_dll.i
+
+# target to preprocess a source file
+sources/src/sort/quick_sort_dll.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.i
+.PHONY : sources/src/sort/quick_sort_dll.c.i
+
+sources/src/sort/quick_sort_dll.s: sources/src/sort/quick_sort_dll.c.s
+
+.PHONY : sources/src/sort/quick_sort_dll.s
+
+# target to generate assembly for a file
+sources/src/sort/quick_sort_dll.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.s
+.PHONY : sources/src/sort/quick_sort_dll.c.s
+
 sources/src/string/char/ft_free_doublechar_tab.o: sources/src/string/char/ft_free_doublechar_tab.c.o
 
 .PHONY : sources/src/string/char/ft_free_doublechar_tab.o
@@ -3606,6 +3660,33 @@ test/dll_test.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/dll_test.c.s
 .PHONY : test/dll_test.c.s
 
+test/quick_sort_test.o: test/quick_sort_test.c.o
+
+.PHONY : test/quick_sort_test.o
+
+# target to build an object file
+test/quick_sort_test.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/quick_sort_test.c.o
+.PHONY : test/quick_sort_test.c.o
+
+test/quick_sort_test.i: test/quick_sort_test.c.i
+
+.PHONY : test/quick_sort_test.i
+
+# target to preprocess a source file
+test/quick_sort_test.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/quick_sort_test.c.i
+.PHONY : test/quick_sort_test.c.i
+
+test/quick_sort_test.s: test/quick_sort_test.c.s
+
+.PHONY : test/quick_sort_test.s
+
+# target to generate assembly for a file
+test/quick_sort_test.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/test/quick_sort_test.c.s
+.PHONY : test/quick_sort_test.c.s
+
 test/sll_l_test.o: test/sll_l_test.c.o
 
 .PHONY : test/sll_l_test.o
@@ -3690,6 +3771,9 @@ help:
 	@echo "... sources/src/argv/src/get_next_argv_2.o"
 	@echo "... sources/src/argv/src/get_next_argv_2.i"
 	@echo "... sources/src/argv/src/get_next_argv_2.s"
+	@echo "... sources/src/debug/print_tab.o"
+	@echo "... sources/src/debug/print_tab.i"
+	@echo "... sources/src/debug/print_tab.s"
 	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_nb.o"
 	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_nb.i"
 	@echo "... sources/src/list/double_list/double_linked_list/debug/dll_print_nb.s"
@@ -3882,6 +3966,9 @@ help:
 	@echo "... sources/src/sort/ft_quick_sort.o"
 	@echo "... sources/src/sort/ft_quick_sort.i"
 	@echo "... sources/src/sort/ft_quick_sort.s"
+	@echo "... sources/src/sort/quick_sort_dll.o"
+	@echo "... sources/src/sort/quick_sort_dll.i"
+	@echo "... sources/src/sort/quick_sort_dll.s"
 	@echo "... sources/src/string/char/ft_free_doublechar_tab.o"
 	@echo "... sources/src/string/char/ft_free_doublechar_tab.i"
 	@echo "... sources/src/string/char/ft_free_doublechar_tab.s"
@@ -4056,6 +4143,9 @@ help:
 	@echo "... test/dll_test.o"
 	@echo "... test/dll_test.i"
 	@echo "... test/dll_test.s"
+	@echo "... test/quick_sort_test.o"
+	@echo "... test/quick_sort_test.i"
+	@echo "... test/quick_sort_test.s"
 	@echo "... test/sll_l_test.o"
 	@echo "... test/sll_l_test.i"
 	@echo "... test/sll_l_test.s"
