@@ -75,7 +75,8 @@
 */
 # include "include/argv_header.h"
 
-void			ft_quick_sort(int *tab, int start, int end, int last);
+void			ft_quick_sort(int *tab, int start, int end);
+void ft_quick_sort_dll(t_dll_l start, t_dll_l end, t_dll list );
 
 
 #endif

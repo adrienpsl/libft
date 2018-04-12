@@ -1139,6 +1139,20 @@ CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/sl
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/src/sort/ft_quick_sort.c
 
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/dll_header.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/src/sort/quick_sort_dll.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/ft_library_header.h
