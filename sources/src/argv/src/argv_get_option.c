@@ -23,6 +23,10 @@ int is_an_option(char *option, t_argv argv)
 			return (TRUE);
 		}
 	}
+	else if (option[0] == '-' && ft_isdigit(option[1]))
+	{
+		return (FALSE);
+	}
 	else if (option[0] == '-')
 		argv_error("no good option");
 	return (FALSE);
