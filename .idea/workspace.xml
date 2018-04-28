@@ -12,30 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6fcdac-d57d-4142-83fc-c90e1e89e6ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/library.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/library" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/library" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/library.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/library.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/include/dll_c_header.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/include/dll_c_header.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/include/dll_header.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/include/dll_header.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/include/libft_define.h" beforeDir="false" afterPath="$PROJECT_DIR$/sources/include/libft_define.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/debug/print_tab.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/debug/print_tab.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/src/sort/quick_sort_dll.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/src/sort/quick_sort_dll.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +23,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="dll_c_header.h" pinned="false" current-in-tab="false">
@@ -60,17 +37,31 @@
       <file leaf-file-name="ft_library_header.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/ft_library_header.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="807">
               <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ft_quick_sort.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="note" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/note">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_quick_sort.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -142,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/src/printf/data/nb/integer/head_integer_signed.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/integer/head_interger_n.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c" />
@@ -193,6 +183,7 @@
         <option value="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/note" />
+        <option value="$PROJECT_DIR$/Makefile" />
       </list>
     </option>
   </component>
@@ -204,10 +195,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="3440" />
-    <option name="y" value="169" />
-    <option name="width" value="1920" />
-    <option name="height" value="1058" />
+    <option name="x" value="307" />
+    <option name="y" value="18" />
+    <option name="width" value="2749" />
+    <option name="height" value="1331" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -229,12 +220,6 @@
               <item name="library" type="b2602c69:ProjectViewProjectNode" />
               <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,12 +264,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.library">
+  <component name="RunManager" selected="Makefile.Makefile">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="library" RUN_TARGET_NAME="library" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="library" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="library" TARGET_NAME="library" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="library" RUN_TARGET_NAME="library" />
+    <configuration name="Makefile" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+    </configuration>
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.library" />
+      <item itemvalue="Makefile.Makefile" />
     </list>
   </component>
   <component name="TaskManager">
@@ -321,26 +312,26 @@
       <workItem from="1523527490935" duration="9129000" />
       <workItem from="1524927135656" duration="37000" />
       <workItem from="1524927448545" duration="712000" />
-      <workItem from="1524928394829" duration="1208000" />
+      <workItem from="1524928394829" duration="4430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72224000" />
+    <option name="totallyTimeSpent" value="75446000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3440" y="169" width="1920" height="1058" extended-state="0" />
+    <frame x="307" y="18" width="2749" height="1331" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30279094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21077712" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.36370426" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32893774" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21644121" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21644121" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23517169" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.18314424" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2128454" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -427,13 +418,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/data/text/char/head_char.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -745,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/note">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
@@ -776,17 +753,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/ft_library_header.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
+        <state relative-caret-position="807">
           <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c">
+    <entry file="file://$PROJECT_DIR$/note">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="406">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
