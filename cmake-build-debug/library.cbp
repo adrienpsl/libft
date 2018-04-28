@@ -169,6 +169,9 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_index.c">
 			<Option target="library"/>
 		</Unit>
@@ -185,6 +188,9 @@
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c">

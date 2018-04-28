@@ -35,10 +35,14 @@ void ft_quick_sort(int *tab, int start, int end)
 	while (1)
 	{
 		while (tab[left] < pivot)
+		{
 			left++;
+		}
 		while (tab[right] > pivot)
+		{
 			right--;
-		if (left < right)
+		}
+		if (tab[left] > tab[right])
 			swap(tab, left, right);
 		else
 			break;

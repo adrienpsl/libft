@@ -11,6 +11,9 @@
 # define FALSE 0
 # define FAIL 0
 
+# define NO 654
+# define YES 536465
+
 # define ACTIVATE 1
 # define DISABLE 0
 

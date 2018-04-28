@@ -12,19 +12,14 @@
 
 #include "../../ft_library_header.h"
 
-int ddl_is_top(t_dll list, t_dll_l link)
-{
-	return (link == list->top);
-}
-
-int ddl_is_end(t_dll list, t_dll_l link)
-{
-	return (link == list->end);
-}
-
 int dll_l_is_bigger(t_dll_l a, t_dll_l b)
 {
-	return (dll_l_get_int(a) > dll_l_get_int(b));
+	int c;
+	int d;
+
+	c = dll_l_get_int(a);
+	d = dll_l_get_int(b);
+	return (c > d);
 }
 
 int dll_l_is_lower(t_dll_l a, t_dll_l b)
@@ -54,18 +49,17 @@ void ft_quick_sort_dll(t_dll_l start, t_dll_l end, t_dll list)
 	right = end;
 	while (1)
 	{
-		while (dll_l_is_lower(left, pivot))
+		while (left && pivot && dll_l_is_lower(left, pivot))
 		{
 			left = left->next;
 		}
-		while (dll_l_is_bigger(right, pivot))
+		while (right && pivot && dll_l_is_bigger(right, pivot))
 		{
 			right = right->prev;
 		}
 		if (left < right)
 		{
 			swap(left, right);
-			dll_print_nb(list);
 		}
 		else
 			break;

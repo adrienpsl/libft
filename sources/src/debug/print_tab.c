@@ -29,7 +29,7 @@ void     debug_print_tab_nb(int tab[], int lim)
 	i = 0;
 	while (i < lim)
 	{
-		ft_printf("%d ", tab[i]);
+		ft_printf("%2d ", tab[i]);
 		i++;
 	}
 	ft_printf("\n");

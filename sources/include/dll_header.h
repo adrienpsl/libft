@@ -3,6 +3,7 @@
 
 # include <stdlib.h>
 # include "dll_l_header.h"
+# include "dll_c_header.h"
 
 /*
 **    structure
@@ -31,6 +32,7 @@ t_dll_l dll_drop_end(t_dll list);
 t_dll_l dll_drop_top(t_dll list);
 t_dll_l dll_drop_index(t_dll list, size_t index);
 
+void dll_fill_list_circular(t_dll_c c_list, t_dll list, size_t lenght);
 
 
 /*

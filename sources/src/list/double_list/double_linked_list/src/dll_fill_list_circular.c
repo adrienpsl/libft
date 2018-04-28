@@ -12,28 +12,24 @@
 
 #include "../../../../../ft_library_header.h"
 
-void dll_print_nb(t_dll lst)
+
+void dll_fill_list_circular(t_dll_c c_list, t_dll list, size_t lenght)
 {
+	int nb;
+	size_t i;
+	t_dll_l new_link;
 	t_dll_l link;
 
-	link = lst->top;
-	while (link)
+	i = 0;
+	link = c_list->top;
+	while (i < lenght)
 	{
-		ft_printf("%2d ", dll_l_get_int(link));
+		nb = dll_l_get_int(link);
+		new_link = new_dll_l(&nb, sizeof(int));
+
+		dll_add(new_link, list);
+
 		link = link->next;
+		++i;
 	}
-	ft_printf("\n");
-}
-
-void dll_print_nbrev(t_dll lst)
-{
-	t_dll_l link;
-
-	link = lst->end;
-	while (link)
-	{
-		ft_printf("%2d ", dll_l_get_int(link));
-		link = link->prev;
-	}
-	ft_printf("\n");
 }

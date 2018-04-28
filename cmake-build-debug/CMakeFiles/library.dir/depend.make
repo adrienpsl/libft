@@ -241,6 +241,22 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_d
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_drop_top.c
 
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/dll_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c
+
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: ../sources/include/argv_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: ../sources/include/dll_c_header.h
@@ -336,6 +352,22 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c
+
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/dll_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/include/argv_header.h

@@ -24,9 +24,10 @@ void dll_c_print_lst(t_dll_c lst)
 		ft_printf("%2d ", dll_l_get_int(link));
 		i--;
 		if (i == 0)
-			ft_printf(" -- ");
+			break ;
 		link = link->next;
 	}
+	ft_printf("-- %zu \n", lst->length);
 	ft_printf(" \n");
 }
 

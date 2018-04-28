@@ -12,28 +12,30 @@
 
 #include "../../../../../ft_library_header.h"
 
-void dll_print_nb(t_dll lst)
+void dll_c_copie(t_dll_c dest, t_dll_c src, size_t size)
 {
 	t_dll_l link;
+	t_dll_l link_copie;
 
-	link = lst->top;
-	while (link)
+	link = src->top;
+	while (size > 0)
 	{
-		ft_printf("%2d ", dll_l_get_int(link));
+		link_copie = new_dll_l(link->content, link->content_size);
+		dll_c_add_after(link_copie, dest);
+		size--;
 		link = link->next;
 	}
-	ft_printf("\n");
 }
 
-void dll_print_nbrev(t_dll lst)
+void dll_link_copie_reverse(t_dll_l link, t_dll_c list_2, size_t size)
 {
-	t_dll_l link;
+	t_dll_l link_copie;
 
-	link = lst->end;
-	while (link)
+	while (size > 0)
 	{
-		ft_printf("%2d ", dll_l_get_int(link));
+		link_copie = new_dll_l(link->content, link->content_size);
+		dll_c_add_after(link_copie, list_2);
+		size--;
 		link = link->prev;
 	}
-	ft_printf("\n");
 }
