@@ -6,7 +6,7 @@ NAME = libft.a
 
 HEADER = ft_library_header.h
 
-SOURCES_FILE = sources/
+#SOURCES_FILE = sources/
 
 OBJ_DIR = $(SOURCES_FILE)obs/
 
