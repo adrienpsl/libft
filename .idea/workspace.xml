@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad6fcdac-d57d-4142-83fc-c90e1e89e6ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +50,8 @@
       <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="476">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -133,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/src/printf/data/nb/integer/head_interger_n.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c" />
         <option value="$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c" />
@@ -183,6 +181,7 @@
         <option value="$PROJECT_DIR$/sources/src/sort/ft_quick_sort.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/note" />
+        <option value="$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o" />
         <option value="$PROJECT_DIR$/Makefile" />
       </list>
     </option>
@@ -221,6 +220,12 @@
               <item name="library" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -228,7 +233,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="quick&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/sources/src/sort/ft_quick_sort.c&#10;buff_set_or_print&#9;null&#9;null&#10;ft_lst_reverse&#9;null&#9;null&#10;c&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/CMakeLists.txt" />
+    <property name="SearchEverywhereHistoryKey" value="sll_drop_index.o&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o&#10;quick&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/sources/src/sort/ft_quick_sort.c&#10;buff_set_or_print&#9;null&#9;null&#10;ft_lst_reverse&#9;null&#9;null&#10;c&#9;FILE&#9;file:///Users/adpusel/Dropbox/42/library/CMakeLists.txt" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -312,12 +317,12 @@
       <workItem from="1523527490935" duration="9129000" />
       <workItem from="1524927135656" duration="37000" />
       <workItem from="1524927448545" duration="712000" />
-      <workItem from="1524928394829" duration="4430000" />
+      <workItem from="1524928394829" duration="4971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75446000" />
+    <option name="totallyTimeSpent" value="75987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="307" y="18" width="2749" height="1331" extended-state="0" />
@@ -328,7 +333,7 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.36370426" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.32893774" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21644121" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21636952" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.18314424" />
@@ -418,13 +423,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -770,10 +768,17 @@
     <entry file="file://$PROJECT_DIR$/note">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="476">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
         </state>
       </provider>
     </entry>
