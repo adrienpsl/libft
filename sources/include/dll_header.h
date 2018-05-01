@@ -32,6 +32,9 @@ t_dll_l dll_drop_end(t_dll list);
 t_dll_l dll_drop_top(t_dll list);
 t_dll_l dll_drop_index(t_dll list, size_t index);
 
+t_dll_l dll_find(t_dll list, int(*func)(t_dll_l, void *), void *ptr);
+
+
 void dll_fill_list_circular(t_dll_c c_list, t_dll list, size_t lenght);
 
 

@@ -102,6 +102,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o"
   "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o"
   "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o"
+  "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o"
   "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o"
   "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o"
   "CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o"

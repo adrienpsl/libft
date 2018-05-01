@@ -172,6 +172,9 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c">
 			<Option target="library"/>
 		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_find.c">
+			<Option target="library"/>
+		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_index.c">
 			<Option target="library"/>
 		</Unit>

@@ -555,6 +555,33 @@ sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.s
 .PHONY : sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.s
 
+sources/src/list/double_list/double_linked_list/src/dll_find.o: sources/src/list/double_list/double_linked_list/src/dll_find.c.o
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_find.o
+
+# target to build an object file
+sources/src/list/double_list/double_linked_list/src/dll_find.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_find.c.o
+
+sources/src/list/double_list/double_linked_list/src/dll_find.i: sources/src/list/double_list/double_linked_list/src/dll_find.c.i
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_find.i
+
+# target to preprocess a source file
+sources/src/list/double_list/double_linked_list/src/dll_find.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.i
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_find.c.i
+
+sources/src/list/double_list/double_linked_list/src/dll_find.s: sources/src/list/double_list/double_linked_list/src/dll_find.c.s
+
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_find.s
+
+# target to generate assembly for a file
+sources/src/list/double_list/double_linked_list/src/dll_find.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.s
+.PHONY : sources/src/list/double_list/double_linked_list/src/dll_find.c.s
+
 sources/src/list/double_list/double_linked_list/src/dll_index.o: sources/src/list/double_list/double_linked_list/src/dll_index.c.o
 
 .PHONY : sources/src/list/double_list/double_linked_list/src/dll_index.o
@@ -3852,6 +3879,9 @@ help:
 	@echo "... sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.o"
 	@echo "... sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.i"
 	@echo "... sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.s"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_find.o"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_find.i"
+	@echo "... sources/src/list/double_list/double_linked_list/src/dll_find.s"
 	@echo "... sources/src/list/double_list/double_linked_list/src/dll_index.o"
 	@echo "... sources/src/list/double_list/double_linked_list/src/dll_index.i"
 	@echo "... sources/src/list/double_list/double_linked_list/src/dll_index.s"
