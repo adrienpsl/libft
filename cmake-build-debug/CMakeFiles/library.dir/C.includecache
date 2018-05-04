@@ -53,6 +53,8 @@ stdlib.h
 -
 dll_l_header.h
 /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+dll_c_header.h
+/Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
 
 /Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
 stdlib.h
@@ -160,6 +162,10 @@ stdlib.h
 ../../../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 
+/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_find.c
+../../../../../ft_library_header.h
+/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+
 /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_index.c
 ../../../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
@@ -223,8 +229,6 @@ stdlib.h
 /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c
 ../../../../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
-
-/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c
 
 /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c
 ../../../../../ft_library_header.h
@@ -291,6 +295,12 @@ stdlib.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 
 /Users/adpusel/Dropbox/42/library/sources/src/nb/ft_putnbr_fd.c
+../../ft_library_header.h
+/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+limits.h
+-
+
+/Users/adpusel/Dropbox/42/library/sources/src/nb/putnbr_str.c
 ../../ft_library_header.h
 /Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
 limits.h

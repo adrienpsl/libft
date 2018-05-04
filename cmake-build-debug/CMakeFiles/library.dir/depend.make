@@ -257,6 +257,22 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_f
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c
 
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/dll_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_find.c
+
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: ../sources/include/argv_header.h
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: ../sources/include/dll_c_header.h
@@ -512,8 +528,6 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_a
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/src/list/simple_list/simple_linked_list/src/sll_add.c
-
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o: ../sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o: ../sources/include/argv_header.h
@@ -786,6 +800,22 @@ CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/print
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/sll_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/include/sll_l_header.h
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o: ../sources/src/nb/ft_putnbr_fd.c
+
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/ft_library_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/argv_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/dll_c_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/dll_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/dll_l_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/libft_buffer_str.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/libft_debug.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/libft_define.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/libft_memory_function.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/libft_nb_function.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/libft_str_function.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/printf_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/sll_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/include/sll_l_header.h
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/src/nb/putnbr_str.c
 
 CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/ft_library_header.h
 CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/include/argv_header.h

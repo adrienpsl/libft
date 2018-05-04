@@ -223,9 +223,6 @@
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c">
 			<Option target="library"/>
 		</Unit>
-		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c">
-			<Option target="library"/>
-		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c">
 			<Option target="library"/>
 		</Unit>
@@ -275,6 +272,9 @@
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/nb/ft_putnbr_fd.c">
+			<Option target="library"/>
+		</Unit>
+		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/nb/putnbr_str.c">
 			<Option target="library"/>
 		</Unit>
 		<Unit filename="/Users/adpusel/Dropbox/42/library/sources/src/printf/buffer/head_buffer.c">

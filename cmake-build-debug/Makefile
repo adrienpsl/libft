@@ -1014,33 +1014,6 @@ sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s
 .PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_add.c.s
 
-sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o: sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
-
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o
-
-# target to build an object file
-sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
-
-sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.i: sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i
-
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.i
-
-# target to preprocess a source file
-sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i
-
-sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.s: sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s
-
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.s
-
-# target to generate assembly for a file
-sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s
-.PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s
-
 sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.o: sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o
 
 .PHONY : sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.o
@@ -1499,6 +1472,33 @@ sources/src/nb/ft_putnbr_fd.s: sources/src/nb/ft_putnbr_fd.c.s
 sources/src/nb/ft_putnbr_fd.c.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.s
 .PHONY : sources/src/nb/ft_putnbr_fd.c.s
+
+sources/src/nb/putnbr_str.o: sources/src/nb/putnbr_str.c.o
+
+.PHONY : sources/src/nb/putnbr_str.o
+
+# target to build an object file
+sources/src/nb/putnbr_str.c.o:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o
+.PHONY : sources/src/nb/putnbr_str.c.o
+
+sources/src/nb/putnbr_str.i: sources/src/nb/putnbr_str.c.i
+
+.PHONY : sources/src/nb/putnbr_str.i
+
+# target to preprocess a source file
+sources/src/nb/putnbr_str.c.i:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.i
+.PHONY : sources/src/nb/putnbr_str.c.i
+
+sources/src/nb/putnbr_str.s: sources/src/nb/putnbr_str.c.s
+
+.PHONY : sources/src/nb/putnbr_str.s
+
+# target to generate assembly for a file
+sources/src/nb/putnbr_str.c.s:
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.s
+.PHONY : sources/src/nb/putnbr_str.c.s
 
 sources/src/printf/buffer/head_buffer.o: sources/src/printf/buffer/head_buffer.c.o
 
@@ -3930,9 +3930,6 @@ help:
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.o"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.i"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_add.s"
-	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.o"
-	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.i"
-	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.s"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.o"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.i"
 	@echo "... sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.s"
@@ -3984,6 +3981,9 @@ help:
 	@echo "... sources/src/nb/ft_putnbr_fd.o"
 	@echo "... sources/src/nb/ft_putnbr_fd.i"
 	@echo "... sources/src/nb/ft_putnbr_fd.s"
+	@echo "... sources/src/nb/putnbr_str.o"
+	@echo "... sources/src/nb/putnbr_str.i"
+	@echo "... sources/src/nb/putnbr_str.s"
 	@echo "... sources/src/printf/buffer/head_buffer.o"
 	@echo "... sources/src/printf/buffer/head_buffer.i"
 	@echo "... sources/src/printf/buffer/head_buffer.s"

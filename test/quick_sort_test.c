@@ -41,8 +41,8 @@ void all_test_()
 	test__2_();
 }
 
-int main()
-{
-	all_test_();
-	return (0);
-}
+//int main()
+//{
+//	all_test_();
+//	return (0);
+//}

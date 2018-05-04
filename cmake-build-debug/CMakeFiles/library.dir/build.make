@@ -489,9 +489,33 @@ CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o.provides: CMakeFiles/libr
 CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o.provides.build: CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o
 
 
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: CMakeFiles/library.dir/flags.make
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o: ../sources/src/nb/putnbr_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/nb/putnbr_str.c
+
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adpusel/Dropbox/42/library/sources/src/nb/putnbr_str.c > CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.i
+
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/Dropbox/42/library/sources/src/nb/putnbr_str.c -o CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.s
+
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.requires:
+
+.PHONY : CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.requires
+
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.provides: CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.requires
+	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.provides.build
+.PHONY : CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.provides
+
+CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.provides.build: CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o
+
+
 CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o: ../sources/src/printf/main_pfff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/main_pfff.c
 
 CMakeFiles/library.dir/sources/src/printf/main_pfff.c.i: cmake_force
@@ -515,7 +539,7 @@ CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o.provides.build: CMakeFil
 
 CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/utils_main.c.o: ../sources/src/printf/utils_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/library.dir/sources/src/printf/utils_main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/library.dir/sources/src/printf/utils_main.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/utils_main.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/utils_main.c
 
 CMakeFiles/library.dir/sources/src/printf/utils_main.c.i: cmake_force
@@ -539,7 +563,7 @@ CMakeFiles/library.dir/sources/src/printf/utils_main.c.o.provides.build: CMakeFi
 
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o: ../sources/src/sort/ft_quick_sort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/sort/ft_quick_sort.c
 
 CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.i: cmake_force
@@ -563,7 +587,7 @@ CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o.provides.build: CMakeF
 
 CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o: ../sources/src/sort/quick_sort_dll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/sort/quick_sort_dll.c
 
 CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.i: cmake_force
@@ -587,7 +611,7 @@ CMakeFiles/library.dir/sources/src/sort/quick_sort_dll.c.o.provides.build: CMake
 
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o: ../sources/src/argv/src/argv_get_option.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/argv/src/argv_get_option.c
 
 CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.i: cmake_force
@@ -611,7 +635,7 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_get_option.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o: ../sources/src/argv/src/argv_go_prev_argv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/argv/src/argv_go_prev_argv.c
 
 CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.i: cmake_force
@@ -635,7 +659,7 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_go_prev_argv.c.o.provides.build
 
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o: ../sources/src/argv/src/argv_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/argv/src/argv_utils.c
 
 CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.i: cmake_force
@@ -659,7 +683,7 @@ CMakeFiles/library.dir/sources/src/argv/src/argv_utils.c.o.provides.build: CMake
 
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o: ../sources/src/argv/src/get_next_argv_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/argv/src/get_next_argv_1.c
 
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.i: cmake_force
@@ -683,7 +707,7 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_1.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o: ../sources/src/argv/src/get_next_argv_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/argv/src/get_next_argv_2.c
 
 CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.i: cmake_force
@@ -707,7 +731,7 @@ CMakeFiles/library.dir/sources/src/argv/src/get_next_argv_2.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o: ../sources/src/printf/buffer/head_buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/buffer/head_buffer.c
 
 CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.i: cmake_force
@@ -731,7 +755,7 @@ CMakeFiles/library.dir/sources/src/printf/buffer/head_buffer.c.o.provides.build:
 
 CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o: ../sources/src/printf/data/manage_before_printer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/data/manage_before_printer.c
 
 CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.i: cmake_force
@@ -755,7 +779,7 @@ CMakeFiles/library.dir/sources/src/printf/data/manage_before_printer.c.o.provide
 
 CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o: ../sources/src/printf/parseur/head_parseur.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/head_parseur.c
 
 CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.i: cmake_force
@@ -779,7 +803,7 @@ CMakeFiles/library.dir/sources/src/printf/parseur/head_parseur.c.o.provides.buil
 
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o: ../sources/src/printf/parseur/parseur_flag.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_flag.c
 
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.i: cmake_force
@@ -803,7 +827,7 @@ CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag.c.o.provides.buil
 
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o: ../sources/src/printf/parseur/parseur_flag_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_flag_utils.c
 
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.i: cmake_force
@@ -827,7 +851,7 @@ CMakeFiles/library.dir/sources/src/printf/parseur/parseur_flag_utils.c.o.provide
 
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o: ../sources/src/printf/parseur/parseur_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_utils.c
 
 CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.i: cmake_force
@@ -851,7 +875,7 @@ CMakeFiles/library.dir/sources/src/printf/parseur/parseur_utils.c.o.provides.bui
 
 CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o: ../sources/src/printf/printer/function_printer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/printer/function_printer.c
 
 CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.i: cmake_force
@@ -875,7 +899,7 @@ CMakeFiles/library.dir/sources/src/printf/printer/function_printer.c.o.provides.
 
 CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o: ../sources/src/printf/printer/head_printer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/printer/head_printer.c
 
 CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.i: cmake_force
@@ -899,7 +923,7 @@ CMakeFiles/library.dir/sources/src/printf/printer/head_printer.c.o.provides.buil
 
 CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o: ../sources/src/printf/printer/utils_printer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/printf/printer/utils_printer.c
 
 CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.i: cmake_force
@@ -923,7 +947,7 @@ CMakeFiles/library.dir/sources/src/printf/printer/utils_printer.c.o.provides.bui
 
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o: ../sources/src/string/char/ft_free_doublechar_tab.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_free_doublechar_tab.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.i: cmake_force
@@ -947,7 +971,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_free_doublechar_tab.c.o.provid
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o: ../sources/src/string/char/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isalnum.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.i: cmake_force
@@ -971,7 +995,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isalnum.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o: ../sources/src/string/char/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isalpha.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.i: cmake_force
@@ -995,7 +1019,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isalpha.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o: ../sources/src/string/char/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isascii.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.i: cmake_force
@@ -1019,7 +1043,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isascii.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o: ../sources/src/string/char/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isdigit.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.i: cmake_force
@@ -1043,7 +1067,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isdigit.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o: ../sources/src/string/char/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isprint.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.i: cmake_force
@@ -1067,7 +1091,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_isprint.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o: ../sources/src/string/char/ft_put_uni.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_put_uni.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.i: cmake_force
@@ -1091,7 +1115,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_put_uni.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o: ../sources/src/string/char/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_putchar.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.i: cmake_force
@@ -1115,7 +1139,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_putchar.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o: ../sources/src/string/char/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_putchar_fd.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.i: cmake_force
@@ -1139,7 +1163,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_putchar_fd.c.o.provides.build:
 
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o: ../sources/src/string/char/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_tolower.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.i: cmake_force
@@ -1163,7 +1187,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_tolower.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o: ../sources/src/string/char/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_toupper.c
 
 CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.i: cmake_force
@@ -1187,7 +1211,7 @@ CMakeFiles/library.dir/sources/src/string/char/ft_toupper.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o: ../sources/src/string/str/check_char_into_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/check_char_into_str.c
 
 CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.i: cmake_force
@@ -1211,7 +1235,7 @@ CMakeFiles/library.dir/sources/src/string/str/check_char_into_str.c.o.provides.b
 
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o: ../sources/src/string/str/ft_free_split.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_free_split.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.i: cmake_force
@@ -1235,7 +1259,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_free_split.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o: ../sources/src/string/str/ft_is_all_number.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_is_all_number.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.i: cmake_force
@@ -1259,7 +1283,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_is_all_number.c.o.provides.buil
 
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o: ../sources/src/string/str/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_itoa.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.i: cmake_force
@@ -1283,7 +1307,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_itoa.c.o.provides.build: CMakeF
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o: ../sources/src/string/str/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putendl.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.i: cmake_force
@@ -1307,7 +1331,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putendl.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o: ../sources/src/string/str/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putendl_fd.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.i: cmake_force
@@ -1331,7 +1355,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putendl_fd.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o: ../sources/src/string/str/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putstr.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.i: cmake_force
@@ -1355,7 +1379,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putstr.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o: ../sources/src/string/str/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putstr_fd.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.i: cmake_force
@@ -1379,7 +1403,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_putstr_fd.c.o.provides.build: C
 
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o: ../sources/src/string/str/ft_str_rev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_str_rev.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.i: cmake_force
@@ -1403,7 +1427,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_str_rev.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o: ../sources/src/string/str/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strcat.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.i: cmake_force
@@ -1427,7 +1451,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcat.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o: ../sources/src/string/str/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.i: cmake_force
@@ -1451,7 +1475,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o: ../sources/src/string/str/ft_strchr_dup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr_dup.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.i: cmake_force
@@ -1475,7 +1499,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_dup.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o: ../sources/src/string/str/ft_strchr_how_many.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr_how_many.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.i: cmake_force
@@ -1499,7 +1523,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_how_many.c.o.provides.bu
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o: ../sources/src/string/str/ft_strchr_len.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr_len.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.i: cmake_force
@@ -1523,7 +1547,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strchr_len.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o: ../sources/src/string/str/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strclr.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.i: cmake_force
@@ -1547,7 +1571,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strclr.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o: ../sources/src/string/str/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strcmp.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.i: cmake_force
@@ -1571,7 +1595,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcmp.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o: ../sources/src/string/str/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strcpy.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.i: cmake_force
@@ -1595,7 +1619,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strcpy.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o: ../sources/src/string/str/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strdel.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.i: cmake_force
@@ -1619,7 +1643,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strdel.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o: ../sources/src/string/str/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strdup.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.i: cmake_force
@@ -1643,7 +1667,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strdup.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o: ../sources/src/string/str/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strequ.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.i: cmake_force
@@ -1667,7 +1691,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strequ.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o: ../sources/src/string/str/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_striter.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.i: cmake_force
@@ -1691,7 +1715,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_striter.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o: ../sources/src/string/str/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_striteri.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.i: cmake_force
@@ -1715,7 +1739,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_striteri.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o: ../sources/src/string/str/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strjoin.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.i: cmake_force
@@ -1739,7 +1763,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strjoin.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o: ../sources/src/string/str/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strlcat.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.i: cmake_force
@@ -1763,7 +1787,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strlcat.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o: ../sources/src/string/str/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strlen.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.i: cmake_force
@@ -1787,7 +1811,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strlen.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o: ../sources/src/string/str/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strmap.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.i: cmake_force
@@ -1811,7 +1835,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strmap.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o: ../sources/src/string/str/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strmapi.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.i: cmake_force
@@ -1835,7 +1859,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strmapi.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o: ../sources/src/string/str/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strncat.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.i: cmake_force
@@ -1859,7 +1883,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncat.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o: ../sources/src/string/str/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strncmp.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.i: cmake_force
@@ -1883,7 +1907,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncmp.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o: ../sources/src/string/str/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strncpy.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.i: cmake_force
@@ -1907,7 +1931,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strncpy.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o: ../sources/src/string/str/ft_strndup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strndup.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.i: cmake_force
@@ -1931,7 +1955,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strndup.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o: ../sources/src/string/str/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnequ.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.i: cmake_force
@@ -1955,7 +1979,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnequ.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o: ../sources/src/string/str/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnew.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.i: cmake_force
@@ -1979,7 +2003,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnew.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o: ../sources/src/string/str/ft_strnjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnjoin.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.i: cmake_force
@@ -2003,7 +2027,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnjoin.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o: ../sources/src/string/str/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnstr.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.i: cmake_force
@@ -2027,7 +2051,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strnstr.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o: ../sources/src/string/str/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strrchr.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.i: cmake_force
@@ -2051,7 +2075,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strrchr.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o: ../sources/src/string/str/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strsplit.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.i: cmake_force
@@ -2075,7 +2099,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strsplit.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o: ../sources/src/string/str/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strstr.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.i: cmake_force
@@ -2099,7 +2123,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strstr.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o: ../sources/src/string/str/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strsub.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.i: cmake_force
@@ -2123,7 +2147,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strsub.c.o.provides.build: CMak
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o: ../sources/src/string/str/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strtrim.c
 
 CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.i: cmake_force
@@ -2147,7 +2171,7 @@ CMakeFiles/library.dir/sources/src/string/str/ft_strtrim.c.o.provides.build: CMa
 
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o: ../sources/src/string/str/get_last_char_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/get_last_char_str.c
 
 CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.i: cmake_force
@@ -2171,7 +2195,7 @@ CMakeFiles/library.dir/sources/src/string/str/get_last_char_str.c.o.provides.bui
 
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o: ../sources/src/string/str/index_of_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/index_of_char.c
 
 CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.i: cmake_force
@@ -2195,7 +2219,7 @@ CMakeFiles/library.dir/sources/src/string/str/index_of_char.c.o.provides.build: 
 
 CMakeFiles/library.dir/sources/src/string/str/str_by_func.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/string/str/str_by_func.c.o: ../sources/src/string/str/str_by_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/library.dir/sources/src/string/str/str_by_func.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/library.dir/sources/src/string/str/str_by_func.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/string/str/str_by_func.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/string/str/str_by_func.c
 
 CMakeFiles/library.dir/sources/src/string/str/str_by_func.c.i: cmake_force
@@ -2219,7 +2243,7 @@ CMakeFiles/library.dir/sources/src/string/str/str_by_func.c.o.provides.build: CM
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.o: ../sources/src/list/double_list/double_linked_list/dll_construct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/dll_construct.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_construct.c.i: cmake_force
@@ -2243,7 +2267,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/dll_const
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o: ../sources/src/list/double_list/double_linked_list/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/utils.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.i: cmake_force
@@ -2267,7 +2291,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/utils.c.o
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o: ../sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c.i: cmake_force
@@ -2291,7 +2315,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o: ../sources/src/list/double_list/double_linked_list_link/dll_l_construct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c.i: cmake_force
@@ -2315,7 +2339,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/dll_
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o: ../sources/src/list/simple_list/simple_linked_list/sll_construct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/sll_construct.c
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_construct.c.i: cmake_force
@@ -2339,7 +2363,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/sll_const
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o: ../sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c.i: cmake_force
@@ -2363,7 +2387,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list_link/sll_
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o: ../sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c.i: cmake_force
@@ -2387,7 +2411,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o: ../sources/src/list/double_list/double_linked_list/debug/dll_print_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c.i: cmake_force
@@ -2411,7 +2435,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/debug/dll
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_add.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_add.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_add.c.i: cmake_force
@@ -2435,7 +2459,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_a
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_drop_end.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c.i: cmake_force
@@ -2459,7 +2483,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_d
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_drop_index.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c.i: cmake_force
@@ -2483,7 +2507,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_d
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_drop_top.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c.i: cmake_force
@@ -2507,7 +2531,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_d
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c.i: cmake_force
@@ -2531,7 +2555,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_f
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_find.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_find.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_find.c.i: cmake_force
@@ -2555,7 +2579,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_f
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_index.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_index.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_index.c.i: cmake_force
@@ -2579,7 +2603,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_i
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o: ../sources/src/list/double_list/double_linked_list/src/dll_push.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_push.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_push.c.i: cmake_force
@@ -2603,7 +2627,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list/src/dll_p
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o: ../sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c.i: cmake_force
@@ -2627,7 +2651,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c.i: cmake_force
@@ -2651,7 +2675,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c.i: cmake_force
@@ -2675,7 +2699,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c.i: cmake_force
@@ -2699,7 +2723,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c.i: cmake_force
@@ -2723,7 +2747,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o: ../sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c.i: cmake_force
@@ -2747,7 +2771,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_circular/
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o: ../sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c
 
 CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c.i: cmake_force
@@ -2771,7 +2795,7 @@ CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_link/src/
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o: ../sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.i: cmake_force
@@ -2795,7 +2819,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o: ../sources/src/list/simple_list/simple_linked_list/src/drop_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.i: cmake_force
@@ -2819,7 +2843,7 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: CMakeFiles/library.dir/flags.make
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o: ../sources/src/list/simple_list/simple_linked_list/src/sll_add.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.i: cmake_force
@@ -2839,30 +2863,6 @@ CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_a
 .PHONY : CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o.provides
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o.provides.build: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o
-
-
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o: CMakeFiles/library.dir/flags.make
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o: ../sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/Dropbox/42/library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o   -c /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c
-
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c > CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.i
-
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c -o CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.s
-
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.requires:
-
-.PHONY : CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.requires
-
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.provides: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.requires
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.provides.build
-.PHONY : CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.provides
-
-CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.provides.build: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
 
 
 CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o: CMakeFiles/library.dir/flags.make
@@ -3365,6 +3365,7 @@ library_OBJECTS = \
 "CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o" \
 "CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o" \
 "CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o" \
+"CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o" \
 "CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o" \
 "CMakeFiles/library.dir/sources/src/printf/utils_main.c.o" \
 "CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o" \
@@ -3463,7 +3464,6 @@ library_OBJECTS = \
 "CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o" \
 "CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o" \
 "CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o" \
-"CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o" \
 "CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o" \
 "CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o" \
 "CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o" \
@@ -3506,6 +3506,7 @@ library: CMakeFiles/library.dir/sources/src/memory/soa.c.o
 library: CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o
 library: CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o
 library: CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o
+library: CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o
 library: CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o
 library: CMakeFiles/library.dir/sources/src/printf/utils_main.c.o
 library: CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o
@@ -3604,7 +3605,6 @@ library: CMakeFiles/library.dir/sources/src/list/double_list/double_linked_list_
 library: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o
 library: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o
 library: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o
-library: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o
 library: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o
 library: CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o
 library: CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o
@@ -3653,6 +3653,7 @@ CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/memory/soa.c
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/nb/ft_atoi.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/nb/ft_putnbr.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/nb/ft_putnbr_fd.c.o.requires
+CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/nb/putnbr_str.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/printf/main_pfff.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/printf/utils_main.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/sort/ft_quick_sort.c.o.requires
@@ -3751,7 +3752,6 @@ CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/list/double_
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_add.c.o.requires
-CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_index.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/printf/data/nb/float/head_double.c.o.requires
 CMakeFiles/library.dir/requires: CMakeFiles/library.dir/sources/src/printf/data/nb/integer/head_integer_signed.c.o.requires
