@@ -10,36 +10,36 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_DLL_L_H
-# define LIBFT_DLL_L_H
+#ifndef DLL_L_HEADER_H
+# define DLL_L_HEADER_H
 # include <stdlib.h>
-
 
 /*
 **    structure :
 */
-typedef struct		s_dll_l
+typedef struct			s_dll_l_00
 {
-	void			*content;
-	size_t			content_size;
-	struct s_dll_l	next;
-	struct s_dll_l	*prev;
-}					*t_dll_l;
+	void				*content;
+	size_t				content_size;
+	struct s_dll_l_00	next;
+	struct s_dll_l_00	*prev;
+}						t_dll_l_00;
+typedef t_dll_l_00 *t_dll_l;
 
 /*
 **    construct
 */
-void				destroy_dll_l(t_dll_l *l);
-t_dll_l				new_dll_l(void *content, size_t size);
+void					destroy_dll_l(t_dll_l *l);
+t_dll_l					new_dll_l(void *content, size_t size);
 
 /*
 **    utils =======================
 */
-void				reset_ptr_dll_l(t_dll_l link);
+void					reset_ptr_dll_l(t_dll_l link);
 
 /*
 **    getter data
 */
-int					dll_l_get_int(t_dll_l link);
+int						dll_l_get_int(t_dll_l link);
 
 #endif

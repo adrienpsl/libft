@@ -29,8 +29,8 @@ typedef t_sll_l_00		*t_sll_l;
 /*
 **    construct ================================================================
 */
-void				destroy_sll_l(t_sll_l *sll_l);
-t_sll_l				new_sll_l(void *content, size_t size);
+void					destroy_sll_l(t_sll_l *sll_l);
+t_sll_l					new_sll_l(void *content, size_t size);
 
 /*
 **    method ===================================================================

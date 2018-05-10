@@ -19,11 +19,12 @@
 /*
 **    structure
 */
-typedef struct			s_dll_c
+typedef struct			s_dll_c_00
 {
 	size_t				length;
 	t_dll_l				top;
-}						*t_dll_c;
+}						t_dll_c_00;
+typedef t_dll_c_00		*t_dll_c;
 
 /*
 **    construct ================================================================
@@ -36,13 +37,15 @@ t_dll_c					new_dll_c();
 */
 t_dll_l					dll_c_push_link(t_dll_l link, t_dll_c c_list);
 t_dll_l					dll_c_drop_link(t_dll_c c_list);
-t_dll_l					dll_l_iter_int(t_dll_c c_list, int nb, int(*func)(int a, int b));
+t_dll_l					dll_l_iter_int(t_dll_c c_list, int nb,
+						int(*func)(int a, int b));
 t_dll_l					dll_c_find_nb(t_dll_c c_list, int nb);
 t_dll_l					dll_c_add_after(t_dll_l link, t_dll_c c_list);
 
-void					dll_c_copie(t_dll_c list_1, t_dll_c list_2, size_t size);
-void					dll_link_copie_reverse(t_dll_l link, t_dll_c list_2, size_t size);
-
+void					dll_c_copie(t_dll_c list_1,
+									t_dll_c list_2, size_t size);
+void					dll_link_copie_reverse(t_dll_l link,
+												t_dll_c list_2, size_t size);
 
 /*
 **    utils ====================================================================

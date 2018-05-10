@@ -1,17 +1,17 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   check_char_into_str.c							  :+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: adpusel <adpusel@student.42.fr>			+#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2017/10/19 10:48:07 by adpusel		   #+#	#+#			 */
-/*   Updated: 2017/11/16 12:45:49 by adpusel		  ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sll_construct.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
+/*   Updated: 2018/05/04 16:43:59 by adpusel          ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef PRINTF_HEADER_H
+# define PRINTF_HEADER_H
 
 # include <stdio.h>
 
@@ -177,7 +177,7 @@ void				manage_char(t_pf *pf);
 /*
 **	uni char style
 */
-void				manage_CHAR(t_pf *pf);
+void				manage_char2(t_pf *pf);
 
 /*
 **	n option style

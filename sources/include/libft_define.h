@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_FT_DEFINE_H
-# define LIBFT_FT_DEFINE_H
+#ifndef LIBFT_DEFINE_H
+# define LIBFT_DEFINE_H
 
 # define TRUE 1
 # define DONE 1
@@ -29,7 +29,6 @@
 # define END_LIST 1
 # define DISABLE 0
 
-
 /*
 **    obj argv
 */
@@ -38,6 +37,5 @@
 /*
 **    ogj get_op
 */
-#define D_options "-f -o"
 
 #endif
