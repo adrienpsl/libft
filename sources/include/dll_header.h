@@ -32,7 +32,7 @@ typedef t_dll_00	*t_dll;
 **    construct ================================================================
 */
 void				destroy_dll(t_dll *dll);
-void				destroy_dll_func(t_dll *l, void *func (t_dll_l));
+void				destroy_dll_func(t_dll *l, void (*func) (t_dll_l));
 
 t_dll				new_dll();
 

@@ -6,79 +6,73 @@
 
 #IncludeRegexTransform: 
 
-/Users/adpusel/Dropbox/42/library/main.c
+/Users/adpusel/Dropbox/42/Library/main.c
 stdio.h
 -
 sources/ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 include/printf_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/printf_header.h
 include/libft_define.h
-/Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
-include/libft_buffer_str.h
-/Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_define.h
 include/libft_memory_function.h
-/Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_memory_function.h
 include/libft_str_function.h
-/Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_str_function.h
 include/libft_nb_function.h
-/Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_nb_function.h
 include/sll_l_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/sll_l_header.h
 include/sll_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/sll_header.h
 include/dll_l_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_l_header.h
 include/dll_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_header.h
 include/dll_c_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_c_header.h
 include/libft_debug.h
-/Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_debug.h
 include/argv_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/argv_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/argv_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/argv_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_c_header.h
 stdlib.h
 -
 dll_l_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_l_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/dll_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_header.h
 stdlib.h
 -
 dll_l_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_l_header.h
 dll_c_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/dll_c_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_c_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/dll_l_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/dll_l_header.h
 stdlib.h
 -
 
-/Users/adpusel/Dropbox/42/library/sources/include/libft_buffer_str.h
-stdlib.h
--
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_debug.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/libft_debug.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_define.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/libft_define.h
-
-/Users/adpusel/Dropbox/42/library/sources/include/libft_memory_function.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_memory_function.h
 unistd.h
 -
 
-/Users/adpusel/Dropbox/42/library/sources/include/libft_nb_function.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_nb_function.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/libft_str_function.h
+/Users/adpusel/Dropbox/42/Library/sources/include/libft_str_function.h
 unistd.h
 -
 
-/Users/adpusel/Dropbox/42/library/sources/include/printf_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/printf_header.h
 stdio.h
 -
 stdarg.h
@@ -92,559 +86,559 @@ stdint.h
 cxxabi.h
 -
 
-/Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/sll_header.h
 stdlib.h
 -
 sll_l_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/sll_l_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/include/sll_l_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/sll_l_header.h
 stdlib.h
 -
 
-/Users/adpusel/Dropbox/42/library/sources/src/argv/argv_contruct.c
+/Users/adpusel/Dropbox/42/Library/sources/src/argv/argv_contruct.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/argv/src/argv_get_option.c
+/Users/adpusel/Dropbox/42/Library/sources/src/argv/src/argv_get_option.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/argv/src/argv_go_prev_argv.c
+/Users/adpusel/Dropbox/42/Library/sources/src/argv/src/argv_go_prev_argv.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/argv/src/argv_utils.c
+/Users/adpusel/Dropbox/42/Library/sources/src/argv/src/argv_utils.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/argv/src/get_next_argv_1.c
+/Users/adpusel/Dropbox/42/Library/sources/src/argv/src/get_next_argv_1.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/argv/src/get_next_argv_2.c
+/Users/adpusel/Dropbox/42/Library/sources/src/argv/src/get_next_argv_2.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/debug/print_tab.c
+/Users/adpusel/Dropbox/42/Library/sources/src/debug/print_tab.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/debug/dll_print_nb.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/debug/dll_print_str.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/dll_construct.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/dll_construct.c
 ../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_add.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_add.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_drop_end.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_drop_index.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_drop_top.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_fill_list_circular.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_find.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_find.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_index.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_index.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/src/dll_push.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/src/dll_push.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list/utils.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list/utils.c
 ../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_circular/debug/dll_c_debug_print.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_circular/dll_c_construct.c
 ../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_add_after.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_copie.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_drop_link.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_iter.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_circular/src/dll_c_push_link.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_link/dll_l_construct.c
 ../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/double_list/double_linked_list_link/src/dll_l_get_content.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/simple_list/simple_linked_list/debug/sll_print_str.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/sll_construct.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/simple_list/simple_linked_list/sll_construct.c
 ../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/simple_list/simple_linked_list/src/drop_utils.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/simple_list/simple_linked_list/src/sll_add.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/simple_list/simple_linked_list/src/sll_drop_link.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c
+/Users/adpusel/Dropbox/42/Library/sources/src/list/simple_list/simple_linked_list_link/sll_l_construct.c
 ../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_bzero.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_bzero.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_exit_lack_memory.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_exit_lack_memory.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_malloc_protect.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_malloc_protect.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memalloc.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memalloc.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memccpy.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memccpy.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memchr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memchr.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memcmp.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memcmp.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memcpy.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memcpy.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memdel.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memdel.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memmove.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memmove.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/ft_memset.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/ft_memset.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/memory/soa.c
+/Users/adpusel/Dropbox/42/Library/sources/src/memory/soa.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/nb/ft_atoi.c
+/Users/adpusel/Dropbox/42/Library/sources/src/nb/ft_atoi.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/nb/ft_putnbr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/nb/ft_putnbr.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/nb/ft_putnbr_fd.c
+/Users/adpusel/Dropbox/42/Library/sources/src/nb/ft_putnbr_fd.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 limits.h
 -
 
-/Users/adpusel/Dropbox/42/library/sources/src/nb/putnbr_str.c
+/Users/adpusel/Dropbox/42/Library/sources/src/nb/putnbr_str.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 limits.h
 -
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/buffer/head_buffer.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/buffer/head_buffer.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/manage_before_printer.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/manage_before_printer.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/float/head_double.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/float/head_double.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/integer/head_integer_signed.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/integer/head_integer_signed.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/integer/head_interger_n.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/integer/head_interger_n.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/unsigned/head_integer_unsigned.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/unsigned/utils_unsigned_integer.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_binairy.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_hexa.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_octal.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/nb/unsigned_variation/head_unsigned_ptr.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/text/char/head_char.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/text/char/head_char.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/text/other/head_percent.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/text/other/head_percent.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/data/text/str/manage_str.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/data/text/str/manage_str.c
 ../../../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/main_pfff.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/main_pfff.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/head_parseur.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/parseur/head_parseur.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_flag.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/parseur/parseur_flag.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_flag_utils.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/parseur/parseur_flag_utils.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/parseur/parseur_utils.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/parseur/parseur_utils.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/printer/function_printer.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/printer/function_printer.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/printer/head_printer.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/printer/head_printer.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/printer/utils_printer.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/printer/utils_printer.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/printf/utils_main.c
+/Users/adpusel/Dropbox/42/Library/sources/src/printf/utils_main.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/sort/ft_quick_sort.c
+/Users/adpusel/Dropbox/42/Library/sources/src/sort/ft_quick_sort.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/sort/quick_sort_dll.c
+/Users/adpusel/Dropbox/42/Library/sources/src/sort/quick_sort_dll.c
 ../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_free_doublechar_tab.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_free_doublechar_tab.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isalnum.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_isalnum.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isalpha.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_isalpha.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isascii.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_isascii.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isdigit.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_isdigit.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_isprint.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_isprint.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_put_uni.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_put_uni.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_putchar.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_putchar.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_putchar_fd.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_putchar_fd.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_tolower.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_tolower.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/char/ft_toupper.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/char/ft_toupper.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/check_char_into_str.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/check_char_into_str.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_free_split.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_free_split.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_is_all_number.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_is_all_number.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_itoa.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_itoa.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putendl.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_putendl.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putendl_fd.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_putendl_fd.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putstr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_putstr.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_putstr_fd.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_putstr_fd.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_str_rev.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_str_rev.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strcat.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strcat.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strchr.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr_dup.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strchr_dup.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr_how_many.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strchr_how_many.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strchr_len.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strchr_len.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strclr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strclr.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strcmp.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strcmp.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strcpy.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strcpy.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strdel.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strdel.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strdup.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strdup.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strequ.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strequ.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_striter.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_striter.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_striteri.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_striteri.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strjoin.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strjoin.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strlcat.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strlcat.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strlen.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strlen.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strmap.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strmap.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strmapi.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strmapi.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strncat.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strncat.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strncmp.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strncmp.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strncpy.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strncpy.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strndup.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strndup.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnequ.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strnequ.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnew.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strnew.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnjoin.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strnjoin.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strnstr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strnstr.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strrchr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strrchr.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strsplit.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strsplit.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strstr.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strstr.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strsub.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strsub.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/ft_strtrim.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/ft_strtrim.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/get_last_char_str.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/get_last_char_str.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/index_of_char.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/index_of_char.c
 ../../../ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/sources/src/string/str/str_by_func.c
+/Users/adpusel/Dropbox/42/Library/sources/src/string/str/str_by_func.c
 
-/Users/adpusel/Dropbox/42/library/test/argv_test.c
+/Users/adpusel/Dropbox/42/Library/test/argv_test.c
 
-/Users/adpusel/Dropbox/42/library/test/dll_c_test.c
+/Users/adpusel/Dropbox/42/Library/test/dll_c_test.c
 ../sources/ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/test/dll_l_test.c
+/Users/adpusel/Dropbox/42/Library/test/dll_l_test.c
 ../sources/ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/test/dll_test.c
+/Users/adpusel/Dropbox/42/Library/test/dll_test.c
 ../sources/ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/test/quick_sort_test.c
+/Users/adpusel/Dropbox/42/Library/test/quick_sort_test.c
 ../sources/ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/test/sll_l_test.c
+/Users/adpusel/Dropbox/42/Library/test/sll_l_test.c
 ../sources/ft_library_header.h
-/Users/adpusel/Dropbox/42/library/sources/ft_library_header.h
+/Users/adpusel/Dropbox/42/Library/sources/ft_library_header.h
 
-/Users/adpusel/Dropbox/42/library/test/sll_test.c
+/Users/adpusel/Dropbox/42/Library/test/sll_test.c
 printf.h
 -
 ../sources/include/sll_header.h
-/Users/adpusel/Dropbox/42/library/sources/include/sll_header.h
+/Users/adpusel/Dropbox/42/Library/sources/include/sll_header.h
 

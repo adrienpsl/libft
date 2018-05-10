@@ -31,7 +31,7 @@ typedef t_dll_l_00 *t_dll_l;
 */
 void					destroy_dll_l(t_dll_l *l);
 t_dll_l					new_dll_l(void *content, size_t size);
-void					destroy_dll_l_func(t_dll_l *l, void *func (t_dll_l));
+void					destroy_dll_l_func(t_dll_l *l, void (*func) (t_dll_l));
 
 /*
 **    utils =======================

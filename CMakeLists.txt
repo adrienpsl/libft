@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
-project(library C)
+project(Library C)
 
 set(CMAKE_C_STANDARD 99)
 
@@ -18,8 +18,7 @@ file(GLOB sources5 "sources/src/**/**/**/**/**/*.c")
 file(GLOB sources6 "test/*.c")
 
 # all sources
-set(
-        sources
+set (                   sources
         ${sources1}
         ${sources2}
         ${sources3}
@@ -27,9 +26,10 @@ set(
         ${sources5}
         ${sources6}
         sources/ft_library_header.h
+)
 
-        )
-add_executable(library
+
+add_executable (        Library
         # type of lib
         main.c
 
@@ -37,7 +37,6 @@ add_executable(library
         ${head}
         ${sources}
 
-#        sources/ft_library_header.h
-        )
+)
 
 

@@ -18,7 +18,7 @@ void		reset_ptr_dll_l(t_dll_l link)
 	link->prev = NULL;
 }
 
-void		destroy_dll_l_func(t_dll_l *l, void *func (t_dll_l))
+void		destroy_dll_l_func(t_dll_l *l, void (*func) (t_dll_l))
 {
 	t_dll_l link;
 

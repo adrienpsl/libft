@@ -27,7 +27,7 @@ static void		destroy_all_links(t_dll list)
 	list->length = 0;
 }
 
-void			destroy_dll_func(t_dll *l, void *func (t_dll_l))
+void			destroy_dll_func(t_dll *l, void (*func) (t_dll_l))
 {
 	t_dll	list;
 	t_dll_l	current_link;
