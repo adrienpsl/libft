@@ -1,6 +1,14 @@
-//
-// Created by Adrien PUSEL on 12/31/17.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sll_construct.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
+/*   Updated: 2018/05/04 16:43:59 by adpusel          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef LIBFT_FT_DEFINE_H
 # define LIBFT_FT_DEFINE_H
@@ -17,10 +25,9 @@
 # define ACTIVATE 1
 # define DISABLE 0
 
-/*
-**    main clear
-*/
-//# define NO_ARGV 1
+# define TOP_LIST 0
+# define END_LIST 1
+# define DISABLE 0
 
 
 /*

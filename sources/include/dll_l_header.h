@@ -22,27 +22,24 @@ typedef struct		s_dll_l
 {
 	void			*content;
 	size_t			content_size;
-	struct s_dll_l			*next;
-	struct s_dll_l			*prev;
-}		*t_dll_l;
+	struct s_dll_l	next;
+	struct s_dll_l	*prev;
+}					*t_dll_l;
 
 /*
 **    construct
 */
-void  destroy_dll_l(t_dll_l *l);
-t_dll_l new_dll_l(void *content, size_t size);
-
-
+void				destroy_dll_l(t_dll_l *l);
+t_dll_l				new_dll_l(void *content, size_t size);
 
 /*
 **    utils =======================
 */
-void reset_ptr_dll_l(t_dll_l link);
+void				reset_ptr_dll_l(t_dll_l link);
 
 /*
 **    getter data
 */
-int dll_l_get_int(t_dll_l link);
-
+int					dll_l_get_int(t_dll_l link);
 
 #endif

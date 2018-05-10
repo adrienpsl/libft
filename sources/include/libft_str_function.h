@@ -1,6 +1,14 @@
-//
-// Created by Adrien PUSEL on 12/31/17.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sll_construct.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
+/*   Updated: 2018/05/04 16:43:59 by adpusel          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef LIBFT_STR_FUNCTION_H
 # define LIBFT_STR_FUNCTION_H
@@ -63,7 +71,6 @@ char				*ft_strchr_dup(char *s, char c);
 long long			index_of_char(char *s, char c);
 char				*ft_str_rev(char *str);
 int					ft_is_all_number(char *s);
-
 
 char				**ft_strsplit(char const *s, char c);
 void				ft_free_split(char ***t);

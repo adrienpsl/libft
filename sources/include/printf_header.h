@@ -19,20 +19,9 @@
 # include <unistd.h>
 # include <limits.h>
 # include <stdint.h>
-#include <cxxabi.h>
+# include <cxxabi.h>
 
 # define BUFF_SIZE 512
-
-typedef union
-{
-	double d;
-	struct
-	{
-		uint64_t mantisa : 52;
-		uint64_t exponent : 11;
-		uint64_t sign : 1;
-	} parts;
-} u_double;
 
 typedef struct		s_buff
 {
@@ -223,6 +212,6 @@ void				printer_value(t_pf *pf);
 /*
 **	utils printer
 */
-void			put_color(t_pf *pf);
+void				put_color(t_pf *pf);
 
 #endif
