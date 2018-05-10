@@ -1,45 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   dll_push.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:24:35 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../../../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+t_dll_l	dll_push(t_dll_l link, t_dll list)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	t_dll_l prev_link;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
-
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
-
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	if (link == NULL)
+		return (link);
+	else if (list->length == 0)
+		return (dll_list_empty(link, list));
+	prev_link = list->top;
+	prev_link->prev = link;
+	link->next = prev_link;
+	list->top = link;
+	list->length += 1;
+	return (link);
+}

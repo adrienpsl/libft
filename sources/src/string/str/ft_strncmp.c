@@ -1,45 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2017/11/16 12:46:12 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
-
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
-
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
-
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	if (!n)
+		return (0);
+	while (*s1 && *s1 == *s2 && n - 1)
+	{
+		s1++;
+		s2++;
+		n--;
+	}
+	return (*((unsigned char*)s1) - *((unsigned char*)s2));
+}

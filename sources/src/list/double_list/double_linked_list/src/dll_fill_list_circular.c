@@ -1,45 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   dll_fill_list_circular.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:24:37 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../../../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+void	dll_fill_list_circular(t_dll_c c_list, t_dll list, size_t lenght)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	int		nb;
+	size_t	i;
+	t_dll_l	new_link;
+	t_dll_l	link;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
-
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
-
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	i = 0;
+	link = c_list->top;
+	while (i < lenght)
+	{
+		nb = dll_l_get_int(link);
+		new_link = new_dll_l(&nb, sizeof(int));
+		dll_add(new_link, list);
+		link = link->next;
+		++i;
+	}
+}

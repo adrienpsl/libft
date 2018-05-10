@@ -1,45 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2017/11/16 12:46:10 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	char	*d;
+	char	*s;
+	size_t	len;
+	size_t	dst_len;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
-
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
-
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	if (!(d = (char *)ft_memchr(dst, '\0', size)))
+		return (size + ft_strlen(src));
+	s = (char*)src;
+	d = dst;
+	dst_len = ft_strlen(dst);
+	len = dst_len + ft_strlen(s);
+	d += dst_len;
+	while (dst_len++ < size - 1 && *s)
+		*d++ = *s++;
+	*d = '\0';
+	return (len);
+}

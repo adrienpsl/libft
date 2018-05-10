@@ -1,45 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   dll_print_nb.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:24:35 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../../../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+void	dll_print_nb(t_dll lst)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	t_dll_l link;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
+	link = lst->top;
+	while (link)
+	{
+		ft_printf("%2d ", dll_l_get_int(link));
+		link = link->next;
+	}
+	ft_printf("\n");
+}
 
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
+void	dll_print_nbrev(t_dll lst)
+{
+	t_dll_l link;
 
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	link = lst->end;
+	while (link)
+	{
+		ft_printf("%2d ", dll_l_get_int(link));
+		link = link->prev;
+	}
+	ft_printf("\n");
+}

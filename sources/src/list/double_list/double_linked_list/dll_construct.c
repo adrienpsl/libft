@@ -1,45 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   dll_construct.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:29:11 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+static void		destroy_all_links(t_dll list)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	t_dll_l current_link;
+	t_dll_l next_link;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
+	current_link = list->top;
+	while (current_link)
+	{
+		next_link = current_link->next;
+		destroy_dll_l(&current_link);
+		current_link = next_link;
+	}
+	list->length = 0;
+}
 
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
+void			destroy_dll(t_dll *l)
+{
+	t_dll list;
 
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
+	list = *l;
+	destroy_all_links(list);
+	list->top = NULL;
+	list->end = NULL;
+	free(list);
+}
 
-#endif
+t_dll			new_dll(void)
+{
+	t_dll list;
+
+	list = ft_malloc_protect(sizeof(t_dll_00));
+	list->top = NULL;
+	list->length = 0;
+	return (list);
+}

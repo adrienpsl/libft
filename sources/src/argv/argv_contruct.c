@@ -1,45 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   argv_contruct.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:11:25 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+void	destroy_argv(t_argv *a)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	t_argv argv;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
+	if (a == NULL)
+		return ;
+	argv = *a;
+	if (argv->own_splitted_av)
+		ft_free_split(&argv->own_splitted_av);
+	free(argv);
+}
 
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
+t_argv	new_argv(int ac, char **av)
+{
+	t_argv argv;
 
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	argv = ft_malloc_protect(sizeof(t_argv_00));
+	ft_memset(argv, 0, sizeof(t_argv_00));
+	argv->av = av;
+	argv->ac = ac;
+	argv->counter = 1;
+	argv_get_option(argv);
+	return (argv);
+}

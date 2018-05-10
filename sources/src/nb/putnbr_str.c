@@ -1,45 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   putnbr_str.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:52:49 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../ft_library_header.h"
+#include <limits.h>
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+static int		zero(int n, char *str)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	if (n == 0)
+	{
+		str[0] = 0 + '0';
+		str[1] = '\0';
+		return (TRUE);
+	}
+	return (FALSE);
+}
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
+void			ft_putnbr_str(int n, char *str)
+{
+	int n_tmp;
+	int size;
 
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
-
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	if (zero(n, str) == TRUE)
+		return ;
+	n_tmp = n;
+	size = 0;
+	while (n_tmp)
+	{
+		size++;
+		n_tmp /= 10;
+	}
+	str[size] = '\0';
+	size--;
+	while (n)
+	{
+		str[size] = (n % 10) + '0';
+		n /= 10;
+		size--;
+	}
+}

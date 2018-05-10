@@ -6,40 +6,35 @@
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:52:40 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+long	ft_atoi(const char *s)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	int		i;
+	long	nb;
+	long	neg;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
-
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
-
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	i = 0;
+	nb = 0;
+	neg = 1;
+	while (s[i] == '\t' || s[i] == '\v' || s[i] == '\r' || s[i] == '\n'
+			|| s[i] == '\f' || s[i] == ' ')
+		i++;
+	if (s[i] == '+')
+		i++;
+	else if (s[i] == '-')
+	{
+		i++;
+		neg = -neg;
+	}
+	while (s[i] <= '9' && s[i] >= '0')
+	{
+		nb = (nb * 10) + (s[i] - '0');
+		i++;
+	}
+	return (nb * neg);
+}

@@ -1,45 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   sll_construct.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Updated: 2018/05/04 16:43:59 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+static void		destroy_all_links(t_sll list)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	t_sll_l top;
+	t_sll_l next;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
+	top = list->top;
+	while (top != NULL)
+	{
+		next = top->next;
+		destroy_sll_l(&top);
+		top = next;
+	}
+	list->lenght = 0;
+}
 
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
+void			destroy_sll(t_sll *l)
+{
+	t_sll sll;
 
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
+	sll = *l;
+	destroy_all_links(sll);
+	sll->top = NULL;
+	free(sll);
+}
 
-#endif
+t_sll			new_sll(void)
+{
+	t_sll list;
+
+	list = ft_malloc_protect(sizeof(t_sll_00));
+	ft_memset(list, 0, sizeof(t_sll_00));
+	return (list);
+}

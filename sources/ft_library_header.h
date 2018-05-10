@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sll_construct.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
+/*   Updated: 2018/05/04 16:43:59 by adpusel          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBRARY_FT_LIBRARY_HEADER_H
 # define LIBRARY_FT_LIBRARY_HEADER_H
 
@@ -12,15 +24,9 @@
 # include "include/libft_define.h"
 
 /*
-**	buffer_str
-*/
-# include "include/libft_buffer_str.h"
-
-/*
 **  memory function
 */
 # include "include/libft_memory_function.h"
-
 
 /*
 **  text function
@@ -68,15 +74,14 @@
 /*
 **    debug
 */
-#include "include/libft_debug.h"
+# include "include/libft_debug.h"
 
 /*
 **    object argv
 */
 # include "include/argv_header.h"
 
-void			ft_quick_sort(int *tab, int start, int end);
-void ft_quick_sort_dll(t_dll_l start, t_dll_l end, t_dll list );
-
+void	ft_quick_sort(int *tab, int start, int end);
+void	ft_quick_sort_dll(t_dll_l start, t_dll_l end, t_dll list);
 
 #endif

@@ -10,36 +10,41 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DLL_L_HEADER_H
-# define DLL_L_HEADER_H
-# include <stdlib.h>
+#include "../../ft_library_header.h"
 
-/*
-**    structure :
-*/
-typedef struct			s_dll_l_00
+static void		swap(int tab[], int a, int b)
 {
-	void				*content;
-	size_t				content_size;
-	struct s_dll_l_00	*next;
-	struct s_dll_l_00	*prev;
-}						t_dll_l_00;
-typedef t_dll_l_00 *t_dll_l;
+	int temp;
 
-/*
-**    construct
-*/
-void					destroy_dll_l(t_dll_l *l);
-t_dll_l					new_dll_l(void *content, size_t size);
+	temp = tab[a];
+	tab[a] = tab[b];
+	tab[b] = temp;
+}
 
-/*
-**    utils =======================
-*/
-void					reset_ptr_dll_l(t_dll_l link);
+void			ft_quick_sort(int *tab, int start, int end)
+{
+	int left;
+	int right;
+	int pivot;
 
-/*
-**    getter data
-*/
-int						dll_l_get_int(t_dll_l link);
-
-#endif
+	if (start >= end)
+		return ;
+	pivot = tab[start];
+	left = start;
+	right = end;
+	while (1)
+	{
+		while (tab[left] < pivot)
+		{
+			left++;
+		}
+		while (tab[right] > pivot)
+			right--;
+		if (tab[left] > tab[right])
+			swap(tab, left, right);
+		else
+			break ;
+	}
+	ft_quick_sort(tab, start, right);
+	ft_quick_sort(tab, right + 1, end);
+}
