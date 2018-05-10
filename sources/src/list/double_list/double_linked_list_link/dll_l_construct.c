@@ -18,6 +18,21 @@ void		reset_ptr_dll_l(t_dll_l link)
 	link->prev = NULL;
 }
 
+void		destroy_dll_l_func(t_dll_l *l, void *func (t_dll_l))
+{
+	t_dll_l link;
+
+	link = *l;
+	if (link->content)
+	{
+		func(link->content);
+		link->content = NULL;
+	}
+	link->prev = NULL;
+	link->next = NULL;
+	free(link);
+}
+
 void		destroy_dll_l(t_dll_l *l)
 {
 	t_dll_l link;

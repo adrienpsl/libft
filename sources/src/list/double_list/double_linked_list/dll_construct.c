@@ -27,6 +27,26 @@ static void		destroy_all_links(t_dll list)
 	list->length = 0;
 }
 
+void			destroy_dll_func(t_dll *l, void *func (t_dll_l))
+{
+	t_dll	list;
+	t_dll_l	current_link;
+	t_dll_l	next_link;
+
+	list = *l;
+	current_link = list->top;
+	while (current_link)
+	{
+		next_link = current_link->next;
+		destroy_dll_l_func(&current_link, func);
+		current_link = next_link;
+	}
+	list->length = 0;
+	list->top = NULL;
+	list->end = NULL;
+	free(list);
+}
+
 void			destroy_dll(t_dll *l)
 {
 	t_dll list;
