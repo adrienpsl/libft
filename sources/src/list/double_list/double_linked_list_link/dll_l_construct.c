@@ -25,8 +25,7 @@ void		destroy_dll_l_func(t_dll_l *l, void (*func) (t_dll_l))
 	link = *l;
 	if (link->content)
 	{
-		func(link->content);
-		link->content = NULL;
+		func(link);
 	}
 	link->prev = NULL;
 	link->next = NULL;
