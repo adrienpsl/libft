@@ -17,6 +17,8 @@ static void		destroy_all_links(t_dll list)
 	t_dll_l current_link;
 	t_dll_l next_link;
 
+	if (list->top == NULL)
+		return ;
 	current_link = list->top;
 	while (current_link)
 	{

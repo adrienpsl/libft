@@ -13,7 +13,7 @@
 #ifndef ARGV_HEADER_H
 # define ARGV_HEADER_H
 
-# define OPTION "f o p"
+# define OPTION "f o p v"
 # define NO_ARGV "Error no given arngv"
 
 /*
