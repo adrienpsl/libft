@@ -54,6 +54,8 @@ add_executable(libft_run main.c
         #[[ test]]
         tests/ft_array.test.c
         tests/ft_buffer.test.c
+        tests/ft_char.test.c
+        tests/ft_io.test.c
 
         #[[ printf]]
         )

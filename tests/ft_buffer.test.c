@@ -42,4 +42,5 @@ int test_ft_buffer()
 	ft_buffer_add(buff, "supre chaleur", strlen("supre chaleur"));
 	if (!ft_streq(g_test_buffer, "buffer to small to handel datasupsupre chaleur"))
 		printf("error little buffer \n");
+	return (0);
 }

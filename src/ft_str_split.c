@@ -41,7 +41,7 @@ static int dup_word(char **s, char **out, char separators)
 	while ((*s)[size]
 		   && *s && !ft_char_test((*s)[size], separators))
 		size++;
-	if (!(*out = ft_memdup(s, size)))
+	if (!(*out = ft_strndup(*s, size)))
 		return (-1);
 	*s += size;
 	return (0);
@@ -51,7 +51,6 @@ char **ft_str_split(char *s, char separators)
 {
 	int words;
 	char **split;
-	char *tmp;
 	int i;
 
 	i = 0;
@@ -62,9 +61,8 @@ char **ft_str_split(char *s, char separators)
 		return (NULL);
 	while (i < words)
 	{
-		if (dup_word(&s, &tmp, separators))
+		if (dup_word(&s, split + i, separators))
 			return (NULL);
-		split[i] = tmp;
 		i++;
 	}
 	split[i] = NULL;

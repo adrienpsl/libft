@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/adpusel/code/42/libft/cmake-build-debug
 CMakeFiles/libft_run.dir/all: CMakeFiles/libft.dir/all
 	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/depend
 	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=46,47,48,49 "Built target libft_run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=46,47,48,49,50,51 "Built target libft_run"
 .PHONY : CMakeFiles/libft_run.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/libft_run.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/libft_run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libft_run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/libft_run.dir/rule

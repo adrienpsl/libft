@@ -21,3 +21,15 @@ CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o: ../includes/libft_define.h
 CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o: ../includes/libft_struct.h
 CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o: ../tests/ft_buffer.test.c
 
+CMakeFiles/libft_run.dir/tests/ft_char.test.c.o: ../includes/ft_printf.h
+CMakeFiles/libft_run.dir/tests/ft_char.test.c.o: ../includes/libft.h
+CMakeFiles/libft_run.dir/tests/ft_char.test.c.o: ../includes/libft_define.h
+CMakeFiles/libft_run.dir/tests/ft_char.test.c.o: ../includes/libft_struct.h
+CMakeFiles/libft_run.dir/tests/ft_char.test.c.o: ../tests/ft_char.test.c
+
+CMakeFiles/libft_run.dir/tests/ft_io.test.c.o: ../includes/ft_printf.h
+CMakeFiles/libft_run.dir/tests/ft_io.test.c.o: ../includes/libft.h
+CMakeFiles/libft_run.dir/tests/ft_io.test.c.o: ../includes/libft_define.h
+CMakeFiles/libft_run.dir/tests/ft_io.test.c.o: ../includes/libft_struct.h
+CMakeFiles/libft_run.dir/tests/ft_io.test.c.o: ../tests/ft_io.test.c
+

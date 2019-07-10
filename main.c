@@ -16,18 +16,18 @@
 
 void test()
 {
-	//	if (test_ft_char())
-	//		printf("error char \n");
 	//	if (test_ft_memory())
 	//		printf("error memory \n");
 	//	if (test_ft_list())
 	//		printf("error list \n");
-//	if (test_ft_str())
-//		printf("error str \n");
+	//	if (test_ft_str())
+	//		printf("error str \n");
 	//	if (test_ft_io())
 	//		printf("error io \n");
-		test_ft_buffer();
-		test_ft_array();
+	test_ft_char();
+	test_ft_buffer();
+	test_ft_array();
+	test_ft_io();
 	//		if (test_ft_printf())
 	//		printf("printf error\n");
 
@@ -35,8 +35,8 @@ void test()
 
 int main(int ac, char **av)
 {
-	(void)ac;
-	(void)av;
+	(void) ac;
+	(void) av;
 	test();
 	return (EXIT_SUCCESS);
 }

@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/adpusel/code/42/libft/main.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/main.c.o"
   "/Users/adpusel/code/42/libft/tests/ft_array.test.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/tests/ft_array.test.c.o"
   "/Users/adpusel/code/42/libft/tests/ft_buffer.test.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o"
+  "/Users/adpusel/code/42/libft/tests/ft_char.test.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/tests/ft_char.test.c.o"
+  "/Users/adpusel/code/42/libft/tests/ft_io.test.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/tests/ft_io.test.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

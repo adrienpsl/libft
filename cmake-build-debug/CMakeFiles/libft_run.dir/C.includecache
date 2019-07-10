@@ -58,9 +58,23 @@ libft.h
 tests/test.h
 /Users/adpusel/code/42/libft/tests/test.h
 
+/Users/adpusel/code/42/libft/tests/ft_array.test.c
+libft.h
+/Users/adpusel/code/42/libft/tests/libft.h
+test.h
+/Users/adpusel/code/42/libft/tests/test.h
+
 /Users/adpusel/code/42/libft/tests/ft_buffer.test.c
 libft.h
 /Users/adpusel/code/42/libft/tests/libft.h
+
+/Users/adpusel/code/42/libft/tests/ft_char.test.c
+libft.h
+-
+
+/Users/adpusel/code/42/libft/tests/ft_io.test.c
+libft.h
+-
 
 /Users/adpusel/code/42/libft/tests/test.h
 

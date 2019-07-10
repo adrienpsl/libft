@@ -1405,6 +1405,60 @@ tests/ft_buffer.test.c.s:
 	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.s
 .PHONY : tests/ft_buffer.test.c.s
 
+tests/ft_char.test.o: tests/ft_char.test.c.o
+
+.PHONY : tests/ft_char.test.o
+
+# target to build an object file
+tests/ft_char.test.c.o:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_char.test.c.o
+.PHONY : tests/ft_char.test.c.o
+
+tests/ft_char.test.i: tests/ft_char.test.c.i
+
+.PHONY : tests/ft_char.test.i
+
+# target to preprocess a source file
+tests/ft_char.test.c.i:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_char.test.c.i
+.PHONY : tests/ft_char.test.c.i
+
+tests/ft_char.test.s: tests/ft_char.test.c.s
+
+.PHONY : tests/ft_char.test.s
+
+# target to generate assembly for a file
+tests/ft_char.test.c.s:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_char.test.c.s
+.PHONY : tests/ft_char.test.c.s
+
+tests/ft_io.test.o: tests/ft_io.test.c.o
+
+.PHONY : tests/ft_io.test.o
+
+# target to build an object file
+tests/ft_io.test.c.o:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_io.test.c.o
+.PHONY : tests/ft_io.test.c.o
+
+tests/ft_io.test.i: tests/ft_io.test.c.i
+
+.PHONY : tests/ft_io.test.i
+
+# target to preprocess a source file
+tests/ft_io.test.c.i:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_io.test.c.i
+.PHONY : tests/ft_io.test.c.i
+
+tests/ft_io.test.s: tests/ft_io.test.c.s
+
+.PHONY : tests/ft_io.test.s
+
+# target to generate assembly for a file
+tests/ft_io.test.c.s:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_io.test.c.s
+.PHONY : tests/ft_io.test.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1556,6 +1610,12 @@ help:
 	@echo "... tests/ft_buffer.test.o"
 	@echo "... tests/ft_buffer.test.i"
 	@echo "... tests/ft_buffer.test.s"
+	@echo "... tests/ft_char.test.o"
+	@echo "... tests/ft_char.test.i"
+	@echo "... tests/ft_char.test.s"
+	@echo "... tests/ft_io.test.o"
+	@echo "... tests/ft_io.test.i"
+	@echo "... tests/ft_io.test.s"
 .PHONY : help
 
 

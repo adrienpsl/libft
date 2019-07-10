@@ -2,9 +2,11 @@
   <dictionary name="adpusel">
     <words>
       <w>itoa</w>
+      <w>memcpy</w>
       <w>printf</w>
       <w>putstr</w>
       <w>strlen</w>
+      <w>strndup</w>
       <w>strnew</w>
     </words>
   </dictionary>
