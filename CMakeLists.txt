@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14)
 project(libft C)
 
 
-#set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
+set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 #set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address -g")
 
 # I got all the includes to my directory

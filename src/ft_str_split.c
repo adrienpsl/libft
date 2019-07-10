@@ -56,14 +56,14 @@ char **ft_str_split(char *s, char separators)
 
 	i = 0;
 	if (s == NULL)
-		return (s);
+		return (NULL);
 	words = count_words(s, separators);
 	if (!(split = malloc(sizeof(char *) * (words + 2))))
-		return (-1);
+		return (NULL);
 	while (i < words)
 	{
 		if (dup_word(&s, &tmp, separators))
-			return (-1);
+			return (NULL);
 		split[i] = tmp;
 		i++;
 	}

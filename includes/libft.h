@@ -37,12 +37,14 @@
 # define FRESH NULL
 
 # define BUFF_SIZE 4096
+int g_test;
+char g_test_buffer[10000];
 
 int ft_atoi(const char *str);
 int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u);
 
 size_t ft_strlen(const char *str);
-
+void ft_putstr_buffer(const char *s, char *buffer);
 void ft_bzero(void *s, size_t n);
 void *ft_memcpy(void *restrict str1, const void *restrict str2, size_t n);
 void *ft_memalloc(size_t size);
@@ -78,7 +80,7 @@ int ft_isdigit(int c);
 int ft_isprint(int c);
 int ft_isascii(int c);
 int ft_isspace(int c);
-int ft_str_replace(char **out, char *str, char *searching, char *replacing);
+char *ft_str_replace(char *str, char *searching, char *replacing);
 int ft_str_search(char *str, char *searching);
 
 t_buffer *ft_buffer_new(size_t size, int fd);

@@ -24,7 +24,7 @@ t_buffer *ft_buffer_new(size_t size, int fd)
 
 int ft_buffer_clean(t_buffer *buff)
 {
-	write(buff->param, buff->data, buff->i);
+	ft_putstr_fd(buff->data, buff->param);
 	ft_memset(buff->data, 0, buff->i);
 	buff->i = 0;
 	return (0);
@@ -40,7 +40,7 @@ int ft_buffer_add(t_buffer *buff, char *data, size_t size)
 	{
 		ft_putstr_fd("buffer to small to handel data", 2);
 		ft_buffer_clean(buff);
-		ft_putstr_fd(data, 1);
+		ft_putstr_fd(data, buff->param);
 		return (0);
 	}
 	if (size + buff->i > buff->length)

@@ -39,7 +39,10 @@ int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u)
 	long long nb;
 
 	if (origin_nb == 0)
-		return ft_memcpy(out, "0", 2);
+	{
+		ft_memcpy(out, "0", 2);
+		return (1);
+	}
 	if (is_u)
 		return ft_itoa_unsigned(origin_nb, base_str, out);
 	else

@@ -50,8 +50,8 @@ char *ft_strjoinby(const char *start, char *middle, char *end)
 	length[MIDDLE] = ft_strlen(middle);
 	length[END] = ft_strlen(end);
 	if (!(dest = ft_strnew(length[START] + length[MIDDLE] + length[END])))
-		return (1);
-	current = *dest;
+		return (NULL);
+	current = dest;
 	ft_memcpy(current, start, length[START]);
 	current += length[START];
 	ft_memcpy(current, middle, length[MIDDLE]);

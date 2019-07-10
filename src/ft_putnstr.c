@@ -12,24 +12,41 @@
 
 #include "libft.h"
 
-void	ft_putnstr_fd(char const *str, size_t len, int fd)
+void ft_putnstr_fd(char const *str, size_t len, int fd)
 {
 	write(fd, str, len);
 }
 
-void	ft_putnstr(char const *str, size_t str_len)
+void ft_putnstr(char const *str, size_t str_len)
 {
 	ft_putnstr_fd(str, str_len, STDOUT_FILENO);
 }
 
-void	ft_putstr_fd(char const *s, int fd)
+void ft_putstr_buffer(const char *s, char *buffer)
 {
-	write(fd, s, strlen(s));
+	int i;
+
+	i = 0;
+	while (s[i])
+	{
+		buffer[i] = s[i];
+		i++;
+	}
 }
 
-void	ft_putstr(char const *s)
+void ft_putstr_fd(char const *s, int fd)
+{
+	size_t size;
+	if (g_test)
+	{
+		size = ft_strlen(g_test_buffer);
+		ft_putstr_buffer(s, g_test_buffer + size);
+	}
+	else
+		write(fd, s, strlen(s));
+}
+
+void ft_putstr(char const *s)
 {
 	write(1, s, ft_strlen(s));
 }
-
-

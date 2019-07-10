@@ -2,6 +2,8 @@
 
 int test_ft_buffer()
 {
+	g_test = 1;
+
 	t_buffer *buff;
 	size_t size;
 
@@ -28,6 +30,16 @@ int test_ft_buffer()
 	ft_buffer_clean(buff);
 	if (strcmp(buff->data, "") || buff->i)
 		printf("ft_buffer_clean");
+	
+	free(buff);
 
-	return 0;
+	/* test buffer to little --------------------------------------------------------- */
+	// je clean le buffer et j'ajoute dedans avec mon printf.
+
+	ft_memset(g_test_buffer, 0, 10000);
+	buff = ft_buffer_new(5, 1);
+	ft_buffer_add(buff, "sup", strlen("sup"));
+	ft_buffer_add(buff, "supre chaleur", strlen("supre chaleur"));
+	if (!ft_streq(g_test_buffer, "buffer to small to handel datasupsupre chaleur"))
+		printf("error little buffer \n");
 }

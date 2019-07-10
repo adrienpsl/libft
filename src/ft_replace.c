@@ -37,15 +37,15 @@ int ft_str_search(char *str, char *searching)
 	return (-1);
 }
 
-
-int ft_str_replace(char **out, char *str, char *searching, char *replacing)
+char *ft_str_replace(char *str, char *searching, char *replacing)
 {
 	ssize_t match_i;
 	size_t length[4];
 	char *current;
+	char *out;
 
 	if (!str || !searching || !replacing)
-		return (-1);
+		return (NULL);
 	match_i = ft_str_search(str, searching);
 	if (match_i > -1)
 	{
@@ -53,17 +53,17 @@ int ft_str_replace(char **out, char *str, char *searching, char *replacing)
 		length[SEARCHING] = ft_strlen(searching);
 		length[REPLACING] = ft_strlen(replacing);
 		length[OUT] = length[STR] - (length[SEARCHING] - length[REPLACING]);
-		if (*out == FRESH && ft_str_new(out, length[OUT]))
-			return (-1);
-		current = *out;
+		if (!(out = ft_strnew(length[OUT])))
+			return (NULL);
+		current = out;
 		if (match_i)
-			ft_mem_copy(current, str, match_i);
-		ft_mem_copy((current += match_i), replacing, length[REPLACING]);
-		ft_mem_copy((current += length[REPLACING]),
+			ft_memcpy(current, str, match_i);
+		ft_memcpy((current += match_i), replacing, length[REPLACING]);
+		ft_memcpy((current += length[REPLACING]),
 					str + match_i + length[SEARCHING], STRING_MODE);
 		return (0);
 	}
-	return (-1);
+	return (NULL);
 }
 
 

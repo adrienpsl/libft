@@ -1,6 +1,7 @@
 <component name="ProjectDictionaryState">
   <dictionary name="adpusel">
     <words>
+      <w>itoa</w>
       <w>printf</w>
       <w>putstr</w>
       <w>strlen</w>
