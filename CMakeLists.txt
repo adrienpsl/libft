@@ -1,6 +1,6 @@
 set(CMAKE_C_STANDARD 99)
 cmake_minimum_required(VERSION 3.14)
-project(ft_lib C)
+project(libft C)
 
 
 #set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
@@ -52,6 +52,8 @@ target_include_directories(libft PUBLIC includes)
 add_executable(libft_run main.c
 
         #[[ test]]
+        tests/ft_array.test.c
+        tests/ft_buffer.test.c
 
         #[[ printf]]
         )

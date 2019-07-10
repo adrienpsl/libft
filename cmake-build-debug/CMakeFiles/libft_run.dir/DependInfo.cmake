@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/adpusel/code/42/ft_lib/main.c" "/Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles/libft_run.dir/main.c.o"
+  "/Users/adpusel/code/42/libft/main.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/main.c.o"
+  "/Users/adpusel/code/42/libft/tests/ft_array.test.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/tests/ft_array.test.c.o"
+  "/Users/adpusel/code/42/libft/tests/ft_buffer.test.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -16,7 +18,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles/libft.dir/DependInfo.cmake"
+  "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

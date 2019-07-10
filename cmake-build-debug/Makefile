@@ -48,10 +48,10 @@ RM = "/Users/adpusel/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/adpusel/code/42/ft_lib
+CMAKE_SOURCE_DIR = /Users/adpusel/code/42/libft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/adpusel/code/42/ft_lib/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/adpusel/code/42/libft/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles /Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles /Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1351,6 +1351,60 @@ src/ft_strnew.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_strnew.c.s
 .PHONY : src/ft_strnew.c.s
 
+tests/ft_array.test.o: tests/ft_array.test.c.o
+
+.PHONY : tests/ft_array.test.o
+
+# target to build an object file
+tests/ft_array.test.c.o:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_array.test.c.o
+.PHONY : tests/ft_array.test.c.o
+
+tests/ft_array.test.i: tests/ft_array.test.c.i
+
+.PHONY : tests/ft_array.test.i
+
+# target to preprocess a source file
+tests/ft_array.test.c.i:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_array.test.c.i
+.PHONY : tests/ft_array.test.c.i
+
+tests/ft_array.test.s: tests/ft_array.test.c.s
+
+.PHONY : tests/ft_array.test.s
+
+# target to generate assembly for a file
+tests/ft_array.test.c.s:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_array.test.c.s
+.PHONY : tests/ft_array.test.c.s
+
+tests/ft_buffer.test.o: tests/ft_buffer.test.c.o
+
+.PHONY : tests/ft_buffer.test.o
+
+# target to build an object file
+tests/ft_buffer.test.c.o:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o
+.PHONY : tests/ft_buffer.test.c.o
+
+tests/ft_buffer.test.i: tests/ft_buffer.test.c.i
+
+.PHONY : tests/ft_buffer.test.i
+
+# target to preprocess a source file
+tests/ft_buffer.test.c.i:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.i
+.PHONY : tests/ft_buffer.test.c.i
+
+tests/ft_buffer.test.s: tests/ft_buffer.test.c.s
+
+.PHONY : tests/ft_buffer.test.s
+
+# target to generate assembly for a file
+tests/ft_buffer.test.c.s:
+	$(MAKE) -f CMakeFiles/libft_run.dir/build.make CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.s
+.PHONY : tests/ft_buffer.test.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1496,6 +1550,12 @@ help:
 	@echo "... src/ft_strnew.o"
 	@echo "... src/ft_strnew.i"
 	@echo "... src/ft_strnew.s"
+	@echo "... tests/ft_array.test.o"
+	@echo "... tests/ft_array.test.i"
+	@echo "... tests/ft_array.test.s"
+	@echo "... tests/ft_buffer.test.o"
+	@echo "... tests/ft_buffer.test.i"
+	@echo "... tests/ft_buffer.test.s"
 .PHONY : help
 
 

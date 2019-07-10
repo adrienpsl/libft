@@ -43,10 +43,10 @@ RM = "/Users/adpusel/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/adpusel/code/42/ft_lib
+CMAKE_SOURCE_DIR = /Users/adpusel/code/42/libft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/adpusel/code/42/ft_lib/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/adpusel/code/42/libft/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/libft_run.dir/depend.make
@@ -59,29 +59,59 @@ include CMakeFiles/libft_run.dir/flags.make
 
 CMakeFiles/libft_run.dir/main.c.o: CMakeFiles/libft_run.dir/flags.make
 CMakeFiles/libft_run.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/libft_run.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft_run.dir/main.c.o   -c /Users/adpusel/code/42/ft_lib/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/libft_run.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft_run.dir/main.c.o   -c /Users/adpusel/code/42/libft/main.c
 
 CMakeFiles/libft_run.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft_run.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adpusel/code/42/ft_lib/main.c > CMakeFiles/libft_run.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adpusel/code/42/libft/main.c > CMakeFiles/libft_run.dir/main.c.i
 
 CMakeFiles/libft_run.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft_run.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/code/42/ft_lib/main.c -o CMakeFiles/libft_run.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/code/42/libft/main.c -o CMakeFiles/libft_run.dir/main.c.s
+
+CMakeFiles/libft_run.dir/tests/ft_array.test.c.o: CMakeFiles/libft_run.dir/flags.make
+CMakeFiles/libft_run.dir/tests/ft_array.test.c.o: ../tests/ft_array.test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/libft_run.dir/tests/ft_array.test.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft_run.dir/tests/ft_array.test.c.o   -c /Users/adpusel/code/42/libft/tests/ft_array.test.c
+
+CMakeFiles/libft_run.dir/tests/ft_array.test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft_run.dir/tests/ft_array.test.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adpusel/code/42/libft/tests/ft_array.test.c > CMakeFiles/libft_run.dir/tests/ft_array.test.c.i
+
+CMakeFiles/libft_run.dir/tests/ft_array.test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft_run.dir/tests/ft_array.test.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/code/42/libft/tests/ft_array.test.c -o CMakeFiles/libft_run.dir/tests/ft_array.test.c.s
+
+CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o: CMakeFiles/libft_run.dir/flags.make
+CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o: ../tests/ft_buffer.test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o   -c /Users/adpusel/code/42/libft/tests/ft_buffer.test.c
+
+CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adpusel/code/42/libft/tests/ft_buffer.test.c > CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.i
+
+CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/code/42/libft/tests/ft_buffer.test.c -o CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.s
 
 # Object files for target libft_run
 libft_run_OBJECTS = \
-"CMakeFiles/libft_run.dir/main.c.o"
+"CMakeFiles/libft_run.dir/main.c.o" \
+"CMakeFiles/libft_run.dir/tests/ft_array.test.c.o" \
+"CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o"
 
 # External object files for target libft_run
 libft_run_EXTERNAL_OBJECTS =
 
 libft_run: CMakeFiles/libft_run.dir/main.c.o
+libft_run: CMakeFiles/libft_run.dir/tests/ft_array.test.c.o
+libft_run: CMakeFiles/libft_run.dir/tests/ft_buffer.test.c.o
 libft_run: CMakeFiles/libft_run.dir/build.make
 libft_run: liblibft.a
 libft_run: CMakeFiles/libft_run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable libft_run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable libft_run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libft_run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -94,6 +124,6 @@ CMakeFiles/libft_run.dir/clean:
 .PHONY : CMakeFiles/libft_run.dir/clean
 
 CMakeFiles/libft_run.dir/depend:
-	cd /Users/adpusel/code/42/ft_lib/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/adpusel/code/42/ft_lib /Users/adpusel/code/42/ft_lib /Users/adpusel/code/42/ft_lib/cmake-build-debug /Users/adpusel/code/42/ft_lib/cmake-build-debug /Users/adpusel/code/42/ft_lib/cmake-build-debug/CMakeFiles/libft_run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/adpusel/code/42/libft/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/adpusel/code/42/libft /Users/adpusel/code/42/libft /Users/adpusel/code/42/libft/cmake-build-debug /Users/adpusel/code/42/libft/cmake-build-debug /Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft_run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libft_run.dir/depend
 
