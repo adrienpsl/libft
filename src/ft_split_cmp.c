@@ -16,15 +16,20 @@ int ft_str_split_cmp(char **split_1, char **split_2)
 {
 	if (!split_1 || !split_2)
 		return (0);
-	while (*split_1)
+	while (*split_1 && *split_2)
 	{
-		if (ft_memcmp(*split_1, *split_2, ft_strlen(*split_1)))
+		if (!ft_streq(*split_1, *split_2))
 		{
 			ft_printf("%s -- %s\n", *split_1, *split_2);
 			return (1);
 		}
 		split_1++;
 		split_2++;
+	}
+	if (*split_1 != *split_2)
+	{
+		ft_printf("split cmp not same end");
+		return (1);
 	}
 	return (0);
 }

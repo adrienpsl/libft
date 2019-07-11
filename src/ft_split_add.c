@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char **ft_str_split_copy(char **split)
+char **ft_str_split_copy(char **split, int free)
 {
 	char **new;
 	int i;
@@ -26,11 +26,12 @@ char **ft_str_split_copy(char **split)
 			return (NULL);
 		i++;
 	}
-	ft_str_split_free(&split);
+	if (free)
+		ft_str_split_free(&split);
 	return (new);
 }
 
-char **ft_str_split_add(char **split, char *s)
+char **ft_str_split_add(char **split, char *s, int free)
 {
 	int i;
 
@@ -38,7 +39,7 @@ char **ft_str_split_add(char **split, char *s)
 		return (NULL);
 	i = ft_str_split_count(split);
 	split[i] = s;
-	return (ft_str_split_copy(split));
+	return (ft_str_split_copy(split, free));
 }
 
 char **ft_str_split_remove(char **split, char *s)
@@ -48,17 +49,17 @@ char **ft_str_split_remove(char **split, char *s)
 	i = 0;
 	while (split[i] != NULL)
 	{
-	    if (ft_streq(split[i], s))
+		if (ft_streq(split[i], s))
 		{
-	    	free(split[i]);
-	    	while (split[i] != NULL)
-	    	{
-	    	    split[i] = split[i + 1];
-	    	    i++;
-	    	}
+			free(split[i]);
+			while (split[i] != NULL)
+			{
+				split[i] = split[i + 1];
+				i++;
+			}
 			return (split);
 		}
-	    i++;
+		i++;
 	}
 	return (NULL);
 }
