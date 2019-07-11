@@ -109,6 +109,7 @@ t_array *ft_array_dup(t_array *origin, size_t size);
 
 void *ft_array_el(t_array *array, int i);
 void *ft_array_next_el(t_array *array);
+int ft_putstrret(char *str, int ret);
 
 int ft_array_cmp(t_array *array_1,
  t_array *array_2,
