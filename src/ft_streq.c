@@ -40,7 +40,5 @@ int ft_strneq(char const *s1, char const *s2, size_t size)
 		i++;
 		size--;
 	}
-	if (s1[i] == '\0' && s2[i] == '\0')
-		return (1);
-	return (0);
+	return (size == 0 ? 1 : 0);
 }
