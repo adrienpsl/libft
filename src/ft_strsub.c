@@ -10,35 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-# include "libft.h"
-#include "tests/test.h"
+#include "libft.h"
 
-void test()
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	//	if (test_ft_memory())
-	//		printf("error memory \n");
-	//	if (test_ft_list())
-	//		printf("error list \n");
-	//	if (test_ft_str())
-	//		printf("error str \n");
-	//	if (test_ft_io())
-	//		printf("error io \n");
-	test_ft_char();
-	test_ft_buffer();
-	test_ft_array();
-	test_ft_io();
-	//		if (test_ft_printf())
-	//		printf("printf error\n");
+	size_t	i;
+	char	*dest;
 
-}
-
-int main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	test();
-
-
-	return (EXIT_SUCCESS);
+	i = 0;
+	if (!s)
+		return (NULL);
+	if (start > ft_strlen(s))
+		return (NULL);
+	if (!(dest = (char*)malloc(sizeof(char) * (len + 1))))
+		return (NULL);
+	while (i < len && s[start])
+	{
+		dest[i] = s[start];
+		start++;
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
