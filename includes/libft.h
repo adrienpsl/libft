@@ -93,6 +93,7 @@ int ft_isprint(int c);
 int ft_isascii(int c);
 int ft_isspace(int c);
 char *ft_str_replace(char *str, char *searching, char *replacing);
+char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
 int ft_str_search(char *str, char *searching);
 
 t_buffer *ft_buffer_new(size_t size, int fd);
@@ -114,6 +115,7 @@ int ft_array_cmp(t_array *array_1,
  int (*f)(void *, void *),
  int mode);
 
+int ft_str_nchar(char *str, char c);
 void *ft_array_func(t_array *array, int(*f)(void *, void *, void *), void *param);
 int ft_quick_sort(t_sort *quick, int low, int high);
 int ft_array_bubble(t_sort *s);

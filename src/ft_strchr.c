@@ -27,3 +27,19 @@ ssize_t ft_strchr(char *str, char c)
 	}
 	return (-1);
 }
+
+int ft_str_nchar(char *str, char c)
+{
+	int i;
+
+	if (!str)
+		return (-1);
+	i = 0;
+	while (*str)
+	{
+		if (*str == c)
+			i++;
+		str++;
+	}
+	return i;
+}
