@@ -57,7 +57,7 @@ char *ft_strjoinby(const char *start, char *middle, char *end)
 	ft_memcpy(current, middle, length[MIDDLE]);
 	current += length[MIDDLE];
 	ft_memcpy(current, end, length[END]);
-	return (0);
+	return (dest);
 }
 
 int ft_strjoinbybuffer(char **dest, const char *start, char *middle, char *end)
