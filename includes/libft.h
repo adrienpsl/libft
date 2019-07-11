@@ -110,13 +110,13 @@ t_array *ft_array_dup(t_array *origin, size_t size);
 void *ft_array_el(t_array *array, int i);
 void *ft_array_next_el(t_array *array);
 int ft_putstrret(char *str, int ret);
-
+int ft_strneq(char const *s1, char const *s2, size_t size);
 int ft_array_cmp(t_array *array_1,
  t_array *array_2,
  int (*f)(void *, void *),
  int mode);
 
-int ft_strnchar(char *str, char c);
+int ft_strnchr(char *str, char c);
 void *ft_array_func(t_array *array, int(*f)(void *, void *, void *), void *param);
 int ft_quick_sort(t_sort *quick, int low, int high);
 int ft_array_bubble(t_sort *s);
