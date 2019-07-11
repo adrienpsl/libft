@@ -116,7 +116,7 @@ int ft_array_cmp(t_array *array_1,
  int (*f)(void *, void *),
  int mode);
 
-int ft_str_nchar(char *str, char c);
+int ft_strnchar(char *str, char c);
 void *ft_array_func(t_array *array, int(*f)(void *, void *, void *), void *param);
 int ft_quick_sort(t_sort *quick, int low, int high);
 int ft_array_bubble(t_sort *s);

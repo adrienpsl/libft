@@ -28,7 +28,7 @@ ssize_t ft_strchr(char *str, char c)
 	return (-1);
 }
 
-int ft_str_nchar(char *str, char c)
+int ft_strnchar(char *str, char c)
 {
 	int i;
 
