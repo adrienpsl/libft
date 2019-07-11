@@ -629,6 +629,19 @@ CMakeFiles/libft.dir/src/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/src/ft_strcmp.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/code/42/libft/src/ft_strcmp.c -o CMakeFiles/libft.dir/src/ft_strcmp.c.s
 
+CMakeFiles/libft.dir/src/ft_split_add.c.o: CMakeFiles/libft.dir/flags.make
+CMakeFiles/libft.dir/src/ft_split_add.c.o: ../src/ft_split_add.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/libft.dir/src/ft_split_add.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/libft.dir/src/ft_split_add.c.o   -c /Users/adpusel/code/42/libft/src/ft_split_add.c
+
+CMakeFiles/libft.dir/src/ft_split_add.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/libft.dir/src/ft_split_add.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/adpusel/code/42/libft/src/ft_split_add.c > CMakeFiles/libft.dir/src/ft_split_add.c.i
+
+CMakeFiles/libft.dir/src/ft_split_add.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/libft.dir/src/ft_split_add.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/adpusel/code/42/libft/src/ft_split_add.c -o CMakeFiles/libft.dir/src/ft_split_add.c.s
+
 # Object files for target libft
 libft_OBJECTS = \
 "CMakeFiles/libft.dir/src/ft_atoi.c.o" \
@@ -674,7 +687,8 @@ libft_OBJECTS = \
 "CMakeFiles/libft.dir/src/ft_streq.c.o" \
 "CMakeFiles/libft.dir/src/ft_strjoin.c.o" \
 "CMakeFiles/libft.dir/src/ft_strnew.c.o" \
-"CMakeFiles/libft.dir/src/ft_strcmp.c.o"
+"CMakeFiles/libft.dir/src/ft_strcmp.c.o" \
+"CMakeFiles/libft.dir/src/ft_split_add.c.o"
 
 # External object files for target libft
 libft_EXTERNAL_OBJECTS =
@@ -723,9 +737,10 @@ liblibft.a: CMakeFiles/libft.dir/src/ft_streq.c.o
 liblibft.a: CMakeFiles/libft.dir/src/ft_strjoin.c.o
 liblibft.a: CMakeFiles/libft.dir/src/ft_strnew.c.o
 liblibft.a: CMakeFiles/libft.dir/src/ft_strcmp.c.o
+liblibft.a: CMakeFiles/libft.dir/src/ft_split_add.c.o
 liblibft.a: CMakeFiles/libft.dir/build.make
 liblibft.a: CMakeFiles/libft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Linking C static library liblibft.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking C static library liblibft.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/libft.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libft.dir/link.txt --verbose=$(VERBOSE)
 

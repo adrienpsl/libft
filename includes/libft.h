@@ -74,6 +74,7 @@ int ft_str_split_count(char **split);
 int ft_io_catch_options(char *av_string, char *str_option, long *options);
 int ft_str_split_cmp(char **split_1, char **split_2);
 char *ft_strndup(const char *s, size_t size);
+char *ft_strdup(const char *s);
 
 int ft_isalpha(int c);
 int ft_isalnum(int c);

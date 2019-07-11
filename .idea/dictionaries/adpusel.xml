@@ -3,6 +3,7 @@
     <words>
       <w>itoa</w>
       <w>memcpy</w>
+      <w>memdel</w>
       <w>printf</w>
       <w>putstr</w>
       <w>strlen</w>

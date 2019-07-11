@@ -37,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/adpusel/code/42/libft/src/ft_putendl_fd.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/src/ft_putendl_fd.c.o"
   "/Users/adpusel/code/42/libft/src/ft_putnstr.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/src/ft_putnstr.c.o"
   "/Users/adpusel/code/42/libft/src/ft_replace.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/src/ft_replace.c.o"
+  "/Users/adpusel/code/42/libft/src/ft_split_add.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/src/ft_split_add.c.o"
   "/Users/adpusel/code/42/libft/src/ft_split_cmp.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/src/ft_split_cmp.c.o"
   "/Users/adpusel/code/42/libft/src/ft_str_print_split.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/src/ft_str_print_split.c.o"
   "/Users/adpusel/code/42/libft/src/ft_str_split.c" "/Users/adpusel/code/42/libft/cmake-build-debug/CMakeFiles/libft.dir/src/ft_str_split.c.o"

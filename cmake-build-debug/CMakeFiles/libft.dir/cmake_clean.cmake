@@ -43,6 +43,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libft.dir/src/ft_strjoin.c.o"
   "CMakeFiles/libft.dir/src/ft_strnew.c.o"
   "CMakeFiles/libft.dir/src/ft_strcmp.c.o"
+  "CMakeFiles/libft.dir/src/ft_split_add.c.o"
   "liblibft.pdb"
   "liblibft.a"
 )

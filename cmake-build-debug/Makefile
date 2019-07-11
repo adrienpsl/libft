@@ -1054,6 +1054,33 @@ src/ft_replace.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_replace.c.s
 .PHONY : src/ft_replace.c.s
 
+src/ft_split_add.o: src/ft_split_add.c.o
+
+.PHONY : src/ft_split_add.o
+
+# target to build an object file
+src/ft_split_add.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_split_add.c.o
+.PHONY : src/ft_split_add.c.o
+
+src/ft_split_add.i: src/ft_split_add.c.i
+
+.PHONY : src/ft_split_add.i
+
+# target to preprocess a source file
+src/ft_split_add.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_split_add.c.i
+.PHONY : src/ft_split_add.c.i
+
+src/ft_split_add.s: src/ft_split_add.c.s
+
+.PHONY : src/ft_split_add.s
+
+# target to generate assembly for a file
+src/ft_split_add.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/src/ft_split_add.c.s
+.PHONY : src/ft_split_add.c.s
+
 src/ft_split_cmp.o: src/ft_split_cmp.c.o
 
 .PHONY : src/ft_split_cmp.o
@@ -1571,6 +1598,9 @@ help:
 	@echo "... src/ft_replace.o"
 	@echo "... src/ft_replace.i"
 	@echo "... src/ft_replace.s"
+	@echo "... src/ft_split_add.o"
+	@echo "... src/ft_split_add.i"
+	@echo "... src/ft_split_add.s"
 	@echo "... src/ft_split_cmp.o"
 	@echo "... src/ft_split_cmp.i"
 	@echo "... src/ft_split_cmp.s"
