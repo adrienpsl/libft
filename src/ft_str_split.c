@@ -12,34 +12,34 @@
 
 #include "libft.h"
 
-static int count_words(char *s, char separators)
+static int count_words(char *s, char *separators)
 {
 	size_t words;
 
 	words = 0;
 	while (*s)
 	{
-		while (*s && ft_char_test(*s, separators))
+		while (*s && ft_strchr(separators, *s) > -1)
 			s++;
-		if (*s && !ft_char_test(*s, separators))
+		if (*s && ft_strchr(separators, *s) == -1)
 		{
 			words++;
-			while (*s && !ft_char_test(*s, separators))
+			while (*s && ft_strchr(separators, *s) == -1)
 				s++;
 		}
 	}
 	return words;
 }
 
-static int dup_word(char **s, char **out, char separators)
+static int dup_word(char **s, char **out, char *separators)
 {
 	size_t size;
 
 	size = 0;
-	while (**s && ft_char_test(**s, separators))
+	while (**s && ft_strchr(separators, **s) > -1)
 		(*s)++;
 	while ((*s)[size]
-		   && *s && !ft_char_test((*s)[size], separators))
+		   && *s && ft_strchr(separators, (*s)[size]) == -1)
 		size++;
 	if (!(*out = ft_strndup(*s, size)))
 		return (-1);
@@ -47,7 +47,7 @@ static int dup_word(char **s, char **out, char separators)
 	return (0);
 }
 
-char **ft_str_split(char *s, char separators)
+char **ft_str_split(char *s, char *separators)
 {
 	int words;
 	char **split;

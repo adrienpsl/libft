@@ -75,7 +75,7 @@ int ft_capitalise(int c, int mode);
 void *ft_memdup(const void *src, size_t size);
 void ft_str_split_free(char ***p_str);
 void ft_str_split_print(char **p_str);
-char **ft_str_split(char *s, char separators);
+char **ft_str_split(char *s, char *separators);
 ssize_t ft_strchr(char *str, char c);
 int ft_str_split_count(char **split);
 int ft_io_catch_options(char *av_string, char *str_option, long *options);

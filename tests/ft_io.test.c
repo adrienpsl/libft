@@ -73,7 +73,7 @@ int test_io_catch_options()
 	return (0);
 }
 
-void test_ft_str_split(char *s, char **res, char separators)
+void test_ft_str_split(char *s, char **res, char *separators)
 {
 	char **split;
 
@@ -124,24 +124,24 @@ void test_ft_str_split_remove(char **split, char **res, char *add, int *n)
 int test_ft_io()
 {
 	int n = 0;
-	/*	test_ft_str_split(NULL, NULL, ' ');
+	test_ft_str_split(NULL, NULL, " ");
 
-		char **res_1 = { NULL };
-		test_ft_str_split("", res_1, ' ');
+	char **res_1 = { NULL };
+	test_ft_str_split("", res_1, " ");
 
-		char *res_2[2] = { "toto", NULL };
-		test_ft_str_split("toto    ", res_2, ' ');
-		test_ft_str_split("         toto    ", res_2, ' ');
-		//
-		char *res_3[3] = { "toto", "titi", NULL };
-		test_ft_str_split("toto        titi", res_3, ' ');
-		test_ft_str_split("         toto titi         ", res_3, ' ');
+	char *res_2[2] = { "toto", NULL };
+	test_ft_str_split("toto    ", res_2, " ");
+	test_ft_str_split("         toto    ", res_2, " ");
+	//
+	char *res_3[3] = { "toto", "titi", NULL };
+	test_ft_str_split("toto        titi", res_3, " ");
+	test_ft_str_split("         toto titi         ", res_3, " ");
 
-		char *res_4[100] = { "toto", "titi", "supre", "aeu", ",,,,", "aoeu", "iia", "'l'auh", "nnaou", "\033", NULL };
-		test_ft_str_split("toto titi supre   aeu ,,,, aoeu iia 'l'auh nnaou   \033", res_4, ' ');
+	char *res_4[100] = { "toto", "titi", "supre", "aeu", ",,,,", "aoeu", "iia", "'l'auh", "nnaou", "\033", NULL };
+	test_ft_str_split("toto titi supre   aeu ,,,, aoeu iia 'l'auh nnaou   \033", res_4, " ");
 
-		char *res_5[100] = { "lala", "lolol", "toto" };
-		test_ft_str_split("lala;lolol;;toto", res_5, ';');*/
+	char *res_5[100] = { "lala", "lolol", "toto" };
+	test_ft_str_split("lala;lolol;;toto", res_5, ";");
 
 	/* test split add  empty ------------------------------------------------------------ */
 	char *split_6[100] = { NULL };
