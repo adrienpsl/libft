@@ -27,17 +27,17 @@ void test_ft_str_replace(char *str, char *searching, char *replacing, char *res_
 int test_ft_str()
 {
 	// str search
-		test_ft_str_search(NULL, NULL, -1, 1);
-		test_ft_str_search("toto", "tata", -1, 2);
-		test_ft_str_search("aoeuau'", "ee", -1, 3);
-		test_ft_str_search("toto", "toto", 0, 4);
-		test_ft_str_search("eaeeoeeuaeeeu'", "eee", 9, 5);
-		test_ft_str_search("eaeeoeeuaeeaeouhoe saoeuoaeu  osaeuhaoe  aoeoaeu sasoteutothoaeu  aotttoootoeuatotooeu u'",
-						   "toto", 79, 6);
-		test_ft_str_search("eaeeoeeuaeeaeouhoe saoeuoaeu  osaeuhaoe  aoeoaeu sasoteutothoaeu  aotttoootoeuatotooeu u'",
-						   "tototo", -1, 7);
-		test_ft_str_search("eaeeoeeuaeeaeouhoe saoeuoaeu  osaeuhaoe  aoeoaeu sasoteutothoaeu  aotttoootoeuatotooeu u'",
-						   "to", 56, 8);
+	test_ft_str_search(NULL, NULL, -1, 1);
+	test_ft_str_search("toto", "tata", -1, 2);
+	test_ft_str_search("aoeuau'", "ee", -1, 3);
+	test_ft_str_search("toto", "toto", 0, 4);
+	test_ft_str_search("eaeeoeeuaeeeu'", "eee", 9, 5);
+	test_ft_str_search("eaeeoeeuaeeaeouhoe saoeuoaeu  osaeuhaoe  aoeoaeu sasoteutothoaeu  aotttoootoeuatotooeu u'",
+					   "toto", 79, 6);
+	test_ft_str_search("eaeeoeeuaeeaeouhoe saoeuoaeu  osaeuhaoe  aoeoaeu sasoteutothoaeu  aotttoootoeuatotooeu u'",
+					   "tototo", -1, 7);
+	test_ft_str_search("eaeeoeeuaeeaeouhoe saoeuoaeu  osaeuhaoe  aoeoaeu sasoteutothoaeu  aotttoootoeuatotooeu u'",
+					   "to", 56, 8);
 
 	// str replace
 	test_ft_str_replace(NULL, NULL, NULL, NULL, 9);
@@ -65,50 +65,44 @@ int test_ft_str()
 						"/fooaosuhaoseuhasouhasoehuaoneuhasouhaosehuasoeuasoehuansoeuhasnoeuhaoheuaonsehu",
 						"/fooaosuhaoseuhasouhasoehuaoneuhasouhaosehuasoeuasoehuansoeuhasnoeuhaoheuaonsehutoto", 16);
 
+	/* str char ------------------------------------------------------------- */
+	char *find = "012345";
+	ssize_t res_0, res_1, res_2;
+
+	res_0 = ft_strchr(find, '0');
+	res_1 = ft_strchr(find, '4');
+	res_2 = ft_strchr(find, '9');
+
+	if (res_0 != 0 || res_1 != 4 || res_2 != -1)
+		printf("error strchr \n");
 
 
+	/* str_join ------------------------------------------------------------- */
+	char *a = "";
+	char *b = "";
+	char *res;
 
+	res = ft_strjoin(a, b);
+	if (strcmp("", res))
+		printf("join test 1 \n");
+	free(res);
 
+	res = ft_strjoin("super", "maison");
+	if (strcmp("supermaison", res))
+		printf("join test 2 \n");
+	free(res);
 
-
-
-	//	/* str char ------------------------------------------------------------- */
-	//	char *find = "012345";
-	//	ssize_t res_0, res_1, res_2;
-	//
-	//	res_0 = ft_str_chr(find, '0');
-	//	res_1 = ft_str_chr(find, '4');
-	//	res_2 = ft_str_chr(find, '9');
-	//
-	//
-	//	if (res_0 != 0 || res_1 != 4 || res_2 != -1)
-	//		return 1;
-	//
 	//	/* reverse -------------------------------------------------------------- */
 	//	char nothing[12] = "";
 	//	char even[10] = "2211";
 	//	char odd[10] = "33211";
 	//
-	//	ft_str_reverse(nothing);
+	//	ft_str reverse(nothing);
 	//	ft_str_reverse(even);
 	//	ft_str_reverse(odd);
 	//
 	//	if (strcmp(nothing, "") || strcmp(even, "1122") || strcmp(odd, "11233"))
 	//		return 1;
-	//
-	//	/* str_join ------------------------------------------------------------- */
-	//	char *a = "";
-	//	char *b = "";
-	//	char *res;
-	//	int ret;
-	//
-	//	ret = str_join(&res, a, b);
-	//    if (strcmp("", res) || ret)
-	//        return (1);
-	//
-	//	ret = str_join(&res, "super", "maison");
-	//	if (strcmp("supermaison", res) || ret)
-	//		return (1);
 
 	return 0;
 }
