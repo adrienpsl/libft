@@ -20,8 +20,7 @@ void test()
 	//		printf("error memory \n");
 	//	if (test_ft_list())
 	//		printf("error list \n");
-	//	if (test_ft_str())
-	//		printf("error str \n");
+	test_ft_str();
 	test_ft_char();
 	test_ft_buffer();
 	test_ft_array();

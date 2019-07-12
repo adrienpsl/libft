@@ -53,7 +53,7 @@ char *ft_str_replace(char *str, char *searching, char *replacing)
 		ft_memcpy(out, str, match_i);
 		ft_strcat(out, replacing);
 		ft_strcat(out, str + match_i + searching_size);
-		return (0);
+		return (out);
 	}
 	return (NULL);
 }
@@ -70,7 +70,7 @@ char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacin
 		ft_memcpy(out, str, match_i);
 		ft_strcat(out, replacing);
 		ft_strcat(out, str + match_i + ft_strlen(searching));
-		return (0);
+		return (out);
 	}
 	return (NULL);
 }
