@@ -126,4 +126,6 @@ char *ft_strjoinby(const char *start, char *middle, char *end);
 int ft_strjoinbybuffer(char **dest, const char *start, char *middle, char *end);
 char *ft_strnew(size_t size);
 int ft_str_cmp(const char *s1, const char *s2);
+size_t		ft_strlcat(char *dst, const char *src, size_t len);
+char	*ft_strcat(char *restrict dest, const char *restrict src);
 #endif
