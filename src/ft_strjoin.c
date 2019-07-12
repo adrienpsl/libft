@@ -12,32 +12,33 @@
 
 #include "libft.h"
 
-char *ft_strjoin(const char *s1, const char *s2)
+char *ft_strjoin(const char *s1, const char *s2, int do_free)
 {
 	char *dest;
 
 	if (!(dest = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
 		return (NULL);
-	ft_strcat(dest, s1);
-	ft_strcat(dest, s2);
-	return (dest);
+	return (ft_strjoinbuffer(dest, s1, s2, do_free));
 }
 
-char *ft_strjoin_buffer(char *dest, const char *s1, const char *s2)
+char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free)
 {
 	ft_strcat(dest, s1);
 	ft_strcat(dest, s2);
+	if (do_free)
+	{
+		free((void *) s1);
+		free((void *) s2);
+	}
 	return (dest);
 }
 
-char *ft_strjoinby(const char *start, char *middle, char *end)
+char *ft_strjoinby(char *start, char *middle, char *end)
 {
 	char *dest;
 
 	if (!(dest = ft_strnew(
-	 ft_strlen(start) +
-	 ft_strlen(middle) +
-	 ft_strlen(end))))
+	 ft_strlen(start) + ft_strlen(middle) + ft_strlen(end))))
 		return (NULL);
 	ft_strcat(dest, start);
 	ft_strcat(dest, middle);
@@ -45,7 +46,7 @@ char *ft_strjoinby(const char *start, char *middle, char *end)
 	return (dest);
 }
 
-char * ft_strjoinbybuffer(char *dest, const char *start, char *middle, char *end)
+char *ft_strjoinbybuffer(char *dest, const char *start, char *middle, char *end)
 {
 	ft_strcat(dest, start);
 	ft_strcat(dest, middle);

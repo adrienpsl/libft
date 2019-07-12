@@ -65,7 +65,7 @@ int		read_line(char **data, char **line, int fd)
 	{
 		buf[ret] = '\0';
 		tmp = *data;
-		if (!(*data = ft_strjoin(*data, buf)))
+		if (!(*data = ft_strjoin(*data, buf, 0)))
 			return (-1);
 		free(tmp);
 		if (ft_strclen(*data, '\n') != -1)

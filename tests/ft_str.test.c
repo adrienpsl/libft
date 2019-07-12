@@ -82,12 +82,12 @@ int test_ft_str()
 	char *b = "";
 	char *res;
 
-	res = ft_strjoin(a, b);
+	res = ft_strjoin(a, b, 0);
 	if (strcmp("", res))
 		printf("join test 1 \n");
 	free(res);
 
-	res = ft_strjoin("super", "maison");
+	res = ft_strjoin("super", "maison", 0);
 	if (strcmp("supermaison", res))
 		printf("join test 2 \n");
 	free(res);
