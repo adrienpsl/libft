@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_replace.h"
 
 int ft_str_search(char *str, char *searching)
 {
@@ -40,8 +39,7 @@ int ft_str_search(char *str, char *searching)
 char *ft_str_replace(char *str, char *searching, char *replacing)
 {
 	ssize_t match_i;
-	size_t length[4];
-	char *current;
+	size_t searching_size;
 	char *out;
 
 	if (!str || !searching || !replacing)
@@ -49,18 +47,12 @@ char *ft_str_replace(char *str, char *searching, char *replacing)
 	match_i = ft_str_search(str, searching);
 	if (match_i > -1)
 	{
-		length[STR] = ft_strlen(str);
-		length[SEARCHING] = ft_strlen(searching);
-		length[REPLACING] = ft_strlen(replacing);
-		length[OUT] = length[STR] - (length[SEARCHING] - length[REPLACING]);
-		if (!(out = ft_strnew(length[OUT])))
+		searching_size = ft_strlen(searching);
+		if (!(out = ft_strnew(ft_strlen(str) - (searching_size - ft_strlen(replacing)))))
 			return (NULL);
-		current = out;
-		if (match_i)
-			ft_memcpy(current, str, match_i);
-		ft_memcpy((current += match_i), replacing, length[REPLACING]);
-		ft_memcpy((current += length[REPLACING]),
-				  str + match_i + length[SEARCHING], STRING_MODE);
+		ft_memcpy(out, str, match_i);
+		ft_strcat(out, replacing);
+		ft_strcat(out, str + match_i + searching_size);
 		return (0);
 	}
 	return (NULL);
@@ -69,24 +61,15 @@ char *ft_str_replace(char *str, char *searching, char *replacing)
 char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing)
 {
 	ssize_t match_i;
-	size_t length[4];
-	char *current;
 
 	if (!str || !searching || !replacing)
 		return (NULL);
 	match_i = ft_str_search(str, searching);
 	if (match_i > -1)
 	{
-		length[STR] = ft_strlen(str);
-		length[SEARCHING] = ft_strlen(searching);
-		length[REPLACING] = ft_strlen(replacing);
-		length[OUT] = length[STR] - (length[SEARCHING] - length[REPLACING]);
-		current = out;
-		if (match_i)
-			ft_memcpy(current, str, match_i);
-		ft_memcpy((current += match_i), replacing, length[REPLACING]);
-		ft_memcpy((current += length[REPLACING]),
-				  str + match_i + length[SEARCHING], STRING_MODE);
+		ft_memcpy(out, str, match_i);
+		ft_strcat(out, replacing);
+		ft_strcat(out, str + match_i + ft_strlen(searching));
 		return (0);
 	}
 	return (NULL);
