@@ -50,6 +50,7 @@ char *ft_strsub(char const *s, unsigned int start, size_t len);
 int ft_atoi(const char *str);
 int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u);
 
+char **ft_split_mix(char **split_1, char **split_2, int do_free);
 size_t ft_strlen(const char *str);
 void ft_putstr_buffer(const char *s, char *buffer);
 void ft_bzero(void *s, size_t n);
