@@ -86,6 +86,8 @@ char *ft_strdup(const char *s);
 char **ft_str_split_remove(char **split, char *s);
 char **ft_str_split_copy(char **split, int free);
 char **ft_str_split_add(char **split, char *s, int free);
+void ft_strchrnreplace(char *str, char matched, char replacing, size_t size);
+void ft_strchrreplace(char *str, char matched, char replacing);
 
 int ft_isalpha(int c);
 int ft_isalnum(int c);
