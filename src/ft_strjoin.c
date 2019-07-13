@@ -32,7 +32,7 @@ char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free)
 	return (dest);
 }
 
-char *ft_strjoinby(char *start, char *middle, char *end)
+char *ft_strjoinby(char *start, char *middle, char *end, int do_free)
 {
 	char *dest;
 
@@ -42,6 +42,12 @@ char *ft_strjoinby(char *start, char *middle, char *end)
 	ft_strcat(dest, start);
 	ft_strcat(dest, middle);
 	ft_strcat(dest, end);
+	if (do_free & FREE_FIRST)
+	    free(start);
+	if (do_free & FREE_SECOND)
+	    free(middle);
+	if (do_free & FREE_THIRD)
+	    free(end);
 	return (dest);
 }
 

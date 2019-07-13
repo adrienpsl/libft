@@ -125,7 +125,7 @@ int ft_quick_sort(t_sort *quick, int low, int high);
 int ft_array_bubble(t_sort *s);
 char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free);
 char *ft_strjoin(const char *s1, const char *s2, int do_free);
-char *ft_strjoinby(char *start, char *middle, char *end);
+char *ft_strjoinby(char *start, char *middle, char *end, int do_free);
 char * ft_strjoinbybuffer(char *dest, const char *start, char *middle, char *end);
 char *ft_strnew(size_t size);
 int ft_str_cmp(const char *s1, const char *s2);
