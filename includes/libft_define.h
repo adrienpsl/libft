@@ -14,7 +14,8 @@
 # define STRING_MODE 0
 # define MEMORY_LACK 100
 # define SAME_SIZE 0
-# define FREE_STR 1
+# define FREE_FIRST 1
+# define FREE_SECOND 1 << 1
 
 # define FT_CMP_STRING 1
 # define FT_CMP_INT 2

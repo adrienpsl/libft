@@ -25,11 +25,10 @@ char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free)
 {
 	ft_strcat(dest, s1);
 	ft_strcat(dest, s2);
-	if (do_free)
-	{
+	if (do_free & FREE_FIRST)
 		free((void *) s1);
+	if (do_free & FREE_SECOND)
 		free((void *) s2);
-	}
 	return (dest);
 }
 
