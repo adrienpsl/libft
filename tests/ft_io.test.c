@@ -121,7 +121,7 @@ void test_ft_str_split_remove(char **split, char **res, char *add, int *n)
 	(*n)++;
 }
 
-int test_ft_io()
+void passed_test()
 {
 	int n = 0;
 	test_ft_str_split(NULL, NULL, " ");
@@ -155,17 +155,55 @@ int test_ft_io()
 	test_ft_str_split_add(split_6, res_8, "aoeuaoeuaoeuaoeu aoeu", 0, &n);
 
 	/* split delete ------------------------------------------------------------ */
-	char *res_9[100] = { "toto", "toto"};
+	char *res_9[100] = { "toto", "toto" };
 	test_ft_str_split_remove(split_6, res_9, "aoeuaoeuaoeuaoeu aoeu", &n);
 
-	char *res_10[100] = { "toto"};
+	char *res_10[100] = { "toto" };
 	test_ft_str_split_remove(split_6, res_10, "toto", &n);
 
-	char *res_11[100] = { NULL};
+	char *res_11[100] = { NULL };
 	test_ft_str_split_remove(split_6, res_11, "toto", &n);
 
 	test_itoa_base();
 	test_io_catch_options();
+}
+
+void test_split_mix(char *split_1, char *split_2, char **split_res, int test)
+{
+	char **s1 = ft_str_split(split_1, " ");
+	char **s2 = ft_str_split(split_2, " ");
+	char **ret = ft_split_mix(s1, s2, FREE_FIRST | FREE_SECOND);
+	if (ft_str_split_cmp(ret, split_res))
+	{
+		g_test = 0;
+		printf("error test %d \n", test);
+		ft_str_split_print(split_res);
+		ft_str_split_print(ret);
+		g_test = 1;
+	}
+//	printf(" \n");
+//	ft_str_split_print(split_res);
+}
+
+int test_ft_io()
+{
+	char *split_1_res[20] = {NULL};
+	test_split_mix("", "", split_1_res, 1);
+
+	char *split_2_res[20] = {"toto"};
+	test_split_mix("toto", "", split_2_res, 2);
+
+	char *split_3_res[20] = {"toto"};
+	test_split_mix("", "toto", split_3_res, 3);
+
+	char *split_4_res[20] = {"titi", "toto"};
+	test_split_mix("titi", "toto", split_4_res, 4);
+
+	char **split_5_res = ft_str_split("titi super manger toto toto", " ");
+	test_split_mix("titi super manger toto", "toto", split_5_res, 5);
+
+	char **split_6_res = ft_str_split("titi super manger toto ", " ");
+	test_split_mix("titi super manger toto", "", split_6_res, 6);
 
 	return 0;
 }
