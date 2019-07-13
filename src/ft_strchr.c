@@ -43,3 +43,19 @@ int ft_strnchr(char *str, char c)
 	}
 	return i;
 }
+
+ssize_t ft_strchrstr(char *str, char *searched)
+{
+	size_t i;
+
+	if (!str)
+		return (-1);
+	i = 0;
+	while (str[i])
+	{
+		if (ft_strchr(searched, str[i]) > -1)
+			return (i);
+		i++;
+	}
+	return (-1);
+}

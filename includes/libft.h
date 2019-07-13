@@ -96,7 +96,7 @@ int ft_isspace(int c);
 char *ft_str_replace(char *str, char *searching, char *replacing);
 char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
 int ft_str_search(char *str, char *searching);
-
+ssize_t ft_strchrstr(char *str, char *searched);
 t_buffer *ft_buffer_new(size_t size, int fd);
 int ft_buffer_add(t_buffer *buff, char *data, size_t size);
 int ft_buffer_clean(t_buffer *buff);
