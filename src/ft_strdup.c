@@ -19,5 +19,8 @@ char *ft_strdup(const char *s)
 
 char *ft_strndup(const char *s, size_t size)
 {
-	return (ft_memdup(s, size));
+	char *out;
+	out = ft_memdup(s, size + 1);
+	out[size] = 0;
+	return (out);
 }

@@ -23,7 +23,7 @@ void ft_str_split_print(char **p_str)
 	}
 }
 
-void ft_print_two_split(char **test, char **res)
+void ft_print_two_split(char **res, char **test)
 {
 	g_test = 0;
 	ft_printf("res\n");
