@@ -18,3 +18,10 @@ int ft_putstr_retint(char *str, int ret)
 	ft_putstr_fd("\n", 2);
 	return (ret);
 }
+
+void *ft_putstr_retptr(char *str, void *ret)
+{
+	ft_putstr_fd(str, 2);
+	ft_putstr_fd("\n", 2);
+	return (ret);
+}
