@@ -46,7 +46,7 @@ add_library(libft STATIC
         src/ft_strlcat.c
 
 
-        src/ft_memalloc.c src/ft_memccpy.c src/ft_memchr.c src/ft_memcmp.c src/ft_memdel.c src/ft_memmove.c src/ft_memset.c src/ft_putchar.c src/ft_putchar_fd.c src/ft_putendl.c src/ft_putendl_fd.c src/ft_putnstr.c src/ft_str_split.c src/ft_char_test.c src/ft_capitalize.c src/ft_strdup.c src/ft_memdup.c src/ft_free_split.c src/ft_str_print_split.c src/ft_strchr.c src/ft_str_split_count.c src/ft_catch_options.c src/ft_split_cmp.c src/ft_printf.c src/ft_streq.c src/ft_strjoin.c src/ft_strnew.c  src/ft_strcmp.c src/ft_split_add.c src/get_next_line.c src/ft_strsub.c src/ft_putsteret.c src/ft_strchrreplace.c)
+        src/ft_memalloc.c src/ft_memccpy.c src/ft_memchr.c src/ft_memcmp.c src/ft_memdel.c src/ft_memmove.c src/ft_memset.c src/ft_putchar.c src/ft_putchar_fd.c src/ft_putendl.c src/ft_putendl_fd.c src/ft_putnstr.c src/ft_str_split.c src/ft_char_test.c src/ft_capitalize.c src/ft_strdup.c src/ft_memdup.c src/ft_free_split.c src/ft_str_print_split.c src/ft_strchr.c src/ft_str_split_count.c src/ft_catch_options.c src/ft_split_cmp.c src/ft_printf.c src/ft_streq.c src/ft_strjoin.c src/ft_strnew.c  src/ft_strcmp.c src/ft_split_add.c src/get_next_line.c src/ft_strsub.c src/ft_putsteret.c src/ft_strchrreplace.c src/ft_strsplit_search.c)
 
 
 target_include_directories(libft PUBLIC includes)
