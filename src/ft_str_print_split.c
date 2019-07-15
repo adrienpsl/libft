@@ -23,17 +23,20 @@ void ft_strsplitprint_test(char **p_str)
 	}
 }
 
-void ft_strsplitprint(char **p_str)
+void ft_strsplitprint(char **p_str, char sep)
 {
+	static char sep_str[2] = { 0, 0 };
 	if (!p_str)
 		return;
+	sep_str[0] = sep;
 	while (*p_str)
 	{
-		ft_printf("%s ", *p_str);
+		ft_printf("%s", *p_str);
+		if (*(p_str + 1))
+			ft_printf("%s", sep_str);
 		p_str++;
 	}
 }
-
 
 void ft_print_two_split(char **res, char **test)
 {
