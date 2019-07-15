@@ -23,7 +23,7 @@ void ft_strsplitprint_test(char **p_str)
 	}
 }
 
-void ft_strsplitprint(char **p_str, char sep)
+void ft_strsplit_print(char **p_str, char sep)
 {
 	static char sep_str[2] = { 0, 0 };
 	if (!p_str)
