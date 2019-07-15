@@ -12,16 +12,19 @@
 
 #include "libft.h"
 
-char *ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
+int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
 {
+	int i;
+
 	if (!split || !*split)
-		return (NULL);
-	while (*split)
+		return (-1);
+	i = 0;
+	while (split[i])
 	{
-		if (f(*split, param))
-		    return (*split);
-		split++;
+		if (f(split[i], param))
+		    return (i);
+		i++;
 	}
-	return (NULL);
+	return (-1);
 }
 
