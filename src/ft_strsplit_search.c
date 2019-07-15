@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+int ft_strsplit_search_streq(char *current, void *p_searched)
+{
+	return (ft_streq(current, p_searched));
+}
+
 int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
 {
 	int i;

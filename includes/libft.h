@@ -91,6 +91,7 @@ void ft_strchrreplace(char *str, char *matched, char replacing);
 void ft_print_two_split(char **test, char **res);
 void *ft_putstr_retptr(char *str, void *ret);
 int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
+int ft_strsplit_search_streq(char *current, void *p_searched);
 
 
 int ft_isalpha(int c);
