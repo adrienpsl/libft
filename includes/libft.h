@@ -45,7 +45,7 @@ int g_test;
 char g_test_buffer[10000];
 
 int get_next_line(const int fd, char **line, int need_free);
-
+void ft_strsplitprint(char **p_str);
 char *ft_strsub(char const *s, unsigned int start, size_t len);
 int ft_atoi(const char *str);
 int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u);
@@ -75,7 +75,7 @@ int ft_char_test(int c, int test_type);
 int ft_capitalise(int c, int mode);
 void *ft_memdup(const void *src, size_t size);
 void ft_str_split_free(char ***p_str);
-void ft_str_split_print(char **p_str);
+void ft_strsplitprint_test(char **p_str);
 char **ft_str_split(char *s, char *separators);
 ssize_t ft_strchr(char *str, char c);
 int ft_str_split_count(char **split);

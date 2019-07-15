@@ -82,8 +82,8 @@ void test_ft_str_split(char *s, char **res, char *separators)
 	{
 		g_test = 0;
 		printf("err ft_str_split : %s \n", s);
-		ft_str_split_print(split);
-		ft_str_split_print(res);
+		ft_strsplitprint_test(split);
+		ft_strsplitprint_test(res);
 		g_test = 1;
 	}
 	ft_str_split_free(&split);
@@ -97,9 +97,9 @@ void test_ft_str_split_add(char **split, char **res, char *add, int free, int *n
 	{
 		printf("error test add : %d \n", *n);
 		g_test = 0;
-		ft_str_split_print(split);
+		ft_strsplitprint_test(split);
 		printf("-- \n");
-		ft_str_split_print(res);
+		ft_strsplitprint_test(res);
 		g_test = 1;
 	}
 	(*n)++;
@@ -112,9 +112,9 @@ void test_ft_str_split_remove(char **split, char **res, char *add, int *n)
 	{
 		printf("error test delete: %d \n", *n);
 		g_test = 0;
-		ft_str_split_print(split);
+		ft_strsplitprint_test(split);
 		printf("-- \n");
-		ft_str_split_print(res);
+		ft_strsplitprint_test(res);
 		g_test = 1;
 	}
 
@@ -177,12 +177,12 @@ void test_split_mix(char *split_1, char *split_2, char **split_res, int test)
 	{
 		g_test = 0;
 		printf("error test %d \n", test);
-		ft_str_split_print(split_res);
-		ft_str_split_print(ret);
+		ft_strsplitprint_test(split_res);
+		ft_strsplitprint_test(ret);
 		g_test = 1;
 	}
 //	printf(" \n");
-//	ft_str_split_print(split_res);
+//	ft_strsplitprint_test(split_res);
 }
 
 int test_ft_io()
