@@ -17,16 +17,30 @@ void ft_test_clear_testbuff()
 	ft_bzero(g_test_buffer, 10000);
 }
 
-void ft_test_ifcmp_printsplit(char **split_1, char **split_2)
+void ft_test_ifcmp_printsplit(char **res, char **test)
 {
-	if (ft_str_split_cmp(split_1, split_2))
+	if (ft_str_split_cmp(res, test))
 	{
 		g_test = 0;
 		ft_printf("split error\n");
 		ft_printf("result\n  -- -- --");
-		ft_strsplitprint_test(split_1);
+		ft_strsplitprint_test(res);
 		ft_printf("test  \n  -- -- --");
-		ft_strsplitprint_test(split_2);
+		ft_strsplitprint_test(test);
+		g_test = 1;
+	}
+}
+
+void ft_test_if_streq(char *res, char *test)
+{
+	if (!ft_streq(res, test))
+	{
+		g_test = 0;
+		ft_printf("split error\n");
+		ft_printf("result\n  -- -- --");
+		ft_printf("%s \n", res);
+		ft_printf("test  \n  -- -- --");
+		ft_printf("%s \n", test);
 		g_test = 1;
 	}
 }
