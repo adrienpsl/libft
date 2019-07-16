@@ -49,7 +49,7 @@ void ft_strsplit_print(char **p_str, char sep);
 char *ft_strsub(char const *s, unsigned int start, size_t len);
 int ft_atoi(const char *str);
 int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u);
-
+int ft_test_streq(char const *s1, char const *s2);
 char **ft_split_mix(char **split_1, char **split_2, int do_free);
 size_t ft_strlen(const char *str);
 void ft_putstr_buffer(const char *s, char *buffer);
@@ -95,8 +95,6 @@ int ft_strsplit_search_streq(char *current, void *p_searched);
 void ft_test_ifcmp_printsplit(char **res, char **test);
 void ft_test_clear_testbuff();
 void ft_test_if_streq(char *res, char *test);
-
-
 int ft_isalpha(int c);
 int ft_isalnum(int c);
 int ft_isdigit(int c);
