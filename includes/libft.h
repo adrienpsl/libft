@@ -92,6 +92,8 @@ void ft_print_two_split(char **test, char **res);
 void *ft_putstr_retptr(char *str, void *ret);
 int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
 int ft_strsplit_search_streq(char *current, void *p_searched);
+void ft_print_splitcmp(char **split_1, char **split_2);
+void ft_clear_testbuff();
 
 
 int ft_isalpha(int c);
