@@ -44,15 +44,56 @@
 int g_test;
 char g_test_buffer[10000];
 
+
+/*
+**	io
+*/
 int get_next_line(const int fd, char **line, int need_free);
-void ft_strsplit_print(char **p_str, char sep);
-char *ft_strsub(char const *s, unsigned int start, size_t len);
 int ft_atoi(const char *str);
 int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u);
+int ft_io_catch_options(char *av_string, char *str_option, long *options);
+/*
+**	test
+*/
 int ft_test_streq(char const *s1, char const *s2);
+
+/*
+**	split
+*/
+void ft_strsplit_print(char **p_str, char sep);
 char **ft_split_mix(char **split_1, char **split_2, int do_free);
+void ft_str_split_free(char ***p_str);
+void ft_strsplitprint_test(char **p_str);
+char **ft_str_split(char *s, char *separators);
+int ft_str_split_count(char **split);
+int ft_str_split_cmp(char **split_1, char **split_2);
+char **ft_str_split_remove(char **split, char *s);
+char **ft_str_split_copy(char **split, int free);
+char **ft_str_split_add(char **split, char *s, int free);
+
+/*
+**	str
+*/
+char *ft_strsub(char const *s, unsigned int start, size_t len);
 size_t ft_strlen(const char *str);
 void ft_putstr_buffer(const char *s, char *buffer);
+void ft_putendl(char const *s);
+void ft_putendl_fd(char const *s, int fd);
+void ft_putnstr(char const *str, size_t str_len);
+void ft_putnstr_fd(char const *str, size_t str_len, int fd);
+void ft_putstr(char const *s);
+void ft_putstr_fd(char const *s, int fd);
+char *ft_strndup(const char *s, size_t size);
+char *ft_strdup(const char *s);
+void ft_strchrnreplace(char *str, char *matched, char replacing, size_t size);
+void ft_strchrreplace(char *str, char *matched, char replacing);
+void ft_print_two_split(char **test, char **res);
+ssize_t ft_strchr(char *str, char c);
+
+
+/*
+**	memory
+*/
 void ft_bzero(void *s, size_t n);
 void *ft_memcpy(void *restrict str1, const void *restrict str2, size_t n);
 void *ft_memalloc(size_t size);
@@ -63,44 +104,32 @@ int ft_memcmp(const void *s1, const void *s2, size_t n);
 void ft_memdel(void **ap, size_t size);
 void *ft_memmove(void *d, const void *s, size_t n);
 void *ft_memset(void *s, int c, size_t n);
+void *ft_memdup(const void *src, size_t size);
+
+/*
+**	char
+*/
 void ft_putchar_fd(char c, int fd);
 void ft_putchar(char c);
-void ft_putendl(char const *s);
-void ft_putendl_fd(char const *s, int fd);
-void ft_putnstr(char const *str, size_t str_len);
-void ft_putnstr_fd(char const *str, size_t str_len, int fd);
-void ft_putstr(char const *s);
-void ft_putstr_fd(char const *s, int fd);
 int ft_char_test(int c, int test_type);
 int ft_capitalise(int c, int mode);
-void *ft_memdup(const void *src, size_t size);
-void ft_str_split_free(char ***p_str);
-void ft_strsplitprint_test(char **p_str);
-char **ft_str_split(char *s, char *separators);
-ssize_t ft_strchr(char *str, char c);
-int ft_str_split_count(char **split);
-int ft_io_catch_options(char *av_string, char *str_option, long *options);
-int ft_str_split_cmp(char **split_1, char **split_2);
-char *ft_strndup(const char *s, size_t size);
-char *ft_strdup(const char *s);
-char **ft_str_split_remove(char **split, char *s);
-char **ft_str_split_copy(char **split, int free);
-char **ft_str_split_add(char **split, char *s, int free);
-void ft_strchrnreplace(char *str, char *matched, char replacing, size_t size);
-void ft_strchrreplace(char *str, char *matched, char replacing);
-void ft_print_two_split(char **test, char **res);
-void *ft_putstr_retptr(char *str, void *ret);
-int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
-int ft_strsplit_search_streq(char *current, void *p_searched);
-void ft_test_ifcmp_printsplit(char **res, char **test);
-void ft_test_clear_testbuff();
-void ft_test_if_streq(char *res, char *test);
 int ft_isalpha(int c);
 int ft_isalnum(int c);
 int ft_isdigit(int c);
 int ft_isprint(int c);
 int ft_isascii(int c);
 int ft_isspace(int c);
+
+
+
+
+void *ft_putstr_retptr(char *str, void *ret);
+int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
+int ft_strsplit_search_streq(char *current, void *p_searched);
+void ft_test_ifcmp_printsplit(char **res, char **test);
+void ft_test_clear_testbuff();
+void ft_test_if_streq(char *res, char *test);
+
 char *ft_str_replace(char *str, char *searching, char *replacing);
 char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
 int ft_str_search(char *str, char *searching);
