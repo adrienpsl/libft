@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-void ft_clear_testbuff()
+void ft_test_clear_testbuff()
 {
 	ft_bzero(g_test_buffer, 10000);
 }
 
-void ft_print_splitcmp(char **split_1, char **split_2)
+void ft_test_ifcmp_printsplit(char **split_1, char **split_2)
 {
 	if (ft_str_split_cmp(split_1, split_2))
 	{
