@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int ft_strsplit_search_streq(char *current, void *p_searched)
+int ft_func_split_streq(char *current, void *p_searched)
 {
 	return (ft_streq(current, p_searched));
 }
