@@ -24,5 +24,6 @@ void ft_str_split_free(char ***p_str)
 		free(*str);
 		str++;
 	}
+	free(*p_str);
 	*p_str = NULL;
 }
