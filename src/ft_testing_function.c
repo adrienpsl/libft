@@ -38,9 +38,10 @@ void ft_test_if_streq(char *res, char *test)
 		g_test = 0;
 		ft_printf("============== str error ================\n");
 		ft_printf("--- result ---\n");
-		ft_printf("%s \n", res);
+		ft_printf("%s", res);
 		ft_printf("--- test ---\n");
-		ft_printf("%s \n", test);
+		ft_printf("%s", test);
+
 		g_test = 1;
 	}
 }
