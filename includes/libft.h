@@ -62,7 +62,7 @@ int ft_test_streq(char const *s1, char const *s2);
 */
 void ft_strsplit_print(char **p_str, char sep);
 char **ft_split_mix(char **split_1, char **split_2, int do_free);
-void ft_str_split_free(char ***p_str);
+void ft_strsplit_free(char ***p_str);
 void ft_strsplitprint_test(char **p_str);
 char **ft_str_split(char *s, char *separators);
 int ft_str_split_count(char **split);

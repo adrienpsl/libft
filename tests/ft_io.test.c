@@ -86,7 +86,7 @@ void test_ft_str_split(char *s, char **res, char *separators)
 		ft_strsplitprint_test(res);
 		g_test = 1;
 	}
-	ft_str_split_free(&split);
+	ft_strsplit_free(&split);
 }
 
 void test_ft_str_split_add(char **split, char **res, char *add, int free, int *n)

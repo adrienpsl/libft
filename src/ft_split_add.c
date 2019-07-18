@@ -27,7 +27,7 @@ char **ft_str_split_copy(char **split, int free)
 		i++;
 	}
 	if (free)
-		ft_str_split_free(&split);
+		ft_strsplit_free(&split);
 	return (new);
 }
 
