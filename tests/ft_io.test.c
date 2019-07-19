@@ -105,21 +105,21 @@ void test_ft_str_split_add(char **split, char **res, char *add, int free, int *n
 	(*n)++;
 }
 
-void test_ft_str_split_remove(char **split, char **res, char *add, int *n)
-{
-	ft_str_split_remove(split, add);
-	if (ft_str_split_cmp(split, res))
-	{
-		printf("error test delete: %d \n", *n);
-		g_test = 0;
-		ft_strsplitprint_test(split);
-		printf("-- \n");
-		ft_strsplitprint_test(res);
-		g_test = 1;
-	}
-
-	(*n)++;
-}
+//void test_ft_str_split_remove(char **split, char **res, char *add, int *n)
+//{
+//	ft_str_split_remove(split, add);
+//	if (ft_str_split_cmp(split, res))
+//	{
+//		printf("error test delete: %d \n", *n);
+//		g_test = 0;
+//		ft_strsplitprint_test(split);
+//		printf("-- \n");
+//		ft_strsplitprint_test(res);
+//		g_test = 1;
+//	}
+//
+//	(*n)++;
+//}
 
 void passed_test()
 {
@@ -155,14 +155,14 @@ void passed_test()
 	test_ft_str_split_add(split_6, res_8, "aoeuaoeuaoeuaoeu aoeu", 0, &n);
 
 	/* split delete ------------------------------------------------------------ */
-	char *res_9[100] = { "toto", "toto" };
-	test_ft_str_split_remove(split_6, res_9, "aoeuaoeuaoeuaoeu aoeu", &n);
+//	char *res_9[100] = { "toto", "toto" };
+//	test_ft_str_split_remove(split_6, res_9, "aoeuaoeuaoeuaoeu aoeu", &n);
 
-	char *res_10[100] = { "toto" };
-	test_ft_str_split_remove(split_6, res_10, "toto", &n);
+//	char *res_10[100] = { "toto" };
+//	test_ft_str_split_remove(split_6, res_10, "toto", &n);
 
-	char *res_11[100] = { NULL };
-	test_ft_str_split_remove(split_6, res_11, "toto", &n);
+//	char *res_11[100] = { NULL };
+//	test_ft_str_split_remove(split_6, res_11, "toto", &n);
 
 	test_itoa_base();
 	test_io_catch_options();

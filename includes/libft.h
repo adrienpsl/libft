@@ -61,6 +61,7 @@ int ft_test_streq(char const *s1, char const *s2);
 **	split
 */
 void ft_strsplit_print(char **p_str, char sep);
+void ft_strsplit_remove(char **split, int i);
 char **ft_split_mix(char **split_1, char **split_2, int do_free);
 void ft_strsplit_free(char ***p_str);
 void ft_strsplitprint_test(char **p_str);
