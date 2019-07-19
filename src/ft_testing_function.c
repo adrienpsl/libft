@@ -31,7 +31,7 @@ void ft_test_ifcmp_printsplit(char **res, char **test)
 	}
 }
 
-void ft_test_if_streq(char *res, char *test)
+int ft_test_if_streq(char *res, char *test)
 {
 	if (!ft_test_streq(res, test))
 	{
@@ -41,7 +41,8 @@ void ft_test_if_streq(char *res, char *test)
 		ft_printf("%s", res);
 		ft_printf("--- test ---\n");
 		ft_printf("%s", test);
-
 		g_test = 1;
+		return (1);
 	}
+	return (0);
 }

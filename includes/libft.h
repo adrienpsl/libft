@@ -128,7 +128,7 @@ int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
 int ft_func_split_streq(char *current, void *p_searched);
 void ft_test_ifcmp_printsplit(char **res, char **test);
 void ft_test_clear_testbuff();
-void ft_test_if_streq(char *res, char *test);
+int ft_test_if_streq(char *res, char *test);
 
 char *ft_str_replace(char *str, char *searching, char *replacing);
 char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
