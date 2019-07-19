@@ -42,6 +42,11 @@ char **ft_str_split_add(char **split, char *s, int free)
 	return (ft_str_split_copy(split, free));
 }
 
+// je remove un split max.
+// mon env est limit dans le define, et on ne depasse pas cette limit,
+// ce qui me permettra d'avoir un shell plus simple et plus coherant.
+// et qui ne crashera pas s'il n'y a pas assez de memoire a un split.
+//
 char **ft_str_split_remove(char **split, char *s)
 {
 	int i;
