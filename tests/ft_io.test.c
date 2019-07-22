@@ -77,11 +77,11 @@ void test_ft_str_split(char *s, char **res, char *separators)
 {
 	char **split;
 
-	split = ft_str_split(s, separators);
+	split = ft_strsplit(s, separators);
 	if (split && res && ft_str_split_cmp(split, res))
 	{
 		g_test = 0;
-		printf("err ft_str_split : %s \n", s);
+		printf("err ft_strsplit : %s \n", s);
 		ft_strsplitprint_test(split);
 		ft_strsplitprint_test(res);
 		g_test = 1;
@@ -170,8 +170,8 @@ void passed_test()
 
 void test_split_mix(char *split_1, char *split_2, char **split_res, int test)
 {
-	char **s1 = ft_str_split(split_1, " ");
-	char **s2 = ft_str_split(split_2, " ");
+	char **s1 = ft_strsplit(split_1, " ");
+	char **s2 = ft_strsplit(split_2, " ");
 	char **ret = ft_split_mix(s1, s2, FREE_FIRST | FREE_SECOND);
 	if (ft_str_split_cmp(ret, split_res))
 	{
@@ -199,10 +199,10 @@ int test_ft_io()
 	char *split_4_res[20] = {"titi", "toto"};
 	test_split_mix("titi", "toto", split_4_res, 4);
 
-	char **split_5_res = ft_str_split("titi super manger toto toto", " ");
+	char **split_5_res = ft_strsplit("titi super manger toto toto", " ");
 	test_split_mix("titi super manger toto", "toto", split_5_res, 5);
 
-	char **split_6_res = ft_str_split("titi super manger toto ", " ");
+	char **split_6_res = ft_strsplit("titi super manger toto ", " ");
 	test_split_mix("titi super manger toto", "", split_6_res, 6);
 
 	return 0;

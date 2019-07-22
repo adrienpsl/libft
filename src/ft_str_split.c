@@ -47,7 +47,7 @@ static int dup_word(char **s, char **out, char *separators)
 	return (0);
 }
 
-char **ft_str_split(char *s, char *separators)
+char **ft_strsplit(char *s, char *separators)
 {
 	int words;
 	char **split;

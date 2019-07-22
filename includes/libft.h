@@ -65,7 +65,7 @@ void ft_strsplit_remove(char **split, int i);
 char **ft_split_mix(char **split_1, char **split_2, int do_free);
 void ft_strsplit_free(char ***p_str);
 void ft_strsplitprint_test(char **p_str);
-char **ft_str_split(char *s, char *separators);
+char **ft_strsplit(char *s, char *separators);
 int ft_str_split_count(char **split);
 int ft_str_split_cmp(char **split_1, char **split_2);
 char **ft_str_split_remove(char **split, char *s);
