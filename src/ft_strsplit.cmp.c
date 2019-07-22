@@ -12,36 +12,23 @@
 
 #include "libft.h"
 
-void ft_test_clear_testbuff()
+int ft_strsplit_cmp(char **split_1, char **split_2)
 {
-	ft_bzero(g_test_buffer, 10000);
-}
-
-void ft_test_ifcmp_printsplit(char **res, char **test)
-{
-	if (ft_strsplit_cmp(res, test))
+	if (!split_1 || !split_2)
+		return (0);
+	while (*split_1 && *split_2)
 	{
-		g_test = 0;
-		ft_printf("=============  split  error =====================\n");
-		ft_printf("--- result ---\n");
-		ft_strsplit_print_test(res);
-		ft_printf("--- test ---\n");
-		ft_strsplit_print_test(test);
-		g_test = 1;
+		if (!ft_streq(*split_1, *split_2))
+		{
+			ft_printf("%s -- %s\n", *split_1, *split_2);
+			return (1);
+		}
+		split_1++;
+		split_2++;
 	}
-}
-
-int ft_test_if_streq(char *res, char *test)
-{
-	if (!ft_test_streq(res, test))
+	if (*split_1 != *split_2)
 	{
-		g_test = 0;
-		ft_printf("============== str error ================\n");
-		ft_printf("--- result ---\n");
-		ft_printf("%s", res);
-		ft_printf("--- test ---\n");
-		ft_printf("%s", test);
-		g_test = 1;
+		ft_printf("split cmp not same end");
 		return (1);
 	}
 	return (0);

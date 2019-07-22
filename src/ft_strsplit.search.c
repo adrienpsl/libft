@@ -12,24 +12,19 @@
 
 #include "libft.h"
 
-int ft_str_split_cmp(char **split_1, char **split_2)
+int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
 {
-	if (!split_1 || !split_2)
-		return (0);
-	while (*split_1 && *split_2)
+	int i;
+
+	if (!split || !*split)
+		return (-1);
+	i = 0;
+	while (split[i])
 	{
-		if (!ft_streq(*split_1, *split_2))
-		{
-			ft_printf("%s -- %s\n", *split_1, *split_2);
-			return (1);
-		}
-		split_1++;
-		split_2++;
+		if (f(split[i], param))
+		    return (i);
+		i++;
 	}
-	if (*split_1 != *split_2)
-	{
-		ft_printf("split cmp not same end");
-		return (1);
-	}
-	return (0);
+	return (-1);
 }
+

@@ -12,46 +12,15 @@
 
 #include "libft.h"
 
-char **ft_str_split_copy(char **split, int free)
-{
-	char **new;
-	int i;
-
-	if (!(new = ft_memalloc(sizeof(char *) * (ft_str_split_count(split) + 2))))
-		return (NULL);
-	i = 0;
-	while (split[i])
-	{
-		if (!(new[i] = ft_strdup(split[i])))
-			return (NULL);
-		i++;
-	}
-	if (free)
-		ft_strsplit_free(&split);
-	return (new);
-}
-
-char **ft_str_split_add(char **split, char *s, int free)
-{
-	int i;
-
-	if (!(s = ft_strdup(s)))
-		return (NULL);
-	i = ft_str_split_count(split);
-	split[i] = s;
-	return (ft_str_split_copy(split, free));
-}
-
-
-char **ft_split_mix(char **split_1, char **split_2, int do_free)
+char **ft_strsplit_mix(char **split_1, char **split_2, int do_free)
 {
 	int i;
 	int y;
 	char **out;
 
 	if (!(out =
-		   ft_memalloc(sizeof(char **) * (ft_str_split_count(split_1) +
-									 ft_str_split_count(split_2) + 2))))
+		   ft_memalloc(sizeof(char **) * (ft_strsplit_count(split_1) +
+										  ft_strsplit_count(split_2) + 2))))
 		return (NULL);
 	i = -1;
 	while (split_1[++i])
@@ -61,10 +30,9 @@ char **ft_split_mix(char **split_1, char **split_2, int do_free)
 	while (split_2[++y])
 		out[++i + y] = split_2[y];
 	if (do_free & FREE_FIRST)
-	    free(split_1);
+		free(split_1);
 	if (do_free & FREE_SECOND)
 		free(split_2);
 	return (out);
 }
-
 

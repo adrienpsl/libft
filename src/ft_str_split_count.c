@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int ft_str_split_count(char **split)
+int ft_strsplit_count(char **split)
 {
 	int i;
 

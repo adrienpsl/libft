@@ -12,24 +12,22 @@
 
 #include "libft.h"
 
-int ft_func_split_streq(char *current, void *p_searched)
+char **ft_strsplit_copy(char **split, int free)
 {
-	return (ft_streq(current, p_searched));
-}
-
-int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
-{
+	char **new;
 	int i;
 
-	if (!split || !*split)
-		return (-1);
+	if (!(new = ft_memalloc(sizeof(char *) * (ft_strsplit_count(split) + 2))))
+		return (NULL);
 	i = 0;
 	while (split[i])
 	{
-		if (f(split[i], param))
-		    return (i);
+		if (!(new[i] = ft_strdup(split[i])))
+			return (NULL);
 		i++;
 	}
-	return (-1);
+	if (free)
+		ft_strsplit_free(&split);
+	return (new);
 }
 

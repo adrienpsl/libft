@@ -78,12 +78,12 @@ void test_ft_str_split(char *s, char **res, char *separators)
 	char **split;
 
 	split = ft_strsplit(s, separators);
-	if (split && res && ft_str_split_cmp(split, res))
+	if (split && res && ft_strsplit_cmp(split, res))
 	{
 		g_test = 0;
 		printf("err ft_strsplit : %s \n", s);
-		ft_strsplitprint_test(split);
-		ft_strsplitprint_test(res);
+		ft_strsplit_print_test(split);
+		ft_strsplit_print_test(res);
 		g_test = 1;
 	}
 	ft_strsplit_free(&split);
@@ -92,14 +92,14 @@ void test_ft_str_split(char *s, char **res, char *separators)
 void test_ft_str_split_add(char **split, char **res, char *add, int free, int *n)
 {
 
-	ft_str_split_add(split, add, free);
-	if (ft_str_split_cmp(split, res))
+	ft_strsplit_add(split, add, free);
+	if (ft_strsplit_cmp(split, res))
 	{
 		printf("error test add : %d \n", *n);
 		g_test = 0;
-		ft_strsplitprint_test(split);
+		ft_strsplit_print_test(split);
 		printf("-- \n");
-		ft_strsplitprint_test(res);
+		ft_strsplit_print_test(res);
 		g_test = 1;
 	}
 	(*n)++;
@@ -108,13 +108,13 @@ void test_ft_str_split_add(char **split, char **res, char *add, int free, int *n
 //void test_ft_str_split_remove(char **split, char **res, char *add, int *n)
 //{
 //	ft_str_split_remove(split, add);
-//	if (ft_str_split_cmp(split, res))
+//	if (ft_strsplit_cmp(split, res))
 //	{
 //		printf("error test delete: %d \n", *n);
 //		g_test = 0;
-//		ft_strsplitprint_test(split);
+//		ft_strsplit_print_test(split);
 //		printf("-- \n");
-//		ft_strsplitprint_test(res);
+//		ft_strsplit_print_test(res);
 //		g_test = 1;
 //	}
 //
@@ -172,17 +172,17 @@ void test_split_mix(char *split_1, char *split_2, char **split_res, int test)
 {
 	char **s1 = ft_strsplit(split_1, " ");
 	char **s2 = ft_strsplit(split_2, " ");
-	char **ret = ft_split_mix(s1, s2, FREE_FIRST | FREE_SECOND);
-	if (ft_str_split_cmp(ret, split_res))
+	char **ret = ft_strsplit_mix(s1, s2, FREE_FIRST | FREE_SECOND);
+	if (ft_strsplit_cmp(ret, split_res))
 	{
 		g_test = 0;
 		printf("error test %d \n", test);
-		ft_strsplitprint_test(split_res);
-		ft_strsplitprint_test(ret);
+		ft_strsplit_print_test(split_res);
+		ft_strsplit_print_test(ret);
 		g_test = 1;
 	}
 //	printf(" \n");
-//	ft_strsplitprint_test(split_res);
+//	ft_strsplit_print_test(split_res);
 }
 
 int test_ft_io()
