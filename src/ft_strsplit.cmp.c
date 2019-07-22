@@ -21,10 +21,7 @@ int ft_strsplit_cmp(char **split_1, char **split_2)
 	while (*split_1 && *split_2)
 	{
 		if (!ft_streq(*split_1, *split_2))
-		{
-			ft_printf("%s -- %s\n", *split_1, *split_2);
 			return (1);
-		}
 		split_1++;
 		split_2++;
 	}
