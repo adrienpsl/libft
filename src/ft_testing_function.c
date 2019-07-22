@@ -40,7 +40,7 @@ int ft_test_if_streq(char *res, char *test)
 		ft_printf("--- result ---\n");
 		ft_printf("%s", res);
 		ft_printf("--- test ---\n");
-		ft_printf("%s", test);
+		ft_printf("%s[--]", test);
 		g_test = 1;
 		return (1);
 	}
