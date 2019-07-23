@@ -19,7 +19,7 @@ int ft_put_int(int ret, char *str)
 	return (ret);
 }
 
-void *ft_putstr_retptr(char *str, void *ret)
+void *ft_put_ptr(char *str, void *ret)
 {
 	ft_putstr_fd(str, 2);
 	ft_putstr_fd("\n", 2);

@@ -124,7 +124,7 @@ int ft_isspace(int c);
 
 
 
-void *ft_putstr_retptr(char *str, void *ret);
+void *ft_put_ptr(char *str, void *ret);
 int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
 int ft_func_split_streq(char *current, void *p_searched);
 void ft_test_ifcmp_printsplit(char **res, char **test);
