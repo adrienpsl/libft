@@ -26,7 +26,7 @@ void *ft_put_ptr(void *ret, char *str)
 	return (ret);
 }
 
-int ft_putval_ptr(int ret, char *text, char *value)
+int ft_putval_int(int ret, char *text, char *value)
 {
 	ft_putstr_fd(text, 2);
 	ft_putstr_fd(value, 2);
