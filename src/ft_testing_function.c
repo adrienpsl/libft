@@ -17,12 +17,15 @@ void ft_test_clear_testbuff()
 	ft_bzero(g_test_buffer, 10000);
 }
 
-void ft_test_ifcmp_printsplit(char **res, char **test)
+void ft_test_ifcmp_printsplit(char **res, char **test, char *where)
 {
 	if (ft_strsplit_cmp(res, test))
 	{
 		g_test = 0;
-		ft_printf("=============  split  error =====================\n");
+		if (where)
+			ft_printf("split  error : %s =====================\n", where);
+		else
+			ft_printf("split  error : =====================\n");
 		ft_printf("--- result ---\n");
 		ft_strsplit_print_test(res);
 		ft_printf("--- test ---\n");

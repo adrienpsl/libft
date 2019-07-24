@@ -128,7 +128,7 @@ void *ft_put_ptr(void *ret, char *str);
 int ft_putval_int(int ret, char *text, char *value);
 int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
 int ft_func_split_streq(char *current, void *p_searched);
-void ft_test_ifcmp_printsplit(char **res, char **test);
+void ft_test_ifcmp_printsplit(char **res, char **test, char *where);
 void ft_test_clear_testbuff();
 int ft_test_if_streq(char *res, char *test);
 
