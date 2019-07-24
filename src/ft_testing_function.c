@@ -23,12 +23,12 @@ void ft_test_ifcmp_printsplit(char **res, char **test, char *where)
 	{
 		g_test = 0;
 		if (where)
-			ft_printf("split  error : %s =====================\n", where);
+			ft_printf("\nsplit  error : %s =====================\n", where);
 		else
-			ft_printf("split  error : =====================\n");
-		ft_printf("--- result ---\n");
+			ft_printf("\nsplit  error : =====================\n");
+		ft_printf("\n--- result ---\n");
 		ft_strsplit_print_test(res);
-		ft_printf("--- test ---\n");
+		ft_printf("\n--- test ---\n");
 		ft_strsplit_print_test(test);
 		g_test = 1;
 	}
@@ -40,13 +40,13 @@ int ft_test_if_streq(char *res, char *test, char *where)
 	{
 		g_test = 0;
 		if (where)
-			ft_printf("str error : %s =====================\n", where);
+			ft_printf("\nstr error : %s =====================\n", where);
 		else
-			ft_printf("str error : =====================\n");
-		ft_printf("--- result ---\n");
+			ft_printf("\nstr error : =====================\n");
+		ft_printf("\n--- result ---\n");
 		ft_printf("%s", res);
-		ft_printf("--- test ---\n");
-		ft_printf("%s[--]", test);
+		ft_printf("\n--- test ---\n");
+		ft_printf("[%s]", test);
 		g_test = 1;
 		return (1);
 	}
