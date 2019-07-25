@@ -21,6 +21,23 @@ char *ft_strjoin(const char *s1, const char *s2, int do_free)
 	return (ft_strjoinbuffer(dest, s1, s2, do_free));
 }
 
+char *ft_strnjoin(char *s1, char *s2, size_t size, int do_free)
+{
+	char *dest;
+
+	if (!s1 || !s2)
+		return (NULL);
+	if (!(dest = ft_strnew(size + ft_strlen(s2))))
+		return (NULL);
+	ft_memcpy(dest, s1, size);
+	ft_strcat(dest, s2);
+	if (do_free & FREE_FIRST)
+		free(s1);
+	if (do_free & FREE_SECOND)
+		free(s2);
+	return (dest);
+}
+
 char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free)
 {
 	ft_strcat(dest, s1);
@@ -43,11 +60,11 @@ char *ft_strjoinby(char *start, char *middle, char *end, int do_free)
 	ft_strcat(dest, middle);
 	ft_strcat(dest, end);
 	if (do_free & FREE_FIRST)
-	    free(start);
+		free(start);
 	if (do_free & FREE_SECOND)
-	    free(middle);
+		free(middle);
 	if (do_free & FREE_THIRD)
-	    free(end);
+		free(end);
 	return (dest);
 }
 
