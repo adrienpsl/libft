@@ -132,7 +132,7 @@ void ft_test_ifcmp_printsplit(char **res, char **test, char *where);
 void ft_test_clear_testbuff();
 int ft_test_if_streq(char *res, char *test, char *where);
 
-char *ft_str_replace(char *str, char *searching, char *replacing);
+char *ft_str_replace(char *str, char *searching, char *replacing, int do_free);
 char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
 int ft_str_search(char *str, char *searching);
 ssize_t ft_strchrstr(char *str, char *searched);
