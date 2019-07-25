@@ -40,6 +40,8 @@ char *ft_strnjoin(char *s1, char *s2, size_t size, int do_free)
 
 char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free)
 {
+	if (!dest || !s1 || !s2)
+		return (NULL);
 	ft_strcat(dest, s1);
 	ft_strcat(dest, s2);
 	if (do_free & FREE_FIRST)
@@ -53,6 +55,8 @@ char *ft_strjoinby(char *start, char *middle, char *end, int do_free)
 {
 	char *dest;
 
+	if (!start || !middle || !end)
+		return (NULL);
 	if (!(dest = ft_strnew(
 	 ft_strlen(start) + ft_strlen(middle) + ft_strlen(end))))
 		return (NULL);
@@ -70,6 +74,8 @@ char *ft_strjoinby(char *start, char *middle, char *end, int do_free)
 
 char *ft_strjoinbybuffer(char *dest, const char *start, char *middle, char *end)
 {
+	if (!dest || !start || !middle || !end)
+		return (NULL);
 	ft_strcat(dest, start);
 	ft_strcat(dest, middle);
 	ft_strcat(dest, end);
