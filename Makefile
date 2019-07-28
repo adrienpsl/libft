@@ -52,10 +52,7 @@ SRCS = array.func.c \
        ft_putnstr.c \
        ft_putsteret.c \
        ft_replace.c \
-       ft_split_add.c \
-       ft_split_cmp.c \
        ft_str_print_split.c \
-       ft_str_split.c \
        ft_str_split_count.c \
        ft_strcat.c \
        ft_strchr.c \
@@ -67,7 +64,14 @@ SRCS = array.func.c \
        ft_strlcat.c \
        ft_strlen.c \
        ft_strnew.c \
-       ft_strsplit_search.c \
+       ft_strsplit.add.c \
+       ft_strsplit.c \
+       ft_strsplit.cmp.c \
+       ft_strsplit.copy.c \
+       ft_strsplit.func.c \
+       ft_strsplit.mix.c \
+       ft_strsplit.remove.c \
+       ft_strsplit.search.c \
        ft_strsub.c \
        ft_testing_function.c \
        get_next_line.c
