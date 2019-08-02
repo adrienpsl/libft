@@ -12,30 +12,6 @@
 
 #include "libft.h"
 
-int ft_str_search(char *str, char *searching)
-{
-	int i;
-	int y;
-
-	if (!str || !searching)
-		return (-1);
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] == searching[0])
-		{
-			y = 1;
-			while (str[i + y] && searching[y]
-				   && str[i + y] == searching[y])
-				y++;
-			if (searching[y] == 0)
-				return (i);
-		}
-		i++;
-	}
-	return (-1);
-}
-
 char *ft_str_replace(char *str, char *searching, char *replacing, int do_free)
 {
 	ssize_t match_i;

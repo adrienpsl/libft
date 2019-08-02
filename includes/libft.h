@@ -135,7 +135,7 @@ int ft_test_if_streq(char *res, char *test, char *where);
 char *ft_str_replace(char *str, char *searching, char *replacing, int do_free);
 char *ft_strnjoin(char *s1, char *s2, size_t size, int do_free);
 char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
-int ft_str_search(char *str, char *searching);
+int ft_str_search(char *src, char *searching);
 ssize_t ft_strchrstr(char *str, char *searched);
 t_buffer *ft_buffer_new(size_t size, int fd);
 int ft_buffer_add(t_buffer *buff, char *data, size_t size);
