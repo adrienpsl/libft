@@ -16,6 +16,8 @@ char *ft_strjoin(const char *s1, const char *s2, int do_free)
 {
 	char *dest;
 
+	if (!s1 || !s2)
+	    return (NULL);
 	if (!(dest = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
 		return (NULL);
 	return (ft_strjoinbuffer(dest, s1, s2, do_free));
