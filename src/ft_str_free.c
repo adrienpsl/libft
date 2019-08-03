@@ -12,25 +12,8 @@
 
 #include "libft.h"
 
-void ft_strchrreplace(char *str, char *matched, char replacing)
+void ft_str_free(char **s)
 {
-	if (!str || !matched)
-		return ;
-	while (*str)
-	{
-		if (ft_strchr(matched, *str) > -1)
-			*str = replacing;
-		str++;
-	}
-}
-
-void ft_strchrnreplace(char *str, char *matched, char replacing, size_t size)
-{
-	while (*str && size)
-	{
-		if (ft_strchr(matched, *str) > -1)
-			*str = replacing;
-		str++;
-		size--;
-	}
+	ft_bzero(*s, ft_strlen(*s));
+	*s = NULL;
 }
