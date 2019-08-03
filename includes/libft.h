@@ -92,6 +92,7 @@ void ft_print_two_split(char **test, char **res);
 ssize_t ft_strchr(char *str, char c);
 int ft_str_search$start(char *src, char *searching);
 void ft_str_free(char **s);
+int ft_str_endword(char *start_word, int (*f)(int));
 
 
 /*
