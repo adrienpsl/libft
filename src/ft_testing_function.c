@@ -34,6 +34,10 @@ void ft_test_ifcmp_printsplit(char **res, char **test, char *where)
 	}
 }
 
+/*
+**	If != str, print both and ret 1
+**  otherwise ret 0
+*/
 int ft_test_if_streq(char *res, char *test, char *where)
 {
 	if (!ft_test_streq(res, test))
