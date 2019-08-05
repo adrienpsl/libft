@@ -48,9 +48,9 @@ int ft_test_if_streq(char *res, char *test, char *where)
 		else
 			ft_printf("\nstr error : =====================\n");
 		ft_printf("--- result ---\n");
-		res ? ft_printf("%s", res) : ft_printf("(null)");
+		res ? ft_printf("[%s]", res) : ft_printf("[(null)]");
 		ft_printf("\n--- test ---\n");
-		test ? ft_printf("[%s]", res) : ft_printf("[(null)]");
+		test ? ft_printf("[%s]", test) : ft_printf("[(null)]");
 		g_test = 1;
 		return (1);
 	}

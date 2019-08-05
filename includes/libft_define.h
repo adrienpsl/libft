@@ -18,6 +18,7 @@
 # define FREE_FIRST  1
 # define FREE_SECOND 1 << 1
 # define FREE_THIRD  1 << 2
+# define NOT_FIND  -1
 
 # define FT_CMP_STRING 1
 # define FT_CMP_INT 2
