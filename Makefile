@@ -52,6 +52,7 @@ SRCS = array.func.c \
        ft_putnstr.c \
        ft_putsteret.c \
        ft_replace.c \
+       ft_str_free.c \
        ft_str_print_split.c \
        ft_str_split_count.c \
        ft_strcat.c \
@@ -74,7 +75,8 @@ SRCS = array.func.c \
        ft_strsplit.search.c \
        ft_strsub.c \
        ft_testing_function.c \
-       get_next_line.c
+       get_next_line.c \
+       str.ft_str_search.c \
 
 OBJS = $(addprefix $(OBJSDIR),$(SRCS:.c=.o))
 
