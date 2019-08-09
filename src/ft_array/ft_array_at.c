@@ -12,22 +12,13 @@
 
 #include "libft.h"
 
-void ft_array_clean(t_array *array)
+void *ft_array_at(t_array *array, int index)
 {
-	if (!array)
+	if (!array || index >= array->length)
 	{
-		ft_errno_set(EFAULT, -1);
-		return;
-	}
-	ft_bzero(array->data, array->length * array->element_size);
-}
-
-void *ft_array_position(t_array *array, int index)
-{
-	if (!array)
-	{
-		ft_errno_set(EFAULT, -1);
+		ft_errno_set(EINVAL, -1);
 		return (NULL);
 	}
-	return (array->data + (index * array->element_size));
+	else
+		return (array->data + (index * array->element_size));
 }
