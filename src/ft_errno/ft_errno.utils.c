@@ -10,16 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "libft.h"
 
-void ft_perror(char *string)
+static int g_errno;
+
+void ft_errno_set(int errnum)
 {
-	int errnum;
+	if (errnum < 1 || errnum > FT_ERRNO_MAX)
+		g_errno = 0;
+	g_errno = errnum;
+}
 
-	errnum = ft_errno_get();
-	if (errnum == 0)
-		return;
-	if (string == NULL)
-		return;
-	ft_printf("%s: %s", string, ft_strerror(errnum));
+int ft_errno_get()
+{
+	return (g_errno);
 }

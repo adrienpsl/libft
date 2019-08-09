@@ -50,6 +50,11 @@
 int g_test;
 char g_test_buffer[10000];
 
+/*
+**	Call that at each programme
+*/
+int init_libft();
+
 
 /*
 **	io

@@ -12,14 +12,8 @@
 
 #include "libft.h"
 
-void ft_perror(char *string)
+int init_libft()
 {
-	int errnum;
-
-	errnum = ft_errno_get();
-	if (errnum == 0)
-		return;
-	if (string == NULL)
-		return;
-	ft_printf("%s: %s", string, ft_strerror(errnum));
+	ft_errno_set(0);
+	return (0);
 }

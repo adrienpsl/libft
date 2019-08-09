@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
-void ft_errno_set(int errnum)
+char *ft_strerror(int errnum)
 {
-	g_errno = errnum;
+	if (errnum < 0 || errnum >= FT_ERRNO_MAX)
+		return (g_errno_errs[0].errstr);
+	else
+		return (g_errno_errs[errnum].errstr);
 }
-
