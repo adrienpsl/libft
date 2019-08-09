@@ -12,12 +12,17 @@
 
 #include "libft.h"
 
-int ft_array_func_print$str(void *p1, void *p2, void *p3)
+int ft_array_func_print$str(void *p1, void *param)
 {
-	(void) p2;
-	(void) p3;
-	(void) p1;
-	ft_printf("-%s- ", p1);
+	(void) param;
+	ft_printf(" _%s_ ", p1);
+	return (0);
+}
+
+int ft_array_func_print$int(void *p1, void *param)
+{
+	(void) param;
+	ft_printf("%d", p1);
 	return (0);
 }
 

@@ -151,7 +151,7 @@ int ft_printf(char *format, ...)
 	t_pf s;
 
 	ft_memset(&s, 0, sizeof(t_pf));
-	if (!(s.buff = ft_buffer_new(512, 1)))
+	if (!(s.buff = ft_array_init(512, 1)))
 		return (1);
 	s.str = format;
 	va_start(s.list, format);

@@ -29,7 +29,7 @@ typedef struct s_errno
 	char *errstr;
 } t_errno;
 
-t_errno g_errno_errs[FT_ERRNO_MAX + 1] = {
+static t_errno g_errno_errs[FT_ERRNO_MAX + 1] = {
 { 0,   "Error not exist" },
 { 1,   "Operation not permitted" },
 { 2,   "No such file or directory" },
