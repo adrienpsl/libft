@@ -10,25 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
-// TODO : documenter la fin qui peux servire du buffer si besoin pour swapper ...
-// metter un buffer pour lui
-t_array *ft_array_init(int nb_elements, size_t element_size)
-{
-	t_array *array;
+#ifndef FT_ARRAY_BUBBLE_H
+#define FT_ARRAY_BUBBLE_H
 
-	nb_elements = nb_elements * 2;
-	if (nb_elements < 5)
-	    nb_elements = 10;
-	array = ft_memalloc(nb_elements * element_size);
-	if (array)
-	{
-		array->capacity = nb_elements - 3;
-		array->data = (char *) array + sizeof(t_array);
-		array->element_size = element_size;
-		array->buffer = ft_array_at(array, array->capacity + 1);
-		return (array);
-	}
-	else
-		return(NULL);
-}
+typedef struct s_bubble{
+	int i;
+	int y;
+	int sorted;
+} t_bubble;
+
+#endif

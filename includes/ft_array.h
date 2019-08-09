@@ -32,6 +32,7 @@ typedef struct s_array
 	int i;
 	int capacity;
 	size_t element_size;
+	char *buffer;
 	char *data;
 } t_array;
 
@@ -55,7 +56,11 @@ int ft_array_remove(t_array *array, int start);
 
 int ft_array_func(t_array *array, int(*f)(void *, void *), void *param);
 
-int ft_array_sort(t_array *array, int order);
+int ft_array_bubble(
+t_array *array,
+int(*cmp_f)(void *, void *, int),
+int order
+);
 
 int ft_array_copy(t_array *dest, t_array *src);
 

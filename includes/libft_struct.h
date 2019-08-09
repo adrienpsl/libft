@@ -24,13 +24,4 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-typedef struct		s_sort
-{
-	int(*cmp_func)(void*, void*, void*);
-	void(*swap_func)(void *, void *);
-	t_array		*array;
-	void		*param;
-	int sorted;
-}					t_sort;
-
 #endif

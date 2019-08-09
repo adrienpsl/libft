@@ -12,13 +12,16 @@
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void *ft_memalloc(size_t size)
 {
-	void	*res;
+	void *res;
 
 	res = malloc(sizeof(void) * size);
-	if (res == 0)
+	if (res == NULL)
+	{
+		ft_errno_set(ENOMEM, -1);
 		return (NULL);
+	}
 	ft_memset(res, 0, size);
 	return (res);
 }

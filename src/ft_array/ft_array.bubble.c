@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "ft_array.bubble.h"
+
 /*
  * pay attention, the cmp function res is !!
  * */
@@ -38,7 +40,6 @@ static int partition(t_sort *quick, int low, int high)
 	return (i + 1);
 }
 
-
 int ft_quick_sort(t_sort *quick, int low, int high)
 {
 	if (low < high && low >= 0)
@@ -50,26 +51,24 @@ int ft_quick_sort(t_sort *quick, int low, int high)
 	return (0);
 }
 
-int ft_array_bubble(t_sort *s)
+int
+ft_array_bubble(t_array *array, int(*cmp_f)(void *, void *, int), int order)
 {
-	size_t i;
-	size_t y;
-	void *el_1;
-	void *el_2;
+	t_bubble b;
 
-	i = 0;
-	while (i < s->array->length - 1)
+	ft_bzero(&b, sizeof(b));
+	while (b.i < array->length - 1)
 	{
-		y = 0;
-		s->sorted = 1;
-		while (y < s->array->length - i - 1)
+		b.y = 0;
+		b.sorted = 1;
+		while (b.y < array->length - b.i - 1)
 		{
-			el_1 = ft_array_el(s->array, y);
-			el_2 = ft_array_el(s->array, y + 1);
-			if (s->cmp_func(el_1, el_2, s->param))
+			if (cmp_f(ft_array_at(array, b.y),
+						 ft_array_at(array, b.y + 1),
+						 order))
 			{
-				s->sorted = 0;
-				s->swap_func(el_1, el_2);
+				b.sorted = 0;
+				ft_memcpy()
 			}
 			y++;
 		}
