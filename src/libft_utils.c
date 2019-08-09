@@ -14,6 +14,6 @@
 
 int init_libft()
 {
-	ft_errno_set(0);
+	ft_errno_set(0, 0);
 	return (0);
 }

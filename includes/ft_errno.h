@@ -13,9 +13,11 @@
 #ifndef FT_ERRNO_H
 #define FT_ERRNO_H
 
+# include "errno.h"
+
 # define FT_ERRNO_MAX 107
 
-void ft_errno_set(int nb_error);
+int ft_errno_set(int errnum, int ret);
 int ft_errno_get();
 
 void ft_perror(char *string);

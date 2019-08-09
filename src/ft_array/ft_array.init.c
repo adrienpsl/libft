@@ -21,8 +21,13 @@ t_array *ft_array_init(int nb_elements, size_t element_size)
 	if (array)
 	{
 		array->capacity = nb_elements;
-		array->data = (char *)array + sizeof(t_array);
+		array->data = (char *) array + sizeof(t_array);
 		array->element_size = element_size;
+		return (array);
 	}
-	return (array);
+	else
+	{
+		ft_errno_set(ENOMEM, -1);
+		return(NULL);
+	}
 }

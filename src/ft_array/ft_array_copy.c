@@ -10,19 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
-static int g_errno;
-
-int ft_errno_set(int errnum, int ret)
+int ft_array_copy(t_array *dest, t_array *src)
 {
-	if (errnum < 1 || errnum > FT_ERRNO_MAX)
-		g_errno = 0;
-	g_errno = errnum;
-	return (ret);
-}
-
-int ft_errno_get()
-{
-	return (g_errno);
+	if (!dest || !src)
+		return (ft_errno_set(EINVAL, -1));
+	ft_memcpy(dest, src,
+			  (sizeof(t_array) + (src->length * src->element_size))
+	);
+	return (0);
 }
