@@ -10,27 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_STRUCT
-# define FT_LIBFT_STRUCT
+#include "libft.h"
 
-#include <stdio.h>
-
-# include "ft_array.h"
-
-typedef struct		s_list
+void *ft_array_next(t_array *array)
 {
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
+	array->i =
+	(array->i + 1 == array->length) ?
+	0 : array->i + 1;
 
-typedef struct		s_sort
-{
-	int(*cmp_func)(void*, void*, void*);
-	void(*swap_func)(void *, void *);
-	t_array		*array;
-	void		*param;
-	int sorted;
-}					t_sort;
-
-#endif
+	return (ft_array_position(array, array->i));
+}

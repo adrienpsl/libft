@@ -12,12 +12,10 @@
 
 #include "libft.h"
 
-
 void *ft_array_el(t_array *array, int i)
 {
-	array->p.s = array->data + (i * array->size_el);
+	array->p.s = array->data + (i * array->element_size);
 	return array->p.s;
-
 }
 
 void *ft_array_next_el(t_array *array)
@@ -29,7 +27,7 @@ void *ft_array_next_el(t_array *array)
 	}
 	else
 	{
-		array->p.s = array->data + (array->i * array->size_el);
+		array->p.s = array->data + (array->i * array->element_size);
 		array->i++;
 		return array->p.s;
 	}

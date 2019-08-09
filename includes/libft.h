@@ -26,6 +26,12 @@
 # include "libft_define.h"
 
 /*
+**	Intern Api
+*/
+# include "ft_array.h"
+# include "ft_errno.h"
+
+/*
 ** define
 */
 # define FT_CHAR_ASCII 1
@@ -143,21 +149,8 @@ t_buffer *ft_buffer_new(size_t size, int fd);
 int ft_buffer_add(t_buffer *buff, char *data, size_t size);
 int ft_buffer_clean(t_buffer *buff);
 int ft_streq(char const *s1, char const *s2);
-t_array *ft_array_new(int length, int size_el);
-void ft_array_free(t_array **p_array);
-void ft_array_clean(t_array *array);
-
-t_array *ft_array_dup_bigger(t_array **p_origin, size_t add_size);
-t_array *ft_array_dup(t_array *origin, size_t size);
-
-void *ft_array_el(t_array *array, int i);
-void *ft_array_next_el(t_array *array);
 int ft_put_int(int ret, char *str);
 int ft_strneq(char const *s1, char const *s2, size_t size);
-int ft_array_cmp(t_array *array_1,
- t_array *array_2,
- int (*f)(void *, void *),
- int mode);
 
 int ft_strnchr(char *str, char c);
 void *ft_array_func(t_array *array, int(*f)(void *, void *, void *), void *param);

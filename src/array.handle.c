@@ -12,33 +12,33 @@
 
 #include "libft.h"
 
+// TODO : mettre size t
 t_array *ft_array_new(int length, int size_el)
 {
 	t_array *array;
 
-	if (!(array = ft_memalloc(sizeof(t_array) + (length * size_el))))
-		return (NULL);
-	array->size_el = size_el;
-	array->data = (char *) array + (sizeof(size_t) * 4) + sizeof(char *) + PTR_SIZE;
-	array->p.s = array->data;
-	array->length = length;
+	array = ft_memalloc(sizeof(t_array) + (length * size_el));
+	if (array)
+	{
+		array->element_size = size_el;
+		array->data = (char*)array + sizeof(t_array);
+		array->length = length;
+	}
 	return (array);
 }
 
 void ft_array_free(t_array **p_array)
 {
-	t_array *arr;
-
 	if (!p_array || !*p_array)
 		return;
-	arr = *p_array;
-	ft_memdel((void **) &arr, sizeof(t_array) + (arr->length * arr->size_el));
+	ft_array_clean(*p_array);
+	ft_bzero(*p_array, sizeof(t_array));
 	*p_array = NULL;
 }
 
 void ft_array_clean(t_array *array)
 {
-	ft_memset(array->data, 0, array->length * array->size_el);
+	ft_memset(array->data, 0, array->length * array->element_size);
 	array->i = 0;
 }
 
@@ -47,12 +47,12 @@ t_array *ft_array_dup(t_array *origin, size_t size)
 	t_array *array;
 
 	if (!(array = ft_array_new(
-					 size == SAME_SIZE ? origin->length : size,
-					 origin->size_el)))
+	 size == SAME_SIZE ? origin->length : size,
+	 origin->element_size)))
 		return (NULL);
 	ft_memcpy(array->data,
-				origin->data,
-				origin->length * origin->size_el);
+			  origin->data,
+			  origin->length * origin->element_size);
 	return (array);
 }
 

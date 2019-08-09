@@ -62,7 +62,7 @@ int same_array(t_array *arr_1, t_array *arr_2)
 	{
 		l1 = ft_array_next_el(arr_1);
 		l2 = ft_array_next_el(arr_2);
-		if (memcmp(l1, l2, sizeof(arr_1->size_el)))
+		if (memcmp(l1, l2, sizeof(arr_1->element_size)))
 			return (1);
 	}
 	return (0);
@@ -203,7 +203,7 @@ int ft_test_handle_array()
 	arr = ft_array_new(SIZE, sizeof(t_test_ft));
 
 	/* ft_array_new --------------------------------------------------------- */
-	if (arr->size_el != sizeof(t_test_ft)
+	if (arr->element_size != sizeof(t_test_ft)
 		|| arr->length != SIZE
 		|| arr->i != 0
 		|| arr->data != (void *) arr->data
@@ -219,9 +219,9 @@ int ft_test_handle_array()
 	/* ft_array_clean ------------------------------------------------------- */
 	void *clean;
 	init_array(&arr, SIZE);
-	clean = ft_memalloc(arr->length * arr->size_el);
+	clean = ft_memalloc(arr->length * arr->element_size);
 	ft_array_clean(arr);
-	if (memcmp(arr->data, clean, arr->length * arr->size_el))
+	if (memcmp(arr->data, clean, arr->length * arr->element_size))
 		ft_putendl("error ft_clean_array");
 	ft_array_free(&arr);
 
