@@ -12,11 +12,18 @@
 
 #include "libft.h"
 
-void *ft_array_prev(t_array *array)
+void *ft_array_prev_infinite(t_array *array)
 {
 	array->i =
 	(array->i - 1 < 0) ?
 	array->length : array->i - 1;
 
+	return (ft_array_position(array, array->i));
+}
+
+void *ft_array_prev(t_array *array)
+{
+	if (array->i - 1 < 0)
+		return (NULL);
 	return (ft_array_position(array, array->i));
 }

@@ -12,25 +12,15 @@
 
 #include "libft.h"
 
-t_buffer *ft_buffer_new(size_t size, int fd)
-{
-	t_buffer *buffer;
-
-	if (!(buffer = ft_array_new(size, 1)))
-		return (NULL);
-	buffer->param = fd;
-	return (buffer);
-}
-
 int ft_buffer_clean(t_buffer *buff)
 {
-	ft_putstr_fd(buff->data, buff->param);
+	ft_putstr_fd(buff->data, 1);
 	ft_memset(buff->data, 0, buff->i);
 	buff->i = 0;
 	return (0);
 }
 
-int ft_buffer_add(t_buffer *buff, char *data, size_t size)
+int ft_buffer_add(t_buffer *buff, char *data, int size)
 {
 	if (size == STRING_MODE)
 		size = ft_strlen(data);
@@ -40,7 +30,7 @@ int ft_buffer_add(t_buffer *buff, char *data, size_t size)
 	{
 		ft_putstr_fd("buffer to small to handel data", 2);
 		ft_buffer_clean(buff);
-		ft_putstr_fd(data, buff->param);
+		ft_putstr_fd(data, 1);
 		return (0);
 	}
 	if (size + buff->i > buff->length)

@@ -12,16 +12,9 @@
 
 #include "libft.h"
 
-int ft_memswap(void *p1, void *p2, void *buffer)
+void ft_mem_swap(void *p1, void *p2, void *buffer, size_t size)
 {
-	static void *tmp;
-
-	if (tmp ==)
-	    ;
-	if (!(tmp = ft_memalloc(p_size)))
-	return (-1);
-
-
-	free(tmp);
-
+	ft_memcpy(buffer, p1, size);
+	ft_memcpy(p1, p2, size);
+	ft_memcpy(p2, buffer, size);
 }

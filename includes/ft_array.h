@@ -54,7 +54,7 @@ int ft_array_add(t_array **p_array, void *element);
 int ft_array_add_at(t_array **array, void *element, int index);
 int ft_array_remove(t_array *array, int start);
 
-int ft_array_func(t_array *array, int(*f)(void *, void *), void *param);
+void *ft_array_func(t_array *array, int(*f)(void *, void *), void *param);
 
 int ft_array_bubble(
 t_array *array,

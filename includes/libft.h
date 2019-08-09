@@ -30,6 +30,7 @@
 */
 # include "ft_array.h"
 # include "ft_errno.h"
+# include "ft_mem.h"
 
 /*
 ** define
@@ -151,16 +152,13 @@ char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacin
 int ft_str_search(char *src, char *searching);
 ssize_t ft_strchrstr(char *str, char *searched);
 t_buffer *ft_buffer_new(size_t size, int fd);
-int ft_buffer_add(t_buffer *buff, char *data, size_t size);
+int ft_buffer_add(t_buffer *buff, char *data, int size);
 int ft_buffer_clean(t_buffer *buff);
 int ft_streq(char const *s1, char const *s2);
 int ft_put_int(int ret, char *str);
 int ft_strneq(char const *s1, char const *s2, size_t size);
 
 int ft_strnchr(char *str, char c);
-void *ft_array_func(t_array *array, int(*f)(void *, void *, void *), void *param);
-int ft_quick_sort(t_sort *quick, int low, int high);
-int ft_array_bubble(t_sort *s);
 char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free);
 char *ft_strjoin(const char *s1, const char *s2, int do_free);
 char *ft_strjoinby(char *start, char *middle, char *end, int do_free);

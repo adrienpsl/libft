@@ -11,34 +11,33 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_array.bubble.h"
 
-int
-ft_array_bubble(t_array *array, int(*cmp_f)(void *, void *, int), int order)
-{
-	t_bubble b;
-
-	ft_bzero(&b, sizeof(b));
-	while (b.i < array->length - 1)
-	{
-		b.y = 0;
-		b.sorted = 1;
-		while (b.y < (array->length - b.i - 1))
-		{
-			if (cmp_f(ft_array_at(array, b.y),
-					  ft_array_at(array, b.y + 1),
-					  order))
-			{
-				b.sorted = 0;
-				ft_mem_swap(ft_array_at(array, b.y),
-							ft_array_at(array, b.y + 1), array->buffer,
-							array->element_size);
-			}
-			b.y++;
-		}
-		if (b.sorted == 1)
-			break;
-		b.i++;
-	}
-	return (0);
-}
+//int ft_array_cmp(t_array *array_1,
+//t_array *array_2,
+//int (*f)(void *, void *),
+//int mode)
+//{
+//	void *el_1;
+//	void *el_2;
+//
+//	if (!array_1 || !array_2)
+//		return (1);
+//	array_1->i = 0;
+//	array_2->i = 0;
+//	while ((el_1 = ft_array_next_el(array_1))
+//		   && (el_2 = ft_array_next_el(array_2)))
+//	{
+//		if (mode == FT_CMP_STRING
+//			&& !ft_streq(el_1, el_2))
+//			return (1);
+//		else if (mode == FT_CMP_INT
+//				 && *(int *) el_1 != *(int *) el_2)
+//			return (1);
+//		else if (f && f(el_1, el_2))
+//			return (1);
+//	}
+//	el_2 = ft_array_next_el(array_2);
+//	if (el_1 != el_2)
+//		return (1);
+//	return (0);
+//}
