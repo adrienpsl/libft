@@ -17,6 +17,7 @@ void *ft_array_at(t_array *array, int index)
 	if (!array || index >= array->capacity)
 	{
 		ft_errno_set(EINVAL, -1);
+		ft_logerror("ft_array_at error : index bigger than capacity");
 		return (NULL);
 	}
 	else

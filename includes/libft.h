@@ -50,6 +50,8 @@
 */
 int g_test;
 char g_test_buffer[10000];
+int g_log_errors;
+int g_log_log;
 
 /*
 **	Call that at each programme
@@ -167,4 +169,11 @@ char *ft_strnew(size_t size);
 int ft_str_cmp(const char *s1, const char *s2);
 size_t		ft_strlcat(char *dst, const char *src, size_t len);
 char	*ft_strcat(char *restrict dest, const char *restrict src);
+
+/*
+**	log
+*/
+void ft_log(char *log);
+void ft_logerror(char *errstr);
+
 #endif

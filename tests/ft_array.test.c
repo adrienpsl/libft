@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <libft.h>
 
 typedef struct s_test_ft_array
 {
@@ -78,37 +79,54 @@ void test_ft_array()
 	ft_array_free(&test_add_random);
 
 
-	/* test delete ---------------------------------------------------------- */
-	t_array *test_delet_all = ft_array_init(1, sizeof(char *));
+	/* test remove ---------------------------------------------------------- */
+	// test start
+	t_array *test_delete = ft_array_init(1, sizeof(char *));
 	for (int i = 0; i < 2000; ++i)
 	{
 		char *a = "tata";
-		ft_array_add(&test_delet_all, a);
+		ft_array_add(&test_delete, a);
+	}
+	for (int i = 0; i < 2000; ++i)
+	{
+		ft_array_remove(test_delete, 0);
+	}
+	//	printf("\n%d \n", test_delete->length);
+	//	ft_array_func(test_delete, ft_array_func_print$int, NULL);
+	ft_array_free(&test_delete);
+
+	test_delete = ft_array_init(2000, sizeof(int));
+	for (int i = 0; i < 200; ++i)
+	{
+		ft_array_add(&test_delete, &i);
+	}
+	for (int i = 0; i < 10; ++i)
+	{
+		ft_array_remove(test_delete, 0);
 	}
 
+	for (int i = 0; i < 190; ++i)
+	{
+		ft_array_remove(test_delete, test_delete->length - 1);
+	}
+	g_log_errors = 0;
+	// test si il en reste
+	if (ft_array_remove(test_delete, test_delete->length - 1) != -1)
+		printf("error ret ft_array_remove \n");
 
+	// je le remplie avec 100 nb
+	for (int i = 0; i < 100; ++i)
+	{
+		ft_array_add(&test_delete, &i);
+	}
 
-	// test delete
-
-
-	// test le cmp pour pouvoir tester les autres
-	// cmp string
-	// int
-	// with function
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	for (int i = 0; i < 10000; ++i)
+	{
+		ft_array_remove(test_delete, my_rand(100));
+	}
+	ft_array_remove(test_delete, 0);
+	g_log_errors = 1;
+	if (test_delete->length)
+	    printf("ft_array_remove delete last test \n");
+	ft_array_func(test_delete, ft_array_func_print$int, NULL);
 }

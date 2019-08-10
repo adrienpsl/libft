@@ -10,29 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
-/*
-**	the last command allow to use a buffer at the end of the array,
-**  this is for that the capacity is down by 3
-*/
-t_array *ft_array_init(int nb_elements, size_t element_size)
+void ft_log(char *log)
 {
-	t_array *array;
-
-	nb_elements = nb_elements * 2;
-	if (nb_elements < 5)
-		nb_elements = 10;
-	array = ft_memalloc(sizeof(t_array) + (nb_elements * element_size));
-	if (array)
+	if (g_log_log)
 	{
-		array->capacity = nb_elements - 3;
-		array->data = ((char *) array) + sizeof(t_array);
-		array->element_size = element_size;
-		array->buffer =
-		ft_array_at(array, array->capacity - 1) + (element_size * 2);
-		return (array);
+		write(1, log, ft_strlen(log));
+		write(1, "\n", 1);
 	}
-	else
-		return (NULL);
+}
+
+void ft_logerror(char *errstr)
+{
+	if (g_log_errors)
+	{
+		write(2, errstr, ft_strlen(errstr));
+		write(2, "\n", 1);
+	}
 }

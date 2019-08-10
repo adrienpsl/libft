@@ -34,6 +34,8 @@ int main(int ac, char **av)
 {
 	(void) ac;
 	(void) av;
+	g_test = 1;
+	g_log_errors = 1;
 	test();
 
 	return (EXIT_SUCCESS);

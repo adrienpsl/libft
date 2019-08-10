@@ -16,8 +16,14 @@ int ft_array_remove(t_array *array, int start)
 {
 	if (!array)
 		return (ft_errno_set(EINVAL, -1));
-	if (array->length + 1 >= array->capacity)
-		return (ft_errno_set(EFAULT, -1));
+	if (start >= array->length || !array->length || start < 0)
+	{
+		ft_errno_set(EINVAL, -1);
+		ft_logerror(
+		"ft_array_remove error : start is bigger / neg / no-length"
+		);
+		return (-1);
+	}
 	while (start > array->length)
 	{
 		ft_memcpy(ft_array_at(array, start),
