@@ -16,7 +16,7 @@ void *ft_memalloc(size_t size)
 {
 	void *res;
 
-	res = malloc(sizeof(void) * size);
+	res = malloc(size);
 	if (res == NULL)
 	{
 		ft_errno_set(ENOMEM, -1);

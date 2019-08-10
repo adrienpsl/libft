@@ -15,14 +15,15 @@
 int ft_array_func_print$str(void *p1, void *param)
 {
 	(void) param;
-	ft_printf(" _%s_ ", p1);
+	printf(" _%s_ ", p1);
 	return (0);
 }
 
+// TODO : delete printf
 int ft_array_func_print$int(void *p1, void *param)
 {
-	(void) param;
-	ft_printf("%d", p1);
+	(void)param;
+	printf("%d ", *(int*)p1);
 	return (0);
 }
 

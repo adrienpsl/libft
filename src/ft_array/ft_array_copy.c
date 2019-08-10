@@ -12,12 +12,24 @@
 
 #include "libft.h"
 
-int ft_array_copy(t_array *dest, t_array *src)
+t_array *ft_array_copy(t_array *src)
 {
-	if (!dest || !src)
-		return (ft_errno_set(EINVAL, -1));
-	ft_memcpy(dest, src,
-			  (sizeof(t_array) + (src->length * src->element_size))
+	t_array *new;
+
+	if (!src)
+	{
+		ft_errno_set(EINVAL, -1);
+		return (NULL);
+	}
+	if (!(new = ft_array_init(src->capacity,
+							  src->element_size))
+	)
+		return (NULL);
+	ft_memcpy(new->data,
+			  src->data,
+			  (src->length * src->element_size)
 	);
-	return (0);
+	new->length = src->length;
+	ft_array_free(&src);
+	return (new);
 }

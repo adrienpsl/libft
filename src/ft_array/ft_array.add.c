@@ -11,6 +11,27 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+//
+//int ft_array_add(t_array **p_array, void *element)
+//{
+//	t_array *array;
+//	if (!p_array || !*p_array || !element)
+//		return (ft_errno_set(EINVAL, -1));
+//	array = *p_array;
+//	if (array->length + 1 >= array->capacity
+//		&& !(array = ft_array_copy(array)))
+//		return (-1);
+//	if (!array->length)
+//		ft_memcpy(ft_array_at(array, 0), element, array->element_size);
+//	else
+//		ft_memcpy(ft_array_at(array, array->length),
+//				  element,
+//				  array->element_size);
+//	array->length += 1;
+//	*p_array = array;
+//	return (0);
+//}
+
 
 int ft_array_add(t_array **p_array, void *element)
 {
@@ -39,23 +60,18 @@ static int ft_array_move_end(t_array *array, int start)
 
 int ft_array_add_at(t_array **p_array, void *element, int index)
 {
-	t_array *new_array;
 	t_array *array;
 
 	if (!p_array || !*p_array || !element)
 		return (ft_errno_set(EINVAL, -1));
 	array = *p_array;
-	if (array->length + 1 == array->capacity)
-	{
-		if (!(new_array = ft_array_init(array->capacity,
-										array->element_size))
-			|| ft_array_copy(new_array, array)
-		)
-			return (-1);
-	}
-	if (ft_array_move_end(array, index))
+	if (array->length + 1 >= array->capacity
+		&& !(array = ft_array_copy(array)))
+		return (-1);
+	if (array->length && ft_array_move_end(array, index))
 		return (-1);
 	ft_memcpy(ft_array_at(array, index), element, array->element_size);
 	array->length += 1;
+	*p_array = array;
 	return (0);
 }
