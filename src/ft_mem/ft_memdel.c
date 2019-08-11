@@ -10,18 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "ft_mem.h"
 
-void *ft_memalloc(size_t size)
+void ft_memdel(void **ap, size_t size)
 {
-	void *res;
-
-	res = malloc(size);
-	if (res == NULL)
-	{
-		ft_errno_set(ENOMEM, -1);
-		return (NULL);
-	}
-	ft_memset(res, 0, size);
-	return (res);
+	if (!ap)
+		return ;
+	ft_bzero(*ap, size);
+	free(*ap);
+	*ap = NULL;
 }

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
+#include <ft_mem.h>
 
 void ft_array_free(t_array **p_array)
 {

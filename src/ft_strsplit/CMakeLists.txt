@@ -4,10 +4,17 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        bonus_functions.c
-        handle_numbers.c
-        handle_strings.c
-        parse_arguments.c
+        ft_free_split.c
+        ft_str_print_split.c
+        ft_str_split_count.c
+        ft_strsplit.add.c
+        ft_strsplit.c
+        ft_strsplit.cmp.c
+        ft_strsplit.copy.c
+        ft_strsplit.func.c
+        ft_strsplit.mix.c
+        ft_strsplit.remove.c
+        ft_strsplit.search.c
 
         #[[ test]]
         )

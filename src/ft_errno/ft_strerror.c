@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_errno.h"
 
 char *ft_strerror(int errnum)
 {

@@ -13,6 +13,8 @@
 #ifndef FT_ERRNO_H
 #define FT_ERRNO_H
 
+# include "ft_printf.h"
+
 # include "errno.h"
 
 # define FT_ERRNO_MAX 107

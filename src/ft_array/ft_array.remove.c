@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_array.h"
 
 int ft_array_remove(t_array *array, int start)
 {
@@ -19,9 +19,9 @@ int ft_array_remove(t_array *array, int start)
 	if (start >= array->length || !array->length || start < 0)
 	{
 		ft_errno_set(EINVAL, -1);
-		ft_logerror(
-		"ft_array_remove error : start is bigger / neg / no-length"
-		);
+//		ft_logerror(
+//		"ft_array_remove error : start is bigger / neg / no-length"
+//		);
 		return (-1);
 	}
 	while (start > array->length)

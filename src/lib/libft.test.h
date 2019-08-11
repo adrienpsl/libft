@@ -10,18 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_LIBFT_TEST_H
+#define LIBFT_LIBFT_TEST_H
 
-void		*ft_memchr(const void *s, int c, size_t n)
-{
-	size_t i;
+int g_test;
+char g_test_buffer[10000];
 
-	i = 0;
-	while (i < n)
-	{
-		if (((unsigned char *)s)[i] == (unsigned char)c)
-			return (&((unsigned char *)s)[i]);
-		i++;
-	}
-	return (NULL);
-}
+
+void ft_test_clear_testbuff();
+int ft_test_if_streq(char *res, char *test, char *where);
+
+#endif //LIBFT_LIBFT_TEST_H

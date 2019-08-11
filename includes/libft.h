@@ -10,14 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-void *ft_memdup(const void *src, size_t size)
-{
-	static void *out;
+int init_libft();
 
-	if (!(out = ft_memalloc(size)))
-		return (NULL);
-	ft_memcpy(out, src, size);
-	return (out);
-}
+#endif

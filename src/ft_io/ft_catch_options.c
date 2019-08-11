@@ -10,13 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void ft_memdel(void **ap, size_t size)
+#include "ft_io.h"
+/*
+ * return the illegal option
+ * */
+int ft_io_catch_options(char *av_string, char *str_option, long *options)
 {
-	if (!ap)
-		return ;
-	ft_bzero(*ap, size);
-	free(*ap);
-	*ap = NULL;
+	int ret;
+	static int position;
+
+	position = 0;
+	while (av_string[position]
+		   && (ret = ft_strchr(str_option, av_string[position])) > -1)
+	{
+		*options |= (1 << ret);
+		position++;
+	}
+	if (ret == -1)
+		return (av_string[position]);
+	return (0);
 }

@@ -10,21 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "ft_mem.h"
 
-int ft_char_test(int c, int test_type)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	if (test_type == FT_CHAR_ASCII)
-		return (c > 0 && c <= 127);
-	if (test_type == FT_CHAR_DIGIT)
-		return (c >= '0' && c <= '9');
-	if (test_type == FT_CHAR_ALPHA)
-		return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
-	if (test_type == FT_CHAR_ALPHA_DIGIT)
-		return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') ||
-			   (c >= 'A' && c <= 'Z');
-	if (test_type == FT_CHAR_SPACE)
-		return (c == ' ' || c == '\t');
-	else
-		return (c == test_type);
+	size_t i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)s)[i] = c;
+		i++;
+	}
+	return (s);
 }

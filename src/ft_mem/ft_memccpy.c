@@ -10,17 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "ft_mem.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memccpy(void *restrict dest,
+ const void *restrict src, int c, size_t n)
 {
-	size_t i;
+	size_t			i;
+	unsigned char	*d;
+	unsigned char	*s;
 
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
 	i = 0;
 	while (i < n)
 	{
-		((unsigned char *)s)[i] = c;
+		d[i] = s[i];
+		if (s[i] == (unsigned char)c)
+			return (dest + i + 1);
 		i++;
 	}
-	return (s);
+	return (NULL);
 }

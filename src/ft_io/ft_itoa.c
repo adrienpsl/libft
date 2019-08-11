@@ -10,24 +10,51 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "ft_io.h"
+# include "ft_mem.h"
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out)
 {
-	unsigned char	*str1;
-	unsigned char	*str2;
-	size_t			i;
+	size_t base;
+	int i;
+	uintmax_t nb;
 
-	str1 = (unsigned char *)s1;
-	str2 = (unsigned char *)s2;
+	base = ft_strlen(base_str);
 	i = 0;
-	if (s1 == s2 || n == 0)
-		return (0);
-	while (i < n)
-	{
-		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+	nb = origin_nb;
+	while (nb /= base)
 		i++;
+	nb = origin_nb;
+	while (i > -1)
+	{
+		out[i] = base_str[nb % base];
+		nb /= base;
+		i--;
 	}
 	return (0);
+}
+
+int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u)
+{
+	int neg;
+	long long nb;
+
+	if (origin_nb == 0)
+	{
+		ft_memcpy(out, "0", 2);
+		return (1);
+	}
+	if (is_u)
+		return ft_itoa_unsigned(origin_nb, base_str, out);
+	else
+	{
+		nb = origin_nb;
+		neg = nb < 0 ? 1 : 0;
+		if (neg)
+		{
+			nb = -nb;
+			out[0] = '-';
+		}
+		return ft_itoa_unsigned(nb, base_str, neg ? out + 1 : out);
+	}
 }

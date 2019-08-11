@@ -4,10 +4,7 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        bonus_functions.c
-        handle_numbers.c
-        handle_strings.c
-        parse_arguments.c
+        ft_log.c
 
         #[[ test]]
         )

@@ -10,32 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_buffer.h"
+# include "ft_mem.h"
 
-int ft_buffer_clean(t_buffer *buff)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	ft_putstr_fd(buff->data, 1);
-	ft_memset(buff->data, 0, buff->i);
-	buff->i = 0;
-	return (0);
-}
+	unsigned char	*str1;
+	unsigned char	*str2;
+	size_t			i;
 
-int ft_buffer_add(t_buffer *buff, char *data, int size)
-{
-	if (size == STRING_MODE)
-		size = ft_strlen(data);
-	if (!size)
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	i = 0;
+	if (s1 == s2 || n == 0)
 		return (0);
-	if ((size - 1) > buff->length)
+	while (i < n)
 	{
-		ft_putstr_fd("buffer to small to handel data", 2);
-		ft_buffer_clean(buff);
-		ft_putstr_fd(data, 1);
-		return (0);
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
+		i++;
 	}
-	if (size + buff->i > buff->length)
-		ft_buffer_clean(buff);
-	ft_memcpy(buff->data + buff->i, data, size);
-	buff->i += size;
 	return (0);
 }

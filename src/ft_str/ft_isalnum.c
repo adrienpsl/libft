@@ -10,31 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_str.h"
 
-void	*ft_memmove(void *d, const void *s, size_t n)
+int	ft_isalnum(int c)
 {
-	char		*dest;
-	const char	*src;
-
-	dest = d;
-	src = s;
-	if (src == dest)
-		return (dest);
-	if (src < dest)
-	{
-		src = src + n - 1;
-		dest = dest + n - 1;
-		while (n > 0)
-		{
-			*dest-- = *src--;
-			n--;
-		}
-	}
-	else
-	{
-		while (n--)
-			*dest++ = *src++;
-	}
-	return (d);
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
 }

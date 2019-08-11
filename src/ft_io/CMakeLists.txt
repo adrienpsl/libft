@@ -4,10 +4,10 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        bonus_functions.c
-        handle_numbers.c
-        handle_strings.c
-        parse_arguments.c
+        ft_atoi.c
+        ft_catch_options.c
+        ft_itoa.c
+        get_next_line.c
 
         #[[ test]]
         )

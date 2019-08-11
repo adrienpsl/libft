@@ -86,7 +86,7 @@ void test_ft_array()
 	{
 		ft_array_remove(test_delete, test_delete->length - 1);
 	}
-	g_log_errors = 0;
+//	g_log_errors = 0;
 	// test si il en reste
 	if (ft_array_remove(test_delete, test_delete->length - 1) != -1)
 		printf("error ret ft_array_remove \n");
@@ -102,7 +102,7 @@ void test_ft_array()
 		ft_array_remove(test_delete, my_rand(100));
 	}
 	ft_array_remove(test_delete, 0);
-	g_log_errors = 1;
+//	g_log_errors = 1;
 	if (test_delete->length)
 	    printf("ft_array_remove delete last test \n");
 	ft_array_func(test_delete, ft_array_func_print$int, NULL);

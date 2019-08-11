@@ -10,19 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "ft_mem.h"
 
-void		*ft_memcpy(void *restrict dest, const void *restrict src, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*tmp1;
-	unsigned char	*tmp2;
+	size_t	i;
+	char	*str;
 
-	tmp1 = (unsigned char *)src;
-	tmp2 = (unsigned char *)dest;
-	while (n > 0)
+	i = 0;
+	str = s;
+	while (i < n)
 	{
-		*tmp2++ = *tmp1++;
-		n--;
+		str[i] = 0;
+		i++;
 	}
-	return (dest);
 }

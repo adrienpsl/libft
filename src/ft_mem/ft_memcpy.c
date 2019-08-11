@@ -10,23 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-/*
- * return the illegal option
- * */
-int ft_io_catch_options(char *av_string, char *str_option, long *options)
-{
-	int ret;
-	static int position;
+# include "ft_mem.h"
 
-	position = 0;
-	while (av_string[position]
-		   && (ret = ft_strchr(str_option, av_string[position])) > -1)
+void		*ft_memcpy(void *restrict dest, const void *restrict src, size_t n)
+{
+	unsigned char	*tmp1;
+	unsigned char	*tmp2;
+
+	tmp1 = (unsigned char *)src;
+	tmp2 = (unsigned char *)dest;
+	while (n > 0)
 	{
-		*options |= (1 << ret);
-		position++;
+		*tmp2++ = *tmp1++;
+		n--;
 	}
-	if (ret == -1)
-		return (av_string[position]);
-	return (0);
+	return (dest);
 }

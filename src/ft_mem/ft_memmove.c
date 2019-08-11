@@ -10,32 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_buffer.h"
+# include "ft_mem.h"
 
-int ft_buffer_clean(t_buffer *buff)
+void	*ft_memmove(void *d, const void *s, size_t n)
 {
-	ft_putstr_fd(buff->data, 1);
-	ft_memset(buff->data, 0, buff->i);
-	buff->i = 0;
-	return (0);
-}
+	char		*dest;
+	const char	*src;
 
-int ft_buffer_add(t_buffer *buff, char *data, int size)
-{
-	if (size == STRING_MODE)
-		size = ft_strlen(data);
-	if (!size)
-		return (0);
-	if ((size - 1) > buff->length)
+	dest = d;
+	src = s;
+	if (src == dest)
+		return (dest);
+	if (src < dest)
 	{
-		ft_putstr_fd("buffer to small to handel data", 2);
-		ft_buffer_clean(buff);
-		ft_putstr_fd(data, 1);
-		return (0);
+		src = src + n - 1;
+		dest = dest + n - 1;
+		while (n > 0)
+		{
+			*dest-- = *src--;
+			n--;
+		}
 	}
-	if (size + buff->i > buff->length)
-		ft_buffer_clean(buff);
-	ft_memcpy(buff->data + buff->i, data, size);
-	buff->i += size;
-	return (0);
+	else
+	{
+		while (n--)
+			*dest++ = *src++;
+	}
+	return (d);
 }

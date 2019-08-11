@@ -10,11 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "unistd.h"
+#ifndef LIBFT_FT_IO_H
+#define LIBFT_FT_IO_H
 
-#ifndef FT_MEM_H
-#define FT_MEM_H
+# define BUFF_SIZE 4096
 
-void ft_mem_swap(void *p1, void *p2, void *buffer, size_t size);
+# include "ft_str.h"
+# include <stdlib.h>
+# include <stdint.h>
+
+int get_next_line(const int fd, char **line, int need_free);
+int ft_atoi(const char *str);
+int ft_itoa_base(
+	uintmax_t origin_nb,
+	const char *base_str,
+	char *out,
+	int is_u
+);
+int ft_io_catch_options(char *av_string, char *str_option, long *options);
 
 #endif
