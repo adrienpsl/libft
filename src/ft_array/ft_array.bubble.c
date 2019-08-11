@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include "ft_array.bubble.h"
+#include "ft_array.h"
+#include "includes/ft_array.bubble.h"
 
 int
 ft_array_bubble(t_array *array, int(*cmp_f)(void *, void *, int), int order)

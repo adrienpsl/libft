@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_array.h"
+# include <stdio.h>
 
 int ft_array_func_print$str(void *p1, void *param)
 {

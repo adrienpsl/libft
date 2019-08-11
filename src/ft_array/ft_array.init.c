@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+
+#include "ft_array.h"
+#include "libft.h"
 
 /*
 **	the last command allow to use a buffer at the end of the array,

@@ -1,33 +1,10 @@
-#include <ft_array.h>
+#include "../includes/ft_array.h"
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
 #include <libft.h>
 
-typedef struct s_test_ft_array
-{
-	int test_nb;
-	int nb_element;
-	int size_element;
-	int int_arr[30];
-	t_array array_resultat;
-} t_test;
 
-void test_ft_array_init(t_test test)
-{
-	t_array *array;
-
-	array = ft_array_init(test.nb_element, test.size_element);
-
-	if (array->capacity != (test.nb_element * 2) - 3 ||
-		array->element_size != sizeof(int))
-	{
-		printf("error test : %d \n", test.test_nb);
-	}
-	ft_array_free(&array);
-	if (array)
-		printf("error test : %d at free \n", test.test_nb);
-}
 
 int my_rand(int limit)
 {

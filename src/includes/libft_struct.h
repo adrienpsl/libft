@@ -10,22 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FT_LIBFT_STRUCT
+# define FT_LIBFT_STRUCT
 
-void ft_log(char *log)
-{
-	if (g_log_log)
-	{
-		write(1, log, ft_strlen(log));
-		write(1, "\n", 1);
-	}
-}
+#include <stdio.h>
 
-void ft_logerror(char *errstr)
+typedef struct		s_list
 {
-	if (g_log_errors)
-	{
-		write(2, errstr, ft_strlen(errstr));
-		write(2, "\n", 1);
-	}
-}
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
+
+#endif

@@ -22,6 +22,8 @@
 **	Inter Api
 */
 # include "libft_define.h"
+#include "ft_errno.h"
+#include "libft.h"
 
 /*
 **	Structure

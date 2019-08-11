@@ -20,6 +20,8 @@
 # include <limits.h>
 # include <stdint.h>
 # include <cxxabi.h>
+
+#include "ft_array.h"
 #include "libft_define.h"
 
 # define FORMAT_S (1)
@@ -50,11 +52,12 @@ typedef struct s_pf
 	long format;
 	char t_string[64];
 	va_list list;
-	t_buffer *buff;
+//	t_buffer *buff;
+	char  *buff;
 } t_pf;
 
 
-int ft_sprintf(t_buffer *buffer, char *format, ...);
-int ft_printf(char *format, ...);
+//int ft_sprintf(t_buffer *buffer, char *format, ...);
+int ft_printf(const char *format, ...);
 
 #endif

@@ -20,15 +20,15 @@
 # include <stdint.h>
 # include <ctype.h>
 # include <stdlib.h>
+#include "ft_array.h"
 
 # include "libft_struct.h"
-# include "ft_printf.h"
 # include "libft_define.h"
+# include "ft_printf.h"
 
 /*
 **	Intern Api
 */
-# include "ft_array.h"
 # include "ft_errno.h"
 # include "ft_mem.h"
 
@@ -58,13 +58,13 @@ int g_log_log;
 */
 int init_libft();
 
-
 /*
 **	io
 */
 int get_next_line(const int fd, char **line, int need_free);
 int ft_atoi(const char *str);
-int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u);
+int
+ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u);
 int ft_io_catch_options(char *av_string, char *str_option, long *options);
 /*
 **	test
@@ -107,7 +107,6 @@ ssize_t ft_strchr(char *str, char c);
 int ft_str_search$start(char *src, char *searching);
 void ft_str_free(char **s);
 
-
 /*
 **	memory
 */
@@ -115,7 +114,7 @@ void ft_bzero(void *s, size_t n);
 void *ft_memcpy(void *restrict str1, const void *restrict str2, size_t n);
 void *ft_memalloc(size_t size);
 void *ft_memccpy(void *restrict dest,
- const void *restrict src, int c, size_t n);
+	const void *restrict src, int c, size_t n);
 void *ft_memchr(const void *s, int c, size_t n);
 int ft_memcmp(const void *s1, const void *s2, size_t n);
 void ft_memdel(void **ap, size_t size);
@@ -137,9 +136,6 @@ int ft_isprint(int c);
 int ft_isascii(int c);
 int ft_isspace(int c);
 
-
-
-
 void *ft_put_ptr(void *ret, char *str);
 int ft_putval_int(int ret, char *text, char *value);
 int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
@@ -150,12 +146,11 @@ int ft_test_if_streq(char *res, char *test, char *where);
 
 char *ft_str_replace(char *str, char *searching, char *replacing, int do_free);
 char *ft_strnjoin(char *s1, char *s2, size_t size, int do_free);
-char *ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
+char *
+ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
 int ft_str_search(char *src, char *searching);
 ssize_t ft_strchrstr(char *str, char *searched);
-t_buffer *ft_buffer_new(size_t size, int fd);
-int ft_buffer_add(t_buffer *buff, char *data, int size);
-int ft_buffer_clean(t_buffer *buff);
+
 int ft_streq(char const *s1, char const *s2);
 int ft_put_int(int ret, char *str);
 int ft_strneq(char const *s1, char const *s2, size_t size);
@@ -164,16 +159,17 @@ int ft_strnchr(char *str, char c);
 char *ft_strjoinbuffer(char *dest, const char *s1, const char *s2, int do_free);
 char *ft_strjoin(const char *s1, const char *s2, int do_free);
 char *ft_strjoinby(char *start, char *middle, char *end, int do_free);
-char * ft_strjoinbybuffer(char *dest, const char *start, char *middle, char *end);
+char *
+ft_strjoinbybuffer(char *dest, const char *start, char *middle, char *end);
 char *ft_strnew(size_t size);
 int ft_str_cmp(const char *s1, const char *s2);
-size_t		ft_strlcat(char *dst, const char *src, size_t len);
-char	*ft_strcat(char *restrict dest, const char *restrict src);
+size_t ft_strlcat(char *dst, const char *src, size_t len);
+char *ft_strcat(char *restrict dest, const char *restrict src);
 
 /*
 **	log
 */
-void ft_log(char *log);
+void ft_log(int level, char *log, ...);
 void ft_logerror(char *errstr);
 
 #endif

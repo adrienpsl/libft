@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "ft_printf.h"
 
 int catch_options(char **input, char *str_option, long *options, int one)
 {
@@ -91,11 +91,11 @@ static void add_padding(t_pf *s)
 {
 	while (s->min_length)
 	{
-		if (s->format & FORMAT_0)
-			ft_buffer_add(s->buff, "0", 1);
-		else
-			ft_buffer_add(s->buff, " ", 1);
-		s->min_length--;
+//		if (s->format & FORMAT_0)
+//			ft_buffer_add(s->buff, "0", 1);
+//		else
+//			ft_buffer_add(s->buff, " ", 1);
+//		s->min_length--;
 	}
 }
 
@@ -109,50 +109,50 @@ int ft_printf_format_data(t_pf *s)
 	s->min_length = s->min_length - size;
 	if (s->format & FORMAT_0)
 	{
-		ft_buffer_add(s->buff, "0x", 2);
+//		ft_buffer_add(s->buff, "0x", 2);
 		s->min_length -= 2;
 	}
 	s->min_length = s->min_length < 0 ? 0 : s->min_length;
 	s->min_length = s->min_length < 0 ? 0 : s->min_length;
 	if (!(FORMAT_MINUS & s->format) && s->min_length)
 		add_padding(s);
-	ft_buffer_add(s->buff, data, size);
+//	ft_buffer_add(s->buff, data, size);
 	if ((FORMAT_MINUS & s->format) && s->min_length)
 		add_padding(s);
 	return (0);
 }
 
-int ft_sprintf(t_buffer *buffer, char *format, ...)
-{
-	static t_pf s;
+//int ft_sprintf(t_buffer *buffer, char *format, ...)
+//{
+//	static t_pf s;
+//
+//	ft_memset(&s, 0, sizeof(t_pf));
+//	s.str = format;
+////	s.buff = buffer;
+//	va_start(s.list, format);
+//	while (*s.str)
+//	{
+//		if (*s.str == '%' && s.str++)
+//		{
+//			extract_format(&s);
+//			manage_wildcard(&s);
+//			ft_printf_read_arg(&s);
+//			ft_printf_format_data(&s);
+//		}
+////		else
+////			ft_buffer_add(s.buff, s.str, 1) || s.str++;
+//	}
+//	va_end(s.list);
+//	return (0);
+//}
 
-	ft_memset(&s, 0, sizeof(t_pf));
-	s.str = format;
-	s.buff = buffer;
-	va_start(s.list, format);
-	while (*s.str)
-	{
-		if (*s.str == '%' && s.str++)
-		{
-			extract_format(&s);
-			manage_wildcard(&s);
-			ft_printf_read_arg(&s);
-			ft_printf_format_data(&s);
-		}
-		else
-			ft_buffer_add(s.buff, s.str, 1) || s.str++;
-	}
-	va_end(s.list);
-	return (0);
-}
-
-int ft_printf(char *format, ...)
+int ft_printf(const char *format, ...)
 {
 	t_pf s;
 
 	ft_memset(&s, 0, sizeof(t_pf));
-	if (!(s.buff = ft_array_init(512, 1)))
-		return (1);
+//	if (!(s.buff = ft_array_init(512, 1)))
+//		return (1);
 	s.str = format;
 	va_start(s.list, format);
 	while (*s.str)
@@ -164,11 +164,11 @@ int ft_printf(char *format, ...)
 			ft_printf_read_arg(&s);
 			ft_printf_format_data(&s);
 		}
-		else
-			ft_buffer_add(s.buff, s.str, 1) || s.str++;
+//		else
+//			ft_buffer_add(s.buff, s.str, 1) || s.str++;
 	}
 	va_end(s.list);
-	ft_buffer_clean(s.buff);
+//	ft_buffer_clean(s.buff);
 	free(s.buff);
 	return (0);
 }

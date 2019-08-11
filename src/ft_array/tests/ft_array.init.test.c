@@ -10,45 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
+#include <ft_array.h>
+#include "test.h"
 
-int ft_array_cmp$int(void *p1, void *p2)
+void test_ft_array_init()
 {
-	int *a;
-	int *b;
+	t_array *array = ft_array_init(10, sizeof(int));
 
-	a = p1;
-	b = p2;
-	return (!(*a == *b));
-}
-
-int ft_array_cmp$str(void *p1, void *p2)
-{
-	char *a;
-	char *b;
-
-	a = p1;
-	b = p2;
-	return (!ft_streq(a, b));
-}
-
-int ft_array_cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *))
-{
-	void *el_1;
-	void *el_2;
-
-	if (!array_1 || !array_2)
-		return (1);
-	array_1->i = 0;
-	array_2->i = 0;
-	while ((el_1 = ft_array_next(array_1))
-		   && (el_2 = ft_array_next(array_2)))
+	if (array->capacity != (10 * 2) - 3 ||
+		array->element_size != sizeof(int))
 	{
-		if (f && f(el_1, el_2))
-			return (1);
+//		printf("error test : %d \n", );
 	}
-	el_2 = ft_array_next(array_2);
-	if (el_1 != el_2)
-		return (1);
-	return (0);
+	ft_array_free(&array);
+//	if (array)
+//		printf("error test : %d at free \n", test.test_nb);
 }

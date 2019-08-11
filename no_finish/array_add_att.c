@@ -3,7 +3,7 @@
 //
 
 
-#include <ft_array.h>
+#include "../src/ft_array/includes/ft_array.h"
 #include <libft.h>
 
 static int ft_array_move_end(t_array *array, int start)
