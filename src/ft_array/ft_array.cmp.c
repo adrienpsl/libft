@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_str.h>
 #include "ft_array.h"
 
 int ft_array_cmp$int(void *p1, void *p2)

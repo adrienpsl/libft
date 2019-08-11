@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+#include "ft_str.h"
+#include "ft_strsplit.h"
 
 char **ft_strsplit_add(char **split, char *s, int free)
 {

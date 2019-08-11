@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_errno.h>
+#include <ft_str.h>
+#include <ft_mem.h>
 #include "ft_array.h"
 
 int ft_array_add(t_array **p_array, void *element)

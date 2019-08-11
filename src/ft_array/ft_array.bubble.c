@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_mem.h>
 #include "ft_array.h"
 #include "includes/ft_array.bubble.h"
 

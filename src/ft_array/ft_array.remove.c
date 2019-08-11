@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_mem.h"
+#include "ft_errno.h"
 #include "ft_array.h"
 
 int ft_array_remove(t_array *array, int start)

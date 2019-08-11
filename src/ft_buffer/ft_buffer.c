@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft_define.h"
+#include "ft_str.h"
+#include "ft_mem.h"
 #include "ft_buffer.h"
 
 int ft_buffer_clean(t_buffer *buff)

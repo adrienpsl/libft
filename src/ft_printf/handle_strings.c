@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../no_finish/ft_printf.h"
+#include "ft_printf.h"
+#include "ft_str.h"
+#include <stdlib.h>
 
 void	pf_putwchar(t_printf *p, unsigned int wc, int wlen, int nb_bytes)
 {

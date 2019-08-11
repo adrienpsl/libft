@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+#include "ft_mem.h"
+#include "ft_str.h"
 
 char *ft_strdup(const char *s)
 {

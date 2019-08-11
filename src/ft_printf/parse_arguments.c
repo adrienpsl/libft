@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../no_finish/ft_printf.h"
+#include "ft_printf.h"
+#include "ft_io.h"
 
 static void	parse_flags(t_printf *p)
 {
@@ -75,8 +76,8 @@ static void	conversion_specifier(t_printf *p)
 		print_pointer_address(p);
 	else if (p->c == 'n')
 		*va_arg(p->ap, int *) = p->len;
-	else if (p->c == 'm')
-		ft_printf_putstr(STRERR(errno), p);
+//	else if (p->c == 'm')
+//		ft_printf_putstr(STRERR(errno), p);
 	else if (p->c == '{')
 		color(p);
 	else

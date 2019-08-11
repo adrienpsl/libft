@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
+#include "ft_str.h"
 
 void ft_str_free(char **s)
 {

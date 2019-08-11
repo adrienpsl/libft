@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_errno.h"
 #include "ft_mem.h"
 
 void *ft_memalloc(size_t size)

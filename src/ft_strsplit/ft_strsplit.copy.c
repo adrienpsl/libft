@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_mem.h"
+#include "ft_strsplit.h"
+#include "ft_str.h"
 
 char **ft_strsplit_copy(char **split, int free)
 {

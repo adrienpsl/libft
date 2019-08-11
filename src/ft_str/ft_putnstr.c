@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <ft_str.h>
+# include "unistd.h"
 
 void ft_putnstr_fd(char const *str, size_t len, int fd)
 {
@@ -36,14 +37,16 @@ void ft_putstr_buffer(const char *s, char *buffer)
 
 void ft_putstr_fd(char const *s, int fd)
 {
-	size_t size;
-	if (g_test)
-	{
-		size = ft_strlen(g_test_buffer);
-		ft_putstr_buffer(s, g_test_buffer + size);
-	}
-	else
-		write(fd, s, strlen(s));
+	(void)s;
+	(void)fd;
+	//	size_t size;
+	//	if (g_test)
+	//	{
+	//		size = ft_strlen(g_test_buffer);
+	//		ft_putstr_buffer(s, g_test_buffer + size);
+	//	}
+	//	else
+	//		write(fd, s, strlen(s));
 }
 
 void ft_putstr(char const *s)

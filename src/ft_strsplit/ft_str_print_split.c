@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_printf.h>
 #include "libft.h"
 
 void ft_strsplit_print_test(char **p_str)
@@ -40,12 +41,12 @@ void ft_strsplit_print(char **p_str, char sep)
 
 void ft_print_two_split(char **res, char **test)
 {
-	g_test = 0;
+//	g_test = 0;
 	ft_printf("res\n");
 	ft_strsplit_print_test(res);
 	ft_printf("----------------\n");
 	ft_printf("test\n");
 	ft_strsplit_print_test(test);
 	ft_printf("\n");
-	g_test = 1;
+//	g_test = 1;
 }

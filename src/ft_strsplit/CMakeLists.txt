@@ -12,10 +12,8 @@ target_sources(${__LIB_NAME__}
         ft_strsplit.cmp.c
         ft_strsplit.copy.c
         ft_strsplit.func.c
-        ft_strsplit.mix.c
         ft_strsplit.remove.c
         ft_strsplit.search.c
-
         #[[ test]]
         )
 

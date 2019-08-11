@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <ft_str.h>
 
 int ft_func_split_streq(char *current, void *p_searched)
 {

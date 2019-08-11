@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_errno.h"
+#include "ft_mem.h"
 #include "ft_array.h"
 
 t_array *ft_array_copy(t_array *src)

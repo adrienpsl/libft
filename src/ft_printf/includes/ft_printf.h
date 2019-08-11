@@ -139,7 +139,15 @@ void					pf_putdouble(t_printf *p);
 
 void					buffer(t_printf *p, void *new_elem, size_t size);
 void					buffer_flush(t_printf *p);
-
 void					padding(t_printf *p, int n);
+
+/*
+** --------------------------- Utils ---------- --------------------------------
+*/
+double	ft_pow(double n, int pow);
+size_t	ft_wcharlen(unsigned wc);
+size_t	ft_wstrlen(unsigned *s);
+int		ft_strchri(char *s, int c, int i);
+int		ft_strchri_lu(char *s, int c, int i);
 
 #endif

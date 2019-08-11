@@ -5,7 +5,6 @@ target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
         ft_capitalize.c
-        ft_char_test.c
         ft_isalnum.c
         ft_isalpha.c
         ft_isascii.c
@@ -32,10 +31,7 @@ target_sources(${__LIB_NAME__}
         ft_strnew.c
         ft_strsub.c
         str.ft_str_search.c
-
-        #[[ test]]
         )
 
-
 target_include_directories(${__LIB_NAME__} PUBLIC includes)
-target_link_libraries(${__LIB_NAME__}  libft)
+target_link_libraries(${__LIB_NAME__} libft)

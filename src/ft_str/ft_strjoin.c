@@ -10,7 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+#include "ft_str.h"
+#include "ft_mem.h"
+#include "libft_define.h"
 
 char *ft_strjoin(const char *s1, const char *s2, int do_free)
 {

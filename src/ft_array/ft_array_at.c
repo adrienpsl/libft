@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_errno.h"
 #include "ft_array.h"
 
 void *ft_array_at(t_array *array, int index)
