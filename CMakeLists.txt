@@ -18,9 +18,12 @@ set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 # ------------------------------------------------------------------------------
 add_library(${__LIB_NAME__} "") # must have ""
 include_directories(includes)
-
+# the homebrew install repo
+#include_directories(/usr/local/include/CUnit)
+#target_link_libraries(${__LIB_NAME__} /usr/local/Cellar/cunit/2.1-3/lib/libcunit.a)
 # add all module
 add_subdirectory(src)
+add_subdirectory(tests)
 
 # ------------------------------------------------------------------------------
 #    create on link executable
@@ -30,6 +33,6 @@ add_executable(libft_run main.c)
 target_link_libraries(libft_run ${__LIB_NAME__})
 
 # add the lib C Unit from the homebrow install repository
-include_directories(/usr/local/include)
-target_link_libraries(libft_run /usr/local/Cellar/cunit/2.1-3/lib/libcunit.a)
+
+#target_link_libraries(libft_run /usr/local/Cellar/cunit/2.1-3/lib/libcunit.a)
 

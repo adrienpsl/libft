@@ -61,6 +61,7 @@ int ft_array_bubble(
 t_array *array, int(*cmp_f)(void *, void *, int), int order
 );
 
+t_array *ft_array$double_size(t_array *src);
 t_array *ft_array_copy(t_array *src);
 
 void ft_array_clear(t_array *array);

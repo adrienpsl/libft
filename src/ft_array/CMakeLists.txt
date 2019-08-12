@@ -15,10 +15,13 @@ target_sources(${__LIB_NAME__}
         ft_array.utils.c
         ft_array_at.c
         ft_array_copy.c
+        ft_array.double_size.c
 
         #[[ test]]
         tests/ft_array.test.c
         tests/ft_array.init.test.c
+        tests/ft_array.add.test.c
+        tests/ft_array.main.test.c
         )
 
 target_include_directories(libft PUBLIC includes)

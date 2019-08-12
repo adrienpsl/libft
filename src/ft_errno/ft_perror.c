@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_str.h>
 #include "ft_errno.h"
 
 void ft_perror(char *string)
@@ -21,5 +22,8 @@ void ft_perror(char *string)
 		return;
 	if (string == NULL)
 		return;
-	ft_printf("%s: %s", string, ft_strerror(errnum));
+	ft_putstr_fd(string, 2);
+	ft_putstr_fd(" : ", 2);
+	ft_putstr_fd(ft_strerror(errnum), 2);
+	ft_putstr_fd("\n", 2);
 }

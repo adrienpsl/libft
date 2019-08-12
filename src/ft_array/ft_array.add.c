@@ -11,52 +11,47 @@
 /* ************************************************************************** */
 
 #include <ft_errno.h>
-#include <ft_str.h>
 #include <ft_mem.h>
+#include <ft_log.h>
 #include "ft_array.h"
 
 int ft_array_add(t_array **p_array, void *element)
 {
-	if (!p_array || !*p_array)
-		return (ft_errno_set(EINVAL, -1));
-	else
-		return (ft_array_add_at(p_array, element, (*p_array)->length));
-}
-
-static int ft_array_move_end(t_array *array, int start)
-{
-	int index;
-
-	if (array->length + 1 >= array->capacity)
+	(void) "____check";
 	{
-		ft_putstr_fd("ft_array_add error: length bigger than capacity", 2);
-		return (ft_errno_set(EFAULT, -1));
+		if (!p_array || !*p_array || !element)
+			return (ft_log_null(__FILE__, __LINE__));
+		else
+			return (ft_array_add_at(p_array, element, (*p_array)->length));
 	}
-	index = array->length;
-	while (index >= start)
-	{
-		ft_memcpy(ft_array_at(array, index + 1),
-				  ft_array_at(array, index),
-				  array->element_size);
-		index = index - 1;
-	}
-	return (0);
 }
 
 int ft_array_add_at(t_array **p_array, void *element, int index)
 {
 	t_array *array;
 
-	if (!p_array || !*p_array || !element)
-		return (ft_errno_set(EINVAL, -1));
-	array = *p_array;
-	if (array->length + 1 >= array->capacity
-		&& !(array = ft_array_copy(array)))
-		return (-1);
-	if (array->length && ft_array_move_end(array, index))
-		return (-1);
-	ft_memcpy(ft_array_at(array, index), element, array->element_size);
-	array->length += 1;
-	*p_array = array;
+	(void) "____ check";
+	{
+		if (!p_array || !(array = *p_array) || !element)
+			return (ft_log_null(__FILE__, __LINE__));
+		if (index >= array->capacity)
+			return (ft_log_message(F, L, "index bigger capacity", EINVAL));
+	}
+	(void) "____ create a new tab 2 times bigger";
+	{
+		if (array->length + 1 >= array->capacity
+			&& !(array = ft_array$double_size(array)))
+			return (-1);
+	}
+	(void) "____ make place and copy the value";
+	{
+		(index < array->length) && ft_memmove(ft_array_at(array, index + 1),
+											  ft_array_at(array, index),
+											  (array->length - array->i) *
+											  array->element_size);
+		ft_memcpy(ft_array_at(array, index), element, array->element_size);
+		array->length += 1;
+		*p_array = array;
+	}
 	return (0);
 }

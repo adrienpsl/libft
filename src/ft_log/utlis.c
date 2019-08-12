@@ -10,38 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
-# include <stdio.h>
+#include <ft_log.h>
+#include <ft_printf.h>
+#include <ft_errno.h>
 
-int ft_array_func_print$str(void *p1, void *param)
+int ft_log_null(char *file, int line)
 {
-	(void) param;
-	printf(" _%s_ ", *(char**)p1);
-	return (0);
+	if (g_log > QUIET)
+		ft_printf("%s:%d ptr (null)\n", file, line);
+	return (ft_errno_set(EINVAL, -1));
 }
 
-// TODO : delete printf
-int ft_array_func_print$int(void *p1, void *param)
+int ft_log_message(char *file, int line, char *message, int error_code)
 {
-	(void)param;
-	printf("%d ", *(int*)p1);
-	return (0);
-}
-
-void *ft_array_func(t_array *array,
-int(*f)(void *, void *),
-void *param)
-{
-	int i;
-
-	if (!array)
-		return NULL;
-	i = 0;
-	while (i < array->length)
-	{
-		if (f(ft_array_at(array, i), param))
-			return (ft_array_at(array, i));
-		i++;
-	}
-	return (NULL);
+	if (g_log > QUIET)
+		ft_printf("%s:%d %s\n", file, line, message);
+	return (ft_errno_set(error_code, -1));
 }

@@ -10,38 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
-# include <stdio.h>
+#include <ft_array.h>
+#include <ft_errno.h>
+#include <ft_mem.h>
 
-int ft_array_func_print$str(void *p1, void *param)
+t_array *ft_array$double_size(t_array *src)
 {
-	(void) param;
-	printf(" _%s_ ", *(char**)p1);
-	return (0);
-}
+	t_array *new;
 
-// TODO : delete printf
-int ft_array_func_print$int(void *p1, void *param)
-{
-	(void)param;
-	printf("%d ", *(int*)p1);
-	return (0);
-}
-
-void *ft_array_func(t_array *array,
-int(*f)(void *, void *),
-void *param)
-{
-	int i;
-
-	if (!array)
-		return NULL;
-	i = 0;
-	while (i < array->length)
+	if (!src)
 	{
-		if (f(ft_array_at(array, i), param))
-			return (ft_array_at(array, i));
-		i++;
+		ft_errno_set(EINVAL, -1);
+		return (NULL);
 	}
-	return (NULL);
+	if (!(new = ft_array_init(src->capacity,
+							  src->element_size))
+		)
+		return (NULL);
+	ft_memcpy(new->data,
+			  src->data,
+			  (src->length * src->element_size)
+	);
+	new->length = src->length;
+	ft_array_free(&src);
+	return (new);
 }

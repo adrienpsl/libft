@@ -10,38 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
-# include <stdio.h>
+void test_ft_array_init(void);
+void test_ft_array_add();
 
-int ft_array_func_print$str(void *p1, void *param)
+void test_ft_array_main(void)
 {
-	(void) param;
-	printf(" _%s_ ", *(char**)p1);
-	return (0);
-}
-
-// TODO : delete printf
-int ft_array_func_print$int(void *p1, void *param)
-{
-	(void)param;
-	printf("%d ", *(int*)p1);
-	return (0);
-}
-
-void *ft_array_func(t_array *array,
-int(*f)(void *, void *),
-void *param)
-{
-	int i;
-
-	if (!array)
-		return NULL;
-	i = 0;
-	while (i < array->length)
-	{
-		if (f(ft_array_at(array, i), param))
-			return (ft_array_at(array, i));
-		i++;
-	}
-	return (NULL);
+	test_ft_array_init();
+	test_ft_array_add();
 }

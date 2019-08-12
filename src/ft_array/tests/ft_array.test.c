@@ -21,18 +21,6 @@ void test_ft_array()
 	//	.int_arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 },
 	//	});
 
-	/* test add  ------------------------------------------------------------ */
-	// add one element
-	t_array *test_add_array = ft_array_init(10, sizeof(int));
-
-	for (int i = 0; i < 2000; ++i)
-	{
-		ft_array_add(&test_add_array, &i);
-	}
-	//	ft_array_func(test_add_array, ft_array_func_print$int, NULL);
-	ft_array_free(&test_add_array);
-	printf(" \n");
-
 	// test array add string
 	t_array *test_add_string = ft_array_init(1, sizeof(char *));
 	for (int i = 0; i < 2000; ++i)

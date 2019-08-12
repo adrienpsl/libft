@@ -29,7 +29,7 @@ int ft_buffer_add(t_buffer *buff, char *data, int size)
 		return (0);
 	if ((size - 1) > buff->length)
 	{
-		ft_putstr_fd("buffer to small to handel data", 2);
+//		ft_putstr_fd("buffer to small to handel data", 2);
 		ft_buffer_clean(buff);
 		ft_putstr_fd(data, 1);
 		return (0);

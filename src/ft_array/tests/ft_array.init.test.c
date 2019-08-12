@@ -10,19 +10,85 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_array.h>
-#include "ft_array.test.h"
+# include <ft_array.h>
+#include <stdint.h>
+#include <test.h>
+# include "stdio.h"
 
-void test_ft_array_init()
+/*
+ * I will test the initialisation is good performed
+ * */
+void test_ft_array_init(void)
 {
-	t_array *array = ft_array_init(10, sizeof(int));
-
-	if (array->capacity != (10 * 2) - 3 ||
-		array->element_size != sizeof(int))
+	// check good information in array
 	{
-//		printf("error test : %d \n", );
+		int size = 3;
+		t_array *array = ft_array_init(size, sizeof(int));
+
+		if (
+			array->element_size != sizeof(int)
+			|| array->length != 0
+			|| array->capacity != size * 2
+			)
+			log_test(0)
 	}
-	ft_array_free(&array);
-//	if (array)
-//		printf("error test : %d at free \n", test.test_nb);
+
+	// look if buffer and array are at the right place
+	{
+		int size = 3;
+		t_array *array = ft_array_init(size, sizeof(int));
+
+		// test data placement
+		{
+			if (
+				array->data != (char *) array + (sizeof(t_array))
+				)
+				log_test(1)
+		}
+
+		// test buffer placement
+		{
+			char *tmp = array->data;
+			tmp += sizeof(int) * (size * 2);
+			tmp += sizeof(int);
+
+			if (
+				array->buffer != tmp
+				)
+				log_test(2)
+		}
+
+		ft_array_free(&array);
+	}
+
+	// test fill
+	{
+		int size = 3;
+		t_array *array = ft_array_init(size, sizeof(int));
+		int *int_array = (int *) array->data;
+
+		// test fill array
+		{
+			*(int *) (array->data + sizeof(2)) = INT32_MAX;
+
+			if (
+				int_array[1] != INT32_MAX
+				|| int_array[0]
+				|| int_array[2]
+				)
+				log_test(3)
+		}
+
+		// test buffer
+		{
+			*(int *) array->buffer = INT32_MIN;
+
+			if (
+				int_array[size * 2 + 1] != INT32_MIN
+				)
+				log_test(4)
+		}
+
+		ft_array_free(&array);
+	}
 }

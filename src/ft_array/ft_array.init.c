@@ -12,27 +12,26 @@
 
 #include <ft_mem.h>
 #include "ft_array.h"
-#include "libft.h"
 
 /*
-**	the last command allow to use a buffer at the end of the array,
-**  this is for that the capacity is down by 3
+** I add three to protect overflow and add buffer into then like :
+** { [end array] [protect] [buffer] [protect] }
 */
 t_array *ft_array_init(int nb_elements, size_t element_size)
 {
 	t_array *array;
 
 	nb_elements = nb_elements * 2;
-	if (nb_elements < 5)
-		nb_elements = 10;
-	array = ft_memalloc(sizeof(t_array) + (nb_elements * element_size));
+	array = ft_memalloc(
+		sizeof(t_array) + (nb_elements * (element_size + 3))
+	);
 	if (array)
 	{
-		array->capacity = nb_elements - 3;
 		array->data = ((char *) array) + sizeof(t_array);
 		array->element_size = element_size;
+		array->capacity = nb_elements;
 		array->buffer =
-		ft_array_at(array, array->capacity - 1) + (element_size * 2);
+			array->data + ((array->capacity + 1) * element_size);
 		return (array);
 	}
 	else

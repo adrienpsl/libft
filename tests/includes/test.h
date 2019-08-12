@@ -5,6 +5,8 @@
 #ifndef COMPACT_LIBFT_TEST_H
 #define COMPACT_LIBFT_TEST_H
 
+#define log_test(test_nb) printf("%s:%d: test: %d\n", __FILE__, __LINE__, test_nb);
+
 //# define FT_PF_MODE 1
 
 /*

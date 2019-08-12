@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_log.h>
+#include <ft_str.h>
 #include "ft_errno.h"
 #include "ft_mem.h"
 
@@ -21,6 +23,8 @@ void *ft_memalloc(size_t size)
 	if (res == NULL)
 	{
 		ft_errno_set(ENOMEM, -1);
+		if (g_log > QUIET)
+			ft_perror("ft_memalloc : error in memory allocation");
 		return (NULL);
 	}
 	ft_memset(res, 0, size);
