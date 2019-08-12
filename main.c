@@ -14,6 +14,8 @@
 # include "libft.h"
 #include "tests/test.h"
 
+void test_ft_log();
+
 void test()
 {
 	//	if (test_ft_memory())
@@ -23,11 +25,11 @@ void test()
 //	test_ft_str();
 //	test_ft_char();
 //	test_ft_buffer();
-	test_ft_array();
+//	test_ft_array();
 //	test_ft_io();
 	//		if (test_ft_printf())
 	//		printf("printf error\n");
-
+	test_ft_log();
 }
 
 int main(int ac, char **av)

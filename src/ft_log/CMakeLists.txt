@@ -7,6 +7,7 @@ target_sources(${__LIB_NAME__}
         ft_log.c
 
         #[[ test]]
+        tests/ft_log_test.c
         )
 
 

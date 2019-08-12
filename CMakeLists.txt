@@ -16,7 +16,7 @@ set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 # ------------------------------------------------------------------------------
 #    Libft init
 # ------------------------------------------------------------------------------
-add_library(${__LIB_NAME__} "" ) # must have ""
+add_library(${__LIB_NAME__} "" src/ft_log/tests/ft_log_test.c) # must have ""
 include_directories(includes)
 
 # add all module
