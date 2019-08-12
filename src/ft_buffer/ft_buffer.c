@@ -25,8 +25,6 @@ int ft_buffer_clean(t_buffer *buff)
 
 int ft_buffer_add(t_buffer *buff, char *data, int size)
 {
-	if (size == STRING_MODE)
-		size = ft_strlen(data);
 	if (!size)
 		return (0);
 	if ((size - 1) > buff->length)

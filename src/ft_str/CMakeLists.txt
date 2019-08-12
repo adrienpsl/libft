@@ -4,20 +4,16 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        ft_capitalize.c
-        ft_isalnum.c
-        ft_isalpha.c
-        ft_isascii.c
-        ft_isdigit.c
-        ft_isprint.c
-        ft_isspace.c
         ft_putchar.c
         ft_putchar_fd.c
         ft_putendl.c
         ft_putendl_fd.c
         ft_putnstr.c
         ft_putsteret.c
-        ft_str_free.c
+        ft_str.char.modification.c
+        ft_str.char_helper_1.c
+        ft_str.char_helper_2.c
+        ft_str.free.c
         ft_str_replace.c
         ft_strcat.c
         ft_strchr.c

@@ -31,7 +31,7 @@ int ft_putval_int(int ret, char *text, char *value);
 /*
 **	utils
 */
-void ft_str_free(char **s);
+void ft_str$free(char **s);
 size_t ft_strlen(const char *str);
 
 /*

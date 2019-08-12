@@ -10,14 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mem.h"
 #include "ft_str.h"
 
-void ft_str_free(char **s)
+int	ft_isalnum(int c)
 {
-	if (!s || !*s)
-		return ;
-	ft_bzero(*s, ft_strlen(*s));
-	free(*s);
-	*s = NULL;
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
+}
+
+int		ft_isalpha(int c)
+{
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (1);
+	return (0);
+}
+
+int		ft_isascii(int c)
+{
+	if (c <= 127 && c >= 0)
+		return (1);
+	return (0);
+}
+
+int		ft_isdigit(int c)
+{
+	if (c < '0' || c > '9')
+		return (0);
+	return (1);
+}
+
+int	ft_isprint(int c)
+{
+	if (c <= 126 && c >= 32)
+		return (1);
+	return (0);
 }

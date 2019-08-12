@@ -1,115 +1,177 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsouchet <bsouchet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/05/03 21:39:39 by bsouchet          #+#    #+#             */
-/*   Updated: 2017/05/06 01:40:37 by bsouchet         ###   ########.fr       */
+/*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
+/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ft_mem.h>
-#include "ft_printf.h"
+#include <ft_buffer.h>
+#include <ft_io.h>
+# include "ft_printf.h"
 
-int		ft_printf(const char *format, ...)
+int catch_options(char **input, char *str_option, long *options, int one)
 {
-	t_printf	p;
+	char *s;
+	int ret;
 
-	ft_bzero(&p, sizeof(p));
-	p.fd = 1;
-	p.format = (char *)format;
-	va_start(p.ap, format);
-	while (*p.format)
+	s = *input;
+	if (one)
 	{
-		if (*p.format == '%')
+		if (*s && (ret = ft_strchr(str_option, *s)) > -1)
 		{
-			++p.format;
-			if (!*p.format)
-				break ;
-			parse_optionals(&p);
+			*options |= (1 << ret);
+			s++;
+		}
+	}
+	else
+	{
+		while (*s && (ret = ft_strchr(str_option, *s)) > -1)
+		{
+			*options |= (1 << ret);
+			s++;
+		}
+	}
+	*input = s;
+	return (0);
+}
+
+int extract_format(t_pf *s)
+{
+	s->format &= 0;
+	ft_memset(s->t_string, 0, FT_BUFFER_SIZE);
+	catch_options(&s->str, ".......-*.0", &s->format, 0);
+	catch_options(&s->str, "....hl", &s->format, 0);
+	catch_options(&s->str, "sdcu.....x", &s->format, 1);
+	return (0);
+}
+
+int manage_wildcard(t_pf *s)
+{
+	if (s->format & FORMAT_WILDCARD)
+		s->min_length = va_arg(s->list, int);
+	return (0);
+}
+
+int ft_printf_parse_number(t_pf *s)
+{
+	static char *bases[17] = { "01", "0123456789", "0123456789abcdef" };
+	uintmax_t nb;
+	int base;
+
+	if (FORMAT_D & s->format && !(s->format & FORMAT_L))
+		nb = va_arg(s->list, int);
+	else if (FORMAT_D & s->format && (s->format & FORMAT_L))
+		nb = va_arg(s->list, long long);
+	else if (FORMAT_U & s->format && !(s->format & FORMAT_L))
+		nb = va_arg(s->list, unsigned int);
+	else if (s->format & (FORMAT_U | FORMAT_L | FORMAT_X))
+		nb = va_arg(s->list, unsigned long long);
+	else
+		return (1);
+	base = (s->format & FORMAT_10_BASE) ? 1 : 2;
+	return ft_itoa_base(nb,
+						bases[base],
+						s->t_string,
+						s->format & FORMAT_U);
+}
+
+int ft_printf_read_arg(t_pf *s)
+{
+	if (s->format & FORMAT_S)
+		s->ptr = va_arg(s->list, void*);
+	else
+		return ft_printf_parse_number(s);
+	return (0);
+}
+
+static void add_padding(t_pf *s)
+{
+	while (s->min_length)
+	{
+		if (s->format & FORMAT_0)
+			ft_buffer_add(s->buff, "0", 1);
+		else
+			ft_buffer_add(s->buff, " ", 1);
+		s->min_length--;
+	}
+}
+
+int ft_printf_format_data(t_pf *s)
+{
+	size_t size;
+	char *data;
+
+	data = s->format & FORMAT_S ? s->ptr : s->t_string;
+	size = ft_strlen(data);
+	s->min_length = s->min_length - size;
+	if (s->format & FORMAT_0)
+	{
+		ft_buffer_add(s->buff, "0x", 2);
+		s->min_length -= 2;
+	}
+	s->min_length = s->min_length < 0 ? 0 : s->min_length;
+	s->min_length = s->min_length < 0 ? 0 : s->min_length;
+	if (!(FORMAT_MINUS & s->format) && s->min_length)
+		add_padding(s);
+	ft_buffer_add(s->buff, data, size);
+	if ((FORMAT_MINUS & s->format) && s->min_length)
+		add_padding(s);
+	return (0);
+}
+
+//int ft_sprintf(t_buffer *buffer, char *format, ...)
+//{
+//	static t_pf s;
+//
+//	ft_memset(&s, 0, sizeof(t_pf));
+//	s.str = format;
+////	s.buff = buffer;
+//	va_start(s.list, format);
+//	while (*s.str)
+//	{
+//		if (*s.str == '%' && s.str++)
+//		{
+//			extract_format(&s);
+//			manage_wildcard(&s);
+//			ft_printf_read_arg(&s);
+//			ft_printf_format_data(&s);
+//		}
+////		else
+////			ft_buffer_add(s.buff, s.str, 1) || s.str++;
+//	}
+//	va_end(s.list);
+//	return (0);
+//}
+
+int ft_printf(const char *format, ...)
+{
+	t_pf s;
+
+	ft_memset(&s, 0, sizeof(t_pf));
+	if (!(s.buff = ft_array_init(512, 1)))
+		return (1);
+	s.str = (char*)format;
+	va_start(s.list, format);
+	while (*s.str)
+	{
+		if (*s.str == '%' && s.str++)
+		{
+			extract_format(&s);
+			manage_wildcard(&s);
+			ft_printf_read_arg(&s);
+			ft_printf_format_data(&s);
 		}
 		else
-			buffer(&p, p.format, 1);
-		++p.format;
+			ft_buffer_add(s.buff, s.str, 1) || s.str++;
 	}
-	write(p.fd, p.buff, p.buffer_index);
-	va_end(p.ap);
-	return (p.len);
-}
-
-int		ft_dprintf(int fd, const char *format, ...)
-{
-	t_printf	p;
-
-	ft_bzero(&p, sizeof(p));
-	p.fd = fd;
-	p.format = (char *)format;
-	va_start(p.ap, format);
-	while (*p.format)
-	{
-		if (*p.format == '%')
-		{
-			++p.format;
-			if (!*p.format)
-				break ;
-			parse_optionals(&p);
-		}
-		else
-			buffer(&p, p.format, 1);
-		++p.format;
-	}
-	write(p.fd, p.buff, p.buffer_index);
-	va_end(p.ap);
-	return (p.len);
-}
-
-void	buffer(t_printf *p, void *new, size_t size)
-{
-	int			diff;
-	long long	new_i;
-
-	new_i = 0;
-	while (PF_BUF_SIZE - p->buffer_index < (int)size)
-	{
-		diff = PF_BUF_SIZE - p->buffer_index;
-		ft_memcpy(&(p->buff[p->buffer_index]), &(new[new_i]), diff);
-		size -= diff;
-		new_i += diff;
-		p->buffer_index += diff;
-		p->len += diff;
-		write(p->fd, p->buff, p->buffer_index);
-		p->buffer_index = 0;
-	}
-	ft_memcpy(&(p->buff[p->buffer_index]), &(new[new_i]), size);
-	p->buffer_index += size;
-	p->len += size;
-}
-
-void	print_pointer_address(t_printf *p)
-{
-	void	*pointer;
-
-	pointer = va_arg(p->ap, void *);
-	p->f &= ~F_SHARP;
-	p->min_length -= (p->f & F_ZERO ? 2 : 0);
-	p->padding = (p->printed > p->min_length - 3) ? 0 :
-		p->min_length - 3 - p->printed;
-	p->f |= F_SHARP;
-	p->f |= F_POINTER;
-	itoa_base_printf((uintmax_t)pointer, 16, p);
-}
-
-void	padding(t_printf *p, int n)
-{
-	if (!p->padding)
-		return ;
-	p->c = 32 | (p->f & F_ZERO);
-	if (!n && !(p->f & F_MINUS))
-		while (p->padding--)
-			buffer(p, &p->c, 1);
-	else if (n && (p->f & F_MINUS))
-		while (p->padding--)
-			buffer(p, &p->c, 1);
+	va_end(s.list);
+	ft_buffer_clean(s.buff);
+	free(s.buff);
+	return (0);
 }

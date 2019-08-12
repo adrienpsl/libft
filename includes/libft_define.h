@@ -11,7 +11,6 @@
 
 # define TRUE 1
 # define FALSE 0
-# define STRING_MODE 0l
 # define MEMORY_LACK 100
 # define SAME_SIZE 0
 # define FREE  1

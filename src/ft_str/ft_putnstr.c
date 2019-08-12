@@ -37,8 +37,8 @@ void ft_putstr_buffer(const char *s, char *buffer)
 
 void ft_putstr_fd(char const *s, int fd)
 {
-	(void)s;
-	(void)fd;
+	(void) s;
+	(void) fd;
 	//	size_t size;
 	//	if (g_test)
 	//	{
@@ -46,7 +46,7 @@ void ft_putstr_fd(char const *s, int fd)
 	//		ft_putstr_buffer(s, g_test_buffer + size);
 	//	}
 	//	else
-	//		write(fd, s, strlen(s));
+	write(fd, s, ft_strlen(s));
 }
 
 void ft_putstr(char const *s)

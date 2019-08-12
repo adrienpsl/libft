@@ -10,11 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_mem.h"
 #include "ft_str.h"
 
-int	ft_isalnum(int c)
+void ft_str$free(char **s)
 {
-	if (ft_isalpha(c) || ft_isdigit(c))
-		return (1);
-	return (0);
+	if (!s || !*s)
+		return ;
+	ft_bzero(*s, ft_strlen(*s));
+	free(*s);
+	*s = NULL;
 }
