@@ -17,7 +17,7 @@ int g_test;
 char g_test_buffer[10000];
 
 
-void ft_test_clear_testbuff();
+void lib_clear_testbuff();
 int ft_test_if_streq(char *res, char *test, char *where);
 
 #endif //LIBFT_LIBFT_TEST_H

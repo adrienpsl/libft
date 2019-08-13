@@ -10,44 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
-# include <stdio.h>
+#include <ft_errno.h>
+#include "libft.h"
 
-int ft_array_func_print$str(void *p1, void *param)
+int init_libft()
 {
-	(void) param;
-	printf(" _%s_ ", *(char **) p1);
+	ft_errno_set(0, 0);
 	return (0);
-}
-
-// TODO : delete printf
-int ft_array_func_print$int(void *p1, void *param)
-{
-	(void) param;
-	printf("%3d ", *(int *) p1);
-	return (0);
-}
-
-void *ft_array_func(
-	t_array *array,
-	int(*func)(void *, void *),
-	void *param
-)
-{
-	int i;
-
-	if (!array)
-	{
-		return NULL;
-	}
-	i = 0;
-	while (i < array->length)
-	{
-		if (func(ft_array_at(array, i), param))
-		{
-			return (ft_array_at(array, i));
-		}
-		i++;
-	}
-	return (NULL);
 }

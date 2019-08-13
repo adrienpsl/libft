@@ -12,4 +12,5 @@ add_subdirectory(ft_mem)
 add_subdirectory(ft_printf)
 add_subdirectory(ft_str)
 add_subdirectory(ft_strsplit)
+add_subdirectory(ft_test)
 

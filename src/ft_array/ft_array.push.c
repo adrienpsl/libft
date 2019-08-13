@@ -10,10 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <ft_log.h>
+#include "ft_array.h"
 
-int init_libft()
+int ft_array$push(t_array **p_array, void *element)
 {
-	ft_errno_set(0, 0);
-	return (0);
+	if (
+		!p_array
+		|| !*p_array
+		|| !element
+		)
+		return (ft_log$null(__FILE__, __LINE__));
+	else
+		return (ft_array$push_at(p_array, element, (*p_array)->length));
 }

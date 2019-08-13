@@ -10,44 +10,36 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
-# include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <ft_mem.h>
+#include <libft.test.h>
 
-int ft_array_func_print$str(void *p1, void *param)
+int lib_random_int(int limit)
 {
-	(void) param;
-	printf(" _%s_ ", *(char **) p1);
-	return (0);
+	return (rand() % limit + 1);
 }
 
-// TODO : delete printf
-int ft_array_func_print$int(void *p1, void *param)
+void lib_print_func_int(void *ptr)
 {
-	(void) param;
-	printf("%3d ", *(int *) p1);
-	return (0);
+	printf("%3d ", *(int *) ptr);
 }
 
-void *ft_array_func(
-	t_array *array,
-	int(*func)(void *, void *),
-	void *param
-)
+void lib_clear_testbuff()
+{
+	ft_bzero(g_test_buffer, 10000);
+}
+
+void
+lib_print_func(void *start, void (*f)(void *), size_t size_el, int length)
 {
 	int i;
 
-	if (!array)
-	{
-		return NULL;
-	}
 	i = 0;
-	while (i < array->length)
+	while (i < length)
 	{
-		if (func(ft_array_at(array, i), param))
-		{
-			return (ft_array_at(array, i));
-		}
+		f((char *) start + (i * size_el));
 		i++;
 	}
-	return (NULL);
+	printf(" \n");
 }

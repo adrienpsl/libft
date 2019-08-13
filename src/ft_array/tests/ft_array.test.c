@@ -26,7 +26,7 @@ void test_ft_array()
 	for (int i = 0; i < 2000; ++i)
 	{
 		char *a = "tata";
-		ft_array_add(&test_add_string, a);
+		ft_array$push(&test_add_string, a);
 	}
 	//	ft_array_func(test_add_string, ft_array_func_print$str, NULL);
 	ft_array_free(&test_add_string);
@@ -37,7 +37,7 @@ void test_ft_array()
 
 	for (int i = 0; i < 10000; ++i)
 	{
-		ft_array_add_at(&test_add_random, &i, my_rand(2000));
+		ft_array$push_at(&test_add_random, &i, my_rand(2000));
 	}
 	//	ft_array_func(test_add_random, ft_array_func_print$int, NULL);
 	//	printf("\n%d \n", test_add_random->length);
@@ -50,7 +50,7 @@ void test_ft_array()
 	for (int i = 0; i < 2000; ++i)
 	{
 		char *a = "tata";
-		ft_array_add(&test_delete, a);
+		ft_array$push(&test_delete, a);
 	}
 	for (int i = 0; i < 2000; ++i)
 	{
@@ -63,7 +63,7 @@ void test_ft_array()
 	test_delete = ft_array_init(2000, sizeof(int));
 	for (int i = 0; i < 200; ++i)
 	{
-		ft_array_add(&test_delete, &i);
+		ft_array$push(&test_delete, &i);
 	}
 	for (int i = 0; i < 10; ++i)
 	{
@@ -82,7 +82,7 @@ void test_ft_array()
 	// je le remplie avec 100 nb
 	for (int i = 0; i < 100; ++i)
 	{
-		ft_array_add(&test_delete, &i);
+		ft_array$push(&test_delete, &i);
 	}
 
 	for (int i = 0; i < 10000; ++i)

@@ -12,11 +12,6 @@
 
 #include "libft.h"
 
-void ft_test_clear_testbuff()
-{
-	ft_bzero(g_test_buffer, 10000);
-}
-
 void ft_test_ifcmp_printsplit(char **res, char **test, char *where)
 {
 	if (ft_strsplit_cmp(res, test))

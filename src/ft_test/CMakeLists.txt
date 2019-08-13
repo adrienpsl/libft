@@ -4,7 +4,7 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        utils.c
+        libft_utils.c
 
         #[[ test]]
         )

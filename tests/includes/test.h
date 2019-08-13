@@ -7,6 +7,19 @@
 
 #define log_test(test_nb) printf("%s:%d: test: %d\n", __FILE__, __LINE__, test_nb);
 
+
+void lib_clear_testbuff();
+int ft_test_if_streq(char *res, char *test, char *where);
+
+
+
+/*
+**	print function
+*/
+void
+lib_print_func(void *start, void (*f)(void *), size_t size_el, int length);
+void lib_print_func_int(void *ptr);
+
 //# define FT_PF_MODE 1
 
 /*

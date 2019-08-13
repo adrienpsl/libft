@@ -13,7 +13,7 @@ enum e_log_level {
 	TRACE,
 };
 
-int ft_log_null(char *file, int line);
-int ft_log_message(char *file, int line, char *message, int error_code);
+int ft_log$null(char *file, int line);
+int ft_log$message(char *file, int line, char *message, int error_code);
 
 #endif

@@ -49,11 +49,11 @@ void *ft_array_next(t_array *array);
 void *ft_array_prev(t_array *array);
 void *ft_array_at(t_array *array, int index);
 
-int ft_array_add(t_array **p_array, void *element);
-int ft_array_add_at(t_array **array, void *element, int index);
+int ft_array$push(t_array **p_array, void *element);
+int ft_array$push_at(t_array **p_array, void *element, int index);
 int ft_array_remove(t_array *array, int start);
 
-void *ft_array_func(t_array *array, int(*f)(void *, void *), void *param);
+void *ft_array_func(t_array *array, int(*func)(void *, void *), void *param);
 int ft_array_func_print$str(void *p1, void *param);
 int ft_array_func_print$int(void *p1, void *param);
 
