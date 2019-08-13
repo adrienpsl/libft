@@ -10,18 +10,35 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_log.h>
 #include "ft_errno.h"
 #include "ft_array.h"
 
-void *ft_array_at(t_array *array, int index)
+void *ft_array$at(t_array *array, int index)
 {
-	if (!array || index >= array->capacity)
+	if (!array)
 	{
-		ft_errno_set(EINVAL, -1);
-		// TODO :
-		//		ft_logerror("ft_array_at error : index bigger than capacity");
+		ft_log$message(F, L,
+					   "ft_array$at error: array ptr (null)",
+					   EINVAL);
+		return (NULL);
+	}
+	else if (index >= array->capacity)
+	{
+		ft_log$message(F, L,
+					   "ft_array$at error : index bigger than length",
+					   EINVAL);
+		return (NULL);
+	}
+	else if (index < 0)
+	{
+		ft_log$message(F, L,
+					   "ft_array$at error : index is negative",
+					   EINVAL);
 		return (NULL);
 	}
 	else
+	{
 		return (array->data + (index * array->element_size));
+	}
 }

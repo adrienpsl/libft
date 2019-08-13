@@ -26,13 +26,13 @@ ft_array_bubble(t_array *array, int(*cmp_f)(void *, void *, int), int order)
 		b.sorted = 1;
 		while (b.y < (array->length - b.i - 1))
 		{
-			if (cmp_f(ft_array_at(array, b.y),
-					  ft_array_at(array, b.y + 1),
+			if (cmp_f(ft_array$at(array, b.y),
+					  ft_array$at(array, b.y + 1),
 					  order))
 			{
 				b.sorted = 0;
-				ft_mem_swap(ft_array_at(array, b.y),
-							ft_array_at(array, b.y + 1), array->buffer,
+				ft_mem_swap(ft_array$at(array, b.y),
+							ft_array$at(array, b.y + 1), array->buffer,
 							array->element_size);
 			}
 			b.y++;

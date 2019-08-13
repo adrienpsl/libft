@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <ft_mem.h>
 #include <libft.test.h>
+#include <ft_str.h>
 
 int lib_random_int(int limit)
 {
@@ -28,6 +29,21 @@ void lib_print_func_int(void *ptr)
 void lib_clear_testbuff()
 {
 	ft_bzero(g_test_buffer, 10000);
+}
+
+int lib_cmp_testbuff(char *expected)
+{
+	int ret;
+
+	ret = 0;
+	if (ft_str_cmp(expected, g_test_buffer))
+	{
+		ret = 1;
+		printf("expected: %s \n", expected);
+		printf("result  : %s \n", g_test_buffer);
+	}
+	lib_clear_testbuff();
+	return (ret);
 }
 
 void

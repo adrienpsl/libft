@@ -43,9 +43,9 @@ void *ft_array_func(
 	i = 0;
 	while (i < array->length)
 	{
-		if (func(ft_array_at(array, i), param))
+		if (func(ft_array$at(array, i), param))
 		{
-			return (ft_array_at(array, i));
+			return (ft_array$at(array, i));
 		}
 		i++;
 	}

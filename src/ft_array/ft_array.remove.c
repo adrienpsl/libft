@@ -28,8 +28,8 @@ int ft_array_remove(t_array *array, int start)
 	}
 	while (start > array->length)
 	{
-		ft_memcpy(ft_array_at(array, start),
-				  ft_array_at(array, start + 1),
+		ft_memcpy(ft_array$at(array, start),
+				  ft_array$at(array, start + 1),
 				  array->element_size);
 		start += 1;
 	}

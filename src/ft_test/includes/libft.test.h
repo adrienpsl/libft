@@ -16,8 +16,8 @@
 int g_test;
 char g_test_buffer[10000];
 
-
+int lib_cmp_testbuff(char *expected);
 void lib_clear_testbuff();
 int ft_test_if_streq(char *res, char *test, char *where);
 
-#endif //LIBFT_LIBFT_TEST_H
+#endif

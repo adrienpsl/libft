@@ -11,10 +11,12 @@
 /* ************************************************************************** */
 
 void test_ft_array_init(void);
-void test_ft_array_add();
+void test_ft_array$add();
+void test_ft_array$at();
 
 void test_ft_array_main(void)
 {
 	test_ft_array_init();
-	test_ft_array_add();
+	test_ft_array$at();
+	test_ft_array$add();
 }

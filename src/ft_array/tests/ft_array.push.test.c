@@ -16,7 +16,7 @@
 #include <ft_mem.h>
 #include <libft.test.h>
 
-void test_ft_array_add()
+void test_ft_array$add()
 {
 	/*
 	 * ft_array_push : add 1000 nb
@@ -157,7 +157,7 @@ void test_ft_array_add()
 				log_test(5)
 			}
 		}
-
+		g_test = 0;
 		ft_array_free(&array);
 	}
 

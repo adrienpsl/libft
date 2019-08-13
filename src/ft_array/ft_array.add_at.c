@@ -51,12 +51,12 @@ static void move_and_copy_value(t_array *array, void *element, int index)
 		index < array->length
 		)
 	{
-		ft_memmove(ft_array_at(array, index + 1),
-				   ft_array_at(array, index),
+		ft_memmove(ft_array$at(array, index + 1),
+				   ft_array$at(array, index),
 				   (array->length - array->i) * array->element_size);
 	}
 	{
-		ft_memcpy(ft_array_at(array, index), element, array->element_size);
+		ft_memcpy(ft_array$at(array, index), element, array->element_size);
 		array->length += 1;
 	}
 }

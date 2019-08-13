@@ -19,10 +19,11 @@ target_sources(${__LIB_NAME__}
         ft_array.utils.c
 
         #[[ test]]
-        tests/ft_array.test.c
+        tests/ft_array.at.test.c
         tests/ft_array.init.test.c
         tests/ft_array.push.test.c
-        tests/ft_array.main.test.c
+
+        tests/main.test.c
         )
 
 target_include_directories(libft PUBLIC includes)

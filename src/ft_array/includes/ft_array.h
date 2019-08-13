@@ -47,7 +47,7 @@ void ft_array_free(t_array **p_array);
 
 void *ft_array_next(t_array *array);
 void *ft_array_prev(t_array *array);
-void *ft_array_at(t_array *array, int index);
+void *ft_array$at(t_array *array, int index);
 
 int ft_array$push(t_array **p_array, void *element);
 int ft_array$push_at(t_array **p_array, void *element, int index);
