@@ -20,7 +20,7 @@ void test_ft_array$at()
 	* ft_array$at : return bad stuff given
 	* */
 	{
-		t_array *array = ft_array_init(1, sizeof(int));
+		t_array *array = ft_array$init(1, sizeof(int));
 		void *ret;
 
 		g_test = 1;
@@ -34,7 +34,7 @@ void test_ft_array$at()
 
 				if (ret
 					|| lib_cmp_testbuff(
-					"/Users/adpusel/code/42/libft/src/ft_array/ft_array.at.c:35 ft_array$at error : index is negative\n")
+					"ft_array$at error : index is negative\n")
 					)
 					log_test(0)
 			}
@@ -45,7 +45,7 @@ void test_ft_array$at()
 
 				if (ret
 					|| lib_cmp_testbuff(
-					"/Users/adpusel/code/42/libft/src/ft_array/ft_array.at.c:28 ft_array$at error : index bigger than length\n")
+					"ft_array$at error : index bigger than length\n")
 					)
 					log_test(1)
 			}
@@ -56,21 +56,21 @@ void test_ft_array$at()
 
 				if (ret
 					|| lib_cmp_testbuff(
-					"/Users/adpusel/code/42/libft/src/ft_array/ft_array.at.c:21 ft_array$at error: array ptr (null)\n")
+					"ft_array$at error: array ptr (null)\n")
 					)
 					log_test(2)
 			}
 		}
 
 		g_test = 0;
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 
 	/*
 	* ft_array$at : good stuff given
 	* */
 	{
-		t_array *array = ft_array_init(1, sizeof(int));
+		t_array *array = ft_array$init(1, sizeof(int));
 		void *element;
 
 		// test with an array of 100
@@ -95,6 +95,6 @@ void test_ft_array$at()
 
 		}
 
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 }

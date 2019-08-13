@@ -23,7 +23,7 @@ t_array *ft_array_copy(t_array *src)
 		ft_errno_set(EINVAL, -1);
 		return (NULL);
 	}
-	if (!(new = ft_array_init(src->capacity / 2,
+	if (!(new = ft_array$init(src->capacity / 2,
 							  src->element_size))
 	)
 		return (NULL);
@@ -32,6 +32,6 @@ t_array *ft_array_copy(t_array *src)
 			  (src->length * src->element_size)
 	);
 	new->length = src->length;
-	ft_array_free(&src);
+	ft_array$free(&src);
 	return (new);
 }

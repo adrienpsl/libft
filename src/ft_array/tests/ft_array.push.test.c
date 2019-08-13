@@ -22,7 +22,7 @@ void test_ft_array$add()
 	 * ft_array_push : add 1000 nb
 	 * */
 	{
-		t_array *array = ft_array_init(1, sizeof(int));
+		t_array *array = ft_array$init(1, sizeof(int));
 
 		// test if I add 1000 number
 		{
@@ -40,14 +40,14 @@ void test_ft_array$add()
 				)
 				log_test(0)
 		}
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 
 	/*
 	* ft_array$push : add 1000 string
 	* */
 	{
-		t_array *array = ft_array_init(1, sizeof(char *));
+		t_array *array = ft_array$init(1, sizeof(char *));
 		char *string = "toto";
 
 		// test if I add 1000 number
@@ -67,7 +67,7 @@ void test_ft_array$add()
 				log_test(1)
 		}
 		//			ft_array_func(array, ft_array_func_print$str, NULL);
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 
 
@@ -75,7 +75,7 @@ void test_ft_array$add()
 	* ft_array$push_at : add 1000 nb
 	* */
 	{
-		t_array *array = ft_array_init(1, sizeof(int));
+		t_array *array = ft_array$init(1, sizeof(int));
 
 		// test if I add 1000 number
 		{
@@ -93,14 +93,14 @@ void test_ft_array$add()
 				)
 				log_test(2)
 		}
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 
 	/*
 	* ft_array$push_at : add and check if number are right positioning
 	* */
 	{
-		t_array *array = ft_array_init(1, sizeof(int));
+		t_array *array = ft_array$init(1, sizeof(int));
 		int data;
 
 		// test number at middle
@@ -126,14 +126,14 @@ void test_ft_array$add()
 			if (ft_memcmp(ref_array, array->data, sizeof(int) * 5))
 				log_test(4)
 		}
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 
 	/*
 	* ft_array$push_at : test with bad index
 	* */
 	{
-		t_array *array = ft_array_init(1, sizeof(int));
+		t_array *array = ft_array$init(1, sizeof(int));
 		int data;
 		int ret;
 
@@ -158,7 +158,7 @@ void test_ft_array$add()
 			}
 		}
 		g_test = 0;
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 
 }

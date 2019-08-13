@@ -10,15 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ft_array_init(void);
-void test_ft_array$add(void);
-void test_ft_array$at(void);
-void test_ft_array$bubble(void);
+#include ""
 
-void test_ft_array_main(void)
-{
-	test_ft_array_init();
-	test_ft_array$at();
-	test_ft_array$add();
-	test_ft_array$bubble();
-}
+void test_ft_array$copy

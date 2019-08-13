@@ -23,7 +23,7 @@ int lib_random_int(int limit)
 
 void lib_print_func_int(void *ptr)
 {
-	printf("%3d ", *(int *) ptr);
+	printf("%3d ", *(int *)ptr);
 }
 
 void lib_clear_testbuff()
@@ -34,13 +34,15 @@ void lib_clear_testbuff()
 int lib_cmp_testbuff(char *expected)
 {
 	int ret;
+	int space;
 
+	space = ft_strchr(g_test_buffer, ' ');
 	ret = 0;
-	if (ft_str_cmp(expected, g_test_buffer))
+	if (ft_str_cmp(expected, g_test_buffer + space + 1))
 	{
 		ret = 1;
-		printf("expected: %s \n", expected);
-		printf("result  : %s \n", g_test_buffer);
+		printf("expected: %*s %s", space, "", expected);
+		printf("result  : %s\n", g_test_buffer);
 	}
 	lib_clear_testbuff();
 	return (ret);
@@ -54,7 +56,7 @@ lib_print_func(void *start, void (*f)(void *), size_t size_el, int length)
 	i = 0;
 	while (i < length)
 	{
-		f((char *) start + (i * size_el));
+		f((char *)start + (i * size_el));
 		i++;
 	}
 	printf(" \n");

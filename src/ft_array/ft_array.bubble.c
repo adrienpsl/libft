@@ -11,35 +11,85 @@
 /* ************************************************************************** */
 
 #include <ft_mem.h>
+#include <errno.h>
+#include <ft_log.h>
 #include "ft_array.h"
-#include "includes/ft_array.bubble.h"
+
+int static check(t_array *array, int(*cmp_f)(void *, void *, void *))
+{
+	if (!array)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_array$bubble error: array ptr (null)",
+						   EINVAL)
+		);
+	}
+	if (!cmp_f)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_array$bubble error: func ptr (null)",
+						   EINVAL)
+		);
+	}
+	return (0);
+}
+
+static int
+make_a_pass(
+	t_array *array,
+	int(*cmp_f)(void *, void *, void *),
+	void *param,
+	int *i
+)
+{
+	int y;
+	int is_sorted;
+
+	y = 0;
+	is_sorted = 1;
+	while (y < (array->length - *i - 1))
+	{
+		if (
+			cmp_f(ft_array$at(array, y),
+				  ft_array$at(array, y + 1),
+				  param)
+			)
+		{
+			is_sorted = 0;
+			ft_mem_swap(
+				ft_array$at(array, y),
+				ft_array$at(array, y + 1), array->buffer,
+				array->element_size
+			);
+		}
+		y++;
+	}
+	return (is_sorted);
+}
 
 int
-ft_array_bubble(t_array *array, int(*cmp_f)(void *, void *, int), int order)
+ft_array_bubble(
+	t_array *array,
+	int(*cmp_f)(void *, void *, void *),
+	void *param
+)
 {
-	t_bubble b;
+	int i;
 
-	ft_bzero(&b, sizeof(b));
-	while (b.i < array->length - 1)
+	if (
+		check(array, cmp_f)
+		)
+		return (-1);
+	i = 0;
+	while (i < array->length - 1)
 	{
-		b.y = 0;
-		b.sorted = 1;
-		while (b.y < (array->length - b.i - 1))
-		{
-			if (cmp_f(ft_array$at(array, b.y),
-					  ft_array$at(array, b.y + 1),
-					  order))
-			{
-				b.sorted = 0;
-				ft_mem_swap(ft_array$at(array, b.y),
-							ft_array$at(array, b.y + 1), array->buffer,
-							array->element_size);
-			}
-			b.y++;
-		}
-		if (b.sorted == 1)
+		if (
+			make_a_pass(array, cmp_f, param, &i)
+			)
 			break;
-		b.i++;
+		i++;
 	}
 	return (0);
 }

@@ -7,7 +7,7 @@
 
 # include "stdio.h"
 
-#define log_test(test_nb) printf("%s:%d: test: %d\n", __FILE__, __LINE__, test_nb);
+#define log_test(test_nb) printf("log : %s:%d: test: %d\n", __FILE__, __LINE__, test_nb);
 
 
 void lib_clear_testbuff();

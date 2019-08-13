@@ -13,6 +13,7 @@
 # include <ft_array.h>
 #include <stdint.h>
 #include <test.h>
+#include <libft.test.h>
 # include "stdio.h"
 
 /*
@@ -23,7 +24,7 @@ void test_ft_array_init(void)
 	// check good information in array
 	{
 		int size = 3;
-		t_array *array = ft_array_init(size, sizeof(int));
+		t_array *array = ft_array$init(size, sizeof(int));
 
 		if (
 			array->element_size != sizeof(int)
@@ -36,7 +37,7 @@ void test_ft_array_init(void)
 	// look if buffer and array are at the right place
 	{
 		int size = 3;
-		t_array *array = ft_array_init(size, sizeof(int));
+		t_array *array = ft_array$init(size, sizeof(int));
 
 		// test data placement
 		{
@@ -58,13 +59,13 @@ void test_ft_array_init(void)
 				log_test(2)
 		}
 
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
 
 	// test fill
 	{
 		int size = 3;
-		t_array *array = ft_array_init(size, sizeof(int));
+		t_array *array = ft_array$init(size, sizeof(int));
 		int *int_array = (int *) array->data;
 
 		// test fill array
@@ -89,6 +90,44 @@ void test_ft_array_init(void)
 				log_test(4)
 		}
 
-		ft_array_free(&array);
+		ft_array$free(&array);
 	}
+
+	/*
+	* test if bad arguments
+	* */
+	{
+		t_array *array;
+		g_test = 1;
+
+		// test no elements
+		{
+			array = ft_array$init(0, 42);
+			if (
+				array
+				|| lib_cmp_testbuff("ft_array$init : no elements number\n")
+				)
+			    log_test(5)
+
+			array = ft_array$init(-22, 42);
+			if (
+				array
+				|| lib_cmp_testbuff("ft_array$init : no elements number\n")
+				)
+				log_test(6)
+		}
+
+		// test no element size
+		{
+			array = ft_array$init(11, 0);
+			if (
+				array
+				|| lib_cmp_testbuff("ft_array$init : element size (null)\n")
+				)
+				log_test(7)
+		}
+
+		g_test = 0;
+	}
+
 }

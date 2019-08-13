@@ -17,11 +17,13 @@ target_sources(${__LIB_NAME__}
         ft_array.prev.c
         ft_array.remove.c
         ft_array.utils.c
+        ft_array.func_cmp.c
 
         #[[ test]]
         tests/ft_array.at.test.c
         tests/ft_array.init.test.c
         tests/ft_array.push.test.c
+        tests/ft_array.bubble.test.c
 
         tests/main.test.c
         )

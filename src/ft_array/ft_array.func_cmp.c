@@ -10,13 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ARRAY_BUBBLE_H
-#define FT_ARRAY_BUBBLE_H
+#include <ft_log.h>
+#include <errno.h>
 
-typedef struct s_bubble{
-	int i;
-	int y;
-	int sorted;
-} t_bubble;
+int ft_array$func_cmp_int(void *p1, void *p2, void *param)
+{
+	int a;
+	int b;
+	int order;
 
-#endif
+	if (!p1 || !p2 || !param)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_array$func_cmp_int arg ptr (null)",
+						   EINVAL
+			)
+		);
+	}
+	{
+		a = *(int *)p1;
+		b = *(int *)p2;
+		order = *(int *)param;
+	}
+	return (order ? a > b : a < b);
+}

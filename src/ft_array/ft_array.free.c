@@ -12,7 +12,7 @@
 
 #include <ft_mem.h>
 
-void ft_array_free(t_array **p_array)
+void ft_array$free(t_array **p_array)
 {
 	ft_array_clear(*p_array);
 	ft_bzero(*p_array, sizeof(t_array));
