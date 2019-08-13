@@ -57,7 +57,7 @@ void *ft_array_func(t_array *array, int(*func)(void *, void *), void *param);
 int ft_array_func_print$str(void *p1, void *param);
 int ft_array_func_print$int(void *p1, void *param);
 
-int ft_array_bubble(
+int ft_array$bubble(
 t_array *array, int(*cmp_f)(void *, void *, void *), void *param
 );
 

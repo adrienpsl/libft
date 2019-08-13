@@ -15,7 +15,10 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
-int static check(t_array *array, int(*cmp_f)(void *, void *, void *))
+int static check(
+	t_array *array,
+	int(*cmp_f)(void *, void *, void *)
+)
 {
 	if (!array)
 	{
@@ -36,8 +39,7 @@ int static check(t_array *array, int(*cmp_f)(void *, void *, void *))
 	return (0);
 }
 
-static int
-make_a_pass(
+static int make_a_pass(
 	t_array *array,
 	int(*cmp_f)(void *, void *, void *),
 	void *param,
@@ -70,7 +72,7 @@ make_a_pass(
 }
 
 int
-ft_array_bubble(
+ft_array$bubble(
 	t_array *array,
 	int(*cmp_f)(void *, void *, void *),
 	void *param

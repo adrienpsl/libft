@@ -12,6 +12,7 @@
 
 void lib_clear_testbuff();
 int ft_test_if_streq(char *res, char *test, char *where);
+int lib_random_int(int limit);
 
 
 

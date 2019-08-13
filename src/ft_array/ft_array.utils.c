@@ -22,6 +22,7 @@ void ft_array_clear(t_array *array)
 		return;
 	}
 	ft_bzero(array->data, array->length * array->element_size);
+	array->length = 0;
 }
 
 void *ft_array_position(t_array *array, int index)
