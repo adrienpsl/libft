@@ -23,11 +23,13 @@ int static check(t_array **p_array, void *element, int index)
 	}
 	else if (index > (*p_array)->length)
 	{
-		return (ft_log$message(F, L, "index bigger than length", EINVAL));
+		return (ft_log$message(F, L, "ft_array$insert"
+									 " index bigger than length", EINVAL));
 	}
 	else if (index < 0)
 	{
-		return (ft_log$message(F, L, "negative index", EINVAL));;
+		return (ft_log$message(F, L, "ft_array$insert "
+									 "negative index", EINVAL));
 	}
 	else
 	{
@@ -61,7 +63,7 @@ static void move_and_copy_value(t_array *array, void *element, int index)
 	}
 }
 
-int ft_array$push_at(t_array **p_array, void *element, int index)
+int ft_array$insert(t_array **p_array, void *element, int index)
 {
 	t_array *array;
 

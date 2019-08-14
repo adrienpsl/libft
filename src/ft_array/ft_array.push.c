@@ -22,5 +22,5 @@ int ft_array$push(t_array **p_array, void *element)
 		)
 		return (ft_log$null(__FILE__, __LINE__));
 	else
-		return (ft_array$push_at(p_array, element, (*p_array)->length));
+		return (ft_array$insert(p_array, element, (*p_array)->length));
 }

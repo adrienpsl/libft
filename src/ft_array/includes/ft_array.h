@@ -55,8 +55,8 @@ void *ft_array$prev_loop(t_array *array);
 void *ft_array$at(t_array *array, int index);
 
 int ft_array$push(t_array **p_array, void *element);
-int ft_array$push_at(t_array **p_array, void *element, int index);
-int ft_array_remove(t_array *array, int start);
+int ft_array$insert(t_array **p_array, void *element, int index);
+int ft_array$remove(t_array *array, int index);
 
 void *ft_array$func(t_array *array, int(*func)(void *, void *), void *param);
 int ft_array$func_print_str(void *p1, void *param);

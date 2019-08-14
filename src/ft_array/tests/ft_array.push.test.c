@@ -72,7 +72,7 @@ void test_ft_array$add()
 
 
 	/*
-	* ft_array$push_at : add 1000 nb
+	* ft_array$insert : add 1000 nb
 	* */
 	{
 		t_array *array = ft_array$init(1, sizeof(int));
@@ -81,7 +81,7 @@ void test_ft_array$add()
 		{
 			for (int i = 0; i < 1000; ++i)
 			{
-				ft_array$push_at(&array, &i, i);
+				ft_array$insert(&array, &i, i);
 			}
 			// I assign now because the array is variable
 			int *int_arr = (void *) array->data;
@@ -97,7 +97,7 @@ void test_ft_array$add()
 	}
 
 	/*
-	* ft_array$push_at : add and check if number are right positioning
+	* ft_array$insert : add and check if number are right positioning
 	* */
 	{
 		t_array *array = ft_array$init(1, sizeof(int));
@@ -106,11 +106,11 @@ void test_ft_array$add()
 		// test number at middle
 		{
 			data = 2;
-			ft_array$push_at(&array, &data, 0);
+			ft_array$insert(&array, &data, 0);
 			data = 3;
-			ft_array$push_at(&array, &data, 1);
+			ft_array$insert(&array, &data, 1);
 			data = 1;
-			ft_array$push_at(&array, &data, 0);
+			ft_array$insert(&array, &data, 0);
 			int ref_array[10] = { 1, 2, 3 };
 			if (ft_memcmp(ref_array, array->data, sizeof(int) * 4))
 				log_test(3)
@@ -119,8 +119,8 @@ void test_ft_array$add()
 		// add 2 number at each side of the previous one
 		{
 			data = 42;
-			ft_array$push_at(&array, &data, 0);
-			ft_array$push_at(&array, &data, 4);
+			ft_array$insert(&array, &data, 0);
+			ft_array$insert(&array, &data, 4);
 
 			int ref_array[10] = { 42, 1, 2, 3, 42 };
 			if (ft_memcmp(ref_array, array->data, sizeof(int) * 5))
@@ -130,7 +130,7 @@ void test_ft_array$add()
 	}
 
 	/*
-	* ft_array$push_at : test with bad index
+	* ft_array$insert : test with bad index
 	* */
 	{
 		t_array *array = ft_array$init(1, sizeof(int));
@@ -144,16 +144,16 @@ void test_ft_array$add()
 		// test with to big index
 		{
 			data = 42;
-			ret = ft_array$push_at(&array, &data, 1);
+			ret = ft_array$insert(&array, &data, 1);
 			if (
 				ret != -1
 				|| array->length
 				|| *(int*)array->data
-				|| ft_str_cmp(g_test_buffer,
-					"/Users/adpusel/code/42/libft/src/ft_array/ft_array.add_at.c:26 index bigger than length\n"
+				|| lib_cmp_testbuff("ft_array$insert index bigger than length\n"
 					)
 				)
 			{
+				printf("%s \n",g_test_buffer);
 				log_test(5)
 			}
 		}

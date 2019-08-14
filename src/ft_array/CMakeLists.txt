@@ -4,7 +4,7 @@ target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
         ft_array.push.c
-        ft_array.add_at.c
+        ft_array.insert.c
         ft_array.at.c
         ft_array.sort_bubble.c
         ft_array.cmp.c
@@ -33,6 +33,7 @@ target_sources(${__LIB_NAME__}
         tests/ft_array.double_size.test.c
         tests/ft_array.free.test.c
         tests/ft_array.func.test.c
+        tests/ft_array.remove.test.c
         tests/main.test.c
         )
 

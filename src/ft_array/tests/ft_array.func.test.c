@@ -55,7 +55,7 @@ void test_ft_array$func()
 
 		array->i = 2;
 		ft_array$func(array, ft_array$func_print_int, NULL);
-		if (ft_str_cmp("0 10 2 2 23 342 0 0 0 0 ", g_test_buffer))
+		if (ft_str_cmp("0 10 2 2 23 342 0 0 0 0 \n", g_test_buffer))
 			log_test(2)
 
 		g_test = 0;

@@ -14,6 +14,7 @@
 # include <stdio.h>
 #include <errno.h>
 #include <ft_log.h>
+#include <ft_printf.h>
 
 static int check(t_array *array, int (*f)(void *, void *))
 {
@@ -55,6 +56,12 @@ void *ft_array$func(
 		{
 			return (element);
 		}
+	}
+	if (
+		func == ft_array$func_print_int || func == ft_array$func_print_str
+		)
+	{
+		ft_printf("\n");
 	}
 	return (NULL);
 }
