@@ -11,9 +11,18 @@
 /* ************************************************************************** */
 
 #include <ft_mem.h>
+#include <ft_log.h>
 
 void ft_array$free(t_array **p_array)
 {
+	if (!p_array || !*p_array)
+	{
+		ft_log$message(F, L,
+					   "ft_array$free arg ptr (null)",
+					   EINVAL
+		);
+		return;
+	}
 	ft_array_clear(*p_array);
 	ft_bzero(*p_array, sizeof(t_array));
 	free(*p_array);

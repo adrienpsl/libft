@@ -10,25 +10,46 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ft_array_init(void);
-void test_ft_array$add(void);
-void test_ft_array$at(void);
-void test_ft_array$bubble(void);
-void test_ft_array_next_and_prev(void);
-void test_ft_array_cmp();
-void test_ft_array$copy();
-void test_ft_array_double_size();
-void test_ft_array_free();
+#include <stddef.h>
+#include <test.h>
+#include <libft.test.h>
+#include <ft_array.h>
 
-void test_ft_array_main(void)
+void test_ft_array_free()
 {
-	test_ft_array_init();
-	test_ft_array$at();
-	test_ft_array$add();
-	test_ft_array$bubble();
-	test_ft_array_next_and_prev();
-	test_ft_array_cmp();
-	test_ft_array$copy();
-	test_ft_array_double_size();
-	test_ft_array_free();
+	/*
+	* test error handling
+	* */
+	{
+		// test no array
+		{
+			g_test = 1;
+			lib_clear_testbuff();
+
+			ft_array$free(NULL);
+			if (
+				lib_cmp_testbuff("ft_array$free arg ptr (null)\n")
+				)
+				log_test(0)
+
+			t_array *test = NULL;
+			ft_array$free(&test);
+			if (
+				lib_cmp_testbuff("ft_array$free arg ptr (null)\n")
+				)
+				log_test(1)
+		}
+	}
+
+	/*
+	* test all good
+	* */
+	{
+		int data[10] = { 0, 10, 2, 2, 23, 342 };
+		t_array *array = ft_array$init_data(data, 10, sizeof(int));
+
+		ft_array$free(&array);
+		if (array)
+			log_test(2)
+	}
 }
