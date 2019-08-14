@@ -25,7 +25,8 @@ typedef struct s_s
 } t_s;
 
 t_s *ft_s$init(size_t size);
-int ft_s$add(t_s *s,  char *str);
+int ft_s$add(t_s **s, char *str);
 void ft_s$free(t_s **s);
+int ft_s$clear(t_s *s);
 
 #endif

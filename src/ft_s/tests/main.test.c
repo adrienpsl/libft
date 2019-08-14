@@ -11,8 +11,10 @@
 /* ************************************************************************** */
 
 void test_ft_s$init();
+void test_ft_s$add();
 
 void test_ft_s_main(void)
 {
 	test_ft_s$init();
+	test_ft_s$add();
 }

@@ -7,9 +7,11 @@ target_sources(${__LIB_NAME__}
         ft_s.init.c
         ft_s.add.c
         ft_s.free.c
+        ft_s.clear.c
 
         #[[ test]]
-        tests/ft_s.add.init.test.c
+        tests/ft_s.init.test.c
+        tests/ft_s.add.test.c
         tests/main.test.c
         )
 
