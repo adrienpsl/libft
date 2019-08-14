@@ -27,6 +27,7 @@ target_sources(${__LIB_NAME__}
         tests/ft_array.push.test.c
         tests/ft_array.bubble.test.c
         tests/ft_array.prev.next.test.c
+        tests/ft_array.cmp.test.c
         tests/main.test.c
         )
 

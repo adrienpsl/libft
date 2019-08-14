@@ -43,6 +43,7 @@ typedef struct s_array
 **	the array size is 2x nb_elements, and will expand like vector.
 */
 t_array *ft_array$init(int nb_elements, size_t element_size);
+t_array *ft_array$init_data(void *start, int nb_element, size_t element_size);
 void ft_array$free(t_array **p_array);
 
 void *ft_array$next(t_array *array);
@@ -61,14 +62,23 @@ void *ft_array_func(t_array *array, int(*func)(void *, void *), void *param);
 int ft_array_func_print$str(void *p1, void *param);
 int ft_array$func_print_int(void *p1, void *param);
 
+/*
+**	--- sort function ----------------------------------------------------------
+*/
 int ft_array$bubble(
 t_array *array, int(*cmp_f)(void *, void *, void *), void *param
 );
 
+int ft_array$sort_cmp_int(void *p1, void *p2, void *param);
+
+
+
 /*
 **	--- cmp function -----------------------------------------------------------
 */
-int ft_array$func_cmp_int(void *p1, void *p2, void *param);
+int ft_array$cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *));
+int ft_array$cmp_int(void *p1, void *p2);
+int ft_array$cmp_str(void *p1, void *p2);
 
 
 t_array *ft_array$double_size(t_array *src);

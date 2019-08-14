@@ -13,7 +13,7 @@
 #include <ft_log.h>
 #include <errno.h>
 
-int ft_array$func_cmp_int(void *p1, void *p2, void *param)
+int ft_array$sort_cmp_int(void *p1, void *p2, void *param)
 {
 	int a;
 	int b;
@@ -23,7 +23,7 @@ int ft_array$func_cmp_int(void *p1, void *p2, void *param)
 	{
 		return (
 			ft_log$message(F, L,
-						   "ft_array$func_cmp_int arg ptr (null)",
+						   "ft_array$sort_cmp_int arg ptr (null)",
 						   EINVAL
 			)
 		);

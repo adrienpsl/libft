@@ -46,7 +46,7 @@ void test_ft_array$bubble(void)
 
 		// test no array
 		{
-			ret = ft_array$bubble(NULL, ft_array$func_cmp_int, &param);
+			ret = ft_array$bubble(NULL, ft_array$sort_cmp_int, &param);
 			if (!ret
 				|| lib_cmp_testbuff(
 				"ft_array$bubble error: array ptr (null)\n")
@@ -68,10 +68,10 @@ void test_ft_array$bubble(void)
 		{
 			ft_array$push(&array, &param);
 			ft_array$push(&array, &param);
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, NULL);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, NULL);
 			if (ret
 				|| lib_cmp_testbuff(
-				"ft_array$func_cmp_int arg ptr (null)\n")
+				"ft_array$sort_cmp_int arg ptr (null)\n")
 				)
 				log_test(2)
 		}
@@ -90,7 +90,7 @@ void test_ft_array$bubble(void)
 
 		// test with 0 number
 		{
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 			if (ret)
 				log_test(3)
 		}
@@ -100,7 +100,7 @@ void test_ft_array$bubble(void)
 			int n_1 = 1;
 			ft_array$push(&array, &n_1);
 
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 			if (ret)
 				log_test(4)
 		}
@@ -110,7 +110,7 @@ void test_ft_array$bubble(void)
 			int n_1 = 2;
 			ft_array$push(&array, &n_1);
 
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 			if (ret)
 				log_test(5)
 		}
@@ -125,7 +125,7 @@ void test_ft_array$bubble(void)
 
 			int res_array[10] = { 1, 2 };
 
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 2))
 				log_test(6)
 		}
@@ -142,7 +142,7 @@ void test_ft_array$bubble(void)
 
 			int res_array[10] = { -3, 1, 2 };
 
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 4))
 				log_test(7)
 		}
@@ -160,7 +160,7 @@ void test_ft_array$bubble(void)
 			int res_array[10] = { 2, 1, -3 };
 
 			order = 0;
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 4))
 				log_test(8)
 		}
@@ -176,7 +176,7 @@ void test_ft_array$bubble(void)
 			int res_array[10] = { 2, 1 };
 
 			order = 0;
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 4))
 				log_test(9)
 		}
@@ -207,7 +207,7 @@ void test_ft_array$bubble(void)
 			// do sort
 			qsort(data_arr, 1000, sizeof(int), cmp);
 			int order = 1;
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 
 			if (ret ||
 				ft_memcmp(data_arr, array->data, sizeof(int) * 1000)
@@ -229,7 +229,7 @@ void test_ft_array$bubble(void)
 			// do sort
 			qsort(data_arr, 1000, sizeof(int), inv_cmp);
 			int order = 0;
-			ret = ft_array$bubble(array, ft_array$func_cmp_int, &order);
+			ret = ft_array$bubble(array, ft_array$sort_cmp_int, &order);
 
 			if (ret ||
 				ft_memcmp(data_arr, array->data, sizeof(int) * 1000)

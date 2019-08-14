@@ -35,7 +35,7 @@ static int check(t_array *a_1, t_array *a_2, int (*f)(void *, void *))
 	return (0);
 }
 
-int ft_array_cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *))
+int ft_array$cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *))
 {
 	void *el_1;
 	void *el_2;

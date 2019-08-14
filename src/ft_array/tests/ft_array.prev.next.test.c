@@ -16,14 +16,6 @@
 #include <ft_mem.h>
 #include "libft.h"
 
-t_array *fill_array()
-{
-	for (int i = 0; i < 10; ++i)
-	{
-	}
-	return (NULL);
-}
-
 void test_ft_array_next_and_prev(void)
 {
 	/*
@@ -125,7 +117,6 @@ void test_ft_array_next_and_prev(void)
 			for (int i = 21; i > -1; --i)
 			{
 				tmp = ft_array$prev_loop(array);
-				printf("%d %d\n", *tmp, data[i]);
 				if (!tmp || *tmp != data[i])
 					log_test(5)
 			}

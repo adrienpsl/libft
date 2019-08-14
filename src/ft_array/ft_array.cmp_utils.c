@@ -11,23 +11,46 @@
 /* ************************************************************************** */
 
 #include <ft_str.h>
+#include <ft_log.h>
 
-int ft_array_cmp$int(void *p1, void *p2)
+int ft_array$cmp_int(void *p1, void *p2)
 {
 	int *a;
 	int *b;
 
-	a = p1;
-	b = p2;
-	return (!(*a == *b));
+	if (!p1 || !p2)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_array$cmp_int arg ptr (null)",
+						   EINVAL
+			)
+		);
+	}
+	{
+		a = p1;
+		b = p2;
+		return (!(*a == *b));
+	}
 }
 
-int ft_array_cmp$str(void *p1, void *p2)
+int ft_array$cmp_str(void *p1, void *p2)
 {
 	char *a;
 	char *b;
 
-	a = p1;
-	b = p2;
-	return (!ft_streq(a, b));
+	if (!p1 || !p2)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_array$cmp_str arg ptr (null)",
+						   EINVAL
+			)
+		);
+	}
+	{
+		a = p1;
+		b = p2;
+		return (!ft_streq(a, b));
+	}
 }
