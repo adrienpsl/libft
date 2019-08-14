@@ -12,6 +12,8 @@ target_sources(${__LIB_NAME__}
         #[[ test]]
         tests/ft_s.init.test.c
         tests/ft_s.add.test.c
+        tests/ft_s.free.test.c
+        tests/ft_s.clear.test.c
         tests/main.test.c
         )
 

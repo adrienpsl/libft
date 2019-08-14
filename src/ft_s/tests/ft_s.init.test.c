@@ -13,8 +13,6 @@
 #include <ft_s.h>
 #include <test.h>
 #include <ft_mem.h>
-#include <ft_str.h>
-#include "libft.h"
 
 void test_ft_s$init()
 {

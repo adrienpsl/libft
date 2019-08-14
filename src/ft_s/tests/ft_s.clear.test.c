@@ -10,16 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ft_s$init();
-void test_ft_s$add();
-void test_ft_s$free();
-void test_ft_$clear();
+#include "libft.h"
 
-void test_ft_s_main(void)
+void test_ft_$clear()
 {
-	test_ft_s$init();
-	test_ft_s$add();
-	test_ft_s$free();
-	test_ft_$clear();
 
 }

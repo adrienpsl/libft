@@ -23,6 +23,6 @@ void ft_s$free(t_s **s)
 					   EINVAL);
 		return;
 	}
-	ft_bzero(*s, sizeof(t_s) + (*s)->i);
+	ft_bzero(*s, sizeof(t_s) + (*s)->capacity);
 	*s = NULL;
 }

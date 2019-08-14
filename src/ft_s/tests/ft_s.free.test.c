@@ -10,16 +10,48 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ft_s$init();
-void test_ft_s$add();
-void test_ft_s$free();
-void test_ft_$clear();
+#include <libft.test.h>
+#include <ft_s.h>
+#include <test.h>
 
-void test_ft_s_main(void)
+void test_ft_s$free()
 {
-	test_ft_s$init();
-	test_ft_s$add();
-	test_ft_s$free();
-	test_ft_$clear();
+	/*
+	* test error handling
+	* */
+	{
+		t_s *s = NULL;
 
+		g_test = 1;
+		lib_clear_testbuff();
+
+		ft_s$free(NULL);
+		if (
+			lib_cmp_testbuff("ft_s$free error: s ptr (null)\n")
+			)
+			log_test(0)
+
+		ft_s$free(&s);
+		if (
+			s
+			|| lib_cmp_testbuff("ft_s$free error: s ptr (null)\n")
+			)
+			log_test(1)
+
+		g_test = 0;
+	}
+
+	/*
+	* test good input
+	* */
+	{
+		t_s *s = ft_s$init(0);
+		ft_s$add(&s, "1234567890");
+
+		ft_s$free(&s);
+		if (
+			s
+			)
+			log_test(2)
+	}
 }
