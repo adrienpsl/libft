@@ -10,6 +10,38 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include ""
+#include <ft_array.h>
+#include <libft.test.h>
+#include <test.h>
+#include "libft.h"
 
-void test_ft_array$copy
+void test_ft_array$copy()
+{
+	/*
+	* test error handling
+	* */
+	{
+		t_array *ret;
+
+		// test no array
+		{
+			g_test = 1;
+			lib_clear_testbuff();
+			ret = ft_array$copy(NULL);
+			if (
+				ret
+				|| lib_cmp_testbuff("ft_array$copy error: array ptr (null)\n")
+				)
+				log_test(0)
+		}
+	}
+
+	/*
+	* test ft_array_copy no errors
+	* */
+	{
+		//		int data[10] = { 0, 10, 2, 2, 23, 342 };
+
+	}
+}
+
