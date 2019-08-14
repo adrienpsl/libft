@@ -82,14 +82,14 @@ void test_ft_array_cmp()
 			if (ft_array$cmp(array_1, array_2, ft_array$cmp_int))
 				log_test(0)
 
-			ft_array_clear(array_1);
+			ft_array$clear(array_1);
 			ft_array$push(&array_1, data_1 + 1);
 			if (!ft_array$cmp(array_1, array_2, ft_array$cmp_int))
 				log_test(1)
 		}
 
-		ft_array_clear(array_1);
-		ft_array_clear(array_2);
+		ft_array$clear(array_1);
+		ft_array$clear(array_2);
 		// test 2
 		{
 			ft_array$push(&array_1, data_1);
@@ -100,7 +100,7 @@ void test_ft_array_cmp()
 			if (ft_array$cmp(array_1, array_2, ft_array$cmp_int))
 				log_test(2)
 
-			ft_array_clear(array_1);
+			ft_array$clear(array_1);
 			ft_array$push(&array_1, data_1 + 1);
 			if (!ft_array$cmp(array_1, array_2, ft_array$cmp_int))
 				log_test(3)

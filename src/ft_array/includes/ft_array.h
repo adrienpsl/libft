@@ -84,8 +84,8 @@ int ft_array$cmp_str(void *p1, void *p2);
 t_array *ft_array$double_size(t_array *src);
 t_array *ft_array$copy(t_array *src);
 
-void ft_array_clear(t_array *array);
-void *ft_array_position(t_array *array, int index);
+void ft_array$clear(t_array *array);
+void *ft_array$at(t_array *array, int index);
 
 typedef t_array t_buffer;
 

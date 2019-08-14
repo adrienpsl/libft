@@ -23,7 +23,7 @@ void ft_array$free(t_array **p_array)
 		);
 		return;
 	}
-	ft_array_clear(*p_array);
+	ft_array$clear(*p_array);
 	ft_bzero(*p_array, sizeof(t_array));
 	free(*p_array);
 	*p_array = NULL;

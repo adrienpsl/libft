@@ -21,6 +21,7 @@ void test_ft_array_double_size();
 void test_ft_array_free();
 void test_ft_array$func();
 void test_ft_array_remove();
+void test_ft_array$utils();
 
 void test_ft_array_main(void)
 {
@@ -35,4 +36,5 @@ void test_ft_array_main(void)
 	test_ft_array_free();
 	test_ft_array$func();
 	test_ft_array_remove();
+	test_ft_array$utils();
 }

@@ -117,7 +117,7 @@ void test_ft_array$bubble(void)
 
 		// test with 2 numbers unsorted
 		{
-			ft_array_clear(array);
+			ft_array$clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
 			ft_array$push(&array, &n_1);
@@ -132,7 +132,7 @@ void test_ft_array$bubble(void)
 
 		// test with 3 numbers unsorted
 		{
-			ft_array_clear(array);
+			ft_array$clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
 			int n_3 = -3;
@@ -149,7 +149,7 @@ void test_ft_array$bubble(void)
 
 		// test with 3 numbers unsorted inverted sort
 		{
-			ft_array_clear(array);
+			ft_array$clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
 			int n_3 = -3;
@@ -167,7 +167,7 @@ void test_ft_array$bubble(void)
 
 		// test with 2 numbers unsorted inverted sort
 		{
-			ft_array_clear(array);
+			ft_array$clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
 			ft_array$push(&array, &n_1);

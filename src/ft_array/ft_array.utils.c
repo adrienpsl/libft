@@ -10,27 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_log.h>
 #include "ft_errno.h"
 #include "ft_mem.h"
 #include "ft_array.h"
 
-void ft_array_clear(t_array *array)
+void ft_array$clear(t_array *array)
 {
-	if (!array)
+	if (NULL == array)
 	{
-		ft_errno_set(EFAULT, -1);
-		return;
+		ft_log$message(F, L,
+					   "ft_array$clear arg ptr (null)",
+					   EINVAL
+		);
+		return ;
 	}
 	ft_bzero(array->data, array->length * array->element_size);
 	array->length = 0;
 }
 
-void *ft_array_position(t_array *array, int index)
-{
-	if (!array)
-	{
-		ft_errno_set(EFAULT, -1);
-		return (NULL);
-	}
-	return (array->data + (index * array->element_size));
-}

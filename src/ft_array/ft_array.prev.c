@@ -25,7 +25,7 @@ void *ft_array$prev_loop(t_array *array)
 					   EINVAL);
 		return (NULL);
 	}
-	element = ft_array_position(array, array->i);
+	element = ft_array$at(array, array->i);
 	{
 		array->i =
 			(array->i - 1 < 0) ?
@@ -52,7 +52,7 @@ void *ft_array$prev(t_array *array)
 		end = 0;
 	else if (array->i == 0 && !end)
 		end = 1;
-	element = ft_array_position(array, array->i);
+	element = ft_array$at(array, array->i);
 	array->i != 0 && (array->i -= 1);
 	return (element);
 }

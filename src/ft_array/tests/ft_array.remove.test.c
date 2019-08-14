@@ -160,7 +160,7 @@ void test_ft_array_remove()
 
 			g_test = 1;
 			ret_1 = ft_array$remove(array, 0);
-			if (lib_cmp_testbuff("ft_array$remove index bigger than length/neg\n"))
+			if (!ret_1 || lib_cmp_testbuff("ft_array$remove index bigger than length/neg\n"))
 			    log_test(7)
 
 			g_test = 0;

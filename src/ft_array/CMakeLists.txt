@@ -24,16 +24,17 @@ target_sources(${__LIB_NAME__}
 
         #[[ test]]
         tests/ft_array.at.test.c
-        tests/ft_array.init.test.c
-        tests/ft_array.push.test.c
         tests/ft_array.bubble.test.c
-        tests/ft_array.prev.next.test.c
         tests/ft_array.cmp.test.c
         tests/ft_array.copy.test.c
         tests/ft_array.double_size.test.c
         tests/ft_array.free.test.c
         tests/ft_array.func.test.c
+        tests/ft_array.init.test.c
+        tests/ft_array.prev.next.test.c
+        tests/ft_array.push.test.c
         tests/ft_array.remove.test.c
+        tests/ft_array.utils.test.c
         tests/main.test.c
         )
 
