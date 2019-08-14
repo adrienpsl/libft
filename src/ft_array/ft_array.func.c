@@ -12,42 +12,49 @@
 
 #include "ft_array.h"
 # include <stdio.h>
+#include <errno.h>
+#include <ft_log.h>
 
-int ft_array_func_print$str(void *p1, void *param)
+static int check(t_array *array, int (*f)(void *, void *))
 {
-	(void) param;
-	printf(" _%s_ ", *(char **) p1);
+	if (!array)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_array$cmp error: array ptr (null)",
+						   EINVAL));
+	}
+	if (!f)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_array$cmp error: func ptr (null)",
+						   EINVAL));
+	}
 	return (0);
 }
 
-// TODO : delete printf
-int ft_array$func_print_int(void *p1, void *param)
-{
-	(void) param;
-	printf("%3d ", *(int *) p1);
-	return (0);
-}
-
-void *ft_array_func(
+void *ft_array$func(
 	t_array *array,
 	int(*func)(void *, void *),
 	void *param
 )
 {
-	int i;
+	void *element;
 
-	if (!array)
+	if (
+		check(array, func)
+		)
+		return (NULL);
+	array->i = 0;
+	while (
+		(element = ft_array$next(array))
+		)
 	{
-		return NULL;
-	}
-	i = 0;
-	while (i < array->length)
-	{
-		if (func(ft_array$at(array, i), param))
+		if (func(element, param))
 		{
-			return (ft_array$at(array, i));
+			return (element);
 		}
-		i++;
 	}
 	return (NULL);
 }

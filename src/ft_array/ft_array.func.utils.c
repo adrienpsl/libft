@@ -10,27 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ft_array_init(void);
-void test_ft_array$add(void);
-void test_ft_array$at(void);
-void test_ft_array$bubble(void);
-void test_ft_array_next_and_prev(void);
-void test_ft_array_cmp();
-void test_ft_array$copy();
-void test_ft_array_double_size();
-void test_ft_array_free();
-void test_ft_array$func();
+#include <ft_printf.h>
 
-void test_ft_array_main(void)
+int ft_array$func_print_str(void *p1, void *param)
 {
-	test_ft_array_init();
-	test_ft_array$at();
-	test_ft_array$add();
-	test_ft_array$bubble();
-	test_ft_array_next_and_prev();
-	test_ft_array_cmp();
-	test_ft_array$copy();
-	test_ft_array_double_size();
-	test_ft_array_free();
-	test_ft_array$func();
+	(void)param;
+	ft_printf(" _%s_ ", *(char **)p1);
+	return (0);
+}
+
+int ft_array$func_print_int(void *p1, void *param)
+{
+	(void)param;
+	ft_printf("%d ", *(int *)p1);
+	return (0);
 }

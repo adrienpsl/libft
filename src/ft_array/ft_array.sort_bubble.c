@@ -24,7 +24,7 @@ int static check(
 	{
 		return (
 			ft_log$message(F, L,
-						   "ft_array$bubble error: array ptr (null)",
+						   "ft_array$sort_bubble error: array ptr (null)",
 						   EINVAL)
 		);
 	}
@@ -32,7 +32,7 @@ int static check(
 	{
 		return (
 			ft_log$message(F, L,
-						   "ft_array$bubble error: func ptr (null)",
+						   "ft_array$sort_bubble error: func ptr (null)",
 						   EINVAL)
 		);
 	}
@@ -72,7 +72,7 @@ static int make_a_pass(
 }
 
 int
-ft_array$bubble(
+ft_array$sort_bubble(
 	t_array *array,
 	int(*cmp_f)(void *, void *, void *),
 	void *param

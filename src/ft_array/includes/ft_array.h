@@ -58,14 +58,14 @@ int ft_array$push(t_array **p_array, void *element);
 int ft_array$push_at(t_array **p_array, void *element, int index);
 int ft_array_remove(t_array *array, int start);
 
-void *ft_array_func(t_array *array, int(*func)(void *, void *), void *param);
-int ft_array_func_print$str(void *p1, void *param);
+void *ft_array$func(t_array *array, int(*func)(void *, void *), void *param);
+int ft_array$func_print_str(void *p1, void *param);
 int ft_array$func_print_int(void *p1, void *param);
 
 /*
 **	--- sort function ----------------------------------------------------------
 */
-int ft_array$bubble(
+int ft_array$sort_bubble(
 t_array *array, int(*cmp_f)(void *, void *, void *), void *param
 );
 

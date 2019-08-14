@@ -66,7 +66,7 @@ void test_ft_array$add()
 				)
 				log_test(1)
 		}
-		//			ft_array_func(array, ft_array_func_print$str, NULL);
+		//			ft_array$func(array, ft_array$func_print_str, NULL);
 		ft_array$free(&array);
 	}
 

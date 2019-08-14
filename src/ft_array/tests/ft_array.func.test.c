@@ -10,54 +10,55 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <ft_mem.h>
+#include <test.h>
 #include <libft.test.h>
+#include <ft_array.h>
 #include <ft_str.h>
 
-int lib_random_int(int limit)
+void test_ft_array$func()
 {
-	return (rand() % limit + 1);
-}
-
-void lib_print_func_int(void *ptr)
-{
-	printf("%3d ", *(int *)ptr);
-}
-
-void lib_clear_testbuff()
-{
-	ft_bzero(g_test_buffer, 10000);
-}
-
-int lib_cmp_testbuff(char *expected)
-{
-	int ret;
-	int space;
-
-	space = ft_strchr(g_test_buffer, ' ');
-	ret = 0;
-	if (ft_str_cmp(expected, g_test_buffer + space + 1))
+	/*
+	* test error handling
+	* */
 	{
-		ret = 1;
-		printf("expected:%*s%s", space, "", expected);
-		printf("result  : %s\n", g_test_buffer);
+		t_array *ret;
+
+		// test no array
+		{
+			g_test = 1;
+			lib_clear_testbuff();
+
+			ret = ft_array$func(NULL, ft_array$func_print_int, NULL);
+			if (
+				ret
+				|| lib_cmp_testbuff("ft_array$cmp error: array ptr (null)\n")
+				)
+				log_test(0)
+
+			t_array *ptr = (t_array *)0x123;
+			ret = ft_array$func(ptr, NULL, NULL);
+			if (
+				ret
+				|| lib_cmp_testbuff("ft_array$cmp error: func ptr (null)\n")
+				)
+				log_test(1)
+		}
 	}
-	lib_clear_testbuff();
-	return (ret);
-}
 
-void
-lib_print_func(void *start, void (*f)(void *), size_t size_el, int length)
-{
-	int i;
-
-	i = 0;
-	while (i < length)
+	/*
+	* test all good 
+	* */
 	{
-		f((char *)start + (i * size_el));
-		i++;
+		int data[10] = { 0, 10, 2, 2, 23, 342 };
+		t_array *array = ft_array$init_data(data, 10, sizeof(int));
+		g_test = 1;
+
+		array->i = 2;
+		ft_array$func(array, ft_array$func_print_int, NULL);
+		if (ft_str_cmp("0 10 2 2 23 342 0 0 0 0 ", g_test_buffer))
+			log_test(2)
+
+		g_test = 0;
+		ft_array$free(&array);
 	}
-	printf(" \n");
 }
