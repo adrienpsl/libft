@@ -13,24 +13,25 @@
 #include <ft_array.h>
 #include <ft_errno.h>
 #include <ft_mem.h>
+#include <ft_log.h>
 
 t_array *ft_array$double_size(t_array *src)
 {
 	t_array *new;
 
-	if (!src)
+	if (NULL == src)
 	{
-		ft_errno_set(EINVAL, -1);
+		ft_log$message(F, L, "ft_array$double size error: array ptr (null)",
+					   EINVAL);
 		return (NULL);
 	}
-	if (!(new = ft_array$init(src->capacity,
-							  src->element_size))
+	if (
+		!(new = ft_array$init(src->capacity, src->element_size))
 		)
 		return (NULL);
 	ft_memcpy(new->data,
 			  src->data,
-			  (src->length * src->element_size)
-	);
+			  (src->length * src->element_size));
 	new->length = src->length;
 	ft_array$free(&src);
 	return (new);

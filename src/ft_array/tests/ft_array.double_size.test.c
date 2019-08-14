@@ -10,14 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <test.h>
 #include <ft_array.h>
 #include <libft.test.h>
-#include <test.h>
+#include <ft_mem.h>
+#include "libft.h"
 
-void test_ft_array$copy()
+void test_ft_array_double_size()
 {
 	/*
-	* test error handling
+	* Error handling
 	* */
 	{
 		t_array *ret;
@@ -26,17 +28,18 @@ void test_ft_array$copy()
 		{
 			g_test = 1;
 			lib_clear_testbuff();
-			ret = ft_array$copy(NULL);
+			ret = ft_array$double_size(NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff("ft_array$copy error: array ptr (null)\n")
+				|| lib_cmp_testbuff(
+					"ft_array$double size error: array ptr (null)\n")
 				)
 				log_test(0)
 		}
 	}
 
 	/*
-	* test ft_array_copy no errors
+	* test all good
 	* */
 	{
 		int data[10] = { 0, 10, 2, 2, 23, 342 };
@@ -44,10 +47,15 @@ void test_ft_array$copy()
 		t_array *ret;
 
 		{
-			ret = ft_array$copy(array);
-			if (ft_array$cmp(array, ret, ft_array$cmp_int))
+			t_array *result = ft_array$init(20, sizeof(int));
+			ft_memcpy(result->data, data, sizeof(int) * 10);
+			result->length = 10;
+
+			ret = ft_array$double_size(array);
+
+			if (ft_array$cmp(result, ret, ft_array$cmp_int)
+			|| ret->capacity != 10 * 2 * 2)
 				log_test(1)
 		}
 	}
 }
-
