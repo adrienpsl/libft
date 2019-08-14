@@ -13,6 +13,7 @@
 #include <ft_array.h>
 #include <libft.test.h>
 #include <test.h>
+#include <ft_mem.h>
 #include "libft.h"
 
 void test_ft_array$copy()
@@ -40,8 +41,15 @@ void test_ft_array$copy()
 	* test ft_array_copy no errors
 	* */
 	{
-		//		int data[10] = { 0, 10, 2, 2, 23, 342 };
+		int data[10] = { 0, 10, 2, 2, 23, 342 };
+		t_array *array = ft_array$init_data(data, 10, sizeof(int));
+		t_array *ret;
 
+		{
+			ret = ft_array$copy(array);
+			if (ft_array$cmp(array, ret, ft_array$cmp_int))
+				log_test(1)
+		}
 	}
 }
 
