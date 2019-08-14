@@ -106,18 +106,35 @@ void test_ft_array_cmp()
 			ft_array$push(&array_1, data_1 + 1);
 			if (!ft_array$cmp(array_1, array_2, ft_array$cmp_int))
 				log_test(3)
+
+			ft_array$free(&array_1);
+			ft_array$free(&array_2);
 		}
 
-		int arr_1[1000] = { 0 };
-		int arr_2[1000] = { 0 };
+
 
 		// test 1000
 		{
+			int arr_1[1000] = { 0 };
+			int arr_2[1000] = { 0 };
+
 			for (int i = -2000; i < 2000; ++i)
 			{
 				arr_1[lib_random_int(1000)] = i;
 				arr_2[lib_random_int(1000)] = i;
 			}
+
+			array_1 = ft_array$init_data(arr_1, 1000, sizeof(int));
+			array_2 = ft_array$init_data(arr_1, 1000, sizeof(int));
+
+			if (ft_array$cmp(array_1, array_2, ft_array$cmp_int))
+				log_test(4)
+
+			ft_array$free(&array_2);
+			array_2 = ft_array$init_data(arr_2, 1000, sizeof(int));
+
+			if (!ft_array$cmp(array_1, array_2, ft_array$cmp_int))
+				log_test(5)
 		}
 	}
 }
