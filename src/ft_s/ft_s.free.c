@@ -10,38 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <ft_s.h>
 #include <ft_log.h>
+#include <ft_mem.h>
 
-
-void test_ft_array_main();
-void test_ft_s_main(void);
-
-
-void test()
+void ft_s$free(t_s **s)
 {
-	//	if (test_ft_memory())
-	//		printf("error memory \n");
-	//	if (test_ft_list())
-	//		printf("error list \n");
-	//	test_ft_str();
-	//	test_ft_char();
-	//	test_ft_buffer();
-	//	test_ft_array();
-	//	test_ft_io();
-	//		if (test_ft_printf())
-	//		printf("printf error\n");
-	test_ft_array_main();
-	test_ft_s_main();
-}
-
-int main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	//	g_test = 1;
-	g_log = TRACE;
-	test();
-
-	return (EXIT_SUCCESS);
+	if (NULL == s || NULL == *s)
+	{
+		ft_log$message(F, L,
+					   "ft_s$free error: s ptr (null)",
+					   EINVAL);
+		return;
+	}
+	ft_bzero(*s, sizeof(t_s) + (*s)->i);
+	*s = NULL;
 }

@@ -10,38 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <ft_log.h>
 
 
-void test_ft_array_main();
-void test_ft_s_main(void);
+#ifndef FT_S_H
+#define FT_S_H
 
+# include "stdio.h"
 
-void test()
+typedef struct s_s
 {
-	//	if (test_ft_memory())
-	//		printf("error memory \n");
-	//	if (test_ft_list())
-	//		printf("error list \n");
-	//	test_ft_str();
-	//	test_ft_char();
-	//	test_ft_buffer();
-	//	test_ft_array();
-	//	test_ft_io();
-	//		if (test_ft_printf())
-	//		printf("printf error\n");
-	test_ft_array_main();
-	test_ft_s_main();
-}
+	size_t capacity;
+	size_t i;
+	char *data;
+} t_s;
 
-int main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	//	g_test = 1;
-	g_log = TRACE;
-	test();
+t_s *ft_s$init(size_t size);
+int ft_s$add(t_s *s,  char *str);
+void ft_s$free(t_s **s);
 
-	return (EXIT_SUCCESS);
-}
+#endif

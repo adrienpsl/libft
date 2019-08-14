@@ -10,38 +10,72 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <ft_s.h>
 #include <ft_log.h>
+#include <ft_str.h>
+#include <ft_mem.h>
 
-
-void test_ft_array_main();
-void test_ft_s_main(void);
-
-
-void test()
+static int check(t_s *s, char *string)
 {
-	//	if (test_ft_memory())
-	//		printf("error memory \n");
-	//	if (test_ft_list())
-	//		printf("error list \n");
-	//	test_ft_str();
-	//	test_ft_char();
-	//	test_ft_buffer();
-	//	test_ft_array();
-	//	test_ft_io();
-	//		if (test_ft_printf())
-	//		printf("printf error\n");
-	test_ft_array_main();
-	test_ft_s_main();
+	if (NULL == s)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_s$add error: s ptr (null)",
+						   EINVAL)
+		);
+	}
+	if (NULL == string)
+	{
+		return (
+			ft_log$message(F, L,
+						   "ft_s$add error: str ptr (null)",
+						   EINVAL)
+		);
+	}
+	return (0);
 }
 
-int main(int ac, char **av)
+t_s *increase(t_s *s, size_t size)
 {
-	(void) ac;
-	(void) av;
-	//	g_test = 1;
-	g_log = TRACE;
-	test();
+	t_s *new;
 
-	return (EXIT_SUCCESS);
+	if (
+		!(new = ft_s$init(s->capacity + size))
+		)
+	{
+		return (NULL);
+	}
+	{
+		ft_memcpy(new->data, s->data, s->i);
+		new->i = s->i;
+	}
+	{
+		ft_s$free(&s);
+		return (new);
+	}
+}
+
+int ft_s$add(t_s *s, char *str)
+{
+	size_t lenght;
+
+	if (
+		check(s, str)
+		)
+	{
+		return (-1);
+	}
+	lenght = ft_strlen(str);
+	if (s->i + lenght > s->capacity)
+	{
+		if (
+			!(s = increase(s, lenght))
+			)
+			return (-1);
+	}
+	{
+		ft_memcpy(s->data + s->i, str, lenght);
+		return (0);
+	}
 }

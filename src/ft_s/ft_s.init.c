@@ -10,38 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <ft_log.h>
+#include <ft_s.h>
+#include <ft_mem.h>
 
-
-void test_ft_array_main();
-void test_ft_s_main(void);
-
-
-void test()
+t_s *ft_s$init(size_t size)
 {
-	//	if (test_ft_memory())
-	//		printf("error memory \n");
-	//	if (test_ft_list())
-	//		printf("error list \n");
-	//	test_ft_str();
-	//	test_ft_char();
-	//	test_ft_buffer();
-	//	test_ft_array();
-	//	test_ft_io();
-	//		if (test_ft_printf())
-	//		printf("printf error\n");
-	test_ft_array_main();
-	test_ft_s_main();
-}
+	t_s *s;
+	size_t capacity;
 
-int main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	//	g_test = 1;
-	g_log = TRACE;
-	test();
-
-	return (EXIT_SUCCESS);
+	size = size == 0 ? 1 : size;
+	capacity = (size * 2);
+	if (
+		!(s = ft_memalloc(sizeof(t_s) + capacity + 2))
+		);
+	s->data = (char *)s + sizeof(t_s);
+	s->capacity = capacity;
+	return (s);
 }

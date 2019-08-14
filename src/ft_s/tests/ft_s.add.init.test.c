@@ -10,38 +10,46 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <ft_log.h>
+#include <ft_s.h>
+#include <test.h>
+#include <ft_mem.h>
+#include <ft_str.h>
+#include "libft.h"
 
-
-void test_ft_array_main();
-void test_ft_s_main(void);
-
-
-void test()
+void test_ft_s$init()
 {
-	//	if (test_ft_memory())
-	//		printf("error memory \n");
-	//	if (test_ft_list())
-	//		printf("error list \n");
-	//	test_ft_str();
-	//	test_ft_char();
-	//	test_ft_buffer();
-	//	test_ft_array();
-	//	test_ft_io();
-	//		if (test_ft_printf())
-	//		printf("printf error\n");
-	test_ft_array_main();
-	test_ft_s_main();
-}
+	/*
+	* test good input
+	* */
+	{
+		// test with 0
+		{
+			t_s *s = ft_s$init(0);
+			char *test = ft_memalloc(1000);
 
-int main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	//	g_test = 1;
-	g_log = TRACE;
-	test();
+			if (
+				s->i != 0
+				|| s->capacity != 2
+				|| s->data != (char *)s + sizeof(t_s)
+				|| ft_memcmp(s->data, test, 2)
+				)
+				log_test(0)
 
-	return (EXIT_SUCCESS);
+			ft_s$free(&s);
+		}
+
+		// test with 42
+		{
+			t_s *s = ft_s$init(42);
+			char *test = ft_memalloc(1000);
+
+			if (
+				s->i != 0
+				|| s->capacity != 84
+				|| s->data != (char*)s + sizeof(t_s)
+				|| ft_memcmp(s->data, test, 42)
+				)
+				log_test(1)
+		}
+	}
 }
