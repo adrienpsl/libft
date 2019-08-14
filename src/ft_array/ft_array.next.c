@@ -10,21 +10,49 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <errno.h>
+#include <ft_log.h>
 #include "ft_array.h"
 
-void *ft_array_next_noend(t_array *array)
+void *ft_array$next_loop(t_array *array)
 {
-	array->i =
-	(array->i + 1 == array->length) ?
-	0 : array->i + 1;
+	void *element;
 
-	return (ft_array_position(array, array->i));
+	if (!array)
+	{
+		ft_log$message(F, L,
+					   "ft_array$next_loop error: array ptr (null)",
+					   EINVAL);
+		return (NULL);
+	}
+	element = ft_array_position(array, array->i);
+	{
+		array->i =
+			(array->i + 1 == array->length) ?
+			0 : array->i + 1;
+	}
+	return (element);
 }
 
-void *ft_array_next(t_array *array)
+void *ft_array$next(t_array *array)
 {
-	if (array->i + 1 == array->length)
+	void *element;
+
+	if (!array)
+	{
+		ft_log$message(F, L,
+					   "ft_array$next error: array ptr (null)",
+					   EINVAL);
 		return (NULL);
+	}
+	else if (array->i == array->length)
+	{
+		return (NULL);
+	}
 	else
-		return (ft_array_position(array, array->i));
+	{
+		element = ft_array_position(array, array->i);
+		array->i += 1;
+		return (element);
+	}
 }

@@ -10,20 +10,49 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+
+#include <ft_log.h>
 #include "ft_array.h"
 
-void *ft_array_prev_infinite(t_array *array)
+void *ft_array$prev_loop(t_array *array)
 {
-	array->i =
-	(array->i - 1 < 0) ?
-	array->length : array->i - 1;
+	void *element;
 
-	return (ft_array_position(array, array->i));
+	if (!array)
+	{
+		ft_log$message(F, L,
+					   "ft_array$prev_loop error: array ptr (null)",
+					   EINVAL);
+		return (NULL);
+	}
+	element = ft_array_position(array, array->i);
+	{
+		array->i =
+			(array->i - 1 < 0) ?
+			array->length - 1 : array->i - 1;
+	}
+	return (element);
 }
 
-void *ft_array_prev(t_array *array)
+void *ft_array$prev(t_array *array)
 {
-	if (array->i - 1 < 0)
+	void *element;
+	static int end = 0;
+
+	if (!array)
+	{
+		ft_log$message(F, L,
+					   "ft_array$prev error: array ptr (null)",
+					   EINVAL);
 		return (NULL);
-	return (ft_array_position(array, array->i));
+	}
+	if (array->i == 0 && end)
+		return (NULL);
+	else if (array->i != 0)
+		end = 0;
+	else if (array->i == 0 && !end)
+		end = 1;
+	element = ft_array_position(array, array->i);
+	array->i != 0 && (array->i -= 1);
+	return (element);
 }

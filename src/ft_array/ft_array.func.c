@@ -21,7 +21,7 @@ int ft_array_func_print$str(void *p1, void *param)
 }
 
 // TODO : delete printf
-int ft_array_func_print$int(void *p1, void *param)
+int ft_array$func_print_int(void *p1, void *param)
 {
 	(void) param;
 	printf("%3d ", *(int *) p1);

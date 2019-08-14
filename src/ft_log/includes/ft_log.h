@@ -5,8 +5,9 @@
 #define F __FILE__
 #define L __LINE__
 
-int g_log;
+#include <errno.h>
 
+int g_log;
 enum e_log_level {
 	QUIET,
 	INFO,

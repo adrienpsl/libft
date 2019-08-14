@@ -45,8 +45,12 @@ typedef struct s_array
 t_array *ft_array$init(int nb_elements, size_t element_size);
 void ft_array$free(t_array **p_array);
 
-void *ft_array_next(t_array *array);
-void *ft_array_prev(t_array *array);
+void *ft_array$next(t_array *array);
+void *ft_array$next_loop(t_array *array);
+
+void *ft_array$prev(t_array *array);
+void *ft_array$prev_loop(t_array *array);
+
 void *ft_array$at(t_array *array, int index);
 
 int ft_array$push(t_array **p_array, void *element);
@@ -55,7 +59,7 @@ int ft_array_remove(t_array *array, int start);
 
 void *ft_array_func(t_array *array, int(*func)(void *, void *), void *param);
 int ft_array_func_print$str(void *p1, void *param);
-int ft_array_func_print$int(void *p1, void *param);
+int ft_array$func_print_int(void *p1, void *param);
 
 int ft_array$bubble(
 t_array *array, int(*cmp_f)(void *, void *, void *), void *param

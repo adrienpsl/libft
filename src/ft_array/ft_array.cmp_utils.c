@@ -10,17 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ft_array_init(void);
-void test_ft_array$add(void);
-void test_ft_array$at(void);
-void test_ft_array$bubble(void);
-void test_ft_array_next_and_prev(void);
+#include <ft_str.h>
 
-void test_ft_array_main(void)
+int ft_array_cmp$int(void *p1, void *p2)
 {
-	test_ft_array_init();
-	test_ft_array$at();
-	test_ft_array$add();
-	test_ft_array$bubble();
-	test_ft_array_next_and_prev();
+	int *a;
+	int *b;
+
+	a = p1;
+	b = p2;
+	return (!(*a == *b));
+}
+
+int ft_array_cmp$str(void *p1, void *p2)
+{
+	char *a;
+	char *b;
+
+	a = p1;
+	b = p2;
+	return (!ft_streq(a, b));
 }

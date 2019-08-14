@@ -8,6 +8,7 @@ target_sources(${__LIB_NAME__}
         ft_array.at.c
         ft_array.bubble.c
         ft_array.cmp.c
+        ft_array.cmp_utils.c
         ft_array.copy.c
         ft_array.double_size.c
         ft_array.free.c
@@ -19,12 +20,13 @@ target_sources(${__LIB_NAME__}
         ft_array.utils.c
         ft_array.func_cmp.c
 
+
         #[[ test]]
         tests/ft_array.at.test.c
         tests/ft_array.init.test.c
         tests/ft_array.push.test.c
         tests/ft_array.bubble.test.c
-
+        tests/ft_array.prev.next.test.c
         tests/main.test.c
         )
 
