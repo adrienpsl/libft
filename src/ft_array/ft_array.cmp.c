@@ -24,7 +24,7 @@ static int check(t_array *a_1, t_array *a_2, int (*f)(void *, void *))
 						   EINVAL)
 		);
 	}
-	if (!f)
+	else if (!f)
 	{
 		return (
 			ft_log$message(F, L,

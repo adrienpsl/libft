@@ -36,7 +36,7 @@ void test_ft_array_remove()
 				ret = ft_array$remove(NULL, 10);
 				if (
 					!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 						"ft_array$remove error: array ptr (null)\n")
 					)
 					log_test(0)
@@ -47,7 +47,7 @@ void test_ft_array_remove()
 				ret = ft_array$remove(array, -42);
 				if (
 					!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 						"ft_array$remove index bigger than length/neg\n")
 					)
 					log_test(1)
@@ -58,7 +58,7 @@ void test_ft_array_remove()
 				ret = ft_array$remove(array, 11);
 				if (
 					!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 						"ft_array$remove index bigger than length/neg\n")
 					)
 					log_test(2)
@@ -69,7 +69,7 @@ void test_ft_array_remove()
 				ret = ft_array$remove(array, -42);
 				if (
 					!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 						"ft_array$remove index bigger than length/neg\n")
 					)
 					log_test(3)
@@ -160,7 +160,8 @@ void test_ft_array_remove()
 
 			g_test = 1;
 			ret_1 = ft_array$remove(array, 0);
-			if (!ret_1 || lib_cmp_testbuff("ft_array$remove index bigger than length/neg\n"))
+			if (!ret_1 || lib_cmp_testbuff_log(
+				"ft_array$remove index bigger than length/neg\n"))
 			    log_test(7)
 
 			g_test = 0;

@@ -29,7 +29,8 @@ void test_ft_array$copy()
 			ret = ft_array$copy(NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff("ft_array$copy error: array ptr (null)\n")
+				|| lib_cmp_testbuff_log(
+					"ft_array$copy error: array ptr (null)\n")
 				)
 				log_test(0)
 		}

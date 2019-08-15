@@ -23,8 +23,4 @@ void test_ft_s_main(void)
 	test_ft_s$add();
 	test_ft_s$free();
 	test_ft_$clear();
-
-	ft_printf("%10s", "toto");
-
-
 }

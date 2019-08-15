@@ -12,10 +12,11 @@
 
 #include <stdlib.h>
 #include <ft_log.h>
-
+# include "stdio.h"
 
 void test_ft_array_main();
 void test_ft_s_main(void);
+void test_ft_io$catch_option();
 
 
 void test()
@@ -33,6 +34,7 @@ void test()
 	//		printf("printf error\n");
 	test_ft_array_main();
 	test_ft_s_main();
+	test_ft_io$catch_option();
 }
 
 int main(int ac, char **av)
@@ -42,6 +44,7 @@ int main(int ac, char **av)
 	//	g_test = 1;
 	g_log = TRACE;
 	test();
+
 
 	return (EXIT_SUCCESS);
 }

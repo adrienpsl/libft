@@ -48,7 +48,7 @@ void test_ft_array$bubble(void)
 		{
 			ret = ft_array$sort_bubble(NULL, ft_array$sort_cmp_int, &param);
 			if (!ret
-				|| lib_cmp_testbuff(
+				|| lib_cmp_testbuff_log(
 				"ft_array$sort_bubble error: array ptr (null)\n")
 				)
 				log_test(0)
@@ -58,7 +58,7 @@ void test_ft_array$bubble(void)
 		{
 			ret = ft_array$sort_bubble(array, NULL, &param);
 			if (!ret
-				|| lib_cmp_testbuff(
+				|| lib_cmp_testbuff_log(
 				"ft_array$sort_bubble error: func ptr (null)\n")
 				)
 				log_test(1)
@@ -70,7 +70,7 @@ void test_ft_array$bubble(void)
 			ft_array$push(&array, &param);
 			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, NULL);
 			if (ret
-				|| lib_cmp_testbuff(
+				|| lib_cmp_testbuff_log(
 				"ft_array$sort_cmp_int arg ptr (null)\n")
 				)
 				log_test(2)

@@ -31,7 +31,7 @@ void test_ft_array_double_size()
 			ret = ft_array$double_size(NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff(
+				|| lib_cmp_testbuff_log(
 					"ft_array$double size error: array ptr (null)\n")
 				)
 				log_test(0)

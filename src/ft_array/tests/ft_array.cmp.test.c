@@ -32,21 +32,21 @@ void test_ft_array_cmp()
 			{
 				ret = ft_array$cmp(NULL, array, ft_array$cmp_int);
 				if (!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 					"ft_array$cmp error: array ptr (null)\n")
 					)
 					log_test(0)
 
 				ft_array$cmp(array, NULL, ft_array$cmp_int);
 				if (!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 					"ft_array$cmp error: array ptr (null)\n")
 					)
 					log_test(1)
 
 				ft_array$cmp(NULL, NULL, ft_array$cmp_int);
 				if (!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 					"ft_array$cmp error: array ptr (null)\n")
 					)
 					log_test(2)
@@ -56,7 +56,7 @@ void test_ft_array_cmp()
 			{
 				ft_array$cmp(array, array, NULL);
 				if (!ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 					"ft_array$cmp error: func ptr (null)\n")
 					)
 					log_test(2)

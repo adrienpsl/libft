@@ -8,8 +8,11 @@ target_sources(${__LIB_NAME__}
         ft_catch_options.c
         ft_itoa.c
         get_next_line.c
+        ft_io.catch_options.c
 
         #[[ test]]
+        tests/ft_io.catch_options.test.c
+        tests/main.test.c
         )
 
 

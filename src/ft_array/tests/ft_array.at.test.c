@@ -33,7 +33,7 @@ void test_ft_array$at()
 				ret = ft_array$at(array, -10);
 
 				if (ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 					"ft_array$at error : index is negative\n")
 					)
 					log_test(0)
@@ -44,7 +44,7 @@ void test_ft_array$at()
 				ret = ft_array$at(array, 2);
 
 				if (ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 					"ft_array$at error : index bigger than length\n")
 					)
 					log_test(1)
@@ -55,7 +55,7 @@ void test_ft_array$at()
 				ret = ft_array$at(NULL, 100);
 
 				if (ret
-					|| lib_cmp_testbuff(
+					|| lib_cmp_testbuff_log(
 					"ft_array$at error: array ptr (null)\n")
 					)
 					log_test(2)

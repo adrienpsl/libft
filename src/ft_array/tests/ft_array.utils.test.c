@@ -29,7 +29,7 @@ void test_ft_array$utils()
 			lib_clear_testbuff();
 			ft_array$clear(NULL);
 			if (
-				lib_cmp_testbuff("ft_array$clear arg ptr (null)\n")
+				lib_cmp_testbuff_log("ft_array$clear arg ptr (null)\n")
 				)
 				log_test(0)
 		}

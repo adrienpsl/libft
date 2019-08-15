@@ -31,7 +31,8 @@ void test_ft_array$func()
 			ret = ft_array$func(NULL, ft_array$func_print_int, NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff("ft_array$cmp error: array ptr (null)\n")
+				|| lib_cmp_testbuff_log(
+					"ft_array$cmp error: array ptr (null)\n")
 				)
 				log_test(0)
 
@@ -39,7 +40,7 @@ void test_ft_array$func()
 			ret = ft_array$func(ptr, NULL, NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff("ft_array$cmp error: func ptr (null)\n")
+				|| lib_cmp_testbuff_log("ft_array$cmp error: func ptr (null)\n")
 				)
 				log_test(1)
 		}

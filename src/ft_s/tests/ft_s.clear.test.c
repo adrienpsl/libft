@@ -28,7 +28,7 @@ void test_ft_$clear()
 		ret = ft_s$clear(NULL);
 		if (
 			!ret
-			|| lib_cmp_testbuff("ft_s$clear error: s ptr (null)\n")
+			|| lib_cmp_testbuff_log("ft_s$clear error: s ptr (null)\n")
 			)
 			log_test(0)
 

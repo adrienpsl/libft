@@ -32,7 +32,7 @@ void test_ft_s$add()
 			ret = ft_s$add(NULL, "");
 			if (
 				!ret
-				|| lib_cmp_testbuff("ft_s$add error: s ptr (null)\n")
+				|| lib_cmp_testbuff_log("ft_s$add error: s ptr (null)\n")
 				)
 				log_test(0)
 		}
@@ -42,7 +42,7 @@ void test_ft_s$add()
 			ret = ft_s$add((t_s **)"", NULL);
 			if (
 				!ret
-				|| lib_cmp_testbuff("ft_s$add error: str ptr (null)\n")
+				|| lib_cmp_testbuff_log("ft_s$add error: str ptr (null)\n")
 				)
 				log_test(1)
 		}

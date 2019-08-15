@@ -28,5 +28,12 @@ int ft_itoa_base(
 	int is_u
 );
 int ft_io_catch_options(char *av_string, char *str_option, long *options);
+int ft_io$catch_option(
+	char **av,
+	char *option_str,
+	long *options_ptr,
+	void (*f_usage)(char)
+);
+
 
 #endif

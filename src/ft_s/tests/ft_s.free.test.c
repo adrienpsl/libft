@@ -27,14 +27,14 @@ void test_ft_s$free()
 
 		ft_s$free(NULL);
 		if (
-			lib_cmp_testbuff("ft_s$free error: s ptr (null)\n")
+			lib_cmp_testbuff_log("ft_s$free error: s ptr (null)\n")
 			)
 			log_test(0)
 
 		ft_s$free(&s);
 		if (
 			s
-			|| lib_cmp_testbuff("ft_s$free error: s ptr (null)\n")
+			|| lib_cmp_testbuff_log("ft_s$free error: s ptr (null)\n")
 			)
 			log_test(1)
 

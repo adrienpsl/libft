@@ -149,8 +149,9 @@ void test_ft_array$add()
 				ret != -1
 				|| array->length
 				|| *(int*)array->data
-				|| lib_cmp_testbuff("ft_array$insert index bigger than length\n"
-					)
+				|| lib_cmp_testbuff_log(
+					"ft_array$insert index bigger than length\n"
+				)
 				)
 			{
 				printf("%s \n",g_test_buffer);
