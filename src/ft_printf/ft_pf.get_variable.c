@@ -10,51 +10,36 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "ft_io.h"
-# include "ft_mem.h"
+#include "libft.h"
 
-int ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out)
+int is_format(t_pf *pf, int position)
 {
-	int i;
-	size_t base;
+	return (*(int *)&pf->format_bit & (1 << position));
+}
+
+int ft_pf_get_variable(t_pf *s)
+{
+	static char bases[4][17] =
+		{ "01", "0123456789", "0123456789abcdef", "0123456789ABCDF" };
 	uintmax_t nb;
+	int base;
 
-	base = ft_strlen(base_str);
-	i = 0;
-	nb = origin_nb;
-	while (nb /= base)
-		i++;
-	nb = origin_nb;
-	while (i > -1)
-	{
-		out[i] = base_str[nb % base];
-		nb /= base;
-		i--;
-	}
-	return (0);
-}
-
-int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u)
-{
-	int neg;
-	long long nb;
-
-	if (origin_nb == 0)
-	{
-		ft_memcpy(out, "0", 2);
-		return (1);
-	}
-	if (is_u)
-		return ft_itoa_unsigned(origin_nb, base_str, out);
+	if (is_format(s, DECIMAL))
+	    ;
+	if (FORMAT_D & s->format && !(s->format & FORMAT_L))
+		nb = va_arg(s->list, int);
+	else if (FORMAT_D & s->format && (s->format & FORMAT_L))
+		nb = va_arg(s->list, long long);
+	else if (FORMAT_U & s->format && !(s->format & FORMAT_L))
+		nb = va_arg(s->list, unsigned int);
+	else if (s->format & (FORMAT_U | FORMAT_L | FORMAT_X))
+		nb = va_arg(s->list, unsigned long long);
 	else
-	{
-		nb = origin_nb;
-		neg = nb < 0 ? 1 : 0;
-		if (neg)
-		{
-			nb = -nb;
-			out[0] = '-';
-		}
-		return ft_itoa_unsigned(nb, base_str, neg ? out + 1 : out);
-	}
+		return (1);
+	base = (s->format & FORMAT_10_BASE) ? 1 : 2;
+	return ft_itoa_base(nb,
+						bases[base],
+						s->string,
+						s->format & FORMAT_U);
 }
+

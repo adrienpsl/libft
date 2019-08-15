@@ -43,6 +43,19 @@
 #define FT_PRINTF_PARCING_ERROR 100
 #define FT_PRINTF_PARCING_ERROR_STRING "ft_printf error %[ unknown ]"
 
+#define  MINUS 0
+#define  WILCARD 1
+#define  DOT  2
+#define  ZERO  3
+#define  LITTLE 4
+#define  TALL  5
+#define  STRING 6
+#define  DECIMAL 7
+#define  CHARACTER 8
+#define  HEXA  9
+#define  BINARY 10
+
+
 typedef struct s_pf_format
 {
 	unsigned int minus: 1;
