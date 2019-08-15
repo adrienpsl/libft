@@ -45,6 +45,12 @@ int extract_format(t_pf *s)
 {
 	s->format &= 0;
 	ft_memset(s->t_string, 0, FT_BUFFER_SIZE);
+	if (ft_isdigit(*s->str))
+	{
+		s->min_length = ft_atoi(s->str);
+		while (ft_isdigit(*s->str))
+			s->str++;
+	}
 	catch_options(&s->str, ".......-*.0", &s->format, 0);
 	catch_options(&s->str, "....hl", &s->format, 0);
 	catch_options(&s->str, "sdcu.....x", &s->format, 1);

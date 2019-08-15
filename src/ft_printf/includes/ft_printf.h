@@ -50,6 +50,7 @@ typedef struct s_pf
 	char *str;
 	void *ptr;
 	long format;
+	int padding;
 	char t_string[64];
 	va_list list;
 	t_buffer *buff;
