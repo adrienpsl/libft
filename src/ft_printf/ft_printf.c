@@ -44,7 +44,7 @@ int catch_options(char **input, char *str_option, long *options, int one)
 int extract_format(t_pf *s)
 {
 	s->format &= 0;
-	ft_memset(s->t_string, 0, FT_BUFFER_SIZE);
+	ft_memset(s->string, 0, FT_BUFFER_SIZE);
 	if (ft_isdigit(*s->str))
 	{
 		s->min_length = ft_atoi(s->str);
@@ -83,7 +83,7 @@ int ft_printf_parse_number(t_pf *s)
 	base = (s->format & FORMAT_10_BASE) ? 1 : 2;
 	return ft_itoa_base(nb,
 						bases[base],
-						s->t_string,
+						s->string,
 						s->format & FORMAT_U);
 }
 
@@ -91,6 +91,8 @@ int ft_printf_read_arg(t_pf *s)
 {
 	if (s->format & FORMAT_S)
 		s->ptr = va_arg(s->list, void*);
+//	else if (FORMAT_C & s->format)
+//		s->string = va_arg(s->list, int);
 	else
 		return ft_printf_parse_number(s);
 	return (0);
@@ -113,7 +115,7 @@ int ft_printf_format_data(t_pf *s)
 	size_t size;
 	char *data;
 
-	data = s->format & FORMAT_S ? s->ptr : s->t_string;
+	data = s->format & FORMAT_S ? s->ptr : s->string;
 	size = ft_strlen(data);
 	s->min_length = s->min_length - size;
 	if (s->format & FORMAT_0)

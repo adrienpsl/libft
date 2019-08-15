@@ -16,12 +16,9 @@ set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 # ------------------------------------------------------------------------------
 #    Libft init
 # ------------------------------------------------------------------------------
-add_library(${__LIB_NAME__} "") # must have ""
-include_directories(includes)
-# the homebrew install repo
-#include_directories(/usr/local/include/CUnit)
-#target_link_libraries(${__LIB_NAME__} /usr/local/Cellar/cunit/2.1-3/lib/libcunit.a)
-# add all module
+add_library(${__LIB_NAME__} "" src/ft_printf/tests/ft_pf.catch_format.test.c) # must have ""
+target_include_directories(${__LIB_NAME__} PUBLIC includes)
+
 add_subdirectory(src)
 add_subdirectory(tests)
 
@@ -32,7 +29,26 @@ add_executable(libft_run main.c)
 
 target_link_libraries(libft_run ${__LIB_NAME__})
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # add the lib C Unit from the homebrow install repository
-
 #target_link_libraries(libft_run /usr/local/Cellar/cunit/2.1-3/lib/libcunit.a)
-
+# the homebrew install repo
+#include_directories(/usr/local/include/CUnit)
+#target_link_libraries(${__LIB_NAME__} /usr/local/Cellar/cunit/2.1-3/lib/libcunit.a)
+# add all module

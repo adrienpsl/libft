@@ -249,7 +249,7 @@ void test_ft_io$catch_option()
 		}
 
 
-		// test triple ifemme
+		// test triple ifemme`
 		{
 			char **split = ft_strsplit("-- 15 -- 16 -777778", " ");
 			options = 0;

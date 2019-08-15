@@ -43,6 +43,22 @@
 #define FT_PRINTF_PARCING_ERROR 100
 #define FT_PRINTF_PARCING_ERROR_STRING "ft_printf error %[ unknown ]"
 
+typedef struct s_pf_format
+{
+	unsigned int minus: 1;
+	unsigned int wildard: 1;
+	unsigned int dot: 1;
+	unsigned int zero: 1;
+	unsigned int little: 1;
+	unsigned int tall: 1;
+	unsigned int string: 1;
+	unsigned int decimal: 1;
+	unsigned int character: 1;
+	unsigned int hexa: 1;
+	unsigned int binary: 1;
+	int padding;
+} t_pf_format;
+
 typedef struct s_pf
 {
 	int i;
@@ -51,13 +67,17 @@ typedef struct s_pf
 	void *ptr;
 	long format;
 	int padding;
-	char t_string[64];
+	char string[64];
 	va_list list;
 	t_buffer *buff;
+	t_pf_format format_bit;
 } t_pf;
 
 
 //int ft_sprintf(t_buffer *buffer, char *format, ...);
 int ft_printf(const char *format, ...);
+
+// put title
+int ft_pf_catch_format(t_pf *pf);
 
 #endif

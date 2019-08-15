@@ -15,4 +15,15 @@
 
 int init_libft();
 
+# include "ft_array.h"
+# include "ft_buffer.h"
+# include "ft_errno.h"
+# include "ft_io.h"
+# include "ft_log.h"
+# include "ft_mem.h"
+# include "ft_printf.h"
+# include "ft_str.h"
+# include "ft_strsplit.h"
+# include "ft_str.h"
+
 #endif
