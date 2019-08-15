@@ -10,13 +10,13 @@ project(libft C)
 #    compilation flag
 # ------------------------------------------------------------------------------
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
+#set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 #set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address -g")
 
 # ------------------------------------------------------------------------------
 #    Libft init
 # ------------------------------------------------------------------------------
-add_library(${__LIB_NAME__} "" src/ft_printf/tests/ft_pf.catch_format.test.c src/ft_printf/ft_pf.get_variable.c) # must have ""
+add_library(${__LIB_NAME__} "" src/ft_printf/tests/ft_pf.catch_format.test.c src/ft_printf/ft_pf.get_variable.c src/ft_printf/tests/ft_pf.get_variable.test.c) # must have ""
 target_include_directories(${__LIB_NAME__} PUBLIC includes)
 
 add_subdirectory(src)

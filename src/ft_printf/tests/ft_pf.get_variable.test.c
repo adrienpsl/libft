@@ -12,9 +12,48 @@
 
 #include "libft.h"
 
-void test_ft_pf_catch_format();
-
-void test_main_ft_pf()
+void print_int(int x)
 {
- test_ft_pf_catch_format();
+	for (int i = sizeof(x) << 3; i; i--)
+		putchar('0' + ((x >> (i - 1)) & 1));
+	printf(" \n");
+}
+
+void print_long(long x)
+{
+	for (int i = sizeof(x) << 3; i; i--)
+		putchar('0' + ((x >> (i - 1)) & 1));
+}
+
+void utils(t_pf *pf, ...)
+{
+	intmax_t nb;
+
+	va_start(pf->list, pf);
+	nb = va_arg(pf->list, int);
+//	print_long(nb);
+	printf("\n%ld", nb);
+	printf("\n%ld\n", (unsigned)nb);
+	//	ft_pf_get_variable(pf);
+	va_end(pf->list);
+}
+
+void test_ft_pf_get_variable()
+{
+	t_pf pf;
+
+	ft_bzero(&pf, sizeof(t_pf));
+
+	utils(&pf, SHRT_MIN);
+	utils(&pf, SHRT_MAX);
+	utils(&pf, UINT_MAX);
+	utils(&pf, INT_MAX);
+	utils(&pf, INT_MIN);
+	utils(&pf, -1);
+
+
+
+	//	pf.format_bit.little = 1;
+	//	utils(&pf, SHRT_MIN);
+	//	utils(&pf, INT_MIN);
 }

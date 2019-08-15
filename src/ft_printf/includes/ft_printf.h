@@ -54,6 +54,7 @@
 #define  CHARACTER 8
 #define  HEXA  9
 #define  BINARY 10
+#define  UNSIGNED 11
 
 
 typedef struct s_pf_format
@@ -92,5 +93,7 @@ int ft_printf(const char *format, ...);
 
 // put title
 int ft_pf_catch_format(t_pf *pf);
+
+int ft_pf_get_variable(t_pf *s);
 
 #endif

@@ -8,7 +8,7 @@ target_sources(${__LIB_NAME__}
         ft_pf.catch_format.c
 
         #[[ test]]
-        tests/pf.main.test.c
+        tests/ft_pf.main.test.c
         )
 
 
