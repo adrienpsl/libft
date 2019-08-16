@@ -22,7 +22,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			!ret
 			|| *pf.str
@@ -36,7 +36,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "toto";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("toto", pf.str)
@@ -50,7 +50,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "-";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("", pf.str)
@@ -65,7 +65,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "0";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("", pf.str)
@@ -79,7 +79,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "0....-000******--toto";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("toto", pf.str)
@@ -93,7 +93,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "lllllhhlhlhhhllhhllhtoto";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("toto", pf.str)
@@ -107,7 +107,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "stoto";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != 0
 			|| ft_str_cmp("toto", pf.str)
@@ -121,7 +121,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "btoto";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != 0
 			|| ft_str_cmp("toto", pf.str)
@@ -135,7 +135,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.str = "-***-...003200hhhllllhh32bbtoto";
-		ret = ft_pf_catch_format(&pf);
+		ret = pf$catch_format(&pf);
 		if (
 			ret != 0
 			|| ft_str_cmp("btoto", pf.str)

@@ -78,7 +78,7 @@ static int catch(
 }
 
 // TODO : mettre seccurity if same format given like h and l
-int ft_pf_catch_format(t_pf *pf)
+int pf$catch_format(t_pf *pf)
 {
 	if (*pf->str == '%')
 		return (1);

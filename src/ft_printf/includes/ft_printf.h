@@ -70,6 +70,7 @@ typedef struct s_pf_format
 	unsigned int character: 1;
 	unsigned int hexa: 1;
 	unsigned int binary: 1;
+	unsigned int unsign: 1;
 	int padding;
 } t_pf_format;
 
@@ -80,8 +81,7 @@ typedef struct s_pf
 	char *str;
 	void *ptr;
 	long format;
-	int padding;
-	char string[64];
+	char string[70];
 	va_list list;
 	t_buffer *buff;
 	t_pf_format format_bit;
@@ -92,8 +92,8 @@ typedef struct s_pf
 int ft_printf(const char *format, ...);
 
 // put title
-int ft_pf_catch_format(t_pf *pf);
+int pf$catch_format(t_pf *pf);
 
-int ft_pf_get_variable(t_pf *s);
+int pf$get_number(t_pf *pf);
 
 #endif
