@@ -10,32 +10,50 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_str.h"
-#include "ft_mem.h"
-#include "ft_buffer.h"
+#include <test.h>
+#include <libft.test.h>
+#include "libft.h"
 
-int ft_buffer_clean(t_buffer *buff)
-{
-	ft_putstr_fd(buff->data, 1);
-	ft_bzero(buff->data, buff->length);
-	buff->length = 0;
-	return (0);
-}
+void test_ft_buffer();
 
-int ft_buffer_add(t_buffer *buff, char *data, int size)
+void test_main_ft_buffer()
 {
-	if (size > BUFFER_SIZE)
+	t_buffer buffer;
+	char *a = "c";
+	char str[2000] = { 0 };
+
+
+	// test add 1022 char
 	{
-		ft_putstr_fd("buffer to small to handel data", 2);
-		ft_buffer_clean(buff);
-		ft_putstr_fd(data, 1);
-		return (-1);
+		ft_bzero(&buffer, sizeof(t_buffer));
+		for (int i = 0; i < 1022; ++i)
+		{
+			ft_buffer_add(&buffer, a, 1);
+			str[i] = 'c';
+		}
+		if (
+			ft_strlen(buffer.data) != 1022
+			|| buffer.length != 1022
+			|| ft_str_cmp(str, buffer.data))
+			log_test(1)
 	}
-	if (size + buff->length >= BUFFER_SIZE)
+
+	// test if print and reset
 	{
-		ft_buffer_clean(buff);
+		g_test = 1;
+		lib_clear_testbuff();
+
+		char clear[2000] = "et voila encore du texte putain";
+		ft_buffer_add(&buffer, clear, ft_strlen(clear));
+
+		str[1023] = 'c';
+		if (
+			ft_str_cmp(g_test_buffer, str)
+			|| buffer.length != (int)ft_strlen(clear)
+			|| ft_memcmp(clear, buffer.data, 1024)
+		)
+			log_test(2)
+
+		g_test = 0;
 	}
-	ft_strcat(buff->data, data);
-	buff->length += size;
-	return (0);
 }

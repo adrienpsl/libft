@@ -116,17 +116,17 @@ void test_ft_pf$get_nb()
 	// test with hexa
 	{
 		utils(&pf, "hx", LONG_MAX);
-		if (0 != ft_str_cmp("ffff",pf.intern_str))
+		if (0 != ft_str_cmp("0xffff",pf.intern_str))
 			log_test(3)
 
 		utils(&pf, "lx", LONG_MAX);
 		if (0 != ft_str_cmp(
-			"7fffffffffffffff",
+			"0x7fffffffffffffff",
 			pf.intern_str))
 			log_test(3)
 
 		utils(&pf, "x", ULONG_MAX);
-		if (0 != ft_str_cmp("ffffffff",pf.intern_str))
+		if (0 != ft_str_cmp("0xffffffff",pf.intern_str))
 			log_test(3)
 	}
 }

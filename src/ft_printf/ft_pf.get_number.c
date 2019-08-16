@@ -17,14 +17,14 @@ static char *get_base(t_pf *pf)
 	static char base[4][17] = {
 		"01", "0123456789", "0123456789abcdef"
 	};
-	if(
+	if (
 		pf->format_bit.binary
 		)
 		return (base[0]);
-	else if(
+	else if (
 		pf->format_bit.hexa
 		)
-	    return (base[2]);
+		return (base[2]);
 	else
 		return (base[1]);
 }
@@ -105,14 +105,16 @@ int pf$get_number(t_pf *pf)
 		nb = get_va_signed(pf);
 	else
 		return (0);
-	{
-		itoa_unsigned(
-			pf->char_buffer[0] ? pf->char_buffer + 1 : pf->char_buffer,
-			nb,
-			get_base(pf)
-		);
-		pf->intern_str = pf->char_buffer;
-		return (1);
-	}
+	if (
+		pf->format_bit.hexa
+		)
+		ft_strcat(pf->char_buffer, "0x");
+	itoa_unsigned(
+		pf->char_buffer + ft_strlen(pf->char_buffer),
+		nb,
+		get_base(pf)
+	);
+	pf->intern_str = pf->char_buffer;
+	return (1);
 }
 

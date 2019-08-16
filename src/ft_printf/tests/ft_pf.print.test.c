@@ -10,32 +10,41 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_str.h"
-#include "ft_mem.h"
-#include "ft_buffer.h"
+#include <test.h>
+#include "libft.h"
 
-int ft_buffer_clean(t_buffer *buff)
+ int utils(char *format, char *result, ...)
 {
-	ft_putstr_fd(buff->data, 1);
-	ft_bzero(buff->data, buff->length);
-	buff->length = 0;
-	return (0);
+	t_array *array = ft_array$init(2000, 1);
+	int ret = 0;
+	t_pf p;
+	t_pf *pf = &p;
+
+	ft_bzero(pf, sizeof(t_pf));
+
+	pf->format = format;
+	pf$catch_format(pf);
+
+	va_start(pf->list, result);
+	pf$get_str(pf);
+	pf$get_number(pf);
+	va_end(pf->list);
+
+	pf$print(pf);
+	if (ft_str_cmp(array->data, result))
+	{
+		printf("-%s-\n", result);
+		printf("-%s-\n", array->data);
+		ret = (1);
+	}
+	ft_array$free(&array);
+
+	return (ret);
 }
 
-int ft_buffer_add(t_buffer *buff, char *data, int size)
+void test_pf$print()
 {
-	if (size > BUFFER_SIZE)
-	{
-		ft_putstr_fd("buffer to small to handel data", 2);
-		ft_buffer_clean(buff);
-		ft_putstr_fd(data, 1);
-		return (-1);
-	}
-	if (size + buff->length >= BUFFER_SIZE)
-	{
-		ft_buffer_clean(buff);
-	}
-	ft_strcat(buff->data, data);
-	buff->length += size;
-	return (0);
+	if (utils("10d", "        22", 22))
+		log_test(1)
+	printf("%22s \n", "toto");
 }

@@ -10,32 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_str.h"
-#include "ft_mem.h"
-#include "ft_buffer.h"
+#include "libft.h"
 
-int ft_buffer_clean(t_buffer *buff)
+void test_ft_buffer()
 {
-	ft_putstr_fd(buff->data, 1);
-	ft_bzero(buff->data, buff->length);
-	buff->length = 0;
-	return (0);
-}
 
-int ft_buffer_add(t_buffer *buff, char *data, int size)
-{
-	if (size > BUFFER_SIZE)
-	{
-		ft_putstr_fd("buffer to small to handel data", 2);
-		ft_buffer_clean(buff);
-		ft_putstr_fd(data, 1);
-		return (-1);
-	}
-	if (size + buff->length >= BUFFER_SIZE)
-	{
-		ft_buffer_clean(buff);
-	}
-	ft_strcat(buff->data, data);
-	buff->length += size;
-	return (0);
 }

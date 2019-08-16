@@ -10,32 +10,50 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_str.h"
-#include "ft_mem.h"
-#include "ft_buffer.h"
+#include "libft.h"
 
-int ft_buffer_clean(t_buffer *buff)
+size_t padding_calculation(t_pf *pf)
 {
-	ft_putstr_fd(buff->data, 1);
-	ft_bzero(buff->data, buff->length);
-	buff->length = 0;
-	return (0);
+	size_t length;
+
+	{
+		length = ft_strlen(pf->intern_str);
+		pf->format_bit.padding -= length;
+	}
+	if (
+		pf->format_bit.padding < 0
+		)
+		pf->format_bit.padding = 0;
+	return (length);
 }
 
-int ft_buffer_add(t_buffer *buff, char *data, int size)
+void add_padding(t_pf *pf)
 {
-	if (size > BUFFER_SIZE)
+	static char buff[2] = { 0 };
+
+	buff[0] = pf->format_bit.zero ? '0' : ' ';
+	while (pf->format_bit.padding)
 	{
-		ft_putstr_fd("buffer to small to handel data", 2);
-		ft_buffer_clean(buff);
-		ft_putstr_fd(data, 1);
-		return (-1);
+		ft_buffer_add(&pf->buff, buff, 1);
+		pf->format_bit.padding -= 1;
 	}
-	if (size + buff->length >= BUFFER_SIZE)
+}
+
+int pf$print(t_pf *pf)
+{
+	size_t length;
+
+	length = padding_calculation(pf);
+	if (
+		0 == pf->format_bit.minus
+		)
+		add_padding(pf);
 	{
-		ft_buffer_clean(buff);
+		ft_buffer_add(&pf->buff, pf->intern_str, length);
 	}
-	ft_strcat(buff->data, data);
-	buff->length += size;
+	if (
+		1 == pf->format_bit.minus
+		)
+		add_padding(pf);
 	return (0);
 }

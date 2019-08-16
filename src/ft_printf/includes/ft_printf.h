@@ -22,6 +22,7 @@
 # include <cxxabi.h>
 
 #include "ft_array.h"
+#include "ft_buffer.h"
 #include "libft_define.h"
 
 # define FORMAT_S (1)
@@ -83,7 +84,7 @@ typedef struct s_pf
 	char *intern_str;
 	void *ptr;
 	va_list list;
-	t_buffer *buff;
+	t_buffer buff;
 	t_pf_format format_bit;
 } t_pf;
 
@@ -96,5 +97,6 @@ int pf$catch_format(t_pf *pf);
 
 int pf$get_number(t_pf *pf);
 int pf$get_str(t_pf *pf);
+int pf$print(t_pf *pf);
 
 #endif

@@ -162,8 +162,6 @@ int ft_printf(const char *format, ...)
 	t_pf s;
 
 	ft_memset(&s, 0, sizeof(t_pf));
-	if (!(s.buff = ft_array$init(512, 1)))
-		return (1);
 	s.format = (char *)format;
 	va_start(s.list, format);
 	while (*s.format)
@@ -171,11 +169,7 @@ int ft_printf(const char *format, ...)
 		if (*s.format == '%' && s.format++)
 		{
 		}
-		else
-			ft_buffer_add(s.buff, s.format, 1) || s.format++;
 	}
 	va_end(s.list);
-	ft_buffer_clean(s.buff);
-	free(s.buff);
 	return (0);
 }

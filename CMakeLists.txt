@@ -16,7 +16,7 @@ set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 # ------------------------------------------------------------------------------
 #    Libft init
 # ------------------------------------------------------------------------------
-add_library(${__LIB_NAME__} "" src/ft_printf/tests/ft_pf.catch_format.test.c src/ft_printf/ft_pf.get_number.c src/ft_printf/tests/ft_pf.get_nb.test.c src/ft_printf/ft_pf.get_str.c src/ft_printf/tests/ft_pf.get_str.test.c) # must have ""
+add_library(${__LIB_NAME__} "" src/ft_printf/tests/ft_pf.catch_format.test.c src/ft_printf/ft_pf.get_number.c src/ft_printf/tests/ft_pf.get_nb.test.c src/ft_printf/ft_pf.get_str.c src/ft_printf/tests/ft_pf.get_str.test.c src/ft_printf/ft_pf.print.c src/ft_printf/tests/ft_pf.print.test.c src/ft_buffer/tests/ft_buffer.main.test.c src/ft_buffer/tests/ft_buffer.test.c) # must have ""
 target_include_directories(${__LIB_NAME__} PUBLIC includes)
 
 add_subdirectory(src)

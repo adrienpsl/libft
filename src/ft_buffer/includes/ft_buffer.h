@@ -13,7 +13,13 @@
 #ifndef FT_BUFFER_H
 #define FT_BUFFER_H
 
-#include "ft_array.h"
+# define BUFFER_SIZE 1023
+
+typedef struct s_buffer
+{
+	int length;
+	char data[BUFFER_SIZE + 1];
+} t_buffer;
 
 t_buffer *ft_buffer_new(size_t size, int fd);
 int ft_buffer_add(t_buffer *buff, char *data, int size);
