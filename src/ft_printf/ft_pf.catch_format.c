@@ -80,14 +80,14 @@ static int catch(
 // TODO : mettre seccurity if same format given like h and l
 int pf$catch_format(t_pf *pf)
 {
-	if (*pf->str == '%')
+	if (*pf->format == '%')
 		return (1);
 	{
-		catch(&pf->str, "-*.0", &pf->format_bit, 0);
-		catch(&pf->str, "....hl", &pf->format_bit, 0);
+		catch(&pf->format, "-*.0", &pf->format_bit, 0);
+		catch(&pf->format, "....hl", &pf->format_bit, 0);
 	}
 	if (
-		!catch(&pf->str, "......sdcxbu", &pf->format_bit, 1)
+		!catch(&pf->format, "......sdcxbu", &pf->format_bit, 1)
 		)
 		return (-1);
 	{

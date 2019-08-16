@@ -10,43 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <ft_log.h>
-# include "stdio.h"
+#include "libft.h"
 
-void test_ft_array_main();
-void test_ft_s_main(void);
-void test_ft_io$catch_option();
-void test_main_ft_pf();
-
-
-void test()
+int pf$get_str(t_pf *pf)
 {
-	//	if (test_ft_memory())
-	//		printf("error memory \n");
-	//	if (test_ft_list())
-	//		printf("error list \n");
-	//	test_ft_str();
-	//	test_ft_char();
-	//	test_ft_buffer();
-	//	test_ft_array();
-	//	test_ft_io();
-	//		if (test_ft_printf())
-	//		printf("printf error\n");
-//	test_ft_array_main();
-//	test_ft_s_main();
-//	test_ft_io$catch_option();
-	test_main_ft_pf();
+	if (
+		pf->format_bit.string
+		)
+	{
+		pf->intern_str = va_arg(pf->list, char*);
+		return (1);
+	}
+	else if (
+		pf->format_bit.character
+		)
+	{
+		pf->char_buffer[0] = (char)va_arg(pf->list, int);
+		pf->intern_str = pf->char_buffer;
+		return (1);
+	}
+	else
+		return (0);
 }
 
-int main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	//	g_test = 1;
-	g_log = TRACE;
-	test();
-
-
-	return (EXIT_SUCCESS);
-}

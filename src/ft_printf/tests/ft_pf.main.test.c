@@ -10,13 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 void test_ft_pf_catch_format();
-void test_ft_pf_get_variable();
+void test_ft_pf$get_nb();
+void test_pf$get_str();
+
 
 void test_main_ft_pf()
 {
 	test_ft_pf_catch_format();
-	test_ft_pf_get_variable();
+	test_ft_pf$get_nb();
+	test_pf$get_str();
+
 }

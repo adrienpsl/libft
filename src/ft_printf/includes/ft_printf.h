@@ -78,10 +78,10 @@ typedef struct s_pf
 {
 	int i;
 	int min_length;
-	char *str;
+	char *format;
+	char char_buffer[70];
+	char *intern_str;
 	void *ptr;
-	long format;
-	char string[70];
 	va_list list;
 	t_buffer *buff;
 	t_pf_format format_bit;
@@ -95,5 +95,6 @@ int ft_printf(const char *format, ...);
 int pf$catch_format(t_pf *pf);
 
 int pf$get_number(t_pf *pf);
+int pf$get_str(t_pf *pf);
 
 #endif

@@ -83,7 +83,7 @@ static uintmax_t get_va_signed(t_pf *pf)
 		nb < 0
 		)
 	{
-		pf->string[0] = '-';
+		pf->char_buffer[0] = '-';
 		nb = -nb;
 	}
 	return (nb);
@@ -107,10 +107,11 @@ int pf$get_number(t_pf *pf)
 		return (0);
 	{
 		itoa_unsigned(
-			pf->string[0] ? pf->string + 1 : pf->string,
+			pf->char_buffer[0] ? pf->char_buffer + 1 : pf->char_buffer,
 			nb,
 			get_base(pf)
 		);
+		pf->intern_str = pf->char_buffer;
 		return (1);
 	}
 }
