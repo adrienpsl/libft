@@ -48,9 +48,7 @@ int pf$print(t_pf *pf)
 		0 == pf->format_bit.minus
 		)
 		add_padding(pf);
-	{
-		ft_buffer_add(&pf->buff, pf->intern_str, length);
-	}
+	ft_buffer_add(&pf->buff, pf->intern_str, length);
 	if (
 		1 == pf->format_bit.minus
 		)

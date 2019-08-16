@@ -36,8 +36,8 @@ void test()
 //	test_ft_array_main();
 //	test_ft_s_main();
 //	test_ft_io$catch_option();
-//	test_main_ft_pf();
 	test_main_ft_buffer();
+	test_main_ft_pf();
 }
 
 int main(int ac, char **av)

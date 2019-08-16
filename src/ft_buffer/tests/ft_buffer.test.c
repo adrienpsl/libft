@@ -10,9 +10,50 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <test.h>
+#include <libft.test.h>
 #include "libft.h"
 
 void test_ft_buffer()
 {
+
+	t_buffer buffer;
+	char *a = "c";
+	char str[2000] = { 0 };
+
+
+	// test add 1022 char
+	{
+		ft_bzero(&buffer, sizeof(t_buffer));
+		for (int i = 0; i < 1022; ++i)
+		{
+			ft_buffer_add(&buffer, a, 1);
+			str[i] = 'c';
+		}
+		if (
+			ft_strlen(buffer.data) != 1022
+			|| buffer.length != 1022
+			|| ft_str_cmp(str, buffer.data))
+			log_test(1)
+	}
+
+	// test if print and reset
+	{
+		g_test = 1;
+		lib_clear_testbuff();
+
+		char clear[2000] = "et voila encore du texte putain";
+		ft_buffer_add(&buffer, clear, ft_strlen(clear));
+
+		str[1023] = 'c';
+		if (
+			ft_str_cmp(g_test_buffer, str)
+			|| buffer.length != (int)ft_strlen(clear)
+			|| ft_memcmp(clear, buffer.data, 1024)
+			)
+			log_test(2)
+
+		g_test = 0;
+	}
 
 }

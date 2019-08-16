@@ -15,13 +15,11 @@
 
  int utils(char *format, char *result, ...)
 {
-	t_array *array = ft_array$init(2000, 1);
 	int ret = 0;
 	t_pf p;
 	t_pf *pf = &p;
 
 	ft_bzero(pf, sizeof(t_pf));
-
 	pf->format = format;
 	pf$catch_format(pf);
 
@@ -31,20 +29,43 @@
 	va_end(pf->list);
 
 	pf$print(pf);
-	if (ft_str_cmp(array->data, result))
+	if (ft_str_cmp(pf->buff.data, result))
 	{
 		printf("-%s-\n", result);
-		printf("-%s-\n", array->data);
+		printf("-%s-\n", pf->buff.data);
 		ret = (1);
 	}
-	ft_array$free(&array);
 
 	return (ret);
 }
 
 void test_pf$print()
 {
-	if (utils("10d", "        22", 22))
+ 	// test padding right
+ 	if (utils("10d", "        22", 22))
 		log_test(1)
-	printf("%22s \n", "toto");
+
+	// test padding left
+	if (utils("-10d", "22        ", 22))
+		log_test(1)
+
+	// test padding little than number
+	if (utils("-5d", "12345678", 12345678))
+		log_test(1)
+
+	// test padding little than number
+	if (utils("-010x", "0xbc614e00", 12345678))
+		log_test(1)
+
+	// test with 0 and padding
+	if (utils("010b", "0000101010", 42))
+		log_test(1)
+
+	// test with str
+	if (utils("010s", "0012345678", "12345678"))
+		log_test(1)
+
+	// test with char
+	if (utils("1c", "a", 'a'))
+		log_test(1)
 }
