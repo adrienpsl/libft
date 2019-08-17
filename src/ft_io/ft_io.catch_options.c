@@ -22,7 +22,7 @@ static int check(
 	void (*f_usage)(char)
 )
 {
-	if (NULL == av || NULL == *av)
+	if (NULL == av)
 		return (
 			ft_log$message(F, L,
 						   "ft_io$catch_options error: array av (null)",
