@@ -10,40 +10,57 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include <ft_array.h>
-#include <test.h>
 #include <libft.test.h>
-#include <ft_mem.h>
-#include "libft.h"
+#include <test.h>
 
-void test_ft_array$utils()
+void test_ft_array$cmp()
 {
 	/*
-	* test ft_array$clear
+	* test error handling
 	* */
 	{
-		// test error handling
+		int data[10] = { 0, 10, 2, 2, 23, 342 };
+		t_array *array = ft_array$init_data(data, 10, sizeof(int));
+		t_array *ret;
+
+		g_test = 1;
+		lib_clear_testbuff();
+
+		// null array
 		{
-			g_test = 1;
-			lib_clear_testbuff();
-			ft_array$clear(NULL);
-			if (
-				lib_cmp_testbuff_log("ft_array$clear arg ptr (null)\n")
+			ret = ft_array$slice(NULL, 1, 2);
+			if (ret
+				|| lib_cmp_testbuff_log(
+				"ft_array$slice array ptr (null)\n")
 				)
 				log_test(0)
 		}
 
-		// test all good
-		int data[10] = { 0, 10, 2, 2, 23, 342 };
-		int data_empty[10] = { 0 };
-		t_array *array = ft_array$init_data(data, 10, sizeof(int));
-		ft_array$clear(array);
-		if (
-			array->length
-			|| array->i
-			|| ft_memcmp(data_empty, array->data, sizeof(int) * 10)
-			)
-			log_test(1)
+		// neg nb
+		{
+			ret = ft_array$slice(array, -1, 2);
+			if (ret
+				|| lib_cmp_testbuff_log(
+				"ft_array$slice at / from  < 0\n")
+				)
+				log_test(0)
+
+			ret = ft_array$slice(array, 1, -2);
+			if (ret
+				|| lib_cmp_testbuff_log(
+				"ft_array$slice at / from  < 0\n")
+				)
+				log_test(0)
+		}
+
+		g_test = 0;
+		ft_array$free(&array);
+	}
+
+	/*
+	* test cmp
+	* */
+	{
 	}
 }
