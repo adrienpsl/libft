@@ -60,18 +60,18 @@
 
 typedef struct s_pf_format
 {
-	unsigned int minus: 1;
-	unsigned int wildard: 1;
-	unsigned int dot: 1;
-	unsigned int zero: 1;
-	unsigned int little: 1;
-	unsigned int tall: 1;
-	unsigned int string: 1;
-	unsigned int decimal: 1;
-	unsigned int character: 1;
-	unsigned int hexa: 1;
-	unsigned int binary: 1;
-	unsigned int unsign: 1;
+	unsigned long minus: 1;
+	unsigned long wildard: 1;
+	unsigned long dot: 1;
+	unsigned long zero: 1;
+	unsigned long little: 1;
+	unsigned long tall: 1;
+	unsigned long string: 1;
+	unsigned long decimal: 1;
+	unsigned long character: 1;
+	unsigned long hexa: 1;
+	unsigned long binary: 1;
+	unsigned long unsign: 1;
 	int padding;
 } t_pf_format;
 
