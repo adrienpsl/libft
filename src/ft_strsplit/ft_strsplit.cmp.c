@@ -28,7 +28,7 @@ int ft_strsplit_cmp(char **split_1, char **split_2)
 	}
 	if (*split_1 != *split_2)
 	{
-		ft_printf("split cmp not same end");
+		ft_printf("split cmp not same end\n");
 		return (1);
 	}
 	return (0);
