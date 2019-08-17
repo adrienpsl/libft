@@ -89,7 +89,7 @@ int ft_io$catch_option(
 			)
 			return (i + 1);
 		if (
-			av[i][0] != '-'
+			av[i][0] != '-' || !ft_str_cmp("-", av[i])
 			)
 			break;
 		if (
