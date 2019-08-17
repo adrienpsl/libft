@@ -52,7 +52,7 @@ int lib_cmp_testbuff(char *expected)
 {
 	if (ft_str_cmp(expected, g_test_buffer))
 	{
-		printf("expected: %s", expected);
+		printf("expected: %s\n", expected);
 		printf("result  : %s\n", g_test_buffer);
 		lib_clear_testbuff();
 		return (1);

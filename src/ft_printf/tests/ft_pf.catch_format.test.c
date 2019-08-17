@@ -21,10 +21,10 @@ void test_ft_pf_catch_format()
 	// test end str
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "";
+		pf.format = "%";
 		ret = pf$catch_format(&pf);
 		if (
-			!ret
+			ret != -1
 			|| *pf.format
 			|| *(int *)&pf.format_bit
 			|| pf.format_bit.padding
@@ -35,7 +35,7 @@ void test_ft_pf_catch_format()
 	// no element
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "toto";
+		pf.format = "%toto";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
@@ -49,7 +49,7 @@ void test_ft_pf_catch_format()
 	// test just first
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "-";
+		pf.format = "%-";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
@@ -64,7 +64,7 @@ void test_ft_pf_catch_format()
 	// test just first two
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "0";
+		pf.format = "%0";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
@@ -78,7 +78,7 @@ void test_ft_pf_catch_format()
 	// test first all option
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "0....-000******--toto";
+		pf.format = "%0....-000******--toto";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
@@ -92,7 +92,7 @@ void test_ft_pf_catch_format()
 	// test first second all format
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "lllllhhlhlhhhllhhllhtoto";
+		pf.format = "%lllllhhlhlhhhllhhllhtoto";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != -1
@@ -106,7 +106,7 @@ void test_ft_pf_catch_format()
 	// test only first cast
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "stoto";
+		pf.format = "%stoto";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != 0
@@ -120,7 +120,7 @@ void test_ft_pf_catch_format()
 	// test last cast
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "btoto";
+		pf.format = "%btoto";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != 0
@@ -134,7 +134,7 @@ void test_ft_pf_catch_format()
 	// test str mix all and padding mix
 	{
 		ft_bzero(&pf, sizeof(t_pf));
-		pf.format = "-***-...003200hhhllllhh32bbtoto";
+		pf.format = "%-***-...003200hhhllllhh32bbtoto";
 		ret = pf$catch_format(&pf);
 		if (
 			ret != 0

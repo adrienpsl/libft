@@ -77,12 +77,9 @@ typedef struct s_pf_format
 
 typedef struct s_pf
 {
-	int i;
-	int min_length;
 	char *format;
 	char char_buffer[70];
 	char *intern_str;
-	void *ptr;
 	va_list list;
 	t_buffer buff;
 	t_pf_format format_bit;

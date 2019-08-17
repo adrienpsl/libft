@@ -74,20 +74,25 @@ static int catch(
 			)
 			break;
 	}
-	return (start != *format_s);
+	return (start != *format_s ? 0 : 1);
 }
 
 // TODO : mettre seccurity if same format given like h and l
 int pf$catch_format(t_pf *pf)
 {
+	pf->format++;
 	if (*pf->format == '%')
+	{
+		ft_buffer_add(&pf->buff, "%", 1);
+		pf->format++;
 		return (1);
+	}
 	{
 		catch(&pf->format, "-*.0", &pf->format_bit, 0);
 		catch(&pf->format, "....hl", &pf->format_bit, 0);
 	}
 	if (
-		!catch(&pf->format, "......sdcxbu", &pf->format_bit, 1)
+		OK != catch(&pf->format, "......sdcxbu", &pf->format_bit, 1)
 		)
 		return (-1);
 	{

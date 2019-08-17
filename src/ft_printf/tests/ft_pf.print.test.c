@@ -42,30 +42,30 @@
 void test_pf$print()
 {
  	// test padding right
- 	if (utils("10d", "        22", 22))
+ 	if (utils("%10d", "        22", 22))
 		log_test(1)
 
 	// test padding left
-	if (utils("-10d", "22        ", 22))
+	if (utils("%-10d", "22        ", 22))
 		log_test(1)
 
 	// test padding little than number
-	if (utils("-5d", "12345678", 12345678))
+	if (utils("%-5d", "12345678", 12345678))
 		log_test(1)
 
 	// test padding little than number
-	if (utils("-010x", "0xbc614e00", 12345678))
+	if (utils("%-010x", "0xbc614e00", 12345678))
 		log_test(1)
 
 	// test with 0 and padding
-	if (utils("010b", "0000101010", 42))
+	if (utils("%010b", "0000101010", 42))
 		log_test(1)
 
 	// test with str
-	if (utils("010s", "0012345678", "12345678"))
+	if (utils("%010s", "0012345678", "12345678"))
 		log_test(1)
 
 	// test with char
-	if (utils("1c", "a", 'a'))
+	if (utils("%1c", "a", 'a'))
 		log_test(1)
 }

@@ -35,7 +35,7 @@ int ft_buffer_add(t_buffer *buff, char *data, int size)
 	{
 		ft_buffer_clean(buff);
 	}
-	ft_strcat(buff->data, data);
+	ft_memcpy(buff->data + buff->length, data, size);
 	buff->length += size;
 	return (0);
 }

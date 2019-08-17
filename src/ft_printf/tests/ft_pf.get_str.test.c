@@ -29,16 +29,16 @@ void test_pf$get_str()
 	t_pf pf;
 
 	// str test
-	utils(&pf, "sd", "toto");
+	utils(&pf, "%sd", "toto");
 	if (0 != ft_str_cmp("toto", pf.intern_str))
 		log_test(0)
 
 	// char test
-	utils(&pf, "cd", 'c');
+	utils(&pf, "%cd", 'c');
 	if (0 != ft_str_cmp("c", pf.intern_str))
 		log_test(0)
 
-	utils(&pf, "cd", '\t');
+	utils(&pf, "%cd", '\t');
 	if (0 != ft_str_cmp("\t", pf.intern_str))
 		log_test(0)
 }

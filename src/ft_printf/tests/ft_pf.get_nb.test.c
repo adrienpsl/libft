@@ -53,79 +53,79 @@ void test_ft_pf$get_nb()
 
 	// int test
 	{
-		utils(&pf, "d", INT_MAX);
+		utils(&pf, "%d", INT_MAX);
 		if (0 != ft_str_cmp("2147483647",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "d", INT_MIN);
+		utils(&pf, "%d", INT_MIN);
 		if (0 != ft_str_cmp("-2147483648",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "u", UINT_MAX);
+		utils(&pf, "%u", UINT_MAX);
 		if (0 != ft_str_cmp("4294967295",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "d", 0);
+		utils(&pf, "%d", 0);
 		if (0 != ft_str_cmp("0",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "du", 10);
+		utils(&pf, "%du", 10);
 		if (0 != ft_str_cmp("10",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "d", -1);
+		utils(&pf, "%d", -1);
 		if (0 != ft_str_cmp("-1",pf.intern_str))
 			log_test(3)
 	}
 
 	// long test
 	{
-		utils(&pf, "ld", LONG_MAX);
+		utils(&pf, "%ld", LONG_MAX);
 		if (0 != ft_str_cmp("9223372036854775807",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "ld", LONG_MIN);
+		utils(&pf, "%ld", LONG_MIN);
 		if (0 != ft_str_cmp("-9223372036854775808",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "lu", ULONG_MAX);
+		utils(&pf, "%lu", ULONG_MAX);
 		if (0 != ft_str_cmp("18446744073709551615",pf.intern_str))
 			log_test(3)
 	}
 
 	// test long with binaire,
 	{
-		utils(&pf, "b", LONG_MAX);
+		utils(&pf, "%b", LONG_MAX);
 		if (0 != ft_str_cmp("11111111111111111111111111111111",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "lb", LONG_MIN);
+		utils(&pf, "%lb", LONG_MIN);
 		if (0 != ft_str_cmp("1000000000000000000000000000000000000000000000000000000000000000",pf.intern_str))
 			log_test(3)
 
 
-		utils(&pf, "hb", ULONG_MAX);
+		utils(&pf, "%hb", ULONG_MAX);
 		if (0 != ft_str_cmp("1111111111111111",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "lb", 0);
+		utils(&pf, "%lb", 0);
 		if (0 != ft_str_cmp("0",pf.intern_str))
 			log_test(3)
 	}
 
 	// test with hexa
 	{
-		utils(&pf, "hx", LONG_MAX);
+		utils(&pf, "%hx", LONG_MAX);
 		if (0 != ft_str_cmp("0xffff",pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "lx", LONG_MAX);
+		utils(&pf, "%lx", LONG_MAX);
 		if (0 != ft_str_cmp(
 			"0x7fffffffffffffff",
 			pf.intern_str))
 			log_test(3)
 
-		utils(&pf, "x", ULONG_MAX);
+		utils(&pf, "%x", ULONG_MAX);
 		if (0 != ft_str_cmp("0xffffffff",pf.intern_str))
 			log_test(3)
 	}

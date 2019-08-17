@@ -19,6 +19,9 @@
 # define FREE_THIRD  1 << 2
 # define NOT_FIND  -1
 
+# define OK 0
+# define ERROR 1
+
 # define FT_CMP_STRING 1
 # define FT_CMP_INT 2
 
