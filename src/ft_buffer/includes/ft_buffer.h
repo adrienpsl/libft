@@ -19,6 +19,7 @@ typedef struct s_buffer
 {
 	int length;
 	char data[BUFFER_SIZE + 1];
+	int fd;
 } t_buffer;
 
 t_buffer *ft_buffer_new(size_t size, int fd);

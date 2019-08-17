@@ -88,6 +88,7 @@ typedef struct s_pf
 
 //int ft_sprintf(t_buffer *buffer, char *format, ...);
 int ft_printf(const char *format, ...);
+int ft_dprintf(int fd, const char *format, ...);
 
 // put title
 int pf$catch_format(t_pf *pf);
