@@ -39,6 +39,9 @@ int static check(t_array *array, int from, int at)
 	);
 }
 
+// 1 2 3 / 4 5 6 7
+//
+// 1 2 3
 void ft_array$remove_from(t_array *array, int from, int at)
 {
 	if (
@@ -50,7 +53,6 @@ void ft_array$remove_from(t_array *array, int from, int at)
 		ft_array$at(array, at),
 		(array->length - at) * array->element_size
 	);
-	ft_bzero(ft_array$at(array, at), (at - from) * array->element_size);
 	array->length -= at - from;
 }
 

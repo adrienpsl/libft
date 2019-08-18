@@ -41,7 +41,6 @@ void *ft_array$func(
 	void *param
 )
 {
-
 	if (
 		check(array, func)
 		)
