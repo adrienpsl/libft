@@ -58,14 +58,14 @@ void test_ft_array$remove_from()
 			ft_array$remove_from(array, 0, 20);
 			if (
 				lib_cmp_testbuff_log(
-					"ft_array$remove_from at / from >= length\n")
+					"ft_array$remove_from at / from > length\n")
 				)
 				log_test(0)
 
 			ft_array$remove_from(array, 20, 21);
 			if (
 				lib_cmp_testbuff_log(
-					"ft_array$remove_from at / from >= length\n")
+					"ft_array$remove_from at / from > length\n")
 				)
 				log_test(0)
 		}

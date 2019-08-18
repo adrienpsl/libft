@@ -25,6 +25,7 @@ void test_ft_array$utils();
 void test_ft_array$cmp();
 void test_ft_array$remove_from();
 void test_ft_array$slice();
+void test_ft_array$slice_and_remove();
 
 void test_ft_array_main(void)
 {
@@ -43,4 +44,5 @@ void test_ft_array_main(void)
 	test_ft_array$cmp();
 	test_ft_array$remove_from();
 	test_ft_array$slice();
+	test_ft_array$slice_and_remove();
 }

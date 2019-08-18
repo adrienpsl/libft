@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_array.h>
-#include <libft.test.h>
 #include <test.h>
+#include <libft.test.h>
+#include "libft.h"
 
-void test_ft_array$slice()
+void test_ft_array$slice_and_remove()
 {
 	/*
 	* test error handling
@@ -29,44 +29,44 @@ void test_ft_array$slice()
 
 		// null array
 		{
-			ret = ft_array$slice(NULL, 1, 2);
+			ret = ft_array$slice_and_remove(NULL, 1, 2);
 			if (ret
 				|| lib_cmp_testbuff_log(
-				"ft_array$slice array ptr (null)\n")
+				"ft_array$slice_and_remove array ptr (null)\n")
 				)
 				log_test(0)
 		}
 
 		// neg nb
 		{
-			ret = ft_array$slice(array, -1, 2);
+			ret = ft_array$slice_and_remove(array, -1, 2);
 			if (ret
 				|| lib_cmp_testbuff_log(
-				"ft_array$slice at / from  < 0\n")
+				"ft_array$slice_and_remove at / from  < 0\n")
 				)
 				log_test(0)
 
-			ret = ft_array$slice(array, 1, -2);
+			ret = ft_array$slice_and_remove(array, 1, -2);
 			if (ret
 				|| lib_cmp_testbuff_log(
-				"ft_array$slice at >= from\n")
+				"ft_array$slice_and_remove at >= from\n")
 				)
 				log_test(0)
 		}
 
 		// nb bigger than limint
 		{
-			ret = ft_array$slice(array, 0, 20);
+			ret = ft_array$slice_and_remove(array, 0, 20);
 			if (ret
 				|| lib_cmp_testbuff_log(
-				"ft_array$slice at / from > length\n")
+				"ft_array$slice_and_remove at / from > length\n")
 				)
 				log_test(0)
 
-			ret = ft_array$slice(array, 20, 21);
+			ret = ft_array$slice_and_remove(array, 20, 21);
 			if (ret
 				|| lib_cmp_testbuff_log(
-				"ft_array$slice at / from > length\n")
+				"ft_array$slice_and_remove at / from > length\n")
 				)
 				log_test(0)
 		}
@@ -74,46 +74,4 @@ void test_ft_array$slice()
 		ft_array$free(&array);
 	}
 
-	/*
-	* test no errror
-	* */
-	{
-		int data[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-		t_array *array = ft_array$init_data(data, 10, sizeof(int));
-		t_array *result;
-		t_array *ret;
-
-		// test slice start of the tab
-		{
-			ret = ft_array$slice(array, 0, 5);
-			result = ft_array$init_data(data, 5, sizeof(int));
-
-			if (
-				ft_array$cmp(result, ret, ft_array$cmp_int)
-				)
-				log_test(1)
-		}
-
-		// test slice start of middle
-		{
-			ret = ft_array$slice(array, 2, 7);
-			result = ft_array$init_data(data + 2, 5, sizeof(int));
-
-			if (
-				ft_array$cmp(result, ret, ft_array$cmp_int)
-				)
-				log_test(1)
-		}
-
-		// test at the end
-		{
-			ret = ft_array$slice(array, 2, 10);
-			result = ft_array$init_data(data + 2, 8, sizeof(int));
-
-			if (
-				ft_array$cmp(result, ret, ft_array$cmp_int)
-				)
-				log_test(1)
-		}
-	}
 }

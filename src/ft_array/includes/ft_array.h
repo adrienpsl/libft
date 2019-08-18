@@ -45,6 +45,7 @@ typedef struct s_array
 t_array *ft_array$init(int nb_elements, size_t element_size);
 t_array *ft_array$init_data(void *start, int nb_element, size_t element_size);
 t_array *ft_array$slice(t_array *array, int from, int at);
+t_array *ft_array$slice_and_remove(t_array *array, int from, int at);
 void ft_array$free(t_array **p_array);
 
 void *ft_array$next(t_array *array);
