@@ -35,6 +35,16 @@ static int check(t_array *array, int (*f)(void *, void *))
 	return (0);
 }
 
+static void if_print_add_line(int(*func)(void *, void *),)
+{
+	if (
+		func == ft_array$func_print_int || func == ft_array$func_print_str
+		)
+	{
+		ft_printf("\n");
+	}
+}
+
 void *ft_array$func(
 	t_array *array,
 	int(*func)(void *, void *),
@@ -48,20 +58,19 @@ void *ft_array$func(
 		)
 		return (NULL);
 	array->i = 0;
+	if (
+		func(ft_array$at(array, 0), param)
+		)
+		return (element);
 	while (
 		(element = ft_array$next(array))
 		)
 	{
-		if (func(element, param))
-		{
+		if (
+			func(element, param)
+			)
 			return (element);
-		}
 	}
-	if (
-		func == ft_array$func_print_int || func == ft_array$func_print_str
-		)
-	{
-		ft_printf("\n");
-	}
+	if_print_add_line(func);
 	return (NULL);
 }
