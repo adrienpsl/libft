@@ -74,4 +74,76 @@ void test_ft_array$slice_and_remove()
 		ft_array$free(&array);
 	}
 
+
+	/*
+	* test no error
+	* */
+	{
+		int data[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+		t_array *result;
+		t_array *ret;
+
+		// test slice start of the tab
+		{
+			t_array *array = ft_array$init_data(data, 10, sizeof(int));
+
+			ret = ft_array$slice_and_remove(array, 0, 5);
+			result = ft_array$init_data(data, 5, sizeof(int));
+			t_array *new_array_res = ft_array$init_data(data + 5, 5,
+														sizeof(int));
+
+			if (
+				ft_array$cmp(result, ret, ft_array$cmp_int)
+				|| ft_array$cmp(new_array_res, array, ft_array$cmp_int)
+				)
+				log_test(1)
+			ft_array$free(&array);
+			ft_array$free(&ret);
+			ft_array$free(&result);
+			ft_array$free(&new_array_res);
+		}
+
+		// test slice middle
+		{
+			t_array *array = ft_array$init_data(data, 10, sizeof(int));
+
+			ret = ft_array$slice_and_remove(array, 2, 7);
+			result = ft_array$init_data(data + 2, 5, sizeof(int));
+			int new_data[10] = { 0, 1, 7, 8, 9 };
+			t_array *new_array_res = ft_array$init_data(new_data, 5,
+														sizeof(int));
+
+			if (
+				ft_array$cmp(result, ret, ft_array$cmp_int)
+				|| ft_array$cmp(new_array_res, array, ft_array$cmp_int)
+				)
+				log_test(1)
+
+			ft_array$free(&array);
+			ft_array$free(&ret);
+			ft_array$free(&result);
+			ft_array$free(&new_array_res);
+		}
+
+		// test slice end
+		{
+			t_array *array = ft_array$init_data(data, 10, sizeof(int));
+
+			ret = ft_array$slice_and_remove(array, 5, array->length);
+			result = ft_array$init_data(data + 5, 5, sizeof(int));
+			t_array *new_array_res = ft_array$init_data(data, 5,
+														sizeof(int));
+
+			if (
+				ft_array$cmp(result, ret, ft_array$cmp_int)
+				|| ft_array$cmp(new_array_res, array, ft_array$cmp_int)
+				)
+				log_test(1)
+
+			ft_array$free(&array);
+			ft_array$free(&ret);
+			ft_array$free(&result);
+			ft_array$free(&new_array_res);
+		}
+	}
 }
