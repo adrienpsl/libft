@@ -41,7 +41,6 @@ void *ft_array$func(
 	void *param
 )
 {
-	void *element;
 
 	if (
 		check(array, func)
@@ -49,13 +48,14 @@ void *ft_array$func(
 		return (NULL);
 	array->i = 0;
 	while (
-		(element = ft_array$next(array))
+		array->i < array->length
 		)
 	{
-		if (func(element, param))
-		{
-			return (element);
-		}
+		if (
+			func(ft_array$at(array, array->i), param)
+			)
+			return (ft_array$at(array, array->i));
+		array->i++;
 	}
 	if (
 		func == ft_array$func_print_int || func == ft_array$func_print_str
