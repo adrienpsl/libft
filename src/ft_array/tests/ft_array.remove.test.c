@@ -13,7 +13,6 @@
 #include <test.h>
 #include <libft.test.h>
 #include <ft_array.h>
-#include <ft_str.h>
 #include "libft.h"
 
 void test_ft_array_remove()
@@ -162,7 +161,7 @@ void test_ft_array_remove()
 			ret_1 = ft_array$remove(array, 0);
 			if (!ret_1 || lib_cmp_testbuff_log(
 				"ft_array$remove index bigger than length/neg\n"))
-			    log_test(7)
+				log_test(7)
 
 			g_test = 0;
 		}

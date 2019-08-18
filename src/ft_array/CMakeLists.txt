@@ -36,6 +36,7 @@ target_sources(${__LIB_NAME__}
         tests/ft_array.remove.test.c
         tests/ft_array.utils.test.c
         tests/ft_array.slice.test.c
+        tests/ft_array.remove_from.test.c
         tests/main.test.c
         )
 

@@ -22,7 +22,7 @@ int static check(t_array *array, int from, int at)
 		)
 		message = "ft_array$slice array ptr (null)";
 	else if (
-		at >= array->length || from >= array->length
+		from >= array->length || at > array->length
 		)
 		message = "ft_array$slice at / from >= length";
 	else if (

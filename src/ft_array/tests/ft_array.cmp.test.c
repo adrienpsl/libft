@@ -14,7 +14,7 @@
 #include <libft.test.h>
 #include <test.h>
 
-void test_ft_array_cmp()
+void test_ft_array$cmp()
 {
 	/*
 	* test error handling
