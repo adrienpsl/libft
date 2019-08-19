@@ -19,6 +19,8 @@
 # include <stdlib.h>
 # include <stdint.h>
 
+# define BASE_10 "0123456789"
+
 int get_next_line(const int fd, char **line, int need_free);
 int ft_atoi(const char *str);
 int ft_itoa_base(
