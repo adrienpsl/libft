@@ -82,6 +82,7 @@ typedef struct s_pf
 	char *intern_str;
 	va_list list;
 	t_buffer buff;
+	char *extern_buff;
 	t_pf_format format_bit;
 } t_pf;
 
@@ -89,6 +90,7 @@ typedef struct s_pf
 //int ft_sprintf(t_buffer *buffer, char *format, ...);
 int ft_printf(const char *format, ...);
 int ft_dprintf(int fd, const char *format, ...);
+int ft_sprintf(char *buffer, const char *format, ...);
 
 // put title
 int pf$catch_format(t_pf *pf);

@@ -75,3 +75,19 @@ int ft_dprintf(int fd, const char *format, ...)
 	ft_buffer_clean(&pf.buff);
 	return (0);
 }
+
+int ft_sprintf(char *buffer, const char *format, ...)
+{
+	t_pf pf;
+
+	ft_bzero(&pf, sizeof(t_pf));
+	pf.extern_buff = buffer;
+	pf.format = (char *)format;
+	{
+		va_start(pf.list, format);
+		loop(&pf);
+		va_end(pf.list);
+	}
+	ft_buffer_clean(&pf.buff);
+	return (0);
+}

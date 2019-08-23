@@ -27,6 +27,16 @@ size_t padding_calculation(t_pf *pf)
 	return (length);
 }
 
+static void print(t_pf *pf, char *data, int size)
+{
+	if (pf->extern_buff)
+		ft_strcat(pf->extern_buff, data);
+	else
+	{
+		ft_buffer_add(&pf->buff, data, size);
+	}
+}
+
 void add_padding(t_pf *pf)
 {
 	static char buff[2] = { 0 };
@@ -34,7 +44,7 @@ void add_padding(t_pf *pf)
 	buff[0] = pf->format_bit.zero ? '0' : ' ';
 	while (pf->format_bit.padding)
 	{
-		ft_buffer_add(&pf->buff, buff, 1);
+		print(pf, buff, 1);
 		pf->format_bit.padding -= 1;
 	}
 }
@@ -48,7 +58,7 @@ int pf$print(t_pf *pf)
 		0 == pf->format_bit.minus
 		)
 		add_padding(pf);
-	ft_buffer_add(&pf->buff, pf->intern_str, length);
+	print(pf, pf->intern_str, length);
 	if (
 		1 == pf->format_bit.minus
 		)
