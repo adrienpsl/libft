@@ -14,12 +14,19 @@
 #include <ft_buffer.h>
 # include "ft_printf.h"
 
+static void handle_wildcard(t_pf *pf)
+{
+	if (pf->format_bit.wildard)
+	    pf->format_bit.padding = va_arg(pf->list, int);
+}
+
 static void handle_variable(t_pf *pf)
 {
 	if (
 		OK == pf$catch_format(pf)
 		)
 	{
+		handle_wildcard(pf);
 		pf$get_str(pf);
 		pf$get_number(pf);
 		pf$print(pf);
@@ -38,7 +45,7 @@ static void loop(t_pf *pf)
 			handle_variable(pf);
 		else
 		{
-			ft_buffer_add(&pf->buff, pf->format, 1);
+			pf$utils_print(pf, pf->format, 1);
 			pf->format++;
 		}
 	}

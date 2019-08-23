@@ -99,4 +99,9 @@ int pf$get_number(t_pf *pf);
 int pf$get_str(t_pf *pf);
 int pf$print(t_pf *pf);
 
+/*
+**	utils
+*/
+void pf$utils_print(t_pf *pf, char *data, int size);
+
 #endif
