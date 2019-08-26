@@ -54,7 +54,10 @@ void test_pf$print()
 		log_test(1)
 
 	// test padding little than number
-	if (utils("%-010x", "0xbc614e00", 12345678))
+	if (utils("%-010x", "bc614e0000", 12345678))
+		log_test(1)
+
+	if (utils("%010x", "0000bc614e", 12345678))
 		log_test(1)
 
 	// test with 0 and padding
