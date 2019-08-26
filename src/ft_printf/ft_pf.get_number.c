@@ -105,10 +105,6 @@ int pf$get_number(t_pf *pf)
 		nb = get_va_signed(pf);
 	else
 		return (0);
-	if (
-		pf->format_bit.hexa
-		)
-		ft_strcat(pf->char_buffer, "0x");
 	itoa_unsigned(
 		pf->char_buffer + ft_strlen(pf->char_buffer),
 		nb,

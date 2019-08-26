@@ -82,6 +82,10 @@ void test_ft_printf()
 		ft_printf("%22s", "12");
 		if (lib_cmp_testbuff("                    12"))
 			log_test(1)
+
+		ft_printf("0x  %010x", 42);
+		if (lib_cmp_testbuff("0x  000000002a"))
+			log_test(1)
 	}
 
 	g_test = 0;
