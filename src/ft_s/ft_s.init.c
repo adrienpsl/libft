@@ -13,7 +13,7 @@
 #include <ft_s.h>
 #include <ft_mem.h>
 
-t_s *ft_s$init(size_t size)
+t_s *fts__init(size_t size)
 {
 	t_s *s;
 	size_t capacity;

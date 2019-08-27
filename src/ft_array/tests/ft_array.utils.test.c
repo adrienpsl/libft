@@ -27,7 +27,7 @@ void test_ft_array$utils()
 		{
 			g_test = 1;
 			lib_clear_testbuff();
-			ft_array$clear(NULL);
+			ftarray__clear(NULL);
 			if (
 				lib_cmp_testbuff_log("ft_array$clear arg ptr (null)\n")
 				)
@@ -37,8 +37,8 @@ void test_ft_array$utils()
 		// test all good
 		int data[10] = { 0, 10, 2, 2, 23, 342 };
 		int data_empty[10] = { 0 };
-		t_array *array = ft_array$init_data(data, 10, sizeof(int));
-		ft_array$clear(array);
+		t_array *array = ftarray__init_data(data, 10, sizeof(int));
+		ftarray__clear(array);
 		if (
 			array->length
 			|| array->i

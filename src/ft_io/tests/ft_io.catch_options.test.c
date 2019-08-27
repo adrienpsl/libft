@@ -24,7 +24,7 @@ void usage(char c)
 	ft_printf("usage : %s \n", b);
 }
 
-void test_ft_io$catch_option()
+void test_ft_iocatch_option()
 {
 	/*
 	* test error handling
@@ -37,7 +37,7 @@ void test_ft_io$catch_option()
 
 		// test no av
 		{
-			ret = ft_io$catch_option(NULL, option_str, &options, usage);
+			ret = ftio__catch_option(NULL, option_str, &options, usage);
 			if (
 				ret != -1
 				||
@@ -49,7 +49,7 @@ void test_ft_io$catch_option()
 
 		// test no option_str
 		{
-			ret = ft_io$catch_option((char **)"", NULL, &options, usage);
+			ret = ftio__catch_option((char **)"", NULL, &options, usage);
 			if (
 				ret != -1
 				|| lib_cmp_testbuff_log(
@@ -60,7 +60,7 @@ void test_ft_io$catch_option()
 
 		// test no options_ptr
 		{
-			ret = ft_io$catch_option((char **)"", "", NULL, usage);
+			ret = ftio__catch_option((char **)"", "", NULL, usage);
 			if (
 				ret != -1
 				|| lib_cmp_testbuff_log(
@@ -71,7 +71,7 @@ void test_ft_io$catch_option()
 
 		// test no function
 		{
-			ret = ft_io$catch_option((char **)"", "NULL", &options, NULL);
+			ret = ftio__catch_option((char **)"", "NULL", &options, NULL);
 			if (
 				ret != -1
 				||
@@ -96,7 +96,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-1", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 1
 				|| options != 1
@@ -111,7 +111,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-1 -5", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 2
 				|| options != (1 | (1 << 5))
@@ -126,7 +126,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-15", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 1
 				|| options != (1 | (1 << 5))
@@ -141,7 +141,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-15 -16", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 2
 				|| options != (1 | (1 << 5) | (1 << 6))
@@ -156,7 +156,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-15 -16 -777778", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 3
 				|| options != (1 | (1 << 5) | (1 << 6) | (1 << 7) | (1 << 8))
@@ -171,7 +171,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-15 -- 16 -777778", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 2
 				|| options != (1 | (1 << 5))
@@ -186,7 +186,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-- 15 -- 16 -777778", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 1
 				|| options != 0
@@ -201,7 +201,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-- 15 -- 16 -777778", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 1
 				|| options != 0
@@ -217,7 +217,7 @@ void test_ft_io$catch_option()
 			options = 0;
 
 			g_test = 1;
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != -1
 				|| options != 0
@@ -236,7 +236,7 @@ void test_ft_io$catch_option()
 			options = 0;
 
 			g_test = 1;
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != -1
 				|| options != 0
@@ -254,7 +254,7 @@ void test_ft_io$catch_option()
 			char **split = ft_strsplit("-- 15 -- 16 -777778", " ");
 			options = 0;
 
-			ret = ft_io$catch_option(split, option_str, &options, usage);
+			ret = ftio__catch_option(split, option_str, &options, usage);
 			if (
 				ret != 1
 				|| options != 0

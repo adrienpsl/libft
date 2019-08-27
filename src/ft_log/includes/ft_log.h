@@ -6,7 +6,7 @@
 #define L __LINE__
 
 #include <errno.h>
-
+extern int g_log;
 int g_log;
 enum e_log_level {
 	QUIET,
@@ -14,7 +14,7 @@ enum e_log_level {
 	TRACE,
 };
 
-int ft_log$null(char *file, int line);
-int ft_log$message(char *file, int line, char *message, int error_code);
+int ftlog__null(char *file, int line);
+int ftlog__message(char *file, int line, char *message, int error_code);
 
 #endif

@@ -23,13 +23,13 @@ static void handle_wildcard(t_pf *pf)
 static void handle_variable(t_pf *pf)
 {
 	if (
-		OK == pf$catch_format(pf)
+		OK == pf__catch_format(pf)
 		)
 	{
 		handle_wildcard(pf);
-		pf$get_str(pf);
-		pf$get_number(pf);
-		pf$print(pf);
+		pf__get_str(pf);
+		pf__get_number(pf);
+		pf__print(pf);
 	}
 	ft_bzero(&pf->format_bit, sizeof(t_pf_format));
 	ft_bzero(&pf->char_buffer, 70);
@@ -45,7 +45,7 @@ static void loop(t_pf *pf)
 			handle_variable(pf);
 		else
 		{
-			pf$utils_print(pf, pf->format, 1);
+			pf__utils_print(pf, pf->format, 1);
 			pf->format++;
 		}
 	}

@@ -25,7 +25,7 @@ void test_ft_$clear()
 		g_test = 1;
 		lib_clear_testbuff();
 
-		ret = ft_s$clear(NULL);
+		ret = fts__clear(NULL);
 		if (
 			!ret
 			|| lib_cmp_testbuff_log("ft_s$clear error: s ptr (null)\n")
@@ -39,11 +39,11 @@ void test_ft_$clear()
 	* test good input
 	* */
 	{
-		t_s *s = ft_s$init(0);
+		t_s *s = fts__init(0);
 		char *test = ft_memalloc(1000);
-		ft_s$add(&s, "1234567890");
+		fts__add(&s, "1234567890");
 
-		ft_s$clear(s);
+		fts__clear(s);
 		if (
 			s->i
 			|| ft_memcmp(test, s->data, s->capacity)

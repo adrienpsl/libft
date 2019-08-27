@@ -22,13 +22,13 @@ void test_ft_array$add()
 	 * ft_array_push : add 1000 nb
 	 * */
 	{
-		t_array *array = ft_array$init(1, sizeof(int));
+		t_array *array = ftarray__init(1, sizeof(int));
 
 		// test if I add 1000 number
 		{
 			for (int i = 0; i < 1000; ++i)
 			{
-				ft_array$push(&array, &i);
+				ftarray__push(&array, &i);
 			}
 			// I assign now because the array is variable
 			int *int_arr = (void *) array->data;
@@ -40,21 +40,21 @@ void test_ft_array$add()
 				)
 				log_test(0)
 		}
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
 	* ft_array$push : add 1000 string
 	* */
 	{
-		t_array *array = ft_array$init(1, sizeof(char *));
+		t_array *array = ftarray__init(1, sizeof(char *));
 		char *string = "toto";
 
 		// test if I add 1000 number
 		{
 			for (int i = 0; i < 1000; ++i)
 			{
-				ft_array$push(&array, &string);
+				ftarray__push(&array, &string);
 			}
 			// I assign now because the array is variable
 			char **str_arr = (char **) array->data;
@@ -67,7 +67,7 @@ void test_ft_array$add()
 				log_test(1)
 		}
 		//			ft_array$func(array, ft_array$func_print_str, NULL);
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 
@@ -75,13 +75,13 @@ void test_ft_array$add()
 	* ft_array$insert : add 1000 nb
 	* */
 	{
-		t_array *array = ft_array$init(1, sizeof(int));
+		t_array *array = ftarray__init(1, sizeof(int));
 
 		// test if I add 1000 number
 		{
 			for (int i = 0; i < 1000; ++i)
 			{
-				ft_array$insert(&array, &i, i);
+				ftarray__insert(&array, &i, i);
 			}
 			// I assign now because the array is variable
 			int *int_arr = (void *) array->data;
@@ -93,24 +93,24 @@ void test_ft_array$add()
 				)
 				log_test(2)
 		}
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
 	* ft_array$insert : add and check if number are right positioning
 	* */
 	{
-		t_array *array = ft_array$init(1, sizeof(int));
+		t_array *array = ftarray__init(1, sizeof(int));
 		int data;
 
 		// test number at middle
 		{
 			data = 2;
-			ft_array$insert(&array, &data, 0);
+			ftarray__insert(&array, &data, 0);
 			data = 3;
-			ft_array$insert(&array, &data, 1);
+			ftarray__insert(&array, &data, 1);
 			data = 1;
-			ft_array$insert(&array, &data, 0);
+			ftarray__insert(&array, &data, 0);
 			int ref_array[10] = { 1, 2, 3 };
 			if (ft_memcmp(ref_array, array->data, sizeof(int) * 4))
 				log_test(3)
@@ -119,21 +119,21 @@ void test_ft_array$add()
 		// add 2 number at each side of the previous one
 		{
 			data = 42;
-			ft_array$insert(&array, &data, 0);
-			ft_array$insert(&array, &data, 4);
+			ftarray__insert(&array, &data, 0);
+			ftarray__insert(&array, &data, 4);
 
 			int ref_array[10] = { 42, 1, 2, 3, 42 };
 			if (ft_memcmp(ref_array, array->data, sizeof(int) * 5))
 				log_test(4)
 		}
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
 	* ft_array$insert : test with bad index
 	* */
 	{
-		t_array *array = ft_array$init(1, sizeof(int));
+		t_array *array = ftarray__init(1, sizeof(int));
 		int data;
 		int ret;
 
@@ -144,7 +144,7 @@ void test_ft_array$add()
 		// test with to big index
 		{
 			data = 42;
-			ret = ft_array$insert(&array, &data, 1);
+			ret = ftarray__insert(&array, &data, 1);
 			if (
 				ret != -1
 				|| array->length
@@ -159,7 +159,7 @@ void test_ft_array$add()
 			}
 		}
 		g_test = 0;
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 }

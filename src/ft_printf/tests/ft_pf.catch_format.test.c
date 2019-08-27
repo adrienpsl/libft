@@ -22,7 +22,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
 			|| *pf.format
@@ -36,7 +36,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%toto";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("toto", pf.format)
@@ -50,7 +50,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%-";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("", pf.format)
@@ -65,7 +65,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%0";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("", pf.format)
@@ -79,7 +79,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%0....-000******--toto";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("toto", pf.format)
@@ -93,7 +93,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%lllllhhlhlhhhllhhllhtoto";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
 			|| ft_str_cmp("toto", pf.format)
@@ -107,7 +107,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%stoto";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != 0
 			|| ft_str_cmp("toto", pf.format)
@@ -121,7 +121,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%btoto";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != 0
 			|| ft_str_cmp("toto", pf.format)
@@ -135,7 +135,7 @@ void test_ft_pf_catch_format()
 	{
 		ft_bzero(&pf, sizeof(t_pf));
 		pf.format = "%-***-...003200hhhllllhh32bbtoto";
-		ret = pf$catch_format(&pf);
+		ret = pf__catch_format(&pf);
 		if (
 			ret != 0
 			|| ft_str_cmp("btoto", pf.format)

@@ -14,11 +14,11 @@
 #include <ft_log.h>
 #include <ft_mem.h>
 
-void ft_s$free(t_s **s)
+void fts__free(t_s **s)
 {
 	if (NULL == s || NULL == *s)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_s$free error: s ptr (null)",
 					   EINVAL);
 		return;

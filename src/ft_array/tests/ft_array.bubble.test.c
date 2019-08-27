@@ -37,7 +37,7 @@ void test_ft_array$bubble(void)
 	* test bad entry
 	* */
 	{
-		t_array *array = ft_array$init(10, sizeof(int));
+		t_array *array = ftarray__init(10, sizeof(int));
 		int param = 1;
 		int ret;
 
@@ -46,7 +46,7 @@ void test_ft_array$bubble(void)
 
 		// test no array
 		{
-			ret = ft_array$sort_bubble(NULL, ft_array$sort_cmp_int, &param);
+			ret = ftarray__sort_bubble(NULL, ftarray__sort_cmp_int, &param);
 			if (!ret
 				|| lib_cmp_testbuff_log(
 				"ft_array$sort_bubble error: array ptr (null)\n")
@@ -56,7 +56,7 @@ void test_ft_array$bubble(void)
 
 		// test no func
 		{
-			ret = ft_array$sort_bubble(array, NULL, &param);
+			ret = ftarray__sort_bubble(array, NULL, &param);
 			if (!ret
 				|| lib_cmp_testbuff_log(
 				"ft_array$sort_bubble error: func ptr (null)\n")
@@ -66,9 +66,9 @@ void test_ft_array$bubble(void)
 
 		// test no param
 		{
-			ft_array$push(&array, &param);
-			ft_array$push(&array, &param);
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, NULL);
+			ftarray__push(&array, &param);
+			ftarray__push(&array, &param);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, NULL);
 			if (ret
 				|| lib_cmp_testbuff_log(
 				"ft_array$sort_cmp_int arg ptr (null)\n")
@@ -77,20 +77,20 @@ void test_ft_array$bubble(void)
 		}
 
 		g_test = 0;
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
 	* sorting test
 	* */
 	{
-		t_array *array = ft_array$init(10, sizeof(int));
+		t_array *array = ftarray__init(10, sizeof(int));
 		int order = 1;
 		int ret;
 
 		// test with 0 number
 		{
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret)
 				log_test(3)
 		}
@@ -98,9 +98,9 @@ void test_ft_array$bubble(void)
 		// test with 1 number
 		{
 			int n_1 = 1;
-			ft_array$push(&array, &n_1);
+			ftarray__push(&array, &n_1);
 
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret)
 				log_test(4)
 		}
@@ -108,87 +108,87 @@ void test_ft_array$bubble(void)
 		// test with 2 numbers sorted
 		{
 			int n_1 = 2;
-			ft_array$push(&array, &n_1);
+			ftarray__push(&array, &n_1);
 
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret)
 				log_test(5)
 		}
 
 		// test with 2 numbers unsorted
 		{
-			ft_array$clear(array);
+			ftarray__clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
-			ft_array$push(&array, &n_1);
-			ft_array$push(&array, &n_2);
+			ftarray__push(&array, &n_1);
+			ftarray__push(&array, &n_2);
 
 			int res_array[10] = { 1, 2 };
 
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 2))
 				log_test(6)
 		}
 
 		// test with 3 numbers unsorted
 		{
-			ft_array$clear(array);
+			ftarray__clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
 			int n_3 = -3;
-			ft_array$push(&array, &n_1);
-			ft_array$push(&array, &n_2);
-			ft_array$push(&array, &n_3);
+			ftarray__push(&array, &n_1);
+			ftarray__push(&array, &n_2);
+			ftarray__push(&array, &n_3);
 
 			int res_array[10] = { -3, 1, 2 };
 
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 4))
 				log_test(7)
 		}
 
 		// test with 3 numbers unsorted inverted sort
 		{
-			ft_array$clear(array);
+			ftarray__clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
 			int n_3 = -3;
-			ft_array$push(&array, &n_1);
-			ft_array$push(&array, &n_2);
-			ft_array$push(&array, &n_3);
+			ftarray__push(&array, &n_1);
+			ftarray__push(&array, &n_2);
+			ftarray__push(&array, &n_3);
 
 			int res_array[10] = { 2, 1, -3 };
 
 			order = 0;
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 4))
 				log_test(8)
 		}
 
 		// test with 2 numbers unsorted inverted sort
 		{
-			ft_array$clear(array);
+			ftarray__clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
-			ft_array$push(&array, &n_1);
-			ft_array$push(&array, &n_2);
+			ftarray__push(&array, &n_1);
+			ftarray__push(&array, &n_2);
 
 			int res_array[10] = { 2, 1 };
 
 			order = 0;
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret || ft_memcmp(res_array, array->data, sizeof(int) * 4))
 				log_test(9)
 		}
 
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
 	* test with big table
 	* */
 	{
-		t_array *array = ft_array$init(1000, sizeof(int));
+		t_array *array = ftarray__init(1000, sizeof(int));
 		int data_arr[1000] = { 0 };
 		int ret;
 
@@ -207,7 +207,7 @@ void test_ft_array$bubble(void)
 			// do sort
 			qsort(data_arr, 1000, sizeof(int), cmp);
 			int order = 1;
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 
 			if (ret ||
 				ft_memcmp(data_arr, array->data, sizeof(int) * 1000)
@@ -229,7 +229,7 @@ void test_ft_array$bubble(void)
 			// do sort
 			qsort(data_arr, 1000, sizeof(int), inv_cmp);
 			int order = 0;
-			ret = ft_array$sort_bubble(array, ft_array$sort_cmp_int, &order);
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 
 			if (ret ||
 				ft_memcmp(data_arr, array->data, sizeof(int) * 1000)
@@ -237,6 +237,6 @@ void test_ft_array$bubble(void)
 				log_test(11)
 		}
 
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 }

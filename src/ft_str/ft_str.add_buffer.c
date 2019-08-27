@@ -10,23 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_str.h>
 
-
-#ifndef FT_S_H
-#define FT_S_H
-
-# include "stdio.h"
-
-typedef struct s_s
+void ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3)
 {
-	size_t capacity;
-	size_t i;
-	char *data;
-} t_s;
+	if (s1)
+	    ft_strcat(buffer, s1);
+	if (s2)
+		ft_strcat(buffer, s2);
+	if (s3)
+		ft_strcat(buffer, s3);
+}
 
-t_s *fts__init(size_t size);
-int fts__add(t_s **s, char *str);
-void fts__free(t_s **s);
-int fts__clear(t_s *s);
-
-#endif

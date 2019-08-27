@@ -26,14 +26,14 @@ void test_ft_array_free()
 			g_test = 1;
 			lib_clear_testbuff();
 
-			ft_array$free(NULL);
+			ftarray__free(NULL);
 			if (
 				lib_cmp_testbuff_log("ft_array$free arg ptr (null)\n")
 				)
 				log_test(0)
 
 			t_array *test = NULL;
-			ft_array$free(&test);
+			ftarray__free(&test);
 			if (
 				lib_cmp_testbuff_log("ft_array$free arg ptr (null)\n")
 				)
@@ -46,9 +46,9 @@ void test_ft_array_free()
 	* */
 	{
 		int data[10] = { 0, 10, 2, 2, 23, 342 };
-		t_array *array = ft_array$init_data(data, 10, sizeof(int));
+		t_array *array = ftarray__init_data(data, 10, sizeof(int));
 
-		ft_array$free(&array);
+		ftarray__free(&array);
 		if (array)
 			log_test(2)
 	}

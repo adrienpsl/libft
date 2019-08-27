@@ -14,15 +14,15 @@
 #include "ft_errno.h"
 #include "ft_array.h"
 
-t_array *ft_array$copy(t_array *src)
+t_array *ftarray__copy(t_array *src)
 {
 	if (NULL == src)
 	{
-		ft_log$message(F, L, "ft_array$copy error: array ptr (null)",
+		ftlog__message(F, L, "ft_array$copy error: array ptr (null)",
 					   EINVAL);
 		return (NULL);
 	}
-	return (ft_array$init_data(src->data,
+	return (ftarray__init_data(src->data,
 							   (src->capacity / 2),
 							   src->element_size));
 }

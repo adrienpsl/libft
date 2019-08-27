@@ -13,9 +13,9 @@
 #include "libft.h"
 
 
-size_t padding_calculation(t_pf *pf)
+static int padding_calculation(t_pf *pf)
 {
-	size_t length;
+	int length;
 
 	{
 		length = ft_strlen(pf->intern_str);
@@ -25,31 +25,31 @@ size_t padding_calculation(t_pf *pf)
 		pf->format_bit.padding < 0
 		)
 		pf->format_bit.padding = 0;
-	return (length);
+	return ((int)length);
 }
 
-void add_padding(t_pf *pf)
+static void add_padding(t_pf *pf)
 {
 	static char buff[2] = { 0 };
 
 	buff[0] = pf->format_bit.zero ? '0' : ' ';
 	while (pf->format_bit.padding)
 	{
-		pf$utils_print(pf, buff, 1);
+		pf__utils_print(pf, buff, 1);
 		pf->format_bit.padding -= 1;
 	}
 }
 
-int pf$print(t_pf *pf)
+int pf__print(t_pf *pf)
 {
-	size_t length;
+	int length;
 
 	length = padding_calculation(pf);
 	if (
 		0 == pf->format_bit.minus
 		)
 		add_padding(pf);
-	pf$utils_print(pf, pf->intern_str, length);
+	pf__utils_print(pf, pf->intern_str, length);
 	if (
 		1 == pf->format_bit.minus
 		)

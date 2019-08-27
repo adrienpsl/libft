@@ -14,18 +14,18 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
-void *ft_array$prev_loop(t_array *array)
+void *ftarray__prev_loop(t_array *array)
 {
 	void *element;
 
 	if (!array)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_array$prev_loop error: array ptr (null)",
 					   EINVAL);
 		return (NULL);
 	}
-	element = ft_array$at(array, array->i);
+	element = ftarray__at(array, array->i);
 	{
 		array->i =
 			(array->i - 1 < 0) ?
@@ -34,14 +34,14 @@ void *ft_array$prev_loop(t_array *array)
 	return (element);
 }
 
-void *ft_array$prev(t_array *array)
+void *ftarray__prev(t_array *array)
 {
 	void *element;
 	static int end = 0;
 
 	if (!array)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_array$prev error: array ptr (null)",
 					   EINVAL);
 		return (NULL);
@@ -52,7 +52,7 @@ void *ft_array$prev(t_array *array)
 		end = 0;
 	else if (array->i == 0 && !end)
 		end = 1;
-	element = ft_array$at(array, array->i);
+	element = ftarray__at(array, array->i);
 	array->i != 0 && (array->i -= 1);
 	return (element);
 }

@@ -15,11 +15,11 @@
 #include "ft_mem.h"
 #include "ft_array.h"
 
-void ft_array$clear(t_array *array)
+void ftarray__clear(t_array *array)
 {
 	if (NULL == array)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_array$clear arg ptr (null)",
 					   EINVAL
 		);

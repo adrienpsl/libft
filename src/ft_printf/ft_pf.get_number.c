@@ -35,7 +35,7 @@ static int itoa_unsigned(char *dest, uintmax_t nb, const char *base_str)
 	size_t base;
 	uintmax_t tmp;
 
-	base = ft_strlen(base_str);
+	base = (size_t)ft_strlen(base_str);
 	i = 0;
 	tmp = nb;
 	while (tmp /= base)
@@ -89,7 +89,7 @@ static uintmax_t get_va_signed(t_pf *pf)
 	return (nb);
 }
 
-int pf$get_number(t_pf *pf)
+int pf__get_number(t_pf *pf)
 {
 	uintmax_t nb;
 

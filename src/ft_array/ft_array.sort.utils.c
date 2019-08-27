@@ -13,7 +13,7 @@
 #include <ft_log.h>
 #include <errno.h>
 
-int ft_array$sort_cmp_int(void *p1, void *p2, void *param)
+int ftarray__sort_cmp_int(void *p1, void *p2, void *param)
 {
 	int a;
 	int b;
@@ -22,7 +22,7 @@ int ft_array$sort_cmp_int(void *p1, void *p2, void *param)
 	if (!p1 || !p2 || !param)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$sort_cmp_int arg ptr (null)",
 						   EINVAL
 			)

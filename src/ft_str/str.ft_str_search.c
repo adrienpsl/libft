@@ -39,7 +39,7 @@ int ft_str_search(char *src, char *searching)
 	return (-1);
 }
 
-int ft_str_search$start(char *src, char *searching)
+int ftstrsearch__start(char *src, char *searching)
 {
 	int i;
 

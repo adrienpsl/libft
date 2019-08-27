@@ -28,7 +28,7 @@ void test_ft_array_double_size()
 		{
 			g_test = 1;
 			lib_clear_testbuff();
-			ret = ft_array$double_size(NULL);
+			ret = ftarray__double_size(NULL);
 			if (
 				ret
 				|| lib_cmp_testbuff_log(
@@ -43,18 +43,18 @@ void test_ft_array_double_size()
 	* */
 	{
 		int data[10] = { 0, 10, 2, 2, 23, 342 };
-		t_array *array = ft_array$init_data(data, 10, sizeof(int));
+		t_array *array = ftarray__init_data(data, 10, sizeof(int));
 		t_array *ret;
 
 		{
-			t_array *result = ft_array$init(20, sizeof(int));
+			t_array *result = ftarray__init(20, sizeof(int));
 			ft_memcpy(result->data, data, sizeof(int) * 10);
 			result->length = 10;
 
-			ret = ft_array$double_size(array);
+			ret = ftarray__double_size(array);
 
-			if (ft_array$cmp(result, ret, ft_array$cmp_int)
-			|| ret->capacity != 10 * 2 * 2)
+			if (ftarray__cmp(result, ret, ftarray__cmp_int)
+				|| ret->capacity != 10 * 2 * 2)
 				log_test(1)
 		}
 	}

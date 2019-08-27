@@ -14,14 +14,14 @@
 #include <ft_printf.h>
 #include <ft_errno.h>
 
-int ft_log$null(char *file, int line)
+int ftlog__null(char *file, int line)
 {
 	if (g_log > QUIET)
 		ft_printf("%s:%d ptr (null)\n", file, line);
 	return (ft_errno_set(EINVAL, -1));
 }
 
-int ft_log$message(char *file, int line, char *message, int error_code)
+int ftlog__message(char *file, int line, char *message, int error_code)
 {
 	if (g_log > QUIET)
 		ft_printf("%s:%d %s\n", file, line, message);

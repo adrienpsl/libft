@@ -21,21 +21,21 @@ static int check(t_array *array, int (*f)(void *, void *))
 	if (!array)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$cmp error: array ptr (null)",
 						   EINVAL));
 	}
 	if (!f)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$cmp error: func ptr (null)",
 						   EINVAL));
 	}
 	return (0);
 }
 
-void *ft_array$func(
+void *ftarray__func(
 	t_array *array,
 	int(*func)(void *, void *),
 	void *param
@@ -51,13 +51,13 @@ void *ft_array$func(
 		)
 	{
 		if (
-			func(ft_array$at(array, array->i), param)
+			func(ftarray__at(array, array->i), param)
 			)
-			return (ft_array$at(array, array->i));
+			return (ftarray__at(array, array->i));
 		array->i++;
 	}
 	if (
-		func == ft_array$func_print_int || func == ft_array$func_print_str
+		func == ftarray__func_print_int || func == ftarray__func_print_str
 		)
 	{
 		ft_printf("\n");

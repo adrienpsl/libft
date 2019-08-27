@@ -17,14 +17,14 @@ static void utils(t_pf *pf, char *format, ...)
 {
 	ft_bzero(pf, sizeof(t_pf));
 	pf->format = format;
-	pf$catch_format(pf);
+	pf__catch_format(pf);
 
 	va_start(pf->list, format);
-	pf$get_number(pf);
+	pf__get_number(pf);
 	va_end(pf->list);
 }
-
-void test_ft_pf$get_nb()
+void test_ft_pf__get_nb(void);
+void test_ft_pf__get_nb(void)
 {
 	t_pf pf;
 

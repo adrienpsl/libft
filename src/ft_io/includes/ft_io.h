@@ -31,8 +31,7 @@ int ft_itoa_base(
 );
 int ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out);
 
-int ft_io_catch_options(char *av_string, char *str_option, long *options);
-int ft_io$catch_option(
+int ftio__catch_option(
 	char **av,
 	char *option_str,
 	long *options_ptr,

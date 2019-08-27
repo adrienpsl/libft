@@ -42,53 +42,52 @@ typedef struct s_array
 /*
 **	the array size is 2x nb_elements, and will expand like vector.
 */
-t_array *ft_array$init(int nb_elements, size_t element_size);
-t_array *ft_array$init_data(void *start, int nb_element, size_t element_size);
-t_array *ft_array$slice(t_array *array, int from, int at);
-t_array *ft_array$slice_and_remove(t_array *array, int from, int at);
-void ft_array$free(t_array **p_array);
+t_array *ftarray__init(int nb_elements, size_t element_size);
+t_array *ftarray__init_data(void *start, int nb_element, size_t element_size);
+t_array *ftarray__slice(t_array *array, int from, int at);
+t_array *ftarray__slice_and_remove(t_array *array, int from, int at);
+void ftarray__free(t_array **p_array);
 
-void *ft_array$next(t_array *array);
-void *ft_array$next_loop(t_array *array);
+void *ftarray__next(t_array *array);
+void *ftarray__next_loop(t_array *array);
 
-void *ft_array$prev(t_array *array);
-void *ft_array$prev_loop(t_array *array);
+void *ftarray__prev(t_array *array);
+void *ftarray__prev_loop(t_array *array);
 
-void *ft_array$at(t_array *array, int index);
+void *ftarray__at(t_array *array, int index);
 
-int ft_array$push(t_array **p_array, void *element);
-int ft_array$insert(t_array **p_array, void *element, int index);
-int ft_array$remove(t_array *array, int index);
-void ft_array$remove_from(t_array *array, int from, int at);
+int ftarray__push(t_array **p_array, void *element);
+int ftarray__insert(t_array **p_array, void *element, int index);
+int ftarray__remove(t_array *array, int index);
+void ftarray__remove_from(t_array *array, int from, int at);
 
-void *ft_array$func(t_array *array, int(*func)(void *, void *), void *param);
-int ft_array$func_print_str(void *p1, void *param);
-int ft_array$func_print_int(void *p1, void *param);
+void *ftarray__func(t_array *array, int(*func)(void *, void *), void *param);
+int ftarray__func_print_str(void *p1, void *param);
+int ftarray__func_print_int(void *p1, void *param);
 
 /*
 **	--- sort function ----------------------------------------------------------
 */
-int ft_array$sort_bubble(
+int ftarray__sort_bubble(
 t_array *array, int(*cmp_f)(void *, void *, void *), void *param
 );
 
-int ft_array$sort_cmp_int(void *p1, void *p2, void *param);
+int ftarray__sort_cmp_int(void *p1, void *p2, void *param);
 
 
 
 /*
 **	--- cmp function -----------------------------------------------------------
 */
-int ft_array$cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *));
-int ft_array$cmp_int(void *p1, void *p2);
-int ft_array$cmp_str(void *p1, void *p2);
+int ftarray__cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *));
+int ftarray__cmp_int(void *p1, void *p2);
+int ftarray__cmp_str(void *p1, void *p2);
 
 
-t_array *ft_array$double_size(t_array *src);
-t_array *ft_array$copy(t_array *src);
+t_array *ftarray__double_size(t_array *src);
+t_array *ftarray__copy(t_array *src);
 
-void ft_array$clear(t_array *array);
-void *ft_array$at(t_array *array, int index);
+void ftarray__clear(t_array *array);
 
 
 #endif

@@ -14,18 +14,18 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
-void *ft_array$next_loop(t_array *array)
+void *ftarray__next_loop(t_array *array)
 {
 	void *element;
 
 	if (!array)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_array$next_loop error: array ptr (null)",
 					   EINVAL);
 		return (NULL);
 	}
-	element = ft_array$at(array, array->i);
+	element = ftarray__at(array, array->i);
 	{
 		array->i =
 			(array->i + 1 == array->length) ?
@@ -34,14 +34,14 @@ void *ft_array$next_loop(t_array *array)
 	return (element);
 }
 
-void *ft_array$next(t_array *array)
+void *ftarray__next(t_array *array)
 {
 	void *element;
 
 	if (!array)
 	{
-		ft_log$message(F, L,
-					   "ft_array$next error: array ptr (null)",
+		ftlog__message(F, L,
+					   "ftarray__next error: array ptr (null)",
 					   EINVAL);
 		return (NULL);
 	}
@@ -51,7 +51,7 @@ void *ft_array$next(t_array *array)
 	}
 	else
 	{
-		element = ft_array$at(array, array->i);
+		element = ftarray__at(array, array->i);
 		array->i += 1;
 		return (element);
 	}

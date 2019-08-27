@@ -19,16 +19,16 @@ int static check(t_array **p_array, void *element, int index)
 {
 	if (!p_array || !*p_array || !element)
 	{
-		return (ft_log$null(__FILE__, __LINE__));
+		return (ftlog__null(__FILE__, __LINE__));
 	}
 	else if (index > (*p_array)->length)
 	{
-		return (ft_log$message(F, L, "ft_array$insert"
+		return (ftlog__message(F, L, "ft_array$insert"
 									 " index bigger than length", EINVAL));
 	}
 	else if (index < 0)
 	{
-		return (ft_log$message(F, L, "ft_array$insert "
+		return (ftlog__message(F, L, "ft_array$insert "
 									 "negative index", EINVAL));
 	}
 	else
@@ -41,7 +41,7 @@ static t_array *handle_grow(t_array *array)
 {
 	if (array->length + 1 >= array->capacity)
 	{
-		if (!(array = ft_array$double_size(array)))
+		if (!(array = ftarray__double_size(array)))
 			return (NULL);
 	}
 	return (array);
@@ -53,17 +53,17 @@ static void move_and_copy_value(t_array *array, void *element, int index)
 		index < array->length
 		)
 	{
-		ft_memmove(ft_array$at(array, index + 1),
-				   ft_array$at(array, index),
+		ft_memmove(ftarray__at(array, index + 1),
+				   ftarray__at(array, index),
 				   (array->length - array->i) * array->element_size);
 	}
 	{
-		ft_memcpy(ft_array$at(array, index), element, array->element_size);
+		ft_memcpy(ftarray__at(array, index), element, array->element_size);
 		array->length += 1;
 	}
 }
 
-int ft_array$insert(t_array **p_array, void *element, int index)
+int ftarray__insert(t_array **p_array, void *element, int index)
 {
 	t_array *array;
 

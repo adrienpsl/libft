@@ -20,19 +20,19 @@ int static check(t_array *array, int index)
 	if (NULL == array)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$remove error: array ptr (null)",
 						   EINVAL)
 		);
 	}
 	else if (index >= array->length || index < 0)
 	{
-		return (ft_log$message(F, L, "ft_array$remove"
+		return (ftlog__message(F, L, "ft_array$remove"
 									 " index bigger than length/neg", EINVAL));
 	}
 	else if (!array->length)
 	{
-		return (ft_log$message(F, L, "ft_array$insert"
+		return (ftlog__message(F, L, "ft_array$insert"
 									 " array is empty", EINVAL));
 	}
 	else
@@ -41,15 +41,15 @@ int static check(t_array *array, int index)
 	}
 }
 
-int ft_array$remove(t_array *array, int index)
+int ftarray__remove(t_array *array, int index)
 {
 	if (
 		0 != check(array, index)
 		)
 		return (-1);
 	{
-		ft_memmove(ft_array$at(array, index),
-				   ft_array$at(array, index + 1),
+		ft_memmove(ftarray__at(array, index),
+				   ftarray__at(array, index + 1),
 				   (array->length - index) * array->element_size);
 	}
 	{

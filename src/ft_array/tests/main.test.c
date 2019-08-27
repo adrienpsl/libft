@@ -16,7 +16,7 @@ void test_ft_array$at(void);
 void test_ft_array$bubble(void);
 void test_ft_array_next_and_prev(void);
 void test_ft_array$cmp();
-void test_ft_array$copy();
+void test_ft_array_copy();
 void test_ft_array_double_size();
 void test_ft_array_free();
 void test_ft_array$func();
@@ -35,7 +35,7 @@ void test_ft_array_main(void)
 	test_ft_array$bubble();
 	test_ft_array_next_and_prev();
 	test_ft_array$cmp();
-	test_ft_array$copy();
+	test_ft_array_copy();
 	test_ft_array_double_size();
 	test_ft_array_free();
 	test_ft_array$func();

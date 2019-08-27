@@ -14,25 +14,25 @@
 #include "ft_errno.h"
 #include "ft_array.h"
 
-void *ft_array$at(t_array *array, int index)
+void *ftarray__at(t_array *array, int index)
 {
 	if (!array)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_array$at error: array ptr (null)",
 					   EINVAL);
 		return (NULL);
 	}
 	else if (index >= array->capacity)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_array$at error : index bigger than length",
 					   EINVAL);
 		return (NULL);
 	}
 	else if (index < 0)
 	{
-		ft_log$message(F, L,
+		ftlog__message(F, L,
 					   "ft_array$at error : index is negative",
 					   EINVAL);
 		return (NULL);

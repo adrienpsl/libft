@@ -13,7 +13,7 @@
 #include <ft_str.h>
 #include <ft_log.h>
 
-int ft_array$cmp_int(void *p1, void *p2)
+int ftarray__cmp_int(void *p1, void *p2)
 {
 	int *a;
 	int *b;
@@ -21,7 +21,7 @@ int ft_array$cmp_int(void *p1, void *p2)
 	if (!p1 || !p2)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$cmp_int arg ptr (null)",
 						   EINVAL
 			)
@@ -34,7 +34,7 @@ int ft_array$cmp_int(void *p1, void *p2)
 	}
 }
 
-int ft_array$cmp_str(void *p1, void *p2)
+int ftarray__cmp_str(void *p1, void *p2)
 {
 	char *a;
 	char *b;
@@ -42,7 +42,7 @@ int ft_array$cmp_str(void *p1, void *p2)
 	if (!p1 || !p2)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$cmp_str arg ptr (null)",
 						   EINVAL
 			)

@@ -24,7 +24,7 @@ void test_ft_array_init(void)
 	// check good information in array
 	{
 		int size = 3;
-		t_array *array = ft_array$init(size, sizeof(int));
+		t_array *array = ftarray__init(size, sizeof(int));
 
 		if (
 			array->element_size != sizeof(int)
@@ -37,7 +37,7 @@ void test_ft_array_init(void)
 	// look if buffer and array are at the right place
 	{
 		int size = 3;
-		t_array *array = ft_array$init(size, sizeof(int));
+		t_array *array = ftarray__init(size, sizeof(int));
 
 		// test data placement
 		{
@@ -59,13 +59,13 @@ void test_ft_array_init(void)
 				log_test(2)
 		}
 
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	// test fill
 	{
 		int size = 3;
-		t_array *array = ft_array$init(size, sizeof(int));
+		t_array *array = ftarray__init(size, sizeof(int));
 		int *int_array = (int *)array->data;
 
 		// test fill array
@@ -90,7 +90,7 @@ void test_ft_array_init(void)
 				log_test(4)
 		}
 
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
@@ -102,14 +102,14 @@ void test_ft_array_init(void)
 
 		// test no elements
 		{
-			array = ft_array$init(0, 42);
+			array = ftarray__init(0, 42);
 			if (
 				array
 				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
 				)
 				log_test(5)
 
-			array = ft_array$init(-22, 42);
+			array = ftarray__init(-22, 42);
 			if (
 				array
 				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
@@ -119,7 +119,7 @@ void test_ft_array_init(void)
 
 		// test no element size
 		{
-			array = ft_array$init(11, 0);
+			array = ftarray__init(11, 0);
 			if (
 				array
 				|| lib_cmp_testbuff_log("ft_array$init : element size (null)\n")
@@ -140,7 +140,7 @@ void test_ft_array_init(void)
 			lib_clear_testbuff();
 
 			{
-				array = ft_array$init_data(NULL, 10, 10);
+				array = ftarray__init_data(NULL, 10, 10);
 				if (
 					array
 					||
@@ -154,7 +154,7 @@ void test_ft_array_init(void)
 			// test with array of 0
 			{
 				int test_arr[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-				array = ft_array$init_data(test_arr, 0, 4);
+				array = ftarray__init_data(test_arr, 0, 4);
 				if (
 					array
 					||
@@ -177,19 +177,19 @@ void test_ft_array_init(void)
 
 		// test with 1 element
 		{
-			array = ft_array$init_data(test_arr, 1, sizeof(int));
+			array = ftarray__init_data(test_arr, 1, sizeof(int));
 			if (
 				!array
 				|| *(int *)array->data != 0
 				|| array->length != 1
 				)
 				log_test(10)
-			ft_array$free(&array);
+			ftarray__free(&array);
 		}
 
 		// test with 2 element
 		{
-			array = ft_array$init_data(test_arr, 2, sizeof(int));
+			array = ftarray__init_data(test_arr, 2, sizeof(int));
 			if (
 				!array
 				|| *(int *)array->data != 0
@@ -197,7 +197,7 @@ void test_ft_array_init(void)
 				|| array->length != 2
 				)
 				log_test(11)
-			ft_array$free(&array);
+			ftarray__free(&array);
 		}
 	}
 }

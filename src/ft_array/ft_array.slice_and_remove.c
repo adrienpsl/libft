@@ -20,26 +20,26 @@ int static check(t_array *array, int from, int at)
 	if (
 		NULL == array
 		)
-		message = "ft_array$slice_and_remove array ptr (null)";
+		message = "ftarray__slice_and_remove array ptr (null)";
 	else if (
 		from >= array->length || at > array->length
 		)
-		message = "ft_array$slice_and_remove at / from > length";
+		message = "ftarray__slice_and_remove at / from > length";
 	else if (
 		from >= at
 		)
-		message = "ft_array$slice_and_remove at >= from";
+		message = "ftarray__slice_and_remove at >= from";
 	else if (
 		at < 1 || from < 0
 		)
-		message = "ft_array$slice_and_remove at / from  < 0";
+		message = "ftarray__slice_and_remove at / from  < 0";
 	return (message == NULL ?
 			0 :
-			ft_log$message(F, L, message, EINVAL)
+			ftlog__message(F, L, message, EINVAL)
 	);
 }
 
-t_array *ft_array$slice_and_remove(t_array *array, int from, int at)
+t_array *ftarray__slice_and_remove(t_array *array, int from, int at)
 {
 	t_array *new;
 
@@ -48,9 +48,9 @@ t_array *ft_array$slice_and_remove(t_array *array, int from, int at)
 		)
 		return (NULL);
 	if (
-		NULL == (new = ft_array$slice(array, from, at))
+		NULL == (new = ftarray__slice(array, from, at))
 		)
 		return (NULL);
-	ft_array$remove_from(array, from, at);
+	ftarray__remove_from(array, from, at);
 	return (new);
 }

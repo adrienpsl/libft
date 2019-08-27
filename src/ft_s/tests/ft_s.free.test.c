@@ -25,13 +25,13 @@ void test_ft_s$free()
 		g_test = 1;
 		lib_clear_testbuff();
 
-		ft_s$free(NULL);
+		fts__free(NULL);
 		if (
 			lib_cmp_testbuff_log("ft_s$free error: s ptr (null)\n")
 			)
 			log_test(0)
 
-		ft_s$free(&s);
+		fts__free(&s);
 		if (
 			s
 			|| lib_cmp_testbuff_log("ft_s$free error: s ptr (null)\n")
@@ -45,10 +45,10 @@ void test_ft_s$free()
 	* test good input
 	* */
 	{
-		t_s *s = ft_s$init(0);
-		ft_s$add(&s, "1234567890");
+		t_s *s = fts__init(0);
+		fts__add(&s, "1234567890");
 
-		ft_s$free(&s);
+		fts__free(&s);
 		if (
 			s
 			)

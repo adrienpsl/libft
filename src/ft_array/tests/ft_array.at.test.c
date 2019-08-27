@@ -20,7 +20,7 @@ void test_ft_array$at()
 	* ft_array$at : return bad stuff given
 	* */
 	{
-		t_array *array = ft_array$init(1, sizeof(int));
+		t_array *array = ftarray__init(1, sizeof(int));
 		void *ret;
 
 		g_test = 1;
@@ -30,7 +30,7 @@ void test_ft_array$at()
 		{
 			// test with negative index
 			{
-				ret = ft_array$at(array, -10);
+				ret = ftarray__at(array, -10);
 
 				if (ret
 					|| lib_cmp_testbuff_log(
@@ -41,7 +41,7 @@ void test_ft_array$at()
 
 			// test with index bigger
 			{
-				ret = ft_array$at(array, 2);
+				ret = ftarray__at(array, 2);
 
 				if (ret
 					|| lib_cmp_testbuff_log(
@@ -52,7 +52,7 @@ void test_ft_array$at()
 
 			// test with null array
 			{
-				ret = ft_array$at(NULL, 100);
+				ret = ftarray__at(NULL, 100);
 
 				if (ret
 					|| lib_cmp_testbuff_log(
@@ -63,26 +63,26 @@ void test_ft_array$at()
 		}
 
 		g_test = 0;
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
 	* ft_array$at : good stuff given
 	* */
 	{
-		t_array *array = ft_array$init(1, sizeof(int));
+		t_array *array = ftarray__init(1, sizeof(int));
 		void *element;
 
 		// test with an array of 100
 		{
 			for (int i = 0; i < 100; ++i)
 			{
-				ft_array$push(&array, &i);
+				ftarray__push(&array, &i);
 			}
 
 			for (int j = 0; j < 100; ++j)
 			{
-				if (!(element = ft_array$at(array, j)))
+				if (!(element = ftarray__at(array, j)))
 				{
 					log_test(3)
 					break;
@@ -95,6 +95,6 @@ void test_ft_array$at()
 
 		}
 
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 }

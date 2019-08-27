@@ -19,7 +19,7 @@ static int check(t_array *a_1, t_array *a_2, int (*f)(void *, void *))
 	if (!a_1 || !a_2)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$cmp error: array ptr (null)",
 						   EINVAL)
 		);
@@ -27,7 +27,7 @@ static int check(t_array *a_1, t_array *a_2, int (*f)(void *, void *))
 	else if (!f)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_array$cmp error: func ptr (null)",
 						   EINVAL)
 		);
@@ -35,7 +35,7 @@ static int check(t_array *a_1, t_array *a_2, int (*f)(void *, void *))
 	return (0);
 }
 
-int ft_array$cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *))
+int ftarray__cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *))
 {
 	void *el_1;
 	void *el_2;
@@ -46,13 +46,13 @@ int ft_array$cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *))
 		return (-1);
 	array_1->i = 0;
 	array_2->i = 0;
-	while ((el_1 = ft_array$next(array_1))
-		   && (el_2 = ft_array$next(array_2)))
+	while ((el_1 = ftarray__next(array_1))
+		   && (el_2 = ftarray__next(array_2)))
 	{
 		if (f(el_1, el_2))
 			return (1);
 	}
-	el_2 = ft_array$next(array_2);
+	el_2 = ftarray__next(array_2);
 	if (el_1 != el_2)
 		return (1);
 	return (0);

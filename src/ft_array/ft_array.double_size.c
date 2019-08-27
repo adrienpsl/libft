@@ -15,24 +15,24 @@
 #include <ft_mem.h>
 #include <ft_log.h>
 
-t_array *ft_array$double_size(t_array *src)
+t_array *ftarray__double_size(t_array *src)
 {
 	t_array *new;
 
 	if (NULL == src)
 	{
-		ft_log$message(F, L, "ft_array$double size error: array ptr (null)",
+		ftlog__message(F, L, "ft_array$double size error: array ptr (null)",
 					   EINVAL);
 		return (NULL);
 	}
 	if (
-		!(new = ft_array$init(src->capacity, src->element_size))
+		!(new = ftarray__init(src->capacity, src->element_size))
 		)
 		return (NULL);
 	ft_memcpy(new->data,
 			  src->data,
 			  (src->length * src->element_size));
 	new->length = src->length;
-	ft_array$free(&src);
+	ftarray__free(&src);
 	return (new);
 }

@@ -10,7 +10,7 @@
 #define log_test(test_nb) printf("log : %s:%d: test: %d\n", __FILE__, __LINE__, test_nb);
 
 
-void lib_clear_testbuff();
+void lib_clear_testbuff(void);
 int ft_test_if_streq(char *res, char *test, char *where);
 int lib_random_int(int limit);
 int lib_cmp_testbuff(char *expected);

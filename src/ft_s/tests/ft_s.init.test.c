@@ -22,7 +22,7 @@ void test_ft_s$init()
 	{
 		// test with 0
 		{
-			t_s *s = ft_s$init(0);
+			t_s *s = fts__init(0);
 			char *test = ft_memalloc(1000);
 
 			if (
@@ -33,12 +33,12 @@ void test_ft_s$init()
 				)
 				log_test(0)
 
-			ft_s$free(&s);
+			fts__free(&s);
 		}
 
 		// test with 42
 		{
-			t_s *s = ft_s$init(42);
+			t_s *s = fts__init(42);
 			char *test = ft_memalloc(1000);
 
 			if (

@@ -21,14 +21,14 @@
 
 	ft_bzero(pf, sizeof(t_pf));
 	pf->format = format;
-	pf$catch_format(pf);
+	pf__catch_format(pf);
 
 	va_start(pf->list, result);
-	pf$get_str(pf);
-	pf$get_number(pf);
+	pf__get_str(pf);
+	pf__get_number(pf);
 	va_end(pf->list);
 
-	pf$print(pf);
+	pf__print(pf);
 	if (ft_str_cmp(pf->buff.data, result))
 	{
 		printf("-%s-\n", result);

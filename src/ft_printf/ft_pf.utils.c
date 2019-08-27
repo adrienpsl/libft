@@ -14,7 +14,7 @@
 #include <ft_str.h>
 #include <ft_mem.h>
 
-void pf$utils_print(t_pf *pf, char *data, int size)
+void pf__utils_print(t_pf *pf, char *data, int size)
 {
 	if (pf->extern_buff)
 		ft_memcpy(pf->extern_buff + ft_strlen(pf->extern_buff), data, size);

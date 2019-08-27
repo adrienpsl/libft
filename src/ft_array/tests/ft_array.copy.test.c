@@ -14,7 +14,7 @@
 #include <libft.test.h>
 #include <test.h>
 
-void test_ft_array$copy()
+void test_ft_array_copy()
 {
 	/*
 	* test error handling
@@ -26,7 +26,7 @@ void test_ft_array$copy()
 		{
 			g_test = 1;
 			lib_clear_testbuff();
-			ret = ft_array$copy(NULL);
+			ret = ftarray__copy(NULL);
 			if (
 				ret
 				|| lib_cmp_testbuff_log(
@@ -41,12 +41,12 @@ void test_ft_array$copy()
 	* */
 	{
 		int data[10] = { 0, 10, 2, 2, 23, 342 };
-		t_array *array = ft_array$init_data(data, 10, sizeof(int));
+		t_array *array = ftarray__init_data(data, 10, sizeof(int));
 		t_array *ret;
 
 		{
-			ret = ft_array$copy(array);
-			if (ft_array$cmp(array, ret, ft_array$cmp_int))
+			ret = ftarray__copy(array);
+			if (ftarray__cmp(array, ret, ftarray__cmp_int))
 				log_test(1)
 		}
 	}

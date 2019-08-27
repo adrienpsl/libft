@@ -20,7 +20,7 @@ static int check(t_s **s, char *string)
 	if (NULL == s || NULL == *s)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_s$add error: s ptr (null)",
 						   EINVAL)
 		);
@@ -28,7 +28,7 @@ static int check(t_s **s, char *string)
 	if (NULL == string)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_s$add error: str ptr (null)",
 						   EINVAL)
 		);
@@ -41,7 +41,7 @@ t_s *increase(t_s *s, size_t size)
 	t_s *new;
 
 	if (
-		!(new = ft_s$init(s->capacity + size))
+		!(new = fts__init(s->capacity + size))
 		)
 	{
 		return (NULL);
@@ -51,12 +51,12 @@ t_s *increase(t_s *s, size_t size)
 		new->i = s->i;
 	}
 	{
-		ft_s$free(&s);
+		fts__free(&s);
 		return (new);
 	}
 }
 
-int ft_s$add(t_s **p_s, char *str)
+int fts__add(t_s **p_s, char *str)
 {
 	size_t length;
 	t_s *s;

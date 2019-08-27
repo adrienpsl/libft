@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 void test_ft_pf_catch_format();
-void test_ft_pf$get_nb();
-void test_pf$get_str();
+void test_ft_pf__get_nb();
+void test_pf__get_str();
 void test_pf$print();
 void test_ft_printf();
 
@@ -20,8 +20,8 @@ void test_ft_printf();
 void test_main_ft_pf()
 {
 	test_ft_pf_catch_format();
-	test_ft_pf$get_nb();
-	test_pf$get_str();
+	test_ft_pf__get_nb();
+	test_pf__get_str();
 	test_pf$print();
 	test_ft_printf();
 }

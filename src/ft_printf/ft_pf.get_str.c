@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int pf$get_str(t_pf *pf)
+int pf__get_str(t_pf *pf)
 {
 	if (
 		pf->format_bit.string

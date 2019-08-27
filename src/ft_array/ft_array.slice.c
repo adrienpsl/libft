@@ -20,34 +20,34 @@ int static check(t_array *array, int from, int at)
 	if (
 		NULL == array
 		)
-		message = "ft_array$slice array ptr (null)";
+		message = "ftarray__slice array ptr (null)";
 	else if (
 		from >= array->length || at > array->length
 		)
-		message = "ft_array$slice at / from > length";
+		message = "ftarray__slice at / from > length";
 	else if (
 		from >= at
 		)
-		message = "ft_array$slice at >= from";
+		message = "ftarray__slice at >= from";
 	else if (
 		at < 1 || from < 0
 		)
-		message = "ft_array$slice at / from  < 0";
+		message = "ftarray__slice at / from  < 0";
 	return (message == NULL ?
 			0 :
-			ft_log$message(F, L, message, EINVAL)
+			ftlog__message(F, L, message, EINVAL)
 	);
 }
 
-t_array *ft_array$slice(t_array *array, int from, int at)
+t_array *ftarray__slice(t_array *array, int from, int at)
 {
 	if (
 		check(array, from, at)
 		)
 		return (NULL);
 	return (
-		ft_array$init_data(
-			ft_array$at(array, from),
+		ftarray__init_data(
+			ftarray__at(array, from),
 			at - from,
 			array->element_size
 		)

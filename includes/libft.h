@@ -13,7 +13,7 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-int init_libft();
+int init_libft(void);
 
 # include "ft_array.h"
 # include "ft_buffer.h"

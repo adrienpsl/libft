@@ -20,14 +20,14 @@ static int check(int nb_elements, size_t element_size)
 	if (nb_elements < 1)
 	{
 		return (
-			ft_log$message(F, L, "ft_array$init : no elements number",
+			ftlog__message(F, L, "ft_array$init : no elements number",
 						   EINVAL)
 		);
 	}
 	if (!element_size)
 	{
 		return (
-			ft_log$message(F, L, "ft_array$init : element size (null)",
+			ftlog__message(F, L, "ft_array$init : element size (null)",
 						   EINVAL)
 		);
 	}
@@ -41,7 +41,7 @@ static int check(int nb_elements, size_t element_size)
 ** I add three to protect overflow and add buffer into then like :
 ** { [end array] [protect] [buffer] [protect] }
 */
-t_array *ft_array$init(int nb_elements, size_t element_size)
+t_array *ftarray__init(int nb_elements, size_t element_size)
 {
 	t_array *array;
 
@@ -66,7 +66,7 @@ t_array *ft_array$init(int nb_elements, size_t element_size)
 		return (NULL);
 }
 
-t_array *ft_array$init_data(void *start, int nb_element, size_t element_size)
+t_array *ftarray__init_data(void *start, int nb_element, size_t element_size)
 {
 	t_array *array;
 
@@ -76,12 +76,12 @@ t_array *ft_array$init_data(void *start, int nb_element, size_t element_size)
 	}
 	if (!start)
 	{
-		ft_log$message(F, L, "ft_array$init_data : start (null)",
+		ftlog__message(F, L, "ft_array$init_data : start (null)",
 					   EINVAL);
 		return (NULL);
 	}
 	if (
-		!(array = ft_array$init(nb_element, element_size))
+		!(array = ftarray__init(nb_element, element_size))
 		)
 	{
 		return (NULL);

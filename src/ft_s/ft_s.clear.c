@@ -15,12 +15,12 @@
 #include <ft_log.h>
 #include <ft_mem.h>
 
-int ft_s$clear(t_s *s)
+int fts__clear(t_s *s)
 {
 	if (NULL == s)
 	{
 		return (
-			ft_log$message(F, L,
+			ftlog__message(F, L,
 						   "ft_s$clear error: s ptr (null)",
 						   EINVAL)
 		);

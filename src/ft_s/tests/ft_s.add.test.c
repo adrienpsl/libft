@@ -16,7 +16,8 @@
 #include <ft_str.h>
 #include "libft.h"
 
-void test_ft_s$add()
+void test_ft_s__add(void);
+void test_ft_s__add(void)
 {
 
 	/*
@@ -29,7 +30,7 @@ void test_ft_s$add()
 
 		// test no s
 		{
-			ret = ft_s$add(NULL, "");
+			ret = fts__add(NULL, "");
 			if (
 				!ret
 				|| lib_cmp_testbuff_log("ft_s$add error: s ptr (null)\n")
@@ -39,7 +40,7 @@ void test_ft_s$add()
 
 		// test no s
 		{
-			ret = ft_s$add((t_s **)"", NULL);
+			ret = fts__add((t_s **)1, NULL);
 			if (
 				!ret
 				|| lib_cmp_testbuff_log("ft_s$add error: str ptr (null)\n")
@@ -54,13 +55,13 @@ void test_ft_s$add()
 	* test no error
 	* */
 	{
-		t_s *s = ft_s$init(0);
+		t_s *s = fts__init(0);
 		int ret;
 
 		// test with no place
 		{
 
-			ret = ft_s$add(&s, "12345");
+			ret = fts__add(&s, "12345");
 			if (ret
 				|| s->capacity != 14
 				|| ft_str_cmp("12345", s->data))
@@ -68,9 +69,9 @@ void test_ft_s$add()
 		}
 
 		// test with big str
-		ft_s$clear(s);
+		fts__clear(s);
 		char *str = "asoeuhasoeuhasoeu saoeuh asoehusaoeh u asoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh u vasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh u";
-		ret = ft_s$add(&s, str);
+		ret = fts__add(&s, str);
 		if (ret
 			|| s->capacity != 1630
 			|| ft_str_cmp(str, s->data))

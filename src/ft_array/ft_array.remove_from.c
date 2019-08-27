@@ -35,19 +35,19 @@ int static check(t_array *array, int from, int at)
 		message = "ft_array$remove_from at / from  < 0";
 	return (message == NULL ?
 			0 :
-			ft_log$message(F, L, message, EINVAL)
+			ftlog__message(F, L, message, EINVAL)
 	);
 }
 
-void ft_array$remove_from(t_array *array, int from, int at)
+void ftarray__remove_from(t_array *array, int from, int at)
 {
 	if (
 		check(array, from, at)
 		)
 		return;
 	ft_memcpy(
-		ft_array$at(array, from),
-		ft_array$at(array, at),
+		ftarray__at(array, from),
+		ftarray__at(array, at),
 		(array->length - at) * array->element_size
 	);
 	array->length -= at - from;

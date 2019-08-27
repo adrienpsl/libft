@@ -19,10 +19,10 @@
 void test_ft_array_next_and_prev(void)
 {
 	/*
-	* ft_array$next
+	* ftarray__next
 	* */
 	{
-		t_array *array = ft_array$init(10, sizeof(int));
+		t_array *array = ftarray__init(10, sizeof(int));
 		t_array *ret;
 
 		// test null given with all the 4 function
@@ -30,42 +30,42 @@ void test_ft_array_next_and_prev(void)
 			g_test = 1;
 			lib_clear_testbuff();
 
-			ret = ft_array$next(NULL);
+			ret = ftarray__next(NULL);
 			if (ret
 				|| lib_cmp_testbuff_log(
-				"ft_array$next error: array ptr (null)\n")
+				"ftarray__next error: array ptr (null)\n")
 				)
 				log_test(0)
 
-			ret = ft_array$next_loop(NULL);
+			ret = ftarray__next_loop(NULL);
 			if (ret
 				|| lib_cmp_testbuff_log(
 				"ft_array$next_loop error: array ptr (null)\n")
 				)
 				log_test(1)
 
-			ret = ft_array$prev(NULL);
+			ret = ftarray__prev(NULL);
 			if (ret
 				|| lib_cmp_testbuff_log(
 				"ft_array$prev error: array ptr (null)\n")
 				)
 				log_test(1)
 
-			ret = ft_array$prev_loop(NULL);
+			ret = ftarray__prev_loop(NULL);
 			if (ret
 				|| lib_cmp_testbuff_log(
 				"ft_array$prev_loop error: array ptr (null)\n")
 				)
 				log_test(1)
 		}
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 
 	/*
 	* test with an array of 5
 	* */
 	{
-		t_array *array = ft_array$init(20, sizeof(10));
+		t_array *array = ftarray__init(20, sizeof(10));
 		int data[30] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 1, 2, 3, 4, 5, 6,
 						 7, 8, 9, 10 };
 		int *tmp;
@@ -77,11 +77,11 @@ void test_ft_array_next_and_prev(void)
 		{
 			for (int i = 0; i < 11; ++i)
 			{
-				tmp = ft_array$next(array);
+				tmp = ftarray__next(array);
 				if (!tmp || *tmp != data[i])
 					log_test(0)
 			}
-			tmp = ft_array$next(array);
+			tmp = ftarray__next(array);
 			if (tmp || array->i != 11)
 				log_test(1)
 		}
@@ -91,7 +91,7 @@ void test_ft_array_next_and_prev(void)
 			array->i = 0;
 			for (int i = 0; i < 20; ++i)
 			{
-				tmp = ft_array$next_loop(array);
+				tmp = ftarray__next_loop(array);
 				if (!tmp || *tmp != data[i])
 					log_test(2)
 			}
@@ -102,11 +102,11 @@ void test_ft_array_next_and_prev(void)
 			array->i = array->length - 1;
 			for (int i = 10; i > -1; --i)
 			{
-				tmp = ft_array$prev(array);
+				tmp = ftarray__prev(array);
 				if (!tmp || *tmp != data[i])
 					log_test(3)
 			}
-			tmp = ft_array$prev(array);
+			tmp = ftarray__prev(array);
 			if (tmp || array->i != 0)
 				log_test(4)
 		}
@@ -116,12 +116,12 @@ void test_ft_array_next_and_prev(void)
 			array->i = array->length - 1;
 			for (int i = 21; i > -1; --i)
 			{
-				tmp = ft_array$prev_loop(array);
+				tmp = ftarray__prev_loop(array);
 				if (!tmp || *tmp != data[i])
 					log_test(5)
 			}
 		}
 
-		ft_array$free(&array);
+		ftarray__free(&array);
 	}
 }

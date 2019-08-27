@@ -31,8 +31,8 @@ int ft_putval_int(int ret, char *text, char *value);
 /*
 **	utils
 */
-void ft_str$free(char **s);
-size_t ft_strlen(const char *str);
+void ftstr__free(char **s);
+int ft_strlen(const char *str);
 
 /*
 **	test
@@ -48,7 +48,7 @@ int ft_test_streq(char const *s1, char const *s2);
 void ft_strchrnreplace(char *str, char *matched, char replacing, size_t size);
 void ft_strchrreplace(char *str, char *matched, char replacing);
 ssize_t ft_strchr(char *str, char c);
-int ft_str_search$start(char *src, char *searching);
+int ftstrsearch__start(char *src, char *searching);
 char *ft_str_replace(char *str, char *searching, char *replacing, int do_free);
 char *
 ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
@@ -61,7 +61,7 @@ int ft_strnchr(char *str, char c);
 /*
 **	memory
 */
-char *ft_strsub(char const *s, unsigned int start, size_t len);
+char *ft_strsub(char const *s, int start, size_t len);
 void ft_putstr_buffer(const char *s, char *buffer);
 char *ft_strndup(const char *s, size_t size);
 char *ft_strdup(const char *s);
@@ -74,6 +74,7 @@ ft_strjoinbybuffer(char *dest, const char *start, char *middle, char *end);
 char *ft_strnew(size_t size);
 size_t ft_strlcat(char *dst, const char *src, size_t len);
 char *ft_strcat(char *restrict dest, const char *restrict src);
+void ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3);
 
 /*
 **	char

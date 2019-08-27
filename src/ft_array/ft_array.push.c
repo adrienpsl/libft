@@ -13,14 +13,14 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
-int ft_array$push(t_array **p_array, void *element)
+int ftarray__push(t_array **p_array, void *element)
 {
 	if (
 		!p_array
 		|| !*p_array
 		|| !element
 		)
-		return (ft_log$null(__FILE__, __LINE__));
+		return (ftlog__null(__FILE__, __LINE__));
 	else
-		return (ft_array$insert(p_array, element, (*p_array)->length));
+		return (ftarray__insert(p_array, element, (*p_array)->length));
 }
