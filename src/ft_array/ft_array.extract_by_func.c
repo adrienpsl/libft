@@ -35,20 +35,12 @@ static int check(t_array *array, int (*f)(void *, void *))
 	return (0);
 }
 
-t_array *
-ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param)
+static void
+loop_on_array(t_array *array, t_array **new, int(*f)(void *, void *),
+	void *param)
 {
-	t_array *new;
 	int i;
 
-	if (
-		check(array, f)
-		)
-		return (NULL);
-	if (
-		NULL == (new = ftarray__init(array->length, array->element_size))
-		)
-		return (NULL);
 	i = 0;
 	while (
 		i < array->length
@@ -58,10 +50,29 @@ ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param)
 			f(ftarray__at(array, i), param)
 			)
 		{
-			ftarray__push(&new, ftarray__at(array, i));
+			ftarray__push(new, ftarray__at(array, i));
 			ftarray__remove(array, i);
 		}
-		i++;
+		else
+			i++;
+	}
+}
+
+t_array *
+ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param)
+{
+	t_array *new;
+
+	if (
+		check(array, f)
+		)
+		return (NULL);
+	if (
+		NULL == (new = ftarray__init(array->length, array->element_size))
+		)
+		return (NULL);
+	{
+		loop_on_array(array, &new, f, param);
 	}
 	return (new);
 }
