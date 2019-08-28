@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_array.h"
-# include <stdio.h>
 #include <errno.h>
 #include <ft_log.h>
 #include <ft_printf.h>
@@ -35,11 +34,7 @@ static int check(t_array *array, int (*f)(void *, void *))
 	return (0);
 }
 
-void *ftarray__func(
-	t_array *array,
-	int(*func)(void *, void *),
-	void *param
-)
+void *ftarray__func( t_array *array, int(*func)(void *, void *), void *param)
 {
 	if (
 		check(array, func)

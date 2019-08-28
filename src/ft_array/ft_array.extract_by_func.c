@@ -10,39 +10,63 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include <ft_array.h>
-#include <test.h>
-#include <libft.test.h>
-#include <ft_mem.h>
+#include <errno.h>
+#include <ft_log.h>
 
-void test_ft_array$utils()
+static int check(t_array *array, int (*f)(void *, void *))
 {
-	/*
-	* test ft_array$clear
-	* */
-	{
-		// test error handling
-		{
-			g_test = 1;
-			lib_clear_testbuff();
-			ftarray__clear(NULL);
-			if (
-				lib_cmp_testbuff_log("ftarray__clear arg ptr (null)\n")
-				)
-				log_test(0)
-		}
-
-		// test all good
-		int data[10] = { 0, 10, 2, 2, 23, 342 };
-		int data_empty[10] = { 0 };
-		t_array *array = ftarray__init_data(data, 10, sizeof(int));
-		ftarray__clear(array);
-		if (
-			array->length
-			|| array->i
-			|| ft_memcmp(data_empty, array->data, sizeof(int) * 10)
-			)
-			log_test(1)
-	}
+	if (
+		NULL == array
+		)
+		return (
+			ftlog__message(F, L,
+						   "ft_array__extract_by_func"
+						   " error: array ptr (null)",
+						   EINVAL));
+	if (
+		NULL == f
+		)
+		return (
+			ftlog__message(F, L,
+						   "ft_array__extract_by_func"
+						   " error: func ptr (null)",
+						   EINVAL));
+	return (0);
 }
+
+t_array *
+ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param)
+{
+	t_array *new;
+	int i;
+
+	if (
+		check(array, f)
+		)
+		return (NULL);
+	if (
+		NULL == (new = ftarray__init(array->length, array->element_size))
+		)
+		return (NULL);
+	i = 0;
+	while (
+		i < array->length
+		)
+	{
+		if (
+			f(ftarray__at(array, i), param)
+			)
+		{
+			ftarray__push(&new, ftarray__at(array, i));
+			ftarray__remove(array, i);
+		}
+		i++;
+	}
+	return (new);
+}
+
+
+
+
+

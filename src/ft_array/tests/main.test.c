@@ -15,17 +15,18 @@ void test_ft_array$add(void);
 void test_ft_array$at(void);
 void test_ft_array$bubble(void);
 void test_ft_array_next_and_prev(void);
-void test_ft_array$cmp();
-void test_ft_array_copy();
-void test_ft_array_double_size();
-void test_ft_array_free();
-void test_ft_array$func();
-void test_ft_array_remove();
-void test_ft_array$utils();
-void test_ft_array$cmp();
-void test_ft_array$remove_from();
-void test_ft_array$slice();
-void test_ft_array$slice_and_remove();
+void test_ft_array$cmp(void);
+void test_ft_array_copy(void);
+void test_ft_array_double_size(void);
+void test_ft_array_free(void);
+void test_ft_array$func(void);
+void test_ft_array_remove(void);
+void test_ft_array$utils(void);
+void test_ft_array$cmp(void);
+void test_ft_array$remove_from(void);
+void test_ft_array$slice(void);
+void test_ft_array$slice_and_remove(void);
+void test_ft_array__extract_by_func(void);
 
 void test_ft_array_main(void)
 {
@@ -45,4 +46,5 @@ void test_ft_array_main(void)
 	test_ft_array$remove_from();
 	test_ft_array$slice();
 	test_ft_array$slice_and_remove();
+	test_ft_array__extract_by_func();
 }
