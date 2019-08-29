@@ -19,10 +19,13 @@ void fts__free(t_s **s)
 	if (NULL == s || NULL == *s)
 	{
 		ftlog__message(F, L,
-					   "ft_s$free error: s ptr (null)",
+					   "fts__free error: s ptr (null)",
 					   EINVAL);
 		return;
 	}
-	ft_bzero(*s, sizeof(t_s) + (*s)->capacity);
+	fts__clear(*s);
+	free((*s)->data);
+	ft_bzero(*s, sizeof(t_s));
+	free(*s);
 	*s = NULL;
 }

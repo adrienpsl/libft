@@ -15,9 +15,9 @@
 #include <ft_str.h>
 #include <ft_mem.h>
 
-static int check(t_s **s, char *string)
+static int check(t_s *s, char *string)
 {
-	if (NULL == s || NULL == *s)
+	if (NULL == s)
 	{
 		return (
 			ftlog__message(F, L,
@@ -36,51 +36,39 @@ static int check(t_s **s, char *string)
 	return (0);
 }
 
-t_s *increase(t_s *s, size_t size)
+int increase(t_s *s, size_t size)
 {
-	t_s *new;
+	char *new_buffer;
 
 	if (
-		!(new = fts__init(s->capacity + size))
+		NULL == (new_buffer = ft_memalloc((size * 2) + 2))
 		)
-	{
-		return (NULL);
-	}
-	{
-		ft_memcpy(new->data, s->data, s->i);
-		new->i = s->i;
-	}
-	{
-		fts__free(&s);
-		return (new);
-	}
+		return (1);
+	ft_memcpy(new_buffer, s->data, s->i);
+	ftstr__free(&s->data);
+	s->data = new_buffer;
+	s->capacity = size * 2;
+	return (0);
 }
 
-int fts__add(t_s **p_s, char *str)
+int fts__add(t_s *s, char *str)
 {
 	size_t length;
-	t_s *s;
 
 	if (
-		check(p_s, str)
+		check(s, str)
 		)
-	{
 		return (-1);
-	}
-	{
-		s = *p_s;
-		length = ft_strlen(str);
-	}
+	length = ft_strlen(str);
 	if (s->i + length > s->capacity)
 	{
 		if (
-			!(s = increase(s, length))
+			increase(s, length)
 			)
 			return (-1);
 	}
 	{
 		ft_memcpy(s->data + s->i, str, length);
-		*p_s = s;
 		return (0);
 	}
 }

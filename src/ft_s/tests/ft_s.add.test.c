@@ -40,7 +40,7 @@ void test_ft_s__add(void)
 
 		// test no s
 		{
-			ret = fts__add((t_s **)1, NULL);
+			ret = fts__add((t_s *)1, NULL);
 			if (
 				!ret
 				|| lib_cmp_testbuff_log("ft_s$add error: str ptr (null)\n")
@@ -61,9 +61,9 @@ void test_ft_s__add(void)
 		// test with no place
 		{
 
-			ret = fts__add(&s, "12345");
+			ret = fts__add(s, "12345");
 			if (ret
-				|| s->capacity != 14
+				|| s->capacity != 10
 				|| ft_str_cmp("12345", s->data))
 				log_test(2)
 		}
@@ -71,9 +71,9 @@ void test_ft_s__add(void)
 		// test with big str
 		fts__clear(s);
 		char *str = "asoeuhasoeuhasoeu saoeuh asoehusaoeh u asoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh u vasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh uasoeuhasoeuhasoeu saoeuh asoehusaoeh u";
-		ret = fts__add(&s, str);
+		ret = fts__add(s, str);
 		if (ret
-			|| s->capacity != 1630
+			|| s->capacity != 1602
 			|| ft_str_cmp(str, s->data))
 			log_test(2)
 	}

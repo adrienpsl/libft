@@ -28,7 +28,6 @@ void test_ft_s$init()
 			if (
 				s->i != 0
 				|| s->capacity != 2
-				|| s->data != (char *)s + sizeof(t_s)
 				|| ft_memcmp(s->data, test, 2)
 				)
 				log_test(0)
@@ -44,7 +43,6 @@ void test_ft_s$init()
 			if (
 				s->i != 0
 				|| s->capacity != 84
-				|| s->data != (char*)s + sizeof(t_s)
 				|| ft_memcmp(s->data, test, 42)
 				)
 				log_test(1)

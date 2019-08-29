@@ -27,14 +27,14 @@ void test_ft_s$free()
 
 		fts__free(NULL);
 		if (
-			lib_cmp_testbuff_log("ft_s$free error: s ptr (null)\n")
+			lib_cmp_testbuff_log("fts__free error: s ptr (null)\n")
 			)
 			log_test(0)
 
 		fts__free(&s);
 		if (
 			s
-			|| lib_cmp_testbuff_log("ft_s$free error: s ptr (null)\n")
+			|| lib_cmp_testbuff_log("fts__free error: s ptr (null)\n")
 			)
 			log_test(1)
 
@@ -46,7 +46,7 @@ void test_ft_s$free()
 	* */
 	{
 		t_s *s = fts__init(0);
-		fts__add(&s, "1234567890");
+		fts__add(s, "1234567890");
 
 		fts__free(&s);
 		if (

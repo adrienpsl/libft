@@ -25,7 +25,7 @@ typedef struct s_s
 } t_s;
 
 t_s *fts__init(size_t size);
-int fts__add(t_s **s, char *str);
+int fts__add(t_s *s, char *str);
 void fts__free(t_s **s);
 int fts__clear(t_s *s);
 

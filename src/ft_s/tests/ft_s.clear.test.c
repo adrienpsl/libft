@@ -41,7 +41,7 @@ void test_ft_$clear()
 	{
 		t_s *s = fts__init(0);
 		char *test = ft_memalloc(1000);
-		fts__add(&s, "1234567890");
+		fts__add(s, "1234567890");
 
 		fts__clear(s);
 		if (
