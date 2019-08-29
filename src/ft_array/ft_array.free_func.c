@@ -10,52 +10,44 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
-#include <errno.h>
 #include <ft_log.h>
-#include <ft_printf.h>
+#include <ft_mem.h>
+#include "ft_array.h"
 
-static int check(t_array *array, int (*f)(void *, void *))
+static int
+check(t_array **array, void (*f)(void *, void *))
 {
-	if (!array)
+	if (NULL == array || NULL == *array)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ftarray__func error: array ptr (null)",
+						   "ftarray__free_func error: array ptr (null)",
 						   EINVAL));
 	}
 	if (!f)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ftarray__func error: func ptr (null)",
+						   "ftarray__free_func error: func ptr (null)",
 						   EINVAL));
 	}
 	return (0);
 }
 
-void *ftarray__func(t_array *array, int(*func)(void *, void *), void *param)
+void
+ftarray__free_func(t_array **p_array, void (*f)(void *, void *), void *param)
 {
-	if (
-		check(array, func)
-		)
-		return (NULL);
-	array->i = 0;
+	void *current_element;
+
+	if (check(p_array, f))
+		return;
+	ftarray__set_start(*p_array);
 	while (
-		array->i < array->length
+		(current_element = ftarray__next(*p_array))
 		)
-	{
-		if (
-			func(ftarray__at(array, array->i), param)
-			)
-			return (ftarray__at(array, array->i));
-		array->i++;
-	}
-	if (
-		func == ftarray__func_print_int || func == ftarray__func_print_str
-		)
-	{
-		ft_printf("\n");
-	}
-	return (NULL);
+		f(current_element, param);
+	ftarray__clear(*p_array);
+	ft_bzero(*p_array, sizeof(t_array));
+	free(*p_array);
+	*p_array = NULL;
 }
