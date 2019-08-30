@@ -77,13 +77,13 @@ void test_ft_array$cmp()
 
 		// test 1
 		{
-			ftarray__push(&array_1, data_1);
-			ftarray__push(&array_2, data_1);
+			ftarray__push(array_1, data_1);
+			ftarray__push(array_2, data_1);
 			if (ftarray__cmp(array_1, array_2, ftarray__cmp_int))
 				log_test(0)
 
 			ftarray__clear(array_1);
-			ftarray__push(&array_1, data_1 + 1);
+			ftarray__push(array_1, data_1 + 1);
 			if (!ftarray__cmp(array_1, array_2, ftarray__cmp_int))
 				log_test(1)
 		}
@@ -92,16 +92,16 @@ void test_ft_array$cmp()
 		ftarray__clear(array_2);
 		// test 2
 		{
-			ftarray__push(&array_1, data_1);
-			ftarray__push(&array_2, data_1);
-			ftarray__push(&array_1, data_1 + 1);
-			ftarray__push(&array_2, data_1 + 1);
+			ftarray__push(array_1, data_1);
+			ftarray__push(array_2, data_1);
+			ftarray__push(array_1, data_1 + 1);
+			ftarray__push(array_2, data_1 + 1);
 
 			if (ftarray__cmp(array_1, array_2, ftarray__cmp_int))
 				log_test(2)
 
 			ftarray__clear(array_1);
-			ftarray__push(&array_1, data_1 + 1);
+			ftarray__push(array_1, data_1 + 1);
 			if (!ftarray__cmp(array_1, array_2, ftarray__cmp_int))
 				log_test(3)
 

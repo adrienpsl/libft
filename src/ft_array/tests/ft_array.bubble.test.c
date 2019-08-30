@@ -66,8 +66,8 @@ void test_ft_array$bubble(void)
 
 		// test no param
 		{
-			ftarray__push(&array, &param);
-			ftarray__push(&array, &param);
+			ftarray__push(array, &param);
+			ftarray__push(array, &param);
 			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, NULL);
 			if (ret
 				|| lib_cmp_testbuff_log(
@@ -98,7 +98,7 @@ void test_ft_array$bubble(void)
 		// test with 1 number
 		{
 			int n_1 = 1;
-			ftarray__push(&array, &n_1);
+			ftarray__push(array, &n_1);
 
 			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret)
@@ -108,7 +108,7 @@ void test_ft_array$bubble(void)
 		// test with 2 numbers sorted
 		{
 			int n_1 = 2;
-			ftarray__push(&array, &n_1);
+			ftarray__push(array, &n_1);
 
 			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
 			if (ret)
@@ -120,8 +120,8 @@ void test_ft_array$bubble(void)
 			ftarray__clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
-			ftarray__push(&array, &n_1);
-			ftarray__push(&array, &n_2);
+			ftarray__push(array, &n_1);
+			ftarray__push(array, &n_2);
 
 			int res_array[10] = { 1, 2 };
 
@@ -136,9 +136,9 @@ void test_ft_array$bubble(void)
 			int n_1 = 2;
 			int n_2 = 1;
 			int n_3 = -3;
-			ftarray__push(&array, &n_1);
-			ftarray__push(&array, &n_2);
-			ftarray__push(&array, &n_3);
+			ftarray__push(array, &n_1);
+			ftarray__push(array, &n_2);
+			ftarray__push(array, &n_3);
 
 			int res_array[10] = { -3, 1, 2 };
 
@@ -153,9 +153,9 @@ void test_ft_array$bubble(void)
 			int n_1 = 2;
 			int n_2 = 1;
 			int n_3 = -3;
-			ftarray__push(&array, &n_1);
-			ftarray__push(&array, &n_2);
-			ftarray__push(&array, &n_3);
+			ftarray__push(array, &n_1);
+			ftarray__push(array, &n_2);
+			ftarray__push(array, &n_3);
 
 			int res_array[10] = { 2, 1, -3 };
 
@@ -170,8 +170,8 @@ void test_ft_array$bubble(void)
 			ftarray__clear(array);
 			int n_1 = 2;
 			int n_2 = 1;
-			ftarray__push(&array, &n_1);
-			ftarray__push(&array, &n_2);
+			ftarray__push(array, &n_1);
+			ftarray__push(array, &n_2);
 
 			int res_array[10] = { 2, 1 };
 

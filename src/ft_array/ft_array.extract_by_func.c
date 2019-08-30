@@ -36,7 +36,7 @@ static int check(t_array *array, int (*f)(void *, void *))
 }
 
 static void
-loop_on_array(t_array *array, t_array **new, int(*f)(void *, void *),
+loop_on_array(t_array *array, t_array *new, int(*f)(void *, void *),
 	void *param)
 {
 	int i;
@@ -72,7 +72,7 @@ ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param)
 		)
 		return (NULL);
 	{
-		loop_on_array(array, &new, f, param);
+		loop_on_array(array, new, f, param);
 	}
 	return (new);
 }

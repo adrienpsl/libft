@@ -39,25 +39,17 @@ void test_ft_array_init(void)
 		int size = 3;
 		t_array *array = ftarray__init(size, sizeof(int));
 
-		// test data placement
-		{
-			if (
-				array->data != (char *)array + (sizeof(t_array))
-				)
-				log_test(1)
-		}
-
-		// test buffer placement
-		{
-			char *tmp = array->data;
-			tmp += sizeof(int) * (size * 2);
-			tmp += sizeof(int);
-
-			if (
-				array->buffer != tmp
-				)
-				log_test(2)
-		}
+//		// test buffer placement
+//		{
+//			char *tmp = array->data;
+//			tmp += sizeof(int) * (size * 2);
+//			tmp += sizeof(int);
+//
+//			if (
+//				array->buffer != tmp
+//				)
+//				log_test(2)
+//		}
 
 		ftarray__free(&array);
 	}
@@ -84,10 +76,10 @@ void test_ft_array_init(void)
 		{
 			*(int *)array->buffer = INT32_MIN;
 
-			if (
-				int_array[size * 2 + 1] != INT32_MIN
-				)
-				log_test(4)
+//			if (
+//				int_array[size * 2 + 1] != INT32_MIN
+//				)
+//				log_test(4)
 		}
 
 		ftarray__free(&array);

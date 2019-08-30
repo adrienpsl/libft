@@ -14,14 +14,15 @@
 #include <ft_mem.h>
 #include <ft_log.h>
 #include <errno.h>
+#include <libft_define.h>
 
-int static check(t_array **p_array, void *element, int index)
+int static check(t_array *array, void *element, int index)
 {
-	if (!p_array || !*p_array || !element)
+	if (!array || !element)
 	{
 		return (ftlog__null(__FILE__, __LINE__));
 	}
-	else if (index > (*p_array)->length)
+	else if (index > array->length)
 	{
 		return (ftlog__message(F, L, "ft_array$insert"
 									 " index bigger than length", EINVAL));
@@ -37,16 +38,6 @@ int static check(t_array **p_array, void *element, int index)
 	}
 }
 
-static t_array *handle_grow(t_array *array)
-{
-	if (array->length + 1 >= array->capacity)
-	{
-		if (!(array = ftarray__double_size(array)))
-			return (NULL);
-	}
-	return (array);
-}
-
 static void move_and_copy_value(t_array *array, void *element, int index)
 {
 	if (
@@ -55,7 +46,7 @@ static void move_and_copy_value(t_array *array, void *element, int index)
 	{
 		ft_memmove(ftarray__at(array, index + 1),
 				   ftarray__at(array, index),
-				   (array->length - array->i) * array->element_size);
+				   (array->length - index) * array->element_size);
 	}
 	{
 		ft_memcpy(ftarray__at(array, index), element, array->element_size);
@@ -63,21 +54,16 @@ static void move_and_copy_value(t_array *array, void *element, int index)
 	}
 }
 
-int ftarray__insert(t_array **p_array, void *element, int index)
+int ftarray__insert(t_array *array, void *element, int index)
 {
-	t_array *array;
-
 	if (
-		check(p_array, element, index)
+		check(array, element, index)
 		)
 		return (-1);
-	if (
-		!(array = handle_grow(*p_array))
+	if (array->length + 1 >= array->capacity
+		&& OK != ftarray__double_size(array)
 		)
 		return (-1);
-	{
-		move_and_copy_value(array, element, index);
-	}
-	*p_array = array;
+	move_and_copy_value(array, element, index);
 	return (0);
 }

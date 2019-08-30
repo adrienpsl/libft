@@ -77,7 +77,7 @@ void test_ft_array$at()
 		{
 			for (int i = 0; i < 100; ++i)
 			{
-				ftarray__push(&array, &i);
+				ftarray__push(array, &i);
 			}
 
 			for (int j = 0; j < 100; ++j)

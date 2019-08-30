@@ -28,7 +28,7 @@ void test_ft_array$add()
 		{
 			for (int i = 0; i < 1000; ++i)
 			{
-				ftarray__push(&array, &i);
+				ftarray__push(array, &i);
 			}
 			// I assign now because the array is variable
 			int *int_arr = (void *) array->data;
@@ -54,7 +54,7 @@ void test_ft_array$add()
 		{
 			for (int i = 0; i < 1000; ++i)
 			{
-				ftarray__push(&array, &string);
+				ftarray__push(array, &string);
 			}
 			// I assign now because the array is variable
 			char **str_arr = (char **) array->data;
@@ -81,7 +81,7 @@ void test_ft_array$add()
 		{
 			for (int i = 0; i < 1000; ++i)
 			{
-				ftarray__insert(&array, &i, i);
+				ftarray__insert(array, &i, i);
 			}
 			// I assign now because the array is variable
 			int *int_arr = (void *) array->data;
@@ -106,11 +106,11 @@ void test_ft_array$add()
 		// test number at middle
 		{
 			data = 2;
-			ftarray__insert(&array, &data, 0);
+			ftarray__insert(array, &data, 0);
 			data = 3;
-			ftarray__insert(&array, &data, 1);
+			ftarray__insert(array, &data, 1);
 			data = 1;
-			ftarray__insert(&array, &data, 0);
+			ftarray__insert(array, &data, 0);
 			int ref_array[10] = { 1, 2, 3 };
 			if (ft_memcmp(ref_array, array->data, sizeof(int) * 4))
 				log_test(3)
@@ -119,8 +119,8 @@ void test_ft_array$add()
 		// add 2 number at each side of the previous one
 		{
 			data = 42;
-			ftarray__insert(&array, &data, 0);
-			ftarray__insert(&array, &data, 4);
+			ftarray__insert(array, &data, 0);
+			ftarray__insert(array, &data, 4);
 
 			int ref_array[10] = { 42, 1, 2, 3, 42 };
 			if (ft_memcmp(ref_array, array->data, sizeof(int) * 5))
@@ -144,7 +144,7 @@ void test_ft_array$add()
 		// test with to big index
 		{
 			data = 42;
-			ret = ftarray__insert(&array, &data, 1);
+			ret = ftarray__insert(array, &data, 1);
 			if (
 				ret != -1
 				|| array->length

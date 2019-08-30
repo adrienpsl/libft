@@ -63,8 +63,8 @@ void *ftarray__prev_loop(t_array *array);
 
 void *ftarray__at(t_array *array, int index);
 
-int ftarray__push(t_array **p_array, void *element);
-int ftarray__insert(t_array **p_array, void *element, int index);
+int ftarray__push(t_array *array, void *element);
+int ftarray__insert(t_array *array, void *element, int index);
 int ftarray__remove(t_array *array, int index);
 void ftarray__remove_from(t_array *array, int from, int at);
 
@@ -88,7 +88,7 @@ int ftarray__cmp(t_array *array_1, t_array *array_2, int (*f)(void *, void *));
 int ftarray__cmp_int(void *p1, void *p2);
 int ftarray__cmp_str(void *p1, void *p2);
 
-t_array *ftarray__double_size(t_array *src);
+int ftarray__double_size(t_array *array);
 t_array *ftarray__copy(t_array *src);
 
 /*

@@ -22,7 +22,7 @@ void test_ft_array_double_size()
 	* Error handling
 	* */
 	{
-		t_array *ret;
+		int ret;
 
 		// test no array
 		{
@@ -30,9 +30,9 @@ void test_ft_array_double_size()
 			lib_clear_testbuff();
 			ret = ftarray__double_size(NULL);
 			if (
-				ret
+				ret != -1
 				|| lib_cmp_testbuff_log(
-					"ft_array$double size error: array ptr (null)\n")
+					"ftarray__double_size error: array ptr (null)\n")
 				)
 				log_test(0)
 		}
@@ -44,7 +44,7 @@ void test_ft_array_double_size()
 	{
 		int data[10] = { 0, 10, 2, 2, 23, 342 };
 		t_array *array = ftarray__init_data(data, 10, sizeof(int));
-		t_array *ret;
+		int ret;
 
 		{
 			t_array *result = ftarray__init(20, sizeof(int));
@@ -53,8 +53,9 @@ void test_ft_array_double_size()
 
 			ret = ftarray__double_size(array);
 
-			if (ftarray__cmp(result, ret, ftarray__cmp_int)
-				|| ret->capacity != 10 * 2 * 2)
+			if (ret
+				|| ftarray__cmp(result, array, ftarray__cmp_int)
+				|| array->capacity != 20)
 				log_test(1)
 		}
 	}
