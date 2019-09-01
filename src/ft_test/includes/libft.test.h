@@ -16,8 +16,8 @@
 extern int g_test;
 int g_test;
 
-extern char g_test_buffer[10000];
-char g_test_buffer[10000];
+extern char g_test_buffer[100000];
+char g_test_buffer[100000];
 
 int lib_cmp_testbuff_log(char *expected);
 void lib_clear_testbuff(void);
