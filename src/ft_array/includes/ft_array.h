@@ -72,6 +72,8 @@ void *ftarray__func(t_array *array, int(*func)(void *, void *), void *param);
 int ftarray__func_print_str(void *p1, void *param);
 int ftarray__func_print_int(void *p1, void *param);
 
+int ftarray__find(t_array *array, int(*func)(void *, void *), void *param);
+
 /*
 **	--- sort function ----------------------------------------------------------
 */

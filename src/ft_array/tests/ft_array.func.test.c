@@ -21,7 +21,7 @@ void test_ft_array$func()
 	* test error handling
 	* */
 	{
-		t_array *ret;
+		void *ret;
 
 		// test no array
 		{

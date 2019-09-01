@@ -27,6 +27,7 @@ void test_ft_array$remove_from(void);
 void test_ft_array$slice(void);
 void test_ft_array$slice_and_remove(void);
 void test_ft_array__extract_by_func(void);
+void test_ftarray__find(void);
 
 void test_ft_array_main(void)
 {
@@ -47,4 +48,5 @@ void test_ft_array_main(void)
 	test_ft_array$slice();
 	test_ft_array$slice_and_remove();
 	test_ft_array__extract_by_func();
+	test_ftarray__find();
 }
