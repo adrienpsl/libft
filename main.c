@@ -35,19 +35,18 @@ void test()
 	//		printf("printf error\n");
 	test_ft_array_main();
 	test_ft_s_main();
-//	test_ft_iocatch_option();
+	//	test_ft_iocatch_option();
 	test_main_ft_buffer();
 	test_main_ft_pf();
 }
 
 int main(int ac, char **av)
 {
-	(void) ac;
-	(void) av;
+	(void)ac;
+	(void)av;
 	//	g_test = 1;
 	g_log = TRACE;
 	test();
-
 
 	return (EXIT_SUCCESS);
 }

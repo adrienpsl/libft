@@ -18,7 +18,7 @@
 
 static int check(int nb_elements, size_t element_size)
 {
-	if (nb_elements < 1)
+	if (nb_elements < 0)
 	{
 		return (
 			ftlog__message(F, L, "ft_array$init : no elements number",

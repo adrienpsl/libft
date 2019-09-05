@@ -94,12 +94,12 @@ void test_ft_array_init(void)
 
 		// test no elements
 		{
-			array = ftarray__init(0, 42);
-			if (
-				array
-				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
-				)
-				log_test(5)
+//			array = ftarray__init(0, 42);
+//			if (
+//				array
+//				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
+//				)
+//				log_test(5)
 
 			array = ftarray__init(-22, 42);
 			if (
@@ -143,10 +143,10 @@ void test_ft_array_init(void)
 			}
 
 
-			// test with array of 0
+			// test with array of neg
 			{
 				int test_arr[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-				array = ftarray__init_data(test_arr, 0, 4);
+				array = ftarray__init_data(test_arr, -1, 4);
 				if (
 					array
 					||
