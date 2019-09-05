@@ -14,6 +14,7 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
+// TODO : bug if 0 length is given ? with at
 void *ftarray__next_loop(t_array *array)
 {
 	void *element;
@@ -25,6 +26,10 @@ void *ftarray__next_loop(t_array *array)
 					   EINVAL);
 		return (NULL);
 	}
+	if (
+		array->length == 0
+		)
+		return (NULL);
 	element = ftarray__at(array, array->i);
 	{
 		array->i =

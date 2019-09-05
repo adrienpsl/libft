@@ -84,6 +84,19 @@ void test_ft_array$bubble(void)
 	* sorting test
 	* */
 	{
+		// test with array of 0
+		{
+			t_array *array = ftarray__init(0, sizeof(int));
+			int ret;
+			int order = 1;
+
+			ret = ftarray__sort_bubble(array, ftarray__sort_cmp_int, &order);
+			if (ret)
+				log_test(33)
+
+		}
+
+
 		t_array *array = ftarray__init(10, sizeof(int));
 		int order = 1;
 		int ret;

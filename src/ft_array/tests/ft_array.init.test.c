@@ -34,22 +34,33 @@ void test_ft_array_init(void)
 			log_test(0)
 	}
 
+	// test with 0 element
+	{
+		t_array *array = ftarray__init(0, sizeof(int));
+		if (
+			array->element_size != sizeof(int)
+			|| array->length != 0
+			|| array->capacity != 0
+			)
+			log_test(0)
+	}
+
 	// look if buffer and array are at the right place
 	{
 		int size = 3;
 		t_array *array = ftarray__init(size, sizeof(int));
 
-//		// test buffer placement
-//		{
-//			char *tmp = array->data;
-//			tmp += sizeof(int) * (size * 2);
-//			tmp += sizeof(int);
-//
-//			if (
-//				array->buffer != tmp
-//				)
-//				log_test(2)
-//		}
+		//		// test buffer placement
+		//		{
+		//			char *tmp = array->data;
+		//			tmp += sizeof(int) * (size * 2);
+		//			tmp += sizeof(int);
+		//
+		//			if (
+		//				array->buffer != tmp
+		//				)
+		//				log_test(2)
+		//		}
 
 		ftarray__free(&array);
 	}
@@ -76,10 +87,10 @@ void test_ft_array_init(void)
 		{
 			*(int *)array->buffer = INT32_MIN;
 
-//			if (
-//				int_array[size * 2 + 1] != INT32_MIN
-//				)
-//				log_test(4)
+			//			if (
+			//				int_array[size * 2 + 1] != INT32_MIN
+			//				)
+			//				log_test(4)
 		}
 
 		ftarray__free(&array);
@@ -94,12 +105,12 @@ void test_ft_array_init(void)
 
 		// test no elements
 		{
-//			array = ftarray__init(0, 42);
-//			if (
-//				array
-//				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
-//				)
-//				log_test(5)
+			array = ftarray__init(-1, 42);
+			if (
+				array
+				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
+				)
+				log_test(5)
 
 			array = ftarray__init(-22, 42);
 			if (
@@ -136,8 +147,8 @@ void test_ft_array_init(void)
 				if (
 					array
 					||
-						lib_cmp_testbuff_log(
-							"ft_array$init_data : start (null)\n")
+					lib_cmp_testbuff_log(
+						"ft_array$init_data : start (null)\n")
 					)
 					log_test(8)
 			}
@@ -150,8 +161,8 @@ void test_ft_array_init(void)
 				if (
 					array
 					||
-						lib_cmp_testbuff_log(
-							"ft_array$init : no elements number\n")
+					lib_cmp_testbuff_log(
+						"ft_array$init : no elements number\n")
 					)
 					log_test(9)
 			}
@@ -164,11 +175,25 @@ void test_ft_array_init(void)
 	* test init_data no error
 	* */
 	{
-		t_array *array;
-		int test_arr[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		// test with 0 element
+		{
+			int test_arr[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+			t_array *array = ftarray__init_data(test_arr, 0, sizeof(int));
+
+			if (
+				NULL == array ||
+				array->length != 0
+				)
+				log_test(10)
+		}
+
+
 
 		// test with 1 element
 		{
+			t_array *array;
+			int test_arr[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
 			array = ftarray__init_data(test_arr, 1, sizeof(int));
 			if (
 				!array
@@ -181,6 +206,9 @@ void test_ft_array_init(void)
 
 		// test with 2 element
 		{
+			t_array *array;
+			int test_arr[11] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
 			array = ftarray__init_data(test_arr, 2, sizeof(int));
 			if (
 				!array

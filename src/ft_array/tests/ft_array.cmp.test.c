@@ -68,6 +68,29 @@ void test_ft_array$cmp()
 	}
 
 	/*
+	* test with array of 0
+	* */
+	{
+		// both 0 element
+		{
+			t_array *array_1 = ftarray__init(0, sizeof(int));
+			t_array *array_2 = ftarray__init(0, sizeof(int));
+			if (ftarray__cmp(array_1, array_2, ftarray__cmp_int))
+				log_test(-1)
+		}
+
+		// one 0 element
+		{
+			int data_1[20] = { 0, 1, 2, 3, 4, 5 };
+			t_array *array_1 = ftarray__init_data(data_1, 6, sizeof(int));
+			t_array *array_2 = ftarray__init(0, sizeof(int));
+			if (1 != ftarray__cmp(array_1, array_2, ftarray__cmp_int))
+				log_test(-2)
+		}
+	}
+
+
+	/*
 	* test cmp
 	* */
 	{

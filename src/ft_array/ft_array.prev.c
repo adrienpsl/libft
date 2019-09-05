@@ -25,6 +25,8 @@ void *ftarray__prev_loop(t_array *array)
 					   EINVAL);
 		return (NULL);
 	}
+	if (array->length ==0)
+	    return (NULL);
 	element = ftarray__at(array, array->i);
 	{
 		array->i =
@@ -46,6 +48,8 @@ void *ftarray__prev(t_array *array)
 					   EINVAL);
 		return (NULL);
 	}
+	if (array->length == 0)
+	    return (NULL);
 	if (array->i == 0 && end)
 		return (NULL);
 	else if (array->i != 0)

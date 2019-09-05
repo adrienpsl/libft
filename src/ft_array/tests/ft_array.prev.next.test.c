@@ -62,10 +62,65 @@ void test_ft_array_next_and_prev(void)
 	}
 
 	/*
+	* test with 0 element in the array
+	* */
+	{
+		// test next
+		{
+			t_array *array = ftarray__init(0, sizeof(int));
+			void *el;
+
+			array->i = 0;
+			el = ftarray__next(array);
+			if (
+				NULL != el)
+				log_test(10)
+		}
+
+		// test next_loop
+		{
+			t_array *array = ftarray__init(0, sizeof(int));
+			void *el;
+
+			array->i = 0;
+			el = ftarray__next_loop(array);
+			if (
+				NULL != el)
+				log_test(10)
+		}
+
+		// test prev
+		{
+			t_array *array = ftarray__init(0, sizeof(int));
+			void *el;
+
+			array->i = 0;
+			el = ftarray__prev(array);
+			if (
+				NULL != el)
+				log_test(10)
+		}
+
+		// test prev_loop
+		{
+			t_array *array = ftarray__init(0, sizeof(int));
+			void *el;
+
+			array->i = 0;
+			el = ftarray__prev_loop(array);
+			if (
+				NULL != el)
+				log_test(10)
+		}
+	}
+
+
+
+	/*
 	* test with an array of 5
 	* */
 	{
-		t_array *array = ftarray__init(20, sizeof(10));
+		t_array *array = ftarray__init(20, sizeof(int));
 		int data[30] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, 1, 2, 3, 4, 5, 6,
 						 7, 8, 9, 10 };
 		int *tmp;
