@@ -49,8 +49,13 @@ t_array *ftarray__slice_and_remove(t_array *array, int from, int at);
 t_array *
 ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param);
 void ftarray__free(t_array **p_array);
+
 void
-ftarray__free_func(t_array **p_array, void (*f)(void *, void *), void *param);
+ftarray__free_func(t_array **p_array, int (*f)(void *, void *), void *param);
+// utils
+int ftarray__free_func_str(void *element, void *p);
+
+
 int
 ftarray__remove_func(t_array *array, int index, void (*f)(void *, void *),
 	void *param);

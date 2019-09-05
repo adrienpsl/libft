@@ -14,8 +14,15 @@
 #include <ft_mem.h>
 #include "ft_array.h"
 
+int ftarray__free_func_str(void *element, void *p)
+{
+	(void)p;
+	free(*(char **)element);
+	return (0);
+}
+
 static int
-check(t_array **array, void (*f)(void *, void *))
+check(t_array **array, int (*f)(void *, void *))
 {
 	if (NULL == array || NULL == *array)
 	{
@@ -35,17 +42,12 @@ check(t_array **array, void (*f)(void *, void *))
 }
 
 void
-ftarray__free_func(t_array **p_array, void (*f)(void *, void *), void *param)
+ftarray__free_func(t_array **p_array, int (*f)(void *, void *), void *param)
 {
-	void *current_element;
-
 	if (check(p_array, f))
 		return;
 	ftarray__set_start(*p_array);
-	while (
-		(current_element = ftarray__next(*p_array))
-		)
-		f(current_element, param);
+	ftarray__func(*p_array, f, param);
 	ftarray__clear(*p_array);
 	ft_bzero(*p_array, sizeof(t_array));
 	free(*p_array);
