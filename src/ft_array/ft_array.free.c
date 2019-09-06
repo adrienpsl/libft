@@ -13,11 +13,6 @@
 #include <ft_mem.h>
 #include <ft_log.h>
 
-void ftarray__free_str()
-{
-
-}
-
 void ftarray__free(t_array **p_array)
 {
 	if (!p_array || !*p_array)
