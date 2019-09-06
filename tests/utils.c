@@ -16,13 +16,11 @@
 #include <libft.test.h>
 #include <ft_str.h>
 
-int lib_random_int(int limit);
 int lib_random_int(int limit)
 {
 	return (rand() % limit + 1);
 }
 
-void lib_print_func_int(void *ptr);
 void lib_print_func_int(void *ptr)
 {
 	printf("%3d ", *(int *)ptr);
@@ -50,7 +48,6 @@ int lib_cmp_testbuff_log(char *expected)
 	return (ret);
 }
 
-int lib_cmp_testbuff(char *expected);
 int lib_cmp_testbuff(char *expected)
 {
 	if (ft_str_cmp(expected, g_test_buffer))
