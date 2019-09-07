@@ -70,6 +70,23 @@ int test_cmp_testbuff(char *expected)
 	return (0);
 }
 
+int test_cmp_str(char *result, char *ret)
+{
+	if (
+		result == NULL && ret == NULL
+		)
+		return (0);
+	if (
+		OK != ft_str_cmp(result, ret)
+		)
+	{
+		printf("expected : %s \n", result);
+		printf("return   : %s \n", ret);
+		return (1);
+	}
+	return (0);
+}
+
 void
 lib_print_func(void *start, void (*f)(void *), size_t size_el, int length)
 {

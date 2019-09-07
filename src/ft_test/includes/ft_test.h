@@ -22,13 +22,16 @@ int g_test;
 extern char g_test_buffer[100000];
 char g_test_buffer[100000];
 
+// utils
 int test_random_int(int limit);
 void test_print_func_int(void *ptr);
 
+// buffer
 void test_clear_testbuff(void);
 int test_cmp_testbuff_log(char *expected);
 int test_cmp_testbuff(char *expected);
 
-int ft_test_if_streq(char *res, char *test, char *where);
+// cmp and print
+int test_cmp_str(char *result, char *ret);
 
 #endif
