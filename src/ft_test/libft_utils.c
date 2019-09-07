@@ -80,7 +80,7 @@ int test_cmp_str(char *result, char *ret)
 		OK != ft_str_cmp(result, ret)
 		)
 	{
-		printf("test cmp str");
+		printf("test cmp str\n");
 		printf("expected : %s\n", result);
 		printf("return   : %s\n", ret);
 		return (1);
