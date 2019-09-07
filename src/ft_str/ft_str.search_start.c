@@ -70,7 +70,7 @@ int check(char *current, char *searching)
 		);
 }
 
-int ftstr__search_start(char *current, char *searching, void *param)
+int ftstr__search_start(char *current, char *searching, int param)
 {
 	int i;
 
@@ -85,12 +85,12 @@ int ftstr__search_start(char *current, char *searching, void *param)
 		)
 		i += 1;
 	if (
-		FTSTR__SEARCH_START_STRICT == *(int *)param
+		FTSTR__SEARCH_START_STRICT == param
 		&& (searching[i] == '\0' && current[i] == '\0')
 		)
 		return (i);
 	else if (
-		0 == *(int *)param
+		FTSTR__SEARCH_START_PARTIAL == param
 		&& current[i] == '\0'
 		)
 		return (i);

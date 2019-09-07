@@ -49,7 +49,7 @@ int ft_test_streq(char const *s1, char const *s2);
 **	search
 */
 // tested
-int ftstr__search_start(char *current, char *searching, void *param);
+int ftstr__search_start(char *current, char *searching, int param);
 
 // not tested
 void ft_strchrnreplace(char *str, char *matched, char replacing, size_t size);
