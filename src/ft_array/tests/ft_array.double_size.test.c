@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <test.h>
+#include <ft_test.h>
 #include <ft_array.h>
-#include <libft.test.h>
+#include <ft_test.h>
 #include <ft_mem.h>
 #include "libft.h"
 

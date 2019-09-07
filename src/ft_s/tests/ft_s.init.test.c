@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <ft_s.h>
-#include <test.h>
+#include <ft_test.h>
 #include <ft_mem.h>
 
 void test_ft_s$init()

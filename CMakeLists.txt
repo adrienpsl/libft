@@ -21,7 +21,6 @@ add_library(${__LIB_NAME__} "" src/ft_printf/tests/ft_pf.catch_format.test.c src
 target_include_directories(${__LIB_NAME__} PUBLIC includes)
 
 add_subdirectory(src)
-add_subdirectory(tests)
 
 # ------------------------------------------------------------------------------
 #    create on link executable

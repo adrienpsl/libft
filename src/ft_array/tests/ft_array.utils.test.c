@@ -12,8 +12,8 @@
 
 #include <stddef.h>
 #include <ft_array.h>
-#include <test.h>
-#include <libft.test.h>
+#include <ft_test.h>
+#include <ft_test.h>
 #include <ft_mem.h>
 
 void test_ft_array$utils()

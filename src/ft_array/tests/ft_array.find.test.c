@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <test.h>
-#include <libft.test.h>
+#include <ft_test.h>
+#include <ft_test.h>
 #include "libft.h"
 
 static int find_func(void *el, void *searched)

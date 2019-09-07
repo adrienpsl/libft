@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.test.h>
+#include <ft_test.h>
 #include <ft_s.h>
-#include <test.h>
+#include <ft_test.h>
 
 void test_ft_s$free()
 {

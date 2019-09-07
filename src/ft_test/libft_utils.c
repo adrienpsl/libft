@@ -18,3 +18,68 @@ int init_libft()
 	ft_errno_set(0, 0);
 	return (0);
 }
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <ft_mem.h>
+#include <ft_test.h>
+#include <ft_str.h>
+
+int test_random_int(int limit)
+{
+	return (rand() % limit + 1);
+}
+
+void test_print_func_int(void *ptr)
+{
+	printf("%3d ", *(int *)ptr);
+}
+
+void test_clear_testbuff()
+{
+	ft_bzero(g_test_buffer, 10000);
+}
+
+int test_cmp_testbuff_log(char *expected)
+{
+	int ret;
+	int space;
+
+	space = ft_strchr(g_test_buffer, ' ');
+	ret = 0;
+	if (ft_str_cmp(expected, g_test_buffer + space + 1))
+	{
+		ret = 1;
+		printf("expected:%*s  %s", space, "", expected);
+		printf("result  : %s\n", g_test_buffer);
+	}
+	test_clear_testbuff();
+	return (ret);
+}
+
+int test_cmp_testbuff(char *expected)
+{
+	if (ft_str_cmp(expected, g_test_buffer))
+	{
+		printf("expected: %s\n", expected);
+		printf("result  : %s\n", g_test_buffer);
+		test_clear_testbuff();
+		return (1);
+	}
+	test_clear_testbuff();
+	return (0);
+}
+
+void
+lib_print_func(void *start, void (*f)(void *), size_t size_el, int length)
+{
+	int i;
+
+	i = 0;
+	while (i < length)
+	{
+		f((char *)start + ((size_t)i * size_el));
+		i++;
+	}
+	printf(" \n");
+}

@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <test.h>
-#include <libft.test.h>
+#include <ft_test.h>
+#include <ft_test.h>
 #include <ft_array.h>
 
 void test_ft_array_free()

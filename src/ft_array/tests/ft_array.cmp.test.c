@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include <ft_array.h>
-#include <libft.test.h>
-#include <test.h>
+#include <ft_test.h>
+#include <ft_test.h>
 
 void test_ft_array$cmp()
 {
@@ -141,8 +141,8 @@ void test_ft_array$cmp()
 
 			for (int i = -2000; i < 2000; ++i)
 			{
-				arr_1[lib_random_int(1000)] = i;
-				arr_2[lib_random_int(1000)] = i;
+				arr_1[test_random_int(1000)] = i;
+				arr_2[test_random_int(1000)] = i;
 			}
 
 			array_1 = ftarray__init_data(arr_1, 1000, sizeof(int));

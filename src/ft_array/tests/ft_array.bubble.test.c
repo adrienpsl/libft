@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include <ft_array.h>
-#include <libft.test.h>
-#include <test.h>
+#include <ft_test.h>
+#include <ft_test.h>
 #include <ft_mem.h>
 
 static int cmp(void const *a, void const *b)
@@ -210,7 +210,7 @@ void test_ft_array$bubble(void)
 			// build the array
 			for (int i = -2000; i < 2000; ++i)
 			{
-				data_arr[lib_random_int(1000)] = i;
+				data_arr[test_random_int(1000)] = i;
 			}
 
 			// copy it in the array
@@ -232,7 +232,7 @@ void test_ft_array$bubble(void)
 			// build the bigger first
 			for (int i = -2000; i < 2000; ++i)
 			{
-				data_arr[lib_random_int(1000)] = i;
+				data_arr[test_random_int(1000)] = i;
 			}
 
 			// copy it in the array

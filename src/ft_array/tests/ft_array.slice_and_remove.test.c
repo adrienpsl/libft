@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <test.h>
-#include <libft.test.h>
+#include <ft_test.h>
+#include <ft_test.h>
 #include "libft.h"
 
 void test_ft_array$slice_and_remove()

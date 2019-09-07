@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <ft_array.h>
-#include <test.h>
+#include <ft_test.h>
 #include <stdio.h>
 #include <ft_str.h>
 #include <ft_mem.h>
-#include <libft.test.h>
+#include <ft_test.h>
 
 void test_ft_array$add()
 {
