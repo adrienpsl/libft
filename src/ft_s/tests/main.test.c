@@ -16,6 +16,8 @@ void test_ft_s$init();
 void test_ft_s__add();
 void test_ft_s$free();
 void test_ft_$clear();
+void test_fts__remove_from();
+
 
 void test_ft_s_main(void)
 {
@@ -23,4 +25,5 @@ void test_ft_s_main(void)
 	test_ft_s__add();
 	test_ft_s$free();
 	test_ft_$clear();
+	test_fts__remove_from();
 }

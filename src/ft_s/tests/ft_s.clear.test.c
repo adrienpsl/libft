@@ -45,7 +45,7 @@ void test_ft_$clear()
 
 		fts__clear(s);
 		if (
-			s->i
+			s->length
 			|| ft_memcmp(test, s->data, s->capacity)
 			)
 		    log_test(1)

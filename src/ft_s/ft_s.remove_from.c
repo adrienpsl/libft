@@ -11,41 +11,36 @@
 /* ************************************************************************** */
 
 #include <ft_s.h>
-#include <test.h>
-#include <ft_mem.h>
+#include "libft.h"
 
-void test_ft_s$init()
+static int check(t_s *s, size_t start)
 {
-	/*
-	* test good input
-	* */
+	if (NULL == s)
 	{
-		// test with 0
-		{
-			t_s *s = fts__init(0);
-			char *test = ft_memalloc(1000);
-
-			if (
-				s->length != 0
-				|| s->capacity != 2
-				|| ft_memcmp(s->data, test, 2)
-				)
-				log_test(0)
-
-			fts__free(&s);
-		}
-
-		// test with 42
-		{
-			t_s *s = fts__init(42);
-			char *test = ft_memalloc(1000);
-
-			if (
-				s->length != 0
-				|| s->capacity != 84
-				|| ft_memcmp(s->data, test, 42)
-				)
-				log_test(1)
-		}
+		return (
+			ftlog__message(F, L,
+						   "fts__remove_from error: s ptr (null)",
+						   EINVAL)
+		);
 	}
+	else if (start >= s->length)
+	{
+		return (
+			ftlog__message(F, L,
+						   "fts__remove_from error: start > length",
+						   EINVAL)
+		);
+	}
+	else
+		return (0);
+}
+
+void fts__remove_from(t_s *s, size_t start)
+{
+	if (
+		check(s, start)
+		)
+		return;
+	ft_bzero(s->data + start, s->length - start);
+	s->length -= (s->length - start);
 }

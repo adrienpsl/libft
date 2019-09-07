@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #ifndef FT_S_H
 #define FT_S_H
 
@@ -20,13 +18,14 @@
 typedef struct s_s
 {
 	size_t capacity;
-	size_t i;
+	size_t length;
 	char *data;
 } t_s;
 
 t_s *fts__init(size_t size);
 int fts__add(t_s *s, char *str);
 void fts__free(t_s **s);
+void fts__remove_from(t_s *s, size_t start);
 int fts__clear(t_s *s);
 
 #endif

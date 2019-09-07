@@ -27,11 +27,11 @@ char **ft_strsplit_add(char **split, char *s, int free)
 
 //int ft_strsplit_buffer_add(char **split, int size_split, char *s)
 //{
-//	int i;
+//	int length;
 //
 //	if (!(s = ft_strdup(s)))
 //		return (-1);
-//	i = ft_strsplit_count(split);
-//	split[i] = s;
+//	length = ft_strsplit_count(split);
+//	split[length] = s;
 //	return (ft_strsplit_copy(split, free));
 //}

@@ -28,7 +28,7 @@ int fts__clear(t_s *s)
 	else
 	{
 		ft_bzero(s->data, s->capacity);
-		s->i = 0;
+		s->length = 0;
 		return (0);
 	}
 }

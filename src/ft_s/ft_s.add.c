@@ -44,7 +44,7 @@ int increase(t_s *s, size_t size)
 		NULL == (new_buffer = ft_memalloc((size + s->capacity) + 2))
 		)
 		return (1);
-	ft_memcpy(new_buffer, s->data, s->i);
+	ft_memcpy(new_buffer, s->data, s->length);
 	ftstr__free(&s->data);
 	s->data = new_buffer;
 	s->capacity += size;
@@ -60,7 +60,7 @@ int fts__add(t_s *s, char *str)
 		)
 		return (-1);
 	length = ft_strlen(str);
-	if (s->i + length > s->capacity)
+	if (s->length + length > s->capacity)
 	{
 		if (
 			increase(s, length)
@@ -68,8 +68,8 @@ int fts__add(t_s *s, char *str)
 			return (-1);
 	}
 	{
-		ft_memcpy(s->data + s->i, str, length);
-		s->i += length;
+		ft_memcpy(s->data + s->length, str, length);
+		s->length += length;
 		return (0);
 	}
 }
