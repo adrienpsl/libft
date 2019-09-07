@@ -26,12 +26,12 @@ void lib_print_func_int(void *ptr)
 	printf("%3d ", *(int *)ptr);
 }
 
-void lib_clear_testbuff()
+void test_clear_testbuff()
 {
 	ft_bzero(g_test_buffer, 10000);
 }
 
-int lib_cmp_testbuff_log(char *expected)
+int test_cmp_testbuff_log(char *expected)
 {
 	int ret;
 	int space;
@@ -44,20 +44,20 @@ int lib_cmp_testbuff_log(char *expected)
 		printf("expected:%*s  %s", space, "", expected);
 		printf("result  : %s\n", g_test_buffer);
 	}
-	lib_clear_testbuff();
+	test_clear_testbuff();
 	return (ret);
 }
 
-int lib_cmp_testbuff(char *expected)
+int test_cmp_testbuff(char *expected)
 {
 	if (ft_str_cmp(expected, g_test_buffer))
 	{
 		printf("expected: %s\n", expected);
 		printf("result  : %s\n", g_test_buffer);
-		lib_clear_testbuff();
+		test_clear_testbuff();
 		return (1);
 	}
-	lib_clear_testbuff();
+	test_clear_testbuff();
 	return (0);
 }
 

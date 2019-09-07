@@ -25,10 +25,10 @@ void test_ft_array$utils()
 		// test error handling
 		{
 			g_test = 1;
-			lib_clear_testbuff();
+			test_clear_testbuff();
 			ftarray__clear(NULL);
 			if (
-				lib_cmp_testbuff_log("ftarray__clear arg ptr (null)\n")
+				test_cmp_testbuff_log("ftarray__clear arg ptr (null)\n")
 				)
 				log_test(0)
 		}

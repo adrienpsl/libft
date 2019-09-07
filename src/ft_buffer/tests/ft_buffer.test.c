@@ -40,7 +40,7 @@ void test_ft_buffer()
 	// test if print and reset
 	{
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 
 		char clear[2000] = "et voila encore du texte putain";
 		ft_buffer_add(&buffer, clear, ft_strlen(clear));

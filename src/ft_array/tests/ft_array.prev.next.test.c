@@ -28,32 +28,32 @@ void test_ft_array_next_and_prev(void)
 		// test null given with all the 4 function
 		{
 			g_test = 1;
-			lib_clear_testbuff();
+			test_clear_testbuff();
 
 			ret = ftarray__next(NULL);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ftarray__next error: array ptr (null)\n")
 				)
 				log_test(0)
 
 			ret = ftarray__next_loop(NULL);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ft_array$next_loop error: array ptr (null)\n")
 				)
 				log_test(1)
 
 			ret = ftarray__prev(NULL);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ft_array$prev error: array ptr (null)\n")
 				)
 				log_test(1)
 
 			ret = ftarray__prev_loop(NULL);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ft_array$prev_loop error: array ptr (null)\n")
 				)
 				log_test(1)

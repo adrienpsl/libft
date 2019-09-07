@@ -26,7 +26,7 @@ target_sources(${__LIB_NAME__}
         ft_strlen.c
         ft_strnew.c
         ft_strsub.c
-        str.ft_str_search.c
+        ft_str.search_start.c
         )
 
 target_include_directories(${__LIB_NAME__} PUBLIC includes)

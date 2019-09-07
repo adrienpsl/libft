@@ -25,13 +25,13 @@ void test_ft_array$slice()
 		t_array *ret;
 
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 
 		// null array
 		{
 			ret = ftarray__slice(NULL, 1, 2);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ftarray__slice array ptr (null)\n")
 				)
 				log_test(0)
@@ -41,14 +41,14 @@ void test_ft_array$slice()
 		{
 			ret = ftarray__slice(array, -1, 2);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ftarray__slice at / from  < 0\n")
 				)
 				log_test(0)
 
 			ret = ftarray__slice(array, 1, -2);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ftarray__slice at >= from\n")
 				)
 				log_test(0)
@@ -58,14 +58,14 @@ void test_ft_array$slice()
 		{
 			ret = ftarray__slice(array, 0, 20);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ftarray__slice at / from > length\n")
 				)
 				log_test(0)
 
 			ret = ftarray__slice(array, 20, 21);
 			if (ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 				"ftarray__slice at / from > length\n")
 				)
 				log_test(0)

@@ -13,6 +13,9 @@
 #ifndef LIBFT_FT_STR_H
 #define LIBFT_FT_STR_H
 
+#define FTSTR__SEARCH_START_STRICT 1
+#define FTSTR__SEARCH_START_PARTIAL 0
+
 # include "unistd.h"
 
 /*
@@ -45,18 +48,18 @@ int ft_test_streq(char const *s1, char const *s2);
 /*
 **	search
 */
+// tested
+int ftstr__search_start(char *current, char *searching, void *param);
+
+// not tested
 void ft_strchrnreplace(char *str, char *matched, char replacing, size_t size);
 void ft_strchrreplace(char *str, char *matched, char replacing);
-ssize_t ft_strchr(char *str, char c);
-int ftstrsearch__start(char *src, char *searching);
 char *ft_str_replace(char *str, char *searching, char *replacing, int do_free);
 char *
 ft_str_replacebuffer(char *out, char *str, char *searching, char *replacing);
 int ft_str_search(char *src, char *searching);
 ssize_t ft_strchrstr(char *str, char *searched);
 int ft_strnchr(char *str, char c);
-
-
 
 /*
 **	memory
@@ -88,5 +91,6 @@ int ft_isdigit(int c);
 int ft_isprint(int c);
 int ft_isascii(int c);
 int ft_isspace(int c);
+ssize_t ft_strchr(char *str, char c);
 
 #endif

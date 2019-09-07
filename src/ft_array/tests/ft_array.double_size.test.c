@@ -27,11 +27,11 @@ void test_ft_array_double_size()
 		// test no array
 		{
 			g_test = 1;
-			lib_clear_testbuff();
+			test_clear_testbuff();
 			ret = ftarray__double_size(NULL);
 			if (
 				ret != -1
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ftarray__double_size error: array ptr (null)\n")
 				)
 				log_test(0)

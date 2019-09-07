@@ -108,14 +108,14 @@ void test_ft_array_init(void)
 			array = ftarray__init(-1, 42);
 			if (
 				array
-				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
+				|| test_cmp_testbuff_log("ft_array$init : no elements number\n")
 				)
 				log_test(5)
 
 			array = ftarray__init(-22, 42);
 			if (
 				array
-				|| lib_cmp_testbuff_log("ft_array$init : no elements number\n")
+				|| test_cmp_testbuff_log("ft_array$init : no elements number\n")
 				)
 				log_test(6)
 		}
@@ -125,7 +125,8 @@ void test_ft_array_init(void)
 			array = ftarray__init(11, 0);
 			if (
 				array
-				|| lib_cmp_testbuff_log("ft_array$init : element size (null)\n")
+				|| test_cmp_testbuff_log(
+					"ft_array$init : element size (null)\n")
 				)
 				log_test(7)
 		}
@@ -140,15 +141,15 @@ void test_ft_array_init(void)
 		t_array *array;
 		{
 			g_test = 1;
-			lib_clear_testbuff();
+			test_clear_testbuff();
 
 			{
 				array = ftarray__init_data(NULL, 10, 10);
 				if (
 					array
 					||
-					lib_cmp_testbuff_log(
-						"ft_array$init_data : start (null)\n")
+						test_cmp_testbuff_log(
+							"ft_array$init_data : start (null)\n")
 					)
 					log_test(8)
 			}
@@ -161,8 +162,8 @@ void test_ft_array_init(void)
 				if (
 					array
 					||
-					lib_cmp_testbuff_log(
-						"ft_array$init : no elements number\n")
+						test_cmp_testbuff_log(
+							"ft_array$init : no elements number\n")
 					)
 					log_test(9)
 			}

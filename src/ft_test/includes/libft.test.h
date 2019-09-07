@@ -22,9 +22,9 @@ char g_test_buffer[100000];
 int lib_random_int(int limit);
 void lib_print_func_int(void *ptr);
 
-int lib_cmp_testbuff_log(char *expected);
-int lib_cmp_testbuff(char *expected);
-void lib_clear_testbuff(void);
+int test_cmp_testbuff_log(char *expected);
+int test_cmp_testbuff(char *expected);
+void test_clear_testbuff(void);
 int ft_test_if_streq(char *res, char *test, char *where);
 
 #endif

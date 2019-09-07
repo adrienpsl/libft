@@ -26,14 +26,14 @@ void test_ft_s__add(void)
 	{
 		int ret;
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 
 		// test no s
 		{
 			ret = fts__add(NULL, "");
 			if (
 				!ret
-				|| lib_cmp_testbuff_log("ft_s$add error: s ptr (null)\n")
+				|| test_cmp_testbuff_log("ft_s$add error: s ptr (null)\n")
 				)
 				log_test(0)
 		}
@@ -43,7 +43,7 @@ void test_ft_s__add(void)
 			ret = fts__add((t_s *)1, NULL);
 			if (
 				!ret
-				|| lib_cmp_testbuff_log("ft_s$add error: str ptr (null)\n")
+				|| test_cmp_testbuff_log("ft_s$add error: str ptr (null)\n")
 				)
 				log_test(1)
 		}

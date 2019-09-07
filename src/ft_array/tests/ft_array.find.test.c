@@ -35,12 +35,12 @@ void test_ftarray__find(void)
 
 		// test no array
 		{
-			lib_clear_testbuff();
+			test_clear_testbuff();
 
 			ret = ftarray__find(NULL, ftarray__func_print_int, NULL);
 			if (
 				ret != -1
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ftarray__find error: array ptr (null)\n")
 				)
 				log_test(0)
@@ -50,7 +50,8 @@ void test_ftarray__find(void)
 			if (
 				ret != -1
 				||
-				lib_cmp_testbuff_log("ftarray__find error: func ptr (null)\n")
+					test_cmp_testbuff_log(
+						"ftarray__find error: func ptr (null)\n")
 				)
 				log_test(1)
 		}

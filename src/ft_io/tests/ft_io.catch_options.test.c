@@ -41,8 +41,8 @@ void test_ft_iocatch_option()
 			if (
 				ret != -1
 				||
-				lib_cmp_testbuff_log(
-					"ft_io$catch_options error: array av (null)\n")
+					test_cmp_testbuff_log(
+						"ft_io$catch_options error: array av (null)\n")
 				)
 				log_test(1)
 		}
@@ -52,7 +52,7 @@ void test_ft_iocatch_option()
 			ret = ftio__catch_option((char **)"", NULL, &options, usage);
 			if (
 				ret != -1
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ft_io$catch_options error: str / ptr ptr (null)\n")
 				)
 				log_test(1)
@@ -63,7 +63,7 @@ void test_ft_iocatch_option()
 			ret = ftio__catch_option((char **)"", "", NULL, usage);
 			if (
 				ret != -1
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ft_io$catch_options error: str / ptr ptr (null)\n")
 				)
 				log_test(1)
@@ -75,8 +75,8 @@ void test_ft_iocatch_option()
 			if (
 				ret != -1
 				||
-				lib_cmp_testbuff_log(
-					"ft_io$catch_options error: func ptr (null)\n")
+					test_cmp_testbuff_log(
+						"ft_io$catch_options error: func ptr (null)\n")
 				)
 				log_test(1)
 		}
@@ -221,7 +221,7 @@ void test_ft_iocatch_option()
 			if (
 				ret != -1
 				|| options != 0
-				|| lib_cmp_testbuff("usage : - \n")
+				|| test_cmp_testbuff("usage : - \n")
 				)
 				log_test(1)
 
@@ -240,7 +240,7 @@ void test_ft_iocatch_option()
 			if (
 				ret != -1
 				|| options != 0
-				|| lib_cmp_testbuff("usage : h \n")
+				|| test_cmp_testbuff("usage : h \n")
 				)
 				log_test(1)
 

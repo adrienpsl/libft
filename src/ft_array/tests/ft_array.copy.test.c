@@ -25,11 +25,11 @@ void test_ft_array_copy()
 		// test no array
 		{
 			g_test = 1;
-			lib_clear_testbuff();
+			test_clear_testbuff();
 			ret = ftarray__copy(NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ft_array$copy error: array ptr (null)\n")
 				)
 				log_test(0)

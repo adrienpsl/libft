@@ -23,18 +23,18 @@ void test_ft_s$free()
 		t_s *s = NULL;
 
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 
 		fts__free(NULL);
 		if (
-			lib_cmp_testbuff_log("fts__free error: s ptr (null)\n")
+			test_cmp_testbuff_log("fts__free error: s ptr (null)\n")
 			)
 			log_test(0)
 
 		fts__free(&s);
 		if (
 			s
-			|| lib_cmp_testbuff_log("fts__free error: s ptr (null)\n")
+			|| test_cmp_testbuff_log("fts__free error: s ptr (null)\n")
 			)
 			log_test(1)
 

@@ -23,12 +23,12 @@ void test_ft_$clear()
 	{
 		int ret;
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 
 		ret = fts__clear(NULL);
 		if (
 			!ret
-			|| lib_cmp_testbuff_log("ft_s$clear error: s ptr (null)\n")
+			|| test_cmp_testbuff_log("ft_s$clear error: s ptr (null)\n")
 			)
 			log_test(0)
 

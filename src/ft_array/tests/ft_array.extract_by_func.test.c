@@ -37,12 +37,12 @@ void test_ft_array__extract_by_func()
 		// test no array
 		{
 			g_test = 1;
-			lib_clear_testbuff();
+			test_clear_testbuff();
 
 			ret = ftarray__extract_by_func(NULL, ftarray__func_print_int, NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ft_array__extract_by_func error: array ptr (null)\n")
 				)
 				log_test(0)
@@ -51,7 +51,7 @@ void test_ft_array__extract_by_func()
 			ret = ftarray__extract_by_func(ptr, NULL, NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ft_array__extract_by_func error: func ptr (null)\n")
 				)
 				log_test(1)
@@ -63,7 +63,7 @@ void test_ft_array__extract_by_func()
 	* */
 	{
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 		int data[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		t_array *array;
 		t_array *new;
@@ -79,11 +79,11 @@ void test_ft_array__extract_by_func()
 				new = ftarray__extract_by_func(array, test_func, &modulo);
 
 				ftarray__func(array, ftarray__func_print_int, NULL);
-				if (lib_cmp_testbuff("\n"))
+				if (test_cmp_testbuff("\n"))
 					log_test(0)
 
 				ftarray__func(new, ftarray__func_print_int, NULL);
-				if (lib_cmp_testbuff("1 \n"))
+				if (test_cmp_testbuff("1 \n"))
 					log_test(1)
 
 				ftarray__free(&array);
@@ -97,11 +97,11 @@ void test_ft_array__extract_by_func()
 				new = ftarray__extract_by_func(array, test_func, &modulo);
 
 				ftarray__func(array, ftarray__func_print_int, NULL);
-				if (lib_cmp_testbuff("1 \n"))
+				if (test_cmp_testbuff("1 \n"))
 					log_test(2)
 
 				ftarray__func(new, ftarray__func_print_int, NULL);
-				if (lib_cmp_testbuff("\n"))
+				if (test_cmp_testbuff("\n"))
 					log_test(3)
 
 				ftarray__free(&array);
@@ -116,11 +116,11 @@ void test_ft_array__extract_by_func()
 			new = ftarray__extract_by_func(array, test_func, &modulo);
 
 			ftarray__func(array, ftarray__func_print_int, NULL);
-			if (lib_cmp_testbuff("1 3 \n"))
+			if (test_cmp_testbuff("1 3 \n"))
 				log_test(4)
 
 			ftarray__func(new, ftarray__func_print_int, NULL);
-			if (lib_cmp_testbuff("2 4 \n"))
+			if (test_cmp_testbuff("2 4 \n"))
 				log_test(5)
 
 			ftarray__free(&array);
@@ -134,11 +134,11 @@ void test_ft_array__extract_by_func()
 			new = ftarray__extract_by_func(array, test_func, &modulo);
 
 			ftarray__func(array, ftarray__func_print_int, NULL);
-			if (lib_cmp_testbuff("1 3 5 7 9 \n"))
+			if (test_cmp_testbuff("1 3 5 7 9 \n"))
 				log_test(4)
 
 			ftarray__func(new, ftarray__func_print_int, NULL);
-			if (lib_cmp_testbuff("2 4 6 8 0 \n"))
+			if (test_cmp_testbuff("2 4 6 8 0 \n"))
 				log_test(5)
 
 			ftarray__free(&array);

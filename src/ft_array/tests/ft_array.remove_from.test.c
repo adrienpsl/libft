@@ -24,13 +24,13 @@ void test_ft_array$remove_from()
 		t_array *array = ftarray__init_data(data, 10, sizeof(int));
 
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 
 		// null array
 		{
 			ftarray__remove_from(NULL, 1, 2);
 			if (
-				lib_cmp_testbuff_log(
+				test_cmp_testbuff_log(
 					"ft_array$remove_from array ptr (null)\n")
 				)
 				log_test(0)
@@ -40,14 +40,14 @@ void test_ft_array$remove_from()
 		{
 			ftarray__remove_from(array, -1, 2);
 			if (
-				lib_cmp_testbuff_log(
+				test_cmp_testbuff_log(
 					"ft_array$remove_from at / from  < 0\n")
 				)
 				log_test(0)
 
 			ftarray__remove_from(array, 1, -2);
 			if (
-				lib_cmp_testbuff_log(
+				test_cmp_testbuff_log(
 					"ft_array$remove_from at >= from\n")
 				)
 				log_test(0)
@@ -57,14 +57,14 @@ void test_ft_array$remove_from()
 		{
 			ftarray__remove_from(array, 0, 20);
 			if (
-				lib_cmp_testbuff_log(
+				test_cmp_testbuff_log(
 					"ft_array$remove_from at / from > length\n")
 				)
 				log_test(0)
 
 			ftarray__remove_from(array, 20, 21);
 			if (
-				lib_cmp_testbuff_log(
+				test_cmp_testbuff_log(
 					"ft_array$remove_from at / from > length\n")
 				)
 				log_test(0)

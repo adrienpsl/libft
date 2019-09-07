@@ -26,12 +26,12 @@ void test_ft_array$func()
 		// test no array
 		{
 			g_test = 1;
-			lib_clear_testbuff();
+			test_clear_testbuff();
 
 			ret = ftarray__func(NULL, ftarray__func_print_int, NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ftarray__func error: array ptr (null)\n")
 				)
 				log_test(0)
@@ -40,7 +40,8 @@ void test_ft_array$func()
 			ret = ftarray__func(ptr, NULL, NULL);
 			if (
 				ret
-				|| lib_cmp_testbuff_log("ftarray__func error: func ptr (null)\n")
+				|| test_cmp_testbuff_log(
+					"ftarray__func error: func ptr (null)\n")
 				)
 				log_test(1)
 		}

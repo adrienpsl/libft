@@ -139,7 +139,7 @@ void test_ft_array$add()
 
 		// active gtest to catch the output and clean buffer
 		g_test = 1;
-		lib_clear_testbuff();
+		test_clear_testbuff();
 
 		// test with to big index
 		{
@@ -149,7 +149,7 @@ void test_ft_array$add()
 				ret != -1
 				|| array->length
 				|| *(int*)array->data
-				|| lib_cmp_testbuff_log(
+				|| test_cmp_testbuff_log(
 					"ft_array$insert index bigger than length\n"
 				)
 				)
