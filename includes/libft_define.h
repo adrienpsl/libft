@@ -9,7 +9,7 @@
 # define FT_TESTING_BUFFER_LIM 10000
 # define FT_TESTING_BUFFER_SIZE (FT_TESTING_BUFFER_LIM + FT_BUFFER_INDEX)
 
-# define TRUE 1
+# define FT_TRUE 1
 # define FALSE 0
 # define MEMORY_LACK 100
 # define SAME_SIZE 0

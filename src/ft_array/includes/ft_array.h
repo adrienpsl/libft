@@ -103,5 +103,7 @@ t_array *ftarray__copy(t_array *src);
 */
 void ftarray__clear(t_array *array);
 void ftarray__set_start(t_array *array);
+int ftarray__remain(t_array *array);
+void *ftarray__current(t_array *array);
 
 #endif

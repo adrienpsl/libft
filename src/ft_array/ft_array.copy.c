@@ -23,6 +23,6 @@ t_array *ftarray__copy(t_array *src)
 		return (NULL);
 	}
 	return (ftarray__init_data(src->data,
-							   (src->capacity / 2),
+							   src->length,
 							   src->element_size));
 }
