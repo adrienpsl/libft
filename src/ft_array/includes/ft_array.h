@@ -48,13 +48,15 @@ t_array *ftarray__slice(t_array *array, int from, int at);
 t_array *ftarray__slice_and_remove(t_array *array, int from, int at);
 t_array *
 ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param);
+t_array *ftarray__copy(t_array *src);
+t_array *ftarray__copy_func(t_array *src, int(*f)(void *, void *, void *),
+	void *param);
 void ftarray__free(t_array **p_array);
 
 void
 ftarray__free_func(t_array **p_array, int (*f)(void *, void *), void *param);
 // utils
 int ftarray__free_func_str(void *element, void *p);
-
 
 int
 ftarray__remove_func(t_array *array, int index, void (*f)(void *, void *),
@@ -84,7 +86,7 @@ int ftarray__find(t_array *array, int(*func)(void *, void *), void *param);
 */
 int ftarray__sort_bubble(
 	t_array *array, int(*cmp_f)(void *, void *, void *), void *param
-);
+						);
 
 int ftarray__sort_cmp_int(void *p1, void *p2, void *param);
 
@@ -96,7 +98,6 @@ int ftarray__cmp_int(void *p1, void *p2);
 int ftarray__cmp_str(void *p1, void *p2);
 
 int ftarray__double_size(t_array *array);
-t_array *ftarray__copy(t_array *src);
 
 /*
 **	utils
