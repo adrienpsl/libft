@@ -20,6 +20,7 @@
 # define NOT_FIND  -1
 
 # define OK 0
+# define KO 1
 # define ERROR 1
 
 # define FT_CMP_STRING 1
