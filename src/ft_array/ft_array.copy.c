@@ -45,8 +45,10 @@ t_array *ftarray__copy_func(t_array *src, int(*f)(void *, void *, void *),
 	while (i < src->length)
 	{
 		if (
-			f(ftarray__at(new, i), ftarray__at(src, i), param)
+			OK == f(ftarray__at(new, i), ftarray__at(src, i), param)
 			)
+			new->length += 1;
+		else
 			return (NULL);
 		i++;
 	}
