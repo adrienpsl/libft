@@ -15,7 +15,7 @@ void test_ft_str_replace(char *str, char *searching, char *replacing, char *res_
 	char *out = NULL;
 
 	out = ft_str_replace(str, searching, replacing, 0);
-	if (res_str && !ft_streq(res_str, out))
+	if (res_str && ft_str_cmp(res_str, out))
 	{
 		printf("error test : %d /////////////////////\n", test);
 		printf("%s -- %s \n", out, res_str);

@@ -12,17 +12,7 @@
 
 #include <ft_str.h>
 #include <ft_test.h>
-# include "unistd.h"
-
-void ft_putnstr_fd(char const *str, size_t len, int fd)
-{
-	write(fd, str, len);
-}
-
-void ft_putnstr(char const *str, size_t str_len)
-{
-	ft_putnstr_fd(str, str_len, STDOUT_FILENO);
-}
+#include "unistd.h"
 
 void ft_putstr_buffer(const char *s, char *buffer)
 {
@@ -46,9 +36,4 @@ void ft_putstr_fd(char const *s, int fd)
 	}
 	else
 		write(fd, s, ft_strlen(s));
-}
-
-void ft_putstr(char const *s)
-{
-	write(1, s, ft_strlen(s));
 }

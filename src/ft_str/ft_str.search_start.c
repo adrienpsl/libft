@@ -12,9 +12,6 @@
 
 #include "libft.h"
 
-// search take a function witch will return if it in all string or by the
-// start
-
 int ft_str_search(char *src, char *searching)
 {
 	int i;
@@ -39,22 +36,6 @@ int ft_str_search(char *src, char *searching)
 	return (-1);
 }
 
-int ftstrsearch__start(char *src, char *searching)
-{
-	int i;
-
-	if (!src || !searching)
-		return (-1);
-	i = 0;
-	while (src[i] && searching[i] && src[i] == searching[i])
-	{
-		i++;
-	}
-	if (searching[i] == 0)
-		return (i);
-	return (-1);
-}
-
 int check(char *current, char *searching)
 {
 	if (
@@ -75,9 +56,7 @@ int ftstr__search_start(char *current, char *searching, int param)
 	int i;
 
 	i = 0;
-	if (
-		check(current, searching)
-		)
+	if (check(current, searching))
 		return (-1);
 	while (
 		current[i] && searching[i]

@@ -40,7 +40,7 @@ int test_ft_buffer()
 //	buff = ft_buffer_new(5, 1);
 //	ft_buffer_add(buff, "sup", strlen("sup"));
 //	ft_buffer_add(buff, "supre chaleur", strlen("supre chaleur"));
-//	if (!ft_streq(g_test_buffer, "buffer to small to handel datasupsupre chaleur"))
+//	if (ft_str_cmp(g_test_buffer, "buffer to small to handel datasupsupre chaleur"))
 //		printf("error little buffer \n");
 	return (0);
 }

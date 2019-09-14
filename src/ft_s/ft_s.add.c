@@ -55,16 +55,14 @@ int fts__add(t_s *s, char *str)
 {
 	size_t length;
 
-	if (
-		check(s, str)
-		)
+	if (check(s, str))
+	{
 		return (-1);
+	}
 	length = ft_strlen(str);
 	if (s->length + length > s->capacity)
 	{
-		if (
-			increase(s, length)
-			)
+		if (increase(s, length))
 			return (-1);
 	}
 	{

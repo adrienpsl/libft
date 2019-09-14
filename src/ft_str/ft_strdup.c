@@ -16,7 +16,7 @@
 
 char *ft_strdup(const char *s)
 {
-	if (!s)
+	if (NULL == s)
 	    return (NULL);
 	return (ft_memdup(s, ft_strlen(s) + 1));
 }
@@ -25,7 +25,7 @@ char *ft_strndup(const char *s, size_t size)
 {
 	char *out;
 
-	if (!s)
+	if (NULL == s)
 		return (NULL);
 	out = ft_memdup(s, size + 1);
 	out[size] = 0;

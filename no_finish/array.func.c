@@ -80,7 +80,7 @@
 //		   && (el_2 = ft_array_next_el(array_2)))
 //	{
 //		if (mode == FT_CMP_STRING
-//			&& !ft_streq(el_1, el_2))
+//			&& ft_str_cmp(el_1, el_2))
 //			return (1);
 //		else if (mode == FT_CMP_INT
 //				 && *(int*)el_1 != *(int*)el_2)
