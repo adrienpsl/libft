@@ -16,8 +16,8 @@
 #include <ft_str.h>
 #include "libft.h"
 
-void test_ft_s__add(void);
-void test_ft_s__add(void)
+void test_fts__add(void);
+void test_fts__add(void)
 {
 
 	/*
@@ -33,7 +33,7 @@ void test_ft_s__add(void)
 			ret = fts__add(NULL, "");
 			if (
 				!ret
-				|| test_cmp_testbuff_log("ft_s$add error: s ptr (null)\n")
+				|| test_cmp_testbuff_log("fts__add error: s ptr (null)\n")
 				)
 				log_test(0)
 		}
@@ -43,7 +43,7 @@ void test_ft_s__add(void)
 			ret = fts__add((t_s *)1, NULL);
 			if (
 				!ret
-				|| test_cmp_testbuff_log("ft_s$add error: str ptr (null)\n")
+				|| test_cmp_testbuff_log("fts__add error: str ptr (null)\n")
 				)
 				log_test(1)
 		}

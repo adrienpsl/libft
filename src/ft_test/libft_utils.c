@@ -89,7 +89,7 @@ int test_cmp_str(char *result, char *ret)
 }
 
 void
-lib_print_func(void *start, void (*f)(void *), size_t size_el, int length)
+test_print_func(void *start, void (*f)(void *), size_t size_el, int length)
 {
 	int i;
 
@@ -100,4 +100,39 @@ lib_print_func(void *start, void (*f)(void *), size_t size_el, int length)
 		i++;
 	}
 	printf(" \n");
+}
+
+int test_cmp_split_str(char *name, char *expected, char **returned)
+{
+	g_test = 1;
+	test_clear_testbuff();
+	if (expected == NULL && returned == NULL)
+		return (0);
+
+	if (expected == NULL || returned == NULL)
+	{
+		printf("%s ptr null : %p %p", name, expected, returned);
+		return (1);
+	}
+	ft_strsplit_print(returned, ' ');
+
+	if (test_cmp_testbuff(expected))
+	{
+		printf("%s", name);
+		return (1);
+	}
+	g_test = 0;
+	return (0);
+}
+
+int test_cmp_int(int expected, int returned)
+{
+	if (expected != returned)
+	{
+		printf("error return : \n");
+		printf("expected : %d \n", expected);
+		printf("returned : %d \n", returned);
+		return (1);
+	}
+	return (0);
 }

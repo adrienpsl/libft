@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-int ft_str_search(char *src, char *searching)
+ssize_t ftstr__search_str(char *src, char *searching)
 {
-	int i;
-	int y;
+	size_t i;
+	size_t y;
 
 	if (!src || !searching)
 		return (-1);

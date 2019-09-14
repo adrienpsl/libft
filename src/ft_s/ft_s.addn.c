@@ -10,31 +10,60 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_FT_TEST_H
-#define LIBFT_FT_TEST_H
+#include <ft_s.h>
+#include "libft.h"
 
-# include "stdio.h"
-#define log_test(test_nb) printf("log : %s:%d: test: %d\n", __FILE__, __LINE__, test_nb);
-#define log_test_line(test_nb, line) printf("log : %s:%d: test: %d\n", __FILE__, line, test_nb);
+static int check(t_s *s, char *string)
+{
+	if (NULL == s)
+	{
+		return (
+			ftlog__message(F, L,
+						   "fts__addn error: s ptr (null)",
+						   EINVAL)
+		);
+	}
+	if (NULL == string)
+	{
+		return (
+			ftlog__message(F, L,
+						   "fts__addn error: str ptr (null)",
+						   EINVAL)
+		);
+	}
+	return (0);
+}
 
-extern int g_test;
-int g_test;
 
-extern char g_test_buffer[100000];
-char g_test_buffer[100000];
+static int increase(t_s *s, size_t size)
+{
+	char *new_buffer;
 
-// utils
-int test_random_int(int limit);
-void test_print_func_int(void *ptr);
+	if (
+		NULL == (new_buffer = ft_memalloc((size + s->capacity) + 2))
+		)
+		return (1);
+	ft_memcpy(new_buffer, s->data, s->length);
+	ftstr__free(&s->data);
+	s->data = new_buffer;
+	s->capacity += size;
+	return (0);
+}
 
-// buffer
-void test_clear_testbuff(void);
-int test_cmp_testbuff_log(char *expected);
-int test_cmp_testbuff(char *expected);
-
-// cmp and print
-int test_cmp_str(char *result, char *ret);
-int test_cmp_split_str(char *name, char *expected, char **returned);
-int test_cmp_int(int expected, int returned);
-
-#endif
+int fts__addn(t_s *s, char *str, size_t length)
+{
+	if (check(s, str))
+	{
+		return (-1);
+	}
+	if (s->length + length > s->capacity)
+	{
+		if (increase(s, length))
+			return (-1);
+	}
+	{
+		ft_memcpy(s->data + s->length, str, length);
+		s->length += length;
+		return (0);
+	}
+}

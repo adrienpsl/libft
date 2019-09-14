@@ -39,7 +39,7 @@ int ft_str_cmp(const char *s1, const char *s2);
 **	search
 */
 int ftstr__search_start(char *current, char *searching, int param);
-int ft_str_search(char *src, char *searching);
+ssize_t ftstr__search_str(char *src, char *searching);
 ssize_t ft_strchrstr(char *str, char *searched);
 int ft_strnchr(char *str, char c);
 

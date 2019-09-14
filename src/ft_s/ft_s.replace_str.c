@@ -11,37 +11,42 @@
 /* ************************************************************************** */
 
 #include <ft_s.h>
-#include <ft_log.h>
-#include <ft_str.h>
+#include "libft.h"
 
-static int check(t_s *s, char *string)
+static int check(t_s *s, char *wanted, char *substitute)
 {
 	if (NULL == s)
-	{
 		return (
 			ftlog__message(F, L,
-						   "fts__add error: s ptr (null)",
+						   "fts__replace_str error: s ptr (null)",
 						   EINVAL)
 		);
-	}
-	if (NULL == string)
-	{
+	if (NULL == wanted || NULL == substitute)
 		return (
 			ftlog__message(F, L,
-						   "fts__add error: str ptr (null)",
+						   "fts__replace_str error:"
+						   "wanted or length_substitute  ptr (null)",
 						   EINVAL)
 		);
-	}
-	return (0);
+	return (OK);
 }
 
-int fts__add(t_s *s, char *str)
+int fts__replace_str(t_s *s, char *wanted, char *substitute)
 {
-	if (check(s, str))
-	{
+	ssize_t index;
+	t_s *s_tmp;
+
+	if (OK != check(s, wanted, substitute))
 		return (-1);
-	}
-	return (
-		fts__addn(s, str, ft_strlen(str))
-	);
+	if (0 > (index = fts__search_str(s, wanted))
+		|| NULL == (s_tmp = fts__init(s->length + ft_strlen(substitute)))
+		)
+		return (-1);
+	fts__addn(s_tmp, s->data, index);
+	fts__add(s_tmp, substitute);
+	fts__add(s_tmp, s->data + index + ft_strlen(wanted));
+	free(s->data);
+	ft_memcpy(s, s_tmp, sizeof(t_s));
+	free(s_tmp);
+	return (OK);
 }

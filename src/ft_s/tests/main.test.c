@@ -12,18 +12,20 @@
 
 /* ************************************************************************** */
 
-void test_ft_s$init();
-void test_ft_s__add();
-void test_ft_s$free();
-void test_ft_$clear();
+void test_fts__init();
+void test_fts__add();
+void test_fts__free();
+void test_fts__clear();
 void test_fts__remove_from();
+void test_fts__replace_str();
 
 
 void test_ft_s_main(void)
 {
-	test_ft_s$init();
-	test_ft_s__add();
-	test_ft_s$free();
-	test_ft_$clear();
+	test_fts__init();
+	test_fts__add();
+	test_fts__free();
+	test_fts__clear();
 	test_fts__remove_from();
+	test_fts__replace_str();
 }
