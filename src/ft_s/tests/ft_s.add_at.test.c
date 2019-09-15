@@ -10,93 +10,69 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_s.h>
 #include <ft_test.h>
-#include <ft_log.h>
-#include <libft_define.h>
+#include <ft_s.h>
+#include "libft.h"
 
 typedef struct s
 {
 	int nb_test;
 	int nb_line;
 
-	char *start_str;
-	char *wanted_str;
-	char *substitute_str;
+	char *start_string;
+	char *adding_string;
+	int index;
 
 	char *result_str;
+	char *result_print;
 	int result_int;
 } t;
 
-static void func_test(t t)
+void static test_function(t t)
 {
 	g_test = 1;
-	t_s *s;
+	t_s *s = fts__init(0);
+	fts__add(s, t.start_string);
 
-	s = fts__init(100);
-	fts__add(s, t.start_str);
-
-	int ret = fts__replace_str(s, t.wanted_str, t.substitute_str);
+	int ret = fts__add_at(s, t.adding_string, t.index);
 
 	if (test_cmp_int(t.result_int, ret))
 		log_test_line(t.nb_test, t.nb_line)
-
 	if (test_cmp_str(t.result_str, s->data))
-		log_test_line(t.nb_test, t.nb_line)
+		log_test_line(t.nb_test, t.nb_line);
+	if (test_cmp_testbuff_log(t.result_print))
+		log_test_line(t.nb_test, t.nb_line);
 
 	fts__free(&s);
 	g_test = 0;
 }
 
-void test_fts__replace_str()
+void test_fts__add_at()
 {
-	// no data at all
-	func_test((t){ 0, L,
-				   "", "", "",
-				   "", -1,
-	});
+	/*
+	* Error test
+	* */
+	{
+		faire les test pour les errer en dur ici
+		// test null s
+		test_function((t){ 0, L,
+						   "", "", 10,
+						   "", "fts__add_at error: index bigger than length\n",
+						   -1 });
 
-	// search nothing
-	func_test((t){ 0, L,
-				   "toto", "", "",
-				   "toto", -1,
-	});
+		// test index bigger
+		test_function((t){ 0, L,
+						   "", "", 10,
+						   "", "fts__add_at error: index bigger than length\n",
+						   -1 });
+	}
 
-	// nothing
-	func_test((t){ 1, L,
-				   "", "toto", "",
-				   "", -1,
-	});
+	/*
+	* Normal test
+	* */
+	{
+		// test add nothigth
 
-	// one element
-	func_test((t){ 2, L,
-				   "toto", "toto", "",
-				   "", OK,
-	});
-
-	// one element
-	func_test((t){ 3, L,
-				   "to--toto", "toto", "",
-				   "to--", OK,
-	});
-
-	func_test((t){ 3, L,
-				   "to--totototo", "toto", "",
-				   "to--toto", OK,
-	});
-
-	func_test((t){ 3, L,
-				   "to--totototo", "toto", "ti",
-				   "to--titoto", OK,
-	});
-
-	func_test((t){ 3, L,
-				   "to--totototo", "toto", "titititi",
-				   "to--tititititoto", OK,
-	});
-
-	func_test((t){ 5, L,
-				   "12345", "23", "23",
-				   "12345", OK,
-	});
+		// test
+	}
 }

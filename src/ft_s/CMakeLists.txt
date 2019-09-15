@@ -7,6 +7,7 @@ target_sources(${__LIB_NAME__}
         ft_s.init.c
         ft_s.add.c
         ft_s.addn.c
+        ft_s.add_at.c
         ft_s.free.c
         ft_s.clear.c
         ft_s.remove_from.c
@@ -16,6 +17,7 @@ target_sources(${__LIB_NAME__}
         #[[ test]]
         tests/ft_s.init.test.c
         tests/ft_s.add.test.c
+        tests/ft_s.add_at.test.c
         tests/ft_s.free.test.c
         tests/ft_s.clear.test.c
         tests/ft_s.remove_from.test.c
