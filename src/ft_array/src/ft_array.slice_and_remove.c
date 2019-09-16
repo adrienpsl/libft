@@ -14,7 +14,7 @@
 #include <libft_define.h>
 #include <ft_log.h>
 
-int static	check(t_array *array, int from, int at)
+int	check(t_array *array, int from, int at)
 {
 	char *message;
 
