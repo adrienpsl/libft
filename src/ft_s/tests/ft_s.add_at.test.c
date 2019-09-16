@@ -24,11 +24,10 @@ typedef struct s
 	int index;
 
 	char *result_str;
-	char *result_print;
 	int result_int;
 } t;
 
-void	static test_function(t t)
+void static test_function(t t)
 {
 	g_test = 1;
 	t_s *s = fts__init(0);
@@ -40,47 +39,64 @@ void	static test_function(t t)
 		log_test_line(t.nb_test, t.nb_line)
 	if (test_cmp_str(t.result_str, s->data))
 		log_test_line(t.nb_test, t.nb_line);
-	if (test_cmp_testbuff_log(t.result_print))
-		log_test_line(t.nb_test, t.nb_line);
 
 	fts__free(&s);
 	g_test = 0;
 }
 
-void	test_fts__add_at()
+void test_fts__add_at()
 {
 	/*
 	* Error test
 	* */
 	{
-		// TODO : here next step !
-//		faire
-//		les
-//		test
-//		pour
-//		les
-//		errer
-//		en
-//		dur ici
-		// test null s
-		test_function((t){ 0, L,
-						   "", "", 10,
-						   "", "fts__add_at error: index bigger than length\n",
-						   -1 });
+		g_test = 1;
+
+		// test s null
+		fts__add_at(NULL, NULL, 0);
+		if (test_cmp_testbuff_log("fts__add_at error: s ptr (null)\n"))
+			log_test_line(1, L)
+
+		// test str null
+		fts__add_at((t_s *)1, NULL, 0);
+		if (test_cmp_testbuff_log("fts__add_at error: str ptr (null)\n"))
+			log_test_line(1, L)
 
 		// test index bigger
-		test_function((t){ 0, L,
-						   "", "", 10,
-						   "", "fts__add_at error: index bigger than length\n",
-						   -1 });
+		t_s *s = fts__init(10);
+
+		fts__add_at(s, "sup", 100);
+		if (test_cmp_testbuff_log(
+			"fts__add_at error: index bigger than length\n"))
+			log_test_line(1, L)
+
+		fts__free(&s);
+		g_test = 0;
 	}
 
 	/*
 	* Normal test
 	* */
 	{
-		// test add nothigth
+		// add to nothing
+		test_function((t){ 0, L,
+						   "super", "", 0,
+						   "super", OK });
+		// add to start
+		test_function((t){ 0, L,
+						   "super", "hey ", 0,
+						   "hey super", OK });
 
-		// test
+
+		// add to end
+		test_function((t){ 0, L,
+						   "super", " forte", 5,
+						   "super forte", OK });
+
+		// add to middle
+		test_function((t){ 0, L,
+						   "super minh", " forte", 5,
+						   "super forte minh", OK });
+
 	}
 }

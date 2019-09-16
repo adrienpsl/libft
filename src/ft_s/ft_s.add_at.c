@@ -27,7 +27,7 @@ static int			check(t_s *s, char *string, size_t index)
 				"fts__add_at error: str ptr (null)",
 				EINVAL)
 		);
-	if (index >= s->length)
+	if (index > s->length)
 		return (
 			ftlog__message(F, L,
 				"fts__add_at error: index bigger than length",
