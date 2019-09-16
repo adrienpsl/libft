@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void ft_test_ifcmp_printsplit(char **res, char **test, char *where)
+void	ft_test_ifcmp_printsplit(char **res, char **test, char *where)
 {
 	if (ft_strsplit_cmp(res, test))
 	{

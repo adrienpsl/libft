@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include <ft_test.h>
 
-void test_ft_array_copy()
+void	test_ft_array_copy()
 {
 	/*
 	* test error handling

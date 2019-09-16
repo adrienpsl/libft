@@ -12,7 +12,7 @@
 
 # include "ft_mem.h"
 
-void *ft_memmove(void *d, const void *s, size_t n)
+void	*ft_memmove(void *d, const void *s, size_t n)
 {
 	char *dest;
 	const char *src;

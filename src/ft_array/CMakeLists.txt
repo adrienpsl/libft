@@ -3,23 +3,23 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        ft_array.push.c
-        ft_array.insert.c
-        ft_array.at.c
-        ft_array.sort_bubble.c
-        ft_array.cmp.c
-        ft_array.cmp_utils.c
-        ft_array.copy.c
-        ft_array.double_size.c
-        ft_array.free.c
-        ft_array.func.c
-        ft_array.init.c
-        ft_array.next.c
-        ft_array.prev.c
-        ft_array.remove.c
-        ft_array.utils.c
-        ft_array.sort.utils.c
-        ft_array.func.utils.c
+        src/ft_array.push.c
+        src/ft_array.insert.c
+        src/ft_array.at.c
+        src/ft_array.sort_bubble.c
+        src/ft_array.cmp.c
+        src/ft_array.cmp_utils.c
+        src/ft_array.copy.c
+        src/ft_array.double_size.c
+        src/ft_array.free.c
+        src/ft_array.func.c
+        src/ft_array.init.c
+        src/ft_array.next.c
+        src/ft_array.prev.c
+        src/ft_array.remove.c
+        src/ft_array.utils.c
+        src/ft_array.sort.utils.c
+        src/ft_array.func.utils.c
 
 
         #[[ test]]

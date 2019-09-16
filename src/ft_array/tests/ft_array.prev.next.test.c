@@ -16,7 +16,7 @@
 #include <ft_mem.h>
 #include "libft.h"
 
-void test_ft_array_next_and_prev(void)
+void	test_ft_array_next_and_prev(void)
 {
 	/*
 	* ftarray__next

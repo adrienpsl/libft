@@ -16,8 +16,8 @@
 #include <ft_str.h>
 #include "libft.h"
 
-void test_fts__add(void);
-void test_fts__add(void)
+void	test_fts__add(void);
+void	test_fts__add(void)
 {
 
 	/*

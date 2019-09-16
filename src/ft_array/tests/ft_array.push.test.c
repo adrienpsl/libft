@@ -16,7 +16,7 @@
 #include <ft_mem.h>
 #include <ft_test.h>
 
-void test_ft_array$add()
+void	test_ft_array$add()
 {
 	/*
 	 * ft_array_push : add 1000 nb

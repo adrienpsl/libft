@@ -16,7 +16,7 @@
 #include <ft_test.h>
 #include <ft_mem.h>
 
-void test_ft_array$utils()
+void	test_ft_array$utils()
 {
 	/*
 	* test ft_array$clear

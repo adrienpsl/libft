@@ -10,52 +10,53 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_array.h"
-#include <errno.h>
 #include <ft_log.h>
-#include <ft_printf.h>
+#include <errno.h>
+#include "ft_array.h"
 
-static int check(t_array *array, int (*f)(void *, void *))
+static int			check(
+	t_array *a_1,
+	t_array *a_2,
+	int (*f)(void *, void *))
 {
-	if (!array)
+	if (!a_1 || !a_2)
 	{
 		return (
 			ftlog__message(F, L,
-				"ftarray__func error: array ptr (null)",
+				"ft_array$cmp error: array ptr (null)",
 				EINVAL));
 	}
-	if (!f)
+	else if (!f)
 	{
 		return (
 			ftlog__message(F, L,
-				"ftarray__func error: func ptr (null)",
+				"ft_array$cmp error: func ptr (null)",
 				EINVAL));
 	}
 	return (0);
 }
 
-void *ftarray__func(t_array *array, int(*func)(void *, void *), void *param)
+int					ftarray__cmp(
+	t_array *array_1,
+	t_array *array_2,
+	int (*f)(void *, void *))
 {
-	if (
-		check(array, func)
-		)
-		return (NULL);
-	array->i = 0;
+	void *el_1;
+	void *el_2;
+
+	if (check(array_1, array_2, f))
+		return (-1);
+	array_1->i = 0;
+	array_2->i = 0;
 	while (
-		array->i < array->length
-		)
+		(el_1 = ftarray__next(array_1))
+		&& (el_2 = ftarray__next(array_2)))
 	{
-		if (
-			func(ftarray__at(array, array->i), param)
-			)
-			return (ftarray__at(array, array->i));
-		array->i++;
+		if (f(el_1, el_2))
+			return (1);
 	}
-	if (
-		func == ftarray__func_print_int || func == ftarray__func_print_str
-		)
-	{
-		ft_printf("\n");
-	}
-	return (NULL);
+	el_2 = ftarray__next(array_2);
+	if (el_1 != el_2)
+		return (1);
+	return (0);
 }

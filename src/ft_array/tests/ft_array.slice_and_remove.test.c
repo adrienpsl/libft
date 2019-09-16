@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-void test_ft_array$slice_and_remove()
+void	test_ft_array$slice_and_remove()
 {
 	/*
 	* test error handling

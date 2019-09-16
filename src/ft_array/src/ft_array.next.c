@@ -10,44 +10,54 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <errno.h>
 #include <ft_log.h>
-#include "ft_errno.h"
-#include "ft_mem.h"
 #include "ft_array.h"
 
-void ftarray__clear(t_array *array)
+// TODO : bug if 0 length is given ? with at
+void	*ftarray__next_loop(t_array *array)
 {
-	if (NULL == array)
+	void *element;
+
+	if (!array)
 	{
 		ftlog__message(F, L,
-			"ftarray__clear arg ptr (null)",
-			EINVAL
-					  );
-		return;
+			"ft_array$next_loop error: array ptr (null)",
+			EINVAL);
+		return (NULL);
 	}
-	ft_bzero(array->data, array->length * array->element_size);
-	array->length = 0;
+	if (
+		array->length == 0
+		)
+		return (NULL);
+	element = ftarray__at(array, array->i);
+	{
+		array->i =
+			(array->i + 1 == array->length) ?
+			0 : array->i + 1;
+	}
+	return (element);
 }
 
-void ftarray__set_start(t_array *array)
+void	*ftarray__next(t_array *array)
 {
-	if (NULL == array)
+	void *element;
+
+	if (!array)
 	{
 		ftlog__message(F, L,
-			"ftarray__set_start arg ptr (null)",
-			EINVAL
-					  );
-		return;
+			"ftarray__next error: array ptr (null)",
+			EINVAL);
+		return (NULL);
 	}
-	array->i = 0;
-}
-
-int ftarray__remain(t_array *array)
-{
-	return (array->length - array->i);
-}
-
-void *ftarray__current(t_array *array)
-{
-	return (ftarray__at(array, array->i));
+	else if (array->i == array->length)
+	{
+		return (NULL);
+	}
+	else
+	{
+		element = ftarray__at(array, array->i);
+		array->i += 1;
+		return (element);
+	}
 }

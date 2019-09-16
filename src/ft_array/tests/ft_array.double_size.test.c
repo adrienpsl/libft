@@ -16,7 +16,7 @@
 #include <ft_mem.h>
 #include "libft.h"
 
-void test_ft_array_double_size()
+void	test_ft_array_double_size()
 {
 	/*
 	* Error handling

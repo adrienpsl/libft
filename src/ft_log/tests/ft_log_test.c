@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_log(int level, const char *format, ...);
+void	ft_log(int level, const char *format, ...);
 
-void test_ft_log()
+void	test_ft_log()
 {
 };

@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include <ft_test.h>
 
-void test_ft_array$at()
+void	test_ft_array$at()
 {
 	/*
 	* ft_array$at : return bad stuff given

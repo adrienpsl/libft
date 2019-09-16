@@ -31,7 +31,7 @@ static int inv_cmp(void const *a, void const *b)
 	return *pb - *pa;
 }
 
-void test_ft_array$bubble(void)
+void	test_ft_array$bubble(void)
 {
 	/*
 	* test bad entry

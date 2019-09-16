@@ -12,7 +12,7 @@
 
 # include "ft_mem.h"
 
-void ft_memdel(void **ap, size_t size)
+void	ft_memdel(void **ap, size_t size)
 {
 	if (!ap)
 		return;

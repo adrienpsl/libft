@@ -15,7 +15,7 @@
 #include <ft_array.h>
 #include <ft_str.h>
 
-void test_ft_array$func()
+void	test_ft_array$func()
 {
 	/*
 	* test error handling

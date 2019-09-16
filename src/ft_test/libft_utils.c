@@ -30,12 +30,12 @@ int test_random_int(int limit)
 	return (rand() % limit + 1);
 }
 
-void test_print_func_int(void *ptr)
+void	test_print_func_int(void *ptr)
 {
 	printf("%3d ", *(int *)ptr);
 }
 
-void test_clear_testbuff()
+void	test_clear_testbuff()
 {
 	ft_bzero(g_test_buffer, 10000);
 }

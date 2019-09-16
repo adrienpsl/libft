@@ -10,54 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <errno.h>
+#include <ft_str.h>
 #include <ft_log.h>
-#include "ft_array.h"
 
-// TODO : bug if 0 length is given ? with at
-void *ftarray__next_loop(t_array *array)
+int ftarray__cmp_int(void *p1, void *p2)
 {
-	void *element;
+	int *a;
+	int *b;
 
-	if (!array)
+	if (!p1 || !p2)
 	{
-		ftlog__message(F, L,
-			"ft_array$next_loop error: array ptr (null)",
-			EINVAL);
-		return (NULL);
+		return (
+			ftlog__message(F, L,
+				"ft_array$cmp_int arg ptr (null)",
+				EINVAL));
 	}
-	if (
-		array->length == 0
-		)
-		return (NULL);
-	element = ftarray__at(array, array->i);
-	{
-		array->i =
-			(array->i + 1 == array->length) ?
-			0 : array->i + 1;
-	}
-	return (element);
+	a = p1;
+	b = p2;
+	return (!(*a == *b));
 }
 
-void *ftarray__next(t_array *array)
+int ftarray__cmp_str(void *p1, void *p2)
 {
-	void *element;
+	char *a;
+	char *b;
 
-	if (!array)
+	if (!p1 || !p2)
+		return (
+			ftlog__message(F, L,
+				"ft_array$cmp_str arg ptr (null)",
+				EINVAL));
 	{
-		ftlog__message(F, L,
-			"ftarray__next error: array ptr (null)",
-			EINVAL);
-		return (NULL);
-	}
-	else if (array->i == array->length)
-	{
-		return (NULL);
-	}
-	else
-	{
-		element = ftarray__at(array, array->i);
-		array->i += 1;
-		return (element);
+		a = p1;
+		b = p2;
+		return (ft_str_cmp(a, b));
 	}
 }

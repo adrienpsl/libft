@@ -10,35 +10,46 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_log.h>
-#include "ft_errno.h"
-#include "ft_array.h"
+#include "libft.h"
 
-void *ftarray__at(t_array *array, int index)
+int static check(t_array *array, int from, int at)
 {
-	if (!array)
-	{
-		ftlog__message(F, L,
-			"ft_array$at error: array ptr (null)",
-			EINVAL);
-		return (NULL);
-	}
-	else if (index >= array->capacity)
-	{
-		ftlog__message(F, L,
-			"ft_array$at error : index bigger than length",
-			EINVAL);
-		return (NULL);
-	}
-	else if (index < 0)
-	{
-		ftlog__message(F, L,
-			"ft_array$at error : index is negative",
-			EINVAL);
-		return (NULL);
-	}
-	else
-	{
-		return (array->data + (index * array->element_size));
-	}
+	char *message;
+
+	message = NULL;
+	if (
+		NULL == array
+		)
+		message = "ft_array$remove_from array ptr (null)";
+	else if (
+		at > array->length || from >= array->length
+		)
+		message = "ft_array$remove_from at / from > length";
+	else if (
+		from >= at
+		)
+		message = "ft_array$remove_from at >= from";
+	else if (
+		at < 1 || from < 0
+		)
+		message = "ft_array$remove_from at / from  < 0";
+	return (message == NULL ?
+			0 :
+			ftlog__message(F, L, message, EINVAL)
+	);
 }
+
+void	ftarray__remove_from(t_array *array, int from, int at)
+{
+	if (
+		check(array, from, at)
+		)
+		return;
+	ft_memcpy(
+		ftarray__at(array, from),
+		ftarray__at(array, at),
+		(array->length - at) * array->element_size
+			 );
+	array->length -= at - from;
+}
+

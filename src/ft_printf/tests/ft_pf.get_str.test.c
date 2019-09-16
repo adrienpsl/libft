@@ -24,8 +24,8 @@ static void utils(t_pf *pf, char *format, ...)
 	va_end(pf->list);
 }
 
-void test_pf__get_str(void);
-void test_pf__get_str(void)
+void	test_pf__get_str(void);
+void	test_pf__get_str(void)
 {
 	t_pf pf;
 

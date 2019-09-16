@@ -12,7 +12,7 @@
 
 #include <stdlib.h>
 
-void ft_strsplit_remove(char **split, int i)
+void	ft_strsplit_remove(char **split, int i)
 {
 	free(split[i]);
 	while (split[i] != NULL)

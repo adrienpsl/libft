@@ -14,14 +14,14 @@
 #include <ft_log.h>
 # include "stdio.h"
 
-void test_ft_array_main();
-void test_ft_s_main(void);
-void test_ft_iocatch_option();
-void test_main_ft_pf();
-void test_main_ft_buffer();
-void test_ftstr_main();
+void	test_ft_array_main();
+void	test_ft_s_main(void);
+void	test_ft_iocatch_option();
+void	test_main_ft_pf();
+void	test_main_ft_buffer();
+void	test_ftstr_main();
 
-void test()
+void	test()
 {
 	//	if (test_ft_memory())
 	//		printf("error memory \n");

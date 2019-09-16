@@ -16,7 +16,7 @@
 #include <ft_io.h>
 #include <ft_strsplit.h>
 
-void usage(char c)
+void	usage(char c)
 {
 	static char b[2] = { 0 };
 
@@ -24,7 +24,7 @@ void usage(char c)
 	ft_printf("usage : %s \n", b);
 }
 
-void test_ft_iocatch_option()
+void	test_ft_iocatch_option()
 {
 	/*
 	* test error handling

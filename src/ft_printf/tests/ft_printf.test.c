@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-void test_ft_printf()
+void	test_ft_printf()
 {
 	g_test = 1;
 	test_clear_testbuff();

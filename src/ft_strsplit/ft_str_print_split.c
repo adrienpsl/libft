@@ -13,7 +13,7 @@
 #include <ft_printf.h>
 #include "libft.h"
 
-void ft_strsplit_print_test(char **p_str)
+void	ft_strsplit_print_test(char **p_str)
 {
 	if (!p_str)
 		return;
@@ -24,7 +24,7 @@ void ft_strsplit_print_test(char **p_str)
 	}
 }
 
-void ft_strsplit_print(char **p_str, char sep)
+void	ft_strsplit_print(char **p_str, char sep)
 {
 	static char sep_str[2] = { 0, 0 };
 
@@ -44,7 +44,7 @@ void ft_strsplit_print(char **p_str, char sep)
 	}
 }
 
-void ft_print_two_split(char **res, char **test)
+void	ft_print_two_split(char **res, char **test)
 {
 	//	g_test = 0;
 	ft_printf("res\n");

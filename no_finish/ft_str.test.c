@@ -1,7 +1,7 @@
 
 #include <libft.h>
 
-void test_ft_str_search(char *str, char *searching, int res, int test)
+void	test_ft_str_search(char *str, char *searching, int res, int test)
 {
 	int ret;
 
@@ -10,7 +10,7 @@ void test_ft_str_search(char *str, char *searching, int res, int test)
 		printf("%d error test :  \n", test);
 }
 
-void test_ft_str_replace(char *str, char *searching, char *replacing, char *res_str, int test)
+void	test_ft_str_replace(char *str, char *searching, char *replacing, char *res_str, int test)
 {
 	char *out = NULL;
 

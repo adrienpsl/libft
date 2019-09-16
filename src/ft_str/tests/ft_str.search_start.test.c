@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-void test_ftstr__search_start()
+void	test_ftstr__search_start()
 {
 
 	/*

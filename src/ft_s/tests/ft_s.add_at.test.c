@@ -28,7 +28,7 @@ typedef struct s
 	int result_int;
 } t;
 
-void static test_function(t t)
+void	static test_function(t t)
 {
 	g_test = 1;
 	t_s *s = fts__init(0);
@@ -47,20 +47,21 @@ void static test_function(t t)
 	g_test = 0;
 }
 
-void test_fts__add_at()
+void	test_fts__add_at()
 {
 	/*
 	* Error test
 	* */
 	{
-		faire
-		les
-		test
-		pour
-		les
-		errer
-		en
-		dur ici
+		// TODO : here next step !
+//		faire
+//		les
+//		test
+//		pour
+//		les
+//		errer
+//		en
+//		dur ici
 		// test null s
 		test_function((t){ 0, L,
 						   "", "", 10,

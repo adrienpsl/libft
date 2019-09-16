@@ -10,34 +10,52 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_array.h>
-#include <ft_errno.h>
-#include <ft_mem.h>
+#include "ft_array.h"
+#include <errno.h>
 #include <ft_log.h>
-#include <ft_str.h>
+#include <ft_printf.h>
 
-int ftarray__double_size(t_array *array)
+static int check(t_array *array, int (*f)(void *, void *))
 {
-	void *data;
-	int new_capacity;
-
-	if (NULL == array)
+	if (!array)
 	{
-		ftlog__message(F, L, "ftarray__double_size error: array ptr (null)",
-			EINVAL);
-		return (-1);
+		return (
+			ftlog__message(F, L,
+				"ftarray__func error: array ptr (null)",
+				EINVAL));
 	}
-	new_capacity = array->length * 2;
-	if (
-		NULL == (data = ft_memalloc(array->element_size * (new_capacity + 1)))
-		)
-		return (-1);
-	ft_memcpy(data,
-		array->data,
-		(array->length * array->element_size));
-	ft_bzero(array->data, array->length * array->element_size);
-	free(array->data);
-	array->capacity = new_capacity;
-	array->data = data;
+	if (!f)
+	{
+		return (
+			ftlog__message(F, L,
+				"ftarray__func error: func ptr (null)",
+				EINVAL));
+	}
 	return (0);
+}
+
+void	*ftarray__func(t_array *array, int(*func)(void *, void *), void *param)
+{
+	if (
+		check(array, func)
+		)
+		return (NULL);
+	array->i = 0;
+	while (
+		array->i < array->length
+		)
+	{
+		if (
+			func(ftarray__at(array, array->i), param)
+			)
+			return (ftarray__at(array, array->i));
+		array->i++;
+	}
+	if (
+		func == ftarray__func_print_int || func == ftarray__func_print_str
+		)
+	{
+		ft_printf("\n");
+	}
+	return (NULL);
 }

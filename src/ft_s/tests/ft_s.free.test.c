@@ -14,7 +14,7 @@
 #include <ft_s.h>
 #include <ft_test.h>
 
-void test_fts__free()
+void	test_fts__free()
 {
 	/*
 	* test error handling

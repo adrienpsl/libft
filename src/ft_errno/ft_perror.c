@@ -13,7 +13,7 @@
 #include <ft_str.h>
 #include "ft_errno.h"
 
-void ft_perror(char *string)
+void	ft_perror(char *string)
 {
 	int errnum;
 

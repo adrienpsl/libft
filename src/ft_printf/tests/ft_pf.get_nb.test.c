@@ -23,8 +23,8 @@ static void utils(t_pf *pf, char *format, ...)
 	pf__get_number(pf);
 	va_end(pf->list);
 }
-void test_ft_pf__get_nb(void);
-void test_ft_pf__get_nb(void)
+void	test_ft_pf__get_nb(void);
+void	test_ft_pf__get_nb(void)
 {
 	t_pf pf;
 

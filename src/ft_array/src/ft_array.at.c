@@ -14,47 +14,31 @@
 #include "ft_errno.h"
 #include "ft_array.h"
 
-t_array *ftarray__copy(t_array *src)
+void	*ftarray__at(t_array *array, int index)
 {
-	if (NULL == src)
+	if (!array)
 	{
-		ftlog__message(F, L, "ft_array$copy error: array ptr (null)",
+		ftlog__message(F, L,
+			"ft_array$at error: array ptr (null)",
 			EINVAL);
 		return (NULL);
 	}
-	return (ftarray__init_data(src->data,
-		src->length,
-		src->element_size));
-}
-
-t_array *ftarray__copy_func(t_array *src, int(*f)(void *, void *, void *),
-	void *param)
-{
-	t_array *new;
-	int i;
-
-	i = 0;
-	if (NULL == src || NULL == f)
+	else if (index >= array->capacity)
 	{
-		ftlog__message(F, L, "ft__array_copy_func error: ptr (null)",
+		ftlog__message(F, L,
+			"ft_array$at error : index bigger than length",
 			EINVAL);
 		return (NULL);
 	}
-	if (NULL == (new = ftarray__init(src->length, src->element_size)))
-		return (NULL);
-	while (i < src->length)
+	else if (index < 0)
 	{
-		if (
-			OK == f(ftarray__at(new, i), ftarray__at(src, i), param)
-			)
-			new->length += 1;
-		else
-			return (NULL);
-		i++;
+		ftlog__message(F, L,
+			"ft_array$at error : index is negative",
+			EINVAL);
+		return (NULL);
 	}
-	return (new);
+	else
+	{
+		return (array->data + (index * array->element_size));
+	}
 }
-
-
-
-

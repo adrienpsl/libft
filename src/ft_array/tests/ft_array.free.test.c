@@ -15,7 +15,7 @@
 #include <ft_test.h>
 #include <ft_array.h>
 
-void test_ft_array_free()
+void	test_ft_array_free()
 {
 	/*
 	* test error handling

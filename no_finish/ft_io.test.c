@@ -73,7 +73,7 @@ int test_io_catch_options()
 	return (0);
 }
 
-void test_ft_str_split(char *s, char **res, char *separators)
+void	test_ft_str_split(char *s, char **res, char *separators)
 {
 	char **split;
 
@@ -89,7 +89,7 @@ void test_ft_str_split(char *s, char **res, char *separators)
 	ft_strsplit_free(&split);
 }
 
-void test_ft_str_split_add(char **split, char **res, char *add, int free, int *n)
+void	test_ft_str_split_add(char **split, char **res, char *add, int free, int *n)
 {
 
 	ft_strsplit_add(split, add, free);
@@ -121,7 +121,7 @@ void test_ft_str_split_add(char **split, char **res, char *add, int free, int *n
 //	(*n)++;
 //}
 
-void passed_test()
+void	passed_test()
 {
 	int n = 0;
 	test_ft_str_split(NULL, NULL, " ");
@@ -168,7 +168,7 @@ void passed_test()
 	test_io_catch_options();
 }
 
-void test_split_mix(char *split_1, char *split_2, char **split_res, int test)
+void	test_split_mix(char *split_1, char *split_2, char **split_res, int test)
 {
 	char **s1 = ft_strsplit(split_1, " ");
 	char **s2 = ft_strsplit(split_2, " ");

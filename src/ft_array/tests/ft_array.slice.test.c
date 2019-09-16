@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include <ft_test.h>
 
-void test_ft_array$slice()
+void	test_ft_array$slice()
 {
 	/*
 	* test error handling

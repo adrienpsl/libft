@@ -12,15 +12,15 @@
 
 /* ************************************************************************** */
 
-void test_fts__init();
-void test_fts__add();
-void test_fts__free();
-void test_fts__clear();
-void test_fts__remove_from();
-void test_fts__replace_str();
-void test_fts__add_at();
+void	test_fts__init();
+void	test_fts__add();
+void	test_fts__free();
+void	test_fts__clear();
+void	test_fts__remove_from();
+void	test_fts__replace_str();
+void	test_fts__add_at();
 
-void test_ft_s_main(void)
+void	test_ft_s_main(void)
 {
 	test_fts__init();
 	test_fts__add();

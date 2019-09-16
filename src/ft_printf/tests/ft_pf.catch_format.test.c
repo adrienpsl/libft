@@ -13,7 +13,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-void test_ft_pf_catch_format()
+void	test_ft_pf_catch_format()
 {
 	t_pf pf;
 	int ret;

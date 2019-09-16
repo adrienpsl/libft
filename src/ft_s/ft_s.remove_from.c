@@ -35,7 +35,7 @@ static int check(t_s *s, size_t start)
 		return (0);
 }
 
-void fts__remove_from(t_s *s, size_t start)
+void	fts__remove_from(t_s *s, size_t start)
 {
 	if (
 		check(s, start)

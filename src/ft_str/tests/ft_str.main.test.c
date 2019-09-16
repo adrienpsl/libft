@@ -12,9 +12,9 @@
 
 #include "libft.h"
 
-void test_ftstr__search_start();
+void	test_ftstr__search_start();
 
-void test_ftstr_main()
+void	test_ftstr_main()
 {
 	test_ftstr__search_start();
 }

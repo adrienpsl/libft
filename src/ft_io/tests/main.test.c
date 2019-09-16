@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ft_iocatch_option();
+void	test_ft_iocatch_option();
 
-void test_ft_io()
+void	test_ft_io()
 {
 	test_ft_iocatch_option();
 }

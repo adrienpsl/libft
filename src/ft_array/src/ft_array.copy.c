@@ -10,47 +10,48 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_str.h>
 #include <ft_log.h>
+#include "ft_errno.h"
+#include "ft_array.h"
 
-int ftarray__cmp_int(void *p1, void *p2)
+t_array *ftarray__copy(
+	t_array *src)
 {
-	int *a;
-	int *b;
-
-	if (!p1 || !p2)
+	if (NULL == src)
 	{
-		return (
-			ftlog__message(F, L,
-				"ft_array$cmp_int arg ptr (null)",
-				EINVAL
-						  )
-		);
+		ftlog__message(F, L, "ft_array$copy error: array ptr (null)",
+			EINVAL);
+		return (NULL);
 	}
-	{
-		a = p1;
-		b = p2;
-		return (!(*a == *b));
-	}
+	return (ftarray__init_data(src->data,
+		src->length,
+		src->element_size));
 }
 
-int ftarray__cmp_str(void *p1, void *p2)
+t_array *ftarray__copy_func(
+	t_array *src,
+	int(*f)(void *, void *, void *),
+	void *param)
 {
-	char *a;
-	char *b;
+	t_array *new;
+	int i;
 
-	if (!p1 || !p2)
+	i = 0;
+	if (NULL == src || NULL == f)
 	{
-		return (
-			ftlog__message(F, L,
-				"ft_array$cmp_str arg ptr (null)",
-				EINVAL
-						  )
-		);
+		ftlog__message(F, L, "ft__array_copy_func error: ptr (null)",
+			EINVAL);
+		return (NULL);
 	}
+	if (NULL == (new = ftarray__init(src->length, src->element_size)))
+		return (NULL);
+	while (i < src->length)
 	{
-		a = p1;
-		b = p2;
-		return (ft_str_cmp(a, b));
+		if (OK == f(ftarray__at(new, i), ftarray__at(src, i), param))
+			new->length += 1;
+		else
+			return (NULL);
+		i++;
 	}
+	return (new);
 }

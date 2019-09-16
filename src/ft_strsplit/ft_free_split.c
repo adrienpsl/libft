@@ -12,7 +12,7 @@
 
 #include <stdlib.h>
 
-void ft_strsplit_free(char ***p_str)
+void	ft_strsplit_free(char ***p_str)
 {
 	char **str;
 

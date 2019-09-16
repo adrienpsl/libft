@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-void test_ft_buffer()
+void	test_ft_buffer()
 {
 
 	t_buffer buffer;

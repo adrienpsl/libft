@@ -12,7 +12,7 @@
 
 # include "ft_mem.h"
 
-void ft_mem_swap(void *p1, void *p2, void *buffer, size_t size)
+void	ft_mem_swap(void *p1, void *p2, void *buffer, size_t size)
 {
 	ft_memcpy(buffer, p1, size);
 	ft_memcpy(p1, p2, size);

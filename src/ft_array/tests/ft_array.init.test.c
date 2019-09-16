@@ -19,7 +19,7 @@
 /*
  * I will test the initialisation is good performed
  * */
-void test_ft_array_init(void)
+void	test_ft_array_init(void)
 {
 	// check good information in array
 	{

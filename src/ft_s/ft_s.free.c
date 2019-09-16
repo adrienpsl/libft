@@ -14,7 +14,7 @@
 #include <ft_log.h>
 #include <ft_mem.h>
 
-void fts__free(t_s **s)
+void	fts__free(t_s **s)
 {
 	if (NULL == s || NULL == *s)
 	{

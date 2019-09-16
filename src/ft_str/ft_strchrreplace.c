@@ -12,7 +12,7 @@
 
 #include "ft_str.h"
 
-void ft_strchrreplace(char *str, char *matched, char replacing)
+void	ft_strchrreplace(char *str, char *matched, char replacing)
 {
 	if (!str || !matched)
 		return;
@@ -24,7 +24,7 @@ void ft_strchrreplace(char *str, char *matched, char replacing)
 	}
 }
 
-void ft_strchrnreplace(char *str, char *matched, char replacing, size_t size)
+void	ft_strchrnreplace(char *str, char *matched, char replacing, size_t size)
 {
 	while (*str && size)
 	{

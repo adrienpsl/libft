@@ -12,7 +12,7 @@
 
 #include <ft_str.h>
 
-void ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3)
+void	ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3)
 {
 	if (s1)
 		ft_strcat(buffer, s1);

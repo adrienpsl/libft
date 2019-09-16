@@ -13,7 +13,7 @@
 #include "ft_mem.h"
 #include "ft_str.h"
 
-void ftstr__free(char **s)
+void	ftstr__free(char **s)
 {
 	if (!s || !*s)
 		return;

@@ -15,7 +15,7 @@
 #include <ft_array.h>
 #include "libft.h"
 
-void test_ft_array_remove()
+void	test_ft_array_remove()
 {
 	/*
 	* test error handling

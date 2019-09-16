@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include <ft_test.h>
 
-void test_ft_array$remove_from()
+void	test_ft_array$remove_from()
 {
 	/*
 	* test error handling

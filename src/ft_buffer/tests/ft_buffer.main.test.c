@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 
-void test_ft_buffer();
+void	test_ft_buffer();
 
-void test_main_ft_buffer()
+void	test_main_ft_buffer()
 {
 	test_ft_buffer();
 }

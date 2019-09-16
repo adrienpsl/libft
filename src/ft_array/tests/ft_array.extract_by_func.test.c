@@ -25,7 +25,7 @@ static int test_func(void *el, void *param)
 	return !(*nb % *modulo);
 }
 
-void test_ft_array__extract_by_func()
+void	test_ft_array__extract_by_func()
 {
 	/*
 	* test error handling
