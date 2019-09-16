@@ -30,3 +30,13 @@ t_s *fts__init(size_t size)
 	s->capacity = capacity;
 	return (s);
 }
+
+t_s *fts__init_data(char *str)
+{
+	t_s *s;
+
+	if(NULL == (s = fts__init(0)))
+		return (NULL);
+	fts__add(s, str);
+	return (s);
+}

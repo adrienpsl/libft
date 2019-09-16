@@ -23,6 +23,7 @@ typedef struct s_s
 } t_s;
 
 t_s *fts__init(size_t size);
+t_s *fts__init_data(char *str);
 int fts__add(t_s *s, char *str);
 int fts__addn(t_s *s, char *str, size_t length);
 int fts__add_at(t_s *s, char *str, size_t index);
