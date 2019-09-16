@@ -14,6 +14,7 @@
 #define LIBFT_FT_TEST_H
 
 # include "stdio.h"
+
 #define log_test(test_nb) printf("log : %s:%d: test: %d\n", __FILE__, __LINE__, test_nb);
 #define log_test_line(test_nb, line) printf("log : %s:%d: test: %d\n", __FILE__, line, test_nb);
 

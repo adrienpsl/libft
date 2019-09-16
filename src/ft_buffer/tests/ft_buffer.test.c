@@ -55,5 +55,4 @@ void test_ft_buffer()
 
 		g_test = 0;
 	}
-
 }

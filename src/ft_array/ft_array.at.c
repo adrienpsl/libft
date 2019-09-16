@@ -19,22 +19,22 @@ void *ftarray__at(t_array *array, int index)
 	if (!array)
 	{
 		ftlog__message(F, L,
-					   "ft_array$at error: array ptr (null)",
-					   EINVAL);
+			"ft_array$at error: array ptr (null)",
+			EINVAL);
 		return (NULL);
 	}
 	else if (index >= array->capacity)
 	{
 		ftlog__message(F, L,
-					   "ft_array$at error : index bigger than length",
-					   EINVAL);
+			"ft_array$at error : index bigger than length",
+			EINVAL);
 		return (NULL);
 	}
 	else if (index < 0)
 	{
 		ftlog__message(F, L,
-					   "ft_array$at error : index is negative",
-					   EINVAL);
+			"ft_array$at error : index is negative",
+			EINVAL);
 		return (NULL);
 	}
 	else

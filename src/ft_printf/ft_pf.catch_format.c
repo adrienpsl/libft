@@ -16,7 +16,7 @@
 
 static int catch_padding(
 	char **format_s, t_pf_format *format
-)
+						)
 {
 	if (
 		**format_s != '0' && ft_isdigit(**format_s)
@@ -37,7 +37,7 @@ static int catch_padding(
 
 static int catch_format(
 	char **format_s, char *str_option, t_pf_format *format
-)
+					   )
 {
 	int ret;
 
@@ -54,7 +54,7 @@ static int catch_format(
 
 static int catch(
 	char **format_s, char *str_option, t_pf_format *format, int unique
-)
+				)
 {
 	char *start;
 

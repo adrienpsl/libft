@@ -18,22 +18,22 @@
 int static check(
 	t_array *array,
 	int(*cmp_f)(void *, void *, void *)
-)
+				)
 {
 	if (!array)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_array$sort_bubble error: array ptr (null)",
-						   EINVAL)
+				"ft_array$sort_bubble error: array ptr (null)",
+				EINVAL)
 		);
 	}
 	if (!cmp_f)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_array$sort_bubble error: func ptr (null)",
-						   EINVAL)
+				"ft_array$sort_bubble error: func ptr (null)",
+				EINVAL)
 		);
 	}
 	return (0);
@@ -44,7 +44,7 @@ static int make_a_pass(
 	int(*cmp_f)(void *, void *, void *),
 	void *param,
 	int *i
-)
+					  )
 {
 	int y;
 	int is_sorted;
@@ -55,8 +55,8 @@ static int make_a_pass(
 	{
 		if (
 			cmp_f(ftarray__at(array, y),
-				  ftarray__at(array, y + 1),
-				  param)
+				ftarray__at(array, y + 1),
+				param)
 			)
 		{
 			is_sorted = 0;
@@ -64,7 +64,7 @@ static int make_a_pass(
 				ftarray__at(array, y),
 				ftarray__at(array, y + 1), array->buffer,
 				array->element_size
-			);
+					   );
 		}
 		y++;
 	}
@@ -76,7 +76,7 @@ ftarray__sort_bubble(
 	t_array *array,
 	int(*cmp_f)(void *, void *, void *),
 	void *param
-)
+					)
 {
 	int i;
 

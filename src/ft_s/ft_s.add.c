@@ -20,16 +20,16 @@ static int check(t_s *s, char *string)
 	{
 		return (
 			ftlog__message(F, L,
-						   "fts__add error: s ptr (null)",
-						   EINVAL)
+				"fts__add error: s ptr (null)",
+				EINVAL)
 		);
 	}
 	if (NULL == string)
 	{
 		return (
 			ftlog__message(F, L,
-						   "fts__add error: str ptr (null)",
-						   EINVAL)
+				"fts__add error: str ptr (null)",
+				EINVAL)
 		);
 	}
 	return (0);

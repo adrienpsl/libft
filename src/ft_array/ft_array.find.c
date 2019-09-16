@@ -21,15 +21,15 @@ static int check(t_array *array, int (*f)(void *, void *))
 	{
 		return (
 			ftlog__message(F, L,
-						   "ftarray__find error: array ptr (null)",
-						   EINVAL));
+				"ftarray__find error: array ptr (null)",
+				EINVAL));
 	}
 	if (!f)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ftarray__find error: func ptr (null)",
-						   EINVAL));
+				"ftarray__find error: func ptr (null)",
+				EINVAL));
 	}
 	return (0);
 }

@@ -18,4 +18,4 @@ target_sources(${__LIB_NAME__}
 
 
 target_include_directories(${__LIB_NAME__} PUBLIC includes)
-target_link_libraries(${__LIB_NAME__}  libft)
+target_link_libraries(${__LIB_NAME__} libft)

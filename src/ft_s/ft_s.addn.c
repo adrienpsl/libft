@@ -19,21 +19,20 @@ static int check(t_s *s, char *string)
 	{
 		return (
 			ftlog__message(F, L,
-						   "fts__addn error: s ptr (null)",
-						   EINVAL)
+				"fts__addn error: s ptr (null)",
+				EINVAL)
 		);
 	}
 	if (NULL == string)
 	{
 		return (
 			ftlog__message(F, L,
-						   "fts__addn error: str ptr (null)",
-						   EINVAL)
+				"fts__addn error: str ptr (null)",
+				EINVAL)
 		);
 	}
 	return (0);
 }
-
 
 static int increase(t_s *s, size_t size)
 {

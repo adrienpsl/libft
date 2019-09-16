@@ -50,8 +50,8 @@ void test_ftarray__find(void)
 			if (
 				ret != -1
 				||
-					test_cmp_testbuff_log(
-						"ftarray__find error: func ptr (null)\n")
+				test_cmp_testbuff_log(
+					"ftarray__find error: func ptr (null)\n")
 				)
 				log_test(1)
 		}

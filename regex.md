@@ -84,6 +84,34 @@
     as the repetition is greedy, and an html tag can contain all stuff but not <>
     I force the engine to get only the themselves
 
+### grouping and capturing
+*   I can place parentheses around tokens to group then together.
+    that will create a catching group.
+    I can after use a quantifier to the group
+*   `Set(Value)?` matches Set and SetValue
+    -   if set is matches, 
+        group number one contains nothing if `Set` is matched
+    -   it contains Value if `SetValue` was matched
+    -   group 0 always contains the all matched regex
+*   Use Set(:?Value)? to group tokens without creating a capturing group.
+    that will be more efficient if I will not use them
+
+### Backreference
+*   Within the regular expression, I can use \1 to match the same text
+    that was matched by the capturing group.    
+*   `([abc])=\1` will only match : a=a, b=b, c=c
+    it will not match anything else, If the regex has multiple groups, 
+    there are numbered by the left
+*   I can name these groups for better readability : `(?<mygroup>[abc])=\k<mygroup>`
+
+### Lookaround
+*   that a special kind of group. the token inside the group are match normally,
+    but, the regex engine will give up the match and only keep the position.
+*   `(?=u)` will matches at each position in a string before a u
+*   `q(?=u)` matches `q` in Iraq but not in `question`     
+
+### I can use comment and space in regex !
+
  
 
 

@@ -87,12 +87,11 @@ void test_ft_array$at()
 					log_test(3)
 					break;
 				}
-				if (*(int*)element != j)
+				if (*(int *)element != j)
 				{
 					log_test(4)
 				}
 			}
-
 		}
 
 		ftarray__free(&array);

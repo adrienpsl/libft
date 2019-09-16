@@ -24,7 +24,7 @@ int pf__get_str(t_pf *pf)
 		if (
 			NULL == pf->intern_str
 			)
-		    pf->intern_str = null_ptr;
+			pf->intern_str = null_ptr;
 		return (1);
 	}
 	else if (

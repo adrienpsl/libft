@@ -12,10 +12,10 @@
 
 # include "ft_mem.h"
 
-void		*ft_memcpy(void *restrict dest, const void *restrict src, size_t n)
+void *ft_memcpy(void *restrict dest, const void *restrict src, size_t n)
 {
-	unsigned char	*tmp1;
-	unsigned char	*tmp2;
+	unsigned char *tmp1;
+	unsigned char *tmp2;
 
 	tmp1 = (unsigned char *)src;
 	tmp2 = (unsigned char *)dest;

@@ -49,7 +49,7 @@ void test_ftstr__search_start()
 		// test strict nothing common
 		{
 			int res = ftstr__search_start("toto", "faire des chipes",
-										  FTSTR__SEARCH_START_STRICT);
+				FTSTR__SEARCH_START_STRICT);
 			if (
 				res != -1 ||
 				test_cmp_testbuff_log("")
@@ -60,7 +60,7 @@ void test_ftstr__search_start()
 		// test strict middle
 		{
 			int res = ftstr__search_start("toto", "faire toto des chipes",
-										  FTSTR__SEARCH_START_STRICT);
+				FTSTR__SEARCH_START_STRICT);
 			if (
 				res != -1 ||
 				test_cmp_testbuff_log("")
@@ -71,7 +71,7 @@ void test_ftstr__search_start()
 		// test strict middle
 		{
 			int res = ftstr__search_start("toto", "faire toto des chipes",
-										  FTSTR__SEARCH_START_STRICT);
+				FTSTR__SEARCH_START_STRICT);
 			if (
 				res != -1 ||
 				test_cmp_testbuff_log("")
@@ -82,7 +82,7 @@ void test_ftstr__search_start()
 		// test strict middle
 		{
 			int res = ftstr__search_start("toto", "totot",
-										  FTSTR__SEARCH_START_STRICT);
+				FTSTR__SEARCH_START_STRICT);
 			if (
 				res != -1 ||
 				test_cmp_testbuff_log("")
@@ -93,7 +93,7 @@ void test_ftstr__search_start()
 		// test strict good
 		{
 			int res = ftstr__search_start("toto", "toto",
-										  FTSTR__SEARCH_START_STRICT);
+				FTSTR__SEARCH_START_STRICT);
 			if (
 				res != 4 ||
 				test_cmp_testbuff_log("")
@@ -108,7 +108,8 @@ void test_ftstr__search_start()
 	{
 		// test partial nothing
 		{
-			int res = ftstr__search_start("toto", "aouaeou aoeu toto", FTSTR__SEARCH_START_PARTIAL);
+			int res = ftstr__search_start("toto", "aouaeou aoeu toto",
+				FTSTR__SEARCH_START_PARTIAL);
 			if (
 				res != -1 ||
 				test_cmp_testbuff_log("")
@@ -118,7 +119,8 @@ void test_ftstr__search_start()
 
 		// test partial start
 		{
-			int res = ftstr__search_start("toto", "tototototototo", FTSTR__SEARCH_START_PARTIAL);
+			int res = ftstr__search_start("toto", "tototototototo",
+				FTSTR__SEARCH_START_PARTIAL);
 			if (
 				res != 4 ||
 				test_cmp_testbuff_log("")
@@ -127,7 +129,8 @@ void test_ftstr__search_start()
 		}
 		// test partial start
 		{
-			int res = ftstr__search_start("t", "tototototototo", FTSTR__SEARCH_START_PARTIAL);
+			int res = ftstr__search_start("t", "tototototototo",
+				FTSTR__SEARCH_START_PARTIAL);
 			if (
 				res != 1 ||
 				test_cmp_testbuff_log("")

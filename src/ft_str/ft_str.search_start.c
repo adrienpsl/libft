@@ -43,7 +43,7 @@ int check(char *current, char *searching)
 		)
 		return (
 			ftlog__message(F, L, "ftstr__search_start input (null)",
-						   EINVAL)
+				EINVAL)
 		);
 	else
 		return (

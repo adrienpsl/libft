@@ -22,8 +22,8 @@ void *ftarray__next_loop(t_array *array)
 	if (!array)
 	{
 		ftlog__message(F, L,
-					   "ft_array$next_loop error: array ptr (null)",
-					   EINVAL);
+			"ft_array$next_loop error: array ptr (null)",
+			EINVAL);
 		return (NULL);
 	}
 	if (
@@ -46,8 +46,8 @@ void *ftarray__next(t_array *array)
 	if (!array)
 	{
 		ftlog__message(F, L,
-					   "ftarray__next error: array ptr (null)",
-					   EINVAL);
+			"ftarray__next error: array ptr (null)",
+			EINVAL);
 		return (NULL);
 	}
 	else if (array->i == array->length)

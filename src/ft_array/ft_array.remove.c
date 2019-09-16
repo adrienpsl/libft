@@ -21,8 +21,8 @@ int static check(t_array *array, int index)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ftarray__remove error: array ptr (null)",
-						   EINVAL)
+				"ftarray__remove error: array ptr (null)",
+				EINVAL)
 		);
 	}
 	else if (index >= array->length || index < 0)
@@ -49,8 +49,8 @@ int ftarray__remove(t_array *array, int index)
 		return (-1);
 	{
 		ft_memmove(ftarray__at(array, index),
-				   ftarray__at(array, index + 1),
-				   (array->length - index) * array->element_size);
+			ftarray__at(array, index + 1),
+			(array->length - index) * array->element_size);
 	}
 	{
 		array->length -= 1;

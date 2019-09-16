@@ -26,9 +26,7 @@ int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
 int ft_func_split_streq(char *current, void *p_searched);
 void ft_test_ifcmp_printsplit(char **res, char **test, char *where);
 
-
 char **ft_strsplit_mix(char **split_1, char **split_2, int do_free);
 void ft_strsplit_print_test(char **p_str);
-
 
 #endif

@@ -17,7 +17,7 @@
 static void handle_wildcard(t_pf *pf)
 {
 	if (pf->format_bit.wildard)
-	    pf->format_bit.padding = va_arg(pf->list, int);
+		pf->format_bit.padding = va_arg(pf->list, int);
 }
 
 static void handle_variable(t_pf *pf)

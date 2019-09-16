@@ -20,23 +20,23 @@ static int check(
 	char *option_str,
 	long *options_ptr,
 	void (*f_usage)(char)
-)
+				)
 {
 	if (NULL == av)
 		return (
 			ftlog__message(F, L,
-						   "ft_io$catch_options error: array av (null)",
-						   EINVAL));
+				"ft_io$catch_options error: array av (null)",
+				EINVAL));
 	else if (NULL == option_str || NULL == options_ptr)
 		return (
 			ftlog__message(F, L,
-						   "ft_io$catch_options error: str / ptr ptr (null)",
-						   EINVAL));
+				"ft_io$catch_options error: str / ptr ptr (null)",
+				EINVAL));
 	else if (NULL == f_usage)
 		return (
 			ftlog__message(F, L,
-						   "ft_io$catch_options error: func ptr (null)",
-						   EINVAL));
+				"ft_io$catch_options error: func ptr (null)",
+				EINVAL));
 	else
 		return (0);
 }
@@ -73,7 +73,7 @@ int ftio__catch_option(
 	char *option_str,
 	long *options_ptr,
 	void (*f_usage)(char)
-)
+					  )
 {
 	int i;
 

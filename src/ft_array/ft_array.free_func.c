@@ -28,15 +28,15 @@ check(t_array **array, int (*f)(void *, void *))
 	{
 		return (
 			ftlog__message(F, L,
-						   "ftarray__free_func error: array ptr (null)",
-						   EINVAL));
+				"ftarray__free_func error: array ptr (null)",
+				EINVAL));
 	}
 	if (!f)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ftarray__free_func error: func ptr (null)",
-						   EINVAL));
+				"ftarray__free_func error: func ptr (null)",
+				EINVAL));
 	}
 	return (0);
 }

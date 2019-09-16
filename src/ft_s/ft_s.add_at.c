@@ -18,20 +18,20 @@ static int check(t_s *s, char *string, size_t index)
 	if (NULL == s)
 		return (
 			ftlog__message(F, L,
-						   "fts__add_at error: s ptr (null)",
-						   EINVAL)
+				"fts__add_at error: s ptr (null)",
+				EINVAL)
 		);
 	if (NULL == string)
 		return (
 			ftlog__message(F, L,
-						   "fts__add_at error: str ptr (null)",
-						   EINVAL)
+				"fts__add_at error: str ptr (null)",
+				EINVAL)
 		);
 	if (index >= s->length)
 		return (
 			ftlog__message(F, L,
-						   "fts__add_at error: index bigger than length",
-						   EINVAL)
+				"fts__add_at error: index bigger than length",
+				EINVAL)
 		);
 	return (0);
 }

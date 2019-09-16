@@ -148,8 +148,8 @@ void test_ft_array_init(void)
 				if (
 					array
 					||
-						test_cmp_testbuff_log(
-							"ft_array$init_data : start (null)\n")
+					test_cmp_testbuff_log(
+						"ft_array$init_data : start (null)\n")
 					)
 					log_test(8)
 			}
@@ -162,8 +162,8 @@ void test_ft_array_init(void)
 				if (
 					array
 					||
-						test_cmp_testbuff_log(
-							"ft_array$init : no elements number\n")
+					test_cmp_testbuff_log(
+						"ft_array$init : no elements number\n")
 					)
 					log_test(9)
 			}

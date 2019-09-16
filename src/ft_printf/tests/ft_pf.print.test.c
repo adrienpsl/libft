@@ -13,7 +13,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
- int utils(char *format, char *result, ...)
+int utils(char *format, char *result, ...)
 {
 	int ret = 0;
 	t_pf p;
@@ -41,8 +41,8 @@
 
 void test_pf$print()
 {
- 	// test padding right
- 	if (utils("%10d", "        22", 22))
+	// test padding right
+	if (utils("%10d", "        22", 22))
 		log_test(1)
 
 	// test padding left

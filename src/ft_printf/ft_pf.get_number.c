@@ -109,7 +109,7 @@ int pf__get_number(t_pf *pf)
 		pf->char_buffer + ft_strlen(pf->char_buffer),
 		nb,
 		get_base(pf)
-	);
+				 );
 	pf->intern_str = pf->char_buffer;
 	return (1);
 }

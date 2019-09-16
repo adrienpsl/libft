@@ -21,12 +21,12 @@ void *ftarray__prev_loop(t_array *array)
 	if (!array)
 	{
 		ftlog__message(F, L,
-					   "ft_array$prev_loop error: array ptr (null)",
-					   EINVAL);
+			"ft_array$prev_loop error: array ptr (null)",
+			EINVAL);
 		return (NULL);
 	}
-	if (array->length ==0)
-	    return (NULL);
+	if (array->length == 0)
+		return (NULL);
 	element = ftarray__at(array, array->i);
 	{
 		array->i =
@@ -44,12 +44,12 @@ void *ftarray__prev(t_array *array)
 	if (!array)
 	{
 		ftlog__message(F, L,
-					   "ft_array$prev error: array ptr (null)",
-					   EINVAL);
+			"ft_array$prev error: array ptr (null)",
+			EINVAL);
 		return (NULL);
 	}
 	if (array->length == 0)
-	    return (NULL);
+		return (NULL);
 	if (array->i == 0 && end)
 		return (NULL);
 	else if (array->i != 0)

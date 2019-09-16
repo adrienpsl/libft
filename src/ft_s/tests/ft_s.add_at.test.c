@@ -53,7 +53,14 @@ void test_fts__add_at()
 	* Error test
 	* */
 	{
-		faire les test pour les errer en dur ici
+		faire
+		les
+		test
+		pour
+		les
+		errer
+		en
+		dur ici
 		// test null s
 		test_function((t){ 0, L,
 						   "", "", 10,

@@ -90,7 +90,7 @@ void test_ft_array$slice_and_remove()
 			ret = ftarray__slice_and_remove(array, 0, 5);
 			result = ftarray__init_data(data, 5, sizeof(int));
 			t_array *new_array_res = ftarray__init_data(data + 5, 5,
-														sizeof(int));
+				sizeof(int));
 
 			if (
 				ftarray__cmp(result, ret, ftarray__cmp_int)
@@ -111,7 +111,7 @@ void test_ft_array$slice_and_remove()
 			result = ftarray__init_data(data + 2, 5, sizeof(int));
 			int new_data[10] = { 0, 1, 7, 8, 9 };
 			t_array *new_array_res = ftarray__init_data(new_data, 5,
-														sizeof(int));
+				sizeof(int));
 
 			if (
 				ftarray__cmp(result, ret, ftarray__cmp_int)
@@ -132,7 +132,7 @@ void test_ft_array$slice_and_remove()
 			ret = ftarray__slice_and_remove(array, 5, array->length);
 			result = ftarray__init_data(data + 5, 5, sizeof(int));
 			t_array *new_array_res = ftarray__init_data(data, 5,
-														sizeof(int));
+				sizeof(int));
 
 			if (
 				ftarray__cmp(result, ret, ftarray__cmp_int)

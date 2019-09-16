@@ -31,7 +31,7 @@ void test_ft_array$add()
 				ftarray__push(array, &i);
 			}
 			// I assign now because the array is variable
-			int *int_arr = (void *) array->data;
+			int *int_arr = (void *)array->data;
 
 			if (
 				int_arr[0] != 0
@@ -57,7 +57,7 @@ void test_ft_array$add()
 				ftarray__push(array, &string);
 			}
 			// I assign now because the array is variable
-			char **str_arr = (char **) array->data;
+			char **str_arr = (char **)array->data;
 
 			if (
 				ft_str_cmp(str_arr[0], string)
@@ -84,7 +84,7 @@ void test_ft_array$add()
 				ftarray__insert(array, &i, i);
 			}
 			// I assign now because the array is variable
-			int *int_arr = (void *) array->data;
+			int *int_arr = (void *)array->data;
 
 			if (
 				int_arr[0] != 0
@@ -148,18 +148,17 @@ void test_ft_array$add()
 			if (
 				ret != -1
 				|| array->length
-				|| *(int*)array->data
+				|| *(int *)array->data
 				|| test_cmp_testbuff_log(
 					"ft_array$insert index bigger than length\n"
-				)
+										)
 				)
 			{
-				printf("%s \n",g_test_buffer);
+				printf("%s \n", g_test_buffer);
 				log_test(5)
 			}
 		}
 		g_test = 0;
 		ftarray__free(&array);
 	}
-
 }

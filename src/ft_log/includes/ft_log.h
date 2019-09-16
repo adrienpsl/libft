@@ -6,9 +6,11 @@
 #define L __LINE__
 
 #include <errno.h>
+
 extern int g_log;
 int g_log;
-enum e_log_level {
+enum e_log_level
+{
 	QUIET,
 	INFO,
 	TRACE,

@@ -23,9 +23,9 @@ int ftarray__sort_cmp_int(void *p1, void *p2, void *param)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_array$sort_cmp_int arg ptr (null)",
-						   EINVAL
-			)
+				"ft_array$sort_cmp_int arg ptr (null)",
+				EINVAL
+						  )
 		);
 	}
 	{

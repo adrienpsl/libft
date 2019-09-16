@@ -45,8 +45,8 @@ static void move_and_copy_value(t_array *array, void *element, int index)
 		)
 	{
 		ft_memmove(ftarray__at(array, index + 1),
-				   ftarray__at(array, index),
-				   (array->length - index) * array->element_size);
+			ftarray__at(array, index),
+			(array->length - index) * array->element_size);
 	}
 	{
 		ft_memcpy(ftarray__at(array, index), element, array->element_size);

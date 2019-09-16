@@ -21,8 +21,8 @@ int fts__clear(t_s *s)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_s$clear error: s ptr (null)",
-						   EINVAL)
+				"ft_s$clear error: s ptr (null)",
+				EINVAL)
 		);
 	}
 	else

@@ -15,7 +15,7 @@
 void ft_strchrreplace(char *str, char *matched, char replacing)
 {
 	if (!str || !matched)
-		return ;
+		return;
 	while (*str)
 	{
 		if (ft_strchr(matched, *str) > -1)

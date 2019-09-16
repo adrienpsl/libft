@@ -49,7 +49,7 @@ void ftarray__remove_from(t_array *array, int from, int at)
 		ftarray__at(array, from),
 		ftarray__at(array, at),
 		(array->length - at) * array->element_size
-	);
+			 );
 	array->length -= at - from;
 }
 

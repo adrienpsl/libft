@@ -20,9 +20,9 @@ void ftarray__clear(t_array *array)
 	if (NULL == array)
 	{
 		ftlog__message(F, L,
-					   "ftarray__clear arg ptr (null)",
-					   EINVAL
-		);
+			"ftarray__clear arg ptr (null)",
+			EINVAL
+					  );
 		return;
 	}
 	ft_bzero(array->data, array->length * array->element_size);
@@ -34,9 +34,9 @@ void ftarray__set_start(t_array *array)
 	if (NULL == array)
 	{
 		ftlog__message(F, L,
-					   "ftarray__set_start arg ptr (null)",
-					   EINVAL
-		);
+			"ftarray__set_start arg ptr (null)",
+			EINVAL
+					  );
 		return;
 	}
 	array->i = 0;

@@ -18,9 +18,9 @@ void ftarray__free(t_array **p_array)
 	if (!p_array || !*p_array)
 	{
 		ftlog__message(F, L,
-					   "ft_array$free arg ptr (null)",
-					   EINVAL
-		);
+			"ft_array$free arg ptr (null)",
+			EINVAL
+					  );
 		return;
 	}
 	ftarray__clear(*p_array);

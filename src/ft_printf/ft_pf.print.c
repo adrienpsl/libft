@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-
 static int padding_calculation(t_pf *pf)
 {
 	int length;

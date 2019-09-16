@@ -22,14 +22,14 @@ static int check(int nb_elements, size_t element_size)
 	{
 		return (
 			ftlog__message(F, L, "ft_array$init : no elements number",
-						   EINVAL)
+				EINVAL)
 		);
 	}
 	if (!element_size)
 	{
 		return (
 			ftlog__message(F, L, "ft_array$init : element size (null)",
-						   EINVAL)
+				EINVAL)
 		);
 	}
 	else
@@ -89,7 +89,7 @@ t_array *ftarray__init_data(void *start, int nb_element, size_t element_size)
 	if (!start)
 	{
 		ftlog__message(F, L, "ft_array$init_data : start (null)",
-					   EINVAL);
+			EINVAL);
 		return (NULL);
 	}
 	if (

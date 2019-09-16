@@ -50,6 +50,6 @@ t_array *ftarray__slice(t_array *array, int from, int at)
 			ftarray__at(array, from),
 			at - from,
 			array->element_size
-		)
+						  )
 	);
 }

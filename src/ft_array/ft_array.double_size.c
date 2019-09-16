@@ -24,7 +24,7 @@ int ftarray__double_size(t_array *array)
 	if (NULL == array)
 	{
 		ftlog__message(F, L, "ftarray__double_size error: array ptr (null)",
-					   EINVAL);
+			EINVAL);
 		return (-1);
 	}
 	new_capacity = array->length * 2;
@@ -33,8 +33,8 @@ int ftarray__double_size(t_array *array)
 		)
 		return (-1);
 	ft_memcpy(data,
-			  array->data,
-			  (array->length * array->element_size));
+		array->data,
+		(array->length * array->element_size));
 	ft_bzero(array->data, array->length * array->element_size);
 	free(array->data);
 	array->capacity = new_capacity;

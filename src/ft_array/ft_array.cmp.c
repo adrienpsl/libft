@@ -20,16 +20,16 @@ static int check(t_array *a_1, t_array *a_2, int (*f)(void *, void *))
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_array$cmp error: array ptr (null)",
-						   EINVAL)
+				"ft_array$cmp error: array ptr (null)",
+				EINVAL)
 		);
 	}
 	else if (!f)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_array$cmp error: func ptr (null)",
-						   EINVAL)
+				"ft_array$cmp error: func ptr (null)",
+				EINVAL)
 		);
 	}
 	return (0);

@@ -41,8 +41,8 @@ void test_ft_iocatch_option()
 			if (
 				ret != -1
 				||
-					test_cmp_testbuff_log(
-						"ft_io$catch_options error: array av (null)\n")
+				test_cmp_testbuff_log(
+					"ft_io$catch_options error: array av (null)\n")
 				)
 				log_test(1)
 		}
@@ -75,8 +75,8 @@ void test_ft_iocatch_option()
 			if (
 				ret != -1
 				||
-					test_cmp_testbuff_log(
-						"ft_io$catch_options error: func ptr (null)\n")
+				test_cmp_testbuff_log(
+					"ft_io$catch_options error: func ptr (null)\n")
 				)
 				log_test(1)
 		}
@@ -263,9 +263,5 @@ void test_ft_iocatch_option()
 
 			ft_strsplit_free(&split);
 		}
-
 	}
-
-
-
 }

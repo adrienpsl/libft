@@ -19,8 +19,8 @@ void fts__free(t_s **s)
 	if (NULL == s || NULL == *s)
 	{
 		ftlog__message(F, L,
-					   "fts__free error: s ptr (null)",
-					   EINVAL);
+			"fts__free error: s ptr (null)",
+			EINVAL);
 		return;
 	}
 	fts__clear(*s);

@@ -15,7 +15,7 @@
 void ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3)
 {
 	if (s1)
-	    ft_strcat(buffer, s1);
+		ft_strcat(buffer, s1);
 	if (s2)
 		ft_strcat(buffer, s2);
 	if (s3)

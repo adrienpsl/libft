@@ -18,15 +18,15 @@ static int check(t_s *s, char *wanted, char *substitute)
 	if (NULL == s)
 		return (
 			ftlog__message(F, L,
-						   "fts__replace_str error: s ptr (null)",
-						   EINVAL)
+				"fts__replace_str error: s ptr (null)",
+				EINVAL)
 		);
 	if (NULL == wanted || NULL == substitute)
 		return (
 			ftlog__message(F, L,
-						   "fts__replace_str error:"
-						   "wanted or length_substitute  ptr (null)",
-						   EINVAL)
+				"fts__replace_str error:"
+				"wanted or length_substitute  ptr (null)",
+				EINVAL)
 		);
 	return (OK);
 }

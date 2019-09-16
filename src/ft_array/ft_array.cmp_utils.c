@@ -22,9 +22,9 @@ int ftarray__cmp_int(void *p1, void *p2)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_array$cmp_int arg ptr (null)",
-						   EINVAL
-			)
+				"ft_array$cmp_int arg ptr (null)",
+				EINVAL
+						  )
 		);
 	}
 	{
@@ -43,9 +43,9 @@ int ftarray__cmp_str(void *p1, void *p2)
 	{
 		return (
 			ftlog__message(F, L,
-						   "ft_array$cmp_str arg ptr (null)",
-						   EINVAL
-			)
+				"ft_array$cmp_str arg ptr (null)",
+				EINVAL
+						  )
 		);
 	}
 	{

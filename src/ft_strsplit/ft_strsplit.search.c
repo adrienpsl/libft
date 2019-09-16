@@ -20,7 +20,7 @@ int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
 	while (split[i])
 	{
 		if (f(split[i], param))
-		    return (i);
+			return (i);
 		i++;
 	}
 	return (-1);

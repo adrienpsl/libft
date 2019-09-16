@@ -48,6 +48,6 @@ void test_fts__clear()
 			s->length
 			|| ft_memcmp(test, s->data, s->capacity)
 			)
-		    log_test(1)
+			log_test(1)
 	}
 }
