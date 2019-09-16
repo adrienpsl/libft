@@ -57,7 +57,7 @@ int					test_cmp_testbuff_log(char *expected)
 	return (ret);
 }
 
-int					test_cmp_testbuff(char *expected)
+int					test_cmp_buff(char *expected)
 {
 	if (ft_str_cmp(expected, g_test_buffer))
 	{
@@ -116,7 +116,7 @@ int					test_cmp_split_str(char *name, char *expected, char **returned)
 	}
 	ft_strsplit_print(returned, ' ');
 
-	if (test_cmp_testbuff(expected))
+	if (test_cmp_buff(expected))
 	{
 		printf("%s", name);
 		return (1);

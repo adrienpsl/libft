@@ -23,7 +23,7 @@ typedef struct s
 	char *adding_string;
 	int index;
 
-	char *result_str;
+	char *result_buffer;
 	int result_int;
 } t;
 
@@ -37,7 +37,7 @@ void static test_function(t t)
 
 	if (test_cmp_int(t.result_int, ret))
 		log_test_line(t.nb_test, t.nb_line)
-	if (test_cmp_str(t.result_str, s->data))
+	if (test_cmp_str(t.result_buffer, s->data))
 		log_test_line(t.nb_test, t.nb_line);
 
 	fts__free(&s);

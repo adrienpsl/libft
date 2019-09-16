@@ -221,7 +221,7 @@ void	test_ft_iocatch_option()
 			if (
 				ret != -1
 				|| options != 0
-				|| test_cmp_testbuff("usage : - \n")
+				|| test_cmp_buff("usage : - \n")
 				)
 				log_test(1)
 
@@ -240,7 +240,7 @@ void	test_ft_iocatch_option()
 			if (
 				ret != -1
 				|| options != 0
-				|| test_cmp_testbuff("usage : h \n")
+				|| test_cmp_buff("usage : h \n")
 				)
 				log_test(1)
 

@@ -78,11 +78,11 @@ void	test_ft_array__extract_by_func()
 				new = ftarray__extract_by_func(array, test_func, &modulo);
 
 				ftarray__func(array, ftarray__func_print_int, NULL);
-				if (test_cmp_testbuff("\n"))
+				if (test_cmp_buff("\n"))
 					log_test(0)
 
 				ftarray__func(new, ftarray__func_print_int, NULL);
-				if (test_cmp_testbuff("1 \n"))
+				if (test_cmp_buff("1 \n"))
 					log_test(1)
 
 				ftarray__free(&array);
@@ -96,11 +96,11 @@ void	test_ft_array__extract_by_func()
 				new = ftarray__extract_by_func(array, test_func, &modulo);
 
 				ftarray__func(array, ftarray__func_print_int, NULL);
-				if (test_cmp_testbuff("1 \n"))
+				if (test_cmp_buff("1 \n"))
 					log_test(2)
 
 				ftarray__func(new, ftarray__func_print_int, NULL);
-				if (test_cmp_testbuff("\n"))
+				if (test_cmp_buff("\n"))
 					log_test(3)
 
 				ftarray__free(&array);
@@ -115,11 +115,11 @@ void	test_ft_array__extract_by_func()
 			new = ftarray__extract_by_func(array, test_func, &modulo);
 
 			ftarray__func(array, ftarray__func_print_int, NULL);
-			if (test_cmp_testbuff("1 3 \n"))
+			if (test_cmp_buff("1 3 \n"))
 				log_test(4)
 
 			ftarray__func(new, ftarray__func_print_int, NULL);
-			if (test_cmp_testbuff("2 4 \n"))
+			if (test_cmp_buff("2 4 \n"))
 				log_test(5)
 
 			ftarray__free(&array);
@@ -133,11 +133,11 @@ void	test_ft_array__extract_by_func()
 			new = ftarray__extract_by_func(array, test_func, &modulo);
 
 			ftarray__func(array, ftarray__func_print_int, NULL);
-			if (test_cmp_testbuff("1 3 5 7 9 \n"))
+			if (test_cmp_buff("1 3 5 7 9 \n"))
 				log_test(4)
 
 			ftarray__func(new, ftarray__func_print_int, NULL);
-			if (test_cmp_testbuff("2 4 6 8 0 \n"))
+			if (test_cmp_buff("2 4 6 8 0 \n"))
 				log_test(5)
 
 			ftarray__free(&array);

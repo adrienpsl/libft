@@ -24,7 +24,7 @@ typedef struct s
 	char *wanted_str;
 	char *substitute_str;
 
-	char *result_str;
+	char *result_buffer;
 	int result_int;
 } t;
 
@@ -41,7 +41,7 @@ static void			func_test(t t)
 	if (test_cmp_int(t.result_int, ret))
 		log_test_line(t.nb_test, t.nb_line)
 
-	if (test_cmp_str(t.result_str, s->data))
+	if (test_cmp_str(t.result_buffer, s->data))
 		log_test_line(t.nb_test, t.nb_line)
 
 	fts__free(&s);

@@ -31,7 +31,7 @@ void test_print_func_int(void *ptr);
 // buffer
 void test_clear_testbuff(void);
 int test_cmp_testbuff_log(char *expected);
-int test_cmp_testbuff(char *expected);
+int test_cmp_buff(char *expected);
 
 // cmp and print
 int test_cmp_str(char *result, char *ret);
