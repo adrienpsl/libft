@@ -15,7 +15,7 @@
 #include <ft_log.h>
 #include "stdio.h"
 
-static int check(
+static int			check(
 	char **av,
 	char *option_str,
 	long *options_ptr,
@@ -41,7 +41,7 @@ static int check(
 		return (0);
 }
 
-static int get_options(char *line, char *option_str, long *options_ptr,
+static int			get_options(char *line, char *option_str, long *options_ptr,
 	void (*f_usage)(char))
 {
 	int position;
@@ -68,7 +68,7 @@ static int get_options(char *line, char *option_str, long *options_ptr,
 	return (0);
 }
 
-int ftio__catch_option(
+int					ftio__catch_option(
 	char **av,
 	char *option_str,
 	long *options_ptr,

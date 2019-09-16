@@ -15,7 +15,7 @@
 /*
  * return the illegal option
  * */
-int ft_io_catch_options(char *av_string, char *str_option, long *options)
+int					ft_io_catch_options(char *av_string, char *str_option, long *options)
 {
 	int ret;
 	static int position;

@@ -14,21 +14,18 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
-// TODO : bug if 0 length is given ? with at
 void	*ftarray__next_loop(t_array *array)
 {
 	void *element;
 
-	if (!array)
+	if (NULL == array)
 	{
 		ftlog__message(F, L,
 			"ft_array$next_loop error: array ptr (null)",
 			EINVAL);
 		return (NULL);
 	}
-	if (
-		array->length == 0
-		)
+	if (array->length == 0)
 		return (NULL);
 	element = ftarray__at(array, array->i);
 	{
@@ -43,7 +40,7 @@ void	*ftarray__next(t_array *array)
 {
 	void *element;
 
-	if (!array)
+	if (NULL == array)
 	{
 		ftlog__message(F, L,
 			"ftarray__next error: array ptr (null)",

@@ -13,7 +13,7 @@
 #include <ft_errno.h>
 #include "libft.h"
 
-int init_libft()
+int					init_libft()
 {
 	ft_errno_set(0, 0);
 	return (0);
@@ -25,7 +25,7 @@ int init_libft()
 #include <ft_test.h>
 #include <ft_str.h>
 
-int test_random_int(int limit)
+int					test_random_int(int limit)
 {
 	return (rand() % limit + 1);
 }
@@ -40,7 +40,7 @@ void	test_clear_testbuff()
 	ft_bzero(g_test_buffer, 10000);
 }
 
-int test_cmp_testbuff_log(char *expected)
+int					test_cmp_testbuff_log(char *expected)
 {
 	int ret;
 	int space;
@@ -57,7 +57,7 @@ int test_cmp_testbuff_log(char *expected)
 	return (ret);
 }
 
-int test_cmp_testbuff(char *expected)
+int					test_cmp_testbuff(char *expected)
 {
 	if (ft_str_cmp(expected, g_test_buffer))
 	{
@@ -70,7 +70,7 @@ int test_cmp_testbuff(char *expected)
 	return (0);
 }
 
-int test_cmp_str(char *result, char *ret)
+int					test_cmp_str(char *result, char *ret)
 {
 	if (
 		result == NULL && ret == NULL
@@ -102,7 +102,7 @@ test_print_func(void *start, void (*f)(void *), size_t size_el, int length)
 	printf(" \n");
 }
 
-int test_cmp_split_str(char *name, char *expected, char **returned)
+int					test_cmp_split_str(char *name, char *expected, char **returned)
 {
 	g_test = 1;
 	test_clear_testbuff();
@@ -125,7 +125,7 @@ int test_cmp_split_str(char *name, char *expected, char **returned)
 	return (0);
 }
 
-int test_cmp_int(int expected, int returned)
+int					test_cmp_int(int expected, int returned)
 {
 	if (expected != returned)
 	{

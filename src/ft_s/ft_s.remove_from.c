@@ -13,7 +13,7 @@
 #include <ft_s.h>
 #include "libft.h"
 
-static int check(t_s *s, size_t start)
+static int			check(t_s *s, size_t start)
 {
 	if (NULL == s)
 	{
@@ -40,7 +40,7 @@ void	fts__remove_from(t_s *s, size_t start)
 	if (
 		check(s, start)
 		)
-		return;
+		return ;
 	ft_bzero(s->data + start, s->length - start);
 	s->length -= (s->length - start);
 }

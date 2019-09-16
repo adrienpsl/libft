@@ -14,7 +14,7 @@
 #include <ft_log.h>
 #include <ft_mem.h>
 
-int static check(t_array *array, int index, void (*f)(void *, void *))
+int					static check(t_array *array, int index, void (*f)(void *, void *))
 {
 	if (
 		NULL == array

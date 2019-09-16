@@ -15,13 +15,12 @@
 
 void	ftarray__free(t_array **p_array)
 {
-	if (!p_array || !*p_array)
+	if (NULL == p_array || NULL == *p_array)
 	{
 		ftlog__message(F, L,
 			"ft_array$free arg ptr (null)",
-			EINVAL
-					  );
-		return;
+			EINVAL);
+		return ;
 	}
 	ftarray__clear(*p_array);
 	ft_bzero(*p_array, sizeof(t_array));

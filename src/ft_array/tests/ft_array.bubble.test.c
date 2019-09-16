@@ -15,7 +15,7 @@
 #include <ft_test.h>
 #include <ft_mem.h>
 
-static int cmp(void const *a, void const *b)
+static int			cmp(void const *a, void const *b)
 {
 	int const *pa = a;
 	int const *pb = b;
@@ -23,7 +23,7 @@ static int cmp(void const *a, void const *b)
 	return *pa - *pb;
 }
 
-static int inv_cmp(void const *a, void const *b)
+static int			inv_cmp(void const *a, void const *b)
 {
 	int const *pa = a;
 	int const *pb = b;

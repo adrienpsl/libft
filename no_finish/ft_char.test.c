@@ -1,6 +1,6 @@
 #include <libft.h>
 
-int test_ft_char()
+int					test_ft_char()
 {
 	/*  test char ----------------------------------------------------------- */
 	char arr[8] = {'u', 127, 129, -109, '0', '9', 'a', 'Z'};

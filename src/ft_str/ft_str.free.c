@@ -16,7 +16,7 @@
 void	ftstr__free(char **s)
 {
 	if (!s || !*s)
-		return;
+		return ;
 	ft_bzero(*s, ft_strlen(*s));
 	free(*s);
 	*s = NULL;

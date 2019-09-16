@@ -13,7 +13,7 @@
 #include <ft_str.h>
 #include <ft_log.h>
 
-int ftarray__cmp_int(void *p1, void *p2)
+int					ftarray__cmp_int(void *p1, void *p2)
 {
 	int *a;
 	int *b;
@@ -30,7 +30,7 @@ int ftarray__cmp_int(void *p1, void *p2)
 	return (!(*a == *b));
 }
 
-int ftarray__cmp_str(void *p1, void *p2)
+int					ftarray__cmp_str(void *p1, void *p2)
 {
 	char *a;
 	char *b;

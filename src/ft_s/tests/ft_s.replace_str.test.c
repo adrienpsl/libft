@@ -28,7 +28,7 @@ typedef struct s
 	int result_int;
 } t;
 
-static void func_test(t t)
+static void			func_test(t t)
 {
 	g_test = 1;
 	t_s *s;

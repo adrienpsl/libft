@@ -14,7 +14,7 @@
 #include "ft_mem.h"
 #include "ft_buffer.h"
 
-int ft_buffer_clean(t_buffer *buff)
+int					ft_buffer_clean(t_buffer *buff)
 {
 	ft_putstr_fd(buff->data, buff->fd);
 	ft_bzero(buff->data, buff->length);
@@ -22,7 +22,7 @@ int ft_buffer_clean(t_buffer *buff)
 	return (0);
 }
 
-int ft_buffer_add(t_buffer *buff, char *data, int size)
+int					ft_buffer_add(t_buffer *buff, char *data, int size)
 {
 	if (size > BUFFER_SIZE)
 	{

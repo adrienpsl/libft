@@ -21,7 +21,7 @@ void	fts__free(t_s **s)
 		ftlog__message(F, L,
 			"fts__free error: s ptr (null)",
 			EINVAL);
-		return;
+		return ;
 	}
 	fts__clear(*s);
 	free((*s)->data);

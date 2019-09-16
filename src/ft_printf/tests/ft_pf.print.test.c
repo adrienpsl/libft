@@ -13,7 +13,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-int utils(char *format, char *result, ...)
+int					utils(char *format, char *result, ...)
 {
 	int ret = 0;
 	t_pf p;

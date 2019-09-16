@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <ft_str.h>
 
-static int count_words(char *s, char *separators)
+static int			count_words(char *s, char *separators)
 {
 	size_t words;
 
@@ -32,7 +32,7 @@ static int count_words(char *s, char *separators)
 	return words;
 }
 
-static int dup_word(char **s, char **out, char *separators)
+static int			dup_word(char **s, char **out, char *separators)
 {
 	size_t size;
 

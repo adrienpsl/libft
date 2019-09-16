@@ -14,19 +14,15 @@
 #include <errno.h>
 #include <ft_log.h>
 
-static int check(t_array *array, int (*f)(void *, void *))
+static int			check(t_array *array, int (*f)(void *, void *))
 {
-	if (
-		NULL == array
-		)
+	if (NULL == array)
 		return (
 			ftlog__message(F, L,
 				"ft_array__extract_by_func"
 				" error: array ptr (null)",
 				EINVAL));
-	if (
-		NULL == f
-		)
+	if (NULL == f)
 		return (
 			ftlog__message(F, L,
 				"ft_array__extract_by_func"
@@ -35,20 +31,18 @@ static int check(t_array *array, int (*f)(void *, void *))
 	return (0);
 }
 
-static void
-loop_on_array(t_array *array, t_array *new, int(*f)(void *, void *),
+static void			loop_on_array(
+	t_array *array,
+	t_array *new,
+	int (*f)(void *, void *),
 	void *param)
 {
 	int i;
 
 	i = 0;
-	while (
-		i < array->length
-		)
+	while (i < array->length)
 	{
-		if (
-			f(ftarray__at(array, i), param)
-			)
+		if (f(ftarray__at(array, i), param))
 		{
 			ftarray__push(new, ftarray__at(array, i));
 			ftarray__remove(array, i);
@@ -58,26 +52,17 @@ loop_on_array(t_array *array, t_array *new, int(*f)(void *, void *),
 	}
 }
 
-t_array *
-ftarray__extract_by_func(t_array *array, int(*f)(void *, void *), void *param)
+t_array				*ftarray__extract_by_func(
+	t_array *array,
+	int (*f)(void *, void *),
+	void *param)
 {
 	t_array *new;
 
-	if (
-		check(array, f)
-		)
+	if (check(array, f))
 		return (NULL);
-	if (
-		NULL == (new = ftarray__init(array->length, array->element_size))
-		)
+	if (NULL == (new = ftarray__init(array->length, array->element_size)))
 		return (NULL);
-	{
-		loop_on_array(array, new, f, param);
-	}
+	loop_on_array(array, new, f, param);
 	return (new);
 }
-
-
-
-
-

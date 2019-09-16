@@ -16,7 +16,7 @@
 #include <errno.h>
 #include <libft_define.h>
 
-int static check(t_array *array, void *element, int index)
+int					static check(t_array *array, void *element, int index)
 {
 	if (!array || !element)
 	{
@@ -38,7 +38,7 @@ int static check(t_array *array, void *element, int index)
 	}
 }
 
-static void move_and_copy_value(t_array *array, void *element, int index)
+static void			move_and_copy_value(t_array *array, void *element, int index)
 {
 	if (
 		index < array->length
@@ -54,7 +54,7 @@ static void move_and_copy_value(t_array *array, void *element, int index)
 	}
 }
 
-int ftarray__insert(t_array *array, void *element, int index)
+int					ftarray__insert(t_array *array, void *element, int index)
 {
 	if (
 		check(array, element, index)

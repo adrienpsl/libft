@@ -13,7 +13,7 @@
 # include "ft_io.h"
 # include "ft_mem.h"
 
-int ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out)
+int					ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out)
 {
 	int i;
 	size_t base;
@@ -34,7 +34,7 @@ int ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out)
 	return (0);
 }
 
-int ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u)
+int					ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u)
 {
 	int neg;
 	long long nb;

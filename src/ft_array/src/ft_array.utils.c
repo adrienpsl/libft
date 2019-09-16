@@ -21,9 +21,8 @@ void	ftarray__clear(t_array *array)
 	{
 		ftlog__message(F, L,
 			"ftarray__clear arg ptr (null)",
-			EINVAL
-					  );
-		return;
+			EINVAL);
+		return ;
 	}
 	ft_bzero(array->data, array->length * array->element_size);
 	array->length = 0;
@@ -35,14 +34,13 @@ void	ftarray__set_start(t_array *array)
 	{
 		ftlog__message(F, L,
 			"ftarray__set_start arg ptr (null)",
-			EINVAL
-					  );
-		return;
+			EINVAL);
+		return ;
 	}
 	array->i = 0;
 }
 
-int ftarray__remain(t_array *array)
+int		ftarray__remain(t_array *array)
 {
 	return (array->length - array->i);
 }

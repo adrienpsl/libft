@@ -16,7 +16,7 @@
 void	ft_strsplit_print_test(char **p_str)
 {
 	if (!p_str)
-		return;
+		return ;
 	while (*p_str)
 	{
 		ft_printf("-%s-\n", *p_str);
@@ -31,7 +31,7 @@ void	ft_strsplit_print(char **p_str, char sep)
 	if (
 		!p_str
 		)
-		return;
+		return ;
 	sep_str[0] = sep;
 	while (
 		*p_str

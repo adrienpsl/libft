@@ -16,10 +16,10 @@
 #include <ft_log.h>
 #include <ft_str.h>
 
-int ftarray__double_size(t_array *array)
+int					ftarray__double_size(t_array *array)
 {
-	void *data;
-	int new_capacity;
+	void	*data;
+	int		new_capacity;
 
 	if (NULL == array)
 	{

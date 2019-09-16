@@ -13,7 +13,7 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
-int ftarray__push(t_array *array, void *element)
+int					ftarray__push(t_array *array, void *element)
 {
 	if (
 		NULL == array

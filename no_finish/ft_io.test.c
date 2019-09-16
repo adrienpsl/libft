@@ -1,9 +1,9 @@
 
 #include <libft.h>
 
-int parse_itoa(uintmax_t origin_nb, char *base_str, char *out, int is_u);
+int					parse_itoa(uintmax_t origin_nb, char *base_str, char *out, int is_u);
 
-int utils_itoa_base(uintmax_t nb, char *base, char *res, int is_u)
+int					utils_itoa_base(uintmax_t nb, char *base, char *res, int is_u)
 {
 	char out[100];
 	ft_memset(out, 0, 100);
@@ -11,7 +11,7 @@ int utils_itoa_base(uintmax_t nb, char *base, char *res, int is_u)
 	return (ft_memcmp(out, res, STRING_MODE));
 }
 
-int test_itoa_base()
+int					test_itoa_base()
 {
 	if (utils_itoa_base(0, "0123456789", "0", FALSE) ||
 		utils_itoa_base(-42, "0123456789", "-42", FALSE) ||
@@ -47,7 +47,7 @@ int test_itoa_base()
 # define A (1 << 2)
 # define G (1 << 3)
 
-int test_io_catch_options()
+int					test_io_catch_options()
 {
 	// no option
 	int ret;
@@ -185,7 +185,7 @@ void	test_split_mix(char *split_1, char *split_2, char **split_res, int test)
 //	ft_strsplit_print_test(split_res);
 }
 
-int test_ft_io()
+int					test_ft_io()
 {
 	char *split_1_res[20] = {NULL};
 	test_split_mix("", "", split_1_res, 1);

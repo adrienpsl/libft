@@ -13,7 +13,7 @@
 #include "ft_str.h"
 #include "ft_printf.h"
 
-int ft_strsplit_cmp(char **split_1, char **split_2)
+int					ft_strsplit_cmp(char **split_1, char **split_2)
 {
 	if (!split_1 && !split_2)
 		return (0);

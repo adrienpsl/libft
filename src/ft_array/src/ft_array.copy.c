@@ -14,7 +14,7 @@
 #include "ft_errno.h"
 #include "ft_array.h"
 
-t_array *ftarray__copy(
+t_array		*ftarray__copy(
 	t_array *src)
 {
 	if (NULL == src)
@@ -28,13 +28,13 @@ t_array *ftarray__copy(
 		src->element_size));
 }
 
-t_array *ftarray__copy_func(
+t_array		*ftarray__copy_func(
 	t_array *src,
-	int(*f)(void *, void *, void *),
+	int (*f)(void *, void *, void *),
 	void *param)
 {
-	t_array *new;
-	int i;
+	t_array		*new;
+	int			i;
 
 	i = 0;
 	if (NULL == src || NULL == f)

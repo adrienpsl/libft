@@ -24,7 +24,7 @@ void	test_ft_str_replace(char *str, char *searching, char *replacing, char *res_
 		printf("one is null but not test: %s ,res:%s \n", out, res_str);
 }
 
-int test_ft_str()
+int					test_ft_str()
 {
 	// str search
 	test_ft_str_search(NULL, NULL, -1, 1);

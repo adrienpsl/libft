@@ -19,9 +19,9 @@ void	ft_perror(char *string)
 
 	errnum = ft_errno_get();
 	if (errnum == 0)
-		return;
+		return ;
 	if (string == NULL)
-		return;
+		return ;
 	ft_putstr_fd(string, 2);
 	ft_putstr_fd(" : ", 2);
 	ft_putstr_fd(ft_strerror(errnum), 2);

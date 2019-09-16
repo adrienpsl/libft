@@ -14,7 +14,7 @@
 #include <ft_array.h>
 #include <ft_str.h>
 
-static int test_func(void *el, void *param)
+static int			test_func(void *el, void *param)
 {
 	int *modulo;
 	int *nb;

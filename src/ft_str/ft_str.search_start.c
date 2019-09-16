@@ -36,7 +36,7 @@ ssize_t ftstr__search_str(char *src, char *searching)
 	return (-1);
 }
 
-int check(char *current, char *searching)
+int					check(char *current, char *searching)
 {
 	if (
 		NULL == current || NULL == searching
@@ -51,7 +51,7 @@ int check(char *current, char *searching)
 		);
 }
 
-int ftstr__search_start(char *current, char *searching, int param)
+int					ftstr__search_start(char *current, char *searching, int param)
 {
 	int i;
 

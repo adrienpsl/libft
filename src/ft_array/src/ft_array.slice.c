@@ -12,44 +12,31 @@
 
 #include "libft.h"
 
-int static check(t_array *array, int from, int at)
+int					static check(t_array *array, int from, int at)
 {
 	char *message;
 
 	message = NULL;
-	if (
-		NULL == array
-		)
+	if (NULL == array)
 		message = "ftarray__slice array ptr (null)";
-	else if (
-		from >= array->length || at > array->length
-		)
+	else if (from >= array->length || at > array->length)
 		message = "ftarray__slice at / from > length";
-	else if (
-		from >= at
-		)
+	else if (from >= at)
 		message = "ftarray__slice at >= from";
-	else if (
-		at < 1 || from < 0
-		)
+	else if (at < 1 || from < 0)
 		message = "ftarray__slice at / from  < 0";
 	return (message == NULL ?
 			0 :
-			ftlog__message(F, L, message, EINVAL)
-	);
+			ftlog__message(F, L, message, EINVAL));
 }
 
-t_array *ftarray__slice(t_array *array, int from, int at)
+t_array					*ftarray__slice(t_array *array, int from, int at)
 {
-	if (
-		check(array, from, at)
-		)
+	if (check(array, from, at))
 		return (NULL);
 	return (
 		ftarray__init_data(
 			ftarray__at(array, from),
 			at - from,
-			array->element_size
-						  )
-	);
+			array->element_size));
 }

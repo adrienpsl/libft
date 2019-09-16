@@ -17,7 +17,7 @@ void	ft_strsplit_free(char ***p_str)
 	char **str;
 
 	if (!p_str || !*p_str)
-		return;
+		return ;
 	str = *p_str;
 	while (*str)
 	{

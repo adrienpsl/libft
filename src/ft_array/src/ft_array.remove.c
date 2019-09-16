@@ -15,7 +15,7 @@
 #include "ft_errno.h"
 #include "ft_array.h"
 
-int static check(t_array *array, int index)
+int					static check(t_array *array, int index)
 {
 	if (NULL == array)
 	{
@@ -41,7 +41,7 @@ int static check(t_array *array, int index)
 	}
 }
 
-int ftarray__remove(t_array *array, int index)
+int					ftarray__remove(t_array *array, int index)
 {
 	if (
 		0 != check(array, index)

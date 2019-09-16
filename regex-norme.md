@@ -8,3 +8,10 @@ the regex :
 *   the matcher static :
     -   `^((static)? (void|t_array|int)) `
     -   $1\t\t\t
+    
+*   regex if return is lonely
+    - return;
+    - return ;
+
+*   align the first char 
+    - 

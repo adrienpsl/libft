@@ -13,7 +13,7 @@
 #include <ft_s.h>
 #include "libft.h"
 
-static int check(t_s *s, char *string)
+static int			check(t_s *s, char *string)
 {
 	if (NULL == s)
 	{
@@ -34,7 +34,7 @@ static int check(t_s *s, char *string)
 	return (0);
 }
 
-static int increase(t_s *s, size_t size)
+static int			increase(t_s *s, size_t size)
 {
 	char *new_buffer;
 
@@ -49,7 +49,7 @@ static int increase(t_s *s, size_t size)
 	return (0);
 }
 
-int fts__addn(t_s *s, char *str, size_t length)
+int					fts__addn(t_s *s, char *str, size_t length)
 {
 	if (check(s, str))
 	{

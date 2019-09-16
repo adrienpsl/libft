@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int pf__get_str(t_pf *pf)
+int					pf__get_str(t_pf *pf)
 {
 	static char *null_ptr = "(null)";
 

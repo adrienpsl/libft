@@ -14,7 +14,7 @@
 # include <ft_str.h>
 # include <ft_io.h>
 
-static int catch_padding(
+static int			catch_padding(
 	char **format_s, t_pf_format *format
 						)
 {
@@ -35,7 +35,7 @@ static int catch_padding(
 	}
 }
 
-static int catch_format(
+static int			catch_format(
 	char **format_s, char *str_option, t_pf_format *format
 					   )
 {
@@ -52,7 +52,7 @@ static int catch_format(
 	return (1);
 }
 
-static int catch(
+static int			catch(
 	char **format_s, char *str_option, t_pf_format *format, int unique
 				)
 {
@@ -78,7 +78,7 @@ static int catch(
 }
 
 // TODO : mettre seccurity if same format given like h and l
-int pf__catch_format(t_pf *pf)
+int					pf__catch_format(t_pf *pf)
 {
 	pf->format++;
 	if (*pf->format == '%')

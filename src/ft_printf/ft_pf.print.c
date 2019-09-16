@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int padding_calculation(t_pf *pf)
+static int			padding_calculation(t_pf *pf)
 {
 	int length;
 
@@ -27,7 +27,7 @@ static int padding_calculation(t_pf *pf)
 	return ((int)length);
 }
 
-static void add_padding(t_pf *pf)
+static void			add_padding(t_pf *pf)
 {
 	static char buff[2] = { 0 };
 
@@ -39,7 +39,7 @@ static void add_padding(t_pf *pf)
 	}
 }
 
-int pf__print(t_pf *pf)
+int					pf__print(t_pf *pf)
 {
 	int length;
 

@@ -12,9 +12,9 @@
 
 # include "ft_errno.h"
 
-static int g_errno;
+static int			g_errno;
 
-int ft_errno_set(int errnum, int ret)
+int					ft_errno_set(int errnum, int ret)
 {
 	if (errnum < 1 || errnum > FT_ERRNO_MAX)
 		g_errno = 0;
@@ -22,7 +22,7 @@ int ft_errno_set(int errnum, int ret)
 	return (ret);
 }
 
-int ft_errno_get()
+int					ft_errno_get()
 {
 	return (g_errno);
 }

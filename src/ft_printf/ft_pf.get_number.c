@@ -29,7 +29,7 @@ static char *get_base(t_pf *pf)
 		return (base[1]);
 }
 
-static int itoa_unsigned(char *dest, uintmax_t nb, const char *base_str)
+static int			itoa_unsigned(char *dest, uintmax_t nb, const char *base_str)
 {
 	int i;
 	size_t base;
@@ -89,7 +89,7 @@ static uintmax_t get_va_signed(t_pf *pf)
 	return (nb);
 }
 
-int pf__get_number(t_pf *pf)
+int					pf__get_number(t_pf *pf)
 {
 	uintmax_t nb;
 

@@ -13,7 +13,7 @@
 #include <ft_s.h>
 #include "libft.h"
 
-static int check(t_s *s, char *wanted, char *substitute)
+static int			check(t_s *s, char *wanted, char *substitute)
 {
 	if (NULL == s)
 		return (
@@ -31,7 +31,7 @@ static int check(t_s *s, char *wanted, char *substitute)
 	return (OK);
 }
 
-int fts__replace_str(t_s *s, char *wanted, char *substitute)
+int					fts__replace_str(t_s *s, char *wanted, char *substitute)
 {
 	ssize_t index;
 	t_s *s_tmp;

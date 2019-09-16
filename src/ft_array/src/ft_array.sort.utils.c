@@ -13,7 +13,7 @@
 #include <ft_log.h>
 #include <errno.h>
 
-int ftarray__sort_cmp_int(void *p1, void *p2, void *param)
+int	ftarray__sort_cmp_int(void *p1, void *p2, void *param)
 {
 	int a;
 	int b;
@@ -23,15 +23,10 @@ int ftarray__sort_cmp_int(void *p1, void *p2, void *param)
 	{
 		return (
 			ftlog__message(F, L,
-				"ft_array$sort_cmp_int arg ptr (null)",
-				EINVAL
-						  )
-		);
+				"ft_array$sort_cmp_int arg ptr (null)", EINVAL));
 	}
-	{
-		a = *(int *)p1;
-		b = *(int *)p2;
-		order = *(int *)param;
-	}
+	a = *(int *)p1;
+	b = *(int *)p2;
+	order = *(int *)param;
 	return (order ? a > b : a < b);
 }

@@ -15,7 +15,7 @@
 #include <ft_log.h>
 #include <ft_mem.h>
 
-int fts__clear(t_s *s)
+int					fts__clear(t_s *s)
 {
 	if (NULL == s)
 	{

@@ -3,7 +3,7 @@
 /*
  * pay attention, the cmp function res is !!
  * */
-static int partition(t_array *quick, int low, int high)
+static int			partition(t_array *quick, int low, int high)
 {
 	t_array *arr;
 	int j;
@@ -27,7 +27,7 @@ static int partition(t_array *quick, int low, int high)
 	return (i + 1);
 }
 
-int ft_quick_sort(t_sort *quick, int low, int high)
+int					ft_quick_sort(t_sort *quick, int low, int high)
 {
 	if (low < high && low >= 0)
 	{

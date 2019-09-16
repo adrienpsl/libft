@@ -14,7 +14,7 @@
 #include <ft_log.h>
 #include <ft_str.h>
 
-static int check(t_s *s, char *string)
+static int			check(t_s *s, char *string)
 {
 	if (NULL == s)
 	{
@@ -35,7 +35,7 @@ static int check(t_s *s, char *string)
 	return (0);
 }
 
-int fts__add(t_s *s, char *str)
+int					fts__add(t_s *s, char *str)
 {
 	if (check(s, str))
 	{

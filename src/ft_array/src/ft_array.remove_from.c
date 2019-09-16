@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int static check(t_array *array, int from, int at)
+int					static check(t_array *array, int from, int at)
 {
 	char *message;
 
@@ -44,7 +44,7 @@ void	ftarray__remove_from(t_array *array, int from, int at)
 	if (
 		check(array, from, at)
 		)
-		return;
+		return ;
 	ft_memcpy(
 		ftarray__at(array, from),
 		ftarray__at(array, at),

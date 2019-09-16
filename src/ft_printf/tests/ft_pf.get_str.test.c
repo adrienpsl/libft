@@ -13,7 +13,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-static void utils(t_pf *pf, char *format, ...)
+static void			utils(t_pf *pf, char *format, ...)
 {
 	ft_bzero(pf, sizeof(t_pf));
 	pf->format = format;

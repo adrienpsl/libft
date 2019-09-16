@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int test_ft_buffer()
+int					test_ft_buffer()
 {
 //	g_test = 1;
 //

@@ -15,45 +15,36 @@
 #include <ft_log.h>
 #include <ft_printf.h>
 
-static int check(t_array *array, int (*f)(void *, void *))
+static int			check(t_array *array, int (*f)(void *, void *))
 {
-	if (!array)
-	{
+	if (NULL == array)
 		return (
 			ftlog__message(F, L,
 				"ftarray__func error: array ptr (null)",
 				EINVAL));
-	}
-	if (!f)
-	{
+	if (NULL == f)
 		return (
 			ftlog__message(F, L,
 				"ftarray__func error: func ptr (null)",
 				EINVAL));
-	}
 	return (0);
 }
 
-void	*ftarray__func(t_array *array, int(*func)(void *, void *), void *param)
+void	*ftarray__func(
+	t_array *array,
+	int (*func)(void *, void *),
+	void *param)
 {
-	if (
-		check(array, func)
-		)
+	if (check(array, func))
 		return (NULL);
 	array->i = 0;
-	while (
-		array->i < array->length
-		)
+	while (array->i < array->length)
 	{
-		if (
-			func(ftarray__at(array, array->i), param)
-			)
+		if (func(ftarray__at(array, array->i), param))
 			return (ftarray__at(array, array->i));
 		array->i++;
 	}
-	if (
-		func == ftarray__func_print_int || func == ftarray__func_print_str
-		)
+	if (func == ftarray__func_print_int || func == ftarray__func_print_str)
 	{
 		ft_printf("\n");
 	}

@@ -14,7 +14,7 @@
 #include <ft_test.h>
 #include "libft.h"
 
-static int find_func(void *el, void *searched)
+static int			find_func(void *el, void *searched)
 {
 	int *nb;
 	int *wanted;

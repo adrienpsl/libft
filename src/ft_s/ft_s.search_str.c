@@ -13,7 +13,7 @@
 #include <ft_s.h>
 #include "libft.h"
 
-int fts__search_str(t_s *s, char *wanted)
+int					fts__search_str(t_s *s, char *wanted)
 {
 	return (ftstr__search_str(s->data, wanted));
 }
