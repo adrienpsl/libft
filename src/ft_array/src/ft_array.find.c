@@ -20,15 +20,19 @@ static int			check(
 	int (*f)(void *, void *))
 {
 	if (NULL == array)
+	{
 		return (
 			ftlog__message(F, L,
 				"ftarray__find error: array ptr (null)",
 				EINVAL));
+	}
 	if (NULL == f)
+	{
 		return (
 			ftlog__message(F, L,
 				"ftarray__find error: func ptr (null)",
 				EINVAL));
+	}
 	return (0);
 }
 

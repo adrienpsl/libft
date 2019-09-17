@@ -17,15 +17,19 @@
 static int	check(t_array *array, int (*f)(void *, void *))
 {
 	if (NULL == array)
+	{
 		return (ftlog__message(F, L,
 			"ft_array__extract_by_func"
 			" error: array ptr (null)",
 			EINVAL));
+	}
 	if (NULL == f)
+	{
 		return (ftlog__message(F, L,
 			"ft_array__extract_by_func"
 			" error: func ptr (null)",
 			EINVAL));
+	}
 	return (0);
 }
 
