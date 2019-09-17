@@ -12,44 +12,31 @@
 
 #include "libft.h"
 
-int					static check(t_array *array, int from, int at)
+static int	check(t_array *array, int from, int at)
 {
 	char *message;
 
 	message = NULL;
-	if (
-		NULL == array
-		)
+	if (NULL == array)
 		message = "ft_array$remove_from array ptr (null)";
-	else if (
-		at > array->length || from >= array->length
-		)
+	else if (at > array->length || from >= array->length)
 		message = "ft_array$remove_from at / from > length";
-	else if (
-		from >= at
-		)
+	else if (from >= at)
 		message = "ft_array$remove_from at >= from";
-	else if (
-		at < 1 || from < 0
-		)
+	else if (at < 1 || from < 0)
 		message = "ft_array$remove_from at / from  < 0";
 	return (message == NULL ?
 			0 :
-			ftlog__message(F, L, message, EINVAL)
-	);
+			ftlog__message(F, L, message, EINVAL));
 }
 
-void	ftarray__remove_from(t_array *array, int from, int at)
+void		ftarray__remove_from(t_array *array, int from, int at)
 {
-	if (
-		check(array, from, at)
-		)
+	if (check(array, from, at))
 		return ;
 	ft_memcpy(
 		ftarray__at(array, from),
 		ftarray__at(array, at),
-		(array->length - at) * array->element_size
-			 );
+		(array->length - at) * array->element_size);
 	array->length -= at - from;
 }
-

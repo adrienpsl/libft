@@ -15,25 +15,23 @@
 #include "ft_errno.h"
 #include "ft_array.h"
 
-int					static check(t_array *array, int index)
+static int	check(t_array *array, int index)
 {
 	if (NULL == array)
 	{
-		return (
-			ftlog__message(F, L,
+		return (ftlog__message(F, L,
 				"ftarray__remove error: array ptr (null)",
-				EINVAL)
-		);
+				EINVAL));
 	}
 	else if (index >= array->length || index < 0)
 	{
-		return (ftlog__message(F, L, "ftarray__remove"
-									 " index bigger than length/neg", EINVAL));
+		return (ftlog__message(F, L,
+			"ftarray__remove index bigger than length/neg", EINVAL));
 	}
 	else if (!array->length)
 	{
-		return (ftlog__message(F, L, "ftarray__remove"
-									 " array is empty", EINVAL));
+		return (ftlog__message(F, L,
+			"ftarray__remove array is empty", EINVAL));
 	}
 	else
 	{
@@ -41,11 +39,9 @@ int					static check(t_array *array, int index)
 	}
 }
 
-int					ftarray__remove(t_array *array, int index)
+int			ftarray__remove(t_array *array, int index)
 {
-	if (
-		0 != check(array, index)
-		)
+	if (0 != check(array, index))
 		return (-1);
 	{
 		ft_memmove(ftarray__at(array, index),

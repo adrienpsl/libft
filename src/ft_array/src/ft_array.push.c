@@ -15,10 +15,8 @@
 
 int					ftarray__push(t_array *array, void *element)
 {
-	if (
-		NULL == array
-		|| NULL == element
-		)
+	if (NULL == array
+		|| NULL == element)
 		return (ftlog__null(__FILE__, __LINE__));
 	else
 		return (ftarray__insert(array, element, array->length));

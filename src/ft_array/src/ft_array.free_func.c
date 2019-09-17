@@ -14,31 +14,35 @@
 #include <ft_mem.h>
 #include "ft_array.h"
 
-int					ftarray__free_func_str(void *element, void *p)
+int				ftarray__free_func_str(void *element, void *p)
 {
 	(void)p;
 	free(*(char **)element);
 	return (0);
 }
 
-static int check(
+static int		check(
 	t_array **array,
 	int (*f)(void *, void *))
 {
 	if (NULL == array || NULL == *array)
+	{
 		return (
 			ftlog__message(F, L,
 				"ftarray__free_func error: array ptr (null)",
 				EINVAL));
+	}
 	if (!f)
+	{
 		return (
 			ftlog__message(F, L,
 				"ftarray__free_func error: func ptr (null)",
 				EINVAL));
+	}
 	return (0);
 }
 
-void ftarray__free_func(
+void			ftarray__free_func(
 	t_array **p_array,
 	int (*f)(void *, void *),
 	void *param)

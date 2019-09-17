@@ -18,19 +18,23 @@
 static int			check(t_array *array, int (*f)(void *, void *))
 {
 	if (NULL == array)
+	{
 		return (
 			ftlog__message(F, L,
 				"ftarray__func error: array ptr (null)",
 				EINVAL));
+	}
 	if (NULL == f)
+	{
 		return (
 			ftlog__message(F, L,
 				"ftarray__func error: func ptr (null)",
 				EINVAL));
+	}
 	return (0);
 }
 
-void	*ftarray__func(
+void				*ftarray__func(
 	t_array *array,
 	int (*func)(void *, void *),
 	void *param)

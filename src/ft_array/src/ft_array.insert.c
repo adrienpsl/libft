@@ -16,7 +16,7 @@
 #include <errno.h>
 #include <libft_define.h>
 
-static int check(t_array *array, void *element, int index)
+static int			check(t_array *array, void *element, int index)
 {
 	if (!array || !element)
 	{
@@ -24,13 +24,13 @@ static int check(t_array *array, void *element, int index)
 	}
 	else if (index > array->length)
 	{
-		return (ftlog__message(F, L, "ft_array$insert"
-									 " index bigger than length", EINVAL));
+		return (ftlog__message(F, L,
+			"ft_array$insert index bigger than length", EINVAL));
 	}
 	else if (index < 0)
 	{
-		return (ftlog__message(F, L, "ft_array$insert "
-									 "negative index", EINVAL));
+		return (ftlog__message(F, L,
+			"ft_array$insert negative index", EINVAL));
 	}
 	else
 	{
@@ -38,11 +38,12 @@ static int check(t_array *array, void *element, int index)
 	}
 }
 
-static void			move_and_copy_value(t_array *array, void *element, int index)
+static void			move_and_copy_value(
+	t_array *array,
+	void *element,
+	int index)
 {
-	if (
-		index < array->length
-		)
+	if (index < array->length)
 	{
 		ft_memmove(ftarray__at(array, index + 1),
 			ftarray__at(array, index),
@@ -56,13 +57,10 @@ static void			move_and_copy_value(t_array *array, void *element, int index)
 
 int					ftarray__insert(t_array *array, void *element, int index)
 {
-	if (
-		check(array, element, index)
-		)
+	if (check(array, element, index))
 		return (-1);
 	if (array->length + 1 >= array->capacity
-		&& OK != ftarray__double_size(array)
-		)
+		&& OK != ftarray__double_size(array))
 		return (-1);
 	move_and_copy_value(array, element, index);
 	return (0);
