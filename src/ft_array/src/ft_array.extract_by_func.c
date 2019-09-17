@@ -14,24 +14,22 @@
 #include <errno.h>
 #include <ft_log.h>
 
-static int			check(t_array *array, int (*f)(void *, void *))
+static int	check(t_array *array, int (*f)(void *, void *))
 {
 	if (NULL == array)
-		return (
-			ftlog__message(F, L,
-				"ft_array__extract_by_func"
-				" error: array ptr (null)",
-				EINVAL));
+		return (ftlog__message(F, L,
+			"ft_array__extract_by_func"
+			" error: array ptr (null)",
+			EINVAL));
 	if (NULL == f)
-		return (
-			ftlog__message(F, L,
-				"ft_array__extract_by_func"
-				" error: func ptr (null)",
-				EINVAL));
+		return (ftlog__message(F, L,
+			"ft_array__extract_by_func"
+			" error: func ptr (null)",
+			EINVAL));
 	return (0);
 }
 
-static void			loop_on_array(
+static void	loop_on_array(
 	t_array *array,
 	t_array *new,
 	int (*f)(void *, void *),
@@ -52,7 +50,7 @@ static void			loop_on_array(
 	}
 }
 
-t_array				*ftarray__extract_by_func(
+t_array		*ftarray__extract_by_func(
 	t_array *array,
 	int (*f)(void *, void *),
 	void *param)

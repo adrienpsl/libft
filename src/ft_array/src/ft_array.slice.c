@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int					static check(t_array *array, int from, int at)
+static int				check(t_array *array, int from, int at)
 {
 	char *message;
 

@@ -15,26 +15,28 @@
 #include <ft_log.h>
 #include "ft_array.h"
 
-int	static			check(
+static int	check(
 	t_array *array,
 	int (*cmp_f)(void *, void *, void *))
 {
 	if (NULL == array)
-		return (
-			ftlog__message(F, L,
-				"ft_array$sort_bubble error: array ptr (null)",
-				EINVAL));
+	{
+		return (ftlog__message(F, L,
+			"ft_array$sort_bubble error: array ptr (null)",
+			EINVAL));
+	}
 	if (NULL == cmp_f)
-		return (
-			ftlog__message(F, L,
-				"ft_array$sort_bubble error: func ptr (null)",
-				EINVAL));
+	{
+		return (ftlog__message(F, L,
+			"ft_array$sort_bubble error: func ptr (null)",
+			EINVAL));
+	}
 	return (0);
 }
 
-static int			make_a_pass(
+static int	make_a_pass(
 	t_array *array,
-	int(*cmp_f)(void *, void *, void *),
+	int (*cmp_f)(void *, void *, void *),
 	void *param,
 	int *i)
 {
@@ -46,8 +48,8 @@ static int			make_a_pass(
 	while (y < (array->length - *i - 1))
 	{
 		if (cmp_f(ftarray__at(array, y),
-				ftarray__at(array, y + 1),
-				param))
+			ftarray__at(array, y + 1),
+			param))
 		{
 			is_sorted = 0;
 			ft_mem_swap(
@@ -60,9 +62,9 @@ static int			make_a_pass(
 	return (is_sorted);
 }
 
-int					ftarray__sort_bubble(
+int			ftarray__sort_bubble(
 	t_array *array,
-	int(*cmp_f)(void *, void *, void *),
+	int (*cmp_f)(void *, void *, void *),
 	void *param)
 {
 	int i;
@@ -73,7 +75,7 @@ int					ftarray__sort_bubble(
 	while (i < array->length - 1)
 	{
 		if (make_a_pass(array, cmp_f, param, &i))
-			break;
+			break ;
 		i++;
 	}
 	return (0);

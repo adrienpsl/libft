@@ -16,7 +16,7 @@
 #include <errno.h>
 #include <libft_define.h>
 
-int					static check(t_array *array, void *element, int index)
+static int check(t_array *array, void *element, int index)
 {
 	if (!array || !element)
 	{
