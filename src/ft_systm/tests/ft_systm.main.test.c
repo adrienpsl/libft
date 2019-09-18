@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_systm.h>
+void test_ftsystm__find_in_directory(void);
+void test_ftsystm__find_in_path(void);
 
-void test_main_ftsystm(void)
+void test_ftsystm_main(void)
 {
-
+	test_ftsystm__find_in_directory();
+	test_ftsystm__find_in_path();
 }

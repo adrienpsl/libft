@@ -22,7 +22,7 @@ target_sources(${__LIB_NAME__}
         tests/ft_s.clear.test.c
         tests/ft_s.remove_from.test.c
         tests/ft_s.replace_str.test.c
-        tests/main.test.c
+        tests/ft_s.main.test.c
         )
 
 
