@@ -19,7 +19,8 @@ char **ft_strsplit_copy(char **split, int free)
 	char **new;
 	int i;
 
-	if (!(new = ft_memalloc(sizeof(char *) * (ft_strsplit_count(split) + 2))))
+	if (!(new =
+		ft_memalloc(sizeof(char *) * (ft_strsplit_count(split) + 2))))
 		return (NULL);
 	i = 0;
 	while (split[i])
