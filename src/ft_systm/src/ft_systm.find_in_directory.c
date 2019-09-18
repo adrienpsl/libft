@@ -10,7 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_log.h>
+
 #include "ft_systm.h"
+
+static int check(
+	char *path,
+	char *binary_name,
+	int (*testing_function)(char *, char *))
+{
+	if (NULL == path || NULL == binary_name || NULL == testing_function)
+	{
+		return (ftlog__message(F, L,
+			"ftsystm__find_in_directory"
+			"one argument is null", EINVAL));
+	}
+	return (OK);
+}
 
 char *ftsystm__find_in_directory(
 	char *path,
@@ -20,6 +36,8 @@ char *ftsystm__find_in_directory(
 	DIR *dir;
 	struct dirent *dp;
 
+	if (OK != check(path, binary_name, testing_function))
+		return (NULL);
 	if (NULL != (dir = opendir(path)))
 	{
 		while ((dp = readdir(dir)))

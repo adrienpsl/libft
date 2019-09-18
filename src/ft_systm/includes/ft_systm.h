@@ -24,6 +24,7 @@
 */
 # include <ft_str.h>
 # include <ft_strsplit.h>
+# include <libft_define.h>
 
 /*
 **	Prototypes  ----------------------------------------------------------------
