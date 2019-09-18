@@ -10,49 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_test.h>
-#include <ft_test.h>
-#include "libft.h"
+#include <libft.h>
 
-void	test_ft_buffer()
+char *ftstr__replace_str(char *src, char *from, char *to)
 {
+	char *new;
+	char *find;
+	size_t start;
+	size_t end;
 
-	t_buffer buffer;
-	char *a = "c";
-	char str[2000] = { 0 };
-
-
-	// test add 1022 char
+	new = NULL;
+	if (NULL == src || from == NULL || to == NULL)
+		return (NULL);
+	if (0 >= (find = ftstr__find_str(src, from)))
 	{
-		ft_bzero(&buffer, sizeof(t_buffer));
-		for (int i = 0; i < 1022; ++i)
-		{
-			ft_buffer_add(&buffer, a, 1);
-			str[i] = 'c';
-		}
-		if (
-			ft_strlen(buffer.data) != 1022
-			|| buffer.length != 1022
-			|| ft_strcmp(str, buffer.data))
-			log_test(1)
+		start = find - src;
+		end = ft_strlen(find + ft_strlen(from));
+		if (NULL ==
+			(new = ft_memalloc(start + ft_strlen(from) + end + 1)))
+			return (NULL);
+		ft_memcpy(new, src, start);
+		ft_strcat(new, to);
+		ft_strcat(new, find + ft_strlen(from));
 	}
-
-	// test if print and reset
-	{
-		g_test = 1;
-		test_clear_testbuff();
-
-		char clear[2000] = "et voila encore du texte putain";
-		ft_buffer_add(&buffer, clear, ft_strlen(clear));
-
-		str[1023] = 'c';
-		if (
-			ft_strcmp(g_test_buffer, str)
-			|| buffer.length != (int)ft_strlen(clear)
-			|| ft_memcmp(clear, buffer.data, 1024)
-			)
-			log_test(2)
-
-		g_test = 0;
-	}
+	return (new);
 }

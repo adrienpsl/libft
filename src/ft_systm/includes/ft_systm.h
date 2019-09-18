@@ -46,4 +46,6 @@ char *ftsystm__find_in_path(
 	int (*testing_function)(char *, char *));
 
 char *ftsystm__get_current_path();
+
+int ftsystm__test_file(char *path, char *name, char *argv);
 #endif

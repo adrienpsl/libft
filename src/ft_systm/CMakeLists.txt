@@ -10,6 +10,7 @@ target_sources(${__LIB_NAME__}
         src/ft_systm.find_in_directory.c
         src/ft_systm.find_in_path.c
         src/ft_systm.get_current_path.c
+        src/ft_systm.test_file.c
 
         #[[ test]]
         tests/ft_systm.main.test.c

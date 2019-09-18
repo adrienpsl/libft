@@ -68,7 +68,7 @@ void	test_fts__remove_from()
 			fts__add(s, "0123456789");
 			fts__remove_from(s, 0);
 			if (
-				ft_str_cmp("", s->data)
+				ft_strcmp("", s->data)
 				)
 				log_test(1)
 		}
@@ -79,7 +79,7 @@ void	test_fts__remove_from()
 			fts__add(s, "0123456789");
 			fts__remove_from(s, s->length - 1);
 			if (
-				ft_str_cmp("012345678", s->data)
+				ft_strcmp("012345678", s->data)
 				)
 				log_test(1)
 		}
@@ -91,7 +91,7 @@ void	test_fts__remove_from()
 			fts__add(s, "0123456789");
 			fts__remove_from(s, 5);
 			if (
-				ft_str_cmp("01234", s->data)
+				ft_strcmp("01234", s->data)
 				)
 				log_test(1)
 		}

@@ -85,11 +85,11 @@ int					ftio__catch_option(
 	while (NULL != av[i])
 	{
 		if (
-			!ft_str_cmp("--", av[i])
+			!ft_strcmp("--", av[i])
 			)
 			return (i + 1);
 		if (
-			av[i][0] != '-' || !ft_str_cmp("-", av[i])
+			av[i][0] != '-' || !ft_strcmp("-", av[i])
 			)
 			break;
 		if (

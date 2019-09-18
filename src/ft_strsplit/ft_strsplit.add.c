@@ -24,14 +24,3 @@ char **ft_strsplit_add(char **split, char *s, int free)
 	split[i] = s;
 	return (ft_strsplit_copy(split, free));
 }
-
-//int ft_strsplit_buffer_add(char **split, int size_split, char *s)
-//{
-//	int length;
-//
-//	if (!(s = ft_strdup(s)))
-//		return (-1);
-//	length = ft_strsplit_count(split);
-//	split[length] = s;
-//	return (ft_strsplit_copy(split, free));
-//}

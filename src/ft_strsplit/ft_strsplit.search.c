@@ -10,7 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int					ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
+int ft_strsplit_search(
+	char **split,
+	int(*f)(char *, void *),
+	void *param)
 {
 	int i;
 
@@ -25,4 +28,3 @@ int					ft_strsplit_search(char **split, int(*f)(char *, void *), void *param)
 	}
 	return (-1);
 }
-

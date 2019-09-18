@@ -39,7 +39,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
-			|| ft_str_cmp("toto", pf.format)
+			|| ft_strcmp("toto", pf.format)
 			|| *(int *)&pf.format_bit
 			|| pf.format_bit.padding
 			)
@@ -53,7 +53,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
-			|| ft_str_cmp("", pf.format)
+			|| ft_strcmp("", pf.format)
 			|| *(int *)&pf.format_bit != (1)
 			|| pf.format_bit.padding
 			)
@@ -68,7 +68,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
-			|| ft_str_cmp("", pf.format)
+			|| ft_strcmp("", pf.format)
 			|| *(int *)&pf.format_bit != 1 << 3
 			|| pf.format_bit.padding
 			)
@@ -82,7 +82,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
-			|| ft_str_cmp("toto", pf.format)
+			|| ft_strcmp("toto", pf.format)
 			|| *(int *)&pf.format_bit != (15)
 			|| pf.format_bit.padding
 			)
@@ -96,7 +96,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != -1
-			|| ft_str_cmp("toto", pf.format)
+			|| ft_strcmp("toto", pf.format)
 			|| *(int *)&pf.format_bit != (48)
 			|| pf.format_bit.padding
 			)
@@ -110,7 +110,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != 0
-			|| ft_str_cmp("toto", pf.format)
+			|| ft_strcmp("toto", pf.format)
 			|| *(int *)&pf.format_bit != (64)
 			|| pf.format_bit.padding
 			)
@@ -124,7 +124,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != 0
-			|| ft_str_cmp("toto", pf.format)
+			|| ft_strcmp("toto", pf.format)
 			|| *(int *)&pf.format_bit != (1024)
 			|| pf.format_bit.padding
 			)
@@ -138,7 +138,7 @@ void	test_ft_pf_catch_format()
 		ret = pf__catch_format(&pf);
 		if (
 			ret != 0
-			|| ft_str_cmp("btoto", pf.format)
+			|| ft_strcmp("btoto", pf.format)
 			|| *(int *)&pf.format_bit != (1087)
 			|| pf.format_bit.padding != 32
 			)

@@ -43,6 +43,6 @@ int					ftarray__cmp_str(void *p1, void *p2)
 	{
 		a = p1;
 		b = p2;
-		return (ft_str_cmp(a, b));
+		return (ft_strcmp(a, b));
 	}
 }

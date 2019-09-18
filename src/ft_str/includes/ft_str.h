@@ -21,28 +21,19 @@
 /*
 **	print function
 */
-void ft_putendl_fd(char const *s, int fd);
 void ft_putstr_fd(char const *s, int fd);
-
-/*
-**	utils
-*/
 void ftstr__free(char **s);
 int ft_strlen(const char *str);
-
-/*
-**	test
-*/
-int ft_str_cmp(const char *s1, const char *s2);
-
-/*
-**	search
-*/
+int ft_strcmp(const char *s1, const char *s2);
+char *ft_strjoin(char *start, char *end, int free);
 int ftstr__search_start(char *current, char *searching);
 int ftstr__search_start_strict(char *current, char *searching);
+char *ftstr__find_str(char *str, char *wanted);
+char *ftstr__replace_str(char *src, char *from, char *to);
 ssize_t ftstr__search_str(char *src, char *searching);
 ssize_t ft_strchrstr(char *str, char *searched);
 int ft_strnchr(char *str, char c);
+int ft_strncmp(char const *s1, char const *s2, size_t n);
 
 /*
 **	memory

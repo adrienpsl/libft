@@ -60,8 +60,8 @@ void	test_ft_array$add()
 			char **str_arr = (char **)array->data;
 
 			if (
-				ft_str_cmp(str_arr[0], string)
-				|| ft_str_cmp(str_arr[999], string)
+				ft_strcmp(str_arr[0], string)
+				|| ft_strcmp(str_arr[999], string)
 				|| array->length != 1000
 				)
 				log_test(1)

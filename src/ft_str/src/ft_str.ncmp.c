@@ -10,49 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_test.h>
-#include <ft_test.h>
-#include "libft.h"
+#include <libft.h>
 
-void	test_ft_buffer()
+int		ft_strncmp(char const *s1, char const *s2, size_t n)
 {
+	size_t	i;
 
-	t_buffer buffer;
-	char *a = "c";
-	char str[2000] = { 0 };
-
-
-	// test add 1022 char
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (i < n && s1[i] != '\0')
 	{
-		ft_bzero(&buffer, sizeof(t_buffer));
-		for (int i = 0; i < 1022; ++i)
-		{
-			ft_buffer_add(&buffer, a, 1);
-			str[i] = 'c';
-		}
-		if (
-			ft_strlen(buffer.data) != 1022
-			|| buffer.length != 1022
-			|| ft_strcmp(str, buffer.data))
-			log_test(1)
+		if (s1[i] != s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		i++;
 	}
-
-	// test if print and reset
-	{
-		g_test = 1;
-		test_clear_testbuff();
-
-		char clear[2000] = "et voila encore du texte putain";
-		ft_buffer_add(&buffer, clear, ft_strlen(clear));
-
-		str[1023] = 'c';
-		if (
-			ft_strcmp(g_test_buffer, str)
-			|| buffer.length != (int)ft_strlen(clear)
-			|| ft_memcmp(clear, buffer.data, 1024)
-			)
-			log_test(2)
-
-		g_test = 0;
-	}
+	if (i == n)
+		return (0);
+	else
+		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

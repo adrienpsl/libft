@@ -10,49 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_test.h>
-#include <ft_test.h>
-#include "libft.h"
+#include <ft_log.h>
+#include <ft_printf.h>
 
-void	test_ft_buffer()
+#include "ft_systm.h"
+
+int ftsystm__test_file(char *path, char *name, char *argv)
 {
-
-	t_buffer buffer;
-	char *a = "c";
-	char str[2000] = { 0 };
-
-
-	// test add 1022 char
+	if (OK != access(path, F_OK))
 	{
-		ft_bzero(&buffer, sizeof(t_buffer));
-		for (int i = 0; i < 1022; ++i)
-		{
-			ft_buffer_add(&buffer, a, 1);
-			str[i] = 'c';
-		}
-		if (
-			ft_strlen(buffer.data) != 1022
-			|| buffer.length != 1022
-			|| ft_strcmp(str, buffer.data))
-			log_test(1)
+		ft_printf("%s: no such file or directory: %s\n", name, argv);
+		return (-1);
 	}
-
-	// test if print and reset
+	if (OK != access(path, R_OK))
 	{
-		g_test = 1;
-		test_clear_testbuff();
-
-		char clear[2000] = "et voila encore du texte putain";
-		ft_buffer_add(&buffer, clear, ft_strlen(clear));
-
-		str[1023] = 'c';
-		if (
-			ft_strcmp(g_test_buffer, str)
-			|| buffer.length != (int)ft_strlen(clear)
-			|| ft_memcmp(clear, buffer.data, 1024)
-			)
-			log_test(2)
-
-		g_test = 0;
+		ft_printf("%s: permission denied: %s\n", name, argv);
+		return (-1);
 	}
+	return (OK);
 }

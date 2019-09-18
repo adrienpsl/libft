@@ -31,15 +31,15 @@ void	test_pf__get_str(void)
 
 	// str test
 	utils(&pf, "%sd", "toto");
-	if (0 != ft_str_cmp("toto", pf.intern_str))
+	if (0 != ft_strcmp("toto", pf.intern_str))
 		log_test(0)
 
 	// char test
 	utils(&pf, "%cd", 'c');
-	if (0 != ft_str_cmp("c", pf.intern_str))
+	if (0 != ft_strcmp("c", pf.intern_str))
 		log_test(0)
 
 	utils(&pf, "%cd", '\t');
-	if (0 != ft_str_cmp("\t", pf.intern_str))
+	if (0 != ft_strcmp("\t", pf.intern_str))
 		log_test(0)
 }
