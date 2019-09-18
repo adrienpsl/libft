@@ -61,41 +61,41 @@ void static test_function(t t)
 void test_ftsystm__find_in_path(void)
 {
 
-	//	/*
-	//	* Path is empty
-	//	* */
-	//	test_function((t){
-	//		// Logger
-	//		.nb_test = 0,
-	//		.nb_line = L,
-	//
-	//		// Arguments
-	//		.paths_str = "",
-	//		.separators = ":",
-	//		.binary_name = "file",
-	//		.testing_function = ftstr__search_start_strict,
-	//
-	//		// Expected
-	//		.expected_str = NULL
-	//	});
-	//
-	//	/*
-	//	* Directories in path do not exist
-	//	* */
-	//	test_function((t){
-	//		// Logger
-	//		.nb_test = 1,
-	//		.nb_line = L,
-	//
-	//		// Arguments
-	//		.paths_str = "super:mechant:vilain",
-	//		.separators = ":",
-	//		.binary_name = "file",
-	//		.testing_function = ftstr__search_start_strict,
-	//
-	//		// Expected
-	//		.expected_str = NULL
-	//	});
+	/*
+	* Path is empty
+	* */
+	test_function((t){
+		// Logger
+		.nb_test = 0,
+		.nb_line = L,
+
+		// Arguments
+		.paths_str = "",
+		.separators = ":",
+		.binary_name = "file",
+		.testing_function = ftstr__search_start_strict,
+
+		// Expected
+		.expected_str = NULL
+	});
+
+	/*
+	* Directories in path do not exist
+	* */
+	test_function((t){
+		// Logger
+		.nb_test = 1,
+		.nb_line = L,
+
+		// Arguments
+		.paths_str = "super:mechant:vilain",
+		.separators = ":",
+		.binary_name = "file",
+		.testing_function = ftstr__search_start_strict,
+
+		// Expected
+		.expected_str = NULL
+	});
 
 	/*
 	* Two directories but file doesn't exist

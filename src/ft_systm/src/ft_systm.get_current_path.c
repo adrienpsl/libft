@@ -10,40 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_SYSTM
-#define FT_SYSTM
+# include <ft_systm.h>
 
-/*
-** External  -------------------------------------------------------------------
-*/
-# include <dirent.h>
-# include <stdio.h>
-# include <sys/param.h>
-# include <zconf.h>
+char *ftsystm__get_current_path()
+{
+	static char buff[MAXPATHLEN + 1];
 
-
-/*
-**	Internal  ------------------------------------------------------------------
-*/
-# include <ft_str.h>
-# include <ft_strsplit.h>
-# include <libft_define.h>
-# include <ft_log.h>
-
-/*
-**	Prototypes  ----------------------------------------------------------------
-*/
-
-char *ftsystm__find_in_directory(
-	char *path,
-	char *binary_name,
-	int (*testing_function)(char *, char *));
-
-char *ftsystm__find_in_path(
-	char *paths_str,
-	char *separators,
-	char *binary_name,
-	int (*testing_function)(char *, char *));
-
-char *ftsystm__get_current_path();
-#endif
+	return (getcwd(buff, MAXPATHLEN));
+}
