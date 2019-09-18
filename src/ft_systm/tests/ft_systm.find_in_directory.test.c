@@ -52,6 +52,8 @@ void static test_function(t t)
 	if (test_cmp_str(t.expected_str, returned_char))
 		log_test_line(t.nb_test, t.nb_line)
 
+	ftstr__free(&returned_char);
+
 	// Cleanup
 	system(t.system_cleanup ? t.system_cleanup : "");
 }
