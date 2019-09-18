@@ -36,14 +36,14 @@ ssize_t ftstr__search_str(char *src, char *searching)
 	return (-1);
 }
 
-int	static		check(char *current, char *searching)
+int static check(char *current, char *searching)
 {
 	if (
 		NULL == current || NULL == searching
 		)
 		return (
 			ftlog__message(F, L, "ftstr__search_start input (null)",
-				EINVAL)
+						   EINVAL)
 		);
 	else
 		return (
@@ -51,27 +51,33 @@ int	static		check(char *current, char *searching)
 		);
 }
 
-int					ftstr__search_start(char *current, char *searching, int param)
+int ftstr__search_start(char *current, char *searching)
 {
 	int i;
 
 	i = 0;
 	if (check(current, searching))
 		return (-1);
-	while (
-		current[i] && searching[i]
-		&& current[i] == searching[i]
-		)
+	while (current[i] && searching[i]
+		   && current[i] == searching[i])
 		i += 1;
-	if (
-		FTSTR__SEARCH_START_STRICT == param
-		&& (searching[i] == '\0' && current[i] == '\0')
-		)
+	if (current[i] == '\0')
 		return (i);
-	else if (
-		FTSTR__SEARCH_START_PARTIAL == param
-		&& current[i] == '\0'
-		)
+	else
+		return (-1);
+}
+
+int ftstr__search_start_strict(char *current, char *searching)
+{
+	int i;
+
+	i = 0;
+	if (check(current, searching))
+		return (-1);
+	while (current[i] && searching[i]
+		   && current[i] == searching[i])
+		i += 1;
+	if (current[i] == '\0' && searching[i] == '\0')
 		return (i);
 	else
 		return (-1);
