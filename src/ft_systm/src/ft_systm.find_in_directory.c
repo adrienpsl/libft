@@ -23,7 +23,7 @@ static int check(
 	{
 		return (ftlog__message(F, L,
 			"ftsystm__find_in_directory"
-			"one argument is null", EINVAL));
+			"are some arguments (null)", EINVAL));
 	}
 	return (OK);
 }

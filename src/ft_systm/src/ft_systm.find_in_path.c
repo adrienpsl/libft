@@ -12,6 +12,24 @@
 
 #include <ft_systm.h>
 
+static int check(
+	char *paths_str,
+	char *separators,
+	char *binary_name,
+	int (*testing_function)(char *, char *))
+{
+	if (NULL == paths_str
+		|| NULL == separators
+		|| NULL == binary_name
+		|| NULL == testing_function)
+	{
+		return (ftlog__message(F, L,
+			"ftsystm__find_in_path"
+			"are some arguments (null)", EINVAL));
+	}
+	return (OK);
+}
+
 char *ftsystm__find_in_path(
 	char *paths_str,
 	char *separators,
@@ -22,6 +40,8 @@ char *ftsystm__find_in_path(
 	char *binary_path;
 	int i;
 
+	if (OK != check(paths_str, separators, binary_name, testing_function))
+		return (NULL);
 	binary_path = NULL;
 	if (NULL == (paths = ft_strsplit(paths_str, separators)))
 		return (NULL);

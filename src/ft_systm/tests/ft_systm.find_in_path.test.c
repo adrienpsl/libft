@@ -35,9 +35,7 @@ void test_ftsystm__find_in_directory(void)
 	{
 		// Setup
 		system("mkdir -p ftsystm__find_in_directory_test");
-		chdir("ftsystm__find_in_directory_test");
-		system("touch file_{1..20}");
-		chdir("..");
+		system("touch ftsystm__find_in_directory_test/file_{1..20}");
 
 		// Variables
 		char *returned_char;
@@ -63,9 +61,8 @@ void test_ftsystm__find_in_directory(void)
 	{
 		// Setup
 		system("mkdir -p ftsystm__find_in_directory_test");
-		chdir("ftsystm__find_in_directory_test");
-		system("touch file_{1..20}");
-		chdir("..");
+		system("touch ftsystm__find_in_directory_test/file_{1..20}");
+
 
 		// Variables
 		char *returned_char;
@@ -82,7 +79,6 @@ void test_ftsystm__find_in_directory(void)
 			log_test(3)
 
 		// Cleanup
-		chdir("..");
 		system("rm -rf ftsystm__find_in_directory_test");
 	}
 
