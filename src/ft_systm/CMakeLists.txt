@@ -7,9 +7,13 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        ft_systm.c
+        src/ft_systm.find_in_directory.c
+        src/ft_systm.find_in_path.c
 
         #[[ test]]
+        tests/ft_systm.main.test.c
+        tests/ft_systm.find_in_directory.test.c
+        tests/ft_systm.find_in_path.test.c
         )
 
 
