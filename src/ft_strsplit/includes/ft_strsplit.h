@@ -21,7 +21,7 @@ char **ft_strsplit(char *s, char *separators);
 int ft_strsplit_count(char **split);
 int ft_strsplit_cmp(char **split_1, char **split_2);
 char **ft_strsplit_copy(char **split, int free);
-char **ft_strsplit_add(char **split, char *s, int free);
+int ft_strsplit_add(char ***split, char *fresh_str);
 int ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
 int ft_func_split_streq(char *current, void *p_searched);
 void ft_test_ifcmp_printsplit(char **res, char **test, char *where);

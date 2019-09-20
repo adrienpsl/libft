@@ -111,7 +111,7 @@ int					test_cmp_split_str(char *name, char *expected, char **returned)
 
 	if (expected == NULL || returned == NULL)
 	{
-		printf("%s ptr null : %p %p", name, expected, returned);
+		printf("%s\nptr null : %p %p", name, expected, returned);
 		return (1);
 	}
 	ft_strsplit_print(returned, ' ');

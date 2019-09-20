@@ -22,7 +22,7 @@ char *ftstr__replace_str(char *src, char *from, char *to)
 	new = NULL;
 	if (NULL == src || from == NULL || to == NULL)
 		return (NULL);
-	if (0 >= (find = ftstr__find_str(src, from)))
+	if (NULL != (find = ftstr__find_str(src, from)))
 	{
 		start = find - src;
 		end = ft_strlen(find + ft_strlen(from));

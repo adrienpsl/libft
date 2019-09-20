@@ -29,7 +29,7 @@ char *ft_strjoin(char *start, char *end, int free)
 		if (1 == free || free == 3)
 			ftstr__free(&start);
 		if (2 == free || free == 3)
-			ftstr__free(&start);
+			ftstr__free(&end);
 	}
 	return (new);
 }
