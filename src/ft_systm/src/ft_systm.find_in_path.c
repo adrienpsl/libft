@@ -30,6 +30,9 @@ static int check(
 	return (OK);
 }
 
+/*
+**	return fresh str
+*/
 char *ftsystm__find_in_path(
 	char *paths_str,
 	char *separators,

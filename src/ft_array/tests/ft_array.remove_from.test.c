@@ -12,7 +12,6 @@
 
 #include <ft_array.h>
 #include <ft_test.h>
-#include <ft_test.h>
 
 void	test_ft_array$remove_from()
 {

@@ -10,9 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_systm.h>
+#include <ft_buffer.h>
 #include <ft_test.h>
 #include <stdlib.h>
+#include <ft_systm.h>
 
 typedef struct s
 {

@@ -21,17 +21,17 @@
 
 #include "ft_array.h"
 
-void ft_mem_swap(void *p1, void *p2, void *buffer, size_t size);
-void ft_bzero(void *s, size_t n);
-void *ft_memcpy(void *restrict str1, const void *restrict str2, size_t n);
-void *ft_memalloc(size_t size);
-void *ft_memccpy(void *restrict dest,
+void	ft_mem_swap(void *p1, void *p2, void *buffer, size_t size);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memcpy(void *restrict str1, const void *restrict str2, size_t n);
+void	*ft_memalloc(size_t size);
+void	*ft_memccpy(void *restrict dest,
 	const void *restrict src, int c, size_t n);
-void *ft_memchr(const void *s, int c, size_t n);
-int ft_memcmp(void *s1, const void *s2, size_t n);
-void ft_memdel(void **ap, size_t size);
-void *ft_memmove(void *d, const void *s, size_t n);
-void *ft_memset(void *s, int c, size_t n);
-void *ft_memdup(const void *src, size_t size);
+void	*ft_memchr(const void *s, int c, size_t n);
+int	ft_memcmp(void *s1, const void *s2, size_t n);
+void	ft_memdel(void **ap, size_t size);
+void	*ft_memmove(void *d, const void *s, size_t n);
+void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memdup(const void *src, size_t size);
 
 #endif

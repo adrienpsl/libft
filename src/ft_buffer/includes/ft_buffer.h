@@ -13,17 +13,19 @@
 #ifndef FT_BUFFER_H
 #define FT_BUFFER_H
 
+# include <stdlib.h>
+
 # define BUFFER_SIZE 1023
 
-typedef struct s_buffer
+typedef struct	s_buffer
 {
-	int length;
-	char data[BUFFER_SIZE + 1];
-	int fd;
-} t_buffer;
+	int			length;
+	char		data[BUFFER_SIZE + 1];
+	int			fd;
+}				t_buffer;
 
-t_buffer *ft_buffer_new(size_t size, int fd);
-int ft_buffer_add(t_buffer *buff, char *data, int size);
-int ft_buffer_clean(t_buffer *buff);
+t_buffer		*ft_buffer_new(size_t size, int fd);
+int				ft_buffer_add(t_buffer *buff, char *data, int size);
+int				ft_buffer_clean(t_buffer *buff);
 
 #endif

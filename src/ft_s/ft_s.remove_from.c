@@ -25,8 +25,7 @@ static int			check(t_s *s, size_t start)
 	}
 	else if (start >= s->length)
 	{
-		return (
-			ftlog__message(F, L,
+		return (ftlog__message(F, L,
 				"fts__remove_from error: start > length",
 				EINVAL)
 		);
@@ -37,9 +36,7 @@ static int			check(t_s *s, size_t start)
 
 void	fts__remove_from(t_s *s, size_t start)
 {
-	if (
-		check(s, start)
-		)
+	if (check(s, start))
 		return ;
 	ft_bzero(s->data + start, s->length - start);
 	s->length -= (s->length - start);

@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include <ft_systm.h>
-#include <stdlib.h>
-#include <ft_test.h>
 
 void test_ftsystm__find_in_directory(void)
 {

@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_log.h>
-
 #include "ft_systm.h"
 
 static int check(
@@ -28,6 +26,9 @@ static int check(
 	return (OK);
 }
 
+/*
+**	return fresh str
+*/
 char *ftsystm__find_in_directory(
 	char *path,
 	char *binary_name,
