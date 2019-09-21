@@ -4,13 +4,13 @@ cmake_minimum_required(VERSION 3.14)
 #    Set up
 # ------------------------------------------------------------------------------
 set(__LIB_NAME__ libft)
-project(libft C)
+#project(libft C)
 
 # ------------------------------------------------------------------------------
 #    compilation flag
 # ------------------------------------------------------------------------------
-set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
+#set(CMAKE_C_STANDARD 99)
+#set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 #set(CMAKE_C_FLAGS "-Weverything -Werror")
 #set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fsanitize=address -g")
 

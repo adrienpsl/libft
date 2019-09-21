@@ -130,7 +130,7 @@ void test_ftsystm__find_in_path(void)
 
 			// Arguments
 			.paths_str = "/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_1"
-						":/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_2",
+						 ":/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_2",
 
 			.separators = ":",
 			.binary_name = "file_d2_99",
@@ -144,7 +144,7 @@ void test_ftsystm__find_in_path(void)
 			.system_cleanup = "rm -rf ftsystm__find_in_directory_*",
 
 			// Expected
-			.expected_str = "file_d2_99"
+			.expected_str = "/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_2/file_d2_99"
 		});
 	}
 }

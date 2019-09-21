@@ -57,6 +57,8 @@ char *ftsystm__find_in_path(
 			break;
 		i++;
 	}
+	binary_path = ft_strjoin("/", binary_path, 2);
+	binary_path = ft_strjoin(paths[i], binary_path, 2);
 	ft_strsplit_free(&paths);
 	return (binary_path);
 }
