@@ -31,7 +31,7 @@ int ftstr__search_start_strict(char *current, char *searching);
 char *ftstr__find_str(char *str, char *wanted);
 char *ftstr__replace_str(char *src, char *from, char *to);
 ssize_t ftstr__search_str(char *src, char *searching);
-ssize_t ft_strchrstr(char *str, char *searched);
+ssize_t ft_strchrs(char *str, char *searched);
 int ft_strnchr(char *str, char c);
 int ft_strncmp(char const *s1, char const *s2, size_t n);
 
@@ -45,6 +45,7 @@ char *ft_strdup(const char *s);
 size_t ft_strlcat(char *dst, const char *src, size_t len);
 char *ft_strcat(char *restrict dest, const char *restrict src);
 void ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3);
+char	*ftstr__join_chr(char *str, char c, int do_free);
 
 /*
 **	char

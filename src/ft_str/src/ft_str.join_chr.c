@@ -10,52 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <libft.h>
 
-ssize_t ft_strchr(char *str, char c)
+char	*ftstr__join_chr(char *str, char c, int do_free)
 {
-	size_t i;
+	char *new;
+	int length;
 
-	if (!str)
-		return (-1);
-	i = 0;
-	while (str[i])
-	{
-		if (c == str[i])
-			return (i);
-		i++;
-	}
-	return (-1);
-}
-
-int					ft_strnchr(char *str, char c)
-{
-	int i;
-
-	if (!str)
-		return (-1);
-	i = 0;
-	while (*str)
-	{
-		if (*str == c)
-			i++;
-		str++;
-	}
-	return i;
-}
-
-ssize_t ft_strchrs(char *str, char *searched)
-{
-	size_t i;
-
-	if (!str)
-		return (-1);
-	i = 0;
-	while (str[i])
-	{
-		if (ft_strchr(searched, str[i]) > -1)
-			return (i);
-		i++;
-	}
-	return (-1);
+	length = ft_strlen(str);
+	if (NULL == (new = ft_memalloc(length + 2)))
+		return (NULL);
+	ft_strcat(new, str);
+	new[length] = c;
+	if (do_free)
+		ftstr__free(&str);
+	return (new);
 }
