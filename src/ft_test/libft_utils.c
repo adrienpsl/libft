@@ -45,7 +45,7 @@ int					test_cmp_testbuff_log(char *expected)
 	int ret;
 	int space;
 
-	space = ft_strchr(g_test_buffer, ' ');
+	space = ft_strchr_int(g_test_buffer, ' ');
 	ret = 0;
 	if (ft_strcmp(expected, g_test_buffer + space + 1))
 	{

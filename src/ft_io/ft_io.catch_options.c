@@ -56,7 +56,7 @@ static int		get_options(
 		line++;
 	while (*line)
 	{
-		if ((position = ft_strchr(option_str, *line)) > -1)
+		if ((position = ft_strchr_int(option_str, *line)) > -1)
 			*options_ptr |= (1 << position);
 		else
 		{

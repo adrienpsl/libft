@@ -14,6 +14,8 @@
 
 int ftsystm__test_file(char *path, char *name, char *argv)
 {
+	if (!path || !name || !argv)
+		return (-1);
 	if (OK != access(path, F_OK))
 	{
 		ft_printf("%s: no such file or directory: %s\n", name, argv);

@@ -18,7 +18,7 @@ void	ft_strchrreplace(char *str, char *matched, char replacing)
 		return ;
 	while (*str)
 	{
-		if (ft_strchr(matched, *str) > -1)
+		if (ft_strchr_int(matched, *str) > -1)
 			*str = replacing;
 		str++;
 	}
@@ -28,7 +28,7 @@ void	ft_strchrnreplace(char *str, char *matched, char replacing, size_t size)
 {
 	while (*str && size)
 	{
-		if (ft_strchr(matched, *str) > -1)
+		if (ft_strchr_int(matched, *str) > -1)
 			*str = replacing;
 		str++;
 		size--;

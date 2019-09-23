@@ -13,9 +13,6 @@
 #ifndef LIBFT_FT_STR_H
 #define LIBFT_FT_STR_H
 
-#define FTSTR__SEARCH_START_STRICT 1
-#define FTSTR__SEARCH_START_PARTIAL 0
-
 # include "unistd.h"
 
 /*
@@ -56,6 +53,11 @@ int ft_isdigit(int c);
 int ft_isprint(int c);
 int ft_isascii(int c);
 int ft_isspace(int c);
-ssize_t ft_strchr(char *str, char c);
+
+/*
+**	Search
+*/
+ssize_t ft_strchr_int(char *str, char c);
+char		*ftstr__strchr(char *str, char c);
 
 #endif

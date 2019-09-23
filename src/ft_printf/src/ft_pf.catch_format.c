@@ -42,7 +42,7 @@ static int			catch_format(
 	int ret;
 
 	if (
-		(ret = ft_strchr(str_option, **format_s)) != -1
+		(ret = ft_strchr_int(str_option, **format_s)) != -1
 		)
 	{
 		*(int *)format |= (1 << ret);

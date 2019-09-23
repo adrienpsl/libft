@@ -22,7 +22,7 @@ int					ft_io_catch_options(char *av_string, char *str_option, long *options)
 
 	position = 0;
 	while (av_string[position]
-		&& (ret = ft_strchr(str_option, av_string[position])) > -1)
+		&& (ret = ft_strchr_int(str_option, av_string[position])) > -1)
 	{
 		*options |= (1 << ret);
 		position++;
