@@ -16,9 +16,7 @@ int					pf__get_str(t_pf *pf)
 {
 	static char *null_ptr = "(null)";
 
-	if (
-		pf->format_bit.string
-		)
+	if (pf->format_bit.string)
 	{
 		pf->intern_str = va_arg(pf->list, char*);
 		if (
@@ -27,9 +25,7 @@ int					pf__get_str(t_pf *pf)
 			pf->intern_str = null_ptr;
 		return (1);
 	}
-	else if (
-		pf->format_bit.character
-		)
+	else if (pf->format_bit.character)
 	{
 		pf->char_buffer[0] = (char)va_arg(pf->list, int);
 		pf->intern_str = pf->char_buffer;
@@ -38,4 +34,3 @@ int					pf__get_str(t_pf *pf)
 	else
 		return (0);
 }
-

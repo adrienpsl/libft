@@ -16,31 +16,30 @@
 static int			check(t_s *s, char *wanted, char *substitute)
 {
 	if (NULL == s)
-		return (
-			ftlog__message(F, L,
-				"fts__replace_str error: s ptr (null)",
-				EINVAL)
-		);
+	{
+		return (ftlog__message(F, L,
+			"fts__replace_str error: s ptr (null)",
+			EINVAL));
+	}
 	if (NULL == wanted || NULL == substitute)
-		return (
-			ftlog__message(F, L,
-				"fts__replace_str error:"
-				"wanted or length_substitute  ptr (null)",
-				EINVAL)
-		);
+	{
+		return (ftlog__message(F, L,
+			"fts__replace_str error:"
+			"wanted or length_substitute  ptr (null)",
+			EINVAL));
+	}
 	return (OK);
 }
 
 int					fts__replace_str(t_s *s, char *wanted, char *substitute)
 {
-	ssize_t index;
-	t_s *s_tmp;
+	ssize_t	index;
+	t_s		*s_tmp;
 
 	if (OK != check(s, wanted, substitute))
 		return (-1);
 	if (0 > (index = fts__search_str(s, wanted))
-		|| NULL == (s_tmp = fts__init(s->length + ft_strlen(substitute)))
-		)
+		|| NULL == (s_tmp = fts__init(s->length + ft_strlen(substitute))))
 		return (-1);
 	fts__addn(s_tmp, s->data, index);
 	fts__add(s_tmp, substitute);

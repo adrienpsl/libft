@@ -1,6 +1,6 @@
 
 #ifndef FT_LIBFT_DEFINE_H
-#define FT_LIBFT_DEFINE_H
+# define FT_LIBFT_DEFINE_H
 
 # define FT_BUFFER_INDEX sizeof(size_t)
 # define FT_BUFFER_LIM 10

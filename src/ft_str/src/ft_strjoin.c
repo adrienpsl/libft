@@ -12,11 +12,11 @@
 
 #include <libft.h>
 
-char *ft_strjoin(char *start, char *end, int free)
+char	*ft_strjoin(char *start, char *end, int free)
 {
-	size_t length_start;
-	size_t length_end;
-	char *new;
+	size_t	length_start;
+	size_t	length_end;
+	char	*new;
 
 	if (NULL == start || NULL == end)
 		return (NULL);

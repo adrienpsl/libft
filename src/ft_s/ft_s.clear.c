@@ -19,11 +19,9 @@ int					fts__clear(t_s *s)
 {
 	if (NULL == s)
 	{
-		return (
-			ftlog__message(F, L,
+		return (ftlog__message(F, L,
 				"ft_s$clear error: s ptr (null)",
-				EINVAL)
-		);
+				EINVAL));
 	}
 	else
 	{

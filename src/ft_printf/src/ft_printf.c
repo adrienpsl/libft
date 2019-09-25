@@ -22,9 +22,7 @@ static void			handle_wildcard(t_pf *pf)
 
 static void			handle_variable(t_pf *pf)
 {
-	if (
-		OK == pf__catch_format(pf)
-		)
+	if (OK == pf__catch_format(pf))
 	{
 		handle_wildcard(pf);
 		pf__get_str(pf);
@@ -39,9 +37,7 @@ static void			loop(t_pf *pf)
 {
 	while (*pf->format)
 	{
-		if (
-			*pf->format == '%'
-			)
+		if (*pf->format == '%')
 			handle_variable(pf);
 		else
 		{

@@ -21,4 +21,3 @@ void	ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3)
 	if (s3)
 		ft_strcat(buffer, s3);
 }
-

@@ -55,7 +55,7 @@ int			ft_strnchr(char *str, char c)
 			i++;
 		str++;
 	}
-	return i;
+	return (i);
 }
 
 ssize_t		ft_strchrs(char *str, char *searched)

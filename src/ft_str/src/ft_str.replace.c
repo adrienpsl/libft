@@ -12,12 +12,12 @@
 
 #include <libft.h>
 
-char *ftstr__replace_str(char *src, char *from, char *to)
+char	*ftstr__replace_str(char *src, char *from, char *to)
 {
-	char *new;
-	char *find;
-	size_t start;
-	size_t end;
+	char	*new;
+	char	*find;
+	size_t	start;
+	size_t	end;
 
 	new = NULL;
 	if (NULL == src || from == NULL || to == NULL)

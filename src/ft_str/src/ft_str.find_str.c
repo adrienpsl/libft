@@ -12,7 +12,7 @@
 
 #include <libft.h>
 
-char *ftstr__find_str(char *str, char *to_find)
+char	*ftstr__find_str(char *str, char *to_find)
 {
 	size_t	len;
 

@@ -16,13 +16,9 @@ static int			padding_calculation(t_pf *pf)
 {
 	int length;
 
-	{
 		length = ft_strlen(pf->intern_str);
 		pf->format_bit.padding -= length;
-	}
-	if (
-		pf->format_bit.padding < 0
-		)
+	if (pf->format_bit.padding < 0)
 		pf->format_bit.padding = 0;
 	return ((int)length);
 }
@@ -44,14 +40,10 @@ int					pf__print(t_pf *pf)
 	int length;
 
 	length = padding_calculation(pf);
-	if (
-		0 == pf->format_bit.minus
-		)
+	if (0 == pf->format_bit.minus)
 		add_padding(pf);
 	pf__utils_print(pf, pf->intern_str, length);
-	if (
-		1 == pf->format_bit.minus
-		)
+	if (1 == pf->format_bit.minus)
 		add_padding(pf);
 	return (0);
 }

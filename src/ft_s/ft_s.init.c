@@ -15,16 +15,14 @@
 
 t_s *fts__init(size_t size)
 {
-	t_s *s;
-	char *buffer;
-	size_t capacity;
+	t_s		*s;
+	char	*buffer;
+	size_t	capacity;
 
 	size = size == 0 ? 1 : size;
 	capacity = (size * 2);
-	if (
-		NULL == (s = ft_memalloc(sizeof(t_s)))
-		|| NULL == (buffer = ft_memalloc(capacity + 2))
-		)
+	if (NULL == (s = ft_memalloc(sizeof(t_s)))
+		|| NULL == (buffer = ft_memalloc(capacity + 2)))
 		return (NULL);
 	s->data = buffer;
 	s->capacity = capacity;

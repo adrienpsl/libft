@@ -12,7 +12,7 @@
 
 #include <libft.h>
 
-int ft_pstrjoin(char *start, char *s_end, int need_free, char **out)
+int	ft_pstrjoin(char *start, char *s_end, int need_free, char **out)
 {
 	char *new;
 
@@ -28,10 +28,10 @@ int ft_pstrjoin(char *start, char *s_end, int need_free, char **out)
 		return (-1);
 }
 
-int ft_pstrjoin_chr(char *start, char c, int need_free, char **out)
+int	ft_pstrjoin_chr(char *start, char c, int need_free, char **out)
 {
-	char *new;
-	int length;
+	char	*new;
+	int		length;
 
 	if (NULL == start || NULL == out)
 		return (-1);

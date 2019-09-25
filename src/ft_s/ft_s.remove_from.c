@@ -17,18 +17,15 @@ static int			check(t_s *s, size_t start)
 {
 	if (NULL == s)
 	{
-		return (
-			ftlog__message(F, L,
+		return (ftlog__message(F, L,
 				"fts__remove_from error: s ptr (null)",
-				EINVAL)
-		);
+				EINVAL));
 	}
 	else if (start >= s->length)
 	{
 		return (ftlog__message(F, L,
 				"fts__remove_from error: start > length",
-				EINVAL)
-		);
+				EINVAL));
 	}
 	else
 		return (0);

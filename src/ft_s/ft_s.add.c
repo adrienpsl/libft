@@ -18,19 +18,15 @@ static int			check(t_s *s, char *string)
 {
 	if (NULL == s)
 	{
-		return (
-			ftlog__message(F, L,
+		return (ftlog__message(F, L,
 				"fts__add error: s ptr (null)",
-				EINVAL)
-		);
+				EINVAL));
 	}
 	if (NULL == string)
 	{
-		return (
-			ftlog__message(F, L,
+		return (ftlog__message(F, L,
 				"fts__add error: str ptr (null)",
-				EINVAL)
-		);
+				EINVAL));
 	}
 	return (0);
 }
@@ -38,10 +34,6 @@ static int			check(t_s *s, char *string)
 int					fts__add(t_s *s, char *str)
 {
 	if (check(s, str))
-	{
 		return (-1);
-	}
-	return (
-		fts__addn(s, str, ft_strlen(str))
-	);
+	return (fts__addn(s, str, ft_strlen(str)));
 }

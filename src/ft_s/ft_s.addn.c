@@ -17,19 +17,13 @@ static int			check(t_s *s, char *string)
 {
 	if (NULL == s)
 	{
-		return (
-			ftlog__message(F, L,
-				"fts__addn error: s ptr (null)",
-				EINVAL)
-		);
+		return (ftlog__message(F, L,
+				"fts__addn error: s ptr (null)", EINVAL));
 	}
 	if (NULL == string)
 	{
-		return (
-			ftlog__message(F, L,
-				"fts__addn error: str ptr (null)",
-				EINVAL)
-		);
+		return (ftlog__message(F, L,
+				"fts__addn error: str ptr (null)", EINVAL));
 	}
 	return (0);
 }
@@ -38,9 +32,7 @@ static int			increase(t_s *s, size_t size)
 {
 	char *new_buffer;
 
-	if (
-		NULL == (new_buffer = ft_memalloc((size + s->capacity) + 2))
-		)
+	if (NULL == (new_buffer = ft_memalloc((size + s->capacity) + 2)))
 		return (1);
 	ft_memcpy(new_buffer, s->data, s->length);
 	ftstr__free(&s->data);
