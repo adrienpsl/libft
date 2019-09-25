@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_mem.h>
-#include <ft_buffer.h>
-# include "ft_printf.h"
+#include "libft.h"
 
 static void			handle_wildcard(t_pf *pf)
 {

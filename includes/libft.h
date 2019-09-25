@@ -13,8 +13,6 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-int init_libft(void);
-
 # include "ft_array.h"
 # include "ft_buffer.h"
 # include "ft_errno.h"
@@ -25,5 +23,12 @@ int init_libft(void);
 # include "ft_str.h"
 # include "ft_strsplit.h"
 # include "ft_str.h"
+# include <ft_test.h>
+# include <ft_s.h>
+# include <ft_systm.h>
+
+# define TRUE 1
+# define FALSE 0
+# define OK 0
 
 #endif

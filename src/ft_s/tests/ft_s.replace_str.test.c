@@ -10,10 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_s.h>
-#include <ft_test.h>
-#include <ft_log.h>
-#include <libft_define.h>
+#include "libft.h"
 
 typedef struct s
 {

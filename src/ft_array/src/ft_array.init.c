@@ -10,11 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_mem.h>
-#include <errno.h>
-#include <ft_log.h>
-#include <libft_define.h>
-#include "ft_array.h"
+#include "libft.h"
 
 static int				check(int nb_elements, size_t element_size)
 {

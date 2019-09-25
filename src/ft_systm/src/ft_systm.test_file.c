@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_systm.h>
+#include "libft.h"
 
 int	ftsystm__test_file(char *path, char *name, char *argv)
 {

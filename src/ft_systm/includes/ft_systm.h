@@ -27,7 +27,6 @@
 */
 # include <ft_str.h>
 # include <ft_strsplit.h>
-# include <libft_define.h>
 # include <ft_log.h>
 # include <ft_printf.h>
 # include <ft_test.h>

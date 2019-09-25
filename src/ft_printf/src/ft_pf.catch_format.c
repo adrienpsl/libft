@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <ft_printf.h>
-# include <ft_str.h>
-# include <ft_io.h>
+#include "libft.h"
 
 static int	catch_padding(
 	char **format_s, t_pf_format *format)

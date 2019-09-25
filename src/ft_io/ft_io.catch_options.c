@@ -10,11 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_str.h>
-#include <errno.h>
-#include <ft_log.h>
-#include <libft_define.h>
-#include "stdio.h"
+#include "libft.h"
 
 static int		check(
 	char **av,

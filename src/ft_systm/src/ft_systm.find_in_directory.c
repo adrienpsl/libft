@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_systm.h"
+#include "libft.h"
 
 static int check(
 	char *path,

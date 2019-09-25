@@ -1,5 +1,3 @@
-
-
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
@@ -27,8 +25,6 @@ target_sources(${__LIB_NAME__}
        src/ft_array.sort.utils.c
        src/ft_array.sort_bubble.c
        src/ft_array.utils.c
-
-
 
         #[[ test]]
        tests/ft_array.at.test.c
