@@ -12,17 +12,36 @@
 
 #include <libft.h>
 
-char	*ftstr__join_chr(char *str, char c, int do_free)
+int ft_pstrjoin(char *start, char *s_end, int need_free, char **out)
+{
+	char *new;
+
+	if (NULL == start || NULL == s_end || out == NULL)
+		return (-1);
+	new = ft_strjoin(start, s_end, need_free);
+	if (new)
+	{
+		*out = new;
+		return (OK);
+	}
+	else
+		return (-1);
+}
+
+int ft_pstrjoin_chr(char *start, char c, int need_free, char **out)
 {
 	char *new;
 	int length;
 
-	length = ft_strlen(str);
+	if (NULL == start || NULL == out)
+		return (-1);
+	length = ft_strlen(start);
 	if (NULL == (new = ft_memalloc(length + 2)))
-		return (NULL);
-	ft_strcat(new, str);
+		return (-1);
+	ft_strcat(new, start);
 	new[length] = c;
-	if (do_free)
-		ftstr__free(&str);
-	return (new);
+	if (need_free)
+		ftstr__free(&start);
+	*out = new;
+	return (OK);
 }
