@@ -50,9 +50,9 @@ static int			dup_word(char **s, char **out, char *separators)
 
 char **ft_strsplit(char *s, char *separators)
 {
-	int words;
-	char **split;
-	int i;
+	int		words;
+	char	**split;
+	int		i;
 
 	i = 0;
 	if (s == NULL)

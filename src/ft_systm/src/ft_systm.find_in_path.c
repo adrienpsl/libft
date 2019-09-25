@@ -12,7 +12,7 @@
 
 #include <ft_systm.h>
 
-static int check(
+static int	check(
 	char *paths_str,
 	char *separators,
 	char *binary_name,
@@ -33,15 +33,15 @@ static int check(
 /*
 **	return fresh str
 */
-char *ftsystm__find_in_path(
+char		*ftsystm__find_in_path(
 	char *paths_str,
 	char *separators,
 	char *binary_name,
 	int (*testing_function)(char *, char *))
 {
-	char **paths;
-	char *binary_path;
-	int i;
+	char	**paths;
+	char	*binary_path;
+	int		i;
 
 	if (OK != check(paths_str, separators, binary_name, testing_function))
 		return (NULL);

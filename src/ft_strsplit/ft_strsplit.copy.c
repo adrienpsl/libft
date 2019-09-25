@@ -14,10 +14,10 @@
 #include "ft_strsplit.h"
 #include "ft_str.h"
 
-char **ft_strsplit_copy(char **split, int free)
+char	**ft_strsplit_copy(char **split, int free)
 {
-	char **new;
-	int i;
+	char	**new;
+	int	i;
 
 	if (!(new =
 		ft_memalloc(sizeof(char *) * (ft_strsplit_count(split) + 2))))
@@ -33,4 +33,3 @@ char **ft_strsplit_copy(char **split, int free)
 		ft_strsplit_free(&split);
 	return (new);
 }
-

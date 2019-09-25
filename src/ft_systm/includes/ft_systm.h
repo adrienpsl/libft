@@ -35,19 +35,16 @@
 /*
 **	Prototypes  ----------------------------------------------------------------
 */
-
-char *ftsystm__find_in_directory(
+char	*ftsystm__find_in_directory(
 	char *path,
 	char *binary_name,
 	int (*testing_function)(char *, char *));
-
-char *ftsystm__find_in_path(
+char	*ftsystm__find_in_path(
 	char *paths_str,
 	char *separators,
 	char *binary_name,
 	int (*testing_function)(char *, char *));
+char	*ftsystm__get_current_path();
 
-char *ftsystm__get_current_path();
-
-int ftsystm__test_file(char *path, char *name, char *argv);
+int		ftsystm__test_file(char *path, char *name, char *argv);
 #endif

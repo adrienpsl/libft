@@ -12,7 +12,7 @@
 
 # include <ft_systm.h>
 
-char *ftsystm__get_current_path()
+char	*ftsystm__get_current_path()
 {
 	static char buff[MAXPATHLEN + 1];
 

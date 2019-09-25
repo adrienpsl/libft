@@ -34,8 +34,8 @@ char *ftsystm__find_in_directory(
 	char *binary_name,
 	int (*testing_function)(char *, char *))
 {
-	DIR *dir;
-	struct dirent *dp;
+	DIR				*dir;
+	struct dirent	*dp;
 
 	if (OK != check(path, binary_name, testing_function))
 		return (NULL);

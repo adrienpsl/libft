@@ -15,10 +15,10 @@
 #include "ft_str.h"
 #include "ft_strsplit.h"
 
-int ft_strsplit_add(char ***split, char *fresh_str)
+int	ft_strsplit_add(char ***split, char *fresh_str)
 {
-	int i;
-	char **new_split;
+	int		i;
+	char	**new_split;
 
 	if (!split || !*split || !fresh_str)
 		return (-1);
