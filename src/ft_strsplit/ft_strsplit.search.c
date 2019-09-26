@@ -12,7 +12,7 @@
 
 int	ft_strsplit_search(
 	char **split,
-	int(*f)(char *, void *),
+	int (*f)(char *, void *),
 	void *param)
 {
 	int i;

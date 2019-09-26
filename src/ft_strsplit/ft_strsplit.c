@@ -29,7 +29,7 @@ static int			count_words(char *s, char *separators)
 				s++;
 		}
 	}
-	return words;
+	return (words);
 }
 
 static int			dup_word(char **s, char **out, char *separators)
@@ -40,7 +40,7 @@ static int			dup_word(char **s, char **out, char *separators)
 	while (**s && ft_strchr_int(separators, **s) > -1)
 		(*s)++;
 	while ((*s)[size]
-		   && *s && ft_strchr_int(separators, (*s)[size]) == -1)
+		&& *s && ft_strchr_int(separators, (*s)[size]) == -1)
 		size++;
 	if (!(*out = ft_strndup(*s, size)))
 		return (-1);
@@ -48,7 +48,7 @@ static int			dup_word(char **s, char **out, char *separators)
 	return (0);
 }
 
-char **ft_strsplit(char *s, char *separators)
+char				**ft_strsplit(char *s, char *separators)
 {
 	int		words;
 	char	**split;
