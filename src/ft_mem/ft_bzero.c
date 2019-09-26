@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "ft_mem.h"
+#include "ft_mem.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	char *str;
+	size_t	i;
+	char	*str;
 
 	i = 0;
 	str = s;
