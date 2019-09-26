@@ -10,17 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <ft_printf.h>
-# include <ft_str.h>
-# include <ft_io.h>
+#include <ft_printf.h>
+#include <ft_str.h>
+#include <ft_io.h>
 
 static int			catch_padding(
-	char **format_s, t_pf_format *format
-						)
+	char **format_s, t_pf_format *format)
 {
-	if (
-		**format_s != '0' && ft_isdigit(**format_s)
-		)
+	if (**format_s != '0' && ft_isdigit(**format_s))
 	{
 		format->padding = ft_atoi(*format_s);
 		while (*format_s && ft_isdigit(**format_s))
@@ -36,14 +33,11 @@ static int			catch_padding(
 }
 
 static int			catch_format(
-	char **format_s, char *str_option, t_pf_format *format
-					   )
+	char **format_s, char *str_option, t_pf_format *format)
 {
 	int ret;
 
-	if (
-		(ret = ft_strchr(str_option, **format_s)) != -1
-		)
+	if ((ret = ft_strchr(str_option, **format_s)) != -1)
 	{
 		*(int *)format |= (1 << ret);
 		(*format_s)++;
@@ -53,31 +47,23 @@ static int			catch_format(
 }
 
 static int			catch(
-	char **format_s, char *str_option, t_pf_format *format, int unique
-				)
+	char **format_s, char *str_option, t_pf_format *format, int unique)
 {
 	char *start;
 
 	start = *format_s;
 	while (**format_s)
 	{
-		if (
-			catch_padding(format_s, format)
-			)
-			continue;
-		else if (
-			catch_format(format_s, str_option, format)
-			)
-			break;
-		if (
-			unique
-			)
-			break;
+		if (catch_padding(format_s, format))
+			continue ;
+		else if (catch_format(format_s, str_option, format))
+			break ;
+		if (unique)
+			break ;
 	}
 	return (start != *format_s ? 0 : 1);
 }
 
-// TODO : mettre seccurity if same format given like h and l
 int					pf__catch_format(t_pf *pf)
 {
 	pf->format++;
@@ -87,17 +73,9 @@ int					pf__catch_format(t_pf *pf)
 		pf->format++;
 		return (1);
 	}
-	{
-		catch(&pf->format, "-*.0", &pf->format_bit, 0);
-		catch(&pf->format, "....hl", &pf->format_bit, 0);
-	}
-	if (
-		OK != catch(&pf->format, "......sdcxbu", &pf->format_bit, 1)
-		)
+	catch(&pf->format, "-*.0", &pf->format_bit, 0);
+	catch(&pf->format, "....hl", &pf->format_bit, 0);
+	if (OK != catch(&pf->format, "......sdcxbu", &pf->format_bit, 1))
 		return (-1);
-	{
-		return (0);
-	}
+	return (0);
 }
-
-

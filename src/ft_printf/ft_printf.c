@@ -12,44 +12,7 @@
 
 #include <ft_mem.h>
 #include <ft_buffer.h>
-# include "ft_printf.h"
-
-static void			handle_wildcard(t_pf *pf)
-{
-	if (pf->format_bit.wildard)
-		pf->format_bit.padding = va_arg(pf->list, int);
-}
-
-static void			handle_variable(t_pf *pf)
-{
-	if (
-		OK == pf__catch_format(pf)
-		)
-	{
-		handle_wildcard(pf);
-		pf__get_str(pf);
-		pf__get_number(pf);
-		pf__print(pf);
-	}
-	ft_bzero(&pf->format_bit, sizeof(t_pf_format));
-	ft_bzero(&pf->char_buffer, 70);
-}
-
-static void			loop(t_pf *pf)
-{
-	while (*pf->format)
-	{
-		if (
-			*pf->format == '%'
-			)
-			handle_variable(pf);
-		else
-		{
-			pf__utils_print(pf, pf->format, 1);
-			pf->format++;
-		}
-	}
-}
+#include "ft_printf.h"
 
 int					ft_printf(const char *format, ...)
 {

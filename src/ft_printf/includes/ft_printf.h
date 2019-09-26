@@ -10,21 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_HEADER_H
-# define PRINTF_HEADER_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdio.h>
-
 # include <stdarg.h>
 # include <unistd.h>
 # include <limits.h>
 # include <stdint.h>
 # include <cxxabi.h>
-
-#include "ft_array.h"
-#include "ft_buffer.h"
-#include "libft_define.h"
-
+# include "ft_array.h"
+# include "ft_buffer.h"
+# include "libft_define.h"
 # define FORMAT_S (1)
 # define FORMAT_D (1 << 1)
 # define FORMAT_C (1 << 2)
@@ -37,69 +34,57 @@
 # define FORMAT_X (1 << 9)
 # define FORMAT_0 (1 << 10)
 # define FORMAT_10_BASE (FORMAT_H | FORMAT_L | FORMAT_D | FORMAT_C | FORMAT_U)
+# define FT_PRINTF_PARCING_ERROR 100
+# define FT_PRINTF_PARCING_ERROR_STRING "ft_printf error %[ unknown ]"
+# define MINUS 0
+# define WILCARD 1
+# define DOT  2
+# define ZERO  3
+# define LITTLE 4
+# define TALL  5
+# define STRING 6
+# define DECIMAL 7
+# define CHARACTER 8
+# define HEXA  9
+# define BINARY 10
+# define UNSIGNED 11
 
-/*
-**	error
-*/
-#define FT_PRINTF_PARCING_ERROR 100
-#define FT_PRINTF_PARCING_ERROR_STRING "ft_printf error %[ unknown ]"
-
-#define  MINUS 0
-#define  WILCARD 1
-#define  DOT  2
-#define  ZERO  3
-#define  LITTLE 4
-#define  TALL  5
-#define  STRING 6
-#define  DECIMAL 7
-#define  CHARACTER 8
-#define  HEXA  9
-#define  BINARY 10
-#define  UNSIGNED 11
-
-typedef struct s_pf_format
+typedef struct		s_pf_format
 {
-	unsigned long minus: 1;
-	unsigned long wildard: 1;
-	unsigned long dot: 1;
-	unsigned long zero: 1;
-	unsigned long little: 1;
-	unsigned long tall: 1;
-	unsigned long string: 1;
-	unsigned long decimal: 1;
-	unsigned long character: 1;
-	unsigned long hexa: 1;
-	unsigned long binary: 1;
-	unsigned long unsign: 1;
-	int padding;
-} t_pf_format;
+	unsigned long	minus: 1;
+	unsigned long	wildard: 1;
+	unsigned long	dot: 1;
+	unsigned long	zero: 1;
+	unsigned long	little: 1;
+	unsigned long	tall: 1;
+	unsigned long	string: 1;
+	unsigned long	decimal: 1;
+	unsigned long	character: 1;
+	unsigned long	hexa: 1;
+	unsigned long	binary: 1;
+	unsigned long	unsign: 1;
+	int				padding;
+}					t_pf_format;
 
-typedef struct s_pf
+typedef struct		s_pf
 {
-	char *format;
-	char *intern_str;
-	char *extern_buff;
-	char char_buffer[70];
-	va_list list;
-	t_pf_format format_bit;
-	t_buffer buff;
-} t_pf;
+	char			*format;
+	char			*intern_str;
+	char			*extern_buff;
+	char			char_buffer[70];
+	va_list			list;
+	t_pf_format		format_bit;
+	t_buffer		buff;
+}					t_pf;
 
-//int ft_sprintf(t_buffer *buffer, char *format, ...);
-int ft_printf(const char *format, ...);
-int ft_dprintf(int fd, const char *format, ...);
-int ft_sprintf(char *buffer, const char *format, ...);
-
-// put title
-int pf__catch_format(t_pf *pf);
-
-int pf__get_number(t_pf *pf);
-int pf__get_str(t_pf *pf);
-int pf__print(t_pf *pf);
-
-/*
-**	utils
-*/
-void pf__utils_print(t_pf *pf, char *data, int size);
+int					ft_printf(const char *format, ...);
+int					ft_dprintf(int fd, const char *format, ...);
+int					ft_sprintf(char *buffer, const char *format, ...);
+int					pf__catch_format(t_pf *pf);
+int					pf__get_number(t_pf *pf);
+int					pf__get_str(t_pf *pf);
+int					pf__print(t_pf *pf);
+void				pf__utils_print(t_pf *pf, char *data, int size);
+void				loop(t_pf *pf);
 
 #endif
