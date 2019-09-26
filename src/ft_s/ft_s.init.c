@@ -13,29 +13,27 @@
 #include <ft_s.h>
 #include <ft_mem.h>
 
-t_s *fts__init(size_t size)
+t_s				*fts__init(size_t size)
 {
-	t_s *s;
-	char *buffer;
-	size_t capacity;
+	t_s		*s;
+	char	*buffer;
+	size_t	capacity;
 
 	size = size == 0 ? 1 : size;
 	capacity = (size * 2);
-	if (
-		NULL == (s = ft_memalloc(sizeof(t_s)))
-		|| NULL == (buffer = ft_memalloc(capacity + 2))
-		)
+	if (NULL == (s = ft_memalloc(sizeof(t_s)))
+		|| NULL == (buffer = ft_memalloc(capacity + 2)))
 		return (NULL);
 	s->data = buffer;
 	s->capacity = capacity;
 	return (s);
 }
 
-t_s *fts__init_data(char *str)
+t_s				*fts__init_data(char *str)
 {
 	t_s *s;
 
-	if(NULL == (s = fts__init(0)))
+	if (NULL == (s = fts__init(0)))
 		return (NULL);
 	fts__add(s, str);
 	return (s);
