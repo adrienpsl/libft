@@ -39,8 +39,7 @@ int						allocation(
 	void	*data;
 	void	*buffer;
 
-	if (
-		NULL == (array = ft_memalloc(sizeof(t_array)))
+	if (NULL == (array = ft_memalloc(sizeof(t_array)))
 		|| NULL == (data = ft_memalloc((nb_elements + 1) * element_size))
 		|| NULL == (buffer = ft_memalloc(element_size * 2)))
 		return (-1);
