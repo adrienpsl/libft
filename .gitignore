@@ -11,3 +11,4 @@ gen
 *.o
 cmake-build-debug/
 libft.a
+render/
