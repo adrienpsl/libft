@@ -14,10 +14,10 @@
 #include <stdlib.h>
 #include "ft_str.h"
 
-char *ft_strsub(char const *s, int start, size_t len)
+char	*ft_strsub(char const *s, int start, size_t len)
 {
-	size_t i;
-	char *dest;
+	size_t	i;
+	char	*dest;
 
 	i = 0;
 	if (!s)

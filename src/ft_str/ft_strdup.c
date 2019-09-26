@@ -14,14 +14,14 @@
 #include "ft_mem.h"
 #include "ft_str.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	if (NULL == s)
 		return (NULL);
 	return (ft_memdup(s, ft_strlen(s) + 1));
 }
 
-char *ft_strndup(const char *s, size_t size)
+char	*ft_strndup(const char *s, size_t size)
 {
 	char *out;
 

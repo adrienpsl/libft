@@ -12,7 +12,7 @@
 
 #include <unistd.h>
 
-ssize_t ft_strchr(char *str, char c)
+ssize_t	ft_strchr(char *str, char c)
 {
 	size_t i;
 
@@ -28,7 +28,7 @@ ssize_t ft_strchr(char *str, char c)
 	return (-1);
 }
 
-int					ft_strnchr(char *str, char c)
+int		ft_strnchr(char *str, char c)
 {
 	int i;
 
@@ -41,10 +41,10 @@ int					ft_strnchr(char *str, char c)
 			i++;
 		str++;
 	}
-	return i;
+	return (i);
 }
 
-ssize_t ft_strchrstr(char *str, char *searched)
+ssize_t	ft_strchrstr(char *str, char *searched)
 {
 	size_t i;
 
