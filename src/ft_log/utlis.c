@@ -12,18 +12,18 @@
 
 #include <ft_log.h>
 #include <ft_printf.h>
-#include <ft_errno.h>
 
 int					ftlog__null(char *file, int line)
 {
 	if (g_log > QUIET)
 		ft_printf("%s:%d ptr (null)\n", file, line);
-	return (ft_errno_set(EINVAL, -1));
+	return (-1);
 }
 
-int					ftlog__message(char *file, int line, char *message, int error_code)
+int					ftlog__message(
+	char *file, int line, char *message, int error_code)
 {
 	if (g_log > QUIET)
 		ft_printf("%s:%d %s\n", file, line, message);
-	return (ft_errno_set(error_code, -1));
+	return (error_code);
 }
