@@ -41,7 +41,7 @@ void			handle_variable(t_pf *pf)
 	ft_bzero(&pf->char_buffer, 70);
 }
 
-void			loop(t_pf *pf)
+void			ft_pf_loop(t_pf *pf)
 {
 	while (*pf->format)
 	{

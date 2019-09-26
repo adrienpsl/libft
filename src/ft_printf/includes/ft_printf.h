@@ -84,6 +84,6 @@ int					pf__get_number(t_pf *pf);
 int					pf__get_str(t_pf *pf);
 int					pf__print(t_pf *pf);
 void				pf__utils_print(t_pf *pf, char *data, int size);
-void				loop(t_pf *pf);
+void				ft_pf_loop(t_pf *pf);
 
 #endif

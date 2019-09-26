@@ -23,7 +23,7 @@ int					ft_printf(const char *format, ...)
 	pf.format = (char *)format;
 	{
 		va_start(pf.list, format);
-		loop(&pf);
+		ft_pf_loop(&pf);
 		va_end(pf.list);
 	}
 	ft_buffer_clean(&pf.buff);
@@ -39,7 +39,7 @@ int					ft_dprintf(int fd, const char *format, ...)
 	pf.format = (char *)format;
 	{
 		va_start(pf.list, format);
-		loop(&pf);
+		ft_pf_loop(&pf);
 		va_end(pf.list);
 	}
 	ft_buffer_clean(&pf.buff);
@@ -55,7 +55,7 @@ int					ft_sprintf(char *buffer, const char *format, ...)
 	pf.format = (char *)format;
 	{
 		va_start(pf.list, format);
-		loop(&pf);
+		ft_pf_loop(&pf);
 		va_end(pf.list);
 	}
 	ft_buffer_clean(&pf.buff);
