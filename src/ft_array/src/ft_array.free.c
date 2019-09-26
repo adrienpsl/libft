@@ -23,6 +23,7 @@ void	ftarray__free(t_array **p_array)
 		return ;
 	}
 	ftarray__clear(*p_array);
+	free((*p_array)->data);
 	ft_bzero(*p_array, sizeof(t_array));
 	free(*p_array);
 	*p_array = NULL;
