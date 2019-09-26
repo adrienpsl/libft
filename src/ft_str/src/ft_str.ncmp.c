@@ -10,22 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
-#ifndef LIBFT_FT_STRSPLIT_H
-#define LIBFT_FT_STRSPLIT_H
+int		ft_strncmp(char const *s1, char const *s2, size_t n)
+{
+	size_t	i;
 
-void	ft_strsplit_print(char **p_str, char sep);
-void	ft_strsplit_remove(char **split, int i);
-void	ft_strsplit_free(char ***p_str);
-void	ft_strsplit_print_test(char **p_str);
-char	**ft_strsplit(char *s, char *separators);
-char	**ft_strsplit_copy(char **split, int free);
-char	**ft_strsplit_mix(char **split_1, char **split_2, int do_free);
-void	ft_test_ifcmp_printsplit(char **res, char **test, char *where);
-int		ft_strsplit_cmp(char **split_1, char **split_2);
-int		ft_strsplit_add(char ***split, char *fresh_str);
-int		ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
-int		ft_func_split_streq(char *current, void *p_searched);
-int		ft_strsplit_count(char **split);
-
-#endif
+	if (s1 == NULL || s2 == NULL)
+		return (-1);
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (i < n && s1[i] != '\0')
+	{
+		if (s1[i] != s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		i++;
+	}
+	if (i == n)
+		return (0);
+	else
+		return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}

@@ -20,12 +20,12 @@ static int			count_words(char *s, char *separators)
 	words = 0;
 	while (*s)
 	{
-		while (*s && ft_strchr(separators, *s) > -1)
+		while (*s && ft_strchr_int(separators, *s) > -1)
 			s++;
-		if (*s && ft_strchr(separators, *s) == -1)
+		if (*s && ft_strchr_int(separators, *s) == -1)
 		{
 			words++;
-			while (*s && ft_strchr(separators, *s) == -1)
+			while (*s && ft_strchr_int(separators, *s) == -1)
 				s++;
 		}
 	}
@@ -37,10 +37,10 @@ static int			dup_word(char **s, char **out, char *separators)
 	size_t size;
 
 	size = 0;
-	while (**s && ft_strchr(separators, **s) > -1)
+	while (**s && ft_strchr_int(separators, **s) > -1)
 		(*s)++;
 	while ((*s)[size]
-		   && *s && ft_strchr(separators, (*s)[size]) == -1)
+		   && *s && ft_strchr_int(separators, (*s)[size]) == -1)
 		size++;
 	if (!(*out = ft_strndup(*s, size)))
 		return (-1);
@@ -50,9 +50,9 @@ static int			dup_word(char **s, char **out, char *separators)
 
 char **ft_strsplit(char *s, char *separators)
 {
-	int words;
-	char **split;
-	int i;
+	int		words;
+	char	**split;
+	int		i;
 
 	i = 0;
 	if (s == NULL)

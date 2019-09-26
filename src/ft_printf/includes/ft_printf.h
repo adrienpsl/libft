@@ -21,7 +21,6 @@
 # include <cxxabi.h>
 # include "ft_array.h"
 # include "ft_buffer.h"
-# include "libft_define.h"
 # define FORMAT_S (1)
 # define FORMAT_D (1 << 1)
 # define FORMAT_C (1 << 2)

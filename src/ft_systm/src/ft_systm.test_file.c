@@ -10,16 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIBFT_STRUCT
-# define FT_LIBFT_STRUCT
+#include "libft.h"
 
-#include <stdio.h>
-
-typedef struct		s_list
+int	ftsystm__test_file(char *path, char *name, char *argv)
 {
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
-
-#endif
+	if (!path || !name || !argv)
+		return (-1);
+	if (OK != access(path, F_OK))
+	{
+		ft_printf("%s: no such file or directory: %s\n", name, argv);
+		return (-1);
+	}
+	if (OK != access(path, R_OK))
+	{
+		ft_printf("%s: permission denied: %s\n", name, argv);
+		return (-1);
+	}
+	return (OK);
+}

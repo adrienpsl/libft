@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adpusel <adpusel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mipham <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/19 10:48:07 by adpusel           #+#    #+#             */
-/*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
+/*   Created: 2017/11/10 19:53:17 by mipham            #+#    #+#             */
+/*   Updated: 2017/11/14 18:17:11 by mipham           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int					ft_strlen(const char *str)
+char	*ft_strcat(char *restrict dest, const char *restrict src)
 {
 	int i;
+	int j;
 
 	i = 0;
-	while (str[i])
+	j = 0;
+	while (dest[i])
 		i++;
-	return (i);
+	while (src[j])
+	{
+		dest[i + j] = src[j];
+		j++;
+	}
+	dest[i + j] = '\0';
+	return (dest);
 }

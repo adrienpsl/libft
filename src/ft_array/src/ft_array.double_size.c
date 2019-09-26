@@ -10,11 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_array.h>
-#include <ft_errno.h>
-#include <ft_mem.h>
-#include <ft_log.h>
-#include <ft_str.h>
+#include "libft.h"
 
 int					ftarray__double_size(t_array *array)
 {

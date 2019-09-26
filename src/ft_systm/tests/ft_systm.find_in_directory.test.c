@@ -10,9 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_systm.h>
+#include <ft_buffer.h>
 #include <ft_test.h>
 #include <stdlib.h>
+#include <ft_systm.h>
 
 typedef struct s
 {
@@ -61,41 +62,41 @@ void static test_function(t t)
 void test_ftsystm__find_in_path(void)
 {
 
-	//	/*
-	//	* Path is empty
-	//	* */
-	//	test_function((t){
-	//		// Logger
-	//		.nb_test = 0,
-	//		.nb_line = L,
-	//
-	//		// Arguments
-	//		.paths_str = "",
-	//		.separators = ":",
-	//		.binary_name = "file",
-	//		.testing_function = ftstr__search_start_strict,
-	//
-	//		// Expected
-	//		.expected_str = NULL
-	//	});
-	//
-	//	/*
-	//	* Directories in path do not exist
-	//	* */
-	//	test_function((t){
-	//		// Logger
-	//		.nb_test = 1,
-	//		.nb_line = L,
-	//
-	//		// Arguments
-	//		.paths_str = "super:mechant:vilain",
-	//		.separators = ":",
-	//		.binary_name = "file",
-	//		.testing_function = ftstr__search_start_strict,
-	//
-	//		// Expected
-	//		.expected_str = NULL
-	//	});
+	/*
+	* Path is empty
+	* */
+	test_function((t){
+		// Logger
+		.nb_test = 0,
+		.nb_line = L,
+
+		// Arguments
+		.paths_str = "",
+		.separators = ":",
+		.binary_name = "file",
+		.testing_function = ftstr__search_start_strict,
+
+		// Expected
+		.expected_str = NULL
+	});
+
+	/*
+	* Directories in path do not exist
+	* */
+	test_function((t){
+		// Logger
+		.nb_test = 1,
+		.nb_line = L,
+
+		// Arguments
+		.paths_str = "super:mechant:vilain",
+		.separators = ":",
+		.binary_name = "file",
+		.testing_function = ftstr__search_start_strict,
+
+		// Expected
+		.expected_str = NULL
+	});
 
 	/*
 	* Two directories but file doesn't exist
@@ -129,7 +130,7 @@ void test_ftsystm__find_in_path(void)
 
 			// Arguments
 			.paths_str = "/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_1"
-						":/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_2",
+						 ":/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_2",
 
 			.separators = ":",
 			.binary_name = "file_d2_99",
@@ -143,7 +144,7 @@ void test_ftsystm__find_in_path(void)
 			.system_cleanup = "rm -rf ftsystm__find_in_directory_*",
 
 			// Expected
-			.expected_str = "file_d2_99"
+			.expected_str = "/Users/adpusel/code/42/libft/cmake-build-debug/ftsystm__find_in_directory_2/file_d2_99"
 		});
 	}
 }

@@ -10,52 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <ft_printf.h>
 
-ssize_t	ft_strchr(char *str, char c)
-{
-	size_t i;
-
-	if (!str)
-		return (-1);
-	i = 0;
-	while (str[i])
-	{
-		if (c == str[i])
-			return (i);
-		i++;
-	}
-	return (-1);
-}
-
-int		ft_strnchr(char *str, char c)
+int	ft_strlen(const char *str)
 {
 	int i;
 
-	if (!str)
-		return (-1);
 	i = 0;
-	while (*str)
+	if (str == NULL)
 	{
-		if (*str == c)
-			i++;
-		str++;
+		ft_printf("ft_strlen: ptr null");
+		return (0);
 	}
-	return (i);
-}
-
-ssize_t	ft_strchrstr(char *str, char *searched)
-{
-	size_t i;
-
-	if (!str)
-		return (-1);
-	i = 0;
 	while (str[i])
-	{
-		if (ft_strchr(searched, str[i]) > -1)
-			return (i);
 		i++;
-	}
-	return (-1);
+	return (i);
 }

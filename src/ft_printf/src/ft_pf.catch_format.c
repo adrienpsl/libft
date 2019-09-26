@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_printf.h>
-#include <ft_str.h>
-#include <ft_io.h>
+#include "libft.h"
 
 static int			catch_padding(
 	char **format_s, t_pf_format *format)
@@ -37,7 +35,7 @@ static int			catch_format(
 {
 	int ret;
 
-	if ((ret = ft_strchr(str_option, **format_s)) != -1)
+	if ((ret = ft_strchr_int(str_option, **format_s)) != -1)
 	{
 		*(int *)format |= (1 << ret);
 		(*format_s)++;

@@ -4,7 +4,6 @@
 target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
-        ft_log.c
         utlis.c
 
         #[[ test]]

@@ -10,22 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
-#ifndef LIBFT_FT_STRSPLIT_H
-#define LIBFT_FT_STRSPLIT_H
+char	*ftstr__replace_str(char *src, char *from, char *to)
+{
+	char	*new;
+	char	*find;
+	size_t	start;
+	size_t	end;
 
-void	ft_strsplit_print(char **p_str, char sep);
-void	ft_strsplit_remove(char **split, int i);
-void	ft_strsplit_free(char ***p_str);
-void	ft_strsplit_print_test(char **p_str);
-char	**ft_strsplit(char *s, char *separators);
-char	**ft_strsplit_copy(char **split, int free);
-char	**ft_strsplit_mix(char **split_1, char **split_2, int do_free);
-void	ft_test_ifcmp_printsplit(char **res, char **test, char *where);
-int		ft_strsplit_cmp(char **split_1, char **split_2);
-int		ft_strsplit_add(char ***split, char *fresh_str);
-int		ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
-int		ft_func_split_streq(char *current, void *p_searched);
-int		ft_strsplit_count(char **split);
-
-#endif
+	new = NULL;
+	if (NULL == src || from == NULL || to == NULL)
+		return (NULL);
+	if (NULL != (find = ftstr__find_str(src, from)))
+	{
+		start = find - src;
+		end = ft_strlen(find + ft_strlen(from));
+		if (NULL ==
+			(new = ft_memalloc(start + ft_strlen(from) + end + 1)))
+			return (NULL);
+		ft_memcpy(new, src, start);
+		ft_strcat(new, to);
+		ft_strcat(new, find + ft_strlen(from));
+	}
+	return (new);
+}

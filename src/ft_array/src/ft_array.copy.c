@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_log.h>
-#include "ft_errno.h"
-#include "ft_array.h"
+#include <libft.h>
 
 t_array		*ftarray__copy(
 	t_array *src)

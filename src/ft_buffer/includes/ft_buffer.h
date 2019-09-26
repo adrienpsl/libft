@@ -13,6 +13,8 @@
 #ifndef FT_BUFFER_H
 # define FT_BUFFER_H
 
+# include "stdio.h"
+
 # define BUFFER_SIZE 1023
 
 typedef struct		s_buffer

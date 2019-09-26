@@ -10,22 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
-#ifndef LIBFT_FT_STRSPLIT_H
-#define LIBFT_FT_STRSPLIT_H
+char	*ft_strjoin(char *start, char *end, int free)
+{
+	size_t	length_start;
+	size_t	length_end;
+	char	*new;
 
-void	ft_strsplit_print(char **p_str, char sep);
-void	ft_strsplit_remove(char **split, int i);
-void	ft_strsplit_free(char ***p_str);
-void	ft_strsplit_print_test(char **p_str);
-char	**ft_strsplit(char *s, char *separators);
-char	**ft_strsplit_copy(char **split, int free);
-char	**ft_strsplit_mix(char **split_1, char **split_2, int do_free);
-void	ft_test_ifcmp_printsplit(char **res, char **test, char *where);
-int		ft_strsplit_cmp(char **split_1, char **split_2);
-int		ft_strsplit_add(char ***split, char *fresh_str);
-int		ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
-int		ft_func_split_streq(char *current, void *p_searched);
-int		ft_strsplit_count(char **split);
-
-#endif
+	if (NULL == start || NULL == end)
+		return (NULL);
+	length_start = ft_strlen(start);
+	length_end = ft_strlen(end);
+	if (NULL != (new = ft_memalloc(length_start + length_end + 1)))
+	{
+		ft_strcat(new, start);
+		ft_strcat(new, end);
+		if (1 == free || free == 3)
+			ftstr__free(&start);
+		if (2 == free || free == 3)
+			ftstr__free(&end);
+	}
+	return (new);
+}

@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-ssize_t ftstr__search_str(char *src, char *searching)
+ssize_t		ftstr__search_str(char *src, char *searching)
 {
-	size_t i;
-	size_t y;
+	size_t	i;
+	size_t	y;
 
 	if (!src || !searching)
 		return (-1);
@@ -38,20 +38,14 @@ ssize_t ftstr__search_str(char *src, char *searching)
 
 int static check(char *current, char *searching)
 {
-	if (
-		NULL == current || NULL == searching
-		)
-		return (
-			ftlog__message(F, L, "ftstr__search_start input (null)",
-						   EINVAL)
-		);
+	if (NULL == current || NULL == searching)
+		return (ftlog__message(F, L, "ftstr__search_start input (null)",
+			EINVAL));
 	else
-		return (
-			0
-		);
+		return (0);
 }
 
-int ftstr__search_start(char *current, char *searching)
+int			ftstr__search_start(char *current, char *searching)
 {
 	int i;
 
@@ -67,9 +61,9 @@ int ftstr__search_start(char *current, char *searching)
 		return (-1);
 }
 
-int ftstr__search_start_strict(char *current, char *searching)
+int	ftstr__search_start_strict(char *current, char *searching)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (check(current, searching))

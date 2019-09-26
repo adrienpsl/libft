@@ -12,42 +12,45 @@
 
 #include "libft.h"
 
-void	ft_test_ifcmp_printsplit(char **res, char **test, char *where)
+void			pf__utils_print(t_pf *pf, char *data, int size)
 {
-	if (ft_strsplit_cmp(res, test))
+	if (pf->extern_buff)
+		ft_memcpy(pf->extern_buff + ft_strlen(pf->extern_buff), data, size);
+	else
 	{
-		g_test = 0;
-		if (where)
-			ft_printf("\nsplit  error : %s =====================\n", where);
-		else
-			ft_printf("\nsplit  error : =====================\n");
-		ft_printf("--- result ---\n");
-		ft_strsplit_print_test(res);
-		ft_printf("\n--- test ---\n");
-		ft_strsplit_print_test(test);
-		g_test = 1;
+		ft_buffer_add(&pf->buff, data, size);
 	}
 }
 
-/*
-**	If != str, print both and ret 1
-**  otherwise ret 0
-*/
-int					ft_test_if_streq(char *res, char *test, char *where)
+void			handle_wildcard(t_pf *pf)
 {
-	if (!ft_test_streq(res, test))
+	if (pf->format_bit.wildard)
+		pf->format_bit.padding = va_arg(pf->list, int);
+}
+
+void			handle_variable(t_pf *pf)
+{
+	if (OK == pf__catch_format(pf))
 	{
-		g_test = 0;
-		if (where)
-			ft_printf("\nstr error : %s =====================\n", where);
-		else
-			ft_printf("\nstr error : =====================\n");
-		ft_printf("--- result ---\n");
-		res ? ft_printf("[%s]", res) : ft_printf("[(null)]");
-		ft_printf("\n--- test ---\n");
-		test ? ft_printf("[%s]", test) : ft_printf("[(null)]");
-		g_test = 1;
-		return (1);
+		handle_wildcard(pf);
+		pf__get_str(pf);
+		pf__get_number(pf);
+		pf__print(pf);
 	}
-	return (0);
+	ft_bzero(&pf->format_bit, sizeof(t_pf_format));
+	ft_bzero(&pf->char_buffer, 70);
+}
+
+void			loop(t_pf *pf)
+{
+	while (*pf->format)
+	{
+		if (*pf->format == '%')
+			handle_variable(pf);
+		else
+		{
+			pf__utils_print(pf, pf->format, 1);
+			pf->format++;
+		}
+	}
 }

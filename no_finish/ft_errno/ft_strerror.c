@@ -12,7 +12,7 @@
 
 #include "ft_errno.h"
 
-char *ft_strerror(int errnum)
+char	*ft_strerror(int errnum)
 {
 	if (errnum < 0 || errnum >= FT_ERRNO_MAX)
 		return (g_errno_errs[0].errstr);

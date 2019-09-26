@@ -10,22 +10,31 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_str.h>
+#include <ft_test.h>
+#include "unistd.h"
 
-#ifndef LIBFT_FT_STRSPLIT_H
-#define LIBFT_FT_STRSPLIT_H
+void	ft_putstr_buffer(const char *s, char *buffer)
+{
+	int i;
 
-void	ft_strsplit_print(char **p_str, char sep);
-void	ft_strsplit_remove(char **split, int i);
-void	ft_strsplit_free(char ***p_str);
-void	ft_strsplit_print_test(char **p_str);
-char	**ft_strsplit(char *s, char *separators);
-char	**ft_strsplit_copy(char **split, int free);
-char	**ft_strsplit_mix(char **split_1, char **split_2, int do_free);
-void	ft_test_ifcmp_printsplit(char **res, char **test, char *where);
-int		ft_strsplit_cmp(char **split_1, char **split_2);
-int		ft_strsplit_add(char ***split, char *fresh_str);
-int		ft_strsplit_search(char **split, int(*f)(char *, void *), void *param);
-int		ft_func_split_streq(char *current, void *p_searched);
-int		ft_strsplit_count(char **split);
+	i = 0;
+	while (s[i])
+	{
+		buffer[i] = s[i];
+		i++;
+	}
+}
 
-#endif
+void	ft_putstr_fd(char const *s, int fd)
+{
+	size_t size;
+
+	if (g_test)
+	{
+		size = ft_strlen(g_test_buffer);
+		ft_putstr_buffer(s, g_test_buffer + size);
+	}
+	else
+		write(fd, s, ft_strlen(s));
+}

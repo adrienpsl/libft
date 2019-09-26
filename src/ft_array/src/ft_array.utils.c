@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <ft_log.h>
-#include "ft_errno.h"
 #include "ft_mem.h"
 #include "ft_array.h"
 

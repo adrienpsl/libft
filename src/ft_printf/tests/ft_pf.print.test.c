@@ -29,7 +29,7 @@ int					utils(char *format, char *result, ...)
 	va_end(pf->list);
 
 	pf__print(pf);
-	if (ft_str_cmp(pf->buff.data, result))
+	if (ft_strcmp(pf->buff.data, result))
 	{
 		printf("-%s-\n", result);
 		printf("-%s-\n", pf->buff.data);

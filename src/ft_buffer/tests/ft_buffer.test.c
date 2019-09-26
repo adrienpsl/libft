@@ -33,7 +33,7 @@ void	test_ft_buffer()
 		if (
 			ft_strlen(buffer.data) != 1022
 			|| buffer.length != 1022
-			|| ft_str_cmp(str, buffer.data))
+			|| ft_strcmp(str, buffer.data))
 			log_test(1)
 	}
 
@@ -47,7 +47,7 @@ void	test_ft_buffer()
 
 		str[1023] = 'c';
 		if (
-			ft_str_cmp(g_test_buffer, str)
+			ft_strcmp(g_test_buffer, str)
 			|| buffer.length != (int)ft_strlen(clear)
 			|| ft_memcmp(clear, buffer.data, 1024)
 			)

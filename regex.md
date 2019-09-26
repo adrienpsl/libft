@@ -112,8 +112,5 @@
 
 ### I can use comment and space in regex !
 
- 
 
-
-     
-     
+## command copy file 

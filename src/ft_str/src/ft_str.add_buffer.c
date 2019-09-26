@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int					ft_str_cmp(const char *s1, const char *s2)
-{
-	int i;
+#include <ft_str.h>
 
-	i = 0;
-	if (!(s1) || !(s2))
-		return (-1);
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
-		i++;
-	return (s1[i] - s2[i]);
+void	ftstr__add_buffer(char *buffer, char *s1, char *s2, char *s3)
+{
+	if (s1)
+		ft_strcat(buffer, s1);
+	if (s2)
+		ft_strcat(buffer, s2);
+	if (s3)
+		ft_strcat(buffer, s3);
 }

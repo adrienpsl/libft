@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_systm.h>
+#include "libft.h"
 
-static int check(
+static int	check(
 	char *paths_str,
 	char *separators,
 	char *binary_name,
@@ -30,15 +30,18 @@ static int check(
 	return (OK);
 }
 
-char *ftsystm__find_in_path(
+/*
+**	return fresh str
+*/
+char		*ftsystm__find_in_path(
 	char *paths_str,
 	char *separators,
 	char *binary_name,
 	int (*testing_function)(char *, char *))
 {
-	char **paths;
-	char *binary_path;
-	int i;
+	char	**paths;
+	char	*binary_path;
+	int		i;
 
 	if (OK != check(paths_str, separators, binary_name, testing_function))
 		return (NULL);
@@ -54,6 +57,8 @@ char *ftsystm__find_in_path(
 			break;
 		i++;
 	}
+	binary_path = ft_strjoin("/", binary_path, 2);
+	binary_path = ft_strjoin(paths[i], binary_path, 2);
 	ft_strsplit_free(&paths);
 	return (binary_path);
 }

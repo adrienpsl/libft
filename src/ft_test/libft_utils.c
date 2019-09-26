@@ -10,15 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_errno.h>
 #include "libft.h"
-
-int					init_libft()
-{
-	ft_errno_set(0, 0);
-	return (0);
-}
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <ft_mem.h>
@@ -45,9 +37,9 @@ int					test_cmp_testbuff_log(char *expected)
 	int ret;
 	int space;
 
-	space = ft_strchr(g_test_buffer, ' ');
+	space = ft_strchr_int(g_test_buffer, ' ');
 	ret = 0;
-	if (ft_str_cmp(expected, g_test_buffer + space + 1))
+	if (ft_strcmp(expected, g_test_buffer + space + 1))
 	{
 		ret = 1;
 		printf("expected:%*s  %s", space, "", expected);
@@ -59,7 +51,7 @@ int					test_cmp_testbuff_log(char *expected)
 
 int					test_cmp_buff(char *expected)
 {
-	if (ft_str_cmp(expected, g_test_buffer))
+	if (ft_strcmp(expected, g_test_buffer))
 	{
 		printf("expected: %s\n", expected);
 		printf("result  : %s\n", g_test_buffer);
@@ -77,7 +69,7 @@ int					test_cmp_str(char *result, char *ret)
 		)
 		return (0);
 	if (
-		OK != ft_str_cmp(result, ret)
+		OK != ft_strcmp(result, ret)
 		)
 	{
 		printf("test cmp str\n");
@@ -111,7 +103,7 @@ int					test_cmp_split_str(char *name, char *expected, char **returned)
 
 	if (expected == NULL || returned == NULL)
 	{
-		printf("%s ptr null : %p %p", name, expected, returned);
+		printf("%s\nptr null : %p %p", name, expected, returned);
 		return (1);
 	}
 	ft_strsplit_print(returned, ' ');

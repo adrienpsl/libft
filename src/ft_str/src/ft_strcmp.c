@@ -10,30 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_str.h>
-#include <ft_test.h>
-#include "unistd.h"
+#include "libft.h"
 
-void	ft_putstr_buffer(const char *s, char *buffer)
+int					ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
 
 	i = 0;
-	while (s[i])
-	{
-		buffer[i] = s[i];
+	if (NULL == s1 || NULL == s2)
+		return (-1);
+	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 		i++;
-	}
+	return (s1[i] - s2[i]);
 }
 
-void	ft_putstr_fd(char const *s, int fd)
+int ft_streq(const char *s1, const char *s2)
 {
-	size_t size;
-	if (g_test)
-	{
-		size = ft_strlen(g_test_buffer);
-		ft_putstr_buffer(s, g_test_buffer + size);
-	}
-	else
-		write(fd, s, ft_strlen(s));
+	if (NULL == s1 || NULL == s2)
+		return (0);
+	return (!ft_strcmp(s1, s2));
 }

@@ -7,7 +7,6 @@ target_sources(${__LIB_NAME__}
         ft_atoi.c
         ft_catch_options.c
         ft_itoa.c
-        ../../no_finish/get_next_line.c
         ft_io.catch_options.c
 
         #[[ test]]

@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_array.h>
-#include <libft_define.h>
-#include <ft_log.h>
+#include "libft.h"
 
 static int	check(t_array *array, int from, int at)
 {

@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_log.h>
-
-#include "ft_systm.h"
+#include "libft.h"
 
 static int check(
 	char *path,
@@ -28,13 +26,16 @@ static int check(
 	return (OK);
 }
 
+/*
+**	return fresh str
+*/
 char *ftsystm__find_in_directory(
 	char *path,
 	char *binary_name,
 	int (*testing_function)(char *, char *))
 {
-	DIR *dir;
-	struct dirent *dp;
+	DIR				*dir;
+	struct dirent	*dp;
 
 	if (OK != check(path, binary_name, testing_function))
 		return (NULL);

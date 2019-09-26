@@ -14,25 +14,22 @@
 #define FT_ERRNO_H
 
 # include "ft_printf.h"
-
 # include "errno.h"
 
 # define FT_ERRNO_MAX 107
 
-int ft_errno_set(int errnum, int ret);
-int ft_errno_get(void);
-
-void ft_perror(char *string);
-char *ft_strerror(int errnum);
-
-typedef struct s_errno
+int				ft_errno_set(int errnum, int ret);
+int				ft_errno_get(void);
+void			ft_perror(char *string);
+char			*ft_strerror(int errnum);
+typedef struct	s_errno
 {
-	char *errstr;
-	int errnum;
-	int align;
-} t_errno;
+	char		*errstr;
+	int			errnum;
+	int			align;
+}				t_errno;
 
-static t_errno g_errno_errs[FT_ERRNO_MAX + 1] = {
+static t_errno	g_errno_errs[FT_ERRNO_MAX + 1] = {
 	{ "Error not exist",                                 0,   0 },
 	{ "Operation not permitted",                         1,   0 },
 	{ "No such file or directory",                       2,   0 },

@@ -52,7 +52,7 @@ static int			get_options(char *line, char *option_str, long *options_ptr,
 		line++;
 	while (*line)
 	{
-		if ((position = ft_strchr(option_str, *line)) > -1)
+		if ((position = ft_strchr_int(option_str, *line)) > -1)
 			*options_ptr |= (1 << position);
 		else
 		{
@@ -77,9 +77,9 @@ int					ftio__catch_option(
 	i = 0;
 	while (NULL != av[i])
 	{
-		if (!ft_str_cmp("--", av[i]))
+		if (!ft_strcmp("--", av[i]))
 			return (i + 1);
-		if (av[i][0] != '-' || !ft_str_cmp("-", av[i]))
+		if (av[i][0] != '-' || !ft_strcmp("-", av[i]))
 			break ;
 		if (get_options(av[i] + 1, option_str, options_ptr, f_usage))
 			return (-1);
