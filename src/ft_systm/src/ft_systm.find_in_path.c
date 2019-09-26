@@ -33,6 +33,7 @@ static int	check(
 /*
 **	return fresh str
 */
+
 char		*ftsystm__find_in_path(
 	char *paths_str,
 	char *separators,
@@ -54,7 +55,7 @@ char		*ftsystm__find_in_path(
 		if (NULL !=
 			(binary_path = ftsystm__find_in_directory(
 				paths[i], binary_name, testing_function)))
-			break;
+			break ;
 		i++;
 	}
 	binary_path = ft_strjoin("/", binary_path, 2);

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int check(
+static int		check(
 	char *path,
 	char *binary_name,
 	int (*testing_function)(char *, char *))
@@ -29,7 +29,8 @@ static int check(
 /*
 **	return fresh str
 */
-char *ftsystm__find_in_directory(
+
+char			*ftsystm__find_in_directory(
 	char *path,
 	char *binary_name,
 	int (*testing_function)(char *, char *))
