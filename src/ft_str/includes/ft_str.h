@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #ifndef LIBFT_FT_STR_H
-#define LIBFT_FT_STR_H
+# define LIBFT_FT_STR_H
 
 # include "unistd.h"
 

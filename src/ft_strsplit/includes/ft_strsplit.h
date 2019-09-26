@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_FT_STRSPLIT_H
-# define LIBFT_FT_STRSPLIT_H
+#ifndef FT_STRSPLIT_H
+# define FT_STRSPLIT_H
 
 void	ft_strsplit_print(char **p_str, char sep);
 void	ft_strsplit_remove(char **split, int i);

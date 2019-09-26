@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-ssize_t		ftstr__search_str(char *src, char *searching)
+ssize_t				ftstr__search_str(char *src, char *searching)
 {
 	size_t	i;
 	size_t	y;
@@ -26,7 +26,7 @@ ssize_t		ftstr__search_str(char *src, char *searching)
 		{
 			y = 1;
 			while (src[i + y] && searching[y]
-				   && src[i + y] == searching[y])
+				&& src[i + y] == searching[y])
 				y++;
 			if (searching[y] == 0)
 				return (i);
@@ -36,7 +36,7 @@ ssize_t		ftstr__search_str(char *src, char *searching)
 	return (-1);
 }
 
-int static check(char *current, char *searching)
+static int			check(char *current, char *searching)
 {
 	if (NULL == current || NULL == searching)
 		return (ftlog__message(F, L, "ftstr__search_start input (null)",
@@ -45,7 +45,7 @@ int static check(char *current, char *searching)
 		return (0);
 }
 
-int			ftstr__search_start(char *current, char *searching)
+int					ftstr__search_start(char *current, char *searching)
 {
 	int i;
 
@@ -53,7 +53,7 @@ int			ftstr__search_start(char *current, char *searching)
 	if (check(current, searching))
 		return (-1);
 	while (current[i] && searching[i]
-		   && current[i] == searching[i])
+		&& current[i] == searching[i])
 		i += 1;
 	if (current[i] == '\0')
 		return (i);
@@ -61,7 +61,7 @@ int			ftstr__search_start(char *current, char *searching)
 		return (-1);
 }
 
-int	ftstr__search_start_strict(char *current, char *searching)
+int					ftstr__search_start_strict(char *current, char *searching)
 {
 	int	i;
 
@@ -69,7 +69,7 @@ int	ftstr__search_start_strict(char *current, char *searching)
 	if (check(current, searching))
 		return (-1);
 	while (current[i] && searching[i]
-		   && current[i] == searching[i])
+		&& current[i] == searching[i])
 		i += 1;
 	if (current[i] == '\0' && searching[i] == '\0')
 		return (i);

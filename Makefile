@@ -46,7 +46,6 @@ SRCS = \
         ft_atoi.c \
         ft_bzero.c \
         ft_catch_options.c \
-        ft_errno.utils.c \
         ft_free_split.c \
         ft_io.catch_options.c \
         ft_itoa.c \
@@ -60,7 +59,6 @@ SRCS = \
         ft_memmove.c \
         ft_memset.c \
         ft_memswap.c \
-        ft_perror.c \
         ft_pf.catch_format.c \
         ft_pf.get_number.c \
         ft_pf.get_str.c \
@@ -93,7 +91,6 @@ SRCS = \
         ft_strchrreplace.c \
         ft_strcmp.c \
         ft_strdup.c \
-        ft_strerror.c \
         ft_strjoin.c \
         ft_strlen.c \
         ft_strsplit.add.c \
@@ -107,7 +104,6 @@ SRCS = \
         ft_systm.find_in_directory.c \
         ft_systm.find_in_path.c \
         ft_systm.get_current_path.c \
-        libft_utils.c \
         utlis.c \
 
 OBJS = $(addprefix $(OBJSDIR),$(SRCS:.c=.o))

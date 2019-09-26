@@ -10,26 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TEST_H
-# define FT_TEST_H
-
-# include "stdio.h"
-# include "my_test.h"
-
-extern int		g_test;
-int				g_test;
-extern char		g_test_buffer[100000];
-char			g_test_buffer[100000];
-
-int				test_random_int(int limit);
-void			test_print_func_int(void *ptr);
-
-void			test_clear_testbuff(void);
-int				test_cmp_testbuff_log(char *expected);
-int				test_cmp_buff(char *expected);
-
-int				test_cmp_str(char *result, char *ret);
-int				test_cmp_split_str(char *name, char *expected, char **returned);
-int				test_cmp_int(int expected, int returned);
+#ifndef MY_TEST_H
+# define MY_TEST_H
 
 #endif
