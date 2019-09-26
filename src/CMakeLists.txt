@@ -5,7 +5,6 @@
 # ------------------------------------------------------------------------------
 add_subdirectory(ft_array)
 add_subdirectory(ft_buffer)
-add_subdirectory(ft_errno)
 add_subdirectory(ft_io)
 add_subdirectory(ft_log)
 add_subdirectory(ft_mem)

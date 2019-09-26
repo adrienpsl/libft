@@ -10,14 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "ft_io.h"
-# include "ft_mem.h"
+#include "ft_io.h"
+#include "ft_mem.h"
 
-int					ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out)
+int					ft_itoa_unsigned(
+	uintmax_t origin_nb, const char *base_str, char *out)
 {
-	int i;
-	size_t base;
-	uintmax_t nb;
+	int			i;
+	size_t		base;
+	uintmax_t	nb;
 
 	base = ft_strlen(base_str);
 	i = 0;
@@ -34,10 +35,11 @@ int					ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out)
 	return (0);
 }
 
-int					ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int is_u)
+int					ft_itoa_base(
+	uintmax_t origin_nb, const char *base_str, char *out, int is_u)
 {
-	int neg;
-	long long nb;
+	int			neg;
+	long long	nb;
 
 	if (origin_nb == 0)
 	{
@@ -45,7 +47,7 @@ int					ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int i
 		return (1);
 	}
 	if (is_u)
-		return ft_itoa_unsigned(origin_nb, base_str, out);
+		return (ft_itoa_unsigned(origin_nb, base_str, out));
 	else
 	{
 		nb = origin_nb;
@@ -55,6 +57,6 @@ int					ft_itoa_base(uintmax_t origin_nb, const char *base_str, char *out, int i
 			nb = -nb;
 			out[0] = '-';
 		}
-		return ft_itoa_unsigned(nb, base_str, neg ? out + 1 : out);
+		return (ft_itoa_unsigned(nb, base_str, neg ? out + 1 : out));
 	}
 }

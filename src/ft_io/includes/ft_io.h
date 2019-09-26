@@ -11,31 +11,28 @@
 /* ************************************************************************** */
 
 #ifndef LIBFT_FT_IO_H
-#define LIBFT_FT_IO_H
-
-# define BUFF_SIZE 4096
+# define LIBFT_FT_IO_H
 
 # include "ft_str.h"
 # include <stdlib.h>
 # include <stdint.h>
 
 # define BASE_10 "0123456789"
+# define BUFF_SIZE 4096
 
-int get_next_line(const int fd, char **line, int need_free);
-int ft_atoi(const char *str);
-int ft_itoa_base(
+int	get_next_line(const int fd, char **line, int need_free);
+int	ft_atoi(const char *str);
+int	ft_itoa_base(
 	uintmax_t origin_nb,
 	const char *base_str,
 	char *out,
-	int is_u
-				);
-int ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out);
+	int is_u);
+int	ft_itoa_unsigned(uintmax_t origin_nb, const char *base_str, char *out);
 
-int ftio__catch_option(
+int	ftio__catch_option(
 	char **av,
 	char *option_str,
 	long *options_ptr,
-	void (*f_usage)(char)
-					  );
+	void (*f_usage)(char));
 
 #endif
