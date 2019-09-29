@@ -18,7 +18,7 @@ target_sources(${__LIB_NAME__} PUBLIC
         src/ft_strlen.c
         src/ft_strsub.c
         src/ft_pstrjoin_chr.c
-
+        src/ft_str.by_func.c
         src/ft_str.replace.c
         src/ft_str.find_str.c
         src/ft_str.ncmp.c

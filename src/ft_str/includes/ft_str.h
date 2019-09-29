@@ -47,4 +47,17 @@ int		ft_isprint(int c);
 int		ft_isascii(int c);
 int		ft_isspace(int c);
 
+/*
+**	Testing function
+*/
+int		ft_strby_func_int(
+	char *str,
+	int (*testing_function)(char, void *),
+	void *param);
+
+char	*ftstr_by_func(
+	char *str,
+	int (*testing_function)(char, void *),
+	void *param);
+
 #endif
