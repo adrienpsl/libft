@@ -50,7 +50,7 @@ int		ft_isspace(int c);
 /*
 **	Testing function
 */
-int		ftstr_by_func_int(
+int		ftstr_func_match(
 	char *str,
 	int (*testing_function)(char, void *),
 	void *param);
