@@ -17,6 +17,8 @@ char	*ftstr_by_func(
 	int (*testing_function)(char, void *),
 	void *param)
 {
+	if (str == NULL || testing_function == NULL)
+		return (ftlog__null(F, L));
 	while (*str != '\0')
 	{
 		if (testing_function(*str, param))
@@ -33,6 +35,8 @@ int		ftstr_by_func_int(
 {
 	int i;
 
+	if (str == NULL || testing_function == NULL)
+		return (ftlog__null(F, L));
 	i = 0;
 	while (str[i] != '\0')
 	{

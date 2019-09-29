@@ -16,14 +16,12 @@ static int				check(int nb_elements, size_t element_size)
 {
 	if (nb_elements < 0)
 	{
-		return (
-			ftlog__message(F, L, "ft_array$init : no elements number",
+		return (ftlog__message(F, L, "ft_array$init : no elements number",
 				EINVAL));
 	}
 	if (0 == element_size)
 	{
-		return (
-			ftlog__message(F, L, "ft_array$init : element size (null)",
+		return (ftlog__message(F, L, "ft_array$init : element size (null)",
 				EINVAL));
 	}
 	else

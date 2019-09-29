@@ -27,7 +27,8 @@ enum		e_log_level
 	TRACE,
 };
 
-int			ftlog__null(char *file, int line);
+void*		ftlog__null(char *file, int line);
 int			ftlog__message(char *file, int line, char *message, int error_code);
+int			ftlog__int(char *file, int line);
 
 #endif
