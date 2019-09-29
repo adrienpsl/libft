@@ -16,7 +16,7 @@ static int			check(t_array *array, void *element, int index)
 {
 	if (!array || !element)
 	{
-		return (ftlog__null(__FILE__, __LINE__));
+		return (ftlog__int(__FILE__, __LINE__));
 	}
 	else if (index > array->length)
 	{

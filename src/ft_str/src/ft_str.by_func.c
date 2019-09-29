@@ -36,7 +36,7 @@ int		ftstr_by_func_int(
 	int i;
 
 	if (str == NULL || testing_function == NULL)
-		return (ftlog__null(F, L));
+		return (ftlog__int(F, L));
 	i = 0;
 	while (str[i] != '\0')
 	{
