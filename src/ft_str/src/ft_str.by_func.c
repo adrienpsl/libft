@@ -44,10 +44,9 @@ int		ftstr_func_int(
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (testing_function(*str, param))
+		if (testing_function(str[i], param))
 			return (i);
 		i += 1;
 	}
 	return (-1);
 }
-
