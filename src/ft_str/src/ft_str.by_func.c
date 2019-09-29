@@ -26,7 +26,7 @@ char	*ftstr_by_func(
 	return (NULL);
 }
 
-int		ft_strby_func_int(
+int		ftstr_by_func_int(
 	char *str,
 	int (*testing_function)(char, void *),
 	void *param)
