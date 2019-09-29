@@ -32,7 +32,7 @@ char	*ftstr_by_func(
 **	return the where there are the match or -1
 */
 
-int		ftstr_func_match(
+int		ftstr_func_int(
 	char *str,
 	int (*testing_function)(char, void *),
 	void *param)
@@ -49,28 +49,5 @@ int		ftstr_func_match(
 		i += 1;
 	}
 	return (-1);
-}
-
-/*
-**	if no match return the length of the string
-*/
-
-int		ftstr_func_match_or_length(
-	char *str,
-	int (*testing_function)(char, void *),
-	void *param)
-{
-	int i;
-
-	if (str == NULL || testing_function == NULL)
-		return (ftlog__int(F, L));
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (testing_function(*str, param))
-			return (i);
-		i += 1;
-	}
-	return (i);
 }
 
