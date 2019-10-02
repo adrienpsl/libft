@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ftsystm__test_file(char *path, char *name, char *argv)
+int	ftsystm__check_file(char *path, char *name, char *argv)
 {
 	if (!path || !name || !argv)
 		return (-1);
