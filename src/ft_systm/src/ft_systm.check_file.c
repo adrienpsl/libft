@@ -12,18 +12,18 @@
 
 #include "libft.h"
 
-int	ftsystm__check_file(char *path, char *name, char *argv)
+int	ftsystm__check_file(char *path, char *prg_name, char *file_name)
 {
-	if (!path || !name || !argv)
+	if (!path || !prg_name || !file_name)
 		return (-1);
 	if (OK != access(path, F_OK))
 	{
-		ft_printf("%s: no such file or directory: %s\n", name, argv);
+		ft_printf("%s: no such file or directory: %s\n", prg_name, file_name);
 		return (-1);
 	}
 	if (OK != access(path, R_OK))
 	{
-		ft_printf("%s: permission denied: %s\n", name, argv);
+		ft_printf("%s: permission denied: %s\n", prg_name, file_name);
 		return (-1);
 	}
 	return (OK);

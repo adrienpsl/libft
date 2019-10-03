@@ -14,13 +14,17 @@
 
 void test_ftsystm_check_exe(void)
 {
+	g_test = 1;
 	// with the rigth :
 	system("touch toto; chmod 700 toto");
-	if (ftsystm_check_exe("./toto") != OK)
-	    log_test(1);
+	if (ftsystm_check_exe("./toto", "toto", "libf") != OK
+		|| test_cmp_buff(""))
+		log_test(1);
+
+	g_test = 1;
 	system("touch toto; chmod 644 toto");
-	if (ftsystm_check_exe("./toto") != -1)
+	if (ftsystm_check_exe("./toto", "libft", "toto") != -1
+		|| test_cmp_buff("libft: no X right: toto\n"))
 		log_test(2);
 	system("rm toto");
-
 }

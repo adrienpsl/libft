@@ -13,9 +13,13 @@
 #include <sys/stat.h>
 #include <libft.h>
 
-int	ftsystm_check_exe(char *path)
+int ftsystm_check_exe(char *path, char *prg_name, char *file_name)
 {
 	struct stat sb;
+	int res;
 
-	return (stat(path, &sb) == 0 && sb.st_mode & S_IXUSR ? OK : -1);
+	res = stat(path, &sb) == 0 && sb.st_mode & S_IXUSR;
+	if (res == 0)
+		ft_printf("%s: no X right: %s\n", prg_name, file_name);
+	return (res ? OK : -1);
 }
