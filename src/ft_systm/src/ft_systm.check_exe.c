@@ -10,13 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ftsystm__find_in_directory(void);
-void test_ftsystm__find_in_path(void);
-void test_ftsystm_check_exe(void);
+#include <sys/stat.h>
+#include <libft.h>
 
-void test_ftsystm_main(void)
+int	ftsystm_check_exe(char *path)
 {
-	test_ftsystm__find_in_directory();
-	test_ftsystm__find_in_path();
-	test_ftsystm_check_exe();
+	struct stat sb;
+
+	return (stat(path, &sb) == 0 && sb.st_mode & S_IXUSR ? OK : -1);
 }

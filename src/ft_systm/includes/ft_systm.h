@@ -46,4 +46,5 @@ char	*ftsystm__find_in_path(
 char	*ftsystm__get_current_path();
 
 int		ftsystm__check_file(char *path, char *name, char *argv);
+int		ftsystm_check_exe(char *path);
 #endif

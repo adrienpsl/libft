@@ -10,13 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void test_ftsystm__find_in_directory(void);
-void test_ftsystm__find_in_path(void);
-void test_ftsystm_check_exe(void);
+#include "libft.h"
 
-void test_ftsystm_main(void)
+void test_ftsystm_check_exe(void)
 {
-	test_ftsystm__find_in_directory();
-	test_ftsystm__find_in_path();
-	test_ftsystm_check_exe();
+	// with the rigth :
+	system("touch toto; chmod 700 toto");
+	if (ftsystm_check_exe("./toto") != OK)
+	    log_test(1);
+	system("touch toto; chmod 644 toto");
+	if (ftsystm_check_exe("./toto") != -1)
+		log_test(2);
+	system("rm toto");
+
 }
