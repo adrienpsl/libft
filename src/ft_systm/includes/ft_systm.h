@@ -44,7 +44,6 @@ char	*ftsystm__find_in_path(
 	char *binary_name,
 	int (*testing_function)(char *, char *));
 char	*ftsystm__get_current_path();
-
 int		ftsystm__check_file(char *path, char *prg_name, char *file_name);
 int		ftsystm_check_exe(char *path, char *prg_name, char *file_name);
 #endif
