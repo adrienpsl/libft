@@ -13,7 +13,7 @@
 #include <ft_log.h>
 #include <ft_printf.h>
 
-void*	ftlog__null(char *file, int line)
+void	*ftlog__null(char *file, int line)
 {
 	if (g_log > QUIET)
 		ft_printf("%s:%d ptr (null)\n", file, line);
@@ -26,7 +26,6 @@ int		ftlog__int(char *file, int line)
 		ft_printf("%s:%d ptr (null)\n", file, line);
 	return (-1);
 }
-
 
 int		ftlog__message(
 	char *file, int line, char *message, int error_code)
