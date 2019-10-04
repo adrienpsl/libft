@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_test.h>
-#include <ft_array.h>
-#include <ft_str.h>
+# include "libft.h"
+# include "ft_array.test.h"
 
 static int			test_func(void *el, void *param)
 {

@@ -10,9 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_array.h>
-#include <ft_test.h>
-#include <ft_test.h>
+# include "libft.h"
+# include "ft_array.test.h"
 
 void	test_ft_array$cmp()
 {

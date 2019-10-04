@@ -10,11 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <ft_array.h>
-#include <stdint.h>
-#include <ft_test.h>
-#include <ft_test.h>
-# include "stdio.h"
+# include "libft.h"
+# include "ft_array.test.h"
 
 /*
  * I will test the initialisation is good performed

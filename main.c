@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <ft_log.h>
-# include "stdio.h"
+# include "main.h"
 
 void test_ft_array_main();
 void test_ft_s_main(void);
@@ -22,7 +20,7 @@ void test_main_ft_buffer();
 void test_ftstr_main();
 void test_ftsystm_main(void);
 
-void test()
+static void test()
 {
 	//	if (test_ft_memory())
 	//		printf("error memory \n");

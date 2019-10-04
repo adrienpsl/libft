@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_str.h>
-#include <ft_log.h>
+#include <libft.h>
 
 int					ftarray__cmp_int(void *p1, void *p2)
 {

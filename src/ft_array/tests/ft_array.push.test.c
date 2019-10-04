@@ -9,12 +9,9 @@
 /*   Updated: 2017/11/16 12:45:50 by adpusel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <ft_array.h>
-#include <ft_test.h>
-#include <stdio.h>
-#include <ft_str.h>
-#include <ft_mem.h>
-#include <ft_test.h>
+
+# include "libft.h"
+# include "ft_array.test.h"
 
 void	test_ft_array$add()
 {

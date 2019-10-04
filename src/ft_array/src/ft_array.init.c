@@ -28,7 +28,7 @@ static int				check(int nb_elements, size_t element_size)
 		return (0);
 }
 
-int						allocation(
+static int				allocation(
 	t_array **p_array,
 	int nb_elements,
 	int element_size)

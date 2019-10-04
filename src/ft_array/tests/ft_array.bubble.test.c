@@ -10,10 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_array.h>
-#include <ft_test.h>
-#include <ft_test.h>
-#include <ft_mem.h>
+# include "libft.h"
+# include "ft_array.test.h"
 
 static int			cmp(void const *a, void const *b)
 {
