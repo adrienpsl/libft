@@ -106,7 +106,8 @@ ft_systm.c \
 ft_systm.find_in_directory.c \
 ft_systm.find_in_path.c \
 ft_systm.get_current_path.c \
-ft_log.utils.c
+ft_log.utils.c \
+ft_systm.check_exe.c
 
 OBJS = $(addprefix $(OBJSDIR),$(SRCS:.c=.o))
 
