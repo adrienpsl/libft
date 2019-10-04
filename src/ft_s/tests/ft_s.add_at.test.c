@@ -43,8 +43,8 @@ void static test_function(t t)
 	fts__free(&s);
 	g_test = 0;
 }
-
-void test_fts__add_at()
+void test_fts__add_at(void);
+void test_fts__add_at(void)
 {
 	/*
 	* Error test

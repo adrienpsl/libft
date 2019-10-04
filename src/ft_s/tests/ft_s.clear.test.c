@@ -15,7 +15,8 @@
 #include <ft_s.h>
 #include <ft_mem.h>
 
-void	test_fts__clear()
+void	test_fts__clear(void);
+void	test_fts__clear(void)
 {
 	/*
 	* test error handling

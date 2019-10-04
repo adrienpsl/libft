@@ -22,13 +22,13 @@ void			pf__utils_print(t_pf *pf, char *data, int size)
 	}
 }
 
-void			handle_wildcard(t_pf *pf)
+static void		handle_wildcard(t_pf *pf)
 {
 	if (pf->format_bit.wildard)
 		pf->format_bit.padding = va_arg(pf->list, int);
 }
 
-void			handle_variable(t_pf *pf)
+static void		handle_variable(t_pf *pf)
 {
 	if (OK == pf__catch_format(pf))
 	{

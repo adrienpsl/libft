@@ -13,8 +13,8 @@
 #include <ft_test.h>
 #include <ft_test.h>
 #include "libft.h"
-
-void	test_ft_printf()
+void	test_ft_printf(void);
+void	test_ft_printf(void)
 {
 	g_test = 1;
 	test_clear_testbuff();

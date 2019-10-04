@@ -5,13 +5,12 @@ target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
         ft_atoi.c
-        ft_catch_options.c
         ft_itoa.c
         ft_io.catch_options.c
 
         #[[ test]]
         tests/ft_io.catch_options.test.c
-        tests/main.test.c
+        tests/ft_io.main.test.c
         )
 
 

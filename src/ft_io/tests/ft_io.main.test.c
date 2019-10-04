@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_MAIN_H
-#define LIBFT_MAIN_H
-#include <libft.h>
+# include "main.h"
+#include "ft_io.main.test.h"
 
-void	test_ft_array_main(void);
+void	test_ft_iocatch_option();
 
-#endif //LIBFT_MAIN_H
+void	test_ft_io(void)
+{
+	test_ft_iocatch_option();
+}

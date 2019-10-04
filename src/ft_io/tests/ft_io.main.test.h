@@ -10,26 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_io.h"
+#ifndef LIBFT_FT_IO_MAIN_TEST_H
+#define LIBFT_FT_IO_MAIN_TEST_H
 
-/*
-** return the illegal option
-*/
+void	test_ft_iocatch_option(void);
 
-int				ft_io_catch_options(
-	char *av_string, char *str_option, long *options)
-{
-	int			ret;
-	static int	position;
-
-	position = 0;
-	while (av_string[position]
-		&& (ret = ft_strchr_int(str_option, av_string[position])) > -1)
-	{
-		*options |= (1 << ret);
-		position++;
-	}
-	if (ret == -1)
-		return (av_string[position]);
-	return (0);
-}
+#endif //LIBFT_FT_IO_MAIN_TEST_H

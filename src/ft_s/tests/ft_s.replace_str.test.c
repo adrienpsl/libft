@@ -45,7 +45,8 @@ static void			func_test(t t)
 	g_test = 0;
 }
 
-void	test_fts__replace_str()
+void	test_fts__replace_str(void);
+void	test_fts__replace_str(void)
 {
 	// no data at all
 	func_test((t){ 0, L,

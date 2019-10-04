@@ -12,6 +12,7 @@
 
 # include "libft.h"
 # include "ft_array.test.h"
+# include "main.h"
 
 void	test_ft_array_main(void)
 {

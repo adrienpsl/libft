@@ -15,7 +15,8 @@
 #include <ft_s.h>
 #include <ft_str.h>
 
-void	test_fts__remove_from()
+void	test_fts__remove_from(void);
+void	test_fts__remove_from(void)
 {
 	/*
 	* test bad entry

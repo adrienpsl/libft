@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_test.h>
 #include "libft.h"
+#include "ft_pf.main.test.h"
 
-int					utils(char *format, char *result, ...)
+static int					utils(char *format, char *result, ...)
 {
 	int ret = 0;
 	t_pf p;

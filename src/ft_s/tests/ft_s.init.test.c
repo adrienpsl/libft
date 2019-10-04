@@ -14,7 +14,8 @@
 #include <ft_test.h>
 #include <ft_mem.h>
 
-void	test_fts__init()
+void	test_fts__init(void);
+void	test_fts__init(void)
 {
 	/*
 	* test good input

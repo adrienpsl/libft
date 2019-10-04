@@ -10,9 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	test_ft_iocatch_option();
+#ifndef LIBFT_MAIN_H
+#define LIBFT_MAIN_H
+#include <libft.h>
 
-void	test_ft_io()
-{
-	test_ft_iocatch_option();
-}
+void	test_ft_array_main(void);
+void	test_ft_io(void);
+void	test_main_ft_pf(void);
+
+#endif

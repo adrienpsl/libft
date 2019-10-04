@@ -19,8 +19,10 @@ ssize_t	ftstr__search_str(char *src, char *searching);
 ssize_t	ft_strchrs(char *str, char *searched);
 ssize_t	ft_strchr_int(char *str, char c);
 size_t	ft_strlcat(char *dst, const char *src, size_t len);
+void	ft_strchrreplace(char *str, char *matched, char replacing);
 void	ft_putstr_fd(char const *s, int fd);
 void	ftstr__free(char **s);
+char	*ft_strchr(char *str, char c);
 char	*ft_strjoin(char *start, char *end, int free);
 char	*ftstr__find_str(char *str, char *wanted);
 char	*ftstr__replace_str(char *src, char *from, char *to);
@@ -59,5 +61,8 @@ char	*ftstr_func(
 	char *str,
 	int (*testing_function)(char, void *),
 	void *param);
+
+void	ft_strchrnreplace(
+	char *str, char *matched, char replacing, size_t size);
 
 #endif

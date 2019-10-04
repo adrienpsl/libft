@@ -10,13 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	test_ft_pf_catch_format();
-void	test_ft_pf__get_nb();
-void	test_pf__get_str();
-void	test_pf$print();
-void	test_ft_printf();
+# include "ft_pf.main.test.h"
+# include "main.h"
 
-void	test_main_ft_pf()
+void	test_main_ft_pf(void)
 {
 	test_ft_pf_catch_format();
 	test_ft_pf__get_nb();
