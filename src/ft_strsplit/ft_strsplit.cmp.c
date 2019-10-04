@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_str.h"
-#include "ft_printf.h"
+#include "libft.h"
 
 int					ft_strsplit_cmp(char **split_1, char **split_2)
 {

@@ -12,7 +12,7 @@
 
 #include <libft.h>
 
-char	*ftstr_by_func(
+char	*ftstr_func(
 	char *str,
 	int (*testing_function)(char, void *),
 	void *param)

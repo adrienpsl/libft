@@ -14,6 +14,7 @@ void test_ftsystm__find_in_directory(void);
 void test_ftsystm__find_in_path(void);
 void test_ftsystm_check_exe(void);
 
+void test_ftsystm_main(void);
 void test_ftsystm_main(void)
 {
 	test_ftsystm__find_in_directory();

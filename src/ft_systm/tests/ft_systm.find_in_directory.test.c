@@ -59,6 +59,7 @@ void static test_function(t t)
 	system(t.system_cleanup ? t.system_cleanup : "");
 }
 
+void test_ftsystm__find_in_path(void);
 void test_ftsystm__find_in_path(void)
 {
 

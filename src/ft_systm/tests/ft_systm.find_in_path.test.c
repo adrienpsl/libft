@@ -12,6 +12,7 @@
 
 #include <ft_systm.h>
 
+void test_ftsystm__find_in_directory(void);
 void test_ftsystm__find_in_directory(void)
 {
 	/*

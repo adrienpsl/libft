@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_systm.h>
+#include "libft.h"
 
 char	*ftsystm__get_current_path(void)
 {

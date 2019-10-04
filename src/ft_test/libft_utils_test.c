@@ -81,6 +81,8 @@ int					test_cmp_str(char *result, char *ret)
 }
 
 void
+test_print_func(void *start, void (*f)(void *), size_t size_el, int length);
+void
 test_print_func(void *start, void (*f)(void *), size_t size_el, int length)
 {
 	int i;

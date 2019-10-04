@@ -12,6 +12,7 @@
 
 #include "libft.h"
 
+void test_ftsystm_check_exe(void);
 void test_ftsystm_check_exe(void)
 {
 	g_test = 1;
