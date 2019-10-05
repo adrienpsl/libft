@@ -15,8 +15,8 @@
 
 int	ftsystm_check_exe(char *path, char *prg_name, char *file_name)
 {
-	struct	stat sb;
-	int		res;
+	struct stat	sb;
+	int			res;
 
 	res = stat(path, &sb) == 0 && sb.st_mode & S_IXUSR;
 	if (res == 0)
