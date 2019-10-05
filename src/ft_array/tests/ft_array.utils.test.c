@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
 
-void	test_ft_array$utils()
+void	test_ft_array$utils(void);
+void	test_ft_array$utils(void )
 {
 	/*
 	* test ft_array$clear

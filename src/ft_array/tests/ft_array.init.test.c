@@ -11,11 +11,12 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
+
 
 /*
  * I will test the initialisation is good performed
  * */
+void	test_ft_array_init(void);
 void	test_ft_array_init(void)
 {
 	// check good information in array

@@ -11,9 +11,10 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
 
-void	test_ft_array_remove()
+
+void	test_ft_array_remove(void);
+void	test_ft_array_remove(void)
 {
 	/*
 	* test error handling
