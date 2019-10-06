@@ -13,6 +13,8 @@
 #ifndef FT_ARRAY_STRUCTURE_H
 # define FT_ARRAY_STRUCTURE_H
 
+# include "stdio.h"
+
 typedef struct	s_array
 {
 	int			length;
