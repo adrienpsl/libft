@@ -11,9 +11,10 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
 
-void	test_ft_array$slice()
+
+void	test_ft_array$slice(void);
+void	test_ft_array$slice(void)
 {
 	/*
 	* test error handling

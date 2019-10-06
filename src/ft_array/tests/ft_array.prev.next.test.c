@@ -11,8 +11,9 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
 
+
+void	test_ft_array_next_and_prev(void);
 void	test_ft_array_next_and_prev(void)
 {
 	/*

@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_io.main.test.h"
 
 static void	usage(char c)
 {
@@ -21,6 +20,7 @@ static void	usage(char c)
 	ft_printf("usage : %s \n", b);
 }
 
+void	test_ft_iocatch_option(void);
 void	test_ft_iocatch_option(void)
 {
 	/*

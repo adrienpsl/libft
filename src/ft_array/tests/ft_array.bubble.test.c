@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
+
 
 static int			cmp(void const *a, void const *b)
 {
@@ -29,6 +29,7 @@ static int			inv_cmp(void const *a, void const *b)
 	return *pb - *pa;
 }
 
+void	test_ft_array$bubble(void);
 void	test_ft_array$bubble(void)
 {
 	/*

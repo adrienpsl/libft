@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
+
 
 static int			find_func(void *el, void *searched)
 {
@@ -23,6 +23,7 @@ static int			find_func(void *el, void *searched)
 	return (*nb == *wanted);
 }
 
+void	test_ftarray__find(void);
 void	test_ftarray__find(void)
 {
 	/*

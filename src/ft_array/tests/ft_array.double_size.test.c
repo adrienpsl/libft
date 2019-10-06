@@ -11,9 +11,10 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
 
-void	test_ft_array_double_size()
+
+void	test_ft_array_double_size(void);
+void	test_ft_array_double_size(void)
 {
 	/*
 	* Error handling

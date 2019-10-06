@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
+
 
 static int			test_func(void *el, void *param)
 {
@@ -24,7 +24,8 @@ static int			test_func(void *el, void *param)
 	return !(*nb % *modulo);
 }
 
-void	test_ft_array__extract_by_func()
+void	test_ft_array__extract_by_func(void);
+void	test_ft_array__extract_by_func(void)
 {
 	/*
 	* test error handling

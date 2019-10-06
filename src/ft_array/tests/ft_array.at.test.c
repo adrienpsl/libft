@@ -11,9 +11,10 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
 
-void	test_ft_array$at()
+
+void	test_ft_array$at(void);
+void	test_ft_array$at(void)
 {
 	/*
 	* ft_array$at : return bad stuff given

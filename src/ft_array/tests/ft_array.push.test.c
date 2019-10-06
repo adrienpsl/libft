@@ -11,9 +11,10 @@
 /* ************************************************************************** */
 
 # include "libft.h"
-# include "ft_array.test.h"
 
-void	test_ft_array$add()
+
+void	test_ft_array$add(void);
+void	test_ft_array$add(void)
 {
 	/*
 	 * ft_array_push : add 1000 nb
