@@ -12,7 +12,6 @@
 
 # include "libft.h"
 
-# include "main.h"
 
 void	test_ft_array_init(void);
 void	test_ft_array$add(void);
@@ -33,6 +32,7 @@ void	test_ft_array$slice_and_remove(void);
 void	test_ft_array__extract_by_func(void);
 void	test_ftarray__find(void);
 
+void	test_ft_array_main(void);
 void	test_ft_array_main(void)
 {
 	test_ft_array_init();

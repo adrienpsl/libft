@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_pf.main.test.h"
+
 
 static int					utils(char *format, char *result, ...)
 {
@@ -39,7 +39,8 @@ static int					utils(char *format, char *result, ...)
 	return (ret);
 }
 
-void	test_pf$print()
+void	test_pf$print(void);
+void	test_pf$print(void)
 {
 	// test padding right
 	if (utils("%10d", "        22", 22))

@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_pf.main.test.h"
 
+void	test_ft_pf_catch_format(void);
 void	test_ft_pf_catch_format(void)
 {
 	t_pf pf;
