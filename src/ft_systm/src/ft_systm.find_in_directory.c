@@ -46,7 +46,8 @@ char			*ftsystm__find_in_directory(
 		{
 			if (0 < testing_function(binary_name, dp->d_name))
 			{
-				closedir(dir);
+				if (-1 == closedir(dir))
+					return (NULL);
 				return (ft_strdup(dp->d_name));
 			}
 		}
