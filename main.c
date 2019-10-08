@@ -10,14 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "main.h"
+#include <ft_log.h>
+#include <stdlib.h>
 
-void test_ft_array_main();
+
+void test_ft_array_main(void);
 void test_ft_s_main(void);
-void test_ft_iocatch_option();
-void test_main_ft_pf();
-void test_main_ft_buffer();
-void test_ftstr_main();
+void test_ft_iocatch_option(void);
+void test_main_ft_pf(void);
+void test_main_ft_buffer(void);
+void test_ftstr_main(void);
 void test_ftsystm_main(void);
 
 static void test()

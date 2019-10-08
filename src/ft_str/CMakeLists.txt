@@ -22,6 +22,7 @@ target_sources(${__LIB_NAME__} PUBLIC
         src/ft_str.replace.c
         src/ft_str.find_str.c
         src/ft_str.ncmp.c
+        src/ft_putchar.c
         )
 
 target_include_directories(${__LIB_NAME__} PUBLIC includes)

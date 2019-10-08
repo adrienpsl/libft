@@ -10,12 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_MAIN_H
-#define LIBFT_MAIN_H
-#include <libft.h>
+#include "libft.h"
 
-void	test_ft_array_main(void);
-void	test_ft_io(void);
-void	test_main_ft_pf(void);
-
-#endif
+int		ft_putchar(int c)
+{
+	write(1, &c, 1);
+	return (0);
+}

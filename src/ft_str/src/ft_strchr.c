@@ -16,7 +16,7 @@ ssize_t		ft_strchr_int(char *str, char c)
 {
 	size_t i;
 
-	if (!str)
+	if (!str || *str == '\0')
 		return (-1);
 	i = 0;
 	while (str[i])

@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "main.h"
 
 void	test_ft_iocatch_option();
 
+void	test_ft_io(void);
 void	test_ft_io(void)
 {
 	test_ft_iocatch_option();
