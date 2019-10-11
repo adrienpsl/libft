@@ -38,3 +38,17 @@ void	ft_putstr_fd(char const *s, int fd)
 	else
 		write(fd, s, ft_strlen(s));
 }
+
+void	ft_putstr_fd_nl(char const *s, int fd)
+{
+	size_t size;
+
+	if (g_test)
+	{
+		size = ft_strlen(g_test_buffer);
+		ft_putstr_buffer(s, g_test_buffer + size);
+	}
+	else
+		write(fd, s, ft_strlen(s));
+	ft_putchar_fd('\n', fd);
+}

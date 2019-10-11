@@ -50,6 +50,7 @@ int		ft_isascii(int c);
 int		ft_isspace(int c);
 int		ft_putchar(int c);
 int		ft_putchar_fd(int c, int fd);
+void	ft_putstr_fd_nl(char const *s, int fd);
 /*
 **	Testing function
 */
