@@ -49,7 +49,7 @@ int		ft_isprint(int c);
 int		ft_isascii(int c);
 int		ft_isspace(int c);
 int		ft_putchar(int c);
-
+int		ft_putchar_fd(int c, int fd);
 /*
 **	Testing function
 */
