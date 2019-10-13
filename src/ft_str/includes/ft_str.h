@@ -40,8 +40,6 @@ int		ftstr__search_start_strict(char *current, char *searching);
 int		ft_strncmp(char const *s1, char const *s2, size_t n);
 int		ft_strnchr(char *str, char c);
 int		ft_streq(const char *s1, const char *s2);
-int		ft_pstrjoin_chr(char *start, char c, int need_free, char **out);
-int		ft_pstrjoin(char *start, char *s_end, int need_free, char **out);
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
 int		ft_isdigit(int c);
@@ -51,6 +49,8 @@ int		ft_isspace(int c);
 int		ft_putchar(int c);
 int		ft_putchar_fd(int c, int fd);
 void	ft_putstr_fd_nl(char const *s, int fd);
+int		ft_pstrjoin_chr(char *start, char c, int need_free, char **out);
+int		ft_pstrjoin(char *start, char *s_end, int need_free, char **out);
 /*
 **	Testing function
 */
