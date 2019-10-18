@@ -35,7 +35,7 @@
 # define FORMAT_10_BASE (FORMAT_H | FORMAT_L | FORMAT_D | FORMAT_C | FORMAT_U)
 # define FT_PRINTF_PARCING_ERROR 100
 # define FT_PRINTF_PARCING_ERROR_STRING "ft_printf error %[ unknown ]"
-# define MINUS 0
+# define PF_MINUS 0
 # define WILCARD 1
 # define DOT  2
 # define ZERO  3
