@@ -12,7 +12,7 @@
 
 #include <ft_log.h>
 #include <stdlib.h>
-
+#include "log.h"
 
 void test_ft_array_main(void);
 void test_ft_s_main(void);
@@ -44,6 +44,8 @@ static void test()
 	test_ftsystm_main();
 }
 
+void log_log(int level, const char *file, int line, const char *fmt, ...);
+
 int main(int ac, char **av)
 {
 	(void)ac;
@@ -51,6 +53,8 @@ int main(int ac, char **av)
 	//	g_test = 1;
 	g_log = TRACE;
 	test();
+
+	log_debug("test %d", 1);
 
 	return (EXIT_SUCCESS);
 }

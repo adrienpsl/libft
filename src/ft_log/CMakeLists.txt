@@ -5,6 +5,7 @@ target_sources(${__LIB_NAME__}
         PUBLIC
         #[[ src ]]
         ft_log.utils.c
+        log.c
 
         #[[ test]]
         tests/ft_log_test.c
