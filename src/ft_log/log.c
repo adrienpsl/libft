@@ -4,6 +4,11 @@
 #include <time.h>
 #include "log.h"
 
+// I want write a test to see, if I can write in a file
+// in multiple way ?
+// I did not know
+
+
 static struct {
   void *udata;
   log_LockFn lock;
