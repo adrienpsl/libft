@@ -19,7 +19,6 @@
 # include <dirent.h>
 # include <stdio.h>
 # include <sys/param.h>
-# include <zconf.h>
 # include <stdlib.h>
 
 /*

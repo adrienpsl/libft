@@ -18,7 +18,6 @@
 # include <unistd.h>
 # include <limits.h>
 # include <stdint.h>
-# include <cxxabi.h>
 # include "ft_array.h"
 # include "ft_buffer.h"
 # define FORMAT_S (1)

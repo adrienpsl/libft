@@ -55,6 +55,7 @@ void	*ftarray__prev(t_array *array)
 	else if (array->i == 0 && !end)
 		end = 1;
 	element = ftarray__at(array, array->i);
-	array->i != 0 && (array->i -= 1);
+	if(array->i != 0)
+		(array->i -= 1);
 	return (element);
 }

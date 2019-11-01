@@ -35,7 +35,7 @@ typedef struct s
 	char *expected_str;
 } t;
 
-void static test_function(t t)
+static void test_function(t t)
 {
 	// Setup
 	system(t.system_setup ? t.system_setup : "");
