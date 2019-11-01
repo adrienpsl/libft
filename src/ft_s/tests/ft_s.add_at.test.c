@@ -27,7 +27,7 @@ typedef struct s
 	int result_int;
 } t;
 
-void static test_function(t t)
+static void test_function(t t)
 {
 	g_test = 1;
 	t_s *s = fts__init(0);
