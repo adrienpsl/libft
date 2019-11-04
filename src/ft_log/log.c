@@ -91,13 +91,13 @@ void log_log(int level, const char *file, int line, const char *fmt, ...) {
       stderr, "%s %s%-5s\x1b[0m \x1b[90m%s:%d:\x1b[0m ",
       buf, level_colors[level], level_names[level], file, line);
 #else
-    fprintf(stderr, "%s %-5s %s:%d: ", buf, level_names[level], file, line);
+    fprintf(stdin, "%s %-5s %s:%d: ", buf, level_names[level], file, line);
 #endif
     va_start(args, fmt);
-    vfprintf(stderr, fmt, args);
+    vfprintf(stdin, fmt, args);
     va_end(args);
-    fprintf(stderr, "\n");
-    fflush(stderr);
+    fprintf(stdin, "\n");
+    fflush(stdin);
   }
 
   /* Log to file */

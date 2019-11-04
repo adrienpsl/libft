@@ -17,6 +17,7 @@
 # include "ft_buffer.h"
 # include "ft_io.h"
 # include "ft_log.h"
+# include "log.h"
 # include "ft_mem.h"
 # include "ft_printf.h"
 # include "ft_str.h"
