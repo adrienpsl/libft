@@ -73,7 +73,12 @@ int					pf__catch_format(t_pf *pf)
 	}
 	catch(&pf->format, "-*.0", &pf->format_bit, 0);
 	catch(&pf->format, "....hl", &pf->format_bit, 0);
-	if (OK != catch(&pf->format, "......sdcxbu", &pf->format_bit, 1))
+	if (OK != catch(&pf->format, "......sdcxbupX", &pf->format_bit, 1))
 		return (-1);
+	if (pf->format_bit.ptr)
+	{
+		pf->format_bit.tall = 1;
+		pf->format_bit.b_hexa = 1;
+	}
 	return (0);
 }

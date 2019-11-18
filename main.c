@@ -12,6 +12,7 @@
 
 #include <ft_log.h>
 #include <stdlib.h>
+#include <ft_printf.h>
 #include "log.h"
 
 void test_ft_array_main(void);
@@ -41,7 +42,7 @@ static void test()
 	//	test_main_ft_buffer();
 	//	test_main_ft_pf();
 	//	test_ftstr_main();
-	test_ftsystm_main();
+//	test_ftsystm_main();
 }
 
 void log_log(int level, const char *file, int line, const char *fmt, ...);
@@ -53,8 +54,16 @@ int main(int ac, char **av)
 	//	g_test = 1;
 	g_log = TRACE;
 	test();
+	size_t t = 21312318889;
+	ft_printf("%p - %p %lu", t, t, t);
 
-	log_debug("test %d", 1);
 
 	return (EXIT_SUCCESS);
 }
+
+
+
+
+
+
+

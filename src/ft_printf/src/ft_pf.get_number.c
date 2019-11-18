@@ -14,12 +14,15 @@
 
 static char			*get_base(t_pf *pf)
 {
-	static char base[4][17] = { "01", "0123456789", "0123456789abcdef" };
+	static char base[5][17] = { "01", "0123456789", "0123456789abcdef" ,
+							 "0123456789ABCDEF"};
 
 	if (pf->format_bit.binary)
 		return (base[0]);
 	else if (pf->format_bit.hexa)
 		return (base[2]);
+	else if (pf->format_bit.b_hexa)
+	    return (base[3]);
 	else
 		return (base[1]);
 }
@@ -79,7 +82,8 @@ int					pf__get_number(t_pf *pf)
 
 	if (pf->format_bit.unsign
 		|| pf->format_bit.binary
-		|| pf->format_bit.hexa)
+		|| pf->format_bit.hexa
+		|| pf->format_bit.b_hexa)
 		nb = get_va_unsigned(pf);
 	else if (pf->format_bit.decimal)
 		nb = get_va_signed(pf);

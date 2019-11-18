@@ -61,6 +61,8 @@ typedef struct		s_pf_format
 	unsigned long	hexa: 1;
 	unsigned long	binary: 1;
 	unsigned long	unsign: 1;
+	unsigned long	ptr: 1;
+	unsigned long	b_hexa: 1;
 	int				padding;
 }					t_pf_format;
 
