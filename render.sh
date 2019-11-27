@@ -11,7 +11,6 @@ cd ./render
 make;
 cd ./..;
 
-rm ./render/includes/my_test.h;
-cp my_test.h ./render/includes/my_test.h;
+cp log.h ./render/includes/log.h;
 norminette ./render/src;
 norminette ./render/includes;

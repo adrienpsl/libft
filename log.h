@@ -13,4 +13,12 @@
 #ifndef MY_TEST_H
 # define MY_TEST_H
 
+#define log_trace(...) (void)1
+#define log_debug(...) (void)1
+#define log_info(...)  (void)1
+#define log_warn(...)  (void)1
+#define log_error(...) (void)1
+#define log_fatal(...) (void)1
+
+
 #endif
