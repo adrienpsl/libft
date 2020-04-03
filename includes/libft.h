@@ -29,5 +29,7 @@ void ft_bzero(void *s, size_t n);
 t_list *ft_lstnew(const void *content, size_t content_size);
 void ft_lstdel(t_list *p_list, void (*del)(void *, size_t));
 void ft_lstaddend(t_list *lst, t_list *new);
+void ft_lstadd(t_list **lst, t_list *new);
+void	ft_lst_reverse(t_list **lst);
 
 #endif
