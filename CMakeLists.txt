@@ -18,7 +18,7 @@ set(CMAKE_C_FLAGS "-Wall -Wextra -Werror")
 #    Libary Init
 # ------------------------------------------------------------------------------
 file(GLOB_RECURSE project_files src/*.c)
-#add_library(${PROJECT_NAME}_lib ${sources_files} test.c)
+#add_library(${PROJECT_NAME}_lib ${sources_files} print_sym.c)
 add_library(${PROJECT_NAME}_lib ${project_files})
 target_include_directories(${PROJECT_NAME}_lib PUBLIC includes)
 
@@ -29,9 +29,9 @@ add_executable(${PROJECT_NAME} "main.c")
 target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_lib)
 
 ### ------------------------------------------------------------------------------
-###    Unit test Binary
+###    Unit print_sym Binary
 ### ------------------------------------------------------------------------------
-#file(GLOB_RECURSE unit_files unit.test/*.c)
+#file(GLOB_RECURSE unit_files unit.print_sym/*.c)
 #add_executable(${PROJECT_NAME}_unit_test ${unit_files})
 #target_link_libraries(${PROJECT_NAME}_unit_test ${PROJECT_NAME}_lib)
 #

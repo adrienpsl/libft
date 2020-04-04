@@ -10,31 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <unistd.h>
-# include "ft_list.struct.h"
-# include "stdlib.h"
-# include <stdbool.h>
+void *ft_memalloc(size_t size)
+{
+	void *ptr;
 
-ssize_t ft_strchr_int(char *str, char c);
-int ft_isdigit(int c);
-int ft_atoi(const char *str);
-int ft_strlen(const char *str);
-int ft_strcmp(char *s1, char *s2);
-
-void *ft_memcpy(void *dest, const void *src, size_t n);
-void ft_bzero(void *s, size_t n);
-void *ft_memalloc(size_t size);
-
-t_list *ft_lstnew(const void *content, size_t content_size);
-void ft_lstdel(t_list *p_list, void (*del)(void *, size_t));
-void ft_lstaddend(t_list *lst, t_list *new);
-void ft_lstadd(t_list **lst, t_list *new);
-void	ft_lst_reverse(t_list **lst);
-t_list *ft_listfunc(t_list *list, bool (*f_test)(t_list *, void*), void *ptr);
-
-void print_section_list(t_list *list);
-#endif
+	ptr = malloc(size);
+	if (NULL != ptr)
+		ft_bzero(ptr, size);
+	return (ptr);
+}
