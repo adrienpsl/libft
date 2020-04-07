@@ -36,5 +36,9 @@ void ft_lstadd(t_list **lst, t_list *new);
 void	ft_lst_reverse(t_list **lst);
 t_list *ft_listfunc(t_list *list, bool (*f_test)(t_list *, void*), void *ptr);
 
+uint64_t ft_bswap_64(uint64_t value);
+uint32_t ft_bswap_32(uint32_t value);
+uint16_t ft_bswap_16(uint16_t value);
+
 void print_section_list(t_list *list);
 #endif
