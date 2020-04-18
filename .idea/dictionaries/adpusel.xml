@@ -7,6 +7,7 @@
       <w>listfunc</w>
       <w>lstadd</w>
       <w>lstaddend</w>
+      <w>lstcount</w>
       <w>lstdel</w>
       <w>lstnew</w>
       <w>memalloc</w>
