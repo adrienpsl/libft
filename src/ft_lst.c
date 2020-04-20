@@ -47,20 +47,22 @@ void ft_lstadd(t_list **p_list, t_list *new)
 
 void ft_lstdel(t_list *list, void (*del)(void *, size_t))
 {
+	if (NULL == list)
+		return;
 	if (list->next)
 		ft_lstdel(list->next, del);
-	del(list->content, list->content_size);
+	if (del)
+		del(list->content, list->content_size);
 	free(list);
 }
 
-
-void	ft_lst_reverse(t_list **lst)
+void ft_lst_reverse(t_list **lst)
 {
-	t_list	*tmp1;
-	t_list	*tmp2;
+	t_list *tmp1;
+	t_list *tmp2;
 
 	if (!lst)
-		return ;
+		return;
 	tmp1 = NULL;
 	while ((*lst)->next != NULL)
 	{
