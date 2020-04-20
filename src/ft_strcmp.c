@@ -32,5 +32,7 @@ int ft_strncmp(char *s1, char *s2, int length)
 		   && s1[i] && s2[i]
 		   && i < length)
 		i++;
+	if (length == i)
+		return (0);
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
