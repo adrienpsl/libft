@@ -61,7 +61,7 @@ void ft_lst_reverse(t_list **lst)
 	t_list *tmp1;
 	t_list *tmp2;
 
-	if (!lst)
+	if (!lst || !*lst)
 		return;
 	tmp1 = NULL;
 	while ((*lst)->next != NULL)
