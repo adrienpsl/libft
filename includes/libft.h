@@ -26,6 +26,7 @@ int ft_atoi(const char *str);
 int ft_strlen(const char *str);
 int ft_strcmp(char *s1, char *s2);
 int ft_strncmp(char *s1, char *s2, int length);
+void ft_putchar(char c);
 
 void *ft_memcpy(void *dest, const void *src, size_t n);
 void ft_bzero(void *s, size_t n);
