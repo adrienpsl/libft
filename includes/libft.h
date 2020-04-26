@@ -19,6 +19,9 @@
 # include "stdlib.h"
 # include <stdbool.h>
 
+// errno
+char *ft_errno(char *errno);
+
 ssize_t ft_strchr_int(char *str, char c);
 char *ft_strchr(char *str, char c);
 int ft_isdigit(int c);
