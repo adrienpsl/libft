@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <printf.h>
+# include "libft.h"
 
 ssize_t		ft_strchr_int(char *str, char c)
 {

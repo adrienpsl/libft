@@ -15,9 +15,12 @@
 
 # include <stdio.h>
 # include <unistd.h>
-# include "ft_list.struct.h"
-# include "stdlib.h"
+# include <sys/types.h>
+# include <stdlib.h>
 # include <stdbool.h>
+
+
+# include "ft_list.struct.h"
 
 ssize_t ft_strchr_int(char *str, char c);
 char *ft_strchr(char *str, char c);
@@ -40,9 +43,9 @@ void ft_lst_reverse(t_list **lst);
 t_list *ft_listfunc(t_list *list, bool (*f_test)(t_list *, void *), void *ptr);
 int ft_lstcount(t_list *list);
 
-uint64_t ft_bswap_64(uint64_t value);
-uint32_t ft_bswap_32(uint32_t value);
-uint16_t ft_bswap_16(uint16_t value);
+u_int64_t ft_bswap_64(u_int64_t value);
+u_int32_t ft_bswap_32(u_int32_t value);
+u_int16_t ft_bswap_16(u_int16_t value);
 
 void print_section_list(t_list *list);
 #endif
