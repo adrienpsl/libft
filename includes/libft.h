@@ -34,6 +34,7 @@ void ft_putchar(char c);
 void *ft_memcpy(void *dest, const void *src, size_t n);
 void ft_bzero(void *s, size_t n);
 void *ft_memalloc(size_t size);
+int ft_memcmp(void *mem1, void *mem2, size_t size);
 
 t_list *ft_lstnew(const void *content, size_t content_size);
 void ft_lstdel(t_list *p_list, void (*del)(void *, size_t));

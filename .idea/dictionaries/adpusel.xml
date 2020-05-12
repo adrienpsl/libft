@@ -11,9 +11,12 @@
       <w>lstdel</w>
       <w>lstnew</w>
       <w>memalloc</w>
+      <w>memcmp</w>
       <w>memcpy</w>
+      <w>putchar</w>
       <w>strchr</w>
       <w>strlen</w>
+      <w>strncmp</w>
     </words>
   </dictionary>
 </component>
