@@ -31,7 +31,7 @@ target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_lib)
 ### ------------------------------------------------------------------------------
 ###    Unit print_sym Binary
 ### ------------------------------------------------------------------------------
-#file(GLOB_RECURSE unit_files unit.print_sym/*.c)
+#start(GLOB_RECURSE unit_files unit.print_sym/*.c)
 #add_executable(${PROJECT_NAME}_unit_test ${unit_files})
 #target_link_libraries(${PROJECT_NAME}_unit_test ${PROJECT_NAME}_lib)
 #
